@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="907" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref406766014"></a><a name="_Ref406766052"></a><a name="_Ref406766086"></a><a name="_Ref406766096"></a><a name="_Ref406766101"></a><a name="_Ref406766109"></a><a name="_Ref406766135"></a><a name="_Toc434567980"></a>Dynamic Checklist</h2>
+        <p class="ccTextvorlage">The Dynamic Checklist is a checklist template where variables and formulas are set up.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Dynamic Checklist.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Dynamic Checklist</p>
+        <p class="ccTextvorlage">In addition to the fields previously described, the fields in the following table are intended for dynamic calculations within the checklist.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 102px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Variable for Dynamic BOM</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">A value in the <span class="Bold">Input</span> field in the checklist line can be stored as a variable for further use in the checklist or in the dynamic BOM. The variables have a global validity within the checklist and the Master BOMs.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Formula Function</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Here a formula can be entered for a calculation. Use the arrow to open the Formula Editor, which can assist with formula creation. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Value of Function</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Value resulting from the formula calculated in the <span class="Bold">Formula Function</span> field during the calculation process.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Value of Function (alphanum.)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Alphanumeric Value resulting from the formula calculated in the <span class="Bold">Formula Function</span> field during the calculation process.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Value of Function is Default</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, then during a new calculation the determined function value is transferred to the <span class="Bold">Input</span> field on the line, if the field is empty. Lines already filled are not overwritten unless the <span class="Bold">Always Overwrite</span> check box is selected.</p>
+                        <p class="ccTabellenText">If the <span class="Bold">Input Type</span> field is set to <span class="Italics">Text</span> and the <span class="Bold">Variable for Dynamic BOM</span> check box is selected, then the text attribute is transferred from the Attribute Term table, if one exists (refer to topic <MadCap:xref href="Example Formula Function.htm#_Ref284838954">“Example – Formula Function” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Always Overwrite</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the result from the <span class="Bold">Formula Function</span> field is transferred to the <span class="Bold">Input</span> field even if the field already contains a value.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Formula Show Line / Show Line</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Here a condition can be entered (compare <span class="Bold">Formula Valid</span> with the Dynamic BOM). If this condition is True (&lt; &gt; 0 corresponds) or is empty, then the <span class="Bold">Show Line</span> check box is selected. If this condition is False, then the <span class="Bold">Show Line</span> check box is not selected.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Selected</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the standard answer for the question.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Formula Message</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p>Here a formula can be entered for a calculation to generate a message. Use the arrow to open the Formula Editor, which can assist with formula creation. Refer to <MadCap:xref href="Example Formula Message.htm#_Ref277406507">“Example – Formula Message” on page 1</MadCap:xref> for more information. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Message Exists</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if a message exists for this checklist line (refer to <MadCap:xref href="Example Formula Message.htm#_Ref277406507">“Example – Formula Message” on page 1</MadCap:xref>). </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Formula  Mandatory Input</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Here a condition can be entered in the same way as “Formula Show Line” so that the result of the formula should be True (&lt;&gt;0) or False (0).</p>
+                        <p class="ccTabellenText">The result of this formula will set the <span class="Bold">Mandatory Input</span> field to True to indicate during run time if a checklist line must be filled out or not.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Automatic Recalculation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies whether the formulas entered with a checklist line are automatically recalculated after each input. </p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">The <span class="Bold">Automatic Recalculation</span> check box must also be selected on the header to automatically recalculate the lines. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Free Text</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Determines whether the value entered in the <span class="Bold">Input</span> field on the checklist line is transferred to a description line in the Document BOM, as defined in the Master BOM.</p>
+                        <p class="ccTabellenText">In the Checklist Template, a variable, such as TEXT, is defined in the <span class="Bold">Variable for Dynamic BOM</span> field. In the Master BOM, the relevant description field is set up with substitute symbols around the variable: #TEXT# (refer to <MadCap:xref href="Example Free Text.htm#_Toc434567988">“Example – Free Text” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="874" MadCap:lastWidth="602" MadCap:fileTags="StatusFileTags.6 Needs to be Sent for Review" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc435720920"></a>HTTP-Server Setup</h2>
+        <p class="ccTextvorlage">This section explains how to configure the HTTP-Server to enable the communication to the Microsoft Dynamics NAV database.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc435720921"></a>General Information</h3>
+        <p class="ccTextvorlage">The HTTP-Server can be performed as Windows Forms Application or as Windows Service.</p>
+        <p class="ccTextvorlageNoteheading">Notes for Windows Forms vs Windows Service</p>
+        <p class="ccTextvorlageNotebody">Since both variants use the same config file (“HttpServer.config.xml”), both can be executed – but not performed – at the same time. The config file specifies an IP port to listen on, therefore the server cannot be started if the service is running because the server is already listening to the port.  If performing the server as Service is preferred, the Windows Forms Application can be used for applying relevant settings. If the server is run while the service is started, an error message occurs.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="Licensin"></a>Licensing</h3>
+        <p>During the installation of the HTTP-Server, the product key must be entered in Page 2 of the Configuration Wizard.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC MS/HTTP Server Setup_Licensing.png" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Product Key page of HTTP-Server Configuration Wizard</p>
+        <p>If the <span class="Bold">Product Key</span> field is left empty, the HTTP-Server can be used as a 14-day trial version, limited to one device. The product key can also be entered after the installation using the configuration assistant in the installation folder of the HTTP-Server.</p>
+        <p>If the current license does not contain a limitation of the number of process dialogues, the <span class="Bold">No. of Dialogues</span> field can be left empty or a “0” can be entered. </p>
+        <div class="ccDIV">
+            <p>The current license can be displayed in the HTTP-Server application by clicking <span class="Bold">Help &gt; (Info) About</span>.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC MS/HTTP Server Setup_Licensing_2.png" MadCap:mediastyle="@media print { max-width: 4in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Current license information displayed in HTTP-Server application</p>
+        </div>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc435720922"></a>HTTP-Server Window</h3>
+            <p class="ccTextvorlage">This section describes the HTTP-Server window.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC MS/HTTP Server Setup_2016.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: HTTP-Server</p>
+        </div>
+        <p class="ccTextvorlage">In the <span class="Bold">Server</span> menu, the server can be started or stopped. Alternatively the buttons on the toolbar below can be used.</p>
+        <p class="ccTextvorlage">The <span class="Bold">Tools</span> menu contains links to the “Mobile Emulator”, where handheld requests can be simulated for testing. Additionally the “Terminal App” can be run from here.</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Extras</span> menu, the HTTP-Server Settings can be accessed.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc435720923"></a>HTTP-Server Settings</h3>
+        <p class="ccTextvorlage">Before starting the HTTP-Server, several settings should be applied and checked. Since the HTTP-Server communicates with Microsoft Dynamics NAV, the connection settings must be made correctly.</p>
+        <p class="ccTextvorlage">Ensure that the Windows User – who runs the HTTP-Server – is registered as user in Microsoft Dynamics NAV and granted the required rights and roles.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.4.1    "><a name="_Ref429124767"></a>General Tab</h4>
+            <p class="ccTextvorlage">The fields on this tab are described in the following table.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC MS/HTTP Server Setup_1 2016.png" style="visibility: visible;mso-wrap-style: square;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: HTTP-Server Settings, General tab</p>
+        </div>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%; mc-table-style-original: url('../Resources/TableStyles/CC_TableStyleSheet.css');" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 118px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Port</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the port to which the HTTP-Server should listen. </p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">This port must not be used by other applications.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">HTTPS</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, HTTPS is used instead of HTTP.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Root Directory</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the root directory of the HTTP-Server. In this folder, Microsoft Dynamics NAV creates subfolders for handhelds and stores generated files. This folder must be identical with the Root Folder in the Mobile Setup of Microsoft Dynamics NAV (refer to topic <MadCap:xref href="Mobile Setup.htm#_Ref429065914" class="RelLinkPageNumber">"General FastTab " on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Log File Path</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Contains the path to a log file that the HTTP-Server uses when a value exists. The content of the log file is the same as the content of the console in the HTTP-Server application. Logging is useful when running the HTTP-Server as a Windows Service.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Use Ajax</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, enables the activation of an AJAX preloader with status bar. </p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">The browser of the handheld must be AJAX compatible. In most cases, handheld operating systems only provide a simple browser without AJAX support.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">AJAX Request Prefix</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the prefix to be used for AJAX requests; should be left to default.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Wait Time (Sec.)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies how long the HTTP-Server should wait for a response from Microsoft Dynamics NAV before a timeout occurs. On timeout, the HTTP-Server delivers an error message to the handheld/client.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Request MQ Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the Windows Message Queue for requests in Microsoft Dynamics NAV.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Response MQ Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the Windows Message Queue for responses of the HTTP-Server.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Request Admin MQ Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the Windows Message Queue for status messages to Microsoft Dynamics NAV.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Terminal App Path</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the path to the Terminal Application that can be launched via the menu. This path is set by default.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Emulator Path</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the path to the Mobile Emulator that can be launched via the menu. This path is set by default.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.4.2    ">Microsoft Dynamics NAV Tab</h4>
+            <p class="ccTextvorlage">The fields on this tab are described in the following table.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC MS/HTTP Server Setup_2 2016.png" style="visibility: visible;mso-wrap-style: square;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: HTTP-Server Settings, Microsoft Dynamics NAV tab</p>
+        </div>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%; mc-table-style-original: url('../Resources/TableStyles/CC_TableStyleSheet.css');" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 119px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Server Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the server name of the Microsoft Dynamics NAV Database Server.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Database Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the name of the Microsoft Dynamics NAV Database.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Company Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the name of the Microsoft Dynamics NAV Company.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Use Web Service</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Enables the usage of Microsoft Dynamics NAV Web Service for the communication with Microsoft Dynamics NAV. This setting is mandatory.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Port</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the port of the Microsoft Dynamics NAV Web Service. This must match the port specified in the <span class="Bold">SOAP Services</span> tab in the Microsoft Dynamics NAV Administration console.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Instance Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the Microsoft Dynamics NAV Instance Name of the Microsoft Dynamics NAV Service.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Web Service Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the name of the Web Service. This name must also be used for setting up the Web Service in Microsoft Dynamics NAV with the “Mobile Server WS” codeunit.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Net Type / NT Authentication / Run SQL Option</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p>Not applicable to <span class="CCBausteinInhaltZchn">cc|mobile solution</span> 2015/2016.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="Heading4" MadCap:autonum="1.1.4.3    ">Performance Tab</h4>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Performance</span> tab are not applicable to <span class="CCBausteinInhaltZchn">cc|mobile solution</span> 2015/2016 since the values are only used in the Microsoft Dynamics NAV Classic Client.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.4.4    ">Notification Tab</h4>
+            <p class="ccTextvorlage">The fields on this tab are described in the following table.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC MS/HTTP Server Setup_4 2016.png" style="visibility: visible;mso-wrap-style: square;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: HTTP-Server Settings, Notification</p>
+        </div>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%; mc-table-style-original: url('../Resources/TableStyles/CC_TableStyleSheet.css');" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 165px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">To E-Mail Address</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the e-mail address of the receiver.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">From E-Mail Address</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the e-mail address of the sender.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">From Display Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the name of the sender to be displayed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">SMTP Host / Port / User Name / Password</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the SMTP configuration of the mail server.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Use SSL</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Enables/Disables SSL.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="Heading3" MadCap:autonum="1.1.5    "><a name="_Toc435720924"></a>Set Up HTTP-Server as Service</h3>
+        <p class="ccTextvorlage">During the installation of the HTTP-Server, a Windows Service named “cc|mobile solution – HTTP-Server Service” is automatically registered. For establishing a connection to Microsoft Dynamics NAV, the Service must be run as a Windows User that is registered to Microsoft Dynamics NAV and has the needed permissions.</p>
+        <p class="ccTextvorlage">The Startup Type should be set to “Automatic”.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.5.1    ">Example – Setup/Cleaning of Additional Server Service</h4>
+        <p>For each additional setup of a Server Service, a copy of the entire HTTP-Server Directory has to be created. In this example, the contents of the HTTP-Server folder is copied to “HTTP-Server”. Each copy contains a unique config file.</p>
+        <p>Additonally, the “C:\CCMS_NAV” folder has to be copied (e.g. “CCMS_NAV2”). According to this, the settings of the folders in the Microsoft Dynamics NAV Mobile Setup and the HTTP-Server Setup have to be changed.</p>
+        <p class="ccTextvorlage">The Windows Command Prompt must be <span class="Underline">run as administrator</span>.</p>
+        <p class="ccTextvorlageNoteheading">Important</p>
+        <p class="ccTextvorlageNotebody">The following commands must contain the space character after the “=”.</p>
+        <p class="ccTextvorlage"><span class="Bold">Register an additional Windows Service:</span>
+        </p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"><span class="sourcecode">sc \\</span><span class="Bold">&lt;Hostname&gt;</span> <span class="sourcecode">create CCMSHTTPServer2 binpath= "%programfiles[(x86)]%\Cosmo Consult AG\cc mobile solution\HTTP-Server 2\CosmoConsult.MobileSolution.Server.HttpServer.exe" DisplayName= "cc mobile solution - HTTP-Server Service 2" start= auto</span></p>
+        <p class="ccTextvorlage"><span class="Bold">Add description:</span>
+        </p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">sc \\<span class="Bold">&lt;Hostname&gt;</span> description CCMSHTTPServer2 " cc|mobile solution - HTTP-Server for Microsoft Dynamics NAV, No. 2"</p>
+        <p class="ccTextvorlage"><span class="Bold">Delete Windows Service:</span>
+        </p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">sc \\<span class="Bold">&lt;Hostname&gt;</span> delete CCMSHTTPServer2</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.6    "><a name="_Toc435720925"></a>HTTP-Server Start (as Windows Service)</h3>
+        <p class="ccTextvorlage">Look for the Windows Service with the name “cc|mobile solution – HTTP-Server Service” in the list of Windows Services. Click <span class="Bold">Start Service</span> on the toolbar, or <span class="Bold">Action &gt; Start</span> on the menu bar, or right-click and select <span class="Bold">Start</span>. </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.7    "><a name="_Toc435720926"></a>HTTP-Server Start (as Windows Forms Application)</h3>
+            <p class="ccTextvorlage">To start the HTTP-Server, click <span class="Bold">Start</span> on the toolbar or <span class="Bold">Server &gt; Start</span> on the menu bar.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC MS/HTTP Server Setup_5 2016.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7">: HTTP-Server Start</p>
+        </div>
+        <p class="ccTextvorlage">On receiving the first requests, the HTTP-Server displays the responses in the console.</p>
+        <p class="ccTextvorlage">The <span class="Bold">Registered Devices</span> tab displays the devices that are connected to or attempted to connect to the HTTP-Server. Depending on the license, the HTTP-Server allows only a certain number of devices. For example, if 11 devices send a request but only 10 devices are allowed, then the 11th device will receive an error message stating that only 10 devices are licensed.</p>
+        <p>The <span class="Bold">Process Dialogues</span> tab displays the available process dialogues and contains information about which process dialogue is in use.</p>
+    </body>
+</html>

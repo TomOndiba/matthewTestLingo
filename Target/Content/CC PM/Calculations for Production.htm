@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Calculations for Production Structures</h3>
+        <p>Calculations can be made for any type of Production Structure. The process of creating the calculation is the same for each; the difference lies in the required information due to item definitions during product development.</p>
+        <p>When creating a Development Structure, often the output item and some components have not been defined (in the idea of conceptual item without an Item Card). Therefore, special RnD fields in the header and lines must be populated to provide the necessary conversion of weights, unit of measure and costing information for calculating recipes.</p>
+        <p>For Laboratory Structures, all components must be defined with actual items, but the output item may not be defined yet. Therefore, the special RnD fields in the header must be populated to provide the necessary conversion of net and recipe weights  for calculating recipes.</p>
+        <p>Items are completely defined in a Manufacturing Structure before it can be certified and, thus, a Calculation created. Therefore, no special fields are necessary for calculating recipes; the weights and costs from the Item Cards of the product (output) are used.</p>
+        <p>Another difference to the previously described Production Structures, is that the values in the special RnD fields, as well as the actual Calculations, are not transferred from Development Structure to Laboratory Structure, and Laboratory Structure to Manufacturing Structure. Each Calculation is specific to each particular Production Structure. </p>
+        <p>This topic first describes the basic Calculation creation process on a Manufacturing Structure, since additional information is not required to create the Calculation. Then the special fields in the Development and Laboratory Structures are described.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.1    "><a name="Calculat"></a>Calculations for Manufacturing Structures</h4>
+            <p class="ccTextvorlage">In the Production Structure, click <span class="Bold">Calculation</span> on the ribbon.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Calculations for Production.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Creating the Calculation on a Production Structure</p>
+        </div>
+        <p class="ccTextvorlage">If no calculation is available for the production structure, no calculations appear in the <span class="Bold">Calculation List</span> page. Click <span class="Bold">New</span> to create a new calculation and then press ENTER or TAB to assign a number. </p>
+        <p class="ccTextvorlage">It is possible to create more than one calculation for one production structure.</p>
+        <p class="ccTextvorlage">If the <span class="Bold">Standard Calc. Schedule No.</span> field on the item used in the production structure is filled in, the standard calculation schedule is used for the new calculation. Otherwise the application shows the calculation schedule list and the user must select a calculation schedule manually.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The values of the production structure are transferred to the calculation header.</p>
+            <p class="ccTextvorlage">The link between the production structure and the calculation is the production structure number. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Calculations for Production_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Calculation created for a Production Structure</p>
+        </div>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The values in the <span class="Bold">Lines</span> FastTab are calculated by running the “Update Calculation” function.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Clicking the <span class="Bold">Value (LCY)</span> field for a calculated entry opens the Calculation Detail Lines, which shows the lines that create the calculated value.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Calculations for Production_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Calculation Detail Lines for Production Structure Calculation</p>
+        </div>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.1    ">Calculation Groups in Production Structure Lines</h5>
+        <p class="ccTextvorlage">Item and capacity calculation groups are transferred from the item and work center or machine center via production structure line to the production order routing lines and production order components. </p>
+        <p class="ccTextvorlage">Since production order calculations use the calculation groups from the production order routing lines and production order components – not directly from the item and work center or machine center – the calculation groups can be changed on the production structure lines.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Calculations for Development Structures</h4>
+            <p>As previously stated, calculations can be made for Development Structures, even if no output item or components have been identified. When the <span class="Bold">Unit of Measure Code</span> field in the header is populated, the <span class="Bold">RnD Net Weight</span> and <span class="Bold">RnD Receipt Weight</span> fields are automatically set to 1 (e.g., 1 Kg of the output item). Setting these fields allows for calculating share quantities, which would not be possible without an item because there would be no weight for quantity calculation.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Calculations for Production_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: RnD Net Weight and RnD Recipe Weight fields set to 1 from populated Unit of Measure Code</p>
+        </div>
+        <p class="ccTextvorlage">The <span class="Bold">RnD Net Weight</span> and <span class="Bold">RnD Recipe Weight</span> fields provide the same purpose as the <span class="Bold">Net Weight</span> and <span class="Bold">Recipe Weight</span> fields on the Item Card (refer to topic <MadCap:xref href="Recipe Weight and Net Weight.htm">“Recipe Weight and Net Weight” on page 1</MadCap:xref> for more information).</p>
+        <p class="ccTextvorlage">With the proper weight information in the header, recipes in the <span class="Bold">Lines</span> FastTab can be calculated. For  recipes without an actual item, the  <span class="Bold">Unit of Measure Code</span>, <span class="Bold">RnD Unit Cost per</span>, and <span class="Bold">Calculation Group Code</span>  fields must be populated because these values typically originate from the Item Card. (<span class="Bold">RnD Unit Cost per</span> is equivalent to the Unit Cost on the Item Card). Once filled, the <span class="Bold">Shares/Share %</span> fields must populated to complete the setup for product development.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Calculations for Production_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Dummy item with required fields for calculation</p>
+        <p class="ccTextvorlage">After certifying the Development Structure, a calculation can be created using the same process as described in topic <MadCap:xref href="#Calculat">“Calculations for Manufacturing Structures” on page 1</MadCap:xref>.</p>
+        <p class="ccTextvorlage">Since no item exists yet, the calculation schedule list opens and the user must select a calculation schedule manually. </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">As before, the values of the Development Structure are transferred to the calculation header, and the link between the Development Structure and the calculation is the production structure number. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Calculations for Production_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: New calculation created from Development Structure</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">If the Calculation Detail Lines are opened from the <span class="Bold">Value (LCY)</span> field, all components, including the dummy item, appear with proper calculation based on the Net Weight and Recipe Weights from the Development Structure header.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Calculations for Production_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Calculation Detail Lines from Development Structure Calculation, with dummy item</p>
+        </div>
+        <div class="ccDIV">
+            <p>
+                <MadCap:annotation MadCap:createDate="2017-12-21T10:03:39.6428513-06:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="Need to update when development has been fixed" MadCap:editor="NDOKS" MadCap:editDate="2017-12-21T10:03:40.3612004-06:00">During the development process, it is possible that the weight changes, e.g., boiling 1 kg of water results in only 800 grams of the output item. Therefore, the weights need to be changed to generate an accurate calculation. In the Development Structure header, changes can be made but note that the RnD Recipe Weight must be higher than the RnD Net Weight.</MadCap:annotation>
+            </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Calculations for Production_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Changed RnD Net Weight field in Development Structure</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Due to the change in the Development Structure, a new calculation should be created. As before, the values of the production structure are transferred to the calculation header. </p>
+            <p class="ccTextvorlage">When the “Update Calculation” function is run, the values are recalculated based on the new weight.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Calculations for Production_8.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 9">: New calculation based on net weight change in Development Structure</p>
+        </div>
+        <p>As previously stated, if the “Create Laboratory Structure” function is run from the Development Structure, the values in the special fields in the header and the calculation is not transferred.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">Calculations for Laboratory Structures</h4>
+            <p>A Laboratory Structure cannot be certified with missing items in the <span class="Bold">Lines</span> FastTab. However, it can be certified without an item in the header. Therefore, the <span class="Bold">RnD Net Weight</span> and <span class="Bold">RnD Recipe Weight</span> fields are available in the header for calculation purposes. The same as in the Development Structure, the fields are automatically set to 1 when the <span class="Bold">Unit of Measure Code</span> field is populated in the header.</p>
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">If the “Create Laboratory Structure” function was used, the <span class="Bold">Unit of Measure Code</span> field must be revalidated to update the <span class="Bold">RnD Net Weight</span> and <span class="Bold">RnD Recipe Weight</span> fields.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Calculations for Production_9.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 10">: RnD Net Weight and RnD Recipe Weight fields set to 1 from populated Unit of Measure Code, valid item added to calculation lines</p>
+        </div>
+        <p class="ccTextvorlage">After certifying the Laboratory Structure, a Calculation can be created using the same process as described in topic <MadCap:xref href="#Calculat">“Calculations for Manufacturing Structures” on page 1</MadCap:xref>.</p>
+        <p class="ccTextvorlage">Since no item exists yet, the calculation schedule list opens and the user must select a calculation schedule manually. </p>
+        <p class="ccTextvorlage">As before, the values of the Laboratory Structure are transferred to the calculation header, and the link between the Laboratory Structure and the calculation is the production structure number. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Calculations for Production_10.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: New calculation created from Laboratory Structure</p>
+        <div class="ccDIV">
+            <p>If the Calculation Detail Lines are opened from the <span class="Bold">Value (LCY)</span> field, all components appear with proper calculation based on the Net Weight and Recipe Weights from the Laboratory Structure header.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Calculations for Production_11.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Calculation Detail Lines from Laboratory Structure Calculation</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">
+                <MadCap:annotation MadCap:createDate="2017-12-21T10:03:03.7506326-06:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="Need to update when development has been fixed" MadCap:editor="NDOKS" MadCap:editDate="2017-12-21T10:03:28.9676887-06:00">Similar to the development process, weight change can occur in the laboratory. Therefore, the weights need to be changed in the Laboratory Structure to generate an accurate calculation. In the header, changes can be made but note that the RnD Recipe Weight must be higher than the RnD Net Weight.</MadCap:annotation>
+            </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Calculations for Production_12.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 13"> : Changed RnD Net Weight field in Laboratory Structure</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Due to the change in the Laboratory Structure, a new calculation should be created. As before, the values of the production structure are transferred to the calculation header. </p>
+            <p class="ccTextvorlage">When the “Update Calculation” function is run, the values are recalculated based on the new weight.</p>
+            <p class="ccTextvorlage">
+                <img src="../Resources/Images/CC PM/Calculations for Production_8.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 14">: New calculation based on net weight change in Laboratory Structure</p>
+        </div>
+        <p>As previously stated, if the “Create Manufacturing Structure” function is run from the Laboratory Structure, the values in the special fields in the header and the calculation is not transferred.</p>
+    </body>
+</html>

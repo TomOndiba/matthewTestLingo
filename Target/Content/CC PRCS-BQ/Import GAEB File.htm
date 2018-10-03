@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    ">Import GAEB File</h2>
+        <p>The process for importing a GAEB File into the GAEB List or a Job is the same except for where to begin the process:</p>
+        <ul>
+            <li class="ccAufzählungblau">GAEB List – on the navigation pane, click <span class="Bold">Departments &gt;</span><span class="CCBausteinInhaltZchn">cc|project</span><span class="Bold">&gt; Construction &gt; GAEB &gt; GAEB List</span> &gt; click <span class="Bold">Import GAEB</span> on the ribbon</li>
+            <li class="ccAufzählungblau">Job  – on the navigation pane, click <span class="Bold">Departments &gt;</span><span class="CCBausteinInhaltZchn">cc|project</span><span class="Bold">&gt; Construction &gt; Processing &gt; Job List</span> &gt; select a job with <span class="Bold">Structure Type</span> = <span class="Italics">Bill of Quantities</span> &gt; click <span class="Bold">Import GAEB</span> on the ribbon</li>
+        </ul>
+        <p class="ccTextvorlageNumberedListNoteHeadingIndent">Note</p>
+        <p class="ccTextvorlageNumberedListNoteBodyIndent">The “Import GAEB” function is only available for jobs with <span class="Bold">Structure Type</span> = <span class="Italics">Bill of Quantities</span>.</p>
+        <p>During the import process, a GAEB record is created in the GAEB List and if importing into the job, created in the BoQ Budget Calculation.</p>
+        <p>When the import completes, a message appears stating that the import was successful and references the GAEB Manager No.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Import GAEB File.png" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: GAEB File import process complete</p>
+        <p>Click <span class="Bold">OK</span> to continue the process. </p>
+        <p>When importing into a Job (not into the GAEB List), if units of measure in the GAEB file do not exist in the <span class="Bold">GAEB Unit of Measure Assign</span> page, a message appears asking to complete the GAEB UoM Allocation. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Import GAEB File_1.png" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: : Message to complete missing GAEB UoM Allocation</p>
+        <p class="ccTextvorlage">Clicking <span class="Bold">Yes</span> opens the <span class="Bold">GAEB Unit of Measure Assign</span> page, which is the same page located in the Construction, Administration menu, except it lists only the units of measure from the GAEB file with the <span class="Bold">Unit of Measure Code</span> field blank for the missing units.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Import GAEB File_2.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: GAEB Unit of Measure Assignment page opened during GAEB file import for missing UOM Allocation; PCS entered in the Unit of Measure Code field for the missing UOM “St”</p>
+        <p>In the <span class="Bold">Unit of Measure Code</span> field, enter the unit that corresponds to the unit in the GAEB file. </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If a unit of measure is not entered during the import process, the <span class="Bold">Unit of Measure Code</span> field will be empty in the related line(s) in the BoQ Budget Calculation.</p>
+        <p class="ccTextvorlage">After clicking <span class="Bold">OK</span> in either the successful import message or the <span class="Bold">GAEB Unit of Measure Assign</span> page, the process continues and then another message appears asking to open the GAEB Card for the imported record.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Import GAEB File_3.png" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Open GAEB Card message</p>
+        <p class="ccTextvorlage">Clicking <span class="Bold">Yes</span> opens the related GAEB Card; clicking <span class="Bold">No</span> completes the import process.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Import GAEB File_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: GAEB Card opened after file import</p>
+        <p class="ccTextvorlage">The <span class="Bold">BoQ Budget Calculation</span> page is described in section <MadCap:xref href="Detailed Calculation.htm">“Detailed Calculation” on page 1</MadCap:xref>.</p>
+    </body>
+</html>

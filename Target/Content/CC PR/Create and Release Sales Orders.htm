@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref439940608"></a><a name="_Toc445394470"></a>Create and Release Sales Orders</h2>
+        <p class="ccTextvorlage">In this section, a Sales Quote is converted into a Sales Order and then the Rolling Calculation is reviewed.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc445394471"></a>Exercise – Convert a Sales Quote into a Sales Order</h3>
+        <p class="ccTextvorlage">When a quote has been accepted, it can be converted into a sales order. Prior to converting the Sales Quote, additional updates can be performed directly on the Sales Quote.</p>
+        <p class="ccTextvorlage">To create a Sales Order from a Quote, follow these steps:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="CCBausteinInhaltZchn">cc|project</span> menu, click <span class="Bold">Jobs &gt; Jobs</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate and open the job for which the document is to be viewed.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Budget Calculation</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the Sales Quote line to be converted into a Sales Order.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Sales Quote</span>.</li>
+            <li class="ccTextvorlageNumberedList">Ensure the information is correct and/or update with any changes.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Create and Release Sales Orders.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Quantity updated  on Training position in sales quote line prior to making order</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Make Order</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to convert the quote into an order.<br />During this process, the following message appears if <span class="CCBausteinInhaltZchn">cc|project</span> detects any differences between the quote and linked Job Budget Calculation lines. </li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Create and Release Sales Orders_1.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Message to modify job lines</p>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to modify the job lines.</li>
+            <li class="ccTextvorlageNumberedList">Depending on setup, a message appears asking to change the job status to Order; click <span class="Bold">Yes</span> or <span class="Bold">No</span> depending on business processes.</li>
+            <li class="ccTextvorlageNumberedList">A message appears with the converted order number; click <span class="Bold">No</span> to the  message asking to open the new order. <br />The <span class="Bold">Sales Quote</span> page closes and returns to the Job Budget Calculation.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Create and Release Sales Orders_2.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="_Ref382338345"></a>: Updated job line on the Job Budget Calculation view from the sales order</p>
+        <p class="ccTextvorlage">As <MadCap:xref href="#_Ref382338345" class="Figure">Fig. 3</MadCap:xref> illustrates, two Sales Orders were created from Sales Quotes (one before the exercise and one during the exercise). The first sales quote was not changed, but the second was updated in the Job Budget Calculation, as seen in the <span class="Bold">Quantity</span> column.</p>
+        <p class="ccTextvorlage">Both Sales Orders must be released to control confirmed sales order values in the Job Rolling Calculation view. Specific entries with the released sales sums will be created using the release functionality. These entries are saved with the sales order date. The details of the released sales orders will be used for the WIP calculation; they can be limited by date. The specific entries are automatically deleted when the sales order is reopened.</p>
+        <p class="ccTextvorlage">When deleting the Sales Order, the user has the option to decide if the sums should remain in the system.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc445394472"></a>Rolling Calculation after Confirmed Sales Orders</h3>
+        <p class="ccTextvorlage">After Sales Orders are released, the confirmed values are displayed in the <span class="Bold">Total Price Released (LCY)</span> field on the Job Rolling Calculation view.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Create and Release Sales Orders_3.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Job Rolling Calculation for Sales Orders on the Job Budget Calculation view</p>
+    </body>
+</html>

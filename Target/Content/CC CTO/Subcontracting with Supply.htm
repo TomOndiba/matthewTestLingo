@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc434568057"></a>Subcontracting with Supply of Material</h2>
+        <p class="ccTextvorlage">In contrast to standard Microsoft Dynamics NAV, <span class="CCBausteinInhaltZchn">cc|configure to order</span> offers the option of mapping subcontracting with supply of material. In this case, the items provided are predefined in the Master BOM. However, these settings can be changed during order handling.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Subcontracting with Supply.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref310441067"></a>: Master BOM with Supply (Enclosure) of Material</p>
+        <p class="ccTextvorlage">To map the supply of material accurately, at least two Location Codes should be defined:</p>
+        <ul>
+            <li class="ccAufzählungblau">One Location Code from which material is provided.</li>
+            <li class="ccAufzählungblau">One Location Code to which the material to be provided is transferred. This is generally the storage location of the subcontractor.</li>
+        </ul>
+        <p class="ccTextvorlage">If several subcontractors are being used, define a separate Location for each subcontractor.</p>
+        <p class="ccTextvorlage">The transfer can occur from either the:</p>
+        <ul>
+            <li class="ccAufzählungblau">Item Reclassification Journal</li>
+            <li class="ccAufzählungblau">Transfer Order</li>
+        </ul>
+        <p class="ccTextvorlage">The manner in which the transfers are mapped is defined in the <span class="Bold">Configure to Order Setup</span> page (refer to topic <MadCap:xref href="Manufacturing FastTab.htm#_Ref402529330">“Manufacturing FastTab” on page 1</MadCap:xref>).</p>
+        <p class="ccTextvorlage">The subcontracting step is performed by storing a vendor number in the <span class="Bold">Subcontractor No.</span> field on the Work Center Card as in standard Microsoft Dynamics NAV. The subcontractor’s storage location code to where the material provided is to be transferred is also entered there.</p>
+        <p class="ccTextvorlage">The connection between the subcontracting step and the material provided is established within the master BOM via a Routing Link Code (refer to <MadCap:xref href="#_Ref310441067" class="Figure">Fig. 1</MadCap:xref>).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Subcontracting with Supply_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Subcontractor Work Center Group</p>
+        <p class="ccTextvorlage">The system recognizes the subcontracting steps from the Subcontracting Worksheet and generates the provision of material either from inventory Reclassification Journals or Transfer Orders.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Subcontracting with Supply_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Subcontracting Worksheet</p>
+        <p class="ccTextvorlage">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Planned Supplies</span> to see if and which components will be enclosed to the subcontractor.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Subcontracting with Supply_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Component to be enclosed to the subcontractor</p>
+        <p class="ccTextvorlage">Purchase orders are generated from the subcontracting worksheet as in standard Microsoft Dynamics NAV. On the purchase order, click <span class="Bold">Navigate &gt; Enclosure</span> to open either the Item Reclassification Journal or the Transfer Order (or a list of transfer orders) and the item transfer can be posted. </p>
+        <p>When the receipt is posted for the subcontracting purchase order, ledger entries are automatically posted for the corresponding series of operations on the production orders, and if the Flushing Method on the Prod. Order Components is set to Backward, the transferred material is automatically posted as consumption as well. This behavior corresponds to standard Microsoft Dynamics NAV.</p>
+    </body>
+</html>

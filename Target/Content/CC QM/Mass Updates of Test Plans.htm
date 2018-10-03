@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css" rel="stylesheet" MadCap:stylesheetType="table" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    " xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Mass Updates of Test Plans</h3>
+        <p>Changes made to Test Plan Properties and Test Plan Property Sets can be updated at once in all related Test Plans where changed Test Plan Properties/Test Plan Property Sets are assigned. </p>
+        <p>When this function is run, the current, valid Test Plan may be marked with a Valid to date and a new Test Plan version may be created with a Valid from date. The new Test Plan version is a copy of the original Test Plan version. It will include all  information for all other Property Sets/Properties and the updated information for the current Property Set or Property.</p>
+        <p>In the <span class="Bold">Test Plan Properties</span> and <span class="Bold">Test Plan Property Set</span> pages, the “Update Test Plans” action opens a request page with several options.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Mass Updates.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">: Update Test Plan Property and Update Test Plan Property Set request pages</p>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Validity</span> FastTab are described in the following table.</p>
+        <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 102px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Active Version “Valid To”</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date to which the current Test Plan Version will be valid. </p>
+                        <p class="ccTabellenText">Typically this will be the day before the <span class="Bold">New Version “Valid from”</span> date.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">New Version “Valid from”</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date from which the new Test Plan Version will be valid. </p>
+                        <p class="ccTabellenText">Typically this will be the day after the <span class="Bold">Active Version “Valid to”</span> date.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Use Record Selection</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens a page that lists all test plan properties and test plan property sets that can be selected for updating. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Copy From Certified Test Plans</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">If selected,  the latest, valid certified Test Plans will be included in the update process. Otherwise, the latest version will be selected and status together with valid date period is not relevant.</p>
+                        <p class="ccTabellenText">This setting defaults from the Quality Management Setup but can be changed in the request page.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    " xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Updating Test Plans from Test Properties</h4>
+        <p>Although most settings in Test Properties are typically defined in the Test Property Sets, there are instances where a standard criteria is valid for all tests. If one of these criterion is changed, the “Update Test Plan” function will handle this change in all related Test Plan Property Sets  in the Test Plans. </p>
+        <p class="ccTextvorlageNoteheading">Note </p>
+        <p class="ccTextvorlageNotebody">The actual Test Plan Property Sets are not changed with this function.</p>
+        <p class="BoldItalics12pt">Example</p>
+        <p>Test Property TP0000109 has been set up with an expected value and upper/lower limits. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Mass Updates_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">: Expected value and Upper/Lower limits in Test Property Card</p>
+        <p>Due to changes in the lab, the Upper Limit has been raised to 1.10. The change is made to the <span class="Bold">Upper Limit</span> field and then the “Update Test Plans” function is run.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Mass Updates_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">: Changed Upper Limit and preparing to run Update Test Plans function</p>
+        <p class="ccTextvorlage">Before completely running the update function, the <span class="Bold">Use Record Selection</span> and <span class="Bold">Copy From Certified Test Plans</span> check boxes are selected to view the certified test plans that will be affected by this change.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Mass Updates_3.png" MadCap:mediastyle="@media print { max-width: 4in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">: Preparing to view the Test Plan Properties record selection page</p>
+        <p class="ccTextvorlage">This Test Property appears in one Test Property Set (TPS00015) that is used in one version of Test Plan (TP00014). Also note that the Upper Limit is still set to 1.09 for this test property/plan.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Mass Updates_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">: Reviewing the entry in the Test Plan Properties record selection page</p>
+        <p class="ccTextvorlage">Since no validity dates were added in the <span class="Bold">Update Test Plan Property</span> request page, the page is closed by clicking <span class="Bold">Cancel</span>.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If validity dates were added in the request page prior to using the record selection page, the update process can be run by clicking <span class="Bold">OK</span>.</p>
+        <p class="ccTextvorlage">The “Update Test Plan” function is run again, this time dates are added in the request page and the process runs without opening the record selection page. The <span class="Bold">Copy From Certified Test Plans</span> check box is selected to ensure that currently certified Test Plans are included.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Mass Updates_5.png" MadCap:mediastyle="@media print { max-width: 4.5in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">: Preparing to run the Update Test Plans function</p>
+        <p class="ccTextvorlage">The update process runs by clicking <span class="Bold">OK</span>.  A message appears stating the number of records that were updated and the record selection page opens again to show the records that were updated.</p>
+        <p class="ccTextvorlage">The Test Plans are reviewed: the original test plan (version 1) has a <span class="Bold">Valid to</span> date of 1/31/2019 and the new test plan (version 2) has a <span class="Bold">Valid from</span> date of 2/1/2019. The new Test Plan is set to <span class="Bold">Status</span> = <span class="Italics">New</span> so that it can be checked and set to certified by a valid user.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Mass Updates_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">: Original and new versions of test plan TP00014</p>
+        <p>In the new Test Plan, the changed Test Property is confirmed in the Test Property Set.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Mass Updates_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">: Updated Test Property in Test Property Set in new version of test plan TP00014</p>
+        <p class="ccTextvorlage">The Test Plan is certified once any further review or changes are made.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    " xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Updating Test Plans from Test Property Sets</h4>
+        <p>In most situations, Test Plans should be updated  from the Test Property Set because of the specifically defined properties. Making changes to settings in Test Property Sets to be updated in Test Plans is the same process as described for Test Properties.</p>
+        <p class="BoldItalics12pt">Example</p>
+        <p>Test Property Set TPS00001 has been set up with three Test Properties with expected values. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Mass Updates_8.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">: Test Properties with Expected Values in Test Property Set Card</p>
+        <p>Due to changes in the lab, the Expected Value of Test Property TP000041 has been changed from BLUE to GREEN. The change is made to the <span class="Bold">Expected Value</span> field and then the “Update Test Plans” function is run.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Mass Updates_9.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">: Changed Expected Value and preparing to run Update Test Plans function</p>
+        <p class="ccTextvorlage">Since the update function can be run after using the record selection page, validity date are added to the request page, along with the selected <span class="Bold">Use Record Selection</span> and <span class="Bold">Copy From Certified Test Plans</span> check boxes to view the certified test plans that will be affected by this change.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Mass Updates_10.png" MadCap:mediastyle="@media print { max-width: 4in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">: Preparing to view the Test Plan Properties record selection page</p>
+        <p class="ccTextvorlage">This Test Property Set appears in two Test Plans (TP00006 and TP00021). </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Mass Updates_11.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">: Reviewing the entries in the Test Plan Property Set record selection page</p>
+        <p class="ccTextvorlage">Since changes are ready to be made, <span class="Underline">both lines are selected</span>, the page is closed by clicking <span class="Bold">OK</span> and the update process runs. A message appears stating the number of records that were updated.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">When updating multiple Test Plans, each line to be included in the update must be selected.</p>
+        <p class="ccTextvorlage">The Test Plans are reviewed: the original test plans (version 1) have <span class="Bold">Valid to</span> dates of 2/27/2019 and the new test plans (version 2) have <span class="Bold">Valid from</span> dates of 2/28/2019. The new Test Plans are set to <span class="Bold">Status</span> = <span class="Italics">New</span> so that each can be checked and set to certified by a valid user.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Mass Updates_12.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">: Original and new versions of test plans TP00006 and TP00014</p>
+        <div class="ccDIV">
+            <p>In the new Test Plans, the changed Test Property is confirmed in the Test Property Set.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Mass Updates_13.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 14" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">:Updated Test Property  Sets in new version of test plans TP00006 and TP00021</p>
+        </div>
+        <p class="ccTextvorlage">The Test Plans are certified once any further reviews or changes are made.</p>
+    </body>
+</html>

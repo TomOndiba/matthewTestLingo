@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="876" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="Heading1" MadCap:autonum="1   "><a name="_Toc435107495"></a>
+            <MadCap:annotation MadCap:createDate="2018-03-15T10:11:47.8797734-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="2016 SP5:\r\n\r\nPreviously when the source of a Work Order was changed, a new one was created if a related Work Order already existed. Now the existing Work Order will be updated instead of creating a new one." MadCap:editor="NTadajewski0100" MadCap:editDate="2018-03-15T10:11:53.9925471-05:00">FDC Work Orders</MadCap:annotation>
+        </h1>
+        <p class="ccTextvorlage">FDC Work Orders – like FDC Resources – are essential for the use of <span class="CCBausteinInhaltZchn">cc|factory data capture</span>. The list of FDC Work Orders is accessible from the navigation pane by clicking <span class="Bold">Departments &gt; <span class="COSMOCONSULTZchn">COSMO CONSULT</span> &gt; cc|bde (FDC) &gt; Planning &amp; Execution</span> or <span class="Bold">Settings</span>.</p>
+        <p class="ccTextvorlage">FDC Work Orders with source (refer to topic <MadCap:xref href="Order Source.htm#_Ref427921838" class="RelLinkPageNumber">"Order Source" on page 1</MadCap:xref>) connect <span class="CCBausteinInhaltZchn">cc|factory data capture</span> with standard Microsoft Dynamics NAV and can consist of a job, or of a production, service or assembly order. Additionally, when not linked to a source, FDC Work Orders can be processed only in <span class="CCBausteinInhaltZchn">cc|factory data capture</span>. Every FDC Work Order contains one or more FDC Work Order lines, to which postings can be applied.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/FDC Work Orders.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 479px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: FDC Work Order</p>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">FDC Work Order</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 120px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTextvorlage" style="font-weight: bold;color: #FFFFFF;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTextvorlage" style="font-weight: bold;color: #FFFFFF;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier of the work order, can be set manually or automatically.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Brief description of the work order; automatically filled when selecting a source.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the current status of the FDC Work Order. The options are: </p>
+                        <ul>
+                            <li class="ccAufzählung">Open – Only changes can be applied to FDC Work Orders.</li>
+                            <li class="ccAufzählung">Released – Required for posting to FDC Work Orders.</li>
+                            <li class="ccAufzählung">Finished – Completed, non-editable FDC Work Orders; available in the navigation pane by clicking <span class="Bold"><span class="COSMOCONSULTZchn">COSMO CONSULT</span> &gt; cc|bde (FDC) &gt; History &gt; Lists &gt; Finished FDC Work Orders</span>.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">FDC Work Order Lines Finished</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if all FDC Work Order lines are finished.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Export Blocked</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">When active, postings of this work order must not be exported.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the type of the order. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">No Source – only used in <span class="CCBausteinInhaltZchn">cc|factory data capture</span></li>
+                            <li class="ccAufzählung">With Source – connected to an order in standard Microsoft Dynamics NAV</li>
+                            <li class="ccAufzählung">Order Bundle (refer to topic <MadCap:xref href="Order Bundles.htm#_Ref427921852" class="RelLinkPageNumber">"Order Bundles" on page 1</MadCap:xref>)</li>
+                        </ul>
+                        <p class="ccTabellenText">This field is set automatically.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Order Bundle Time Distribution</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates how the captured time should be distributed to the work order lines. The options are: Uniform, Expected Time / Quantity, Actual Quantity and Custom Distribution / Factor Calculation (refer to topic <MadCap:xref href="Order Bundles.htm#_Ref427921864" class="RelLinkPageNumber">"Order Bundles" on page 1</MadCap:xref>). The default distribution is set in the FDC Setup.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Order Bundle Qty. Distribution</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates how the captured quantity should be distributed to the work order lines. The options are Uniform, Expected Time / Quantity, Actual Time and Custom Distribution / Factor Calculation (refer to topic <MadCap:xref href="Order Bundles.htm#_Ref427921871" class="RelLinkPageNumber">"Order Bundles" on page 1</MadCap:xref>). The default distribution is set in the FDC Setup.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Order Bundle FDC Res. Filter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used for filtering FDC Resources when running the “Assemble Routing Lines” function.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Total Actual Gross Time (h)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the sum of the gross time of all posted entries of the order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Total Actual Net Time (h)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the sum of the net time of all posted entries of the order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Distributed</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if the “Distribute” function was run on the last posting of the order bundle.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Distribute Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the last date when the distribution was used.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Distribute Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the last time when the distribution was used.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Distributed by User</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the User ID who last used the distribution.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Distribute Error</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Displays the error message if an error occurred during distribution.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">The functions in the <span class="Bold">Line</span> tab on the <span class="Bold">Lines</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Action</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">FDC Entries / FDC Input Entries</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays a list of corresponding FDC (Input) Entries of the routing line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Posting Permission</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used to set the posting permissions of a routing line. If not set, everyone is permitted to post for this routing line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">FDC Dimensions</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used to assign FDC Dimensions to the routing line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Permitted FDC Dimension Values</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used to assign Permitted FDC Dimension Values to the routing line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Source Document</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the source document of the FDC Work Order (e.g., the corresponding production order).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Source Document Line</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the source document line of the FDC Work Order Line (e.g., the corresponding Prod. Order Routing).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Navigate</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Displays an overview of entries of the FDC Work Order, FDC Work Order Line and the source document.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">FDC Work Order Lines are shown partially in different styles:</p>
+        <ul>
+            <li class="ccAufzählungblau">Bold – Order bundle (Line with Line No. 0)</li>
+            <li class="ccAufzählungblau">Grey – Redirecting is active</li>
+            <li class="ccAufzählungblau">Orange – An released order bundle exists, which is linked to this line</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="680" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">Example – Implement an Interface</h2>
+        <p>The following example demonstrates how to implement an interface for receiving data via a SOAP web service (with an XML file), and then the interface will process this data and write it to a comma separated text file.</p>
+        <p><span class="Bold">Scenario</span>: You have been asked to create the code base in Microsoft Dynamics NAV to work with the general interface provided by <span class="COSMOCONSULTZchn">COSMO CONSULT</span>. The transactional data structure that needs to be set is illustrated in <MadCap:xref href="#TransDS" class="Figure">Fig. 1</MadCap:xref>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC IF/Example Implement an Interface.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="TransDS"></a>: Transaction data structure</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="Data"></a>Data Format</h3>
+            <p>This section describes first how to implement a web service expecting this data structure and then write a codeunit processing the data.</p>
+            <p>As illustrated in <MadCap:xref href="#TransDS" class="Figure">Fig. 1</MadCap:xref>, there are one or more transaction records below the mandatory root node. Below each transaction record are one or more records and these contain one or more fields. This structure can be implemented with the help of an XMLport.</p>
+            <p><span class="Bold">Scenario</span>: You create an XMLport to create the structure for the interface transactions, using the information shown in <MadCap:xref href="#:2" class="Figure">Fig. 2</MadCap:xref>. You then add the global variables and set the necessary triggers.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC IF/Example Implement an Interface_1.PNG" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name=":2"></a>: Sample XMLport</p>
+        </div>
+        <p class="ccTextvorlage">After creating the XMLport, declare a new global variable “FieldSequence”, increase the “FieldSequence” counter for each imported field before inserting the record, assign the value to the Field Sequence field and reset the counter on the on “OnAfterInitRecord” trigger of the record.</p>
+        <div class="ccDIV">
+            <p class="BoldItalics12pt">Globals:</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC IF/Example Implement an Interface_2.PNG" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: C/AL Globals for the XMLport</p>
+        </div>
+        <div class="ccDIV">
+            <p class="BoldItalics12pt">OnAfterInitRecord and OnBeforeInsertRecord Triggers:</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC IF/Example Implement an Interface_3.PNG" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Sample XMLport OnAfterInitRecord and OnBeforeInsertRecord Triggers</p>
+        </div>
+        <p>The setup of the XMLport successfully implemented the data structure for the interface. </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="Data2"></a>Data Transport</h3>
+            <p>This section describes how to implement the data transportation. For doing this, the  XMLport created in section <MadCap:xref href="#Data" class="RelLinkPageNumber">"Data Format" on page 1</MadCap:xref> will be extended to work on temporary records and a codeunit will be created for the web service.</p>
+            <p><span class="Bold">Scenario</span>: First, you open the XMLport and add the temporary records and then you create a new codeunit for the web service.</p>
+            <p class="ccDemoStepHeading">Extend XMLport</p>
+            <p>In the XMLport, set the Temporary properties of all table elements to YES and add a new function “GetData” with the following three var parameters as temporary records:</p>
+            <ul>
+                <li class="ccAufzählung">Transaction</li>
+                <li class="ccAufzählung">Interface Record</li>
+                <li class="ccAufzählung">Interface Field</li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC IF/Example Implement an Interface_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Sample XMLport GetData Locals</p>
+        </div>
+        <p>In the next step, assign the  XMLport imported records to the temporary records.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC IF/Example Implement an Interface_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Sample XMLport GetData code</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create Processing Codeunit</p>
+            <p>In this step, the processing codeunit will be implemented and published as a web service.</p>
+            <p>First, create a new codeunit and save it with the name “Interface Sample”. In the codeunit, create a new public function “TransferData”. Next, use the code shown in <MadCap:xref href="#:3" class="Figure">Fig. 7</MadCap:xref> to define the currently implemented XMLport as var parameter for this function. As a return value, the function will return the Transaction ID as integer.</p>
+            <div class="ccDIV">
+                <p class="ccBildabstand">
+                    <img src="../Resources/Images/CC IF/Example Implement an Interface_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+                </p>
+                <p class="ccBildFigure" MadCap:autonum="Fig. 7"><a name=":3"></a>: Sample Codeunit</p>
+            </div>
+        </div>
+        <p class="ccDemoStepHeading">Set up Web Service in Microsoft Dynamics NAV</p>
+        <p>For registering the codeunit as web service, open the <span class="Bold">Web Services</span> page in Microsoft Dynamics NAV and create a new line with the codeunit.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC IF/Example Implement an Interface_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Sample Codeunit published as Web Service</p>
+        <p>Now an external application can write into the interface or request data.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="Processi"></a>Processing</h3>
+            <p>In the next step, a codeunit for processing the data is implemented and set up is completed in Microsoft Dynamics NAV for the file to be properly generated.</p>
+            <p><span class="Bold">Scenario</span>: The web shop system needs all items from Microsoft Dynamics NAV. You need to create the codeunit that will be the processing codeunit for the interface function.</p>
+            <p class="ccDemoStepHeading">Create Codeunit to Get Items</p>
+            <p>Create a new codeunit and save it with the name “Get Items”. In the new codeunit, open the properties and add the  “Interface Record” table in the “TableNo” property.</p>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC IF/Example Implement an Interface_8.PNG" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Sample Codeunit – Properties</p>
+        <p>Now, define a new function “GetItems” and then define the “Interface Record” table as a new parameter.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC IF/Example Implement an Interface_9.PNG" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Sample Codeunit – Function Parameters</p>
+        <div class="ccDIV">
+            <p>Next, create the new local variables as shown in <MadCap:xref href="#SC Fun Var" class="Figure">Fig. 11</MadCap:xref>.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC IF/Example Implement an Interface_10.png" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 11"><a name="SC Fun Var"></a>: Sample Codeunit – Function Variables</p>
+        </div>
+        <p class="ccDemoStepHeading">Enter Code to Implement Functionality</p>
+        <p>In this function, the first step is to fill the interface buffer with the requested item data. Then the interface needs to write the data into the database and attach the currently written data to the transaction entry created by the current data request.</p>
+        <p>First, using the “WITH” command, tell the codeunit to use the Item table as default scope and loop over all items in the Item table.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC IF/Example Implement an Interface_11.PNG" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Sample Codeunit – Function Scope and Loop</p>
+        <p>Next, clear the Interface Buffer, create a new record within the buffer and add the <span class="Bold">No.</span> and <span class="Bold">Description</span> fields from the item.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC IF/Example Implement an Interface_12.PNG" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Sample Codeunit – Function Fill Buffer</p>
+        <p>Now, write the newly created content of the buffer into the database. This automatically creates a new transaction entry.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC IF/Example Implement an Interface_13.PNG" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Sample Codeunit – Function Transfer Database</p>
+        <div class="ccDIV">
+            <p>Finally, add an endpoint/filename to the transaction.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC IF/Example Implement an Interface_14.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Sample Codeunit – Write to File</p>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.3.1    ">Interface Setup in Microsoft Dynamics NAV</h4>
+        <p>Before the external component can send data via the web service, a project and project function must be set up in Microsoft Dynamics NAV. </p>
+        <p><span class="Bold">Scenario</span>: You create a new project and related project function in Microsoft Dynamics NAV to set up the interface.</p>
+        <p>Create a new project named “Interface Sample”. Click <span class="Bold">Functions</span> and create a new project function line as follows:</p>
+        <ul>
+            <li class="ccAufzählung">Code: Get Items</li>
+            <li class="ccAufzählung">Processing Codeunit: [Number of the “GetItems” codeunit created previously]</li>
+            <li class="ccAufzählung">Data Format Code: TAB</li>
+            <li class="ccAufzählung">Endpoint / Filename: Item.txt</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC IF/Example Implement an Interface_15.PNG" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Project and Project Function setup in Microsoft Dynamics NAV</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.3.2    ">Interface Processing Test</h4>
+            <p><span class="Bold">Scenario</span>: To test the interface implementation, you trigger the web service to create the file of all items in Microsoft Dynamics NAV.</p>
+            <p>When the web service application requests all items from Microsoft Dynamics NAV, the system will automatically write the data to the file "C:\Temp\Item.txt".</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC IF/Example Implement an Interface_16.PNG" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Text file created via the web service</p>
+        </div>
+    </body>
+</html>

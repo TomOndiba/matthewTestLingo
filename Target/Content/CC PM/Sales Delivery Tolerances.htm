@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256747"></a>Sales Delivery Tolerances in Warehouse and Inventory Picks</h3>
+        <p class="ccTextvorlage">Using sales delivery tolerances with Picks is like Sales Orders and Warehouse Shipments except for the following behaviors:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">The confirmation dialog for quantity changes is always executed, regardless if the <span class="Bold">Change Quantity</span> field is set to <span class="Italics">Question</span> in the <span class="Bold">Delivery Tolerances</span> page. This is necessary to perform the split line function.</li>
+            <li class="ccTextvorlageNumberedList">If a split pick line is deleted, the original quantity is restored on the first remaining pick line.</li>
+        </ol>
+        <p class="ccTextvorlage">The <span class="Bold">Quantity to Handle</span> field on Pick lines can be increased or reduced but not exceed the tolerance. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Sales Delivery Tolerances.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Message to increase Qty. to Handle to 105 from shipment quantity of 100</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The change on the Pick line is transferred to the Shipment line and originating Sales line.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Sales Delivery Tolerances_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Quantities increased on Sales and Shipment lines based on Pick line tolerance change</p>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Pick Line Split Tolerance Check</h4>
+        <p class="ccTextvorlage">If a split Pick line is deleted, the original quantity is restored on the first remaining Pick line. </p>
+        <p class="ccTextvorlage">For example, a Pick line with a quantity of 100 is split into two equal quantity lines of 50. If the second line is increased to 60, a tolerance message is generated to increase the quantity. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Sales Delivery Tolerances_2.png" style="visibility: visible;mso-wrap-style: square;width: 575px;height: 331px;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Message to increase Qty. to Handle to 60 from split pick line of 50</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">If the <span class="Bold">Qty. to Handle</span> field had been set to 65, an error message would have been generated stating the exceeded quantity and the prevented change.</p>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Sales Delivery Tolerances_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Quantity increased within the tolerance on second Pick line</p>
+        <p class="ccTextvorlage">The change on the Pick line is transferred to the Shipment line and originating Sales line. </p>
+        <p class="ccTextvorlage">When one of the split Pick lines is deleted, the original quantity of 100 is set on the remaining Pick line and the <span class="Bold">Qty. to Handle</span> field is unchanged.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Sales Delivery Tolerances_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Original quantity restored on remaining Pick line (second line with Qty. to Handle = 60)</p>
+    </body>
+</html>

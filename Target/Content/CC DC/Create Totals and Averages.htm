@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="745" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434332541"></a>Create Totals and Averages</h2>
+        <p class="ccTextvorlage">In this example, the total quantity and the average price per piece will be displayed as part of the Total Section of the Sales Quote layout.</p>
+        <p class="ccTextvorlage">Calculations such as Totaling and Averages are done using Variables and the Formula functionality. Variables will be created for the Line Section that summarize the Quantity field for the lines, which is done using two Variables:</p>
+        <ul>
+            <li class="ccAufzählungblau">one that gets assigned the Quantity for the current line (“LineQuantity”).</li>
+            <li class="ccAufzählungblau">one  with Type Formula that adds itself with the quantity of the line (“TotalQuantity”).         The Formula function is similar to the standard formula functionality in Account Schedules.</li>
+        </ul>
+        <p class="ccDemoStepHeading">Add Variables to the Lines Section</p>
+        <p class="ccTextvorlage">Follow these steps to add quantity variables to the Sales Quote lines:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Open the SQ-01, Sales Quote, Document Layout.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Under Development</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the “Lines” section in the <span class="Bold">Sections</span> FastTab and then click <span class="Bold">Line &gt; Variables</span> to open the <span class="Bold">Document Layout Variables</span> page. </li>
+            <li class="ccTextvorlageNumberedList">In the line below “Description2”, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Variable</span> = LineQuantity</li><li class="ccTextvorlageNumberedList"><span class="Bold">Type</span> = Value</li><li class="ccTextvorlageNumberedList"><span class="Bold">Table No. </span>= 37</li><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 15</li><li class="ccTextvorlageNumberedList"><span class="Bold">Format String </span>= &lt;Precision,2:2&gt;&lt;Standard Format,0&gt;</li></ol></li>
+            <li class="ccTextvorlageNumberedList">In the next line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Variable</span> = TotalQuantity</li><li class="ccTextvorlageNumberedList"><span class="Bold">Type</span> = Formula</li><li class="ccTextvorlageNumberedList"><span class="Bold">Formula </span>= [TotalQuantity]+[LineQuantity]</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Create Totals and Averages.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 244px;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Variables for quantities for the sales quote lines</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout Variables</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Add Variables to Calculate Average</p>
+        <p class="ccTextvorlage">In the next step, a Variable will be created to calculate the average in the Total Section. This “Average” variable will use the formula: [TotalExclVAT]/[TotalQuantity]. Criterion will also be specified to only calculate the Average if the “TotalQuantity” is not zero.</p>
+        <p class="ccTextvorlage">Follow these steps to add variables and criterion to calculate average:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Select the “Total Section” section in the <span class="Bold">Sections</span> FastTab and then click <span class="Bold">Line &gt; Variables</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the line below the second “CurrencyCode”, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Variable</span> = Average</li><li class="ccTextvorlageNumberedList"><span class="Bold">Type</span> = Formula</li><li class="ccTextvorlageNumberedList"><span class="Bold">Formula </span>= [TotalExclVAT]/[TotalQuantity]</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Create Totals and Averages_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Variable for quantity average for the sales quote totals</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">With the last line for <span class="Bold">Variable</span> = <span class="Italics">Average</span> selected, click <span class="Bold">Criteria</span> on the ribbon.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type Only if [TotalQuantity] not 0.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Table No.</span> field, enter 12032010.</li>
+            <li class="ccTextvorlageNumberedList">Ensure that the <span class="Bold">Validation Type</span> field is set to <span class="Italics">Exist</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Create Totals and Averages_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Criterion to only calculate the Average if the TotalQuantity is not zero</p>
+        <ol start="7">
+            <li>Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout Criteria</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout Variables</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Specify Fields</p>
+        <p class="ccTextvorlage">The last step is to add the Document Layout Fields to the Total Section, which includes a separator using underscore characters, text, variables, rounding precisions and text formatting.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Due to regional settings, some of the positions (indentation/field width) may need to be adjusted.</p>
+        <p class="ccTextvorlage">Follow these steps to specify the fields to print the variable:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">With the Total Section line selected, click <span class="Bold">Line &gt; Fields</span> on the <span class="Bold">Sections</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">In the line below “Total Text Value”, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Line</span> = 10</li><li class="ccTextvorlageNumberedList"><span class="Bold">Indentation (pt) </span>= 305</li><li><span class="Bold">Field Width (pt) </span>= 250</li><li><span class="Bold">Description</span> = (underscore) ___________________________________________</li><li><span class="Bold">Type</span> = Text</li><li><span class="Bold">Text</span> = (underscore) ____________________________________________________</li></ol></li>
+            <li class="ccTextvorlageNumberedList">For the purpose of this example, use the data in the following screen shot to create the remaining field entries for Lines 11-12.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Create Totals and Averages_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Fields added to the section</p>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Run Report</span> to view the report changes.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Show Request Page</span> check box and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the request page, click <span class="Bold">Preview</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Create Totals and Averages_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Variable added to the report</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout Fields</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Certified</span> to make it available to the users.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout</span> page.</li>
+        </ol>
+    </body>
+</html>

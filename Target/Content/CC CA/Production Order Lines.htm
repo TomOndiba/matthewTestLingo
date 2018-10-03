@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434834927"></a>Production Order Lines</h2>
+        <p>As opposed to sales documents, different calculation types can be created for production order lines:</p>
+        <ul>
+            <li class="ccAufzählungblau">Expected cost calculation for:<ul><li>Simulated production order lines</li><li>Planned production order lines</li><li>Firm Planned production order lines</li><li>Released production order lines</li><li>Finished production order lines</li></ul></li>
+        </ul>
+        <p class="ccAufzahlungblaunobullet">Expected cost calculations consider the production order BOM and routing.</p>
+        <ul>
+            <li class="ccAufzählungblau">Actual cost calculation for:<ul><li>Released production order lines</li><li>Finished production order lines</li></ul></li>
+        </ul>
+        <p class="ccAufzahlungblaunobullet">Actual cost calculations consider all posted values for a production order line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Production Order Lines.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Calculation functions accessed on a Released Production Order line</p>
+        <p>If no calculation is available for the production order line, no calculations appear in the <span class="Bold">Calculation List</span> page. Click <span class="Bold">New</span> to create a new calculation and then press ENTER or TAB to assign a number. It is possible to create more than one calculation for one production order line.</p>
+        <p>If the <span class="Bold">Standard Calc. Schedule No.</span> field on the item used in the production order line is filled in, the standard calculation schedule is used for the new calculation. Otherwise the application shows the calculation schedule list and the user must select a calculation schedule manually.</p>
+        <p>The values of the production order line are transferred to the calculation header; note that the <span class="Bold">Replenishment System</span> field is set to <span class="Italics">Prod. </span><span class="Italics">Order</span> because the item has a Production BOM. The link between the production order line and the calculation is shown on the <span class="Bold">Document</span> FastTab in the Calculation Card.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Production Order Lines_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Expected calculation created for a Released Production Order line</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434834928"></a>Calculation Groups in BOM and Routing</h3>
+            <p>Item and capacity calculation groups are transferred from the item and work center or machine center via routing lines and production BOM lines to the production order routing lines and production order components. </p>
+            <p>Since production order calculations use the calculation groups from the production order routing lines and production order components – not directly from the item and work center or machine center – the calculation groups can be changed on the components and/or routing lines for the production order.</p>
+        </div>
+    </body>
+</html>

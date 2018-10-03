@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref421014006"></a><a name="_Toc434929978"></a>Solve Internal Service Costs Batch Job</h2>
+        <p class="ccTextvorlage"><span class="CCBausteinInhaltZchn">cc|rental</span> offers a batch job that locates the amounts posted to a customer account and reallocates these amounts to the G/L account specified in the <span class="Bold">Internal Service Cost Account</span> field on the <span class="Bold">General Posting Setup</span> page (refer to topic <MadCap:xref href="Rental Revenue Accounts.htm#_Ref355093157" class="RelLinkPageNumber">"Rental Revenue Accounts" on page 1</MadCap:xref> for more information).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Solve Internal Service Costs.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: General Posting Setup, highlighting Internal Service Cost Account</p>
+        <p class="ccTextvorlage">In the navigation pane, click <span class="Bold">Service &gt; Order Processing &gt; Solve Internal Service Costs</span> to open the batch job.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Solve Internal Service Costs_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Solve Internal Service Cost batch job page</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Options</span> FastTab, enter the Posting Date and indicate which journal to send the entries.</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Customer</span> FastTab, filter on customers with open Customer Ledger Entries that can be balanced against the internal Cost Account and prepared for posting by creating General Journal lines. </p>
+        <p class="ccTextvorlage">The appropriate Internal Cost Account is found using the General Product Posting Group from the Service Item entered on the Service Item Line and the General Business Posting Group from the customer.</p>
+        <p class="ccTextvorlage">For example, an internal service order is created to customer R-99999 for item R-10000-01, with a maintenance expense (275.00) and an item cost (22.50). The posted service entries are shown in <MadCap:xref href="#_Ref355020712" class="Figure">Fig. 3</MadCap:xref> below. The item cost is posted to the sales account (plus VAT) and the maintenance expense is posted to the expense account (plus VAT). The total cost is posted to the customer’s accounts receivable account.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Solve Internal Service Costs_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="_Ref355020712"></a>: Posted G/L entries for an internal service order</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The “Solve Internal Service Cost” batch job is run for the customer and then the selected journal is populated with the entries to be balanced upon posting. As part of this process, entries are made that balance the receivables account, because a payment entry is not otherwise created for an internal customer.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC REN/Solve Internal Service Costs_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Journal entries created from the Solve Internal Service Cost batch job</p>
+        </div>
+    </body>
+</html>

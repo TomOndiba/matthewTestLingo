@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="757" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">Calculations for Document BOMs</h2>
+        <p>Using functionality from both <span class="CCBausteinInhaltZchn">cc|calculation</span> and <span class="CCBausteinInhaltZchn">cc|configure to order</span>, calculations can be created for Document BOMs in the Job Budget Calculation line. Additionally,  calculated values from the Document BOM can be transferred back to the unit cost and price on the job line, as well as the item master.</p>
+        <p>As with running a calculation for the Job Budget Calculation lines, the lines of the Document BOM must contain relevant Calculation Groups Codes. </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="Create"></a>Create Calculation for Document BOM</h3>
+        <p>Once a Document BOM has been created for a Job Budget Calculation line, the calculation can be created by clicking <span class="Bold">Navigate &gt; Calculation</span> on the ribbon of the Document BOM.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Calculations for Document BOMs.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Document BOM created from Job Budget Calculation line, accessing Calculation function</p>
+        <p class="ccTextvorlage">The process of creating a calculation for a Document BOM is generally the same as creating one for  a Job, except that instead of a dialog to select a job calculation type in the new Calculation Card, the <span class="Bold">Calculation Schedule List</span> page appears, where the calculation schedule for the Document BOM calculation must be selected.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Calculations for Document BOMs_1.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Calculation Schedule List for selecting calculation schedule for Document BOM</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to select the calculation schedule; the Calculation Card is updated with the information from the Document BOM as well as the lines from the calculation schedule. Note that the <span class="Bold">Document</span> FastTab refers to the Document BOM for the job.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Calculations for Document BOMs_2.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Calculation Card for Document BOM</p>
+        <p>To see calculated values, click <span class="Bold">Update Calculation</span> on the ribbon, and refresh the Calculation Chart to see the values in a chart.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Calculations for Document BOMs_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Updated calculated values </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="Transfer"></a>Transfer Values</h3>
+            <p>The “Transfer Value” function on the Calculation Card transfers the following based on the <span class="Bold">Value Transfer Option</span> setting in the Calculation Schedule:</p>
+            <ul>
+                <li class="ccAufzählungblau">calculated unit cost/price to the item</li>
+                <li class="ccAufzählungblau">calculated unit cost/price to the job line</li>
+            </ul>
+            <p>This function can only be run if the <span class="Bold">Status</span> is set to <span class="Italics">Certified</span>; if it is not certified when the function is run, a message appears stating that it will certify the calculation and then open the <span class="Bold">Transfer Calculation Value</span> page.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Calculations for Document BOMs_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Calculated values set to be transferred to the Job Budget Calculation line only</p>
+        </div>
+        <p class="ccTextvorlage">The <span class="Bold">Current Value</span> field shows the current unit cost/price on the Item Card and Job Budget Calculation  line. The <span class="Bold">Calculation Value</span> shows the calculated value on the Calculation Card.</p>
+        <p class="ccTextvorlage">Lines with the <span class="Bold">Transfer</span> check box selected will be transferred to the item master and/or Job Budget Calculation line. Click <span class="Bold">OK</span> to complete the transfer process.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The Sales Price transfer option has no functionality in <span class="CCBausteinInhaltZchn">cc|project</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Calculations for Document BOMs_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Calculated values transferred to the Job Budget Calculation line</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    ">Concurrent Calculations</h3>
+        <p>The concurrent calculations for Document BOMs are also the same as for job calculations.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Calculations for Document BOMs_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Concurrent Calculation for Document BOM</p>
+        <p class="ccTextvorlage"> </p>
+        <p class="ccTextvorlage"> </p>
+    </body>
+</html>

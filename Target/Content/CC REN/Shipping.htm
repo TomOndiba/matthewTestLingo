@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="642" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc434929921"></a>Shipping</h2>
+        <p class="ccTextvorlage">Shipments in <span class="CCBausteinInhaltZchn">cc|rental</span> differentiate between rental and sales positions:</p>
+        <ul>
+            <li class="ccAufzählungblau">Rental positions will be shipped using transfers. They need both a Location Code and a Customer Location Code as the source and destination locations because warehouse shipment and receipt occurs automatically with the shipment.</li>
+            <li class="ccAufzählungblau">Sales positions do not require the source and destination locations.</li>
+        </ul>
+        <p class="ccTextvorlage">Both rental and sales positions can be partly shipped; however, a complete shipment is required for invoicing of rental positions. </p>
+        <p class="ccTextvorlage">The values indicated in the <span class="Bold">Qty. to Ship</span> field are processed in the shipment. A posted shipment is created as usual. With this shipment, the “Undo Shipment” function can be used.</p>
+        <p class="ccTextvorlage">When shipping the complete quantity of a line (regardless of whether this is done in full or partial shipments), a service contract is created that contains a line for each entity of the rented position with its Item No., Serial No. and Service Item No. (or both if applicable). </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434929922"></a>Exercise – Ship the Rent Order</h3>
+        <p class="ccTextvorlage">Item R-30000-01 has a one day shipping time. On January 31, 2019, you ship the order to customer R-30000.</p>
+        <p class="ccDemoStepHeading">Ship the Order</p>
+        <p class="ccTextvorlage">Follow these steps to ship the order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Open the rent order created in the “Record a Rental Position on a Rent Order” exercise.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>. The <span class="Bold">Qty. to Ship</span> field is cleared and the <span class="Bold">Quantity Shipped</span> field contains 1.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Shipping.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Shipped rental item</p>
+        <p class="ccDemoStepHeading">Review Availability by Locations and Transfers</p>
+        <p class="ccTextvorlage">Follow these steps to review the shipment posting:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the Rent Line Details FactBox, click item number R-30000-01.</li>
+            <li class="ccTextvorlageNumberedList">In the Item Card, click <span class="Bold">Navigate &gt; Items by Location</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Show Matrix</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Items by Location Matrix</span> page, filter on item number R-30000-01.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Shipping_1.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 166px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Rental item availability by customer and rental locations</p>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Shipments</span>.</li>
+            <li class="ccTextvorlageNumberedList">Double-click the line to open the posted rental shipment.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Shipping_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Posted Rental Shipment opened from the Rent Order</p>
+        <p class="ccTextvorlageNumberedListNoteHeadingIndent">Note</p>
+        <p class="ccTextvorlageNumberedListNoteBodyIndent">This document is also available from the navigation pane by clicking <span class="CCBausteinInhaltZchn">cc|rental</span><span class="Bold"> &gt; Archive &gt; Posted Shipments</span>.</p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">Close the open pages.</li>
+        </ol>
+    </body>
+</html>

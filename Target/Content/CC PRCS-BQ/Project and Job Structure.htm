@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="875" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h1 class="Heading1" MadCap:autonum="1   ">Project and Job Structure</h1>
+        <p>Construction Works Processing provides a special hierarchy of jobs. At the very top – the main job – is called a Project. From there, Jobs are created which are sub-jobs of the project. The Job Type defines the Structure Type of the job. First, a BoQ Job is created to import a GAEB file or to manually create the BoQ in the Budget Calculation.</p>
+        <ul>
+            <li class="ccAufzählungblau">Bill of Quantities (BoQ) – includes the calculation and the sales positions. It is also used for invoicing.</li>
+            <li class="ccAufzählungblau">Process and Controlling (PaC) – includes all planning components. All costs (Purchasing, Job Times, etc.) need to be posted to this Job.</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Project and Job Structure.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Standard Job Hierarchy</p>
+        <p class="ccTextvorlage">It is also possible to provide a second hierarchy which is often used. For this, users have to change the process for creating the PaC Job in a non-standard way.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Project and Job Structure_1.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Non-standard Job Hierarchy</p>
+        <p class="ccTextvorlage">The relation between BoQ and PaC Jobs can be m:n but most times it is n:1 or even 1:1. The Jobs must be allocated from PaC to BoQ, but the Job Lines could be allocated from PaC to BoQ. While using standard process functionalities these allocations are done automatically in the background.</p>
+    </body>
+</html>

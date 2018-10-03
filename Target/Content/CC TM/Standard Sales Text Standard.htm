@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="900" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc435103023"></a>Standard Sales Text / Standard Purchase Text</h2>
+        <p class="ccTextvorlage">With the Sales Text functionality, users can enter standard texts to be printed and displayed respectively in sales documents/pages. The Purchase Texts functionality offers the ability to predefine standard texts to be printed and displayed respectively in purchase documents/pages.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc435103024"></a>Setup</h3>
+        <p class="ccTextvorlage">Standard Sales/Purchase text is created in the <span class="Bold">Text Module Sales Text Card</span> or <span class="Bold">Text Module Purchase Text Card</span> page, respectively. These pages are accessed from the <span class="CCBausteinInhaltZchn">cc|text module</span> menu by clicking <span class="Bold">Standard Texts</span> &gt; <span class="Bold">Sales Texts</span> or <span class="Bold">Purchase Texts</span>. </p>
+        <p class="ccTextvorlage">The setup of standard sales and purchase text is generally the same as for other text with the exception of the usages text, which is described in the following section.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Usages Text</h4>
+        <p class="ccTextvorlage">Usages text limits for which customer/vendor that Standard Sales/Purchase Text should be copied to a document. Access the <span class="Bold">Text Module Usages</span> page by clicking <span class="Bold">Navigate &gt; Use for</span> on the Sales Text Card or Purchase Text Card.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC TM/Standard Sales Text Standard.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Use for menu item on Text Module Sales Text Card</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Use for Type</span> field, users can set limits on several customers/vendors, a whole Country Code, or set filters on fields in the customer/vendor records. In the <span class="Bold">Use for Code</span> field, the appropriate customers and vendors, respectively, are defined for non-filter entries. The <span class="Bold">Name</span> field displays the selected customer, vendor or filter field caption.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC TM/Standard Sales Text Standard_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Text Module Usages page displaying Use for Type options</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.1    ">Field Filters</h5>
+        <p class="ccTextvorlage">To set up field filters, the <span class="Bold">Use for Type</span> field must be set to <span class="Italics">Customer (Field Filter)</span> or <span class="Italics">Vendor (Field Filter)</span>, respectively. In the <span class="Bold">Field Filter No.</span> field, select the field number on which the filter is to be set, and in the <span class="Bold">Field Filter Term</span> field, enter the filter expression. </p>
+        <p class="ccTextvorlage">For example, to define a text that should be copied for all customers/vendors, insert one entry with <span class="Bold">Use for Type</span> = <span class="Italics">Customer (Field Filter)</span> and one entry for <span class="Bold">Use for Type</span> = <span class="Italics">Vendor (Field Filter)</span>. On each entry, set the <span class="Bold">Field Filter No.</span> = <span class="Italics">1</span> and <span class="Bold">Field Filter Term</span> = <span class="Italics">*</span> (‘*’ is a wild card filter).</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="Exercise"></a>Exercise – Set Up Standard Purchase Text and Use on Purchase Order</h3>
+        <p class="ccTextvorlage">Your company has decided to notify all vendors of the impact on vendor rating when damaged packages are received. This notification will be in the footer of all purchase orders. It will be created in English (ENG) and some other languages, but the English text must be used if translated text is not available. Instead of setting this text on each vendor, standard purchase text is used.</p>
+        <p class="ccDemoStepHeading">Define Standard Purchase Text</p>
+        <p class="ccTextvorlage">Follow these steps to define standard purchase text:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="CCBausteinInhaltZchn">cc|text module</span> menu, click <span class="Bold">Standard Texts &gt; Purchase Texts</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Language Code</span> field, enter ENG.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">All Languages</span> check box.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type “Damaged packages”.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Header/Footer</span> field, enter <span class="Italics">Footer</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the first line of the <span class="Bold">Text</span> field, type “In case of damaged packaging, the entire delivery will be returned”.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Bold</span> check box and in the <span class="Bold">Color</span> field, click the arrow and select <span class="Italics">Red</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Print Mgt. Code</span> field, enter P-ORDERS.</li>
+            <li class="ccTextvorlageNumberedList">In the next line, type “and a negative entry will be created in our vendor rating system.”<br />Note that the line format from the above text line transferred to the next text line.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC TM/Standard Sales Text Standard_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Assigned default settings for Standard Purchase Text</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Text Module Purchase Text Card</span> page.</li>
+        </ol>
+        <p class="ccTextvorlage">Once setup is complete, these standard texts will appear directly on documents. </p>
+        <p class="ccDemoStepHeading">Create Purchase Order and Review Text</p>
+        <p class="ccTextvorlage">You place an order to vendor 10000 for 50 units of item 1900-S. Print the order and confirm that the standard purchase text appears.</p>
+        <p class="ccTextvorlage">Follow these steps to create the purchase order and preview the Purchase Order document:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Purchasing &gt; Order Processing &gt; Purchases Orders</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Buy-from Vendor No.</span> field, enter 10000 and then press ENTER or TAB.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC TM/Standard Sales Text Standard_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Standard Purchase Text notification on the purchase order</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Close</span> to close the <span class="Bold">Text Info</span> page. <br />The standard text can be accessed on the Purchase Order by clicking <span class="Bold">Navigate &gt; Header Texts</span> or <span class="Bold">Footer Texts</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC TM/Standard Sales Text Standard_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Edit Text page for the Standard Purchase Text opened from the purchase order</p>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Edit Text</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, enter <span class="Italics">Item</span> in the <span class="Bold">Type</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field enter 1900-S.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Location Code</span> field, enter BLUE.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 50.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Print</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Preview</span>.<br />Note that the standard purchase text appears in the footer (bolded red).</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC TM/Standard Sales Text Standard_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Standard Purchase Text on the Purchase Order document (bolded red)</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+        </ol>
+    </body>
+</html>

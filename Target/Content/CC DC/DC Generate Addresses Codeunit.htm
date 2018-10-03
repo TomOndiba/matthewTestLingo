@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="900" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434332527"></a>DC - Generate Addresses Codeunit</h3>
+        <p class="ccTextvorlage">This Codeunit generates the address lines for some selected tables and assigns those lines to variables as described in the following table. The way this codeunit is used is to set up the Section (Document Layout Line) to run it once per record, which then updates the Variables values.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');margin-left: auto;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Table ID</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Table Name</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Variables Created</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">36</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Sales Header</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">SellTo1..SellTo8 <br />BillTo1..BillTo8 <br />ShipTo1..ShipTo8</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">38</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Purchase Header</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">BuyFrom1..BuyFrom8 <br />PayTo1..PayTo8 <br />ShipTo1..ShipTo8</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">5740</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Transfer Header</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">TransFrom1..TransFrom8 <br />TransTo1..TransTo8</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">5744</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Transfer Shipment Header</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">TransFrom1..TransFrom8 <br />TransTo1..TransTo8</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">18</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Customer</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Address1..Address8</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">110</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Sales Shipment Header</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">SellTo1..SellTo8 <br />BillTo1..BillTo8 <br />ShipTo1..ShipTo8</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">112</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Sales Invoice Header</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">SellTo1..SellTo8 <br />BillTo1..BillTo8 <br />ShipTo1..ShipTo8</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">114</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Sales Credit Memo Header</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">SellTo1..SellTo8 <br />BillTo1..BillTo8 <br />ShipTo1..ShipTo8</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">297</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Issued Reminder Header</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Address1..Address8</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">304</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Issued Finance Charge Header</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Address1..Address8</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">6650</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">Return Shipment Header</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">BuyFrom1..BuyFrom8 <br />PayTo1..PayTo8 <br />ShipTo1..ShipTo8</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

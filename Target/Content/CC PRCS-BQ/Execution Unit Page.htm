@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="893" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Execution Unit Page</h3>
+        <p>Execution Units are managed in the <span class="Bold">Execution Unit</span> page. This page is opened from the <span class="Bold">Execution Units</span> page, which is accessible from the Job Card, Jobs list or the BoQ Position List by clicking <span class="Bold">Navigate &gt; Execution Units</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Execution Unit Page.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Execution Units list page</p>
+        <p>The <span class="Bold">Execution Units</span> page displays all Execution Units that have been assigned to a job, along with some overview information.</p>
+        <p>Click <span class="Bold">New</span> or <span class="Bold">Edit</span> to create or open an Execution Unit.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Execution Unit Page_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Execution Unit page</p>
+        <p class="ccTextvorlage">The fields and actions on the <span class="Bold">Execution Unit</span> page are described in this topic.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">General FastTab</h4>
+        <p>The fields on the <span class="Bold">General</span> FastTab are described in the following table.</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 141px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Job No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Automatically populated with the associated job number.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">User-defined, unique code for the Execution Unit.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the type of Execution Unit. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Placing Unit – vendor requests created during the calculation phase, or later for processing the subcontractor purchase order.</li>
+                            <li class="ccAufzählung">Work Package – to-dos to be processed internally, work done by different departments.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Brief description of the Execution Unit.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Cost Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the cost type that is considered in the Execution Unit. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">&lt;blank&gt; – all components are considered</li>
+                            <li class="ccAufzählung">Wage – only wage components are considered</li>
+                            <li class="ccAufzählung">Material – only material components are considered</li>
+                            <li class="ccAufzählung">External Service – only external service components are considered</li>
+                            <li class="ccAufzählung">Equipment – only equipment components are considered</li>
+                            <li class="ccAufzählung">Other – only other components are considered</li>
+                        </ul>
+                        <p>Only relevant for <span class="Bold">Type</span> = <span class="Italics">Placing Unit</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the current status of the Execution Unit. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Open – Execution Units with this status can be modified can be modified.</li>
+                            <li class="ccAufzählung">Released – Execution Units with this status can be used in the procurement process.</li>
+                            <li class="ccAufzählung">Completed – Execution Units with this status cannot be edited or used in the procurement process.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Purchase Quote Manager</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates whether the integrated <span class="CCBausteinInhaltZchn">cc|purchase quotes manager</span> (PQM) was used for selecting a subcontractor based on quoted costs. </p>
+                        <p class="ccTabellenText">Only relevant for <span class="Bold">Type</span> = <span class="Italics">Placing Unit</span>.</p>
+                        <p class="ccTabellenText">Refer to topic  for more information about using the PQM with Execution Units.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Assigned PaC Job No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the PaC job number to which this execution unit has been assigned when preparing to start the procurement process.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Lines FastTab</h4>
+        <p>The <span class="Bold">Lines</span> FastTab is populated from the <span class="Bold">BoQ Position List</span>. Therefore, only the fields that are specific to the Execution Units are described in the following table.</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 218px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Assigned Quantity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the complete quantity that has been assigned. When the <span class="Bold">Quantity</span> field is changed, the Assigned Quantity is updated. </p>
+                        <p class="ccTabellenText">The field is formatted as italicized red when the assigned quantity is greater than the available quantity, and bold green when the assigned quantity matches the quantity.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Direct Unit Cost</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the Direct Unit Cost in foreign currency.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Purchase Line Amount </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the Purchase Line Amount in foreign currency.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit Price (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the Unit Price in local currency.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sales Line Amount (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the Sales Line Amount in local currency.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Orig. Unit of Measure Code / Original Quantity / Original Sales Line Amount (LCY) / Original Total Cost (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Original values from the BoQ Budget Calculation. These fields provide a comparison between what was calculated, planned, and allocated to the PaC job.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Proc. Currency Factor</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the exchange factor between local currency and foreign currency, which is selected in the <span class="Bold">Purch. Currency Code</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Purch. Currency Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p>Displays the purchase currency, which is defaulted from the BoQ Budget Calculation. When the Currency Code is changed, the value in the <span class="Bold">Proc. Currency Factor</span> field is updated.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Direct Unit Cost (LCY) / Total Cost (LCY) / Total Direct Cost (LCY) / Unit Cost (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Cost values in local currency.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">The sorting of the lines can be refreshed by clicking <span class="Bold">Functions &gt; Refresh Sorting</span> on the <span class="Bold">Lines</span> FastTab. This can be useful when additional positions that should apply between existing lines are added afterwards.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">GAEB FastTab</h4>
+        <p>The fields in the <span class="Bold">GAEB</span> FastTab are populated with cost types included in the GAEB files. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Execution Unit Page_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Execution Unit page, GAEB FastTab</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.4    ">Procurement FastTab</h4>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Procurement</span> FastTab are used for setting defaults for procurement processing. Typically these fields are set when the Execution Unit <span class="Bold">Type</span> is set to <span class="Italics">Placing Unit</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Execution Unit Page_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Execution Unit page, Procurement FastTab</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.5    ">Controlling FastTab</h4>
+        <p>The fields on the <span class="Bold">Controlling </span>FastTab provide current and budgeted cost/sales information based on the Execution Unit lines.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Execution Unit Page_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Execution Unit page, Controlling FastTab</p>
+        <p>Each field is described in the following table.</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 243px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Last Update</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Date and time the Execution Unit was updated using the “Update Controlling Values” function.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Total Cost Original (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Calculated cost from the BoQ Budget Calculation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Total Cost Budget (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Planned cost  based on the <span class="Bold">Quantity</span> and <span class="Bold">Direct Unit Cost </span>fields in the Execution Unit line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">PaC Total Cost Budget (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Allocated cost budgeted to one PaC job.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Total Cost Usage (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Posted costs to the PaC job; opens the Job Ledger Entries filtered on the Execution Unit.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p>Sales Line Amount Orig. (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p>Calculated price from the BoQ Budget Calculation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p>Sales Line Amount Budget (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Planned cost  based on the <span class="Bold">Quantity</span> and <span class="Bold">Unit Price </span>fields in the Execution Unit line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p>PaC Sales Line Amount Budget (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Allocated sales budgeted to one PaC job.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.6    ">Actions Tab</h4>
+        <p class="ccTextvorlage">The functions on the <span class="Bold">Actions</span> tab are described in the following table. These functions are available on the <span class="Bold">Home</span> tab.</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 137px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Action</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Release</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Sets the <span class="Bold">Status</span> to <span class="Italics">Released</span>. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Reopen</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Sets the <span class="Bold">Status</span> to <span class="Italics">Open</span> from a released Execution Unit, or to <span class="Italics">Release</span> from a finished Execution Unit. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Finish</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Sets the <span class="Bold">Status</span> to <span class="Italics">Completed</span>. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Update Controlling Values</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Updates the values in the fields on the <span class="Bold">Controlling</span> FastTab.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.7    ">Navigate Tab</h4>
+        <p class="ccTextvorlage">The functions on the <span class="Bold">Navigate</span> tab are used with the integrated PQM functionality. Each is described in the following table. </p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 136px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Action</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Create PQM</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens a new <span class="Bold">PQM</span> page for PQM processing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Show PQM</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Opens an existing PQM for the Execution Unit.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

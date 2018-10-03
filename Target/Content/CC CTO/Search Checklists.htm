@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="909" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434567976"></a>Search Checklists</h2>
+        <p class="ccTextvorlage">The “Search Checklists” function provides the ability to search for checklists that were previously used. Search Checklists are templates and are located on the <span class="CCBausteinInhaltZchn">cc|configure to order</span> menu by clicking <span class="Bold">Archive &gt; Search Checklists</span>.  </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Search Checklists.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref284833340"></a>: Search Checklists</p>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Lines</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 135px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Search Field</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">In this field, searches can be entered for a Variable or a Description (based on the <span class="Bold">Description</span> field in the Checklist line). </p>
+                        <p class="ccTabellenText">For example, the third line in <MadCap:xref href="#_Ref284833340" class="Figure">Fig. 1</MadCap:xref> will set a filter on all checklist lines where the string @*kw* exists in the <span class="Bold">Description</span> field. Uppercase or Lowercase will be ignored because the “at” symbol (@) is used. The first two lines will filter using variables: the APRON and GE Boolean should be set to <span class="Italics">Yes</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Variable/Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">This field is based on the selection in the <span class="Bold">Search Field</span>:</p>
+                        <ul>
+                            <li class="ccAufzählung">If <span class="Italics">Variable</span> is selected, use the arrow to select a value from the <span class="Bold">Variable/Attribute Types</span> page. </li>
+                            <li class="ccAufzählung">If <span class="Italics">Description</span> is selected, enter a filter for the <span class="Bold">Description</span> field.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Search Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Searching can be performed for alphanumerical and/or numerical values: </p>
+                        <ul>
+                            <li class="ccAufzählung">If searching for attributes or similar, use Numerical. </li>
+                            <li class="ccAufzählung">If searching for words, for example colors (green, blue), use Alphanumerical. </li>
+                        </ul>
+                        <p class="ccTabellenText">If numerical is used, the <span class="Bold">Input (numerical)</span> field on the Checklist line will be used to filter the correct line. The <span class="Bold">Input (numerical)</span> field contains the numeric value of the <span class="Bold">Input</span> field. To initiate this field, the “Update Numerical Field” function must be run by clicking <span class="Bold">Actions &gt; Update Numerical Field</span> on the ribbon. </p>
+                        <p class="ccTabellenText">If the <span class="Bold">Input Type</span> field in the Checklist line is set to <span class="Italics">Boolean</span>, FALSE will be 0 and TRUE will be 1.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Filter Input</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">In this field, enter the filter that will be used on the <span class="Bold">Input</span> field (or the <span class="Bold">Input (numerical)</span> field if the <span class="Bold">Search Type</span> field is set to <span class="Italics">Numerical</span>).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">To start a search, click <span class="Bold">New Search</span> on the ribbon, or press F9. The <span class="Bold">Search Checklist Filters</span> page opens with a copy of the lines from the <span class="Bold">Search Checklists</span> page. The fields have the same meaning as in the <span class="Bold">Search Checklists</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Search Checklists_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 348px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Search Checklist Filters</p>
+        <p class="ccTextvorlage">Search Checklist Filters can be changed without any changes happening in the Search Checklists template. All changes that are made in the <span class="Bold">Search Checklist Filters</span> page are not saved in the database.</p>
+        <p class="ccTextvorlage">To start the search from the <span class="Bold">Search Checklist Filters</span> page, click <span class="Bold">Search</span> on the ribbon, or press F9. If the search process finds checklists that match the search criteria, the <span class="Bold">Checklist Navigate</span> page appears.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Search Checklists_2.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Checklist Navigate</p>
+        <p class="ccTextvorlage">The <span class="Bold">Checklist Navigate</span> page displays all documents that are linked to the found checklists. On the ribbon, click <span class="Bold">Show</span> to look at these documents.</p>
+        <p class="ccTextvorlage">If multiple checklists are found (thus the string of all found checklist numbers is longer than about 1000 characters), a message appears and then these checklists are listed in the <span class="Bold">Checklists Found</span> page. In this page, highlight the checklists to review and then click <span class="Bold">Actions &gt; Navigate</span>, or press CTRL+F7, to open the documents (such as Sales Lines, Construction Orders) that are linked to the selected checklists.</p>
+    </body>
+</html>

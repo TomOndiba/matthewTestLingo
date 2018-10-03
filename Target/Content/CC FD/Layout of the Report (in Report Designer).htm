@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="816" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 MadCap:autonum="1.1    " class="Heading2">Layout of the Report (in Report Designer)</h2>
+        <p>Any number of subreports can be placed anywhere in the main report, except in the header. The name of the report can be user-defined; however, the chosen name must match the prefix of the column names.</p>
+        <p class="ccTextvorlage">The <span class="sourcecode" style="font-family: 'Courier New';">RectangleForNo</span> parameter is mandatory and must be added to a report.</p>
+        <p class="ccTextvorlage">
+            <MadCap:xref href="#_Ref428270983" class="Figure">Fig. 3</MadCap:xref> and <MadCap:xref href="#SubreportIntegration2" class="Figure">Fig. 4</MadCap:xref> are examples of the integration of a subreport (including assigning of parameters to the subreport).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Extend Report s_2.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 268px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref428270983"></a>: Subreport Integration (1)</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Extend Report s_3.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 268px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="SubreportIntegration2"></a>: Subreport Integration (2)</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">If the subreport is placed in a table or matrix, it will be rendered for each line. In this case the value of the parameter “RectangleForNo” for each line is relevant.</p>
+        </div>
+        <p class="ccTextvorlageNotebodyIndent">Expression for value: <br /><span class="sourcecode" style="font-family: 'Courier New';">=Fields!</span><span class="Bold">[&lt;SubreportIdentifier&gt;_]</span><span class="sourcecode" style="font-family: 'Courier New';">FD_RectangleForNo.Value</span></p>
+        <p class="ccTextvorlageNotebody">If the subreport is placed outside of a table or matrix, the <span style="color: #FF0000;">First</span> function must be used. The <span style="color: #FF0000;">First</span> function returns the first value in a set of records, after sorting and filtering of a specified area is applied.</p>
+        <p class="ccTextvorlageNotebodyIndent">Expression for value: <br /><span class="sourcecode" style="font-family: 'Courier New';">=</span><span class="sourcecode" style="font-family: 'Courier New';color: #FF0000;">First</span><span class="sourcecode" style="font-family: 'Courier New';">(Fields!</span><span class="Bold" style="font-family: 'Courier New';">[&lt;SubreportIdentifier&gt;_]</span><span class="sourcecode" style="font-family: 'Courier New';">FD_RectangleForNo.Value)</span></p>
+    </body>
+</html>

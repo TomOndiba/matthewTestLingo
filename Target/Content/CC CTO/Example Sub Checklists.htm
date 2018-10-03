@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="688" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref369439812"></a><a name="_Ref369439820"></a><a name="_Ref369439830"></a><a name="_Ref369439841"></a><a name="_Ref369439849"></a><a name="_Ref369439857"></a><a name="_Toc434567986"></a>Example – Sub-Checklists</h3>
+            <p class="ccTextvorlage">Sub-checklists are checklist templates that can be used, for example, when a special option in a checklist must be described more clearly, or separate due to the complexity of the checklist. The checklist is structured better and is more concise by the use of sub-checklists.</p>
+            <p class="ccTextvorlage">Two types of sub-checklists can be used:</p>
+            <ul>
+                <li class="ccAufzählungblau">Simple sub-checklist </li>
+                <li class="ccAufzählungblau">Dynamic sub-checklist </li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Sub Checklists.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref284833486"></a>: Setup of Sub-Checklists in the Checklist Template</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Simple Sub-Checklists</p>
+            <p class="ccTextvorlage">With the simple sub-checklist, the <span class="Bold">Sub-Checklist Template Code</span> field is filled in and the <span class="Bold">Input Type</span> field is set &lt;&gt; <span class="Italics">Integer</span> (refer to <MadCap:xref href="#_Ref284833486" class="Figure">Fig. 1</MadCap:xref>).</p>
+            <p class="ccTextvorlage">When a checklist that is defined with a simple sub-checklist is opened (for example on a sales order), the sub-checklist (refer to <MadCap:xref href="#_Ref284833628" class="Figure">Fig. 3</MadCap:xref>) is directly added, as indicated in the <span class="Bold">Sub-Checklist Exists</span> field on the line (refer to <MadCap:xref href="#_Ref284833508" class="Figure">Fig. 2</MadCap:xref>). The sub-checklist can be opened from the <span class="Bold">Lines</span> FastTab by clicking <span class="Bold">Line &gt; Sub-Checklist</span> or by selecting the <span class="Bold">Show Sub-Checklists</span> check box on the <span class="Bold">General</span> FastTab to display the sub-checklists directly in the lines (refer to topic <MadCap:xref href="#_Ref373307926">“Show Sub-Checklist” on page 1</MadCap:xref>). </p>
+            <p class="ccTextvorlage">Further information is then entered in the <span class="Bold">Input</span> field of the Sub-Checklist lines.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Sub Checklists_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 353px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="_Ref284833508"></a>: Simple sub-checklist line on document checklist with opened Sub-Checklist page for input</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Dynamic Sub-Checklists</p>
+            <p class="ccTextvorlage">Dynamic sub-checklists are used if several of the same assembly groups have different configurations that need to be defined. Dynamic sub-checklists can be used instead of setting up numerous checklists with specific variables for each possible configuration.</p>
+            <p class="ccTextvorlage">Dynamic sub-checklists are set up in the Checklist Template by filling in the <span class="Bold">Sub-Checklist Template Code</span> field and setting the <span class="Bold">Input Type</span> field to <span class="Italics">Integer</span> (refer to <MadCap:xref href="#_Ref284833486" class="Figure">Fig. 1</MadCap:xref>).</p>
+            <p class="ccTextvorlage">In the Checklist Templates for the sub-checklists, an internal counting variable “i” is available. To mark these, the syntax “#i#” is entered at the end of the description (refer to <MadCap:xref href="#_Ref284833628" class="Figure">Fig. 3</MadCap:xref>). When opening the sub-checklist by this syntax, the variable “i” is replaced with its contents.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Sub Checklists_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="_Ref284833628"></a>: Setup of a dynamic sub-checklist</p>
+        </div>
+        <p class="ccTextvorlage">This checklist line is transferred first to the main checklist, without producing a sub-checklist. If a number between 1 and 99 is entered in the <span class="Bold">Input</span> field on this line, then as many copies as are entered will be added (refer to <MadCap:xref href="#_Ref284833974" class="Figure">Fig. 4</MadCap:xref>). In the description, a counter is added (01, 02, 03 and so on). </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Sub Checklists_3.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 393px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4"><a name="_Ref284833974"></a>: Dynamic Sub-Checklist</p>
+        <p class="ccTextvorlage">In each of these lines, a sub-checklist is inserted, which can be opened from the main checklist by clicking <span class="Bold">Line &gt; Sub-Checklist</span> on the <span class="Bold">Lines</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Sub Checklists_4.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 253px;" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5"><a name="_Ref284834029"></a>: Dynamic Sub-Checklist 01 generated from the checklist</p>
+        <p class="ccTextvorlage">If in the sub-checklist, the <span class="Bold">Variable for Dynamic BOM</span> field is filled in (for example with the variable “Width”), then this is replaced automatically with “Width01”, “Width02”, “Width03”, and so on (refer to <MadCap:xref href="#_Ref284834029" class="Figure">Fig. 5</MadCap:xref>). If attribute texts were entered for the “Width” variable, they are then copied for the new variables. When the checklists are generated, the substitute symbol #i# (refer to <MadCap:xref href="Example Recalculation.htm#_Ref284834248" class="Figure">Fig. 2</MadCap:xref>) is replaced by the description counter (refer to <MadCap:xref href="Example Recalculation.htm#_Ref284835877" class="Figure">Fig. 3</MadCap:xref>). </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The system limits the number of sub-checklists to 99.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    "><a name="_Ref373307926"></a>Show Sub-Checklist</h4>
+        <p class="ccTextvorlage">Instead of entering values into the <span class="Bold">Sub-Checklist</span> page, select the <span class="Bold">Show Sub-Checklists</span> check box on the Checklist header to automatically show the sub-checklist lines on the <span class="Bold">Checklist</span> page for direct entry in the lines.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Sub Checklists_5.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 493px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Simple Sub-Checklist and Dynamic Sub-Checklists 01–03 shown in the Checklist lines</p>
+        <p class="ccTextvorlage">The values entered directly on the Checklist lines are also entered in the Sub-Checklist lines, and vice versa.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Sub Checklists_6.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 396px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Values entered on the Checklist lines appear in the Sub-Checklist page</p>
+        <p class="ccTextvorlage">Clear the <span class="Bold">Show Sub-Checklist</span> check box to hide the lines on the <span class="Bold">Checklist</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Sub Checklists_7.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 329px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Hidden sub-checklist lines but values displayed in the Sub-Checklist page</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Retain Input Values of Changed Dynamic Sub-Checklist Quantity</h4>
+            <p class="ccTextvorlage">If the input quantity is changed on the main sub-checklist line, a message appears asking what should happen to the existing sub-checklist lines.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Sub Checklists_8.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 413px;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Message to change sub-checklist value from 3 to 2</p>
+        </div>
+        <p class="ccTextvorlage">Depending on whether the quantity is increased or decreased, the sub-checklist lines are updated as follows:</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 80px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 78px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Input Change</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Message Action</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Result</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Decrease</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="background-color: #aaaaaa;padding-left: 6px;padding-bottom: 10px;border-right-style: solid;border-right-width: 2px;border-right-color: #ffffff;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #ffffff;">
+                        <p class="ccTabellenText">No</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The last sub-checklist lines are removed and the remaining lines retain the original input.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Decrease</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="background-color: #aaaaaa;padding-left: 6px;padding-bottom: 10px;border-right-style: solid;border-right-width: 2px;border-right-color: #ffffff;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #ffffff;">
+                        <p class="ccTabellenText">Yes</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The last sub-checklist lines are removed and the original input is deleted from the remaining lines.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Increase</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="background-color: #aaaaaa;padding-left: 6px;padding-bottom: 10px;border-right-style: solid;border-right-width: 2px;border-right-color: #ffffff;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #ffffff;">
+                        <p class="ccTabellenText">No</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Additional sub-checklist lines are added with zero values and the remaining lines retain the original input.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Increase</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1" style="background-color: #aaaaaa;padding-left: 6px;padding-bottom: 10px;border-right-style: solid;border-right-width: 2px;border-right-color: #ffffff;">
+                        <p class="ccTabellenText">Yes</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Additional sub-checklist lines are added with zero values and the original input is deleted from the remaining lines.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">In this example, <span class="Italics">No</span> is selected in the message. Therefore, Sub-Checklist 03 lines are deleted and the values for Sub-Checklists 01 and 02 are retained. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Sub Checklists_9.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 370px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Input values retained on existing sub-checklist lines</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    "><a name="_Ref405905738"></a><a name="_Ref277406525"></a>Macros: Use Formulas without Parameters</h4>
+        <p class="ccTextvorlage">When dynamic sub-checklists are used, array variables like LENGTH01 and LENGTH02 are generated. The existing MIN and MAX function can be used with only one parameter so then the whole array of this variable will be analyzed (e.g. MIN(LENGTH) will check all variables like LENGTH00, LENGTH01, LENGTH02, ... , LENGTH99).</p>
+        <p class="ccTextvorlage">Additionally, the following functions are available in the Formula Editor:</p>
+        <ul>
+            <li class="ccAufzählungblau">SUM(&lt;Var&gt;): Add all values of the variable array (SUM(LENGTH) = LENGTH00 + LENGTH01 + ... + LENGTH99)</li>
+            <li class="ccAufzählungblau">COUNT(&lt;Var&gt;;&lt;Value&gt;): Counts the elements that are equal to the value (COUNT(LENGTH;5) will count the number of all LENGTH elements (LENGTH00, LENGTH01, ...,LENGTH99) which have the value 5)</li>
+        </ul>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The SUM, MIN, MAX and COUNT functions are available in any area that uses the Formula Editor.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In this example, a sub-checklist is created where Length measurements can be inserted.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Sub Checklists_10.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Dynamic sub-checklist for array function example</p>
+        </div>
+        <p class="ccTextvorlage">This sub-checklist is then assigned to a checklist for calculating length using a variety of formulas.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Sub Checklists_11.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.25in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Checklist Template for array function example</p>
+        <p class="ccTextvorlage">When this checklist is opened from a document, the user enters 3 in the <span class="Bold">Input</span> field in the line to create sub-checklists. The LENGTH in sub-checklist lines 01, 02, and 03 is defined as 10, 10, and 5, respectively. Finally, the user enters 10 in the line for “LENGTH to be counted”.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Sub Checklists_12.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 432px;" MadCap:mediastyle="@media print { max-width: 5.25in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Document Checklist with manual input of sub-checklist and length values</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">After the “Recalculate” function is run, the following values are calculated based on the manual input:</p>
+            <ul>
+                <li class="ccAufzählungblau">“Sum of all LENGTH” = 25 (10+10+5)</li>
+                <li class="ccAufzählungblau">“Number of LENGTH = Input” = 2 (because in sub-checklist 01 and 02 the input is 10)</li>
+                <li class="ccAufzählungblau">“Maximum of all LENGTHs” = 10</li>
+                <li class="ccAufzählungblau">“Minimum of all LENGTHs” = 5</li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Sub Checklists_13.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 432px;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Document Checklist with calculated length values from manual input</p>
+        </div>
+    </body>
+</html>

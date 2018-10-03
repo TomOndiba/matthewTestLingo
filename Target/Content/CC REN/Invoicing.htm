@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="765" MadCap:lastWidth="605" MadCap:fileTags="StatusFileTags.5 Needs to be Finished with Edits" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref236733331"></a><a name="_Ref236733403"></a><a name="_Toc434929923"></a>Invoicing</h2>
+        <p class="ccTextvorlage">Invoicing of the Rent Order starts with the shipment of the document lines. If the complete quantity is shipped, the contract is ready for invoicing with its particular due date. This due date is dependent on the specific Invoice Period (refer to topic <MadCap:xref href="#_Ref236733482">“Invoicing Parameters” on page 1</MadCap:xref>).</p>
+        <p class="ccTextvorlage">The amount that will be invoiced is calculated from the Rate Unit Price. If the rate period is <span class="Italics">Quarter</span>, <span class="Italics">Year</span> or any other period that can be assembled by months, the period is divided into months in case no full rate period can be invoiced. If a division has to be done by date, the system uses the actual number of days to determine the price per day.</p>
+        <p class="BoldItalics12pt">Example</p>
+        <p class="ccTextvorlage">If the <span class="Bold">Invoice Period</span> is set to <span class="Italics">Month</span> and the <span class="Bold">Month Based</span> check box is selected, the first invoice for a contract line from May 15th to August 31st will contain a first invoicing period from May 15th to May 31st. This means that if the Rate Unit Price is based on the monthly rate of 310.00 then:</p>
+        <ul>
+            <li class="ccAufzählungblau">the daily price is 310 / 31 (number of days in May) = 10.00</li>
+            <li class="ccAufzählungblau">the invoicing amount calculates from 10.00 * 17 (days) = 170.00</li>
+        </ul>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref236733261"></a><a name="_Ref236733482"></a><a name="_Toc434929924"></a>Invoicing Parameters</h3>
+        <p class="ccTextvorlage">The following parameters drive the invoicing of rent orders:</p>
+        <table>
+            <col style="width: 175px;" />
+            <col style="width: 288px;" />
+            <tr>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Invoice Period</p>
+                </td>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Rental Start Date</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Month Based</p>
+                </td>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Rental End Date</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Prepaid</p>
+                </td>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Calendar Codes</p>
+                </td>
+            </tr>
+        </table>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    "><a name="_Ref237316924"></a>Invoice Periods and Month Based Date Calculations</h4>
+        <p class="ccTextvorlage">For an Invoice Period of <span class="Italics">Month</span> that does not use the <span class="Italics">Month Based</span> option, the period always uses the Microsoft Dynamics NAV date formula of +1M-1D. This means it starts at the Next Invoice Period Start Date and adds this date formula to determine the Next Invoice Period End Date. </p>
+        <p class="ccTextvorlage">This is useful for calendar months, when the rental begins January 1st, the invoice will end on January 31st because one month is added (February 1st) and then backed up one day. </p>
+        <p class="ccTextvorlage">The same is done if it not the calendar month: the start date for invoicing is the Rental Start Date if no invoicing has occurred or it is the last invoiced date +1. </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The End Date is calculated by using the following date formulas:</p>
+            <table>
+                <col style="width: 90px;" />
+                <col style="width: 90px;" />
+                <col style="width: 90px;" />
+                <col style="width: 273px;" />
+                <tr>
+                    <td colspan="2"><span class="BoldUnderline">Not Month Based</span>
+                    </td>
+                    <td colspan="2"><span class="BoldUnderline">Month Based</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="ccTableTextnontable">Month</p>
+                        <p class="ccTableTextnontable">Two Month</p>
+                        <p class="ccTableTextnontable">Quarter</p>
+                        <p class="ccTableTextnontable">Half Year</p>
+                        <p class="ccTableTextnontable">Year</p>
+                    </td>
+                    <td>
+                        <p class="ccTableTextnontable">+1M-1D</p>
+                        <p class="ccTableTextnontable">+2M-1D</p>
+                        <p class="ccTableTextnontable">+1Q-1D</p>
+                        <p class="ccTableTextnontable">+6M-1D</p>
+                        <p class="ccTableTextnontable">+12M-1D</p>
+                    </td>
+                    <td>
+                        <p class="ccTableTextnontable">Month</p>
+                        <p class="ccTableTextnontable">Two Month</p>
+                        <p class="ccTableTextnontable">Quarter</p>
+                        <p class="ccTableTextnontable">Half Year</p>
+                        <p class="ccTableTextnontable">Year</p>
+                    </td>
+                    <td>
+                        <p class="ccTableTextnontable">+CM</p>
+                        <p class="ccTableTextnontable">+CM+1M</p>
+                        <p class="ccTableTextnontable">+CQ</p>
+                        <p class="ccTableTextnontable">If Month is &lt;=6, then +CY-6M; otherwise, +CY</p>
+                        <p class="ccTableTextnontable">+CY</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p class="ccTextvorlage">Therefore, if the last day was not invoiced in the last invoice created, it will be included in the next invoice. However, the system does not stop at the Rental End Date automatically, so if no return has been posted when the invoice is created, the system creates an invoice for a full invoicing period (refer to topic <MadCap:xref href="Returns.htm#_Ref355092985">“Returns” on page 1</MadCap:xref>). </p>
+        <p class="ccTextvorlage">If a Calendar Code is entered to the Rent Order line the invoice amounts are calculated from the Rental Price for the invoicing period minus the price for free days within the period.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    "><a name="_Ref417370058"></a>Invoice Periods and Prepaid Date Calculations</h4>
+        <p class="ccTextvorlage">If the <span class="Bold">Prepaid</span> check box is selected on the line, the due date is the Next Invoice Period starting date. If the <span class="Bold">Prepaid</span> check box is not selected, the due date is the Next Invoice Period end date.</p>
+        <p class="ccTextvorlage">For example, if a rental period is April 15th through December 31st, the Invoice Period is Month, the <span class="Bold">Prepaid</span> check box is selected, and the invoice is to be created through May 15th:</p>
+        <ul>
+            <li class="ccAufzählungblau">The first invoice period starts on April 15th and ends on May 14th. This is because the Start Date of the period is the due date of it.</li>
+            <li class="ccAufzählungblau">The second starts on May 15th and ends on June 14th. This period is due on May 15th so the system creates invoices up to June 14th.</li>
+        </ul>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">Example – Invoicing Parameter Results </h4>
+        <p class="ccTextvorlage">In this example, an item for a quantity of one is rented for a price of 125.00. The tables below illustrate the various invoicing possibilities based on the above parameters.</p>
+        <p class="ccDemoStepHeading">Invoice Period – Month</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 42px;" MadCap:pattern="1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 49px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 64px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 70px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 375px;" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Month Based</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Prepaid</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Rental Start Date</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Rental End Date</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 11pt;">Invoice Result for Invoice Period = Month</span>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="CheckmarksinTables"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="CheckmarksinTables"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">4/15/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">12/31/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">A separate line is created for each month to be posted to the rental G/L account. The unit price is the same for each line (125).</p>
+                        <p class="ccTabellenText_RENSpecial">As this is not month based, the invoice periods run from the 15th to the 14th of the month ranges.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="CheckmarksinTables" style="font-family: Wingdings;">ü</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="CheckmarksinTables"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">4/15/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">12/31/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">A separate line is created for each month to be posted to the rental G/L account.</p>
+                        <p class="ccTabellenText_RENSpecial">The first month is a lower unit price because it is a portion of the month (125 unit price / 30 days in April = 4.166 prorated amount; therefore 4.166 x 16 days (4/15 – 4/30) = 66.67). </p>
+                        <p class="ccTabellenText_RENSpecial">The unit price for the remaining months is 125.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="CheckmarksinTables"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="CheckmarksinTables" style="font-family: Wingdings;">ü</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">4/15/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">12/31/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">A separate line is created for each month to be posted to the prepaid G/L account.</p>
+                        <p class="ccTabellenText_RENSpecial">The invoice periods run from the 15th to the 14th of the month ranges.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="CheckmarksinTables" style="font-family: Wingdings;">ü</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="CheckmarksinTables" style="font-family: Wingdings;">ü</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">4/15/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">12/31/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">A separate line is created for each month to be posted to the prepaid G/L account. </p>
+                        <p class="ccTabellenText_RENSpecial">The first month is a lower unit price because it is a portion of the month. </p>
+                        <p class="ccTabellenText_RENSpecial">The unit price for the remaining months is 125.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccDemoStepHeading_Special">Invoice Period – Two Months</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 42px;" MadCap:pattern="1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 49px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 63px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 70px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Month Based</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Prepaid</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Rental Start Date</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Rental End Date</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 11pt;">Invoice Result for Invoice Period = Two Months</span>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1"> </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1"> </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">4/15/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">12/31/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">A separate line is created for each month range to be posted to the rental G/L account. The unit price is the same for each line (250).</p>
+                        <p class="ccTabellenText_RENSpecial">The invoice periods run from the 15th to the 14th of the month ranges.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="CheckmarksinTables" style="font-family: Wingdings;">ü</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="CheckmarksinTables"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">4/15/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">12/31/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">A separate line is created for each month range to be posted to the rental G/L account.</p>
+                        <p class="ccTabellenText_RENSpecial">The first month is a lower unit price (125 unit price / 30 * 16 = 66.67 for April and 125 for all of May, therefore 66.67 + 125 = 191.67). </p>
+                        <p class="ccTabellenText_RENSpecial">The unit price for the remaining months is 250.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p> </p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading_Special">Invoice Period – Quarter</p>
+            <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 42px;" MadCap:pattern="1" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 50px;" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 62px;" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 70px;" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Month Based</span>
+                            </p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Prepaid</span>
+                            </p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Rental Start Date</span>
+                            </p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Rental End Date</span>
+                            </p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 11pt;">Invoice Result for Invoice Period = Quarter</span>
+                            </p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1"> </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1"> </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText_RENSpecial">4/15/2019</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText_RENSpecial">12/31/2019</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText_RENSpecial">A separate line is created for each quarter to be posted to the rental G/L account. The unit price is the same for each line (375).</p>
+                            <p class="ccTabellenText_RENSpecial">As this is not month based, the invoice periods run from the 15th to the 14th of the month ranges.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="CheckmarksinTables" style="font-family: Wingdings;">ü</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="CheckmarksinTables"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="ccTabellenText_RENSpecial">4/15/2019</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="ccTabellenText_RENSpecial">12/31/2019</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                            <p class="ccTabellenText_RENSpecial">A separate line is created for each quarter to be posted to the rental G/L account.</p>
+                            <p class="ccTabellenText_RENSpecial">The first month is a lower unit price (16 days / 30 days x 125 unit price = 66.67 + 250 (two months unit price) = 316.67). </p>
+                            <p class="ccTabellenText_RENSpecial">The unit price for the remaining quarters is 375.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="ccDemoStepHeading_Special">Invoice Period – Half Year</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 42px;" MadCap:pattern="1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 50px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 62px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 70px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Month Based</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Prepaid</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Rental Start Date</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Rental End Date</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 11pt;">Invoice Result for Invoice Period = Half Year</span>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="CheckmarksinTables"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">4/15/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">12/31/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">A single line is created for the six month range, from 4/16 – 10/14 at 125 x 6 = 750.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="CheckmarksinTables"><span style="font-family: 'Wingdings'">ü</span>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="CheckmarksinTables"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">4/15/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">12/31/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">Two lines are created for each half of year.</p>
+                        <ul>
+                            <li class="ccAufzählung_RENSpecial">First half (16 days / 30 days x 125 unit price = 66.67 + 250 (two months unit price) = 316.67).</li>
+                            <li class="ccAufzählung_RENSpecial">Second half (six months * 125 = 750).</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1"> </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1"> </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">1/1/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">12/31/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">Two lines are created for each six month range, at 750 each.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccDemoStepHeading_Special">Invoice Period – Year</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 42px;" MadCap:pattern="1">
+            </col>
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 47px;">
+            </col>
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 64px;">
+            </col>
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 70px;">
+            </col>
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2">
+            </col>
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Month Based</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Prepaid</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Rental Start Date</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 9pt;">Rental End Date</span>
+                        </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;"><span style="font-size: 11pt;">Invoice Result for Invoice Period = Year</span>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="CheckmarksinTables"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="CheckmarksinTables"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">1/1/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">12/31/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">One line is created for the year, for the amount of 1500.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="CheckmarksinTables"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="CheckmarksinTables"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">4/15/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">4/15/2018</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">One line is created for the year, for the amount of 1500.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="CheckmarksinTables" style="font-family: Wingdings;">ü</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="CheckmarksinTables"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">4/15/2019</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">4/15/2018</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText_RENSpecial">A single line is created for the portion of the year, from 4/15 – 12/31 (16 days / 30 days x 125 unit price = 66.67 (April) + 1000.00 (eight months unit price) = 1066.67).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.4    "><a name="_Ref355093049"></a>Calendar Codes</h4>
+        <p class="ccTextvorlage">Calendar Codes are linked to the Base Calendar Card, where a company sets up a base calendar on a general level and defines each date as either a working or nonworking day. For example, a base calendar for a particular country/region would define weekends and national holidays as nonworking days. All other days would be working days.</p>
+        <p class="ccTextvorlage"><span class="CCBausteinInhaltZchn">cc|rental</span> uses one day as a base unit of measure. Prices are calculated for the whole or a part of the Invoicing Period that is shown on the Rent Order (or Quote) or are transferred to the invoice. </p>
+        <p class="ccTextvorlage">If a Calendar Code is entered on a Rent Order line (or on the <span class="Bold">Rental</span> FastTab and defaulted to the lines) and nonworking days are identified for the period to be calculated, the price for the period is calculated and then <span class="CCBausteinInhaltZchn">cc|rental</span> subtracts one day’s price for each nonworking day.</p>
+        <p class="ccTextvorlage">Specific calendar changes can be set up for each line by clicking <span class="Bold">Line &gt; Cust. Calendar</span> on the <span class="Bold">Lines</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Invoicing.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Customized Calendar Entries opened from Rent Order line</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434929925"></a>Invoice Processing</h3>
+        <p class="ccTextvorlage">After selecting the <span class="Italics">Invoice</span> option in the <span class="Bold">Post</span> page, the “Create Rental Contract Invoice” report opens, filtered on the rent order. A posting date and date filter for the last due date included must be entered. Both fields are filled with the work date by default.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">Ensure that the Posting Date / Work Date are correct before running the batch job.</p>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Invoicing_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Create Rental Contract Invoice report request page opened from the rent order</p>
+        <p class="ccTextvorlage">The <span class="Bold">Action</span> field determines if invoices are created or if a preview invoice is generated. If the <span class="Italics">Print Only</span> option is selected, the “Rental Contract Invoicing - Test” report opens with the ability to Print or Preview the invoice without posting. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Invoicing_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Rental Contract Invoicing - Test report request page opened from Create Rental Contract Invoice report</p>
+        <p>The invoicing date must be entered so the preview uses the same preconditions as the invoice to be created. This is only a preview, with no effect on the on existing data.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Invoicing_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Invoice Preview</p>
+        <p class="ccTextvorlage">Refer to topic <MadCap:xref href="Create Rental Contract Invoices.htm#_Ref236733509">“Create Rental Contract Invoices” on page 1</MadCap:xref> for more information about processing multiple invoices simultaneously.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.1    ">Rental Ledger Entries</h4>
+        <p class="ccTextvorlage">Each rent order line gets Rental Ledger Entries on creation of the Invoice (Service Invoice). Rental Ledger Entries are accessed from the Rent Order by clicking <span class="Bold">Navigate &gt; Entries &gt; Rental Ledger Entries</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Invoicing_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Rental Ledger Entries with posted and un-posted invoice lines for a sales item, resource, and rental item</p>
+        <p class="ccTextvorlage">These ledger entries are marked as Open until they are closed by posting the invoice. They contain the Entry Type, No. (Item, Resource, G/L account or Service Contract = rental item) and serial numbers where applicable. They also carry information about the period that is invoiced with that entry.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.2.2    "><a name="_Ref236733550"></a>Prepaid Positions</h4>
+            <p class="ccTextvorlage">In the case of prepaid positions, the ledger entries are divided according to calendar months. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC REN/Invoicing_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Rental Ledger Entries for a prepaid order from 1/15/2019 – 3/15/2019, not month based</p>
+        </div>
+        <p class="ccTextvorlage">The profit from the invoice is posted to a Rental Prepayment Account. The amounts have to be posted one-by-one to the Rental Account using the “Post Prepaid Rent Entries” function, accessed from the Rental Periodic Activities menu. Once this function is run, the <span class="Bold">Moved from Prepaid Acc.</span> check box is selected on the applicable lines. </p>
+        <p class="ccTextvorlage">Refer to topic <MadCap:xref href="Post Prepaid Rent Entries.htm#_Ref415222184">“Post Prepaid Rent Entries” on page 1</MadCap:xref> for more information about running this function.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc434929926"></a>Exercise – Invoice the Rent Order</h3>
+        <p class="ccTextvorlage">On February 1, 2019, you invoice the order to customer R-30000.</p>
+        <p class="ccDemoStepHeading">Invoice the Order</p>
+        <p class="ccTextvorlage">Follow these steps to invoice the order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Open the rent order created in the “Record a Rental Position on a Rent Order” exercise.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 02/28/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Review the Ledger Entries and Invoice</p>
+            <p class="ccTextvorlage">Follow these steps to review the rental ledger entries:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Entries &gt; Rental Ledger Entries</span>.</li>
+                <li class="ccTextvorlageNumberedList">Notice the following:<ul start="1"><li class="ccTextvorlageNumberedList">The rental invoice information appears. </li><li class="ccTextvorlageNumberedList">The <span class="Bold">Open</span> check box is selected because the invoice is still pending.</li></ul></li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Invoicing_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Rental Ledger Entries from the non-posted invoice</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Rental Ledger Entries</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Double-click the line to open the <span class="Bold">Service Invoice Rental</span> page.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Invoicing_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Service Invoice for the rent order</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Notice that the rental invoice will be posted to the Rental Account, as specified in the <span class="Bold">General Posting Setup</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Post the Invoice and Review the Entries</p>
+        <p class="ccTextvorlage">Follow these steps to post the invoice and review the entries:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Entries &gt; Rental Ledger Entries</span>.</li>
+            <li class="ccTextvorlageNumberedList">Notice that the <span class="Bold">Open</span> check box is cleared because the invoice is posted.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Invoicing_8.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Rental Ledger Entries for a posted invoice</p>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Rental Ledger Entries</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab of the Rent Order, notice that the <span class="Bold">Quantity Invoiced</span> field is not updated for the rental position. This field is updated when the return is posted.</li>
+        </ol>
+    </body>
+</html>

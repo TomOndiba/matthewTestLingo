@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="629" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">
+            <MadCap:annotation MadCap:createDate="2018-05-04T16:10:40.3360597-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment=" For SharePoint Online (Office 365) chapter 2.5. it's sometimes required to install the SharePoint 2013 Client Components SDK on server and client: https://www.microsoft.com/en-us/download/details.aspx?id=35585, beside the identity framework.\r\n\r\nTo use SharePoint Online, for SharePoint Communication library version 1.0.0.5 the Windows Identify Framework must be installed, both on client and server. The errors 'The file or assembly &quot;Microsoft.IdentityModel, Version=3.5.0.0, &lt;...&gt;&quot; or a reference could not be found. &lt;...&gt;' or 'Object reference is missing' could occur otherwise. For SharePoint Communication library version 1.0.0.6 and 1.0.0.7 the SharePoint 2013 SDK must be installed additionally, to prevent the error message 'msoidcliL.dll'. With SharePoint Communication library 1.0.0.8 nothing needs to be installed, except copying the DLLs in the add-in directory of the server. Yet if still errors occur, try to install the Windows Indentity Framework or SharePoint 2016 SDK on client and server.\r\n" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-05-04T16:10:40.9773064-05:00">Office 365</MadCap:annotation>
+        </h2>
+        <p>Office 365 capabilities can be used with <span class="CCBausteinInhaltZchn">cc|dms</span>. The relevant installation and configuration settings are described in this section.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Windows Identity Framework</h3>
+        <p>The Windows Identity Framework within the Windows Features must be activated for the server and each client for older <span class="CCBausteinInhaltZchn">cc|dms</span> versions. This setting usually applies automatically for Windows 10.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    ">User Credentials</h3>
+        <p>A user login must be defined for Office 365. It is therefore recommended to manage a service user by selecting the <span class="Bold">Office 365 User</span> check box in the <span class="Bold">DMS User Credentials</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DMS/Office 365.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Office 365 User designated in DMS User Credentials</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody"> The permissions (shown documents) via <span class="CCBausteinInhaltZchn">cc|dms</span> are no longer directly user-specific when a service user is defined.</p>
+    </body>
+</html>

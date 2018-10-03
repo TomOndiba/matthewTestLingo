@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc435201318"></a>Server Installation </h2>
+        <p class="ccTextvorlage">The installation routine of the “cc|formatted documents – Server” is usually run on the host, where the Microsoft Dynamics NAV Middle Tier is located. That way the “cc|formatted documents – Server” gets direct contact to Microsoft Dynamics NAV (no network access required). Alternatively, the “cc|formatted documents – Server” can be run on any host in your network, but that host should remain in the same domain in this case.</p>
+        <p class="ccTextvorlage">The server provides a (required) service to the “cc|formatted documents – Clients”. Without the server, the clients cannot operate (especially the report output).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Server Installation.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 345px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Three Tier Architecture</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The installation routing of the server registers a Windows Service named “cc formatted documents – Server Service” to enable a high availability of the server without interaction of the user. The Windows Service needs a service account for <span class="CCBausteinInhaltZchn">cc|formatted documents</span> that must be a domain account having full access to the Microsoft Dynamics NAV Instance. Ensure that the Service Account (or the Windows User) is registered in Microsoft Dynamics NAV and has the required permissions (Roles, Access Rights) for Microsoft Dynamics NAV.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc435201319"></a>Requirements </h3>
+        <p class="ccTextvorlage">Requirements for the correct operation of “cc|formatted documents – Server” are:</p>
+        <ul>
+            <li class="ccAufzählungblau">.NET Framework 3.5 or higher</li>
+            <li class="ccAufzählungblau">Microsoft Dynamics NAV Client</li>
+        </ul>
+        <p class="ccTextvorlage">Installing the server includes the following processes:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Run the file “cc formatted documents &lt;NAV Version ID&gt; - Server Setup.msi”.</li>
+            <li class="ccTextvorlageNumberedList">Follow the installation wizard. </li>
+            <li class="ccTextvorlageNumberedList">Follow the configuration wizard.</li>
+        </ol>
+        <p class="ccTextvorlage">Each process is described in the following sections.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc435201320"></a>Installation Wizard – Server</h3>
+        <p class="ccTextvorlage">The installation of the server requires administrator rights.</p>
+        <p class="ccTextvorlage">Follow these steps to run the “cc|formatted documents – Server” installation: </p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Locate and run the “cc formatted documents &lt;NAV Version ID&gt; - Server Setup.msi” file to start the installation.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Server Installation_1.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 399px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: cc|formatted documents Server Setup Wizard, Welcome window</p>
+        <ol start="2">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Next</span>. The information window opens.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Server Installation_2.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 399px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: cc|formatted documents Server Setup Wizard, Information window</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Next</span>. The <span class="Bold">License Agreement</span> window opens.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Server Installation_3.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 399px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: cc|formatted documents Server Setup Wizard, License Agreement window</p>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">Accept the License Agreement and then click <span class="Bold">Next</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Server Installation_4.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 399px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: cc|formatted documents Server Setup Wizard, Installation Folder selection</p>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">Confirm or select the installation folder and then click <span class="Bold">Next</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Server Installation_5.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 399px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: cc|formatted documents Server Setup Wizard, domain account and password window</p>
+        <p class="ccTextvorlageNumberedListnonumber">A service account must be entered for the new Windows Service. The service account must be assigned to a domain account that has full access to the Microsoft Dynamics NAV Instance. </p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Enter a domain account and password for the service and then click <span class="Bold">Next</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Server Installation_6.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 399px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: cc|formatted documents Server Setup Wizard, settings and features selection</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Confirm the default setting or (de-)select additional features and then click <span class="Bold">Install</span>. <br />The required files/components are copied and registered. When the installation is finished, the <span class="Bold">Installation Complete</span> window opens.</li>
+            <li class="ccTextvorlageNumberedList">When the installation process is finished, click <span class="Bold">Finish</span>. </li>
+        </ol>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc435201321"></a>Configuration Wizard – Server</h3>
+        <p class="ccTextvorlage">When the installation is complete, the <span class="Bold">cc|formatted documents - Configuration Wizard</span> window opens. The Wizard assists with setting up the connection to Microsoft Dynamics NAV.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Server Installation_7.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 343px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: cc|formatted documents Configuration Wizard, Welcome window</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Next</span>. The <span class="Bold">Product Key</span> window opens. </li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Server Installation_8.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 343px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: cc|formatted documents Configuration Wizard, Product Key window</p>
+        <ol start="2">
+            <li class="ccTextvorlageNumberedList">Enter the company name and the product key provided by <span class="COSMOCONSULTZchn">COSMO CONSULT</span>.</li>
+        </ol>
+        <p class="ccTextvorlageNumberedListNoteHeading">Note</p>
+        <p class="ccTextvorlageNumberedListNoteBody">The product key is company specific. For companies of affiliated enterprises more product keys are issued free of charge.</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Next</span>. The <span class="Bold">Connection Settings</span> window opens.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Server Installation_9.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 343px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: cc|formatted documents Configuration Wizard, Connection Settings window</p>
+        <p> </p>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">Confirm/correct the address of the server hosting the “cc|formatted documents – Server” and adjust the NAV Server, Port, Service Name and Company Name to the Microsoft Dynamics NAV Service Tier. <ul start="4"><li class="ccTextvorlageNumberedList">The address of “cc|formatted documents – Server” (<span class="Bold">FD Server</span>) corresponds to the network address of the host, on which the installation is run. </li><li class="ccTextvorlageNumberedList">The <span class="Bold">Default NAV Service URL</span> and <span class="Bold">Default NAV Company Name</span> fields must correspond to your Default NAV Instance.</li><li class="ccTextvorlageNumberedList">It is very important to specify the <span class="Bold">NAV Client Directory</span>.</li><li><p>The fields NAV User Name (all) and NAV Password (all) have to be populated if the Microsoft Dynamics NAV middle tier operates with the Credential Type “NavUserPassword”. For this setting, it is important that this <span class="CCBausteinInhaltZchn">cc|formatted documents</span> installation is used for all connections with the middle tier/NST. This means that the user has to be set up in every NST with the same password which are using <span class="CCBausteinInhaltZchn">cc|formatted documents</span>. If several middle tiers/NST differs, multiple <span class="CCBausteinInhaltZchn">cc|formatted document</span> entities/instances must be set up.</p></li></ul></li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Next</span>. The <span class="Bold">Connection Test</span> window opens.<br />This window offers the ability to test the connection of the “cc|formatted documents – Server” to Microsoft Dynamics NAV.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Server Installation_10.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 343px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: cc|formatted documents Configuration Wizard, Connection Test window</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Perform a connection test by clicking <span class="Bold">Test Connection</span>. <br />If the connection is established successfully, the “cc|formatted documents – Server” indicates the company that it has opened.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Next</span>. The <span class="Bold">Deployment</span> window opens.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Server Installation_11.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 343px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: cc|formatted documents Configuration Wizard, Deployment window</p>
+        <p class="ccTextvorlageNumberedListnonumber">To use <span class="CCBausteinInhaltZchn">cc|formatted documents</span> in Microsoft Dynamics NAV, the Add-Ins path for Microsoft Dynamics NAV is required.</p>
+        <ol start="7" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Specify the path to the Add-In Folder of the Microsoft Dynamics NAV Client, which is used for the connection to the correct Microsoft Dynamics NAV Instance and then click <span class="Bold">Finish</span> to complete the configuration wizard. </li>
+        </ol>
+        <p class="ccTextvorlage">On finishing the Wizard, the Service “cc formatted documents – Server Service” is started automatically.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc435201322"></a>Microsoft Dynamics NAV Client Directory – Hints for Administrators</h3>
+        <p class="ccTextvorlage">If multiple Microsoft Dynamics NAV Clients are used on this host, whether it is the installed Microsoft Dynamics NAV Client or not, continue reading this and topic <MadCap:xref href="#_Ref428359557" class="RelLinkPageNumber">"Example – Installation/Uninstallation of Additional Server Service" on page 1</MadCap:xref>. If the installed Microsoft Dynamics NAV Client is the only and correct Microsoft Dynamics NAV Client, there is no need to continue reading this topic or topic <MadCap:xref href="#_Ref428359557" class="RelLinkPageNumber">"Example – Installation/Uninstallation of Additional Server Service" on page 1</MadCap:xref>.</p>
+        <p class="ccTextvorlage">As mentioned in the requirements of the server, it is necessary to have a Microsoft Dynamics NAV Client installed on the host, where the “cc|formatted documents – Server” is run. The Installation Wizard recognizes the installed Microsoft Dynamics NAV Client and assumes that this Build Status is used for connecting to Microsoft Dynamics NAV. If this is not the case, it is important to adjust the path to the Microsoft Dynamics NAV Client (with the correct Build Status).</p>
+        <p class="ccTextvorlageNoteheading">Important</p>
+        <p class="ccTextvorlageNotebody">Ensure that the specification of the Microsoft Dynamics NAV Client Directory on Page 3 (Connection Settings) of the Configuration Wizard is correct.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.5    "><a name="_Ref428359557"></a><a name="_Toc435201323"></a>Example – Installation/Uninstallation of Additional Server Service</h3>
+        <p class="ccTextvorlage">As preparation for further steps, the “Service” folder of “%programfiles(x86)%\Cosmo Consult AG“ needs to be copied and renamed to “Service 2”.</p>
+        <p class="ccTextvorlage">Now run the Windows Command Prompt as <span class="Underline">administrator</span>.</p>
+        <p class="ccTextvorlageNoteheading">Important</p>
+        <p class="ccTextvorlageNotebody">The space after the “=” of the following commands must be included.</p>
+        <p class="ccTextvorlage"><span class="Bold">Register an additional Server Service:</span>
+        </p>
+        <p class="ccsourcecode" style="margin-left: 36pt;"><span class="sourcecode">sc \\</span><span class="Bold">&lt;Hostname&gt;</span> <span class="sourcecode">create CCFDServer2 binpath= </span></p>
+        <p class="ccsourcecode"><span class="sourcecode" style="margin-left: 36pt;">"%programfiles(x86)%\Cosmo Consult AG\cc formatted documents\ Service 2\ CosmoConsult.FormattedDocuments.FdRServerService.exe" DisplayName= "cc formatted documents – Server Service 2" start= auto</span>
+        </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage"><span class="Bold">Add description:</span>
+            </p>
+            <p class="ccsourcecode" style="margin-left: 36pt;"><span class="sourcecode">sc \\</span><span class="Bold">&lt;Hostname&gt;</span> <span class="sourcecode">description CCFDServer2 "cc formatted documents – Server Service for Microsoft Dynamics NAV, No. 2"</span></p>
+        </div>
+        <p class="ccTextvorlage"><span class="Bold">Delete Server Service:</span>
+        </p>
+        <p class="ccsourcecode" style="margin-left: 36pt;"><span class="sourcecode">sc \\</span><span class="Bold">&lt;Hostname&gt;</span> <span class="sourcecode">delete CCFDServer2</span></p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Every “cc|formatted documents – Server Service” is able to switch between Microsoft Dynamics NAV Services and Microsoft Dynamics NAV Companies. However, an additional Server Service is required conceivably, e.g. when permissions or the default connection settings should be different.</p>
+    </body>
+</html>

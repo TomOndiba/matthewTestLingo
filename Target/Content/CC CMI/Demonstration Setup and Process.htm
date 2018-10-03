@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="748" MadCap:lastWidth="604" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434329982"></a>Demonstration – Set Up and Process Customer Rebates</h2>
+        <p class="ccTextvorlage">This demonstration provides an overview of how to use the system for customer rebates. It shows how to combine customers to purchasing associations and how to create scale commission rates and commission statements.</p>
+        <p class="ccTextvorlage"><span class="Bold">Scenario</span>: Three customers – The Cannon Group PLC, Selangorian Ltd., and Deerfield Graphics Company – decide to incorporate into a purchasing association headed by The Cannon Group. They enter into an agreement with Kevin, the sales manager at CRONUS, that if their total sales per month exceed defined values, they will receive a credit memo. Kevin instructs Phyllis, the accounting manager, to create a new commission recipient record used as rebate recipient for the purchasing association, enter the negotiated rebate rates, and combine the customers into a rebate group. </p>
+        <p class="ccTextvorlage">Susan, the sales order processor, enters new sales orders for customers of the purchasing association.</p>
+        <p class="ccTextvorlage">At the end of the month, Arnie, the accounts receivable administrator, creates the commission statement used as a rebate statement and issues the commission statement for the purchasing association.</p>
+        <p class="ccDemoStepHeading">Create a Commission Recipient</p>
+        <p class="ccTextvorlage">Phyllis creates a new commission recipient record for the purchasing association headed by The Cannon Group as instructed. The new commission recipient should be a member of the commission group REBATE.</p>
+        <p class="ccTextvorlage">Follow these steps to create the commission recipient:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="CCBausteinInhaltZchn">cc|commission</span> menu, click <span class="Bold">Commission Recipients</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span> and then press ENTER to insert a new record. Number C-0006 is assigned automatically from the number series.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Name</span> field, type The Cannon Group PLC.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Address</span> field, type 192 Market Square.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Post Code</span> field, enter B27 4KT.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Invoicing</span> FastTab, enter REBATE in the <span class="Bold">Commission Group Code</span> field.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Setup and Process.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Commission Recipient Card for The Cannon Group PLC</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Do not close the <span class="Bold">Commission Recipient Card</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Assign Customers to Purchasing Association</p>
+        <p class="ccTextvorlage">Phyllis assigns the customers of the purchasing association by assigning the new commission recipient which is used as rebate recipient.</p>
+        <p class="ccTextvorlage">Follow these steps to assign the customers to the commission recipient:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Commission Recipient Card</span> page, click <span class="Bold">Navigate &gt; Customers</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Customer No.</span> field, enter 10000.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Share %</span> field, type 100.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, enter 20000 in the <span class="Bold">Customer No.</span> field and 100 in the <span class="Bold">Share %</span> field.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, enter 40000 in the <span class="Bold">Customer No.</span> field and 100 in the <span class="Bold">Share %</span> field.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Setup and Process_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Customers assigned to Commission Recipient C-0006</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Comm. Recipient Customer Catalog</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Specify Scale Commission Rates</p>
+        <p class="ccTextvorlage">Phyllis enters the scale commission rates negotiated for the purchasing association.</p>
+        <p class="ccTextvorlage">Follow these steps to enter scale commission rates for the commission recipient:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the Commission Recipients Card for C-0006, click <span class="Bold">Commission Rates</span> on the <span class="Bold">Navigate</span> tab.</li>
+            <li class="ccTextvorlageNumberedList">In the header, set the following filters:<ul start="1"><li class="ccTextvorlageNumberedList">Sales Type Filter = All Customers</li><li class="ccTextvorlageNumberedList">Comm. Recipient Type Filter = Commission Recipient</li><li class="ccTextvorlageNumberedList">Comm. Recipient Code Filter = C-0006 </li><li class="ccTextvorlageNumberedList">Type Filter = All Items</li></ul></li>
+            <li class="ccTextvorlageNumberedList">On the first line, enter the following information:<ul start="1"><li class="ccTextvorlageNumberedList">Minimum Amount = 5000</li><li class="ccTextvorlageNumberedList">Commission Type = Percent </li><li class="ccTextvorlageNumberedList">Commission = 1</li></ul></li>
+            <li class="ccTextvorlageNumberedList">On the second line, enter the following information:<ul start="1"><li class="ccTextvorlageNumberedList">Minimum Amount = 7500</li><li class="ccTextvorlageNumberedList">Commission Type = Percent </li><li class="ccTextvorlageNumberedList">Commission = 1.25</li></ul></li>
+            <li class="ccTextvorlageNumberedList">On the third line, enter the following information:<ul start="1"><li class="ccTextvorlageNumberedList">Minimum Amount = 10000</li><li class="ccTextvorlageNumberedList">Commission Type = Percent </li><li class="ccTextvorlageNumberedList">Commission = 1.5</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Setup and Process_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Commission Rates assigned to commission recipient The Cannon Group PLC</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Commissions Rates</span> and <span class="Bold">Commission Recipient Card</span> pages.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Create Posted Sales Document Lines for Items</p>
+        <p class="ccTextvorlage">Susan, the sales order processor, enters new sales orders for customers of the purchasing association. The orders can be delivered directly. Susan can post the shipment and the invoice.</p>
+        <p class="ccTextvorlage">Follow these steps to enter and post sales orders:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the Sales &amp; Marketing menu, click <span class="Bold">Order Processing &gt; Sales Orders</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span> and then press ENTER.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Sell-to Customer No.</span> field, enter 10000.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/07/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Order Date</span> field, enter 03/07/19.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Commission Recipients</span> to confirm that the commission recipient is allocated to the order.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Setup and Process_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Commission Recipients assigned to the sales order</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Sales Commission Recipients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the first sales line, select <span class="Italics">Item</span> in the <span class="Bold">Type</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter 1900-S.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Location Code</span> field, enter BLUE.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 30.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship and Invoice</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">No</span> to close the confirmation message without opening the posted invoice.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span> and then press ENTER.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Sell-to Customer No.</span> field, enter 20000.</li>
+            <li class="ccTextvorlageNumberedList">Close any credit limit warnings.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/14/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Order Date</span> field, enter 03/14/19.</li>
+            <li class="ccTextvorlageNumberedList">On the first sales line, select <span class="Italics">Item</span> in the <span class="Bold">Type</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter 1920-S.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Location Code</span> field, enter BLUE.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 6.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship and Invoice</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">No</span> to close the confirmation message without opening the posted invoice.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span> and then press ENTER.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Sell-to Customer No.</span> field, enter 40000.</li>
+            <li class="ccTextvorlageNumberedList">Close any credit limit warnings.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/21/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Order Date</span> field, enter 03/21/19.</li>
+            <li class="ccTextvorlageNumberedList">On the first sales line, select <span class="Italics">Item</span> in the <span class="Bold">Type</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter 1928-S.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Location Code</span> field, enter BLUE.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 65.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship and Invoice</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">No</span> to close the confirmation message without opening the posted invoice.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Create Manual Commission Statements</p>
+        <p class="ccTextvorlage">At the end of the month, Arnie, the accounts receivable administrator, creates the monthly commission statements for the purchasing association.</p>
+        <p class="ccTextvorlage">Follow these steps to create a manual commission statement:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="CCBausteinInhaltZchn">cc|commission</span> menu, click <span class="Bold">Commission Statements</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span> and then press ENTER to automatically populate the <span class="Bold">No.</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Commission Recipient No.</span> field, enter C-0006.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Document Date</span> field, enter 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Statement from</span> field, enter 03/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Statement to</span> field, enter 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Suggest Commission Statement Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the message that three lines were created.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Setup and Process_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Commission Statement for The Cannon Group PLC</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Statistics</span> to review the total commissionable amount for this commission statement. </li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Setup and Process_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Commission Statistics to review total commissionable amount for The Cannon Group PLC</p>
+        <p class="ccTabellenText" style="margin-left: 36pt;">Because the total commissionable amount is greater than 7,500 but lower then 10,000, the 1.25% commission rate is used for this commission statement.</p>
+        <ol start="11">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Comm. Statement Statistics</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Issue Commission Statement</p>
+            <p class="ccTextvorlage">After Arnie checks the commission statements, he issues and prints the commission statement for the purchasing association to use it as the basis for the credit memo.</p>
+            <p class="ccTextvorlage">Follow these steps to issue and print an issued commission statement:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">On the Commission Statement, click <span class="Bold">Issue</span> on the ribbon.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to run the Issue Commission Statement batch job.</li>
+                <li class="ccTextvorlageNumberedList">On the <span class="CCBausteinInhaltZchn">cc|commission</span> menu, click <span class="Bold">Issued Commission Statements</span>.</li>
+                <li class="ccTextvorlageNumberedList">Select the line for the Issued Commission Statement created for The Cannon Group PLC.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Print</span>.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">Print</span> to generate a printed document, or click <span class="Bold">Preview</span> to review the commission statement on the screen.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Setup and Process_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Commission Statement with rebates for The Cannon Group PLC</p>
+        <p> </p>
+    </body>
+</html>

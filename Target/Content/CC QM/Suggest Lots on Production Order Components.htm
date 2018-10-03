@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Suggest Lots on Production Order Components</h3>
+        <p class="ccTextvorlage">Lots can also be suggested based on component consumption. To use this feature, the following setup must be completed:</p>
+        <ul>
+            <li class="ccAufzählungblau">On the component item’s Test Plan Setup – add a line with <span class="Bold">Source Type</span> = <span class="Italics">Component</span>, relevant testing attributes (Item Test Order Option, Sample Method, Inspection Severity), and <span class="Bold">Test Plan No.</span> = &lt;blank&gt;. </li>
+            <li class="ccAufzählungblau">On the produced item’s Production BOM – assign a default Test Plan to the component item. This test plan will be copied to the <span class="Bold">Test Plan No.</span> field on the Prod. Order Component line for each production order.</li>
+        </ul>
+        <p class="ccTextvorlage">Similar to the order-specific lot requirement functionality, the default test plan can be copied to a new test plan and modified for a Prod. Order Component. The Test Plan is used to enable comparison with existing lot testing results based on the specific Test Properties in both the default Test Plan and current one for the production order component. The Test Properties are compared to determine whether a lot that is generally tested as “Not OK” is valid for the component. Only the lots in stock with the same Location Code are taken into consideration and will be retested.</p>
+        <p class="ccTextvorlage">Different parameters can be set up for each customer by adding lines in the Test Plan Setup. For example, testing can be done on item level for one customer and then tested on a lot number basis for another customer.</p>
+        <p class="ccTextvorlage">Additionally, it is possible to create a component-based Test Order.</p>
+        <p class="BoldItalics12pt">Example</p>
+        <p class="ccTextvorlage">In this example, item Q-40006 is a component of item Q-40005. The default test plan TP0005 has been assigned to item Q-40006 in the production BOM for item Q-40005.</p>
+        <p class="ccTextvorlage">When a production order is created for item Q-40005, the default test plan is copied to the component line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Suggest Lots on Production.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Default test plan assigned to component line</p>
+        <p class="ccTextvorlage">Two lots exist for item Q-40006: LOT2000 (test OK) and LOT2001 (test failed). When the “Suggest Lots” function is run on the Prod. Order Component line, only LOT2000 appears as available for selection.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Suggest Lots on Production_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Lot Selection page showing lots that are available for the component</p>
+        <p class="ccTextvorlage">If the default test plan is acceptable for the production order, then a lot can be selected and processed. </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">If this particular production order requires a modification for the tolerances of this component, a new test plan can be created and used for the lot selection. In this example, LOT2000 and LOT2001 have net weights of 200 and 198, respectively. The net weight of this component for this production order can be less than 199 GR.</p>
+        </div>
+        <p class="ccTextvorlage">On the ribbon of the <span class="Bold">Prod. Order Components</span> page, click <span class="Bold">Copy Test Plan</span>. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Suggest Lots on Production_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Prod. Order Components page with default test plan</p>
+        <p class="ccTextvorlage">A new test plan is created from the default test plan and is inserted into the <span class="Bold">Test Plan No.</span> field.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Suggest Lots on Production_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: New test plan number for customization</p>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">Customize Test Plan</span> to make the changes. </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the <span class="Bold">Test Plan Card</span> page, update information on the <span class="Bold">General</span> FastTab as needed. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Suggest Lots on Production_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Test Plan Card to be customized</p>
+        </div>
+        <p class="ccTextvorlage">Select the first line, click <span class="Bold">Property Set &gt; Card</span> on the <span class="Bold">Lines</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Suggest Lots on Production_5.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 390px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Test Plan Prop. Set Card with default values</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Lower Limit</span> field for the net weight test property field, change the value from 199.00 to 198.00.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Suggest Lots on Production_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Customized Test Plan Property Set </p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the <span class="Bold">Test Plan Prop. Set Card</span> page. </p>
+        <p class="ccTextvorlage">On the <span class="Bold">General</span> FastTab of the <span class="Bold">Test Plan Card</span> page, enter a date in the <span class="Bold">Valid from</span> field and then change the <span class="Bold">Status</span> to <span class="Italics">Certified</span>. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Suggest Lots on Production_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Certified customized test plan </p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the <span class="Bold">Test Plan Card</span> page.</p>
+        <p class="ccTextvorlage">On the ribbon of the <span class="Bold">Prod. Order Components</span> page, click <span class="Bold">Suggest Lots</span>. Now both LOT2000 and LOT2001 appear in the <span class="Bold">Lot Selection</span> page since both meet the criteria for this component line. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Suggest Lots on Production_8.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: LOT2001 added to the lots that meet revised test plan criteria </p>
+    </body>
+</html>

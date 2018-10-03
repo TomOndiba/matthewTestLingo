@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434332536"></a>Add a Section</h2>
+        <p class="ccTextvorlage">In this example, a Comments Section is added to the Sales Quote layout to print quote comments. </p>
+        <p class="ccTextvorlage">In the Document Layout, the new section will be inserted below the Total Section line and use <span class="Bold">Section Type</span> = <span class="Italics">Line</span> since it will be printed once between the header and footer. This new section will reference Table No. 44, Sales Comments Line, where the comments on a Sales Quote are stored.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Before starting this example, add some comment text to the existing Sales Quote header.</p>
+        <p class="ccDemoStepHeading">Add Section to Document Layout</p>
+        <p class="ccTextvorlage">Follow these steps to add a section to a document layout:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Open the SQ-01, Sales Quote, Document Layout.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Under Development</span>.</li>
+            <li class="ccTextvorlageNumberedList">Insert a line after the Total Section line.</li>
+            <li class="ccTextvorlageNumberedList">Enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Section Type</span> = Line</li><li class="ccTextvorlageNumberedList"><span class="Bold">Description</span> = Comments</li><li class="ccTextvorlageNumberedList"><span class="Bold">Table No.</span> = 44</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Add a Section.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: New section added to the Document Layout</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Add Filters to Section</p>
+            <p class="ccTextvorlage">Filters must be set up for the new section to define the table relation, which is done through the Document Layout Filters.</p>
+        </div>
+        <p class="ccTextvorlage">In the Document Layout Filters, specify that the Document Type and Document Lines No. filters should always be 0 (the Document Type is an option field where Quote is the first option, therefore this field is 0. “Quote” can also be entered as a filter but then it will not be possible to run the report in languages other than English) and the <span class="Bold">No.</span> field should be filtered according to the <span class="Bold">No.</span> field in the Sales Header table (which is the sales quote number).</p>
+        <p class="ccTextvorlage">Follow these steps to add filters to the section:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">With the section line for “Comments” selected, click <span class="Bold">Line &gt; Filters</span> on the <span class="Bold">Sections</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 1</li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Type</span> = Text</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the second line, enter the following:
+                <ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 2</li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Type</span> = Value</li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Field No.</span> = 3</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the third line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 7</li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Type</span> = Text</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Add a Section_1.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 237px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Filters added to the new section</p>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout Filters</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Specify Field</p>
+            <p class="ccTextvorlage">The last step is to specify the field to be printed for the Comments Section. This is done through the Document Layout Fields as described earlier. Field No. 6 from table 44 (no filters are required since it is from the same table as specified in the Section) will be printed in Italics.</p>
+        </div>
+        <p class="ccTextvorlage">Follow these steps to specify the field to be printed in the Comments section:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">With the section line for “Comments” selected, click <span class="Bold">Line &gt; Fields</span> on the <span class="Bold">Sections</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Line</span> = 1</li><li class="ccTextvorlageNumberedList"><span class="Bold">Description</span> = Comment</li><li><span class="Bold">Type</span> = Value</li><li><span class="Bold">Table No.</span> = 44</li><li><span class="Bold">Field No.</span> = 6</li><li><span class="Bold">Font Style</span> = Italic</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Add a Section_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Field added to the new section</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Run Report</span> to view the report changes.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Show Request Page</span> check box and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the request page, click <span class="Bold">Preview</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Add a Section_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Comment text from the Sales Quote header added to the report</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout Fields</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Certified</span> to make it available to the users.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout</span> page.</li>
+        </ol>
+    </body>
+</html>

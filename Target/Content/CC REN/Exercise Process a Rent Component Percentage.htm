@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="708" MadCap:lastWidth="602" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434929930"></a>Exercise – Use Rate Component Percentages in Rent Order</h2>
+        <p class="ccTextvorlage">Due to recent damages to item R-20000-02, CRONUS International Ltd. has decided to change the current insurance fee of 100 to 10% of the rental price.</p>
+        <p class="ccTextvorlage">On January 31, 2019, customer R-20000 requests one unit of item R-20000-02 for the period of 02/01/19 through 02/28/19. While processing the order, you find out the that price has increased to  1505 per month. The customer approves the price change as well as the 10% insurance fee. Due to a temporary arrangement, the one-time invoicing for the cleaning fee is waived for this order.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Ensure that a Rental Price has been set up for item R-20000-02 / customer R-20000 with a monthly rate of 1480.</p>
+        <p class="ccDemoStepHeading">Set Up the Price Structure</p>
+        <p class="ccTextvorlage">Follow these steps to set up the price structure:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Ensure that the work date is 01/31/19.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|rental</span><span class="Bold"> &gt; Contract Management &gt; Items</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate item R-20000-02 and then click <span class="Bold">Navigate &gt; Rate Component Prices</span> (in the Rental group).</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rent Component Prices</span> page, enter/update the following:<ol start="1"><li class="ccTextvorlageNumberedList">Rate Component Type = Rate Part</li><li class="ccTextvorlageNumberedList">Rate Component No. = INSURANCE</li><li class="ccTextvorlageNumberedList">Sales Code = R-20000</li><li class="ccTextvorlageNumberedList">Unit of Measure Code = PCS</li><li class="ccTextvorlageNumberedList">Rental Rate Code = MONTH</li><li class="ccTextvorlageNumberedList">Unit Price = 0.00</li><li class="ccTextvorlageNumberedList">Percentage of Item Rate = 10</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Component Percentage.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Insurance rate component set to 10% of rental rate</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Rent Component Prices</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create and Ship the Rent Order</p>
+            <p class="ccTextvorlage">Follow these steps to create and ship the rent order:</p>
+        </div>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|rental </span><span class="Bold">&gt; Contract Management &gt; Rent Orders</span>.</li>
+            <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-20000.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Rental</span> FastTab and enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Rental Start Date = 02/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 02/28/19</li><li class="ccTextvorlageNumberedList">Prepaid = Yes</li></ol></li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lines</span> FastTab, select <span class="Italics">Item</span> in the <span class="Bold">Type</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter R-20000-02 and then press ENTER. Notice that the <span class="Bold">Rate Unit Price</span> for the INSURANCE line is 10% of the <span class="Bold">Rate Unit Price</span> on the rent item line.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Component Percentage_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Rent Order with rate component lines</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">On the rent item line, enter 1 in the <span class="Bold">Quantity</span> field. </li>
+        </ol>
+        <div class="ccDIV">
+            <ol start="8">
+                <li class="ccTextvorlageNumberedList">On the line for the TAX rate component, enter 80 in the <span class="Bold">Rate Unit Price</span> field.</li>
+                <li class="ccTextvorlageNumberedList">Delete the last line for the One-Time Invoicing CLEANRETURN to remove the cleaning fee.</li>
+                <li class="ccTextvorlageNumberedList">On the rent item line, change the <span class="Bold">Rate Unit Price</span> from 1480 to 1505. Notice that the <span class="Bold">Rate Unit Price</span> in the INSURANCE rate component line has changed to 150.50.</li>
+            </ol>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC REN/Exercise Process a Rent Component Percentage_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Rent Order with changed rate unit prices and deleted Cleaning fee</p>
+        </div>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">Select the rent item line and then click <span class="Bold">Line &gt; Item Tracking Lines</span> on the <span class="Bold">Lines</span> FastTab.<br /></li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Shipment</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Select Entries</span>.</li>
+            <li class="ccTextvorlageNumberedList">Note which serial number is selected and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Invoice the Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to invoice the rent order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 02/28/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> and accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Double-click the line to open the <span class="Bold">Service Invoice Rental</span> page. Notice that the rental item and the two Rate Part components appear with the same values entered on the Rent Order line.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Component Percentage_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Service Invoice for rental and rate part component positions</p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the Rent Order.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Entries &gt; Rental Ledger Entries</span>. Notice that the rental and rate part component lines appear with the adjusted amounts.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Component Percentage_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Rental Ledger Entries for a posted invoice with rental and rate part component positions</p>
+        <ol start="11">
+            <li class="ccTextvorlageNumberedList">Escape back to the Rent Order.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Return the Rent Order </p>
+            <p class="ccTextvorlage">Follow these steps to return the rent order:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/28/19.</li>
+                <li class="ccTextvorlageNumberedList">On the rental item line, enter 02/28/19 in the <span class="Bold">Rental Return Date</span> field.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Return Qty. to Receive</span> field, enter 1. </li>
+                <li class="ccTextvorlageNumberedList">Select the rental item line and then click <span class="Bold">Line &gt; Item Tracking Lines</span> on the <span class="Bold">Lines</span> FastTab.</li>
+                <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.</li>
+                <li class="ccTextvorlageNumberedList">Confirm that the serial number is correct and then click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+                <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>. </li>
+                <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Rent Order</span> page.</li>
+            </ol>
+        </div>
+    </body>
+</html>

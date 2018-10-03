@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="790" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434568021"></a>Actions Tab</h3>
+            <p class="ccTextvorlage">The following menu items appear on the <span class="Bold">Actions</span> tab of the Document BOM ribbon. </p>
+            <ul>
+                <li class="ccAufzählungorange"><span class="Underline">Request BOM</span>: Opens the master BOM for selection if any are assigned to the item. The following page appears.</li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Document BOM_Actions Tab.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 3.5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Request of the Master BOM and/or Production BOM and Routing</p>
+        </div>
+        <p class="ccAufzahlungorangenobullet">Here the user can decide whether only one or all levels need to be opened. If the item is also assigned to a production BOM or a routing, these can be opened instead of the master BOM by selecting the <span class="Bold">Production BOM</span> and/or the <span class="Bold">Routing</span> check boxes. The BOM is assigned to the sales line as the document BOM.</p>
+        <p class="ccAufzahlungorangenobullet">When the configuration feature in <span class="CCBausteinInhaltZchn">cc|configure to order</span> is used, the BOM is calculated using formulas when it is opened and configured on an order-related basis (refer to topic <MadCap:xref href="Dynamic Master BOM.htm#_Ref351531915">“Dynamic Master BOM” on page 1</MadCap:xref>).</p>
+        <ul>
+            <li class="ccAufzählungorange"><span class="Underline">Request BOM from Line</span>: Opens the Master BOM for the component in a document BOM line, if it has its own master BOM.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Schedule</span>: With this function, scheduling occurs based on the document BOM. In this case, scheduling considers all the times for resources, work centers and groups of work centers. The items are always scheduled so that they must be available to an assembly at the start of the first series of operations.</li>
+        </ul>
+        <p class="ccAufzahlungorangenobullet">Limited capacities are taken into consideration. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Document BOM_Actions Tab_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="_Ref284835239"></a>: Scheduled Document BOM</p>
+        <ul>
+            <li class="ccAufzählungorangenobullet">The following types of scheduling are possible:</li>
+            <li class="ccAufzählungorangenobullet">
+                <ul>
+                    <li style="text-align: justify;">Forward – Here scheduling of the document BOM is performed for the future starting at the start date. The <span class="Bold">Starting Date</span> field must be completed manually.</li>
+                    <li style="text-align: justify;">Backward – Here scheduling of the document BOM is performed backward starting at the end date. The <span class="Bold">Ending Date</span> field  must be completed manually.<br /><span class="Bold">Example</span>: Backward scheduling is used in <MadCap:xref href="#_Ref284835239" class="Figure">Fig. 2</MadCap:xref>. The end date is 3/26/2019. Accordingly, all components marked yellow must be available at the start of the series of operations marked yellow. The series of operations have a processing time of 16 hours. The Front Wheel assembly is therefore available for the subsequent series of operations on 3/25/2019. That is also the due date for item 1900, Frame.</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li class="ccAufzählungorange"><span class="Underline">Transfer Due Date in Shipment Date</span>: Enables the schedule result to be transferred to the <span class="Bold">Shipment Date</span> field on the document BOM lines.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Release</span>: Changes the status of all Document BOM lines to <span class="Italics">Released</span>. Additionally, a variant code will be created automatically for released lines with <span class="Bold">Part Type</span> = <span class="Italics">Purchase</span>.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Reopen</span>: Changes the status of all Document BOM lines back to <span class="Italics">Open</span>.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Cut</span>: Enables individual items, multiple items and complete structures from the same or a different document BOM to be cut and copied to the clipboard.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Copy</span>: Enables individual items, multiple items and complete structures from the same or a different document BOM to be copied to the clipboard.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Paste</span>: Enables individual items, multiple items and complete structures that were copied to the clipboard from the same or a different document BOM to be inserted here.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Assign New Line No.</span>: Enables the document BOM to be renumbered. This is necessary when no further new lines can be added to the document BOM using the “Auto Split Key” function of Microsoft Dynamics NAV.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Order Promising</span>: Enables, for example, critical parts or long lead time items to be planned in advance. This function is based on the standard order promising functionality. The system calculates the earliest possible procurement date. If you accept the proposal, planning proposals are generated immediately which are connected with the document BOM line or the construction line via the reservation management of Microsoft Dynamics NAV. </li>
+            <li class="ccAufzählungorange"><span class="Underline">Update Unit Cost &amp; Price</span>: Updates the unit cost and unit price of lines (<span class="Bold">Type</span> &lt;&gt; <span class="Italics">G/L Account</span>, <span class="Bold">Purchase Status</span> &lt;&gt; <span class="Italics">Purchase Posted</span>) with the current costs and prices. If something has really changed, the <span class="Bold">Changed</span> field will be set to TRUE while the page is open. Refer to topic <MadCap:xref href="Example Update Unit Costs Prices in.htm">“Example – Update Unit Costs/Prices in CTO BOMs” on page 1</MadCap:xref> for more information.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Reserve</span>: Enables reservations to be made manually (e.g. from the warehouse stock).</li>
+            <li class="ccAufzählungorange"><span class="Underline">Reservation Entries</span>: Displays the reserved quantity of reservation items that have been generated for this position (e.g. via the date of promised delivery).</li>
+            <li class="ccAufzählungorange"><span class="Underline">Purchase G/L Acc./Item</span>: Creates a purchase quote/order or requisition line for a component or against a G/L account for an item that does not yet exist for demand and normally would never be created (refer to topic <MadCap:xref href="Create Purchase Order or Purchase.htm#_Ref310440290">“Create Purchase Documents for G/L Account and Components” on page 1</MadCap:xref>).</li>
+            <li class="ccAufzählungorange"><span class="Underline">Structure Representation</span>: Displays the document BOM in a tree-structure where the user can expand or collapse the different levels.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Switch Const.-/Prod. View</span>: Switches between the construction and the production view (refer to topic <MadCap:xref href="Example Production View.htm#_Ref418157725">“Example – Production View” on page 1</MadCap:xref>). </li>
+            <li class="ccAufzählungorange"><span class="Underline">Delete Release</span>: Enables the document BOM lines that were marked via the delete reservation of the PDM interface to be released for deletion in Microsoft Dynamics NAV. Further information on the ProfiDB interface is provided in the separate interface description document.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Create Change Order</span>: Creates an order to notify the design department of change suggestions from the Document BOM (refer to topic <MadCap:xref href="Change Order.htm#_Ref405971295">“Change Order ” on page 1</MadCap:xref>).</li>
+            <li class="ccAufzählungorange"><span class="Underline">Open Change Order</span>: Opens the <span class="Bold">Change Orders</span> page from where existing change orders for the Document BOM can be viewed (refer to topic <MadCap:xref href="Change Order.htm#_Ref405971295">“Change Order ” on page 1</MadCap:xref>).</li>
+            <li class="ccAufzählungorange"><span class="Underline">Transfer Comp. to Sales Document</span>: Transfers all Document BOM Lines with <span class="Bold">Transfer to Sales Document</span> = <span class="Italics">Yes</span> to the current Sales Quote/Order lines. If the marked component is an assembly group, a new Document BOM (with the copied assembly group) will be assigned to the new Sales Line. The source Document BOM Lines are deleted after transferring to the Sales Lines. Additionally, existing reservations are transferred to the target lines. </li>
+        </ul>
+        <p class="ccAufzahlungorangenobullet">Refer to topic <MadCap:xref href="Example Transfer Components to Sales Order.htm">“Example – Transfer Components to Sales Order” on page 1</MadCap:xref> for more information.</p>
+    </body>
+</html>

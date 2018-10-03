@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref425178517"></a><a name="_Ref425188328"></a><a name="_Toc434330880"></a>Report Upload</h2>
+        <p class="ccTextvorlage">Instead of printing and scanning, reports can automatically be printed into a PDF and uploaded. Therefore, the default “Report.RUN” processing code in Microsoft Dynamics NAV will be changed to “REPORT.SAVEASPDF”. </p>
+        <p class="ccTextvorlage">In the Report Selections for Sales, Purchase and Service, the document library and content type can be configured to upload the PDF into SharePoint. These report selection pages can be accessed on the <span class="Bold">Navigate</span> tab of the <span class="Bold">DMS Setup</span> page and in the standard Microsoft Dynamics NAV menus.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DMS/Report Upload.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Report Selection - Sales</p>
+        <p class="ccTextvorlage">Many standard objects will include the “Upload PDF” and/or “Post and Upload PDF” functions to perform the automated report upload. When using these functions, the Request Dialog must be skipped because the “SAVEAS” function does not allow it. </p>
+        <p class="ccTextvorlage">Depending on the content type configuration, a MetaData define dialog will be opened (“Define MetaData”) and depending on the report selection configuration, a new Email or the report itself will be opened. If no content type is selected, the default behavior (REPORT.RUN) will be processed.</p>
+        <p class="ccTextvorlage">The fields specific to <span class="CCBausteinInhaltZchn">cc|dms</span> in the Report Selection pages are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); margin-left: auto; margin-right: auto; width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 111px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Document Library No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the number of the document library where the document has to be uploaded.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Content Type Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the content type to define the MetaData when uploading the document.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Report Upload Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Defines the type of uploading for the report. The options are:</p>
+                            <ul>
+                                <li class="ccAufzählung">DMS Setup – The value in the <span class="Bold">Report Upload Type</span> field on the <span class="Bold">DMS Setup</span> page is used.</li>
+                                <li class="ccAufzählung">Only Upload – The report will be uploaded into SharePoint without any further action.</li>
+                                <li class="ccAufzählung">Upload and Open – After uploading the report, the local copy (from a temporary path) will be opened, e.g. for manual printing.</li>
+                                <li class="ccAufzählung">Upload and E-Mail – A new Email will be created by the default application with the PDF automatically attached.</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="Batch"></a>Batch Sales Order Posting Upload</h3>
+        <p>Multiple sales orders posted with the “Post Batch” function on the <span class="Bold">Sales Orders</span> page can be uploaded to SharePoint at one time. In the <span class="Bold">Batch Post Sales Orders</span> request page, select the <span class="Bold">Upload as Pdf</span> check box to upload all included sales orders to SharePoint.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DMS/Report Upload_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Batch Post Sales Orders request page with Upload as Pdf selected to upload two sales orders for customer 50000</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">When the batch posting process is finished, the Posted Sales Invoices will be uploaded to SharePoint.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC DMS/Report Upload_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Posted Sales Invoices uploaded to SharePoint from the batch sales order posting</p>
+        </div>
+    </body>
+</html>

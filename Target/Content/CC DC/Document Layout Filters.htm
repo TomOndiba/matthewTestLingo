@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref424575709"></a><a name="_Toc434332516"></a>Document Layout Filters</h3>
+            <p class="ccTextvorlage">Document Layout Filters are used to specify relations between tables and when looking up data in tables. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC DC/Document Layout Filters.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Document Layout Filters</p>
+            <p class="ccTextvorlage">Document Layout Filters can be applied to the following:</p>
+            <ul>
+                <li class="ccAufzählungblau">Document Layout Lines (Sections) – Specifies the relations between the tables and to set what records the system should loop through.</li>
+                <li class="ccAufzählungblau">Criteria – Specifies the filters for the table into which the Criteria should look. </li>
+                <li class="ccAufzählungblau">Variables – As with Criteria, filters are used in conjunction with Variables when specifying from which table the Variable should get the value. </li>
+                <li class="ccAufzählungblau">Fields – If Fields are generated from tables other than the table for the section, then Filters are used to specify the relation used for looking up the value. </li>
+            </ul>
+        </div>
+        <p class="ccTextvorlage">The fields on this page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');margin-left: auto;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 81px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the field on which the filter should be applied.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the name of the field. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Filter Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates what kind of filter should be applied. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Value – The filter is based on a value from a field in the related table. The value is specified in the <span class="Bold">Filter Field No.</span> field.</li>
+                            <li class="ccAufzählung">Text – The filter is a fixed value or the value of a Variable. The value is specified in the <span class="Bold">Text</span> field. </li>
+                            <li class="ccAufzählung">System – The filter is a system value. The value is specified in the <span class="Bold">System Value</span> field. </li>
+                            <li class="ccAufzählung">Date Range – The filter is a date range relative to the system Work Date. The value is specified in the <span class="Bold">Starting Date Formula</span> and <span class="Bold">Ending Date Formula</span> fields.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Filter Field No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the field in the related table which is used for filtering. This field is only used if <span class="Bold">Filter Type</span> = <span class="Italics">Value</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Filter Field Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the name of the filter field. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Text</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies a text value or a variable for filtering. This field is only used if <span class="Bold">Filter Type</span> = <span class="Italics">Text</span>. </p>
+                        <p class="ccTabellenText">Variables are entered with square brackets (e.g., the variable LanguageCode should be entered as “[LanguageCode]” if the system should use the value of the variable for filtering).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">System Value</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the value to use if <span class="Bold">Filter Type</span> = <span class="Italics">System</span>. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">User ID – User ID logged into the system.</li>
+                            <li class="ccAufzählung">Today – Today’s day (based on the operative system).</li>
+                            <li class="ccAufzählung">Workdate – Workdate according to the Microsoft Dynamics NAV Client.</li>
+                            <li class="ccAufzählung">User Language – Language of which the Client is running.</li>
+                            <li class="ccAufzählung">Time – Current time (based on the operative system).</li>
+                            <li class="ccAufzählung">Company Name – Name of the company into which the user is logged.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Start Date Formula</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the formula for the starting date when the <span class="Bold">Filter Type</span> = <span class="Italics">Date Range</span>. The value of this field should be a Date Formula. </p>
+                        <p class="ccTabellenText">Refer to online help for information about date formulas.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">End Date Formula</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the formula for the ending date when the <span class="Bold">Filter Type</span> = <span class="Italics">Date Range</span>. The value of this field should be a Date Formula. </p>
+                        <p class="ccTabellenText">Refer to online help for information about date formulas.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

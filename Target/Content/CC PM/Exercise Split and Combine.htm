@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="897" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256599"></a>Exercise – Split and Combine Production Orders</h3>
+            <p class="ccTextvorlage">Create a sales order to customer 10000 (delivery date: February 2, 2019) with the following lines:</p>
+            <ul>
+                <li class="ccAufzählungblau">Item: P-10502, Quantity: 15</li>
+                <li class="ccAufzählungblau">Item: P-10502, Quantity: 12</li>
+            </ul>
+        </div>
+        <p class="ccTextvorlage">Create two new production orders from the Sales Order. Open the <span class="Bold">Planning Pool</span> page and select and combine the two production orders for item P-10502. Open the <span class="Bold">Sequence Planning</span> page and split the production order as follows:</p>
+        <ul>
+            <li class="ccAufzählungblau">Machine M023, Quantity 17</li>
+            <li class="ccAufzählungblau">Machine M022, Quantity 10</li>
+        </ul>
+        <p class="ccDemoStepHeading">Create a Sales Order and Production Orders</p>
+        <p class="ccTextvorlage">Follow these steps to create the sales order and production orders:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under Manufacturing, click <span class="Bold">Planning &gt; Sales Orders</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">Press ENTER or TAB to insert a new number.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Customer</span> field, enter 10000.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Requested Delivery Date</span> field, enter 02/02/19.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, in the <span class="Bold">Type</span> field, enter Item.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter P-10502.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 15.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, in the <span class="Bold">No.</span> field, enter P-10502.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 12.</li>
+            <li class="ccTextvorlageNumberedList">Select both lines.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Order &gt; Create Prod. Order</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Show Production Orders</span> check box and then click <span class="Bold">Yes</span> to create the production orders.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the message stating that two production orders were created.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Production Order List</span> page, click <span class="Bold">Navigate &gt; Card</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Functions &gt; Order Tracking</span> to verify the link to the sales order.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the <span class="Bold">Production Order List</span> page and repeat steps 15-16 for the second line.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the Sales Order.</li>
+            <li class="ccTextvorlageNumberedList">On each sales order line, click <span class="Bold">Line &gt; Functions &gt; Order Tracking</span> to verify the link to the production orders.</li>
+            <li class="ccTextvorlageNumberedList">Close the Sales Order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Combine Production Orders</p>
+        <p class="ccTextvorlage">Follow these steps to combine the production orders:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under Manufacturing, click <span class="Bold">Planning &gt; Planning Pool</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">General</span> section, enter P-10502 in the <span class="Bold">Item Filter</span> field to locate the production orders you created for item P-10502. </li>
+            <li class="ccTextvorlageNumberedList">Select both lines.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Actions &gt; Combine Prod. Order Line</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to combine the selected production orders.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the message that a new production order was created.</li>
+            <li class="ccTextvorlageNumberedList">With the new production order line selected, click <span class="Bold">Navigate &gt; Prod. Order</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Functions &gt; Order Tracking</span> to verify the link to the originating sales order.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the <span class="Bold">Planning Pool</span> page and then click <span class="Bold">OK</span> to close it.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Split Production Order </p>
+        <p class="ccTextvorlage">Follow these steps to split the production order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the Planning menu, click <span class="Bold">Sequence Planning</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">General</span> section, select the line for work center M023.</li>
+            <li class="ccTextvorlageNumberedList">Locate and select the production order you created during the combining process.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Functions &gt; Split Prod. Order Line</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, for work center M023, type 17 in the <span class="Bold">Quantity</span> field.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, in the <span class="Bold">Work Center No.</span> field, enter M022.</li>
+            <li class="ccTextvorlageNumberedList">Ensure that the <span class="Bold">Quantity</span> field is set to 10.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the production order line, click <span class="Bold">Line &gt; Prod. Order</span> on the <span class="Bold">Lines</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Functions &gt; Order Tracking</span> to verify the link to the originating sales order.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the <span class="Bold">Sequence Planning</span> page.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">General</span> section, select the line for work center M022.</li>
+            <li class="ccTextvorlageNumberedList">Locate and select the new production order for 10 units of item P-10502.</li>
+            <li class="ccTextvorlageNumberedList">Repeat steps 9-11 to confirm the link to the originating sales order.</li>
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Sequence Planning</span> page.</li>
+        </ol>
+    </body>
+</html>

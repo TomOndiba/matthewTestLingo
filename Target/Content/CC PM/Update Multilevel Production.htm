@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="2" MadCap:lastHeight="905" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434256663"></a>Update Multilevel Production Orders</h2>
+        <p class="ccTextvorlage">If a production order is created using multilevel production, the scheduling for each production step is independent from each other if the starting or ending date is changed manually after the production order was calculated.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Update Multi Level Production.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref286332708"></a>: Released production order with Update Multilevel Production Order functionality</p>
+        <p class="ccTextvorlage">As <MadCap:xref href="#_Ref286332708" class="Figure">Fig. 1</MadCap:xref> illustrates, item P-10502 must be produced first to be bottled in a second production step in the item P-10502-F200. The production line P-10502 has been scheduled and is finished at the same time the bottling item is starting to be produced.</p>
+        <p class="ccTextvorlage">The setup of the scheduling using multilevel productions is configured in the <span class="Bold">Planning Extension Setup</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Update Multi Level Production_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.25in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Update Multilevel Production Order functionality setup </p>
+        <p class="ccTextvorlage">If the <span class="Bold">Update Multilevel Prod. Orders</span> check box is selected and the Starting or Ending Date-Time is changed on a production order line, the following result is achieved.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Update Multi Level Production_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Recalculated production order with Update Multilevel Production Order functionality</p>
+        <p class="ccTextvorlage">In the above example, the Starting Date-Time on the first line was changed to 1/28/2019. The Starting Date-Time and Ending Date-Time in the lower production line were recalculated and remain linked to the Starting-Date Time on the first line.</p>
+        <p class="ccTextvorlage">In the next example, a production order is created for the same item and quantity, but the <span class="Bold">Update Multilevel Prod. Orders</span> check box is not selected on the <span class="Bold">Planning Extension Setup</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Update Multi Level Production_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Update Multilevel Production Order functionality setup</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Update Multi Level Production_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Released production order without Update Multilevel Production Order functionality</p>
+        <p class="ccTextvorlage">The Starting Date-Time on the first line is changed to 1/29/2019. The Ending Date-Time in the lower production line does not change and there is no longer a link to the production of the bottling item.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Update Multi Level Production_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Recalculated production order without Update Multilevel Production Order functionality</p>
+    </body>
+</html>

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xliff
+  version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-strict.xsd" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+  MadCap:translationStatus="untranslated">
+  <file
+    xml:space="preserve"
+    original="Example IF WENN Statements.htm"
+    source-language="en-us"
+    MadCap:file-filter=""
+    datatype="xhtml"
+    target-language="af">
+    <header>
+      <skl><external-file
+          href="Example IF WENN Statements.htm.skl" /></skl>
+      <phase-group>
+        <phase
+          phase-name="translation"
+          process-name="translation" />
+        <phase
+          phase-name="completion"
+          process-name="translation" />
+        <phase
+          phase-name="approval"
+          process-name="review" />
+        <phase
+          phase-name="pretrans"
+          process-name="pre-translation" />
+      </phase-group>
+      <count-group
+        name="MadCap Statistics">
+        <count
+          count-type="total"
+          unit="segment">16</count>
+        <count
+          count-type="x-subflow"
+          unit="trans-unit">0</count>
+      </count-group>
+      <tool
+        tool-id="MadCap Lingo 10.2"
+        tool-name="Lingo"
+        tool-version="10.2.6786.30644"
+        tool-company="MadCap Software" />
+    </header>
+    <body><trans-unit
+        id="1"
+        restype="x-xml-h3"
+        phase-name="pretrans"><source>Example – IF/WENN Statements and String Variable Comparison</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Example – IF/WENN Statements and String Variable Comparison</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="2"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>In this example,  the IF statement is used in a dynamic formula to make a comparison with an empty value (using double quotes ""), a special string (value = blue) and a non-empty string (using not equal to brackets &lt;&gt;). This process works the same for the WENN statement.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">In this example, the IF statement is used in a dynamic formula to make a comparison with an empty value (using double quotes ""), a special string (value = blue) and a non-empty string (using not equal to brackets &lt;&gt;).</mrk><mrk
+            mtype="protected"
+            mid="2"> </mrk><mrk
+            mtype="seg"
+            mid="3">This process works the same for the WENN statement.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="2"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="3"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="3"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>: IF statements for string variable comparisons in Checklist Template</source><seg-source><mrk
+            mtype="seg"
+            mid="1">: IF statements for string variable comparisons in Checklist Template</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="4"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>In the first line of the checklist template, a color specification is expected. The input becomes stored as the variable “CL_COLOR”.  The results are listed in the next three lines: if the color variable matches the formula, then a true value (100) is returned; otherwise a false value (200) is returned.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">In the first line of the checklist template, a color specification is expected.</mrk><mrk
+            mtype="protected"
+            mid="2"> </mrk><mrk
+            mtype="seg"
+            mid="3">The input becomes stored as the variable “CL_COLOR”.</mrk><mrk
+            mtype="protected"
+            mid="4"> </mrk><mrk
+            mtype="seg"
+            mid="5">The results are listed in the next three lines: if the color variable matches the formula, then a true value (100) is returned; otherwise a false value (200) is returned.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="2"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="3"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="4"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="5"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="5"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>If the variable has no value, then the result of the formula will be true (100) on the first comparison line and false (200) on the second and third lines.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">If the variable has no value, then the result of the formula will be true (100) on the first comparison line and false (200) on the second and third lines.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="6"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>: Empty value calculated in Checklist Template</source><seg-source><mrk
+            mtype="seg"
+            mid="1">: Empty value calculated in Checklist Template</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="7"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>If the variable “CL_COLOR” has a value of blue, then the result of the formula will be true (100) on the second and third comparison lines – because blue is the correct option for the second line and because the value is not blank for the third line – and false (200) on the first  line.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">If the variable “CL_COLOR” has a value of blue, then the result of the formula will be true (100) on the second and third comparison lines – because blue is the correct option for the second line and because the value is not blank for the third line – and false (200) on the first line.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="8"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>: Valid value calculated in Checklist Template</source><seg-source><mrk
+            mtype="seg"
+            mid="1">: Valid value calculated in Checklist Template</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="9"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>If the variable “CL_COLOR” has a value that is not blank but is not blue (e.g., green), then the result of the formula will be true (100) on the third comparison line and false (200) on the first  and second comparison lines.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">If the variable “CL_COLOR” has a value that is not blank but is not blue (e.g., green), then the result of the formula will be true (100) on the third comparison line and false (200) on the first and second comparison lines.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="10"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>: Non-blank, not blue, value calculated in Checklist Template</source><seg-source><mrk
+            mtype="seg"
+            mid="1">: Non-blank, not blue, value calculated in Checklist Template</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit></body>
+  </file>
+</xliff>

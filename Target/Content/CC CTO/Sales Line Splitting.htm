@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="2" MadCap:lastHeight="901" MadCap:lastWidth="603" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref311196555"></a><a name="_Ref311196568"></a><a name="_Toc434568048"></a><a name="_Ref277406911"></a><a name="_Ref277407012"></a>Sales Line Splitting</h2>
+        <p class="ccTextvorlage">Sales Quote and Sales Order lines which already have checklists and/or Document BOMs can be split into separate lines for individual configuration. The Checklist and/or Document BOM information is transferred to new Checklists and/or Document BOMs on the split lines.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The splitting function is only available for item lines and if no reservation exists on the sales line.</p>
+        <p class="BoldItalics12pt">Example </p>
+        <p class="ccTextvorlage">A sales order and document BOM have been created for 10 units of item D-1000. The “Split Order Line” function is run to split the order into three lines with quantities of 5, 2 and 3, respectively. The <span class="Bold">Sales Line Splitting</span> page opens with the quantity of the sales line on the first line, which cannot be manually edited because this line is linked to the sales line. The user must go to the next line to enter the split quantities.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Sales Line Splitting.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.25in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Sales Line Splitting page with no split entries</p>
+        <p class="ccTextvorlage">On the next line, the user enters 2 and the quantity on the top line changes to 8. On the next line, the user enters 3 and the quantity on the top line changes to 5.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Sales Line Splitting_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.25in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Sales Line Splitting page with split entries</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The quantity on the first line cannot be 0 or less. If the split quantity total is greater than the original sales line (thus making the first line 0 or negative), an error message is generated and the quantities must be adjusted. </p>
+        <p class="ccTextvorlage">The user clicks <span class="Bold">OK</span> and the sales line is split as noted in the screen shot above. The quantities are adjusted to 5 in the Document BOM for the first line. For the new sales lines, Checklists, Document BOMs (with relevant quantities), Attributes and Line Text are created based on the information from the first line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Sales Line Splitting_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Sales Order with split lines, showing Document BOM created for split sales line</p>
+    </body>
+</html>

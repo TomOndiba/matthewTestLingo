@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    ">cc|configure to order</h2>
+        <p>With <span class="CCBausteinInhaltZchn">cc|configure to order</span> functionality, the item master can become a Master BOM and Checklists can be assigned to it. Formulas, functions and variables assigned in the Master BOM and Checklist work together to form a configuration, which is used to produce a BOM. </p>
+        <p>In <span class="CCBausteinInhaltZchn">cc|project</span>, the checklists are processed in the Job Budget Calculation line by answering pre-defined questions. These answers are transferred to a Document BOM, which contains the selected configuration. Here, changes can be made prior to exploding the BOM in the Job Budget Calculation. Once exploded, budget information can be assigned and processed as usual in <span class="CCBausteinInhaltZchn">cc|project</span>. The Document BOM can also be used to create Construction Orders and Production Orders in the Job Planning and Processing view.</p>
+        <p>This topic briefly describes the Master BOM, Checklist and Document BOM in <span class="CCBausteinInhaltZchn">cc|configure to order</span> as well as the  usage of each in the Job Budget Calculation, and the creation of Construction Orders in the Job Planning and Processing view. For detailed setup, configuration and usage information, refer to the current “cc|industry solution: discrete manufacturing” documentation.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="Master"></a>Master BOM</h3>
+            <p class="ccTextvorlage">The Master BOM works according to the principle of the maximum BOM, which combines all valid options in a configuration. During the BOM calculation, the variables use formulas and rules to determine quantities, setup and run time, and if positions are valid. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/cc configure to order.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Master BOM for item D-1000, Conveyor machine complete</p>
+        </div>
+        <p class="ccTextvorlage">Once set up, the Master BOM is assigned directly to the item.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Master BOM assigned to item D-1000</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="Checklis"></a>Checklist</h3>
+            <p class="ccTextvorlage"> The checklist is the interface between users and system. Since the checklist can provide its own logic, it ensures that only information examined and verified by the user is available for configuration.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/cc configure to order_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Checklist for item D-1000, Conveyor machine</p>
+        </div>
+        <p class="ccTextvorlage">Once set up, the Checklist is assigned to the item.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_3.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Checklist assigned to item D-1000</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="Document"></a>Document BOM</h3>
+        <p class="ccTextvorlage">As previously stated, the master BOM and checklist work together to form a configuration, which is used to produce the Document BOM.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Document BOM from Checklist and Master BOM</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="Process">Creating Document BOMs in Job Budget Calculation Line</a>
+        </h3>
+        <p>There are four ways to create Document BOMs in the Job Budget Calculation line:</p>
+        <ul>
+            <li class="ccAufzählungblau">Item with a Checklist and Master BOM</li>
+            <li class="ccAufzählungblau">Item with a Master BOM</li>
+            <li class="ccAufzählungblau">Item without a Master BOM</li>
+            <li class="ccAufzählungblau">Item with a Production BOM</li>
+        </ul>
+        <p>Each method is described in this section.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.4.1    ">Create Document BOM with Checklist and Master BOM</h4>
+        <p class="ccTextvorlage">When using <span class="CCBausteinInhaltZchn">cc|configure to order</span> functionality to create a BOM in the Job Budget Calculation, the Job Line BOM Control dialog does not appear because a BOM does not exist for the line until the Document BOM is created.</p>
+        <p class="ccTextvorlage">The budget line will be populated with only the item. Notice that the <span class="Bold">Checklist No.</span> field is populated as well; this is generated automatically from the Checklist assigned on the item.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Item with Checklist but no BOM</p>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">Navigate &gt; Checklist</span> to open the Checklist. </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If the <span class="Bold">Open Immediately</span> check box is selected in the Checklist Template, then the Checklist will open automatically when the <span class="Bold">Quantity</span> field is populated. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_6.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Checklist for job budget calculation line</p>
+        <p class="ccTextvorlage">Additional machine type components can be selected, a type of motor can be entered (kW power) and additional documentation can be included. For this example, no changes are made to the machine type, a power of 90 is entered and an English manual must also be included.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_7.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Checklist with indicated power and additional English manual selected</p>
+        <p class="ccTextvorlage">The Checklist is completed by clicking <span class="Bold">OK</span>.</p>
+        <p class="ccTextvorlage">Before a Document BOM can be created, a quantity must be entered in the line. Then on the <span class="Bold">Navigate</span> tab, click <span class="Bold">Document BOM</span> to create the Document BOM. A message will appear if no Document BOM exists, asking to create a new Document BOM. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_8.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Message to create a new Document BOM</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Yes</span> to create the Document BOM. The <span class="Bold">Item - Master BOM</span> page will open, displaying the related Master BOM. Click <span class="Bold">OK</span>; the <span class="Bold">Document BOM</span> page opens with the configuration from the Checklist, including the motor with 100 kW (based on settings in the Master BOM to choose this item if (POWER&gt;=75) and (POWER&lt;=100)) and the English documentation.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_9.png" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Document BOM highlighting specific configurations from Checklist</p>
+        <p class="ccTextvorlage">Any changes that need to made to the Document BOM can be made here. If necessary, the original Document BOM can be recreated by deleting all existing lines in the <span class="Bold">Document BOM</span> page and then running the "Request BOM" function from the ribbon.</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the Document BOM. In the Job Budget Calculation view, the <span class="Bold">Document BOM No.</span> field is populated as well as the <span class="Bold">Prod. Order from Document BOM</span> check box.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_10.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Document BOM No. and Prod. Order from Document BOM fields populated in Job Budget Calculation</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.4.2    ">Create Document BOM with Master BOM</h4>
+        <p>Document BOMs with Master BOMs but without checklists can be used in the Job Budget Calculation line using the same process as with a checklist. When an item has no checklist, the <span class="Bold">Checklist No.</span> field remains empty when the item is added to the Job Budget Calculation line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_11.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Item with no checklist added to the Job Budget Calculation</p>
+        <p>In the Job Budget Calculation line, enter a quantity and then click <span class="Bold">Navigate &gt; Document BOM</span> to create the Document BOM. As previously described, a message will appear  asking to create a new Document BOM. Click <span class="Bold">Yes</span> to create the Document BOM. The <span class="Bold">Item - Master BOM</span> page opens, displaying the related Master BOM. Click <span class="Bold">OK</span>; the <span class="Bold">Document BOM</span> page opens.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_12.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Document BOM created without checklist</p>
+        <p>In the Job Budget Calculation line, the <span class="Bold">Document BOM No.</span> is assigned and the <span class="Bold">Prod. Order from Document BOM</span> check box is selected.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_13.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Document BOM fields updated in the Job Budget Calculation line</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.4.3    ">Create Document BOM without Master BOM</h4>
+        <p>It is also possible to create a Document BOM manually, without a Master BOM, using basically the same process as previously described. Once the item without a master BOM is added to the Job Budget Calculation line, enter a quantity and then click <span class="Bold">Navigate &gt; Document BOM</span> to create the Document BOM. A message will appear asking to create a new Document BOM. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_14.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Creating a Document BOM with no Master BOM</p>
+        <p>Click <span class="Bold">Yes</span> to create the Document BOM; an empty <span class="Bold">Document BOM</span> page opens.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_15.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Empty Document BOM created for item with no Master BOM</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Document BOM</span> page, enter all BOM information and then click <span class="Bold">OK</span> to close the Document BOM. In the Job Budget Calculation view, the <span class="Bold">Document BOM No.</span> field is populated as well as the <span class="Bold">Prod. Order from Document BOM</span> check box.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_16.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Document BOM fields updated in the Job Budget Calculation line</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.4.4    ">Create Document BOM with Production BOM</h4>
+        <p>It is also possible to create a Document BOM with a Production BOM, using basically the same process as previously described. Once the item with a Production BOM is added to the Job Budget Calculation line, enter a quantity and then click <span class="Bold">Navigate &gt; Document BOM</span> to create the Document BOM. A message will appear asking to create a new Document BOM. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_25.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 18">: Creating a Document BOM with Production BOM</p>
+        <p>Click <span class="Bold">Yes</span> to create the Document BOM; the <span class="Bold">Select BOM</span> page opens with no Master BOM lines for selection.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_26.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 19">: Select BOM page with no Master BOM lines</p>
+        <p class="ccTextvorlage">Select the <span class="Bold">Production BOM</span> and <span class="Bold">Routing</span> check boxes to transfer both types of entries to the Document BOM and then click <span class="Bold">Yes</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_27.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 20">: Document BOM populated from Production BOM and Routing assigned to item</p>
+        <p class="ccTextvorlage">The <span class="Bold">Document BOM</span> page opens and is populated with all Production BOM and Routing lines (if selected). These entries can be modified as needed. Click <span class="Bold">OK</span> to close the Document BOM. In the Job Budget Calculation view, the <span class="Bold">Document BOM No.</span> field is populated as well as the <span class="Bold">Prod. Order from Document BOM</span> check box.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.5    "><a name="Process2"></a>Processing Document BOMs in Job Budget and Planning Lines</h3>
+            <p>The Document BOM is the base for exploding the Document BOM to the Job Budget Calculation line using the “Expand BOM” function or creating Production Orders in the Job Planning and Processing view. Each option is described in this section.</p>
+            <h4 class="Heading4" MadCap:autonum="1.1.5.1    "><a name="Expand"></a>Expand BOM</h4>
+            <p>The “Expand BOM” function explodes the Document BOM in the Job Budget Calculation line so that regular budgeting and calculation processes can be completed. </p>
+            <p>With the Document BOM line selected to expand, click <span class="Bold">Actions &gt; Expand BOM</span>.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/cc configure to order_17.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 21">: Job Line BOM Control dialog set to explode the Document BOM</p>
+        </div>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to explode the Document BOM in the Job Budget Calculation line.</p>
+        <p> </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_18.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 22">: Job Budget Calculation with exploded Document BOM</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.5.2    "><a name="Create"></a>Create Production Orders from Document BOM</h4>
+        <p class="ccTextvorlage">In the Job Planning and Procurement view, lines that have the <span class="Bold">Prod. Order</span><span class="Bold"> from Document BOM</span> check box selected will create production orders based on the Document BOM when the procurement processes are run. This process is done when a complete production order needs to be processed but the line was not exploded because the configuration is not used for calculation purposes in the Job Budget Calculation.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_19.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 23">: Job Planning and Processing line for production order created from Document BOM</p>
+        <p class="ccTextvorlage">After planning and releasing, the Production Order is created based on the Document BOM.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_20.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 24">: Production Order created from Document BOM in Job Planning and Processing view</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">To create Production Orders from Document BOMs, produced items that are part of a Master BOM must have a Routing at this time; however, it can be a dummy routing that does not include any routing lines.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.6    "><a name="Create2"></a>Create Construction Orders from Job Planning and Processing Line</h3>
+        <p class="ccTextvorlage">In <span class="CCBausteinInhaltZchn">cc|configure to order</span>, a company’s engineering or construction department can use the construction order for managing the BOM prior to manufacturing. Therefore, the construction order is considered the work order for the construction department. The design engineer has the option of modifying the document BOM created by sales or creating a new BOM. In this case, he or she has access to the checklist.</p>
+        <p class="ccTextvorlage">In the Job Planning and Procurement view of <span class="CCBausteinInhaltZchn">cc|project</span>, the Construction Order procurement channel  provides the ability to create construction orders for the job lines outside of the Job Budget Calculation, which can then be transferred to the Production module. Document BOMs that exist for the job line will be transferred to the new Construction Order.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_21.png" MadCap:mediastyle="@media print { max-width: 6in; }">
+            </img>
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 25">: Job Planning and Processing line for construction order created from Document BOM</p>
+        <p class="ccTextvorlage">After planning and releasing, the Construction Order is created based on the Document BOM if one exists. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_22.png" MadCap:mediastyle="@media print { max-width: 6in; }">
+            </img>
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 26">: Construction Order created from Document BOM in Job Planning and Processing view</p>
+        <p class="ccTextvorlage">The <span class="Bold">Job</span> FastTab in the Construction Order provides information specific to the related job.</p>
+        <p class="ccTextvorlage">If a Document BOM does not exist for the job line, one can be created from the Construction Order.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_23.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 27">: Job Planning and Processing line for construction order created without Document BOM</p>
+        <p class="ccTextvorlage">In the Construction Order, use the “Request BOM” function  to create the Construction BOM from the Master BOM assigned to the item.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_24.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 28">: Construction Order created without Document BOM in Job Planning and Processing view, requesting Master BOM</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.7    ">Prototypes in Job Budget Calculation</h3>
+        <p>With the prototype creation function, it is possible to generate new items automatically and/or find already produced items based on their developments. Likewise, new variants of an item can be produced and/or reused. </p>
+        <p class="ccTextvorlage">The creation of a prototype is part of the configuration feature of <span class="CCBausteinInhaltZchn">cc|configure to order</span> and is used when opening a Master BOM in the Document BOMs and the Construction Orders. The prototype item or item variant is then transferred to the Job Budget Calculation.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.7.1    ">Prototype Setup</h4>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">First, an item card must be set up as a Prototype template (refer to <MadCap:xref href="#:" class="Figure">Fig. 29</MadCap:xref>). On the <span class="Bold">Config. to Order</span> FastTab, select the <span class="Bold">Prototype</span> check box to make the <span class="Bold">Prototype Type</span> and <span class="Bold">Prototype No. Series</span> fields editable. </p>
+        </div>
+        <p class="ccTextvorlage">The <span class="Bold">Prototype Type</span> field determines whether a new item or a new variant of the item will be applied during the creation of a new characteristic of the prototype. In the <span class="Bold">Prototype No. Series</span> field, enter the number series to be used for the new creation of items and/or variants as a copy of the prototype. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_28.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 29"><a name=":"></a>: Templates for Prototype item and variant</p>
+        <p class="ccTextvorlage">Furthermore, attributes must be entered. During the calculation of the Document BOMs, the system checks whether an identical item and/or variant is already present or has to be created. It is important that the <span class="Bold">Relevant to Prototype</span> check boxes are selected for the attributes, which are to be used for retrieving the prototypes.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_29.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 30"><a name="_Ref284834455"></a>: Prototype Attribute Setup</p>
+        <p class="ccTextvorlage">In the Checklist and Master BOM, the attributes used to find an existing or create a new item/variant are defined. In this example, the POWER attribute is used to determine when a new item or variant is created or searched.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_30.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 31">: POWER attribute set in the Checklist</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_31.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 32">: POWER attribute set in a Master BOM of an item in the main Master BOM</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.7.2    ">Example – Prototype Item</h4>
+        <p>In this example, the Conveyor Machine has been set up as a prototype item based on the type of engine power needed. When this item is added to the Job Budget Calculation, a new item will be created or an existing prototype item will be used in either scenario:</p>
+        <ul>
+            <li class="ccAufzählungblau">The power required is between 50 and 74 kW</li>
+            <li class="ccAufzählungblau">The power required is between 75 and 100 kW</li>
+        </ul>
+        <p>The prototype item is added to the Job Budget Calculation line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_32.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 33">: Prototype item added to Job Budget Calculation line</p>
+        <p class="ccTextvorlage">In the Checklist, the power is set to 54 in the <span class="Bold">Input</span> field.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_33.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 34">: Checklist for prototype item</p>
+        <p class="ccTextvorlage">The Document BOM is opened for the Job Budget Calculation line. The item that corresponds to the input power of 54 (D-7011) is used in the Master BOM.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_34.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 35">: Document BOM with motor based on 54 kW of power indicated in Checklist</p>
+        <p class="ccTextvorlage">When the Document BOM is closed, the prototype item number is replaced by a new item number in the Job Budget Calculation line because this is the first instance of the configuration of the Conveyor Machine.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_35.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 36">: New item number for prototype configuration in Job Budget Calculation line</p>
+        <p class="ccTextvorlage">If a prototype item is entered on the Job Budget Calculation line, and an existing item is found, the system will not recalculate the Master BOM. The Document BOM that is linked to the found prototype item will be copied.</p>
+        <p class="ccTextvorlage">In the Item Card for this new item, the related Document BOM is stored in the <span class="Bold">Configure to Order</span> FastTab, as well as from which prototype item the new item was created.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_36.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 37">: Prototype item creation references in Item Card</p>
+        <p class="ccTextvorlage">If the prototype item had been created from a Construction Order, the <span class="Bold">Prototype BOM Type</span> and <span class="Bold">Prototype BOM No.</span> fields would display Construction Order and the Construction Order number, respectively.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.7.3    ">Prototype Variant</h4>
+        <p>Prototype variants work the same as prototype items except that instead of creating a new item, item variants are created for the item. In the Item Card, the <span class="Bold">Prototype Type</span> field is set to <span class="Italics">Variant</span> and a number series for prototype variants is used (refer to <MadCap:xref href="#:" class="Figure">Fig. 29</MadCap:xref>).</p>
+        <p>In the Job Budget Calculation, the prototype item variant is entered. Currently, the <span class="Bold">Variant Code</span> field is empty.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_37.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 38">: Prototype item variant added to Job Budget Calculation line</p>
+        <p class="ccTextvorlage">In the Checklist, the power is set to 54 in the <span class="Bold">Input</span> field.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_38.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 39">: Checklist for prototype item variant</p>
+        <p class="ccTextvorlage">The Document BOM is opened for the Job Budget Calculation line. The item that corresponds to the input power of 77 (D-7012) is used in the Master BOM.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_39.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 40">: Document BOM with motor based on 77 kW of power indicated in Checklist</p>
+        <p class="ccTextvorlage">Since no variants exist for this configuration, a variant is added to the prototype item when the Document BOM is created. When the Document BOM is closed, the new variant is entered in the <span class="Bold">Variant Code</span> field in the Job Budget Calculation line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_40.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 41">: New variant for prototype item configuration in Job Budget Calculation line</p>
+        <p class="ccTextvorlage">If another line was added to the Job Budget Calculation for the same item using the same configuration, the same variant would be used. If another line was added to the Job Budget Calculation for the same item using a different configuration, a new variant would be created for the item and entered in the Job Budget Calculation line. </p>
+        <p class="ccTextvorlage">In the prototype item, the Item Variants show the related Document BOM information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc configure to order_41.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 42">: Prototype item creation references in Item Card</p>
+        <p class="ccTextvorlage">If the prototype item variant had been created from a Construction Order, the <span class="Bold">Prototype BOM Type</span> and <span class="Bold">Prototype BOM No.</span> fields would display Construction Order and the Construction Order number, respectively.</p>
+        <p> </p>
+        <p class="ccTextvorlage"> </p>
+    </body>
+</html>

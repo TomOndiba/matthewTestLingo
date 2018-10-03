@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434568088"></a>Example – Transfer Components to Sales Order</h2>
+            <p>In this example, the three documentation entries (D-7100, D-7105 and D-7110) in the Master BOM are set for transfer to sales document. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Transfer Components.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Transfer to Sales Document field set on three lines in a Master BOM</p>
+        </div>
+        <p class="ccTextvorlage">When the Sales Order/Checklist/Document BOM are created, the check marks in the <span class="Bold">Transfer to Sales Document</span> check boxes are transferred to the Document BOM.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Transfer Components_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Transfer to Sales Document field setting transferred to Document BOM</p>
+        <p class="ccTextvorlage">Now, the <span class="Bold">Transfer to Sales Document</span> check box is selected on the line for item D-1051 (an assembly group), and two new lines for items D-7100 and D-7105 are inserted at the end of the assembly group. Each documentation item is reserved against inventory.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Transfer Components_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Transfer to Sales Document field set on assembly item, new items added and reservations made</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">When the “Transfer Comp. To Sales Document” function is run, the following message appears.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Transfer Components_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Transfer Comp. to Sales Document function confirmation message</p>
+        </div>
+        <p class="ccTextvorlage">Accepting the confirmation message deletes the entire assembly group for item D-1051 and the three documentation components.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Transfer Components_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Source lines deleted from Document BOM after Transfer Comp. to Sales Document function is run</p>
+        <p class="ccTextvorlage">In the Sales Order lines, assembly item D-1051 and the three documentation components have been transferred from the Document BOM.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Transfer Components_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Assembly item and documentation components transferred from Document BOM to Sales Order line</p>
+        <p class="ccTextvorlage">The following field information is transferred from the Document BOM to the Sales Line:</p>
+        <table>
+            <col style="width: 200px;" />
+            <col style="width: 304px;" />
+            <tr>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Type = Item</p>
+                </td>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">(Exp.) Quantity</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">No.</p>
+                </td>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Text Set ID</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Variant Code</p>
+                </td>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Unit Price</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Description 1 – 5</p>
+                </td>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">“Line Discount %”</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Unit of Measure</p>
+                </td>
+                <td> </td>
+            </tr>
+        </table>
+        <p class="ccTextvorlage">Additionally, the reservations made in the Document BOM have been transferred to the sales line.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If this exercise was created with a Sales Quote, the reservations would not transfer because reservations cannot be made on sales quotes.</p>
+        <p class="ccTextvorlage">For item D-1051, a new Document BOM was created for the assembly group including the reservations.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Transfer Components_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Document BOM created for assembly item </p>
+        <p class="ccTextvorlage">The inserted Sales Quote/Order Lines are assigned to the “main” Sales Line to which the source Document BOM is assigned. Therefore, if the “main” Sales Line is deleted, the other Sales Lines will be deleted as well.</p>
+    </body>
+</html>

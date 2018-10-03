@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref415832779"></a><a name="_Toc434256508"></a>Content Specification</h3>
+            <p class="ccTextvorlage">Recipes can be set up to calculate the recipe share by:</p>
+            <ul>
+                <li class="ccAufzählungblau">Mass % </li>
+                <li class="ccAufzählungblau">Volume Share % </li>
+            </ul>
+            <p class="ccTextvorlage">This calculation is determined in the <span class="Bold">Content Specification on</span> field on the <span class="Bold">General</span> FastTab of the <span class="Bold">Development Structure</span> page.</p>
+            <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Mass Percent</h4>
+            <p class="ccTextvorlage">With the <span class="Italics">Mass %</span> option, the content specification is based on the weight (mass) of the new item. Entries are made in the <span class="Bold">Share %</span> or <span class="Bold">Share</span> fields on the development structure lines.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Content Specification.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Mass % and relevant share fields</p>
+        </div>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Volume Share Percent</h4>
+            <p class="ccTextvorlage">With the <span class="Italics">Volume Share %</span> option, the content specification is based on the volume of the new item. Entries are made in the <span class="Bold">Volume Share %</span> field on the production structure line. Upon certification (or by running the “Check Recipe” function), the <span class="Bold">Share %</span> field of the development structure is calculated under consideration of the density. In addition, the <span class="Bold">Expected Density</span> field on the <span class="Bold">General</span> FastTab is calculated based on the values in these fields.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Content Specification_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Volume Share % and the relevant fields that calculate the expected density</p>
+        </div>
+        <p class="ccTextvorlage">The different calculation methods are often used in the development of new recipes because users do not always know which substance to use, but have an idea of what the density of the substance should be. Therefore, placeholder lines can be entered with density values in the Development Structure. </p>
+        <p class="ccTextvorlage">When an item is entered to replace the placeholder, a message is received asking the user if he or she wants to keep the values. If the user clicks <span class="Bold">Yes</span>, the information on the line remains, EXCEPT the density defined on the new item replaces the existing density on the line.</p>
+        <p class="ccTextvorlage">If a Laboratory Structure is created from the Development Structure, only the Shares and Share % transfer so the volume share % with density functionality is only used in the Development Structure.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">The unit “volume share” is considerably different from the “volume concentration.” Volume share does not consider volume contraction during solubilization. The less volume contraction occurs during solubilization, the smaller the difference between the two units. Because the difference is usually very small, these two units are usually treated as the same.</p>
+            <p class="ccTextvorlageNotebody">A volume contraction occurs when the total volume of a solution is smaller than the sum of volume of all components. For example, when 50ml of water is mixed with 50ml of ethanol, the total volume of the solution is 97ml, not 100ml.</p>
+        </div>
+    </body>
+</html>

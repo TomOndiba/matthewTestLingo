@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h3 class="Heading3" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1    ">Test Order Scheduling</h3>
+        <p>Testing is an operation of quality control. Like other operations, this activity needs to be scheduled and monitored. Scheduling of test activities is the process of arranging, controlling and optimizing work and workloads in a quality control process. Scheduling is used to  coordinate activities with other operations.</p>
+        <p>Testing  is a tool that can have a significant  impact on the efficiency of other supply chain processes, like manufacturing and inventory management.</p>
+        <p>The scheduling function in <span class="CCBausteinInhaltZchn">cc|quality management</span> is available on Test Orders and Test Incidents. Additionally, Test Activities can be assigned to Test Order Properties. Therefore, when Test Orders are created, the system can schedule the Test Orders based on the longest Test Activity.</p>
+        <p>Rescheduling can be initiated from a batch (also available from Test Order/Test Incident) or by changing the Starting Date/Time on the document.</p>
+        <p>In <span class="CCBausteinInhaltZchn">cc|quality management</span>, the scheduling function is currently a tool for planning only; primarily, to calculate the start and end times for the following processes:</p>
+        <ul>
+            <li class="ccAufzählungblau">Incoming good inspection</li>
+            <li class="ccAufzählungblau">Manufacturing inspection</li>
+        </ul>
+        <p>The setup and calculation for these processes are described in this topic.</p>
+        <h4 class="Heading4" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.1    ">Test Activities Overview</h4>
+        <p>Test Activities are copied through the schedule of record creation like it is executed for Test Properties: Test Activity → Test Plan Activity → Test Order Activity.</p>
+        <p>While the Test Activity contains general information like the <span class="Bold">Code</span> and <span class="Bold">Description</span> fields, the  Test Plan Activity contains the <span class="Bold">Execution Time</span> and <span class="Bold">Exec. Time Unit of Meas. Code</span> fields.</p>
+        <p>The Test Order Activity uses the following fields to store the planned time frame based on the Execution Time:</p>
+        <ul>
+            <li class="ccAufzählungblau">Starting Date</li>
+            <li class="ccAufzählungblau">Starting Time</li>
+            <li class="ccAufzählungblau">Ending Date</li>
+            <li class="ccAufzählungblau">Ending Time</li>
+            <li class="ccAufzählungblau">Starting Date-Time</li>
+            <li class="ccAufzählungblau">Ending Date-Time</li>
+        </ul>
+        <div class="ccDIV">
+            <p>The time-based fields listed above are visible in the following pages:</p>
+            <ul>
+                <li class="ccAufzählungblau">Test Order Card, Planning FastTab</li>
+                <li class="ccAufzählungblau">Test Orders</li>
+                <li class="ccAufzählungblau">Test Incident Card, Lines and Planning FastTabs</li>
+                <li class="ccAufzählungblau">Test Order Activities </li>
+            </ul>
+        </div>
+        <h4 class="Heading4" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.2    "><a name="Master"></a>Master Data Setup</h4>
+        <p>This topic describes the various master data set up required to use Test Order Scheduling.</p>
+        <h5 class="Heading5" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.2.1    ">Quality Management Setup</h5>
+        <p>To calculate the dates for all inspection processes, the Production Order calculation is used based on Test Activities. Therefore, a Simulated Production Order is created along with each Test Order as a temporary calculation. This production order uses a dummy item and default work center  to handle the calculations, and then is deleted once the starting/ending dates are  added to the Test Order.</p>
+        <p>The fields needed to use the production order calculation function are defined in the <span class="Bold">Quality Management Setup</span> page.</p>
+        <p class="ccBildabstand">
+            <img MadCap:mediastyle="@media print { max-width: 6in; }" src="../Resources/Images/CC QM/TO Scheduling_Setup.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 1">: Fields related to Test Order Scheduling in Quality Management Setup</p>
+        <p class="ccTextvorlage">The dummy item is used as the item for the Simulated Production Order and the Work Center is used as the default if one is not assigned later in the scheduling process.</p>
+        <h5 class="Heading5" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.2.2    ">Resources</h5>
+        <p>Resources are assigned to specific Test Activities in the <span class="Bold">Test Activities</span> page (refer to topic <MadCap:xref href="Test Activities.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">“Test Activities” on page 1</MadCap:xref>). There is no special set up in the Resource Card, other than the <span class="Bold">Work Center No.</span> field, which links the resource to a work center for the test activities. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/TO Scheduling_Setup_1.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 2">: Work Center No. field in Resource Card (field hidden by default)</p>
+        <p class="ccTextvorlage">The Resource and related Work Center are automatically assigned when an activity is assigned to Test Plan Properties. Refer to topic <MadCap:xref href="#Test" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">“Test Activities in Test Plan” on page 1</MadCap:xref> for more information.</p>
+        <h5 class="Heading5" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.2.3    ">Work Center</h5>
+        <p>There is no special set up in the Work Center Card, but it needs capacity for production order calculation. If no work center is assigned in the Resource, then the Work Center assigned in the <span class="Bold">Default Sched. Work Center No.</span> field in Quality Management Setup is used. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/TO Scheduling_Setup_2.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 3">: Work Center Card for Test Order Scheduling</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Important</p>
+            <p class="ccTextvorlageNotebody">The work center assigned to the<span class="Bold"> Default Sched. Work Center No.</span> field in Quality Management Setup is the same as the one assigned to a Resource for Test Order Scheduling.</p>
+        </div>
+        <h5 class="Heading5" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.2.4    ">Items</h5>
+        <p>In addition to the dummy item needed for calculation, the raw material item to be tested has special set up requirements as well.</p>
+        <p>The dummy item includes basic information needed to generate the proper calculation. It is recommend to include posting groups, rounding precisions higher than 1, replenishment from Production Orders, and item tracking.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/TO Scheduling_Setup_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 4">: Dummy item for production calculation</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The raw material item used for testing is set up as any other purchased item with planning process and item tracking.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/TO Scheduling_Setup_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+            </p>
+            <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 5">: Raw material item for Test Order scheduling</p>
+        </div>
+        <h5 class="Heading5" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.2.5    ">Item Test Plan Setup</h5>
+        <p class="ccTextvorlage">As usual, an item for testing must have a Test Plan Setup. In this case, an incoming goods inspection needs to be defined.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/TO Scheduling_Setup_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 6">: Test Plan Setup for incoming goods inspection</p>
+        <p class="ccTextvorlage">The <span class="Bold">Test Wait Time</span> and <span class="Bold">Wait Time Unit of Meas. Code</span> fields define if additional time needs to be added to the scheduled testing time to accommodate the period of, e.g., goods arrival to the inspection area.</p>
+        <h5 class="Heading5" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.2.6    "><a name="Test"></a>Test Activities in Test Plan</h5>
+        <p class="ccTextvorlage">In the Test Plan Card, the activities are defined in the <span class="Bold">Test Plan Activities</span> page. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/TO Scheduling_Setup_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 7">: Defining Test Plan Activities to the Test Plan for incoming goods inspection</p>
+        <p class="ccTextvorlage">The Test Activities are related to resources, work centers and includes the specified  execution time for testing.</p>
+        <p class="ccTextvorlage">When adding the Test Plan Activities, the Resource/Work Center combination is automatically populated from the Test Activity. The only field specific to the Test Plan Activity is the <span class="Bold">Execution Time</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/TO Scheduling_Setup_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 8">: Assigning an Execution Time to Test Activity No. W004</p>
+        <p class="ccTextvorlage">Once the Test Activities are defined for the Test Plan, the activities can be assigned to the specific Test Properties in the Test Plan Property Set lines.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/TO Scheduling_Setup_8.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 9">: Preparing to assign  Test Activities to Test Properties in Test Plan Property Set lines</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In this example, there are three test activities available. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/TO Scheduling_Setup_9.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+            </p>
+            <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 10">: Test Plan Activities available to assign to Test Plan Properties</p>
+        </div>
+        <p class="ccTextvorlage">Test Activity W001 for inspecting liquids has been assigned to the first two Test Properties, and the other two activities (W002 and W004 for packaging and receiving, respectively) have been assigned to the remaining properties.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/TO Scheduling_Setup_10.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 11">: Test Activities assigned to Test Properties</p>
+        <p class="ccTextvorlage">The assumption for the calculation is that these tests are done in parallel, not in sequence, but all need the complete testing time. This means that all tests begin at the same time and the testing operation that needs the longest time will determine the ending date of the test activity.</p>
+        <h4 class="Heading4" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.3    ">Incoming Goods Inspection</h4>
+        <p>When goods are received at a company’s warehouse, the time it takes from arrival to the testing needs to be considered in the testing process. Individual testing processes take different amounts of time as well, and need to be considered in the testing process. With Test Order Scheduling, these time frames are collected based on the test activities assigned to the test plans, and then start and end dates for the testing process are calculated based on the duration of those times.</p>
+        <h5 class="Heading5" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.3.1    ">Example – Calculate Schedule for Test Order from Purchase Receipt</h5>
+        <p>The Incoming Goods Inspection item described in topic <MadCap:xref href="#Master" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">“Master Data Setup” on page 1</MadCap:xref> is used in this example. This item is ordered and received in the Quality Warehouse, which requires warehouse receipt processing.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Incoming Goods Inspection.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 12">: Preparing to create the Warehouse Receipt for incoming goods inspection</p>
+        <p class="ccTextvorlage">Item tracking is assigned to the Warehouse Receipt, and then the receipt is posted on 1/24/2019 at 11:40 am.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Incoming Goods Inspection_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 13">: Posted Warehouse Receipt for incoming goods inspection</p>
+        <p class="ccTextvorlage">In the Posted Purchase Receipt, click <span class="Bold">Line &gt; Test Incidents</span> to open the related incidents. The <span class="Bold">Test Incidents</span> page shows the Starting/Ending dates and times for the test. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Incoming Goods Inspection_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 14">: Test Incidents page showing Starting/Ending dates and times for incoming goods inspection</p>
+        <p class="ccTextvorlage">Note the following:</p>
+        <ul>
+            <li class="ccAufzählungblau">The Starting Time is 11:50 AM, not the posting time of 11:40 AM, due to the 10 minute wait time assigned in the Test Plan Setup for this item.</li>
+            <li class="ccAufzählungblau">The Ending Time is 12:05 PM, because the longest testing activity was 15 minutes: 11:40 + 25 minutes (10 minute wait time and 15 minute testing time) = 12:05 PM.</li>
+        </ul>
+        <div class="ccDIV">
+            <p>The Starting/Ending Dates and Times are also visible on the <span class="Bold">Planning</span> FastTab of the <span class="Bold">Test Order</span> page.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Incoming Goods Inspection_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+            </p>
+            <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 15">: Test Order, Planning FastTab showing Starting/Ending dates and times for incoming goods inspection</p>
+        </div>
+        <p class="ccTextvorlage">The Starting/Ending Dates and Times are also visible on the <span class="Bold">Test Orders</span> list page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Incoming Goods Inspection_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 16">: Test Orders list showing Starting/Ending dates and times for incoming goods inspection</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the <span class="Bold">Test Order Activities</span> page, accessed from the Test Order ribbon, the Starting/Ending Dates and Times are visible, along with the activities performed for the Test Order.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Incoming Goods Inspection_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+            </p>
+            <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 17">: Test Order Activities page showing Starting/Ending dates and times for incoming goods inspection</p>
+        </div>
+        <p>The starting and ending dates/times are calculated the same for outgoing goods, such as Sales postings.</p>
+        <p class="ccTextvorlage">As previously stated, the calculation of starting and ending dates/times is to be used for planning purposes. These times have no further planning or scheduling functionality.</p>
+        <h4 class="Heading4" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.4    ">Manufacturing Inspection</h4>
+        <p>The same functionality of Test Order Scheduling is also available in manufacturing inspection, except the test activities can be set up to start at the beginning, in parallel or at the end of the operation. This set up is defined in the <span class="Bold">Test Order Relevance</span> field in the Routing lines. The options are:</p>
+        <ul>
+            <li class="ccAufzählungblau">Start – The Test Order begins with the starting of the Operation and will be executed independently.</li>
+            <li class="ccAufzählungblau">Ending – The Test Order begins with the Ending (Date/Time) of the Operation and will be executed independently.</li>
+            <li class="ccAufzählungblau">Process – The Test Order accompanies the Operation or the Operation is created for the testing process:<ul><li>	Test Order Starting Date-Time and Ending Date-Time must concur with the Starting Date-Time and Ending Date-Time of the operation. When the Test Order Activity times are calculated, these values are copied to the Test Order Activity.</li><li>Refresh Prod. Order must recalculate the related Test Order.</li></ul></li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Production Inspection.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 18"><a name=":"></a>: Routing with Test Order Relevance and Test Plan No. for manufacturing inspection</p>
+        <p>The Test Plan Setup for the routing operation has three test properties: two are assigned on the first Test Property Set and one on the second Test Property Set.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Production Inspection_2.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 19">: Test Plan Activities assigned to Test Plan for manufacturing inspection routing operation</p>
+        <p>After creation of the Test Order, the Starting and Ending dates/times are calculated based on the Source Type and the duration in the Test Order Activities.</p>
+        <p>The Starting Date-Time for a Prod. Order Routing Line is determined as described above.  If <span class="Bold">Test Order Relevance</span> = <span class="Italics">Process</span> is used, the Ending Date-Time is determined from the Ending Date-Time of the Prod. Order Routing.</p>
+        <h5 class="Heading5" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.4.1    ">Example – Calculate Schedule for Test Order from Production Order</h5>
+        <p>In this example, a produced item with an operation that requires inspection has been set up with the routing shown in <MadCap:xref href="#:" class="Figure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Fig. 18</MadCap:xref>. The Test Plan Setup indicates that testing is done based on an operation.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Production Inspection_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 20">: Test Plan Setup for item in a manufacturing inspection </p>
+        <p>A released production order is created for the manufacturing inspection. The starting/ending dates on the refreshed line are calculated as per standard Microsoft Dynamics NAV. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Production Inspection_8.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 21">: Refreshed Production Order for manufacturing inspection</p>
+        <p>Due to other setup, the item tracking was automatically generated and the Test Order was automatically created.</p>
+        <div class="ccDIV">
+            <p>Since testing is to be done at the start of the last operation in the manufacturing process, the Prod. Order Routing is opened to view the times.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Production Inspection_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+            </p>
+            <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 22">: Prod. Order Routing lines for released production order</p>
+        </div>
+        <p class="ccTextvorlage">Based on the Routing and Test Plan Setup, a Test Order should be started at the same time as the third operation: in this example, 11:40 AM.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">On the ribbon, click<span class="Bold">Navigate &gt; Test Orders</span> to open the related Test Order. The <span class="Bold">Test Order List</span> page shows the Starting/Ending dates and times for the test. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Production Inspection_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+            </p>
+            <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 23"> : Test Order List page showing Starting/Ending dates and times for manufacturing inspection</p>
+        </div>
+        <p class="ccTextvorlage">Note the following:</p>
+        <ul>
+            <li class="ccAufzählungblau">The Starting Time is 11:40 AM, which is the starting time of the last operation, not the calculated starting time of the refreshed production order.</li>
+            <li class="ccAufzählungblau">The Ending Time is 12:00 PM, because the longest testing activity was 20 minutes: 11:40 + 20 minutes  = 12:00 PM.</li>
+        </ul>
+        <p>The Starting/Ending Dates and Times are also visible on the <span class="Bold">Planning</span> FastTab of the <span class="Bold">Test Order</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Production Inspection_5.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 24">: Test Order Card, Planning FastTab showing Starting/Ending dates and times for manufacturing inspection</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Test Order Activities</span> page, accessed from the Test Order ribbon, the Starting/Ending Dates and Times are visible, along with the activities performed for the Test Order.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Production Inspection_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 25">: Test Order Activities page showing Starting/Ending dates and times for manufacturing inspection</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The Starting/Ending Dates and Times are also visible on the <span class="Bold">Test Incidents</span> page.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Production Inspection_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+            </p>
+            <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 26">: Test Incidents showing Starting/Ending dates and times for  manufacturing inspection</p>
+        </div>
+        <p class="ccTextvorlage">As previously stated, the calculation of starting and ending dates/times is to be used for planning purposes. These times have no further planning or scheduling functionality.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.5    ">Rescheduling</h4>
+            <p>It is possible to reschedule Test Orders and test incidents from the respective pages.</p>
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">Changing the Start Date in either the Test Order or Test Incident will cause the automatic recalculation of the Test Order(s).</p>
+            <h5 class="Heading5" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.5.1    ">Reschedule Test Orders</h5>
+            <p>In the <span class="Bold">Test Orders</span> page, select a single or multiple Test Orders that need to be rescheduled and then click <span class="Bold">Reschedule Test Orders</span> on the ribbon. All selected Test Orders that have <span class="Bold">Status</span> = <span class="Italics">Created</span> are updated as follows:</p>
+            <ul>
+                <li class="ccAufzählungblau">	The Starting Date-Time is updated</li>
+                <li class="ccAufzählungblau">The Ending Date-Time is recalculated (by validating Starting Date-Time)</li>
+            </ul>
+        </div>
+        <h5 class="Heading5" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.5.2    ">Reschedule Test Incidents</h5>
+        <p>In the <span class="Bold">Test Incidents</span> page, select  a single or multiple test incidents that need to be rescheduled and then click <span class="Bold">Reschedule Test Incidents</span> on the ribbon. All selected Test Incidents with Test Orders that have <span class="Bold">Status</span> = <span class="Italics">Created</span> are updated as follows:</p>
+        <ul>
+            <li class="ccAufzählungblau">	The Starting Date-Time is updated</li>
+            <li class="ccAufzählungblau">The Ending Date-Time is recalculated (by validating Starting Date-Time):<ul><li>On the Test Order</li><li>On the Test Incidents</li></ul></li>
+        </ul>
+        <p>Since the Test Incident is updated from the underlying Test Order,  all Test Orders for an Incident must start at the same date/time and end at the same date/time. Calculation is then based on the first Test Order and the result is copied to the other Test Orders with the same Incident No. and the Test Incident itself.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">When the Starting Date-Time is changed in a Production Order, the Date-Time will be synchronized when the “Reschedule Test Incident” function is run.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="1.1.1.6    ">Filters in Change Test Order Status</h4>
+            <p>The Starting Date / Ending Date are available as filters in the Change Test Order Status function.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/TO Scheduling_Change TO Status.png" />
+            </p>
+            <p class="ccBildFigure" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:autonum="Fig. 27">: Starting Date-Time and Ending Date-Time filters in Change Test Order Status request page</p>
+        </div>
+    </body>
+</html>

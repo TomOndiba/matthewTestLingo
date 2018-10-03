@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434568092"></a>Example – Dynamic Linkage of Work and Machine Centers</h3>
+            <p class="ccTextvorlage">Similar to the dynamic linkage of items,  a dummy work and machine center in the Checklist Template and Dynamic Master BOM can be replaced by actual work and machine centers that are selected in the checklist.</p>
+            <p class="ccTextvorlage">In this example, component types Work Center and Machine Center (along with others) are added to a Checklist Template and Master BOM. After a sales order is created, selections for each component are made in the Document Checklist which are then transferred to the Document BOM.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Dynamic Linkage of Work.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: New Component Type = Work Center/Machine Center assigned along with other types to Checklist Template</p>
+        </div>
+        <p class="ccTextvorlage">The components are also added to the related Master BOM; the numbers selected are irrelevant as they are only placeholders.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Dynamic Linkage of Work_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: New Component Type = Work Center/Machine Center assigned along with other types to Checklist Template</p>
+        <p class="ccTextvorlage">Each master BOM line must be set up with the attribute assigned in the <span class="Bold">Variable for Component</span> field in Configure to Order Setup (in this case, COMP) and assigned the corresponding variable from the Checklist Template. Therefore, for the Work Center line, <span class="Bold">Attribute</span> = <span class="Italics">COMP</span> and <span class="Bold">Formula Value</span> = <span class="Italics">WORKCENTER</span> is entered in the <span class="Bold">Master BOM Attributes</span> page, and so on for the other component lines.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Dynamic Linkage of Work_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Master BOM Attribute assigned to the Work Center line</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Next the sales order is created and the Document Checklist is filled out with the necessary components either manually or with the lookup in the <span class="Bold">Input</span> field.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Dynamic Linkage of Work_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Document Checklist with Machine Center component lookup in Input field</p>
+        </div>
+        <p class="ccTextvorlage">When the Document BOM is opened, the placeholders in the Master BOM are replaced with the codes selected in the Document Checklist.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Dynamic Linkage of Work_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Document BOM showing components assigned in the Document Checklist </p>
+        <p class="ccTextvorlage">The same results occur in the Construction Order lines and the Service BOM lines, either from the Document BOM or when the “Request BOM” function is run.</p>
+    </body>
+</html>

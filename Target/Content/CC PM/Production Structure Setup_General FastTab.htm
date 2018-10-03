@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="897" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434256463"></a>General FastTab</h2>
+        <p class="ccTextvorlage">The fields on this FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 113px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier for the production structure.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Production Structure Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the type of the production structure. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">&lt;blank&gt; – No type is assigned. </li>
+                            <li class="ccAufzählung">Development Structure – In the production structure header, the <span class="Bold">Item No.</span> field but be empty. In the production structure lines, with <span class="Bold">Type</span> = <span class="Italics">Item</span> or <span class="Italics">Share of Recipe</span>, the <span class="Bold">No.</span> field must be empty. </li>
+                            <li class="ccAufzählung">Laboratory Structure – In the production structure header, the <span class="Bold">Item No.</span> field but be empty. In the production structure lines, with <span class="Bold">Type</span> = <span class="Italics">Item</span> or <span class="Italics">Share of Recipe</span>, the <span class="Bold">No.</span> field must be filled in.</li>
+                            <li class="ccAufzählung">Manufacturing Structure – In the production structure header, the <span class="Bold">Item No.</span> field must be filled in.  In the production structure lines, with <span class="Bold">Type</span> = <span class="Italics">Item</span> or <span class="Italics">Share of Recipe</span>, the <span class="Bold">No.</span> field must be filled in.</li>
+                            <li class="ccAufzählung">Bottling Structure – Used to bottle items in different units of measure (refer to topic <MadCap:xref href="Bottling Production Structure.htm#_Ref282423816">“Bottling Production Structure” on page 1</MadCap:xref>).</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sample Shipment</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, a sample shipment is made for the production structure and the <span class="Bold">Sample Shipment</span> page is accessible to enter more information to the sample shipment.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Item No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of the item the production structure is for. When the production structure is certified, the new Routing and Production BOM will be linked to this item.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description / Description 2</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Descriptions from the Item Card.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit of Measure Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines the values of the corresponding production structure lines. The Unit of Measure Code is transferred to the production BOM, if used.</p>
+                        <p class="ccTabellenText">If this field is changed in an existing Production Structure, the system automatically updates the quantity and times in the Production Structure lines. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lot Size</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the lot size of the production structure. The lot size is used if a production order is created from the production structure or if it is used to make a production structure simulation.</p>
+                        <p class="ccTabellenText">When the production structure is certified, the value in this field will be copied to the <span class="Bold">Lot Size</span> field on the Item Card.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates which processing status a production structure has. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">New – The production structure is new.</li>
+                            <li class="ccAufzählung">Certified – The production structure is certified and ready for use.</li>
+                            <li class="ccAufzählung">Under Development – The production structure is in progress.</li>
+                            <li class="ccAufzählung">Closed – The production structure has been closed.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">New Production BOM</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines whether – during the certification of a production structure – the existing production bill of material (BOM) should be revised or if a new production BOM version should be created.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">New Routing</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines whether – during the certification of a production structure – the existing routing should be revised or if a new routing version should be created.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Creation Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Date the production structure was created.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Last Date Modified</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Date the production structure was last modified.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Production BOM No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of the valid production BOM.</p>
+                        <ul>
+                            <li class="ccAufzählung">If it is a standard BOM, this field contains the manufacturing BOM number.</li>
+                            <li class="ccAufzählung">If it is a recipe BOM, this field contains the recipe BOM number.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Production BOM Version Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">BOM version code of the production BOM.</p>
+                        <ul>
+                            <li class="ccAufzählung">If it is a standard BOM, this field contains the manufacturing BOM version code.</li>
+                            <li class="ccAufzählung">If it is a recipe BOM, this field contains the recipe BOM version code.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Routing No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of the valid routing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Routing Version Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of the routing version code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Max. Incorporation %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Defines a limited quantity of incorporation item in this recipe that is created from a production structure. This field contains the maximum percent share of incorporation item relating to the entire recipe.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

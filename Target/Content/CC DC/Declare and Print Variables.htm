@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="823" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref424627949"></a><a name="_Toc434332539"></a>Declare and Print Variables</h2>
+        <p class="ccTextvorlage">In this example, the Balance from the Customer Card will be assigned to a variable and the Variable will be used for displaying the amount on the Sales Quote printout. </p>
+        <p class="ccTextvorlage">The new Variable called “CustomerBalance” will be added to the Header of Document section in the layout. The value from the <span class="Bold">Balance</span> field (58) in the Customer table (18) will be assigned to the Variable. Since this is a decimal value, the “&lt;Precision,2:2&gt;&lt;Standard Format,0&gt;” Format String will be used to format the value with two decimals. </p>
+        <p class="ccDemoStepHeading">Add Variable to the Document Layout Section</p>
+        <p class="ccTextvorlage">Follow these steps to add a variable to a document layout section:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Open the SQ-01, Sales Quote, Document Layout.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Under Development</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the first line selected in the <span class="Bold">Sections</span> FastTab, click <span class="Bold">Line &gt; Variables</span> to open the <span class="Bold">Document Layout Variables</span> page. </li>
+            <li class="ccTextvorlageNumberedList">In the line below “CustomerNo”, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Variable</span> = CustomerBalance</li><li class="ccTextvorlageNumberedList"><span class="Bold">Type</span> = Value</li><li class="ccTextvorlageNumberedList"><span class="Bold">Table No. </span>= 18</li><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 58</li><li class="ccTextvorlageNumberedList"><span class="Bold">Format String </span>= &lt;Precision,2:2&gt;&lt;Standard Format,0&gt;</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Declare and Print Variables.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Variable added to Document Layout section</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Add Filter to Variable</p>
+            <p class="ccTextvorlage">As with fields, filters must be specified if using tables other than the table used in the Section. Specifying the filters for the Customer table is done in the <span class="Bold">Document Layout Filter</span> page; where a filter is defined for the <span class="Bold">No.</span> field in the Customer table to be equal to the Bill-to Number of the Sales Header table.</p>
+        </div>
+        <p class="ccTextvorlage">Follow these steps to add filters to the variable:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">With the line for “CustomerBalance” selected, click <span class="Bold">Filters</span> on the ribbon.</li>
+            <li class="ccTextvorlageNumberedList">On the line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 1</li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Type</span> = Value</li><li><span class="Bold">Filter Field No.</span> = 4</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Declare and Print Variables_1.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 212px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Filter added to the Variable</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout Filters</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout Variables</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Specify Fields</p>
+        <p class="ccTextvorlage">The last step is to define the Document Layout Field to print the Variable just below the Bill-to Name. The <span class="Bold">Type</span> = <span class="Italics">Text</span> because variables are always entered within square brackets in the <span class="Bold">Text</span> field (e.g., “Outstanding Balance: [CustomerBalance]”). This is valid for both Document Layout Fields and Document Layout Filters. </p>
+        <p class="ccTextvorlage">Follow these steps to specify the fields to print the variable:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">With the first line selected, click <span class="Bold">Line &gt; Fields</span> on the <span class="Bold">Sections</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">Insert a new line below the Bill-to Name line.</li>
+            <li class="ccTextvorlageNumberedList">Enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Line</span> = 17</li><li class="ccTextvorlageNumberedList"><span class="Bold">Description</span> = Amount from Customer Card</li><li><span class="Bold">Type</span> = Text</li><li><span class="Bold">Text</span> = Outstanding Balance: [CustomerBalance]</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Declare and Print Variables_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Field with variable text added to the section</p>
+        <p class="ccTextvorlageNumberedListNoteHeading">Note</p>
+        <p class="ccTextvorlageNumberedListNoteBody">Entering “Outstanding Balance: [CustomerBalance]” in a <span class="Bold">Text</span> field will not make it multilingual enabled. To do this, Document Texts must be used. Variables can also be used in the <span class="Bold">Text</span> field of Document Texts by using square brackets.</p>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Run Report</span> to view the report changes.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Show Request Page</span> check box and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the request page, click <span class="Bold">Preview</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Declare and Print Variables_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Variable added to the report</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout Fields</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Certified</span> to make it available to the users.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout</span> page.</li>
+        </ol>
+    </body>
+</html>

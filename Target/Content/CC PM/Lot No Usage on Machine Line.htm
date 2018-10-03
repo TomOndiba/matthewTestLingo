@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="877" MadCap:lastWidth="604" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256656"></a>Lot No. Usage on Machine Line in Production Journal </h3>
+        <p class="ccTextvorlage">Tools and Inserts are always used in combination with and parallel to a Work Center. These capacities use the same Starting Date-Time and Ending Date-Time as the Work Center and do not exist separately.</p>
+        <p class="ccTextvorlage">If a Work Center with Tool is the last in the Routing:</p>
+        <ul>
+            <li class="ccAufzählungblau">A dummy for Tool Usage will be added to the Production Structure and Prod. Order Routing.</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Lot No Usage on Machine Line.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Production Structure and Prod. Order Routing with dummy tool</p>
+        <div class="ccDIV">
+            <ul>
+                <li class="ccAufzählungblau">The concluding dummy position that is required for calculation is <span class="Underline">not</span> transferred to the Production Journal/Output Journal.</li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Lot No Usage on Machine Line_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Production Journal with no dummy tool line</p>
+        </div>
+        <p class="ccTextvorlage">The posting of the Work Center position is the trigger for automatic Output posting. Therefore, the Production Order Line-related Item Tracking must be entered on the Work Center line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Lot No Usage on Machine Line_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Error when trying to assign Item tracking to last line in the Production Journal</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">When the Work Center is part of a parallel structure in the Production Structure, the last line on the Production Journal/Output Journal is a dummy line used to reunite routing structures that can have different time efforts when running parallel. In this case, the parallel dummy line is the trigger for the Output posting and position for entering the Item Tracking.</p>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="550" MadCap:lastWidth="604" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256535"></a>Sales Orders with Production Variants</h3>
+            <p class="ccTextvorlage">If a sales order is placed for an item with different production variants containing the aforementioned criteria, a production order is created under consideration of the different production structures.</p>
+            <p class="ccTextvorlage">For example, item P-10600 has different production structures. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Sales Orders with Production.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref286332237"></a>: Production Structures for item P-10600</p>
+        </div>
+        <p class="ccTextvorlage">If item P-10600 with variant LOS-A and location MAINWH is entered on a sales order and a production order is created for this line, the production structure PST-V-006 – with its Production BOM and Routing No. – is used to calculate the production order routing and components.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Sales Orders with Production_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Items with different criteria on a sales order</p>
+        <p class="ccTextvorlage">Production order lines are calculated using the different production structure variants and their specific BOM and routing information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Sales Orders with Production_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="_Ref286332226"></a>: Production Order for sales order with different item criteria</p>
+        <p class="ccTextvorlage">As <MadCap:xref href="#_Ref286332226" class="Figure">Fig. 3</MadCap:xref> illustrates, production structure PST-V-001 was used on the first line because the quantity was between 100 and 500, and the second line uses PST-V-002 because the quantity was greater than 501. Refer to the Production Structure settings in <MadCap:xref href="#_Ref286332237" class="Figure">Fig. 1</MadCap:xref> for more information about the remaining lines.</p>
+    </body>
+</html>

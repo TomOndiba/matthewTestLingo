@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:fileTags="StatusFileTags.6 Needs to be Sent for Review" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc445394384"></a>Jobs Setup</h2>
+        <p class="ccTextvorlage">The general setup for <span class="CCBausteinInhaltZchn">cc|project</span> is entered in the <span class="Bold">Jobs Setup</span> page, accessed from the Departments  menu by clicking <span class="CCBausteinInhaltZchn">cc|project</span><span class="Bold"> &gt; Administration &gt; Jobs Setup</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Jobs Setup.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Jobs Setup page, General and Numbering FastTabs</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Although the Job Setup Wizard provides many default settings, there are additional fields that may need to be set up in the <span class="Bold">Jobs Setup</span> page. The default settings can also be reviewed and changed in this page.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc445394385"></a>General FastTab</h3>
+        <p class="ccTextvorlage">The fields on this FastTab display general information about the <span class="COSMOCONSULTZchn">COSMO CONSULT</span> granules related to <span class="CCBausteinInhaltZchn">cc|project</span> and are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 151px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Automatic Update Job Item Cost</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the Update Job Item Cost batch job starts automatically with the Adjust Cost - Item Entries batch job.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Allow Budget/Billable Lines Def</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Part of Job Management in standard Microsoft Dynamics NAV; not used in <span class="CCBausteinInhaltZchn">cc|project</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Default Job Posting Group</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the Job Posting Group that will be defaulted to the Job Card each time a Job is created. The Default Job Posting Group from Job Types will overwrite the value in the Job Card, if it is set.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Logo Position on Documents</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Part of Job Management in standard Microsoft Dynamics NAV; not used in <span class="CCBausteinInhaltZchn">cc|project</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Granules 1 – Granule 6</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates each granule that is licensed for <span class="CCBausteinInhaltZchn">cc|project</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Disable Granule IDs</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">If all Granules are licensed but not each Granule is used, it is possible to disable the Granules one by one, e.g. to disable the Granules 5292600, 5292610, 5292620, enter <span class="Italics">456</span> or <span class="Italics">4,5,6</span>.</p>
+                        <p class="ccTabellenText">This is particular for Developer Licenses.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc445394386"></a>Numbering FastTab</h3>
+        <p class="ccTextvorlage">On this tab, basic number series needed in <span class="CCBausteinInhaltZchn">cc|project</span> can be assigned.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc445394387"></a>Job FastTab</h3>
+        <p class="ccTextvorlage">On this FastTab, the default fields for the Job Card are configured. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Jobs Setup_1.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Jobs Setup, Job FastTab</p>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Job</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 119px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Job Version Start</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Initializes the format for job versions. Each new job is marked as a first version. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">New Version per Status change</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Prompts for a new job version when a job status changes. The options are: </p>
+                        <ul>
+                            <li class="ccAufzählung">Never – Option will never be used</li>
+                            <li class="ccAufzählung">Optional – Option will be used on request</li>
+                            <li class="ccAufzählung">Always – Option will always be used</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Default Sales Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identities the Sales Code that will be used as the default for all new jobs.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Default Unit of Measure Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Controls which Unit of Measure is used in calculation lines as a default. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Base Unit of Measure</li>
+                            <li class="ccAufzählung">Sales Unit of Measure</li>
+                            <li class="ccAufzählung">Purchase Unit of Measure</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">WBS Format</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines how WBS positions are formatted in the job structure. The options are: </p>
+                        <ul>
+                            <li class="ccAufzählung">Without Level 1 – no WBS code will be created for level 1. Numbering is starting with level 2.</li>
+                            <li class="ccAufzählung">Components only – WBS codes are only created for lines with components (resources, items, resources, work/machine centers and general components).</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Realized % (Base)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used to automatically calculate the <span class="Bold">Realized %</span> field. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Quantity – Posted / calculated quantity</li>
+                            <li class="ccAufzählung">Cost – Posted / calculated cost</li>
+                        </ul>
+                        <p class="ccTabellenText">This can also be set up by using the field on a component (with higher priority).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Location for Inv. Requests</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the default location for inventory request related procurement planning.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Location for Purchase</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the default location for purchase related procurement planning.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Procurement Planning Required</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the planning and release of a procurement process is mandatory.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Job Dimension</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the dimension for automatically generated default dimension values for the <span class="Bold">Job No.</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Autom. Job Dimension</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if the dimension value should be inherited from the Job No. of the current job or from the main job.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Job Type Dimension</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Allocates the dimension depending on the job type.</p>
+                        <p class="ccTabellenText">The default dimension values are assigned in the <span class="Bold">Job Types Setup</span> page.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Dim. from Cust. - Copy</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, default dimensions from the customer are copied to the job.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Dim. from Cust. - Overwrite</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, default dimensions from the customer are copied to the job. Existing default dimensions on the job will be overwritten.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Dim. from Person Responsible</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, default dimensions from the person responsible are copied to the job.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText">Copy Dimension to Purchase</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p>If selected, job dimensions are copied to the document dimensions in purchase documents.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText">Copy Dimension to Sales</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p>If selected, job dimensions are copied to the document dimensions in sales documents.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Job Line Dimension 1 /  Job Line Dimension 2 /  Job Line Dimension 3</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Job line dimensions should be used if the dimensions are dependent on the job structure, i.e. structure line dimensions are inherited by the upper structure.</p>
+                        <p class="ccTabellenText">In addition to defining a single dimension for the job structure, it is possible to differentiate three dimensions on the job lines. </p>
+                        <p class="ccTabellenText">The following rules apply for the use of dimensions on the job line:</p>
+                        <ol start="1">
+                            <li class="ccTextvorlageNumberedList">The job line dimension is taken over from the component in the job line as a default value.</li>
+                            <li class="ccTextvorlageNumberedList">The job line dimension is extracted from a higher level, if no dimensions are attached to the individual component.</li>
+                            <li class="ccTextvorlageNumberedList">An alteration of a job line dimension results to a subsequent alteration within the sub-structures.</li>
+                            <li class="ccTextvorlageNumberedList">In the process of downgrading the project line, the dimension value is taken over from the highest position.</li>
+                        </ol>
+                        <p class="ccTabellenText">The dimensions are transferred from the job line to the document that is generated from this line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Default WIP Basis</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the WIP Basis that will be defaulted to the Job Card each time a Job is created. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Sales Code</li>
+                            <li class="ccAufzählung">WIP Position</li>
+                            <li class="ccAufzählung">Job</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText">Change Sales Code After Posting</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText">Determines if Sales Codes can be changed after posting to the job line. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Never – Sales Code cannot be changed</li>
+                            <li class="ccAufzählung">Optional – Sales Code can be changed after confirmation</li>
+                            <li class="ccAufzählung">Always – Sales Code can be changed</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc445394388"></a>Calculation FastTab</h3>
+        <p class="ccTextvorlage">On this FastTab, all settings relating to Calculations are defined.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Jobs Setup_2.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Jobs Setup, Calculation FastTab</p>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Calculation</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 145px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Purch. Disc. Reduce Unit Cost</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Manages the cost calculation and therefore the valuation of a calculation line by using a Line Purchase Discount %.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Set Budget with Sales Doc.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if WBS positions are budgeted automatically during the creation of a sales document (quote or order). </p>
+                        <p class="ccTabellenText">Changes in linked substructures have no effect on the sales value.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Insert Sales Ext. Text</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if extended text descriptions from components (Services and Items) are copied into the Job Budget Sales view. </p>
+                        <p class="ccTabellenText">These comments are available for review by selecting the <span class="Bold">Comment Sales</span> check box.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Insert Purch. Ext. Text</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if extended text descriptions from components (Services and Items) are copied into the Job Planning and Processing view. </p>
+                        <p class="ccTabellenText">These comments are available for review by selecting the <span class="Bold">Comment Procurement</span> check box.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No New Calculation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used when updating positions in the Job Budget Calculation view.</p>
+                        <p class="ccTabellenText">If selected, the <span class="Bold">Do Not Recalculate</span> check box is selected on the <span class="Bold">Job Line Update Rules</span> page and the following four check boxes cannot be selected.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Replace Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used when updating positions in the Job Budget Calculation view.</p>
+                        <p class="ccTabellenText">If selected, the <span class="Bold">Replace Description</span> check box is selected on the <span class="Bold">Job Line Update Rules</span> page.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Replace Comments</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used when updating positions in the Job Budget Calculation view.</p>
+                        <p class="ccTabellenText">If selected, the <span class="Bold">Replace Comments</span> check box is selected on the <span class="Bold">Job Line Update Rules</span> page.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Replace Cost/Price</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used when updating positions in the Job Budget Calculation view.</p>
+                        <p class="ccTabellenText">If selected, the <span class="Bold">Replace Units of Measure and Costs/Prices</span> check box is selected on the <span class="Bold">Job Line Update Rules</span> page.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Set Quantity Zero</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Used when updating positions in the Job Budget Calculation view.</p>
+                        <p class="ccTabellenText">If selected, the <span class="Bold">Set Quantity Zero</span> check box is selected on the <span class="Bold">Job Line Update Rules</span> page.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.5    "><a name="_Toc445394389"></a>Planning FastTab</h3>
+            <p class="ccTextvorlage">On this FastTab, all settings relating to Planning are defined.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Jobs Setup_3.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Jobs Setup, Planning FastTab</p>
+        </div>
+        <p class="ccTextvorlage">The fields on this FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 135px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Option Capacity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults to the <span class="Bold">View Options</span> FastTab in the <span class="Bold">Planning View Person</span> page.</p>
+                        <p class="ccTabellenText">Base Table: Capacity Ledger Entries</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Option Planning</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults to the <span class="Bold">View Options</span> FastTab in the <span class="Bold">Planning View Person</span> page.</p>
+                        <p class="ccTabellenText">Base Table: Job Calendar Entries</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Option Simulation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults to the <span class="Bold">View Options</span> FastTab in the <span class="Bold">Planning View Person</span> page.</p>
+                        <p class="ccTabellenText">Base Table: Job Calendar Entries</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Option Available</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults to the <span class="Bold">View Options</span> FastTab in the <span class="Bold">Planning View Person</span> page.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Option Available %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults to the <span class="Bold">View Options</span> FastTab in the <span class="Bold">Planning View Person</span> page.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Option Utilization %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults to the <span class="Bold">View Options</span> FastTab in the <span class="Bold">Planning View Person</span> page.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Option Time Entry</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults to the <span class="Bold">View Options</span> FastTab in the <span class="Bold">Planning View Person</span> page.</p>
+                        <p class="ccTabellenText">Base Table: Job Journal Lines</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Option Posted</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults to the <span class="Bold">View Options</span> FastTab in the <span class="Bold">Planning View Person</span> page.</p>
+                        <p class="ccTabellenText">Base Table: Job Ledger Entries</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Utilization %, &lt;=</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Currently has no functionality.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Utilization %, &gt;=</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Currently has no functionality.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Base Calendar Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used as the default person resources setup for calculating capacities.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">General Job Work-Hour Template</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used as the default person resources setup for calculating capacities.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Cash Flow Pmt. Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used with the  Job Liquidity module integration in <span class="CCBausteinInhaltZchn">cc|project</span> (refer to topic <MadCap:xref href="Job Liquidity Integration.htm#top">“Job Liquidity Integration” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">MSP Path</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Microsoft Project Integration.htm#_Ref381259745">“Microsoft Project Integration” on page 1</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">MSP Date Format</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Microsoft Project Integration.htm#_Ref381259745">“Microsoft Project Integration” on page 1</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">MSP Import Comp. Type </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Microsoft Project Integration.htm#_Ref381259745">“Microsoft Project Integration” on page 1</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">MSP Import Comp. No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Microsoft Project Integration.htm#_Ref381259745">“Microsoft Project Integration” on page 1</MadCap:xref>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.6    "><a name="_Toc445394390"></a>Procurement FastTab</h3>
+            <p class="ccTextvorlage">On this FastTab, all settings relating to Procurements are defined.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Jobs Setup_4.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Jobs Setup, Procurement FastTab</p>
+        </div>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Procurement</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 114px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Procurement Cost Source</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines the pricing method for the Direct Unit Cost in the procurement process.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Signal Monitor Tolerance %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates a buffer for controlling differences in the <span class="Bold">Realized %</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Fixed Job Line Purchase</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p>Can be used to implement a function for automatic WBS finding in Purchase Lines.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Job Journal Time Entry / Job Jnl. Batch Ext. Time Entry</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the default job journal templates for internal and (optionally) external time entries. </p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">A special module is required for external time entry.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Terminal Posting Allowed</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the person recording time can also post their time in the Terminal.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Post Released Quantity only</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, released procurement lines are set to Finished automatically when the procurement documents (purchase order, inventory request) are posted.  With this option, it is possible to post up to the released quantity, and when that quantity is reached, the procurement lines will be closed. An error will occur if there is an attempt to post more than the release quantity.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">This option cannot be used with unplanned travel expenses if it is not possible to release a quantity for an unplanned cost; therefore use the <span class="Bold">Auto. Close Proc. Line</span> field to handle automatic posting (refer to next field). </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Auto. Close Proc. Line</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, released procurement lines are set to Finished automatically when the procurement documents (purchase order, inventory request) are posted. With this option, it is possible to post as much as needed with no limit to the released quantity. However, the procurement lines will be closed if the full released quantity or more are posted.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">Only this option can be used with unplanned travel expenses because it is possible to post unplanned costs. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Req. Wksh. Template / Req. Wksh. Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the template and name of the requisition worksheet; required to use the purchase procurement channel is used.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">External Services Code / External Trav. Exp. Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Allows the use of resources on purchase documents using a link to a G/L account.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Order Confirmation Required</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the <span class="Bold">Order Confirmation Required</span> check box is selected in Purchase Documents.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Job Journal Inventory Requests</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the job journal to be used for inventory requests.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Inv. Request per Location</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, multiple inventory requests will be created for a procurement covering several positions.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Populate Qty. in Inv. Requests</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the picking amount will not be confirmed on order completion.  </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Check Quantity in Inv. Req.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, an inventory audit of the respective storage location will be checked during posting.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Def. Prod. Order Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Determines the default production order to be used if production procurement is used.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <div class="ccDIV">
+                <h3 class="Heading3" MadCap:autonum="1.1.7    "><a name="_Toc445394391"></a>Sales FastTab</h3>
+                <p class="ccTextvorlage">On this FastTab, the default presets fields for sales are configured.</p>
+                <p class="ccBildabstand">
+                    <img src="../Resources/Images/CC PR/Jobs Setup_5.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+                </p>
+                <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Jobs Setup, Sales FastTab</p>
+            </div>
+        </div>
+        <p class="ccTextvorlage">Some fields on this FastTab offer the following three options:</p>
+        <ul>
+            <li class="ccAufzählungblau">Never – Option will never be used</li>
+            <li class="ccAufzählungblau">Optional – Option will be used on request</li>
+            <li class="ccAufzählungblau">Always – Option will always be used</li>
+        </ul>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Sale</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 184px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">New Version per Sales Quote</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Prompts for a new job version when a sales quote is created.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Set Job Status Quote</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Automatically changes the status on the Job Card from Planning to Quote when a sales quote is created.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Set Job Status Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Automatically changes the status on the Job Card from Planning / Quote to Order if you create an order from an offer or if you directly create an order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Autom. Release Sales Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Automatically releases the sales order on creation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Procurement with Sales Release</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Automatically releases procurement on release of the order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Auto. Completion Reason Alternative Jobs</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Automatically completes an alternative job with this completion reason.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Fixed Job Line Sales</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Can be used to implement a function for automatic WBS finding in Sales Lines.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.8    "><a name="_Toc445394392"></a>Signals FastTab</h3>
+        <p class="ccTextvorlage">This FastTab contains the color options available to provide better visual displays. Refer to topic <MadCap:xref href="Base Setup.htm#_Ref437355746">“Job Signals” on page 1</MadCap:xref> for more information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Jobs Setup_6.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Jobs Setup, Signals FastTab</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.9    ">Actions Tab</h3>
+        <p class="ccTextvorlage">The <span class="Bold">Actions</span> tab includes items that are relevant to <span class="CCBausteinInhaltZchn">cc|project</span>. One of the menu items is available on the <span class="Bold">Home</span> tab. </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.9.1    ">Create Function Configuration</h4>
+        <p class="ccTextvorlage">This function automatically creates two function configurations that are used with product configurations related to profiles. Refer to your COSMO CONSULT consultant for more infomation.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.9.2    ">cc|project Overview </h4>
+        <p class="ccTextvorlage">This function displays a <span class="CCBausteinInhaltZchn">cc|project</span> software structure graphic. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Jobs Setup_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: cc|project structure overview</p>
+    </body>
+</html>

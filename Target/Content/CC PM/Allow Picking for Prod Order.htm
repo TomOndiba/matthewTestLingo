@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="894" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256803"></a>Allow Picking for Prod. Order Lines Reversed in Sequence Planning</h3>
+            <p class="ccTextvorlage">The <span class="Bold">No Pick for Reversed Prod. Order Lines</span> field in Planning Extension Setup determines if a warehouse pick is created for production order lines reversed in Sequence Planning (sequence position 999,999,999,999).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Allow Picking for Prod Order.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: No Pick for Reversed Prod. Order Lines field disabled in Planning Extension Setup</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Example – Picking for Production Order Lines Reversed in Sequence Planning</p>
+            <p class="ccTextvorlage">In this example, a sales order has been created for 10 units of item P-10001 to the YELLOW location that requires picking. A production order was created but not scheduled for planning. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Allow Picking for Prod Order_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Unscheduled production order ready for picking</p>
+        </div>
+        <p class="ccTextvorlage">The <span class="Bold">No Pick for Reversed Prod. Order Lines</span> field is disabled in Planning Extension Setup to allow picking for the unscheduled released production order.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Allow Picking for Prod Order_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Pick successfully created for the unscheduled production order</p>
+        <p class="ccTextvorlage">The created pick is deleted and then the <span class="Bold">No Pick for Reversed Prod. Order Lines</span> field is enabled in Planning Extension Setup to prevent picking for the unscheduled released production order.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Allow Picking for Prod Order_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: No Pick for Reversed Prod. Order Lines field enabled in Planning Extension Setup</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">When the “Create Whse. Pick” function is run for the production order, the pick will not be created.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Allow Picking for Prod Order_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Pick not created for unplanned production order</p>
+        </div>
+        <p class="ccTextvorlage">Now, the production order is planned in Sequence Planning.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Allow Picking for Prod Order_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Scheduled production order ready for picking</p>
+        <p class="ccTextvorlage">With the <span class="Bold">No Pick for Reversed Prod. Order Lines</span> field still enabled, the “Create Whse. Pick” function is run again for the production order and the pick is created.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Allow Picking for Prod Order_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Pick successfully created for the scheduled production order</p>
+    </body>
+</html>

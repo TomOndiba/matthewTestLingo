@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref425437295"></a><a name="_Toc434330884"></a>Document Entries</h2>
+        <p class="ccTextvorlage">Document Entries represent the history of actions performed from Microsoft Dynamics NAV. It is possible to deactivate the document entry tracking or saving in the fields on the <span class="Bold">History</span> FastTab in the <span class="Bold">DMS Setup</span> page. </p>
+        <p class="ccTextvorlage">To view all Document Entries in the system, click <span class="Bold">Departments &gt;</span> <span class="CCBausteinInhaltZchn">cc|dms</span><span class="Bold"> &gt; History &gt; DMS Document Entries</span>. Additionally, the <span class="Bold">DMS Document Entries</span> page can be opened to filtered views on Document Libraries, Content Types, MetaData, SharePoint Table Filters and NAV Table Filters. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DMS/Document Entries.png" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: DMS Document Entries page opened from History menu</p>
+        <p class="ccTextvorlage">The “Run as Client” and “Run as Server” functions provide the ability to process a document entry in the specific context. When an error occurs, click <span class="Bold">Actions &gt; Reset Error</span> to change the <span class="Bold">Service Result</span> to <span class="Italics">&lt;blank&gt;</span> and process it manually. The actions regarding documents are only visible if any BLOB (document, service xml or result xml) are stored in the document entry.</p>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">DMS Document Entries</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');margin-left: auto;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 102px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Entry No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the system-generated number of the entry. When aborting the MetaData dialog for a document, the entry will be deleted, which might lead to gaps between the numbering.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Entry Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the processed action. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Upload New Document – A document will be uploaded as soon as the MetaData are defined (saved).</li>
+                            <li class="ccAufzählung">Edit MetaData – The existing MetaData of a SharePoint existing document will be changed.</li>
+                            <li class="ccAufzählung">Show MetaData – The MetaData of an existing document will be displayed in Microsoft Dynamics NAV.</li>
+                            <li class="ccAufzählung">Delete Document – A document has been deleted from the document library.</li>
+                            <li class="ccAufzählung">Check In – Manages the check in of documents in SharePoint.</li>
+                            <li class="ccAufzählung">Check Out – Manages the check out of documents in SharePoint.</li>
+                            <li class="ccAufzählung">Undo Check Out – Reverts the check out of documents in SharePoint to the previous state. </li>
+                            <li class="ccAufzählung">Download Document – The document has been downloaded from the document library.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Upload Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the type of upload, either Client or Queue (refer to topic <MadCap:xref href="Document Actions.htm#_Ref425441763" class="RelLinkPageNumber">"Document Actions" on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Service Result</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the current status to perform the action in SharePoint. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">&lt;blank&gt; – Action was created but not processed in SharePoint yet.</li>
+                            <li class="ccAufzählung">Success – Entry was successfully processed in SharePoint.</li>
+                            <li class="ccAufzählung">Error – Error occurred while processing the action in SharePoint. The actual error will be displayed in the <span class="Bold">Service Error Message</span> field.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Service Error Message</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays error messages from the communication with SharePoint.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Document Library No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the number of the document library to perform the entry.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Content Type Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the code of the content type to process the action. When uploading a document, the code might change because of the content type selection on the MetaData definition dialog.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Table No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the table number for the content type and document library.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Document</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the document (BLOB) is saved in Microsoft Dynamics NAV for the entry.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Record ID</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the Microsoft Dynamics NAV record with which this action is performed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">File Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the file name of the document, including timestamps.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">MetaData Saved</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if the MetaData for this document entry have been saved or are not yet defined.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">MetaData Saving Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the date of defining the MetaData.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">MetaData Saving Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Shows the time of defining the MetaData.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">MetaData Saved by User</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the user who has created the document entry and changed the MetaData.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Service Node String</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the XML that triggered the SharePoint ServiceAdapter to process the action (Entry Type, like uploading or deleting) is stored for this entry. This field is used for debugging purposes only, to check what <span class="CCBausteinInhaltZchn">cc|dms</span> is sending to the SharePoint ServiceAdapter.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Result Node String</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the XML returned from the SharePoint Service Adapter is saved for this entry. This field is used for debugging purposes only, to check what the SharePoint ServiceAdapter is returning to <span class="CCBausteinInhaltZchn">cc|dms</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Upload Counter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Displays a system-generated value that counts the upload attempts.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

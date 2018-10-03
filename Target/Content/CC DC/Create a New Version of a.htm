@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="916" MadCap:lastWidth="604" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref424648144"></a><a name="_Toc434332543"></a>Create a New Version of a Layout</h2>
+        <p class="ccTextvorlage">In this example, a new copy of the Sales Quote Document Layout will be created.</p>
+        <p class="ccTextvorlage">Creating a new version is useful for making changes to the layout at the same time as users print the “old” version. When it is time to publish the new version, certify the Document Layout and close the old version. Versions can also have Starting and Ending Dates, which allows for setting up a layout that will replace another at a certain date.</p>
+        <p class="ccDemoStepHeading">Create New Layout Version</p>
+        <p class="ccTextvorlage">The new Sales Quote document layout version will be named SQ-02. The same information as in SQ-01 will be entered in the header of the new Document Layout and then the Sections (and all the setup related to the Sections) will be copied into the new from the old version.</p>
+        <p class="ccTextvorlage">Follow these steps to create a new layout version:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the Document Layouts ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, type SQ-02.</li>
+            <li class="ccTextvorlageNumberedList">Enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Description</span> = New Sales Quote Layout</li><li class="ccTextvorlageNumberedList"><span class="Bold">Top DataItem Table No. </span>= 36</li><li class="ccTextvorlageNumberedList"><span class="Bold">Report No. </span>= 12032015</li><li class="ccTextvorlageNumberedList"><span class="Bold">Render Report No. </span>= 12032027</li><li class="ccTextvorlageNumberedList"><span class="Bold">Document Label Code </span>= SALESQUOTE-HEADER</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Create a New Version of a.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: New document layout for Sales Quote</p>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Copy From</span>.<br />The <span class="Bold">Document Layout List</span> page opens, displaying only the document layouts that use the same Top DataItem Table No. specified in the new layout.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Create a New Version of a_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Document Layouts available for copy to the new Sales Quote layout</p>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">Select the line for SQ-01, Sales Quote and click <span class="Bold">OK</span>. <br />The following message appears, confirming that the copy process will replace the Sections in the new layout with existing layout.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Create a New Version of a_2.png" style="visibility: visible;mso-wrap-style: square;width: 448px;height: 131px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Copy confirmation message</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Create a New Version of a_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: New Document Layout with sections copied from Document Layout SQ-01</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Certified</span> to make it available to the users.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout</span> page.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="818" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434332545"></a>Create Report</h3>
+        <p class="ccTextvorlage">Creating a new report is done through the Object Designer in the Microsoft Dynamics NAV Development Environment. Open a template report in the Report Designer and save it as a different report number named “Item Printout”.</p>
+        <p class="ccDemoStepHeading">Create Report</p>
+        <p class="ccTextvorlage">Follow these steps to create the report:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the Microsoft Dynamics NAV Development Environment, open the Object Designer.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Report</span> and then locate report 12032022, DC – Generic Report.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Design</span> and then <span class="Bold">File &gt; Save As</span>.</li>
+            <li class="ccTextvorlageNumberedList">Enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">ID</span> = report number in your object range</li><li class="ccTextvorlageNumberedList"><span class="Bold">Description</span> = Item Printout</li></ol></li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the Report Designer, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Data Source</span> = Item</li><li class="ccTextvorlageNumberedList"><span class="Bold">Name</span> = Item</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Create Report.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: New report for Item Printout</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">View &gt; Properties</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Item - Properties</span> page, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">DataItemTableView</span> = SORTING(No.) ORDER(Ascending)</li><li class="ccTextvorlageNumberedList"><span class="Bold">ReqFilterFields</span> = No.</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Create Report_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Properties changed for new Item Printout report</p>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Item - Properties</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Go to the blank line in the Report Designer and then click <span class="Bold">View &gt; Properties</span> to open the Report properties.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Caption</span> property to <span class="Italics">Item Printout</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Create Report_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Caption of report changed to Item Printout</p>
+        <ol start="12">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Report - Properties</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Go back to the Item DataSet line and then click <span class="Bold">View &gt; C/AL Code</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Create Report_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: C/AL editor, highlighting the code to be changed</p>
+        <ol start="14">
+            <li class="ccTextvorlageNumberedList">In the Item - OnAfterGetRecord section:<ol start="1"><li class="ccTextvorlageNumberedList">change “Integer.GETPOSITION” to “Item.GETPOSITION”</li><li class="ccTextvorlageNumberedList">insert a space then “{Language Code}” after the single quotes</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Create Report_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: C/AL editor, highlighting the changed code</p>
+        <p class="ccTextvorlageNumberedListNoteHeading">Note</p>
+        <p class="ccTextvorlageNumberedListNoteBody">For this report, the client language is used so no other changes are needed. If a report is needed where the language will be based on a field in a record, then code similar to this would be used: (SalesHeader.”Language Code”).</p>
+        <ol start="15">
+            <li class="ccTextvorlageNumberedList">In the Item - OnPostDataItem section, change “Integer” to Item”.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Create Report_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: C/AL editor, highlighting the changed code</p>
+        <ol start="16">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">C/AL Editor</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Close the Report Designer and with <span class="Bold">Compiled</span> = <span class="Italics">Yes</span>, click <span class="Bold">Yes</span> to save the report.</li>
+            <li class="ccTextvorlageNumberedList">Make note of the new report number and then close the Object Designer.</li>
+        </ol>
+    </body>
+</html>

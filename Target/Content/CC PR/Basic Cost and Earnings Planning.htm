@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="883" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc445394447"></a>Basic Cost and Earnings Planning</h2>
+        <p class="ccTextvorlage">Pricing in <span class="CCBausteinInhaltZchn">cc|project</span> uses standard Microsoft Dynamics NAV functionality. However, because of the enhanced functionality brought to the application by <span class="CCBausteinInhaltZchn">cc|project</span>, several factors must be considered when setting up pricing. These are discussed in this section. </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc445394448"></a>Pricing</h3>
+        <p class="ccTextvorlage">Pricing for jobs is set up on the Job Calculation Budget view of the Job Card. All functions relevant to pricing are accessed from this view. </p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 103px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Prices for…</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Consider these factors…</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Services</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <ul>
+                            <li class="ccAufzählung">Prices can be derived from the service resource; these prices can be amended.</li>
+                            <li class="ccAufzählung">Prices are defaulted to the Job lines based on the Work Type. These prices can be amended.</li>
+                            <li class="ccAufzählung">If prices for the service are in a unit of measure different from the unit of measure on the Job line, the price will be converted with respect to the Job line unit of measure. </li>
+                            <li class="ccAufzählung">Quantity-dependent prices cannot be used.</li>
+                            <li class="ccAufzählung">Currency Code is supported on the sales side. </li>
+                            <li class="ccAufzählung">Unit prices can be set up by job.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Items</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <ul>
+                            <li class="ccAufzählung">Standard prices are taken from the Item Card.</li>
+                            <li class="ccAufzählung">Calculated direct unit cost (Job Calc. Direct Cost) is taken from the Item Card.</li>
+                            <li class="ccAufzählung">Direct unit costs from vendors include Currency, Unit Cost, and Quantity.</li>
+                            <li class="ccAufzählung">Unit prices for customers and customer groups include Currency, Unit Cost, and Quantity.</li>
+                            <li class="ccAufzählung">Prices from vendors can be selected by date. </li>
+                            <li class="ccAufzählung">Prices and Line Discounts can be job-specific.</li>
+                            <li class="ccAufzählung">Sales Line Discounts include Currency, Unit Cost and Quantity.</li>
+                            <li class="ccAufzählung">Unit Prices and Sales Line Discounts can be selected by date.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Other Job Line Types</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <ul>
+                            <li class="ccAufzählung">Traveling – prices are derived from the <span class="Bold">Job Traveling Expenses</span> page (select Travel Code). </li>
+                            <li class="ccAufzählung">General – prices are derived from the General Component Card.</li>
+                            <li class="ccAufzählung">Machine Centers and Work Centers – only standard costs are considered.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc445394449"></a>Results of Pricing</h3>
+            <p class="ccTextvorlage">As a result of pricing, the <span class="Bold">Direct Unit Cost</span> and <span class="Bold">Unit Price</span> fields are processed in the Job Budget Calculation view. </p>
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">The Unit Cost will calculate on the line and does not come from pricing.</p>
+        </div>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc445394450"></a>Other Pricing Considerations</h3>
+        <p class="ccTextvorlage">Along with pricing, Job Charges are considered in the Job Budget Calculation view as follows:</p>
+        <ul>
+            <li class="ccAufzählungblau">Indirect Cost % will be used to calculate the Unit Cost.</li>
+            <li class="ccAufzählungblau">Extra Charge % will be used if <span class="Bold">Unit Price Base</span> is <span class="Italics">Cost</span>. If <span class="Bold">Unit Price Base</span> is <span class="Italics">Price</span>, this field is calculated.</li>
+        </ul>
+        <p class="ccTextvorlage">In addition to these listed costs and prices, purchase and sales discounts can be set up to reduce the Unit Cost so that Unit Price and Unit Cost calculation is evaluated similarly.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Ref383421809"></a><a name="_Toc445394451"></a>Manual Pricing</h3>
+        <p class="ccTextvorlage">Automatically triggered pricing can be by-passed using the <span class="Bold">Manual Pricing</span> field options in the Job Budget Calculation view lines. The options are:</p>
+        <ul>
+            <li class="ccAufzählungblau">Direct Unit Cost – Direct Unit Cost can be manually entered but the Direct Unit Price is handled automatically.</li>
+            <li class="ccAufzählungblau">Unit Price – Direct Unit Price can be manually entered but the Direct Unit Cost is handled automatically.</li>
+            <li class="ccAufzählungblau">Both – Automatic pricing is disabled for both cost and price.</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Basic Cost and Earnings Planning.png" style="max-width: 6in;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Manual Pricing on Service lines in the Job Budget Calculation view </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The <span class="Bold">Manual Pricing</span> field can be preset on each component.</p>
+    </body>
+</html>

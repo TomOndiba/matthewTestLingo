@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="716" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Items and Production Structures for Multilevel Products</h3>
+        <p>Items and Production Structures can be created for multilevel products in a Document/Construction BOM using the “Create Item &amp; Production Structure” function as well. </p>
+        <p>The difference from the sales document/Construction Order header creation is that the new Item and Production Structure are created from a  line in the Document/Construction BOM. The new Item and Production Structure are based on this line, not the entire BOM.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Example – Create Item and Production Structure from Document BOM</h4>
+        <p>This example uses the same item as in the example in topic <MadCap:xref href="Items and Production Structures from Configurations.htm">“Items and Production Structures from Configurations” on page 1</MadCap:xref>. However, the customer has asked for a change to the pearl green pigment so additional chemicals are added in the Document BOM. This new configuration is created as a new item and needs to be properly defined in the Production Structure.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures for Multilevel.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Checklist with measurements and selected color</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the Document BOM, the quantity per is calculated for the measurement and selected color.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Items and Production Structures for Multilevel_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Document BOM with measurements and selected color</p>
+        </div>
+        <p class="ccTextvorlage">The new chemicals are added below item P-30106, thus creating the Sub BOM. Additionally, the item description is changed to be generic.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures for Multilevel_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Document BOM with new Sub BOM added below item P-30106</p>
+        <p class="ccTextvorlage">With the line selected, click <span class="Bold">Actions &gt; Create Item &amp; Prod. Structure</span>. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures for Multilevel_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Preparing to create item and production structure for special color in Document BOM</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">A message appears asking to keep the values for the Share of Recipe. Click <span class="Bold">Yes</span> to transfer the shares to the Production Structure.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Items and Production Structures from Configurations_5.png" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Message to keep Share of Recipe values for transfer to Production Structure</p>
+        </div>
+        <p class="ccTextvorlage">Another message may appear about density changes. Click <span class="Bold">OK</span>.</p>
+        <p class="ccTextvorlage">After the process runs, a confirmation message appears with the new Item and Production Structure numbers. Click <span class="Bold">Yes</span> to open the Production Structure.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures for Multilevel_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Confirmation message from Item and Production Structure creation</p>
+        <p class="ccTextvorlage">The Production Structure has been created for the new item with the calculated shares of the components, and the new description.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures for Multilevel_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Production Structure for new configured item</p>
+        <p class="ccTextvorlage">The Design department will now check the Production Structure or add any further specifications before certifying the Production Structure and creating the Routing and Production BOM.</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the Production Structure.</p>
+        <p class="ccTextvorlage">In the Document BOM line, the item has been replaced with the new configured item. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures for Multilevel_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Document BOM line with new item</p>
+        <p class="ccTextvorlage"> When the “Create Item &amp; Prod. Structure” function is run for the Sales Order line, the new item in the Document BOM will be used in the new Production Structure.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Item and Production Structure from Construction BOM</h4>
+        <p class="ccTextvorlage">The same process is used for creating an Item and Production Structure from a Construction BOM line, as long as a reservation to the Construction Header does not exist.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures for Multilevel_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Create Item &amp; Prod. Structure function in the Construction BOM</p>
+    </body>
+</html>

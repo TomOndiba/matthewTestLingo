@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:fileTags="StatusFileTags.6 Needs to be Sent for Review" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">
+            <MadCap:annotation MadCap:createDate="2017-11-02T14:28:08.8524311-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="Entire topic is new 2017 SP1 - please review all for relevance and accuracy." MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T11:05:03.6842502-05:00">Self-Insured Customers</MadCap:annotation>
+        </h2>
+        <p>Some customers may have their own insurance for machines or other rental equipment. For those customers, the rate component for insurance can be excluded on Rental documents if the:</p>
+        <ul>
+            <li class="ccAufzählungblau"><span class="Bold">Self-Insured</span> check box is selected on the Customer Card</li>
+            <li class="ccAufzählungblau">Rent Rate Component/Item Rent Rate Component for Insurance has <span class="Bold">Usage</span> = <span class="Italics">Insurance</span></li>
+        </ul>
+        <p>The <span class="Bold">Usage</span> setting is transferred from the Rent Rate Component to the Item Rent Rate Component, but can be changed per item. Alternatively, the <span class="Bold">Usage</span> setting can be handled directly on the Item Rent Rate Component instead of the Rent Rate Component.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Exercise – Create Rent Order for Self-Insured Customer</h3>
+        <p>Customer R-10000 has notified CRONUS International Ltd. that they have obtained insurance for their machine operators to use the ReTex TC240 LC Crawler Excavator, CRONUS item R-10000-02. </p>
+        <p>After receiving verification of their insurance, you set their customer as Self-Insured and add the Usage of Insurance to the Item Rent Rate Component for item R-10000-02. </p>
+        <p>When you create a Rent Order, you confirm that the rent rate component for Insurance is not included in the Rental line.</p>
+        <p class="ccDemoStepHeading">Set Up the Customer and Item Rent Rate Component</p>
+        <p class="ccTextvorlage">Follow these steps to set up the customer and Item Rent Rate Component:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Ensure that the work date is 01/31/19.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|rental</span><span class="Bold"> &gt; Contract Management &gt; Customers</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate customer R-10000 and open the card.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Rental</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Self-Insured</span> check box.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Self-Insured Customers.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Customer R-10000 set up as Self-Insured</p>
+        <ol start="1" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the Customer Card.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|rental</span><span class="Bold"> &gt; Contract Management &gt; Items</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate item R-10000-02 and then click <span class="Bold">Navigate &gt; Rent Rate Components Prices</span> (in the Rental group). Notice that there are two components: Insurance and a Return Cleaning fee.</li>
+            <li class="ccTextvorlageNumberedList">Add the <span class="Bold">Usage</span> field using the “Choose Columns” function.</li>
+            <li class="ccTextvorlageNumberedList">On the line for Rate Part = Insurance, select <span class="Italics">Insurance</span> in the <span class="Bold">Usage</span> field.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Self-Insured Customers_1.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Usage set to Insurance for the insurance rate part for item R-10000-02</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create the Rent Order</p>
+            <p class="ccTextvorlage">Follow these steps to create  the rent order:</p>
+        </div>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|rental </span><span class="Bold">&gt; Contract Management &gt; Rent Orders</span>.</li>
+            <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-10000.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Rental</span> FastTab and enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Rental Start Date = 02/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 02/28/19</li></ol></li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lines</span> FastTab, select <span class="Italics">Item</span> in the <span class="Bold">Type</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter R-10000-02 and then press ENTER. Notice that only the Rate Component for the Return Cleaning fee has been added; the Rate Component for Insurance has been excluded for this customer/item combination.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Self-Insured Customers_2.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: No rate component for insurance added to self-insured customer R-10000 for item R-10000-02</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the Rent Order.</li>
+        </ol>
+    </body>
+</html>

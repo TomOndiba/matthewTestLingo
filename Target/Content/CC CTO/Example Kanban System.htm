@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="2" MadCap:lastHeight="850" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434568080"></a>Example – Kanban System</h2>
+        <p class="ccTextvorlage">In the <span class="Bold">Configure to Order Setup</span> page, define the Kanban settings as illustrated in <MadCap:xref href="KANBAN System_General Setup.htm#_Ref284835558" class="Figure">Fig. 1</MadCap:xref>.</p>
+        <p class="ccTextvorlage">Open the Item Card for item 1160, clear the <span class="Bold">Reordering Policy</span> field on the <span class="Bold">Planning</span> FastTab and then open the <span class="Bold">KANBAN Setup</span> page by clicking <span class="Bold">Navigate &gt; KANBAN</span>. Fill in the fields as shown in <MadCap:xref href="KANBAN System_Item Setup.htm#_Ref288829906" class="Figure">Fig. 1</MadCap:xref>. For the Kanban Unit of Measure, define a BOX unit of measure with a quantity per unit of measure of 10.</p>
+        <p class="ccTextvorlage">Register three Kanban Cards by clicking <span class="Bold">Register Card</span> on the ribbon three times (or press F7). The value in the <span class="Bold">Collected Quantity</span> field increases with each registration. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Kanban System.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Three registered cards</p>
+        <p class="ccTextvorlage">Register the fourth and final Kanban Card; the following message appears. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Kanban System_1.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Requisition Line creation message</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Yes</span> and then click <span class="Bold">OK</span> to close the message that four Requisition Lines were made. </p>
+        <p class="ccTextvorlage">The <span class="Bold">Collected Quantity</span> field is set to 0 and the <span class="Bold">Supply Exists</span> field is set to 4.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Kanban System_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Requisition Lines created from the Kanban system</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Navigate &gt; Supply</span> to open the <span class="Bold">Requisition Lines</span> page and then click <span class="Bold">Navigate &gt; Show Worksheet</span> to open the Requisition Worksheet. In the <span class="Bold">Name</span> field, select the KANBAN journal batch.</p>
+        <p class="ccTextvorlage">The Requisition Worksheet contains the four Kanban lines, each with a quantity of 10 PCS (from the <span class="Bold">Base Quantity per Kanban Unit</span> field) and the <span class="Bold">Created by KANBAN</span> check box selected to indicate these lines were created by Kanban. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Kanban System_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Requisition Lines created from the Kanban system</p>
+        <p class="ccTextvorlage">If lines are deleted, the <span class="Bold">Collected Quantity</span> field will be updated on the <span class="Bold">KANBAN Setup</span> page. The user can now create and then post the Purchase Order.</p>
+        <p class="ccTextvorlage">From the <span class="Bold">KANBAN Setup</span> page, the user can print new Kanban Cards and insert them in the delivered boxes. The Kanban cycle starts over from the beginning.</p>
+    </body>
+</html>

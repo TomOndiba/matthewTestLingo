@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434330855"></a>Independent DocumentBox</h2>
+        <p class="ccTextvorlage">An alternative integration is the parent-independent DocumentBox in an outsourced page, which can be called by any action. This makes it possible to increase the performance on the “parent” page and load the documents only for pertinent cases. This integration type also allows for an integration in document lines (SubPages).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DMS/Independent DocumentBox.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Independent DocumentBox on Sales Orders list</p>
+        <p class="ccTextvorlage">To open an independent page, create an action with the local variables DocumentBoxAsync (Page: DMS - Doc. Box FactBox Async) and RecRef (RecordRef). Similar to the standard implementation, the RecRef must be handed over to the new page by “DocumentBoxAsync.SetRecordRef(RecRef)”.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DMS/Independent DocumentBox_1.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Implementation of an independent DocumentBox on Sales Order List page</p>
+        <p class="ccTextvorlage">Additionally, run the “DocumentBoxAsync.SetIndependentPage(TRUE,CurrPage.CAPTION)” function to load the documents from SharePoint. Use either “DocumentBoxAsync.RUN” or “DocumentBoxAsync.RUNMODAL” to open the page.</p>
+    </body>
+</html>

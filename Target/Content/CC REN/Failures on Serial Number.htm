@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="894" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref421014007"></a><a name="_Toc434929938"></a>Failures on Serial Number Tracked Items</h2>
+        <p class="ccTextvorlage">Items that use serial number tracking must be assigned to the proper serial numbers to be credited. The serial numbers for failures can be selected from active serial numbers (shipped, not returned).</p>
+        <p class="ccTextvorlage">Failures are processed the same way for serial numbers as without, meaning based on whether the failure is within or outside of the invoicing period. The only difference is how the serial number is added to the failure. </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434929939"></a>Exercise – Failures with Serial Numbers within the Invoicing Period</h3>
+        <p class="ccTextvorlage">Customer R-20000 orders three trucks (item R-20000-01, serial numbers NTGS35-00001 – NTGS35-00003) for the period of January 1, 2019 through March 31, 2019 at a price of 1375.00 each. This is a monthly invoicing agreement; however the customer has asked to be invoiced for January and February immediately.</p>
+        <p class="ccTextvorlage">On March 27th, the customer calls to say that one of the trucks has stopped running (NTGS35-00002). They will return it on March 31st and they do not want to be billed for the remainder of the contract for this truck.</p>
+        <p class="ccDemoStepHeading">Create, Ship, and Invoice the Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to create the rent order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-20000.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Rental</span> FastTab and enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Rental Start Date = 01/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 03/31/19</li><li class="ccTextvorlageNumberedList">Month Based = Yes</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the first line of the <span class="Bold">Lines</span> FastTab, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Item</li><li class="ccTextvorlageNumberedList">No. = R-20000-01</li><li class="ccTextvorlageNumberedList">Quantity = 3</li><li class="ccTextvorlageNumberedList">Rate Unit Price = 1375.00 (and add values if missing on Rate Component lines)</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Shipment</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Select Entries</span> and notice that NTGS35-00001 – NTGS35-00003 are selected.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Failures on Serial Number.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 214px;" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Select Entries page</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Select Entries</span> page.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Failures on Serial Number_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Serial numbers selected for the rental item</p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 01/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 02/28/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and then on the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create the Failure</p>
+            <p class="ccTextvorlage">Follow these steps to create the failure:</p>
+        </div>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Enter Failure</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to create the failure period.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Start Date Failure</span> field, enter 03/27/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">End Date Failure</span> field, enter 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Failure Type</span> field, enter DAMAGE.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, enter 1.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Release</span>. The following message appears:</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Failures on Serial Number_2.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Serial number error message</p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Serial No. Selection</span>. The following page appears:</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Failures on Serial Number_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Serial No. Selection page</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Select</span> check box for the following serial numbers:<ul start="10"><li class="ccTextvorlageNumberedList">NTGS35-00001 </li><li class="ccTextvorlageNumberedList">NTGS35-00002 </li></ul></li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to assign the serial numbers to failure. </li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Release</span>. The following message appears because too many serial numbers were selected:</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Failures on Serial Number_2.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Serial number error message</p>
+        <ol start="13">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Serial No. Selection</span>.</li>
+            <li class="ccTextvorlageNumberedList">Clear the <span class="Bold">Select</span> check box on the line for NTGS35-00001 (so that only NTGS35-00002 is selected) and then click <span class="Bold">OK</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Failures on Serial Number_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Only one serial number selected for failure processing</p>
+        <ol start="16">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Release</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Rental Failure Card</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Process the Invoice with the Failure</p>
+        <p class="ccTextvorlage">Follow these steps to process the invoice with the failure:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and notice the following:<ul start="1"><li class="ccTextvorlageNumberedList">A negative credit line for the failed unit from 03/27/19 – 03/31/19 appears on the invoice.</li><li class="ccTextvorlageNumberedList">The credit is correctly calculated for the damaged unit (1375 rate unit price / 31 days * 5 days = 221.77).</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Failures on Serial Number_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Failure assigned to the rental invoice (with rate component lines hidden)</p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">Select the failure line and then on the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Item Tracking Lines</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Failures on Serial Number_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Serial number assigned to the failure</p>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Serial Nos. Rental Document</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the Rent Order.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Entries &gt; Rental Ledger Entries</span>.</li>
+            <li class="ccTextvorlageNumberedList">Notice that the credit line appears for the proper amount, in the proper date range, for the proper quantity, for the proper serial number.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Failures on Serial Number_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Rental Ledger Entries including failure credit (with rate component lines hidden)</p>
+        <ol start="14">
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">Click the value in the <span class="Bold">Qty. Failures</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rental Failures</span> page, notice that the failure invoice was created through 03/31/2019.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Process the Return</p>
+        <p class="ccTextvorlage">Follow these steps to process the return:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, enter 03/31/19 in the <span class="Bold">Rental Return Date</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Return Qty. to Receive</span> field, enter 3.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Ensure that serial numbers NTGS35-00001 – NTGS35-00003 are selected and then click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Notice that the <span class="Bold">Return Qty. Received</span> field is 3.</li>
+        </ol>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434929940"></a>Exercise – Failures with Serial Numbers before the Invoicing Period</h3>
+        <p class="ccTextvorlage">Customer R-20000 orders two trucks (item R-20000-01, serial numbers NTGS35-00001 – NTGS35-00002) for the period of January 1, 2019 through March 31, 2019 at a price of 1375 each. This is a monthly invoicing agreement and the January invoice is posted immediately.</p>
+        <p class="ccTextvorlage">In mid-January, the customer calls to say that one of the trucks is not running properly (NTGS35-00002). You remember that there was a repairable issue with this truck so you assure them that it can be fixed at no cost for the down period of January 15th through January 16th and tell them that they will receive a credit memo with the next invoice billing.</p>
+        <p class="ccDemoStepHeading">Create, Ship, and Invoice the Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to create the rent order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-20000.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Rental</span> FastTab and enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Rental Start Date = 01/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 03/31/19</li><li class="ccTextvorlageNumberedList">Month Based = Yes</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the first line of the <span class="Bold">Lines</span> FastTab, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Item</li><li class="ccTextvorlageNumberedList">No. = R-20000-01</li><li class="ccTextvorlageNumberedList">Quantity = 2</li><li class="ccTextvorlageNumberedList">Rate Unit Price = 1375.00 (and add values if missing on Rate Component lines)</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Shipment</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Select Entries</span>.</li>
+            <li class="ccTextvorlageNumberedList">Confirm that NTGS35-00001 and NTGS35-00002 are selected and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 01/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 01/31/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and then on the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Create the Failure</p>
+        <p class="ccTextvorlage">Follow these steps to create the failure:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Enter Failure</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to create the failure period.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Start Date Failure</span> field, enter 01/15/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">End Date Failure</span> field, enter 01/16/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Failure Type</span> field, enter DAMAGE.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, enter 1.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Serial No. Selection</span>. </li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Select</span> check box on the line for NTGS35-00002.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Failures on Serial Number_8.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Serial No. Selection page</p>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Serial No. Selection</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Release</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Rental Failure Card</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Process the Invoice with the Failure</p>
+        <p class="ccTextvorlage">Follow these steps to process the invoice with the failure:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 02/28/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and notice that no credit entries appear.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Credit Memos</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the credit memo and notice that the credit is correctly calculated by the number of days for the truck (1375 rate unit price / 31 days * 2 days = 88.71).</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Failures on Serial Number_9.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Failure credit memo</p>
+        <ol start="12">
+            <li class="ccTextvorlageNumberedList">Select the failure line and then on the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Item Tracking Lines</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Failures on Serial Number_10.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Serial number assigned to the failure</p>
+        <ol start="13">
+            <li class="ccTextvorlageNumberedList">Notice that serial number NTGS35-00002 appears and then close the <span class="Bold">Serial Nos Rental Document</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the credit memo.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Entries &gt; Rental Ledger Entries</span>.</li>
+            <li class="ccTextvorlageNumberedList">Notice that there is a credit memo entry for the proper amount, in the proper date range, for the proper serial number.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Failures on Serial Number_11.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Rental Ledger Entries including failure credit</p>
+        <ol start="18">
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">Click the value in the <span class="Bold">Qty. Failures</span> field and notice that the failure invoice/credit memo was created through 01/16/2019.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Process the Final Invoice and Return</p>
+        <p class="ccTextvorlage">Follow these steps to process the final invoice and complete the return:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and then on the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, enter 03/31/19 in the <span class="Bold">Rental Return Date</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Return Qty. to Receive</span> field, enter 2.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Ensure that serial numbers NTGS35-00001 and NTGS35-00002 are selected and then click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Notice that the <span class="Bold">Return Qty. Received</span> field is 2.</li>
+        </ol>
+    </body>
+</html>

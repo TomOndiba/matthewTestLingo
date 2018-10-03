@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="880" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434332535"></a>Lookup a Value in a Related Table</h2>
+        <p class="ccTextvorlage">In this example, the Campaign No. added in the previous example will be changed to print the Campaign description instead of the Campaign number. </p>
+        <p class="ccDemoStepHeading">Change the Document Layout Field</p>
+        <p class="ccTextvorlage">Follow these steps to change the Document Layout field:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Open the SQ-01, Sales Quote, Document Layout.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Under Development</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the first line in the <span class="Bold">Sections</span> FastTab and then click <span class="Bold">Line &gt; Fields</span> to open the <span class="Bold">Document Layout Fields</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the line for Campaign No. (Line = 11), enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Table No. </span>= 5071</li><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 2</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Lookup a Value in a Related.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Changed Campaign No. line in the Document Layout Fields</p>
+        <p class="ccDemoStepHeading">Add Filters</p>
+        <p class="ccTextvorlage">Since the system now will look up into another table, filters must be added to define what record to use. This is done by going to the Document Layout Filters for the <span class="Bold">Campaign No.</span> field and specify a filter on <span class="Bold">Field No.</span> = 1 (which is the <span class="Bold">No.</span> field for the Campaign) and selecting the filter to be a value equal to <span class="Bold">Filter Field No.</span> = 5050 (which is the <span class="Bold">Campaign No.</span> field in the Sales Header table).</p>
+        <p class="ccTextvorlage">Follow these steps to add filters to define which record to use:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">With the line for Campaign No. (Line = 11) selected, click <span class="Bold">Filters</span> on the ribbon.</li>
+            <li class="ccTextvorlageNumberedList">Enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 1</li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Field No.</span> = 5050</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Lookup a Value in a Related_1.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 228px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Filter added to the Campaign No. line in the Document Layout Fields</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout Filters</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Run Report</span> to view the report changes.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Show Request Page</span> check box and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the request page, click <span class="Bold">Preview</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Lookup a Value in a Related_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Campaign No. field value changed from No. on Sales Header to Name from Campaign table </p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout Fields</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Certified</span> to make it available to the users.</li>
+        </ol>
+        <p> </p>
+    </body>
+</html>

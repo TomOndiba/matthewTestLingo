@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="875" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc435107505"></a>Input Journal</h2>
+        <p class="ccTextvorlage">In the Input Journal, capturing can be done for FDC as well as for STDC (Simple Time Data Capture). A capturing of STDC differs from FDC capturing because no FDC Work Order No. (and Line) is entered.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/Input Journal.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 313px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: FDC Input Journal</p>
+        <p class="ccTextvorlage">Beside the capturing of presence, break, setup, idle and unplanned failure time – which are entered with <span class="Bold">Entry Type</span> = <span class="Italics">Begin</span> – it is possible to capture output, consumption and work area change in the Input Journal.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/Input Journal_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 313px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: STDC Capturing in Input Journal</p>
+        <p class="ccTextvorlage">An Input Journal line results in exactly one Input Entry. The <span class="Bold">Posting Date</span>, <span class="Bold">Document No.</span> and <span class="Bold">Posting Time</span> fields are always required.</p>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">FDC Input Journal</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 100px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Posting Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the date on which the posting should be processed. The date is used among others for permission, order stock or work area assignment of the selected FDC Resource. A value is required.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Document No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Code field for entering a number.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Entry Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the type of capturing. The options and the related/required fields are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Begin and End – together result in a capturing pair, including the entry subtype, the FDC Resource and the FDC Work Order Operation. For STDC Postings, only <span class="Italics">Begin</span> and <span class="Italics">End</span> are valid entry types.</li>
+                            <li class="ccAufzählung">Output – requires entries in the <span class="Bold">Item No.</span> and <span class="Bold">Output Quantity</span> fields.</li>
+                            <li class="ccAufzählung">Consumption – requires an entry in the <span class="Bold">Consumption Quantity</span> field.</li>
+                            <li class="ccAufzählung">Work Area Change – requires an entry in the <span class="Bold">FDC Work Area No.</span> field.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Entry Subtype</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determined based on the Entry Type:</p>
+                        <ul>
+                            <li class="ccAufzählung">Begin and End – requires an <span class="Bold">Entry Subtype</span>.</li>
+                            <li class="ccAufzählung">Consumption and Output – no requirement.</li>
+                            <li class="ccAufzählung">Work Area Change – requires an empty <span class="Bold">Entry Subtype</span>.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">FDC resource No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the FDC Resource of the entry.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">FDC Work Area No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the new FDC Work Area for a Work Area Change, or the Work Area of the posting (informational, no further checking).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">FDC Work Order No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If empty, the entry is processed for STDC.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Posting Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the time on which the posting should be processed. The time together with date is used among others for permission, order stock or work area assignment of the selected FDC Resource. A value is required.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Item No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Required for <span class="Bold">Entry Type</span> = <span class="Italics">Consumption</span> and <span class="Italics">Output</span>, is optional for <span class="Bold">Entry Type</span> = <span class="Italics">End</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Output Quantity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the quantity of output. A value is required for <span class="Bold">Entry Type</span> = <span class="Italics">Output</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Scrap Quantity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the quantity of scrap. A value is relevant for <span class="Bold">Entry Type</span> = <span class="Italics">Output</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Consumption Quantity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the consumed quantity of the item entered in the <span class="Bold">Item No.</span> field. A value is required for <span class="Bold">Entry Type</span> = <span class="Italics">Consumption</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Cancel FDC Input Entry No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Cancels an existing input entry with the new entry.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Finished</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">If selected for an <span class="Bold">Entry Type</span> = <span class="Italics">End</span>, the related operation of the production order receives the status “Finished” during the export.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

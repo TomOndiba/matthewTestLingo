@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256502"></a>Laboratory Structure</h3>
+        <p class="ccTextvorlage">Similar to the development structure, the laboratory structure does not require an item, just the raw material items. The laboratory structure makes it possible to run a first test production.  </p>
+        <p class="ccTextvorlage">Laboratory Structures created from the development structure may contain lines without item numbers. Laboratory structures cannot be certified without the <span class="Bold">No.</span> field being populated on the lines. </p>
+        <p class="ccTextvorlage">When filling in the <span class="Bold">No.</span> field on a line where it had been blank, the following message appears.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Laboratory Structure.png" style="visibility: visible;mso-wrap-style: square;width: 394px;height: 131px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Message generated when entering item numbers on text lines</p>
+        <p class="ccTextvorlage">By accepting this message, the text in the <span class="Bold">Description</span> field and the recipe shares are maintained. Otherwise, the <span class="Bold">Description</span> is overwritten with the standard item description and the share information is deleted.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Laboratory Structure_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Message accepted on the third and fourth lines to maintain values and then added work center </p>
+        <p class="ccTextvorlage">If not created from a development structure, a laboratory structure can be created from the Research &amp; Development menu by clicking <span class="Bold">Laboratory Structure</span> and then clicking <span class="Bold">New</span> on the ribbon.</p>
+        <p class="ccTextvorlage">Existing production structures can be copied into the Laboratory Structure by clicking <span class="Bold">Actions &gt; Copy &gt; Production Structure</span> on the ribbon. Copied lines can be modified as needed.</p>
+        <p class="ccTextvorlage">When certifying the laboratory structure, the production BOM/recipe and routing are created – if the <span class="Bold">New Production BOM/New Routing</span> check boxes were selected on the <span class="Bold">General</span> FastTab.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">R&amp;D Item Number Setup</h4>
+            <p class="ccTextvorlage">Prior to creating a production order from a Laboratory Structure, a dummy item must be set up and then assigned in the <span class="Bold">R&amp;D Item No.</span> field on the <span class="Bold">Process Manufacturing Setup</span> page.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Laboratory Structure_2.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 272px;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Assigned R&amp;D item number</p>
+        </div>
+        <p class="ccTextvorlage">Item numbers from this number series will be used on any production orders created from the laboratory structures.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Production Orders with Laboratory Structures</h4>
+        <p class="ccTextvorlage">In the Laboratory Structure, users can create a production order that is considered in the planning and for the raw material planning.</p>
+        <p class="ccTextvorlage">During the creation of a production order, the value entered in the <span class="Bold">Lot Size</span> field on the production structure header is copied as the manufacturing quantity.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Laboratory Structure_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Lot size on the production structure header</p>
+        <p class="ccTextvorlage">To create the production order from the laboratory structure, click <span class="Bold">Actions &gt; Create Prod. Order</span> on the ribbon. A dialog appears, asking for the status of the production order.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structure Setup_Actions Tab.png" style="visibility: visible;mso-wrap-style: square;width: 216px;height: 156px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Production order status selection</p>
+        <p class="ccTextvorlage">The production order is created for the quantity entered in the <span class="Bold">Lot Size</span> field on the laboratory structure.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Laboratory Structure_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Production order created from laboratory structure</p>
+        <p class="ccTextvorlage">The production BOM/recipe and routing created when certifying the laboratory structure are transferred to the production order and calculated during the refresh process.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Laboratory Structure_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Production Order Routing and Components from Laboratory Structure</p>
+        <p class="ccTextvorlage">If the sequence resources are used with the routing sheet, the laboratory production is available in the current planning for scheduling. In addition, the required components appear as demand in the requisition worksheet.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">Change to Manufacturing Structure</h4>
+        <p class="ccTextvorlage">Once the laboratory structure has been created and is ready for the next step in the R&amp;D process, users can create a Manufacturing Structure from the ribbon of the <span class="Bold">Laboratory Structure</span> page by clicking <span class="Bold">Create Manufacturing Structure</span>.</p>
+        <p class="ccTextvorlage">The new <span class="Bold">Manufacturing Structure</span> page appears and is set with a <span class="Bold">Status</span> of <span class="Italics">Under Development</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Laboratory Structure_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Manufacturing Structure created from the Laboratory Structure</p>
+        <p class="ccTextvorlage">The <span class="Bold">R&amp;D</span> FastTab displays the number of the linked Laboratory Structure.</p>
+    </body>
+</html>

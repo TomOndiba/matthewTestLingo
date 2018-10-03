@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="620" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434329956"></a>Demonstration – Set up Commission Recipient and Assign Rates and Customers</h2>
+        <p class="ccTextvorlage">This demonstration provides an overview of how to create a new commission recipient, allocate the commission recipient to customers and create commission rates. </p>
+        <p class="ccTextvorlage"><span class="Bold">Scenario</span>: Kevin, the sales manager at CRONUS, has employed Mark, a new sales representative. Mark is taking over the customers in Great Britain serviced from the LONDON responsibility center. Kevin instructs Phyllis, the accounting manager, to create a new commission recipient record for Mark, enter the negotiated commission rates and allocate Mark to the customers for whom he’s responsible.</p>
+        <p class="ccDemoStepHeading">Create a Commission Recipient</p>
+        <p class="ccTextvorlage">Phyllis creates a new commission recipient record for Mark as instructed. Mark should be a member of the STANDARD commission group, but sales line discounts should not decrease his commission.</p>
+        <p class="ccTextvorlage">Follow these steps to create a new commission recipient:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Departments &gt; Sales &amp; Marketing &gt; </span><span class="CCBausteinInhaltZchn">cc|commission</span><span class="Bold"> &gt; Commission Recipients</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span> and then press ENTER to insert a new commission recipient. Number C-0005 is assigned from the number series.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Name</span> field, type Mark Colins.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Address</span> field, type 44 Haiden Street</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Post Code</span> field, enter B31 2AL.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Invoicing</span> FastTab, enter STANDARD in the <span class="Bold">Commission Group Code</span> field.</li>
+            <li class="ccTextvorlageNumberedList">Clear the <span class="Bold">Include Line Disc.</span> check box.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Set up Commission.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Commission Recipient Card for Mark Colins</p>
+        <p class="ccDemoStepHeading">Specify Commission Rates</p>
+        <p class="ccTextvorlage">Phyllis enters the commission rates negotiated for Mark.</p>
+        <p class="ccTextvorlage">Follow these steps to enter commission rates for a commission recipient:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Commission Rates</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">General</span> section, enter the following filter information:<ul start="1"><li class="ccTextvorlageNumberedList">Sales Type Filter = Customer Commission Group </li><li class="ccTextvorlageNumberedList">Comm. Recipient Type = Commission Recipient </li><li class="ccTextvorlageNumberedList">Comm. Recipient Code = C-0005</li><li class="ccTextvorlageNumberedList">Type = All Items</li></ul></li>
+            <li class="ccTextvorlageNumberedList">On the first line, enter the following information:<ul start="1"><li class="ccTextvorlageNumberedList">Sales Code = RETAIL</li><li class="ccTextvorlageNumberedList">Commission Type = Percent </li><li class="ccTextvorlageNumberedList">Commission = 5.50</li></ul></li>
+            <li class="ccTextvorlageNumberedList">On the second line, enter the following information:<ul start="1"><li class="ccTextvorlageNumberedList">Sales Code = STANDARD</li><li class="ccTextvorlageNumberedList">Commission Type = Percent </li><li class="ccTextvorlageNumberedList">Commission = 4.50</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Set up Commission_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.1in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Commission Rates for Mark Colins</p>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Commission Rates</span> page and then click <span class="Bold">OK</span> to close the <span class="Bold">Commission Recipient Card</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Allocate Commission Recipients to Customers</p>
+        <p class="ccTextvorlage">Phyllis allocates the new commission recipient record to the customers for whom Mark is responsible.</p>
+        <p class="ccTextvorlage">Follow these steps to allocate the commission recipient to customers:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the Sales &amp; Marketing menu, click <span class="Bold">Sales &gt; Customers</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate customer 50000, Guildford Water Department.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Commission Recipients</span>.</li>
+            <li class="ccTextvorlageNumberedList">Delete the existing recipient, C-0002, Adam Green.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Commission Recipient No.</span> field, enter C-0005.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Primary Recipient</span> check box.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Share %</span> field, type 100.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Set up Commission_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.1in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Commission recipient Mark Colins assigned to customer 50000</p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Customer Comm. Recipient Catalog</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Locate customer 60000, Blanemark Hifi Shop.</li>
+            <li class="ccTextvorlageNumberedList">Repeat steps 3–8.</li>
+            <li class="ccTextvorlageNumberedList">Locate customer 61000, Fairway Sound.</li>
+            <li class="ccTextvorlageNumberedList">Repeat steps 3–8.</li>
+            <li class="ccTextvorlageNumberedList">Locate customer 62000, The Device Shop.</li>
+            <li class="ccTextvorlageNumberedList">Repeat steps 3–8.</li>
+        </ol>
+        <p class="ccTextvorlage">This demonstration is continued in topics <MadCap:xref href="Demonstration Create Sales.htm#_Ref287358541">“Demonstration – Create Sales Document Lines for Items” on page 1</MadCap:xref>, <MadCap:xref href="Demonstration Create Commission.htm#_Ref287358553">“Demonstration – Create Commission Statements” on page 1</MadCap:xref> and <MadCap:xref href="Demonstration Issue Commission.htm#_Ref287358577">“Demonstration – Issue Commission Statements” on page 1</MadCap:xref>.</p>
+        <p> </p>
+    </body>
+</html>

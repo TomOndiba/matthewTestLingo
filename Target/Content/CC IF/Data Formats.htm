@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="899" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">Data Formats</h2>
+        <p class="ccTextvorlage">Every project function must have a definition of how the data is formatted and which way the data is transported. These are defined in the <span class="Bold">Data Formats</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC IF/Data Formats.PNG" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Data Formats</p>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Data Formats</span> page are described in the following table.</p>
+        <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 121px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field Name</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique code of data format.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Short description of the data format.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Data Format</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the basic format of the data file. The options are Text, CSV and Custom.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Endpoint / Filename</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the endpoint for the communication like a web service address or filename. If using file names, the asterisk (*) can be used as a wild card for processing multiple files in one folder.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Delimiter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the separating character for the field in a CSV file. The options are Tab, Semicolon, Comma, Space and Other.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Other Delimiter Character</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the delimiting character to be used if <span class="Bold">Delimiter</span> = <span class="Italics">Other</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Encoding</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the text encoding used by Microsoft Dynamics NAV. The options are MsDos, UTF-8, UTF-16 and Windows.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Transfer</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the transportation layer. The options are File, Web Service and FTP.</p>
+                        <p class="ccTabellenText">Only text file is implemented as a generic default layer. For Web Service and FTP,  a custom codeunit must be implemented and assigned in the <span class="Bold">Custom Format Codeunit ID</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Contains Field Names</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the first line in a CSV file contains field names and will be ignored.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Custom Format Codeunit ID</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Identifies a custom codeunit ID if a transport layer other than text file is used. This codeunit then handles the data format.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

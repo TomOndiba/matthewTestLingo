@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc434332534"></a>Add Fields to a Document Layout Section</h2>
+        <p class="ccTextvorlage">This example uses the SQ-01 (Sales Quote) Document Layout to add the Campaign No. field and a field label to the header. </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Before starting this example, ensure that a Sales Quote exists with an assigned campaign number.</p>
+        <p class="ccDemoStepHeading">Open the Document Layout Fields</p>
+        <p class="ccTextvorlage">Follow these steps to open the <span class="Bold">Document Layout Fields</span> page:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Departments &gt;</span> <span class="CCBausteinInhaltZchn">cc|document configurator</span> <span class="Bold">&gt; Configuration &gt; Document Layouts</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate and open the SQ-01, Sales Quote, Document Layout.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Under Development</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the line in the <span class="Bold">Sections</span> FastTab where the field needs to be added. For this example, select the first line for <span class="Bold">Section Type</span> = <span class="Italics">Header</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Line &gt; Fields</span> to open the <span class="Bold">Document Layout Fields</span> page.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Add Fields to a Document Layout.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Selecting the Fields menu item for the Header of Document section </p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Insert Three Lines with Positions</p>
+            <p class="ccTextvorlage">Three lines will be inserted above the line for the “Customer No. ### Label” field. These lines will be used to add one field to hold the label, one field to hold the value and one field to create a blank line.</p>
+            <p class="ccTextvorlage">When adding a field, the position it will have is specified in the <span class="Bold">Line</span> and <span class="Bold">Indentation (pt)</span> fields. The <span class="Bold">Line</span> represents the vertical position and the <span class="Bold">Indentation (pt)</span> represents the horizontal position in the Section. In this example, the lines will be set to have them just below each other, and the indentation to have them lined up in the right side of the page.</p>
+        </div>
+        <p class="ccTextvorlage">Follow these steps to insert the three lines with positions:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Locate the line for the “Customer No. ### Label” field and insert a new line above it.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Line</span> field, enter 10.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Indentation (pt)</span> field, type 250.</li>
+            <li class="ccTextvorlageNumberedList">Insert a line below the new line.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Line</span> field, enter 11.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Indentation (pt)</span> field, type 250.</li>
+            <li class="ccTextvorlageNumberedList">Insert a line below the new line.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Line</span> field, enter 12.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Indentation (pt)</span> field, type 250.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Add Fields to a Document Layout_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: New lines added to the Document Layout Fields </p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Renumber Field Positions</p>
+            <p class="ccTextvorlage">Fields are generated one-by-one in the order as they are listed. This means that if two or more lines are at the same positions, then the later fields might overwrite the first fields. Therefore, the positions of the lines below the new lines need to be changed by incrementing the value of the <span class="Bold">Line</span> field.</p>
+        </div>
+        <p class="ccTextvorlage">Follow these steps to renumber the field positions:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Line</span> field for “Customer No. ### Label”, type 13.</li>
+            <li class="ccTextvorlageNumberedList">On the remaining lines with overlapping numbers (Phone No., Fax No. and E-mail), increment the value in the <span class="Bold">Line</span> field as illustrated in <MadCap:xref href="#_Ref424647190" class="Figure">Fig. 3</MadCap:xref>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Add Fields to a Document Layout_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="_Ref424647190"></a>: Renumbered lines in the Document Layout Fields</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Define Field Information</p>
+            <p class="ccTextvorlage">The remaining information in the line defines what should be printed in the fields and how it should appear in the printout. </p>
+        </div>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">It might be necessary to create a Document Text Code for CAMPAIGNNO set up with {local language} = Campaign No.</p>
+        <p class="ccTextvorlage">Follow these steps to define the remaining field information:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the first new line (Line = 10), enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Description</span> = Campaign No. Label</li><li class="ccTextvorlageNumberedList"><span class="Bold">Type</span> = Document Text</li><li class="ccTextvorlageNumberedList"><span class="Bold">Document Text Code</span> = CAMPAIGNNO</li><li class="ccTextvorlageNumberedList"><span class="Bold">Font Size</span> = 0</li><li class="ccTextvorlageNumberedList"><span class="Bold">Font Weight</span> = Bold</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the second new line (Line = 11), enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Description</span> = Campaign No.</li><li class="ccTextvorlageNumberedList"><span class="Bold">Type</span> = Value</li><li class="ccTextvorlageNumberedList"><span class="Bold">Table No. </span>= 36</li><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 5050<br />There is no need to specify a filter since it will be from the same record on which the section is based.</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the third new line (Line = 12), enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Description</span> = Empty Line</li><li class="ccTextvorlageNumberedList"><span class="Bold">Type</span> = Text</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Add Fields to a Document Layout_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: New lines in the Document Layout Fields</p>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Run Report</span> to view the report changes.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Show Request Page</span> check box and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the request page, click <span class="Bold">Preview</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Add Fields to a Document Layout_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: New lines added to the Document Layout appear in the header of the Sales Quote report </p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout Fields</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Certified</span> to make it available to the users.</li>
+        </ol>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">It is helpful to export a Document Layout before making changes. That way, the original can be restored if needed. Another option is to create a new version of the Document Layout (refer to topic <MadCap:xref href="Create a New Version of a.htm#_Ref424648144">“Create a New Version of a Layout” on page 1</MadCap:xref> for more information).</p>
+    </body>
+</html>

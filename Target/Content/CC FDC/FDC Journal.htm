@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="10" MadCap:lastHeight="902" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <title>
+        </title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    ">
+            <a name="_Toc435107514">
+            </a>FDC Journal</h2>
+        <p class="ccTextvorlage">The FDC Journal generates FDC Entries and FDC Detailed Entries. From every FDC Journal Line results a maximum of one FDC Entry and at least one FDC Detailed Entry. In contrast to the Input Journal, here only a line with Begin Time and End Time is captured that creates a complete time entry; no entry for Begin and End is produced (refer to topic <MadCap:xref href="FDC Entries.htm#_Ref427922072" class="RelLinkPageNumber">"FDC Entries" on page 1</MadCap:xref>).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/FDC Journal.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 246px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: FDC Journal</p>
+        <p class="ccTextvorlage">The capturing in the FDC Journal is applied with an Entry Type (FDC Entry) and a detailed Entry Type (FDC Detailed Entry). With <span class="Bold">Entry Type</span> = <span class="Italics">Recording</span>, it is possible to capture times as well as quantities in one line. The selection of the <span class="Bold">Detailed Entry Type</span> field specifies if the <span class="Bold">Total Time (h)</span> is handled as a work time (“Input”), setup time or idle time (posted as positive), or if it is a break time or unplanned failure time (posted as negative).</p>
+        <p class="ccTextvorlage">Beside <span class="Bold">Total Time (h)</span> there is the possibility to create simultaneously another FDC Detailed Entry of the corresponding Type for the FDC Entry, using the <span class="Bold">Contained Break Time (h)</span> and <span class="Bold">Contained Idle Time (h)</span> fields. Therefore, it is possible to enter in a single FDC Journal Line a time capture and a break capture. Contained times are deducted from the total time.</p>
+        <p class="ccTextvorlage">However, postings containing times should be processed without Begin Time and End Time, because otherwise they do not correspond to the Total Time of the capture.</p>
+        <p class="ccTextvorlage">In case of posting an interruption afterwards on an FDC Entry, either a recording and an interruption with concrete times have to be posted or a chargeback (<span class="Bold">Applies-to FDC Entry</span> field) must be applied.</p>
+        <p class="ccTextvorlage">In case of posting an interruption afterwards on an FDC Entry, either a recording and an interruption with concrete times have to be posted or a chargeback (<span class="Bold">Applies-to FDC Entry</span> field) must be applied. Finding the capture time for an interruption time occurs by using the entered time of the line, extended by the <span class="Bold">Interrupt Time Assignment Lapse (h)</span> field. This means that a “capture” from 08:00 to 12:00 and a “break” from 13:00 to 14:00 are combined as one common FDC Entry if the <span class="Bold">Interrupt Time Assignment Lapse (h)</span> is greater than 1 (h).</p>
+        <p class="ccTextvorlage">The fields in the FDC Journal are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Posting Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the date on which the posting should be processed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Document No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Code field for entering a number.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Entry Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the type of capturing. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Recording – allows entering times and output quantities.</li>
+                            <li class="ccAufzählung">Output – requires entries in the <span class="Bold">Item No.</span> and <span class="Bold">Output Quantity</span> fields.</li>
+                            <li class="ccAufzählung">Consumption – requires an entry in the <span class="Bold">Consumption Quantity</span> field.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Detailed Entry Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determined based on Entry Type:</p>
+                        <ul>
+                            <li class="ccAufzählung">If <span class="Bold">Entry Type</span> = <span class="Italics">Output</span> and <span class="Italics">Consumption</span> – the <span class="Bold">Detailed Entry Type</span> field has to be set to <span class="Italics">Recording</span>.</li>
+                            <li class="ccAufzählung">If <span class="Bold">Entry Type</span> = <span class="Italics">Recording</span> – the <span class="Bold">Detailed Entry Type</span> field corresponds to the kind of Total Time:<ul><li><span class="Italics">Recording</span>, <span class="Italics">Setup</span>, and <span class="Italics">Idle</span> result in positive Total Time </li><li><span class="Italics">Break</span> and <span class="Italics">Unplanned Failure Time</span> result in negative entries</li></ul></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Applies-to FDC Entry</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Creates the new detailed entry within the FDC Entry that has to be applied.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">FDC Resource No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the FDC Resource for the entry.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">FDC Work Area No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the FDC Work Area (informational, no further checking).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">FDC Work Order No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the FDC Work Order for which the entry should be processed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">FDC Work Order Line No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the FDC Work Order Line for which the entry should be processed. The value “0” is only valid for Order Bundles.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Total Time (h)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Contains the captured time of Detailed Entry Type.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Contained Break Time (h)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Reduces the <span class="Bold">Total Time (h)</span> and generates an additional <span class="Bold">Detailed Entry Type</span> = <span class="Italics">Break</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Contained Setup Time (h)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Reduces the <span class="Bold">Total Time (h)</span> and generates an additional <span class="Bold">Detailed Entry Type</span> = <span class="Italics">Setup</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Contained Idle Time (h)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Reduces the <span class="Bold">Total Time (h)</span> and generates an additional <span class="Bold">Detailed Entry Type</span> = <span class="Italics">Idle</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Start Date/ Start Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the Start Date and Start Time of the Detailed Entry. </p>
+                        <p class="ccTabellenText">Automatic assigning of break times or shift invoicing requires values for Start Time and End Time.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">End Date/ End Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the End Date and End Time of the Detailed Entry. If a Start Time is entered, entering an End Time is also required.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Output Quantity (Base)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the quantity for an output. The value is relevant for <span class="Bold">Entry Type </span>= <span class="Italics">Output</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Scrap Quantity (Base)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the scrap quantity for an output. The value is relevant for <span class="Bold">Entry Type</span> = <span class="Italics">Output</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Consumption Quantity (Base)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the consumed quantity for an item, entered in the <span class="Bold">Item No.</span> field. The value is relevant for <span class="Bold">Entry Type</span> = <span class="Italics">Consumption</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Cancel FDC Detailed Entry</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Cancels an existing FDC Detailed Entry while posting a new Detailed Entry.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Finished</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected for an <span class="Bold">Entry Type</span> = <span class="Italics">End</span>, the corresponding operation of the Production Order receives the status “Finished” on export.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Force New FDC Entry</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Forces the creation of a new FDC Entry. When using this e.g. the assignment of breaks with <span class="Bold">Recording Time Assignment Lapse (h)</span> is ignored.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Invoice Entry</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies if the generated Detailed Entry is an Invoice Entry.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Distribute Entry</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Specifies if the generated Detailed Entry is an Distribution Entry.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

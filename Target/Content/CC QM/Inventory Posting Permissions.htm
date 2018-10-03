@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc442095708"></a>Inventory Posting Permissions</h3>
+        <p class="ccTextvorlage">In the <span class="Bold">Inventory Posting Permissions</span> page, define users and roles (groups of users) for lot- or serial number-related postings and specify their posting authorizations in detail.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Inventory Posting Permissions.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 446px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Inventory Posting Permissions page showing a portion of the complete setup</p>
+        <p class="ccTextvorlage">The fields in this page are defined in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 82px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Posting Allowed</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, this data record is about permission or restriction. It specifies, for example, if a user or role is allowed to execute a posting or not.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Item Tracking Assignment Allowed</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">In contrast to the <span class="Bold">Posting Allowed</span> field, this field determines if the creation of an Item Tracking line or the execution of a reservation is allowed.  This means – that with the <span class="Bold">Posting Allowed</span> and <span class="Bold">Item Tracking Assignment Allowed</span> fields – a two-stage check can be set up: </p>
+                        <ol start="1">
+                            <li class="ccTextvorlageNumberedList"><span class="Bold">Item Tracking Assignment Allowed</span> – determines whether a lot-/serial number assignment is permitted for the selected conditions. </li>
+                            <li class="ccTextvorlageNumberedList"><span class="Bold">Posting Allowed</span> – determines which restrictions apply to the posting of a material movement.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Entry Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines for which entry type (document type) restrictions are valid. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Purchase (Order, Invoice, Credit Memo, Return Order, Warehouse Receipt)</li>
+                            <li class="ccAufzählung">Sale (Order, Invoice, Credit Memo, Return Order, Warehouse Shipment)</li>
+                            <li class="ccAufzählung">Positive Adjustment (Item Journal, Warehouse Item Journal, Physical Inventory, etc.)</li>
+                            <li class="ccAufzählung">Negative Adjustment (Item Journal, Warehouse Item Journal, Physical Inventory, etc.)</li>
+                            <li class="ccAufzählung">Transfer (Picking, Put-away, Item Reclassification Journal, Transfer Order)</li>
+                            <li class="ccAufzählung">Consumption (Consumption Journal, Production Journal)</li>
+                            <li class="ccAufzählung">Output (Output Journal, Production Journal)</li>
+                            <li class="ccAufzählung">Whse. Transfer (Bin transfers – Picking, Put-away, Item Reclassification Journal)</li>
+                        </ul>
+                        <p class="ccTabellenText">If this field is left blank, then the record is applicable for all entry types unless the settings are overruled by a record using a more detailed filtering.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Action Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies if the record is about an inbound or an outbound material movement. Inbound material movements always describe a positive adjustment whereas outbound material movements describe a negative adjustment (for example, <span class="Italics">Purchase – Outbound = Purchase credit memo; Purchase – Inbound = Receipt</span>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lot-/Serial No. Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Limits the posting responsibility assignment of lot- or serial numbers to a certain lot or serial number status. Each status defined in the <span class="Bold">Lot-/Serial No. Status</span> page are available.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Item No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies an item for which a posting authorization is required. For example, it can be set that a certain user is not authorized to post this item.  </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Variant Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies an item variant for which a posting authorization of lot- or serial numbers is required. For example, it can be set that a certain user is only authorized to post this item variant.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Item Category Code </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies an item category for which a posting authorization is required. For example, it can be set that this item category can only be posted by users with a certain role.   </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Location Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies location-specific restrictions and thus prevents or allows material movements to a certain location. For example, it can be set that a lot or serial number with the status <span class="Italics">Blocked</span> cannot be posted to the picking location.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Zone Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If locations are used that have the <span class="Bold">Directed Put away and Pick</span> check box selected on the Location Card and thus zones can be entered for this location, a permission or restriction for the posting or assignment of lot- or serial numbers can be set up for certain zones.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Bin Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If a warehouse is handled in bins, postings to a certain bin code can be restricted. Furthermore, a bin can be excluded from postings.</p>
+                        <p class="ccTabellenText">For example, it can be set that a lot- or serial no. with the status <span class="Italics">Blocked</span> is only to be posted to the quarantine bin. It can also be set that blocked material must not be transferred to Manufacturing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Role ID</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies a specific role that the stated specifications apply to. If no specific role and user is assigned, this authorization applies for all users of the system.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">User ID</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Identifies a specific user that the stated specifications apply to. If no specific user and role is assigned, this authorization applies for all users of the system.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace">
+        </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Inventory Posting Permissions Setup</h4>
+        <p class="ccTextvorlage">For the ability to create posting responsibility lot- or serial number assignments (by entering an item tracking line or a reservation) it is necessary to complete setup in the <span class="Bold">Inventory Posting Permissions</span> page. Blank fields indicate that there are no restrictions on posting authorizations. If a line does not specify any role or user, the setting is valid for all users in the system.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.1    ">System Checks – Single Data Record</h5>
+        <p class="ccTextvorlage">If a user executes a posting or assigns a lot- or serial number, the system checks all actions that the role or user is permitted to execute. Restrictions can be defined on several levels of detail. The system checks the settings according to the following order, whereby the filters are set with “field content and/or blank” (e.g. 4711|’’):</p>
+        <table style="margin-left: auto;margin-right: auto;">
+            <col style="width: 155px;" />
+            <col style="width: 263px;" />
+            <tr>
+                <td><span class="BoldUnderline">Field</span>
+                </td>
+                <td><span class="BoldUnderline">Level</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccTableTextnontable">User ID</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">1</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccTableTextnontable">Role ID</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">2</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccTableTextnontable">Variant Code</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">3</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccTableTextnontable">Item No.</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">4</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccTableTextnontable">Item Category Code</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">5</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccTableTextnontable">Bin Code</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">6</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccTableTextnontable">Zone Code</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">7</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccTableTextnontable">Location Code</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">8</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccTableTextnontable">Lot-/Serial No. Status</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">9</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccTableTextnontable">Action Type</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">10</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccTableTextnontable">Entry Type</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">11</p>
+                </td>
+            </tr>
+        </table>
+        <p class="BoldItalics12pt">Examples</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">User “WS” tries to post an inbound lot on location code BLUE. <br />During the authorization check on level 1, the system finds a data record in the setup table. As a result, user “WS” is not permitted to execute lot postings on location BLUE. The transaction will be cancelled with an according error message.</li>
+        </ol>
+        <ol start="2">
+            <li class="ccTextvorlageNumberedList">User “COSMO” tries to post a lot of the item category Raw Materials to warehouse bin S-08-0003 in warehouse location SILVER. <br />During the authorization check on level 5, the system finds a data record in the setup table. As a result, user “COSMO” is permitted to post the respective item on bin S-08-0003 in location SILVER. The posting can be executed without issue.</li>
+        </ol>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">User “COSMO” tries to post an Outbound Consumption for a lot with the status Blocked.  During the authorization check, the system does not find an appropriate data record within the table. As a result, the posting is interpreted as not permitted and cancelled with an according error message.</li>
+        </ol>
+        <div class="ccDIV">
+            <h5 class="Heading5" MadCap:autonum="1.1.1.1.2    ">System Checks – Multiple Data Records</h5>
+            <p class="ccTextvorlage">If several data records are detected after setting all filter options according to the recent posting activity, the system gives points corresponding to the priorities. The data record with the maximum number of points is the accurate one for this posting activity.</p>
+            <p class="BoldItalics12pt">Example</p>
+            <p class="ccTextvorlage">The following data records of the Inventory Posting Permissions setup remain after setting all filters:</p>
+            <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;font-size: 8pt;">User</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;font-size: 8pt;">Role</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;font-size: 8pt;">Variant</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;font-size: 8pt;">Item No.</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;font-size: 8pt;">Item Category</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;font-size: 8pt;">Location</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;font-size: 8pt;">Zone</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;font-size: 8pt;">Bin</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;font-size: 8pt;">Lot-/Serial No. Status</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;font-size: 8pt;">Action Type</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;font-size: 8pt;">Entry Type</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText">Inbound</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Purchase</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">COSMO</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText">4711</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText">Inbound</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Purchase</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">COSMO</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText">Inbound</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Purchase</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="ccTabellenText">4711</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="ccTabellenText"> </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="ccTabellenText">Inbound</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                            <p class="ccTabellenText">Purchase</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="ccTextvorlageaftertable">After the allocation of points is carried out, every filled field gets a “1” and every blank field gets a “0”. The result is:</p>
+            <table style="margin-left: auto;margin-right: auto;">
+                <col style="width: 57px;" />
+                <col style="width: 375px;" />
+                <tr>
+                    <td><span class="BoldUnderline">Line</span>
+                    </td>
+                    <td><span class="BoldUnderline">Score</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="ccTableTextnontable">1</p>
+                    </td>
+                    <td>
+                        <p class="ccTableTextnontable">00000000011</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="ccTableTextnontable">2</p>
+                    </td>
+                    <td>
+                        <p class="ccTableTextnontable">10010000011</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="ccTableTextnontable">3</p>
+                    </td>
+                    <td>
+                        <p class="ccTableTextnontable">10000000011</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="ccTableTextnontable">4</p>
+                    </td>
+                    <td>
+                        <p class="ccTableTextnontable">00010000011</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="ccTextvorlage">The data record in line 2 (with the highest score) is the crucial one to permit or decline the posting.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="918" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434256497"></a>Exercise – Create and Verify a Production Structure for a New Item</h2>
+        <p class="ccTextvorlage">Set up a new item with the following information:</p>
+        <ul>
+            <li class="ccAufzählungblau">Number = P-10002, Name = Panel</li>
+            <li class="ccAufzählungblau">Base Unit of Measure = PCS</li>
+        </ul>
+        <p class="ccTextvorlage">Then create a new Production Structure for this item using the following line information:</p>
+        <ul>
+            <li class="ccAufzählungblau">Item = P-30008, Quantity per = 10 kg</li>
+            <li class="ccAufzählungblau">Item = P-30009, Quantity per = 15 kg</li>
+            <li class="ccAufzählungblau">Work Center = M002, Setup Time = 120 minutes, Run Time = 50 minutes</li>
+        </ul>
+        <p class="ccTextvorlage">Certify the Production Structure and then manually create a firm planned production order for item P-10002. Confirm that the components and routings are correct.</p>
+        <p class="ccDemoStepHeading">Create a New Item</p>
+        <p class="ccTextvorlage">Follow these steps to create a new item:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Departments &gt; Manufacturing &gt; Product Design</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the Product Design menu, click <span class="Bold">Items</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Cancel</span> to close the template selection page.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, type P-10002.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type Panel.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Base Unit of Measure</span> field, enter PCS.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Price &amp; Posting</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Gen. Prod. Posting Group</span> field, enter RMS-PMW.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Inventory Posting Group</span> field, enter RAW MAT.</li>
+            <li class="ccTextvorlageNumberedList">Do not close the Item Card.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Create the Production Structure</p>
+        <p class="ccTextvorlage">Follow these steps to create the Production Structure:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon of the Item Card, click <span class="Bold">Production Structures</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">Press ENTER to insert a new production structure number.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, in the <span class="Bold">Type</span> field, enter Item.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter P-30008.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> per field, type 10.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, in the <span class="Bold">Type</span> field, enter Item.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter P-30009.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity per</span> field, type 15.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, in the <span class="Bold">Type</span> field, enter Work Center.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter M002.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Setup Time</span> field, type 120.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Run Time</span> field, type 50.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">General</span> FastTab, in the <span class="Bold">Status</span> field, enter <span class="Italics">Certified</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Production Structure</span> page and then close the <span class="Bold">Production Structure List</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Replenishment</span> FastTab.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Create and Verify.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Item Card, Replenishment FastTab updated from Production Structure certification</p>
+        <p class="ccTextvorlageNumberedListnonumber">When the Production Structure is certified, the <span class="Bold">Replenishment System</span> field is set to <span class="Italics">Prod. Order</span> and the corresponding <span class="Bold">Production Structure No.</span>, <span class="Bold">Routing No.</span>, <span class="Bold">Production BOM Type</span> and <span class="Bold">Production BOM No.</span> fields are updated on the Item Card.</p>
+        <ol start="17">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the Item Card.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create a Production Order and Verify Setup</p>
+            <p class="ccTextvorlage">Follow these steps to verify the Production Structure setup:</p>
+        </div>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under Manufacturing, click <span class="Bold">Execution &gt; Firm Planned Prod. Orders</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">Press ENTER to insert a new production order number.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Source No.</span> field, enter P-10002.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 1.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Posting</span> FastTab and enter MAINWH in the <span class="Bold">Location Code</span> field.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Refresh Production Order</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the Refresh Production Order batch job, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Ensure that the first line is selected on the <span class="Bold">Lines</span> FastTab, and then click <span class="Bold">Line &gt; Routing</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Create and Verify_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Production Order routing information based on production structure lines</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">Verify that the work center information entered on the Production Structure appears and then close the <span class="Bold">Prod. Order Routing</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Components</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Create and Verify_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Production Order component information based on production structure lines</p>
+        <ol start="12">
+            <li class="ccTextvorlageNumberedList">Verify that the item information entered on the Production Structure appears and then close the <span class="Bold">Prod. Order Components</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Firm Planned Prod. Order</span> page.</li>
+        </ol>
+        <p class="ccTextvorlage"> </p>
+    </body>
+</html>

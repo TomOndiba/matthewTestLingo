@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="883" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref284838954"></a><a name="_Toc434567984"></a>Example – Formula Function</h3>
+            <p class="ccTextvorlage">In the following example, the Formula Function is explained using two types of square meter calculations:</p>
+            <ul>
+                <li class="ccAufzählungblau">Calculation of a function value directly in the checklist </li>
+                <li class="ccAufzählungblau">Calculation of the function value with a dynamic function</li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Formula Function.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref310440897"></a>: Formula Function</p>
+        </div>
+        <p class="ccTextvorlage">Two answers are defined, both with an <span class="Bold">Input Type</span> of Decimal. For the first answer, a length specification is expected and in the second, an indication of width. The input becomes stored as the variables “VAR1” and “VAR2”, respectively.</p>
+        <p class="ccTextvorlage">The results are listed in the last two lines. On the first result line, the calculation occurs directly in the checklist as specified in the <span class="Bold">Formula Function</span> field: The contents of the variable “VAR1” are multiplied by the contents of the variable “VAR2”.</p>
+        <p class="ccTextvorlage">On the second result line, a “FQM” function will be calculated using the two variables. The function formula is developed as follows.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Formula Function_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 246px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Dynamic User Function FQM </p>
+        <p class="ccTextvorlage">Now when the checklist is opened in the document, and the length and the width are entered in the <span class="Bold">Input</span> fields (refer to <MadCap:xref href="#_Ref284833437" class="Figure">Fig. 3</MadCap:xref>, step 1), the square meters are calculated and displayed in the <span class="Bold">Value of Function</span> fields (refer to <MadCap:xref href="#_Ref284833437" class="Figure">Fig. 3</MadCap:xref>, step 2).</p>
+        <p class="ccTextvorlage">If the <span class="Bold">Value of Function is Default</span> and <span class="Bold">Always Overwrite</span> check boxes are selected on the result lines in the Checklist Template (refer to <MadCap:xref href="#_Ref310440897" class="Figure">Fig. 1</MadCap:xref>), the calculated function value is transferred to the <span class="Bold">Input</span> fields (refer to <MadCap:xref href="#_Ref284833437" class="Figure">Fig. 3</MadCap:xref>, step 3) when the “Recalculate” function is run and can be used for further processing.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Formula Function_2.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 417px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="_Ref284833437"></a>: Result Formula Function</p>
+        <p class="ccTextvorlage">In the next example, the result of the function calculation is stored as the variable “SQM”.</p>
+        <p class="ccTextvorlage">If the SQM variable is set up in the <span class="Bold">Variable/Attribute Terms</span> page, and then assigned Attribute Terms (by clicking <span class="Bold">Term</span> on the ribbon), the input of the appropriate attribute term will appear in the description, if the <span class="Bold">Input Type</span> field on the line is set to <span class="Italics">Text</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Formula Function_3.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 222px;" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Attribute Terms </p>
+        <p class="ccTextvorlage">In this example, the values 4.00 and 6.00 are assigned to the “SQM” variable. When recalculated, the <span class="Bold">Input</span> field on the result line is replaced by the description of “Six Square Meters”.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Formula Function_4.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 402px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Result of the Function Calculation with Attribute Terms of the Variable Square Meter</p>
+    </body>
+</html>

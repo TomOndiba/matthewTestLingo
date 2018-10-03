@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="9" MadCap:lastHeight="814" MadCap:lastWidth="604" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256589"></a>Lines FastTab</h3>
+        <p class="ccTextvorlage">The <span class="Bold">Lines</span> FastTab contains two menus: Functions and Line. The menu items for each are explained in the following sections.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Functions Menu </h4>
+        <p class="ccTextvorlage">The menu items on the <span class="Bold">Functions</span> menu relate to the selected line. Each function is described in the following sections.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.1    ">Move</h5>
+        <p class="ccTextvorlage">This function moves the selected production orders before or behind the current position. After the move, all production orders are rescheduled that are currently in planning in the work center.</p>
+        <p class="ccTextvorlage">To mark production orders to move, select the orders by clicking the line while pressing the CTRL key. The last line selected is where the first marked orders are moved.</p>
+        <div class="ccDIV">
+            <h5 class="Heading5" MadCap:autonum="1.1.1.1.2    ">Reverse</h5>
+            <p class="ccTextvorlage">This function reverses planned production orders. The production order is moved to the end of the sequence in the work center and then all other planned production orders are rescheduled.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Sequence Planning_Lines FastTab 2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Reversed production order lines</p>
+            <p class="ccTextvorlageNoteheading">Note</p>
+        </div>
+        <p class="ccTextvorlageNotebody">During the “Reverse” process, planned maintenance-/setup jobs are deleted.</p>
+        <div class="ccDIV">
+            <h5 class="Heading5" MadCap:autonum="1.1.1.1.3    ">Change Work Center</h5>
+            <p class="ccTextvorlage">This function changes the work center on a sequence order. Initially, a list of all sequence work centers is displayed in the <span class="Bold">Work Center List</span> page.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Sequence Planning_Lines FastTab 2_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Work Center List</p>
+        </div>
+        <p class="ccTextvorlage">In this page, select the work center to where the current production order in the sequence planning is moved. After clicking <span class="Bold">OK</span>, the following message appears.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Sequence Planning_Lines FastTab 2_2.png" style="visibility: visible;mso-wrap-style: square;width: 456px;height: 132px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Message to change the Work Center on the production order line</p>
+        <p class="ccTextvorlage">After accepting the message, the production order line is moved to the new work center. The production orders of the current work center will be re-scheduled.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Sequence Planning_Lines FastTab 2_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Production order line moved from work center M002 to M001</p>
+        <p class="ccTextvorlage">During the work center change, all current production rates are considered. If the new item/work center combination has different production rates, they are used and stored in the routing sheet.</p>
+        <p class="ccTextvorlage">The work center is also changed in the routing sheet.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Sequence Planning_Lines FastTab 2_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Production order routing with updated work center information</p>
+        <p class="ccTextvorlage">In addition to the production rates, the work center costs are updated.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.4    "><a name="_Ref368562008"></a>Change Tool</h5>
+        <p class="ccTextvorlage">Generally, the change of tools is like the change of a work center. A list of available tools that can be changed is displayed.</p>
+        <p class="ccTextvorlage">During the change process, the tool is changed in the routing sheet and new costs and production rates are recalculated.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.5    "><a name="_Ref414353954"></a>Change Insert</h5>
+        <p class="ccTextvorlage">Generally, the change of inserts is like the change of a work center. A list of available inserts that can be changed is displayed.</p>
+        <p class="ccTextvorlage">During the change process, the insert is changed in the routing sheet and new costs and production rates are recalculated.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.6    ">Split Prod. Order Line</h5>
+        <p class="ccTextvorlage">This function splits production order lines into multiple production orders and approaches. For more information, refer to topic <MadCap:xref href="Split Production Orders.htm#_Ref415832819">“Split Production Orders” on page 1</MadCap:xref>.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.7    ">Combine Prod. Order Line</h5>
+        <p class="ccTextvorlage">This function combines several production orders into one production order. For more information, refer to topic <MadCap:xref href="Combine Production Orders.htm#_Ref368573236">“Combine Production Orders” on page 1</MadCap:xref>.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.8    ">Change Status</h5>
+        <p class="ccTextvorlage">This standard manufacturing function in Microsoft Dynamics NAV is used in the Sequence Planning to change the status of one or more production orders. To change several production orders, each must have the same status. Multiple orders can be selected by clicking the line while pressing the CTRL key.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Planning Pool_Actions Tab_5.png" style="visibility: visible;mso-wrap-style: square;width: 413px;height: 248px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Change status dialog</p>
+        <p class="ccTextvorlage">Select the relevant status (to which this production order is to be assigned) and the appropriate Posting Date.</p>
+        <p class="ccTextvorlage">To update the unit cost of the item that is produced, select the <span class="Bold">Update Unit Cost</span> check box. The unit cost of the item will also be updated in any production orders or sales orders for which this item has been reserved.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.9    ">Planning Maintenance-/Setup Job</h5>
+        <p class="ccTextvorlage">During the planning of a maintenance and setup job, a list of all maintenance and setup job types is displayed. From this list, predefined maintenance and setup jobs may be selected.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Sequence Planning_Lines FastTab 2_5.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 258px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: List of Maintenance / Setup Job Types</p>
+        <p class="ccTextvorlage">This function moves the new maintenance-/setup job before or after the current production order. After the move, a new maintenance-/setup job is created for the current work center. For more information, refer to topic <MadCap:xref href="Maintenance Setup Job Types.htm#_Ref415832853">“Maintenance-/Setup Job Types” on page 1</MadCap:xref>.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.10    ">Set Start Order</h5>
+        <p class="ccTextvorlage">If no production order has been planned for a work center in the sequence planning (all sequence positions are 999,999,999,999), one order must be set as the start order.</p>
+        <p class="ccTextvorlage">When the “Set Start Order” function is run, the <span class="Bold">Sequence Pl. Start</span> dialog box appears. In the <span class="Bold">Start Date</span> and <span class="Bold">Start Time</span> fields, enter the point of time on which the current production order should be scheduled to. </p>
+        <p class="ccTextvorlage">These fields are automatically filled in with the current time and date. If the production is planned to a certain date or, for example to the beginning of a shift, these fields must be modified. By clicking <span class="Bold">OK</span>, the selected production order only is rescheduled.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Line Menu</h4>
+        <p class="ccTextvorlage">The menu items on the <span class="Bold">Line</span> menu relate to the selected line. Each function is described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 102px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Menu Item</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prod. Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the Production Order of the selected production order line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Item Availability by</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Contains a drop-down list with the following menu items:</p>
+                        <table>
+                            <col style="width: 215px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <p class="cctablenospacingwithbullets">Event</p>
+                                </td>
+                                <td>
+                                    <p class="cctablenospacingwithbullets">Location</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="cctablenospacingwithbullets">Period</p>
+                                </td>
+                                <td>
+                                    <p class="cctablenospacingwithbullets">Lot</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="cctablenospacingwithbullets">Variant</p>
+                                </td>
+                                <td>
+                                    <p class="cctablenospacingwithbullets">BOM Level</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="ccTabellenText">These options check the availability of the item that is currently produced.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Reservation Entries</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Reservation Entries</span> page, which contains one entry for each manually or automatically created reservation of the current production order line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Dimensions</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">When a production order, a production order line, or a production order component is created, document dimension values can be added that can be used later in the analysis. For two shortcut dimensions, the dimension values may be entered directly in a production order, a production order line, or a production order component.</p>
+                        <p class="ccTabellenText">Values for dimensions that are not available in a production order, a production order line, or a production order component, can be entered in this page.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Manufacturing Dimensions</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On creation of production order lines, the default manufacturing dimensions from the item are transferred to the production order line. If the production order lines are sequence planned, the default manufacturing dimensions from the possibly existing sequence work center, tool or insert are transferred to the production order line as well.</p>
+                        <p class="Centeredstyle">
+                            <img src="../Resources/Images/CC PM/Sequence Planning_Lines FastTab 2_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+                        </p>
+                        <p class="ccTabellenText">The <span class="Bold">Priority</span> field in the <span class="Bold">Manufacturing Dimension Setup</span> page defines the order of the different default manufacturing dimensions to transfer (refer to topic <MadCap:xref href="Manufacturing Dimension Priority.htm#_Ref415832870">“Manufacturing Dimension Priority” on page 1</MadCap:xref>).</p>
+                        <p class="BoldItalicsTable">Example</p>
+                        <p class="ccTabellenText">The item and the work center in a production order line have the same default manufacturing dimension. Only the default manufacturing dimension value of the type with the highest priority in the manufacturing dimension setup is transferred to the production order line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Routing</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Prod. Order Routing</span> page for the selected production order line, where users can enter routing sheets before or after a resource sequence.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Components</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Prod. Order Components</span> page, where substitution items can be checked and replaced, and new components for the production order can be entered manually.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Components Planning Pool</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Components Planning Pool</span> page, where the availability of components can also be checked in the planning pool (refer to topic <MadCap:xref href="Components Planning Pool.htm#_Ref310594127">“Components Planning Pool” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Item Tracking Lines</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Item Tracking Lines</span> page, used to track planned items that are Lot No. / Serial No. tracked.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Show used Work Center Production Rate</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Work Center Prod. Rate Card</span> page for sequence planned production order lines to show the Work Center Production Rates used to calculate the setup and run times of a production order routing line. </p>
+                        <p class="ccTabellenText">If this function is run on a sequence planning line without a Work Center Production Rate, a message will appear.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Show Capacity Warning</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Capacity Conflict Log</span> page, which shows all capacity warnings for the current production order (refer to topic <MadCap:xref href="Visualize Capacity Currently.htm">“Visualize Capacity Currently Utilized on Work Centers/Tools” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Contains the <span class="Bold">Calculation (Expected)</span> and <span class="Bold">Calculation (Actual)</span> options. Refer to topic <MadCap:xref href="cc calculation.htm#_Toc434256779">“cc|calculation” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTextvorlage">Production Journal</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">The production journal is standard manufacturing functionality in Microsoft Dynamics NAV but has been enhanced with some <span class="CCBausteinInhaltZchn">cc|process manufacturing</span> features. For more information about the <span class="CCBausteinInhaltZchn">cc|process manufacturing</span>-related functionality, refer to topic <MadCap:xref href="Production Journal.htm#_Ref368567290">“Production Journal” on page 1</MadCap:xref>.</p>
+                        <p class="ccTabellenText">For more information about the standard functionality, refer to the Production Order Processing content in the current Microsoft Dynamics NAV Manufacturing training material.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

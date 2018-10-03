@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="9" MadCap:lastHeight="904" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc435201357"></a>Extend Reports</h2>
+        <p class="ccTextvorlage">The reports described in this section have been extended for use with <span class="CCBausteinInhaltZchn">cc|formatted documents</span>.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc435201358"></a>Data Structure of Reports</h3>
+        <p class="ccTextvorlage">For a report to be used by <span class="CCBausteinInhaltZchn">cc|formatted documents</span>, the following two new columns must be created below a DataItem:</p>
+        <ol>
+            <li style="font-family: 'Courier New';">FD_BLOB</li>
+        </ol>
+        <p class="ccTextvorlageNumberedListnonumber">Column of datatype “BLOB” – contains the formatted text of the record as binary data.</p>
+        <ol MadCap:continue="true">
+            <li style="font-family: 'Courier New';">FD_RectangleForNo</li>
+        </ol>
+        <p class="ccTextvorlageNumberedListnonumber">Column of datatype “Text” – contains a unique identifier value for the record. This column usually does not exist as a field in the corresponding table, but contains (recommended) the primary key fields of the corresponding table as a combined text. The value must be unique.</p>
+        <p class="ccTextvorlage">Both columns provide required information to the subreport and are constrained by the following naming convention:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList"><span class="sourcecode" style="font-family: 'Courier New';">[&lt;SubreportIdentifier&gt;_]FD_BLOB</span>
+            </li>
+            <li class="ccTextvorlageNumberedList"><span class="sourcecode" style="font-family: 'Courier New';">[&lt;SubreportIdentifier&gt;_]FD_RectangleForNo</span>
+            </li>
+        </ol>
+        <p class="ccTextvorlage">The prefix of the subreport is only required if multiple subreports are embedded in the main report. The “&lt;SubreportIdentifier&gt;” name needs to correspond to the subreport of the two fields.</p>
+        <p class="ccTextvorlage">Summarizing explanation (as example):</p>
+        <ol>
+            <li><span class="Bold">[&lt;SubreportIdentifier&gt;_]</span><span class="sourcecode" style="font-family: 'Courier New';">FD_BLOB</span>
+            </li>
+        </ol>
+        <p class="ccTextvorlageNumberedListnonumber">Field of the corresponding table with Data Type = BLOB.</p>
+        <p class="ccTextvorlageNumberedListnonumber">Name: <span class="sourcecode">subreport2_FD_BLOB</span></p>
+        <p class="ccTextvorlageNumberedListnonumber">SourceExpr: <span class="sourcecode" style="font-family: 'Courier New';">"FD Blob"</span></p>
+        <ol MadCap:continue="true">
+            <li><span class="Bold">[&lt;SubreportIdentifier&gt;_]</span><span class="sourcecode" style="font-family: 'Courier New';">FD_RectangleForNo</span>
+            </li>
+        </ol>
+        <p class="ccTextvorlageNumberedListnonumber">Primary key fields of the corresponding table as combined text.</p>
+        <p class="ccTextvorlageNumberedListnonumber">Name: <span class="sourcecode" style="font-family: 'Courier New';">subreport2_FD_RectangleForNo</span></p>
+        <p class="ccTextvorlageNumberedListnonumber">SourceExpr: <span class="sourcecode" style="font-family: 'Courier New';">FORMAT("Sales Line"."Document Type") + "Sales Line"."Document No." + FORMAT("Sales Line"."Line No.")</span></p>
+        <p class="ccTextvorlage">
+            <MadCap:xref href="#_Ref428197773" class="Figure">Fig. 1</MadCap:xref> illustrates the above example.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Extend Reports.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 56px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref428197773"></a>: Sales Line Report</p>
+        <p class="ccTextvorlage">
+            <MadCap:xref href="#_Ref428197791" class="Figure">Fig. 2</MadCap:xref> provides another example (as single subreport).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Extend Reports_1.png" style="visibility: visible;mso-wrap-style: square;width: 530px;height: 35px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="_Ref428197791"></a>: Sales Line Report as Single Subreport</p>
+        <p class="ccTextvorlageNoteheading">Important</p>
+        <p class="ccTextvorlageNotebody">The first DataItem of the report must not have a deviating name.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc435201359"></a>Layout of the Report (in Report Designer)</h3>
+            <p class="ccTextvorlage">Subreports can be placed anywhere in the main report, except in the header of the report. The name of the report can be user-defined; however, the name must match the prefix of the column names.</p>
+            <p class="ccTextvorlage">The following parameters must (mandatory) and can (optionally) be given to a report:</p>
+            <ul>
+                <li class="ccAufzählung">Mandatory parameter (required):<ul><li><span class="sourcecode">RectangleForNo</span></li></ul></li>
+            </ul>
+            <ul>
+                <li class="ccAufzählung">Optional parameters (optional):<ul><li><span class="sourcecode">FontFamily</span><ul><li>Default value: “Arial”<br /></li></ul></li><li><span class="sourcecode">FontSize</span><ul><li>Default value: “9pt”</li></ul></li><li><span class="sourcecode">TextColor</span><ul><li>Default value: “black”</li></ul></li><li> <span class="sourcecode">PaddingLeft</span><ul><li>Default value: “0pt”</li></ul></li><li><span class="sourcecode">PaddingRight</span><ul><li>Default value: “0pt”</li></ul></li><li> <span class="sourcecode">PaddingTop</span><ul><li>Default value: “0pt”</li></ul></li><li> <span class="sourcecode">PaddingBottom</span><ul><li>Default value: “0pt”</li></ul></li></ul></li>
+            </ul>
+            <p class="ccTextvorlage">
+                <MadCap:xref href="#_Ref428197990" class="Figure">Fig. 3</MadCap:xref> is an example of the integration of a subreport (including assigning of parameters to the subreport).</p>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Extend Reports_2.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 287px;" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="_Ref428197990"></a>: Integrating a Subreport</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If the subreport is placed in a table or matrix, it will be rendered for each line. In this case, the value of the parameter “RectangleForNo” for each line is relevant.</p>
+        <ul>
+            <li class="ccAufzählung">Expression for value:</li>
+        </ul>
+        <p class="ccAufzählung"><span class="sourcecode" style="font-family: 'Courier New';">=Fields![&lt;SubreportIdentifier&gt;_]FD_RectangleForNo.Value</span>
+        </p>
+        <p class="ccTextvorlage">If the subreport is placed outside of a table or matrix, the <span style="color: #FF0000;">First</span> function must be used. The <span style="color: #FF0000;">First</span> function returns the first value in a set of records, after sorting and filtering of a specified area is applied.</p>
+        <ul>
+            <li class="ccAufzählung">Expression for value:</li>
+        </ul>
+        <p class="ccAufzählung"><span class="sourcecode" style="font-family: 'Courier New';">=</span><span class="sourcecode" style="font-family: 'Courier New';color: #FF0000;">First</span><span class="sourcecode" style="font-family: 'Courier New';">(Fields![&lt;SubreportIdentifier&gt;_]FD_RectangleForNo.Value)</span>
+        </p>
+        <p class="ccTextvorlageNoteheading">Important</p>
+        <p class="ccTextvorlageNotebody">It is required to calculate the field of <span class="Bold">Data Type</span> = BLOB via the C/AL function CALCFIELDS in the trigger OnAfterGetRecord of the DataItem because the BLOB content is provided to the DataSet.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Ref428186325"></a><a name="_Toc435201360"></a>Visibility Settings for Elements of a Subreport</h3>
+        <p class="ccTextvorlage">The subreport control allocates a small area on the report, even if no formatted text is printed. To disable the allocation, always hide the subreport control by default.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Extend Reports_3.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 367px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4"><a name="_Ref428198314"></a>: Order Confirmation with Default Report Output</p>
+        <p class="ccTextvorlage">To ensure that the visibility of integrated subreport elements is set to “Hide,” right-click the subreport and select <span class="Bold">Subreport Properties</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Extend Reports_4.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 454px;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Accessing Subreport Properties</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Subreport Properties</span> page, select the <span class="Italics">Hide</span> option.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Extend Reports_5.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 489px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Hide Subreport</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc435201361"></a>Visibility Settings for Elements of a Subreport in Tables and Matrices</h3>
+        <p class="ccTextvorlage">For avoiding empty subreport elements (subreports, for those where no content created in <span class="CCBausteinInhaltZchn">cc|formatted documents</span> exists) to reserve space, it is necessary to set the visibility of a line containing the subreport element to “Hide.”</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Extend Reports_6.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 401px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Subreport as Empty Line</p>
+        <p class="ccTextvorlage">To ensure that the visibility of lines containing subreport elements is set to “Hide,” right-click the row and select <span class="Bold">Row Visibility</span>. In the <span class="Bold">Row Visibility</span> page, select the <span class="Italics">Hide</span> option.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Extend Reports_7.png" style="visibility: visible;mso-wrap-style: square;width: 230px;height: 245px;" />
+            <img src="../Resources/Images/CC FD/Extend Reports_8.png" style="visibility: visible;mso-wrap-style: square;width: 298px;height: 246px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Accessing Row Visibility and Row Visibility page</p>
+        <p class="ccTextvorlage">If the settings were made correctly, the output of the result is optimal. <span class="CCBausteinInhaltZchn">cc|formatted documents</span> shows hidden elements independently, as required.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FD/Extend Reports_9.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 388px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Subreport with hidden Row</p>
+        <p class="ccTextvorlage"> </p>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="444" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256526"></a>Exercise – Work Center Production Rates</h3>
+        <p class="ccTextvorlage">On the Production Structure for item P-10002, delete the Setup Time and Run Time for work center M002 and then certify the Production Structure. </p>
+        <p class="ccTextvorlage">On the Item Card, add the item unit of measure of KG. Set up the Work Center Production Rates for machine M002 with a capacity of 60 kg per hour and two hours of setup time.</p>
+        <p class="ccTextvorlage">Manually create a firm planned production order for item P-10002 and confirm the time in the routing.</p>
+        <p class="ccDemoStepHeading">Update the Work Center on the Production Structure</p>
+        <p class="ccTextvorlage">Follow these steps to update the work center on the production structure:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under Manufacturing, click <span class="Bold">Product Design &gt; Production Structures</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the production structure for item P-10002.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Under Development</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the line for Work Center M002, remove the values in the <span class="Bold">Setup Time</span> and <span class="Bold">Run Time</span> fields.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Certified</span>.</li>
+            <li class="ccTextvorlageNumberedList">Do not close the <span class="Bold">Production Structure</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Add Unit of Measure and Production Rates to Item P-10002</p>
+            <p class="ccTextvorlage">Follow these steps to add the unit of measure and production rates on the Item Card:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">In the Production Structure Details FactBox, click Item No. P-10002 to open the Item Card.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">Navigate &gt; Units of Measure</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Code</span> field, enter KG.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Qty. per Unit of Measure</span> field, type .04.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to change the Net Weight and then click <span class="Bold">OK</span> to close the <span class="Bold">Item Units of Measure</span> page. </li>
+                <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Production &gt; Work Center Production Rates</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Work Center No.</span> field, enter M002.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Setup Time</span> field, type 2.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Setup Time Unit of Measure</span> field, enter HOURS.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Production Rate</span> field, type 60.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Prod. Rate Unit of Measure</span> field, enter KG.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Production Rate Time</span> field, type 1.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Prod. Rate per UOM</span> field, enter HOURS.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the open pages.</li>
+            </ol>
+        </div>
+        <p class="ccDemoStepHeading">Create the Production Order and Verify Setup</p>
+        <p class="ccTextvorlage">Follow these steps to create the production order and verify the routing setup:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under Manufacturing, click <span class="Bold">Execution &gt; Firm Planned Prod. Orders</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">Press ENTER to insert a firm planned production order number.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Source No.</span> field, enter P-10002.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 1.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Posting</span> FastTab and enter MAINWH in the <span class="Bold">Location Code</span> field.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Refresh Production Order</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the Refresh Production Order batch job, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Routing</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Work Center Production.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Routing times created from Production Rate Time</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">Confirm that the <span class="Bold">Setup Time</span> and <span class="Bold">Run Time</span> fields are calculated properly as set up in the <span class="Bold">Work Center Prod. Rate Card</span>.</li>
+            <li class="ccTextvorlageNumberedList">Close the open pages.</li>
+        </ol>
+    </body>
+</html>

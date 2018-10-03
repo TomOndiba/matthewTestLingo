@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="843" MadCap:lastWidth="605" MadCap:fileTags="StatusFileTags.6 Needs to be Sent for Review" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">Time Sheet Integration</h2>
+        <p>The integration of the standard Microsoft Dynamics NAV Time Sheet functionality to <span class="CCBausteinInhaltZchn">cc|project</span> allows users to enter their time in a simple way. The integrated approval process must be used. Additionally, all approved Time Sheet entries from the Time Sheet Manager are captured and inserted to a Job Time Entry Job Journal for posting.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Setup</h3>
+        <p>This section provides an overview of how to set up a user to approve Time Sheet entries and a user to make entries in a Time Sheet. </p>
+        <p class="BoldItalics12pt">Approval User Setup</p>
+        <p class="ccTextvorlage">Follow these steps to set up the approval user:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">On the navigation pane, click <span class="Bold">Departments &gt; Administration &gt; Application Setup &gt; Users &gt; User Setup</span>.</li>
+            <li class="ccTextvorlageNumberedList">For the user who needs to approve Time Sheets, select the <span class="Bold">Time Sheet Admin.</span> check box. </li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Time Sheet approval user selected</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+        </ol>
+        <p class="BoldItalics12pt">Set Up User for Time Sheet Entries</p>
+        <p class="ccTextvorlage">Follow these steps to set up the user to make entries in the Time Sheet:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">On the navigation pane, click<span class="Bold"> </span><span class="CCBausteinInhaltZchn">cc|project</span><span class="Bold">&gt; Administration &gt; Resources</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate and open the card of the resource that needs to be use Time Sheets.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_1.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Highlighting Time Sheet fields on Resource Card</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Use Time Sheet</span> check box to enable Time Sheet usage for the resource.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Time Sheet Owner User ID</span> field, click the arrow and select the resource from the User Setup table.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Time Sheet Approver User ID</span> field, click the arrow and select the resource responsible for approving Time Sheet entries.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_2.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Resource set up for Time Sheet usage and approval</p>
+        <ol MadCap:continue="true">
+            <li>Click <span class="Bold">OK</span>.</li>
+        </ol>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    ">Create Time Sheet and Submit Entries</h3>
+        <p>Once the users are set up, a Time Sheet can be created for the resource and time can be entered directly for a job line, and then submitted for approval.</p>
+        <p class="BoldItalics12pt">Create Time Sheet</p>
+        <p class="ccTextvorlage">Follow these steps to create a Time Sheet:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">Login as the user to create a Time Sheet.</li>
+            <li class="ccTextvorlageNumberedList">On the navigation pane, click <span class="Bold">Home &gt; Time Sheets</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Create Time Sheets</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Options</span> FastTab, fill in the fields as needed.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Resource</span> FastTab, set the user filter. </li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_3.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Create Time Sheets filtered on resource P002</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.<br />A message appears stating the number of time sheets that have been created.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the message.</li>
+        </ol>
+        <p class="BoldItalics12pt">Enter and Submit Time</p>
+        <p class="ccTextvorlage">Follow these steps to enter and submit time in the Time Sheet:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon of the <span class="Bold">Time Sheets</span> page, click <span class="Bold">Edit Time Sheet</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_4.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Open the new Time Sheet for editing</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Time Sheet</span> page, enter <span class="Italics">Job</span> in the <span class="Bold">Type</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Job No.</span> field, enter the job to which time needs to be entered.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">WBS</span> field, enter the job line to which the time needs to be entered.<br />The <span class="Bold">Description</span> field is populated with the description from the job line.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_5.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Job information entered in the Time Sheet</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">In the day fields (e.g., 28 Mon, 29 Tues, and so on), enter the hours worked for the selected job line.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_6.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Hours worked for the job entered in the Time Sheet</p>
+        <p class="ccAufzahlungblaunobullet">The Time Sheet Status and Actual/Scheduled Summary FactBoxes are updated with the entered time .</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">To make changes to the line, such as to change the Description, click <span class="Bold">Activity Details</span> on the ribbon.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Time Sheet Line Job Detail </span>page, make changes as needed.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Description from job line changed to include details</p>
+        <p> </p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.<br />The changes are made to the Time Sheet line.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_8.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Description field updated in Time Sheet line</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Submit</span>.</li>
+            <li class="ccTextvorlageNumberedList">A message appears asking to submit all open lines or selected lines only.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_9.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Preparing to submit Time Sheet entry</p>
+        <p class="ccTextvorlageNumberedListNoteHeadingIndent">Note</p>
+        <p class="ccTextvorlageNumberedListNoteBodyIndent">If the "All open lines" option is selected, any line with <span class="Bold">Status</span> = Open will be submitted.</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">With the <span class="Italics">All open lines</span> option selected, click <span class="Bold">OK</span>.<br />The <span class="Bold">Status</span> is changed to <span class="Italics">Submitted</span>, the Time Sheet Status FactBox is updated, and the lines remain in the Time Sheet.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_10.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Submitted Time Sheet</p>
+        <ol MadCap:continue="true">
+            <li>Click <span class="Bold">OK</span>.</li>
+        </ol>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    ">Approve Submitted Time Sheet</h3>
+        <p>After submission, the  Time Sheet is approved by the approval manager assigned to the resource.</p>
+        <p class="BoldItalics12pt">Approve Time Sheet</p>
+        <p class="ccTextvorlage">Follow these steps to approve a Time Sheet:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">Login as the approval user.</li>
+            <li class="ccTextvorlageNumberedList">On the navigation pane, click <span class="Bold">Home &gt; Manager Time Sheets</span>.<br />Notice that a submitted Time Sheet entry exists for the resource.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_11.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Preparing to open the Submitted Time Sheet</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Edit Time Sheet</span>.<br />The <span class="Bold">Manager Time Sheet</span> page opens with the same information as in the <span class="Bold">Time Sheet</span> page, except now the approver’s name appears in the top section, and approval/rejection options are available.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_12.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Manager Time Sheet view of submitted Time Sheet</p>
+        <ol MadCap:continue="true">
+            <li>Additional details about the Time Sheet entry can be viewed by clicking <span class="Bold">Activity Details</span> in the ribbon.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_13.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Time Sheet Line Job Details</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Cancel</span> to close the page without making changes.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Approve</span> to transfer the entries to the Time Job Journal.<br />A message appears asking to approve all submitted lines or selected lines only.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_14.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Preparing to approve Time Sheet entry</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">With the <span class="Italics">All submitted lines</span> option selected, click <span class="Bold">OK</span>.<br />The <span class="Bold">Status</span> is changed to <span class="Italics">Approved</span>, the Time Sheet Status FactBox is updated, and the lines remain in the Time Sheet.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_15.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Approved Time Sheet</p>
+        <ol MadCap:continue="true">
+            <li>Click <span class="Bold">OK</span>.</li>
+        </ol>
+        <h3 class="Heading3" MadCap:autonum="1.1.4    ">Post Job Time Entry Journal</h3>
+        <p>After approval, the  Time Sheet entries are transferred to the Job Time Entry Journal for posting.</p>
+        <p class="BoldItalics12pt">Post Time Sheet Entries in Job Time Entry Journal</p>
+        <p class="ccTextvorlage">Follow these steps to post entries in the Job Time Entry Journal:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">Login as the Time Sheet Administrator user.</li>
+            <li class="ccTextvorlageNumberedList">On the navigation pane, click <span class="Bold">Home &gt; Journals &gt; Time Entry Journals</span>.</li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Edit Journal</span>; it does not matter which resource is selected.<br /></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_16.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Preparing to open the Job Time Entry Journal with approved Time Sheet entries</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Suggest Lines from Time Sheets</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Resource No. Filter</span> field, enter the number of the resource with approved Time Sheet entries.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_17.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 18">: Suggesting lines from Time Sheets</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Enter any other filters to narrow the suggestion, and then click <span class="Bold">OK</span>. <br />The Job Time Entry lines are populated with the approved entries per day.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_18.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 19">: Approved Time Sheet entries suggested in Job Time Entry Journal</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_19.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 20">: Preparing to post the Job Time Entry Journal</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to post the lines and then <span class="Bold">OK</span> to close the confirmation message, and then <span class="Bold">OK</span> to close the Job Time Entry Journal.</li>
+        </ol>
+        <p class="ccTextvorlage">The posted entries for Time Sheets are accessible from the Manager Time Sheet view by clicking <span class="Bold">Posting Entries</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_20.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 21">: Time Sheet Posting Entries opened from Manager Time Sheet</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.5    ">Create Time Sheet with Previous Entries</h3>
+        <p>To reduce data entry, it is possible to create a Time Sheet using a previously entered Time Sheet. This is useful when a resource works on the same job line for a long period of time.</p>
+        <p class="BoldItalics12pt">Create Time Sheet using Previous Entries</p>
+        <p class="ccTextvorlage">Follow these steps to create a Time Sheet using previous entries:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">Login as the user to create a Time Sheet.</li>
+            <li class="ccTextvorlageNumberedList">On the navigation pane, click <span class="Bold">Home &gt; Time Sheets</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Create Time Sheets</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Options</span> FastTab of the <span class="Bold">Create Time Sheets</span> page, enter the relevant information.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Resource</span> FastTab, the set the user filter. </li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_21.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 22">: Create Time Sheets filtered on resource P002</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> and then click <span class="Bold">OK</span> to close the creation message.</li>
+            <li class="ccTextvorlageNumberedList">Open the new Time Sheet and then click <span class="Bold">Copy lines from previous time sheet</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_22.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 23">: Preparing to copy lines from previous time sheet</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to copy the lines.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Time Sheet Integration_23.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 24">: Previous Time Sheet line copied to new Time Sheet</p>
+        <p class="ccTextvorlage">New time entries can be entered for the copied Time Sheet line, new lines can be added and the Time Sheet submission/approval process continues as previously described.<br /></p>
+    </body>
+</html>

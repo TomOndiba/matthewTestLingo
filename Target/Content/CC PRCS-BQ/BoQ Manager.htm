@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="738" MadCap:lastWidth="604" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="top"></a>
+            <MadCap:annotation MadCap:createDate="2018-06-03T13:52:26.9695323-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="need to add something somewhere about the Split Demand (PaC) field on the item card since it's not discussed in the PR manual now.\r\n\r\nIf selected, the item quantities calculated in BoQs are not summarized in PaCs. Refer to topic “BoQ Manager” on page 1 for more information." MadCap:editor="NTadajewski0100" MadCap:editDate="2018-06-03T13:53:01.8399753-05:00">BoQ Manager</MadCap:annotation>
+        </h2>
+        <p class="ccTextvorlage">The BoQ Manager can be used to import and export GAEB files. GAEB is a German organization that defines standards in electronic data exchange for construction works industries. Refer to <a href="http://www.gaeb.de/en/">http://www.gaeb.de/en/</a> for more information.</p>
+        <p>There are three different versions of the GAEB standard:</p>
+        <ul>
+            <li class="ccAufzählung">GAEB 90 – file *.d*</li>
+            <li class="ccAufzählung">GAEB 2000 – file *.p*</li>
+            <li class="ccAufzählung">GAEB XML – file *.x*</li>
+        </ul>
+        <p class="ccTextvorlage">The GAEB data exchange has different exchange phases, each with their own file definitions. Currently <span class="CCBausteinInhaltZchn">cc|project</span> supports the following exchange phases:</p>
+        <ul>
+            <li class="ccAufzählung">81 Specification</li>
+            <li class="ccAufzählung">82 Cost Estimate</li>
+            <li class="ccAufzählung">83 Quote Calling</li>
+            <li class="ccAufzählung">84 Quote Bidding</li>
+            <li class="ccAufzählung">85 Alternative Bids</li>
+            <li class="ccAufzählung">86 Order Award</li>
+        </ul>
+        <p>Example files:</p>
+        <ul>
+            <li class="ccAufzählung">*.d81,*.d82,*.d83, *.d84, *.d85, *.d86</li>
+            <li class="ccAufzählung">*.p81,*.p82,*.p83, *.p84, *.p85, *.p86</li>
+            <li class="ccAufzählung">*.x81,*.x82,*.x83, *.x84, *.x85, *.x86</li>
+        </ul>
+        <p class="ccTextvorlage">As mentioned previously, the BoQ manager uses a third party component of the GAEB Konverter software to convert GAEB files to a specific TML file format. These TML files are imported and exported to/from Microsoft Dynamics NAV; the third party component works in the background and is invisible for the users.</p>
+        <p class="ccTextvorlage">This topic describes the different usages of the BoQ Manager in <span class="CCBausteinInhaltZchn">cc|project</span>, and provides an overview of the main processes of working with GAEB files. More detailed information about calculation and invoicing are described in later sections.</p>
+    </body>
+</html>

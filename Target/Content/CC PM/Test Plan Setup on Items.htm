@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="11" MadCap:lastHeight="899" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256788"></a>Test Plan Setup on Items</h3>
+        <p class="ccTextvorlage"><span class="CCBausteinInhaltZchn">cc|process manufacturing</span> provides the ability to test items based on the Lot No. Trading Unit or the Trading Unit Number, as indicated in the <span class="Bold">Test Plan Setup</span> page, which is accessed from the ribbon on the Item Card.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Test Plan Setup on Items.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Test Plan Setup for item Q-20001</p>
+        <p class="ccTextvorlage">The <span class="Bold">Item Test Order Options</span> for <span class="Italics">Test on Lot No. Trading Unit</span> and <span class="Italics">Test on Trading Units</span> are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Item Test Order Option</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Defines the level on which an item should be tested. The <span class="CCBausteinInhaltZchn">cc|process manufacturing</span> options are: </p>
+                        <ul>
+                            <li class="ccAufzählung">Test on Lot No. Trading Unit – a test order is created for each lot/trading unit.</li>
+                            <li class="ccAufzählung">Test on Trading Unit – a test order is created for each trading unit. </li>
+                        </ul>
+                        <p class="ccAufzählung">If this option is selected and no trading unit is entered in the item tracking, the test will be performed per lot number.</p>
+                        <p class="ccTabellenText">For example, if a user posts a Receipt with two lots (Lot A and Lot B) the following tests are created, based on the Item Test Order Option:</p>
+                        <ul>
+                            <li class="ccAufzählung">Test on Lot No. Trading Unit:</li>
+                        </ul>
+                        <p class="ccAufzählung">Two Test Orders (one for each lot) – <span class="Bold">Item No.</span> field is populated in the <span class="Bold">General</span> FastTab, <span class="Bold">Lot No.</span> and <span class="Bold">Lot No. Trading Unit No.</span> fields are populated on the <span class="Bold">Test Plan Source</span> FastTab.</p>
+                        <ul>
+                            <li class="ccAufzählung">Test on Trading Unit: </li>
+                        </ul>
+                        <p class="ccAufzählung">Two Test Orders (one for each lot) – <span class="Bold">Item No.</span>, <span class="Bold">Lot No.</span>, <span class="Bold">Lot No. Trading Unit</span> and <span class="Bold">Trading Unit No.</span> fields are populated.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

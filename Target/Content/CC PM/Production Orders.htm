@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="839" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434256567"></a>Production Orders</h2>
+        <p class="ccTextvorlage">When a production order is created for an item that has ingredients, the ingredients of the item’s production BOM:</p>
+        <ul>
+            <li class="ccAufzählungblau">Header are copied to the production order line</li>
+            <li class="ccAufzählungblau">Lines are copied to the production order components</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Orders.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Production BOM header ingredients added to production order line</p>
+        <p class="ccTextvorlage">The quantity fields on the <span class="Bold">Prod. Order Line Ingredients</span> page are described in the following table. </p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 146px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Expected Quantity (Ratio) / Unit of Measure Code (Ratio) </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Ingredient values from the production BOM/recipe; can be changed for differing production amounts.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Alloc. Unit of Measure Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Measurement in which the ingredient is to be produced; can be changed for differing production amounts.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Expected Quantity (Total) / Unit of Measure Code (Total)</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Expected ingredients calculated by the production order line quantities in the indicated unit of measure.</p>
+                        <div class="ccDIV">
+                            <p class="ccTabellenTextNoteheading">Note</p>
+                        </div>
+                        <p class="ccTabellenTextNotebody">The <span class="Bold">Unit of Measure Code (Total)</span> field can be changed for differing production amounts.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Expected Comp. Quantity (Ratio) </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Current ingredient values of the components prior to any lot assignment or production posting.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Expected Comp. Quantity (Total)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Current ingredient values of the components calculated by the production order line quantities.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Captured Quantity (Ratio)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Ingredient values from the components after lot assignment.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">This field will not contain a value if a lot has not been assigned to the production order line. Additionally, this field is cleared after consumption/output posting.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Captured Quantity (Total)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Ingredient values of the components calculated by the production order line quantities after lot assignment.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">This field is cleared after consumption/output posting.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Posted Quantity (Ratio)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Ingredient values from the components after consumption/output posting.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Posted Quantity (Total)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Ingredient values of the components calculated by the production order line quantities after consumption/output posting.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Contains Expected Values</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Selected if lots assigned to components contain the expected values – not measured values from a processed test order (refer to topic <MadCap:xref href="Receipt Testing.htm#_Ref414351043">“Receipt Testing” on page 1</MadCap:xref>) or direct inventory posting (refer to topic <MadCap:xref href="Item Delivery.htm#_Ref414351054">“Item Delivery” on page 1</MadCap:xref>).</p>
+                        <p class="ccTabellenText">This setting is only related to captured or posted quantities.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ccDIV">
+            <p class="ccTextvorlageaftertable">To access the ingredients for a component, open the <span class="Bold">Production Order Components</span> page and then click <span class="Bold">Navigate &gt; Ingredients</span> on the ribbon.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Production Orders_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Production BOM line ingredients added to production order component item P-60018</p>
+        </div>
+        <p class="ccTextvorlage">The quantity fields on the <span class="Bold">Prod. Order Line Ingredients</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 191px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Expected Quantity (Ratio) / Unit of Measure Code (Ratio) / Alloc. Unit of Measure Code / Expected Quantity (Total) / Unit of Measure Code (Total)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Expected ingredients based on component quantities.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Captured Quantity (Ratio) / Captured Quantity (Total) </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Captured ingredients based on Item Tracking Lines.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Posted Quantity (Ratio) / Posted Quantity (Total) </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Posted ingredients based on Item Ledger Entries.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Contains Expected Values</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Selected if lots assigned to components contain the expected values – not measured values from a processed test order (refer to topic <MadCap:xref href="Receipt Testing.htm#_Ref414351069">“Receipt Testing” on page 1</MadCap:xref>) or direct inventory posting (refer to topic <MadCap:xref href="Item Delivery.htm#_Ref414351078">“Item Delivery” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">If lots without measured values are assigned to the production order components, the <span class="Bold">Contains Expected Values</span> check box is selected and the sum of the actual lot ingredient quantities is copied to the <span class="Bold">Captured Quantity (Ratio)</span> and <span class="Bold">Captured Quantity (Total)</span> fields on the <span class="Bold">Prod. Order Component Ingredients</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Orders_2.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 227px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Prod. Order Component Ingredients updated by entering a lot for component item P-60018</p>
+        <p class="ccTextvorlage">On the <span class="Bold">Prod. Order Line Ingredients</span> page, the <span class="Bold">Contains Expected Values</span> check box and the <span class="Bold">Captured Quantity (Total)</span> field is updated with the value from the components.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The <span class="Bold">Captured Quantity (Ratio)</span> field is updated when the lot is assigned to the production order line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Orders_3.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 202px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Prod. Order Line Ingredients updated by entering lots for component items</p>
+    </body>
+</html>

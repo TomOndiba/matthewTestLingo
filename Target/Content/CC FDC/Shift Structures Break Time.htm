@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="910" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc435107528"></a>Shift Structures, Break Time Patterns and Invoicing</h2>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#_Ref427935040" class="Figure">Fig. 1</MadCap:xref>, first the six FDC Input Entries (Black) get recorded (e.g. using the Terminal). In the evening the FDC Input Entries were processed by an automatic procedure. During that, an FDC Journal Line is created for every Input Entry pair. Posting these FDC Journal lines result in a sum of single FDC Entries (Green) and three FDC Time Entries (Blue). The sum of FDC Time Entries yield the Net, Gross and Interruption Time of the FDC Entry. The Interruptions (FDC Journal Line 2 and 3) get linked to FDC Entry 1 because they are in the period of the time recording.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/Shift Structures Break Time.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 295px;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref427935040"></a>: Example Processing of Input Entries and Posting of Entries</p>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#_Ref427935049" class="Figure">Fig. 2</MadCap:xref>, the FDC Journal Line 1 with <span class="Bold">Time Entry Type</span> = <span class="Italics">Time Recording</span> gets processed without entering a time. The resulting FDC Entry 1 does not get a time as well. The posting of FDC Journal Line 2, without compensation of FDC Entry 1, does not find a corresponding FDC Entry, although it has a given time, and creates FDC Entry 2. As desired, the posting of FDC Journal Line 3 with compensation of FDC Entry 1 creates another FDC Time Entry (3) for FDC Entry 1, and no new FDC Entry.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/Shift Structures Break Time_1.png" style="visibility: visible;mso-wrap-style: square;width: 575px;height: 215px;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="_Ref427935049"></a>: Example Interruption with Compensation</p>
+        <p class="ccTextvorlage">In case of an Interruption, the given times (<span class="Bold">Start Date/Time</span> and <span class="Bold">End Date/Time</span> fields) are informational, e.g. for later analyzing. Irrespective of time indication, compensations with FDC Entries can be posted positively or negatively and always create new FDC Time Entries. For Time Recording the time indication is crucial on Time Recording:</p>
+        <ul>
+            <li class="ccAufzählungblau">with time indication – the FDC Entry is created with time indication. Compensations result in automatic cancellation of the previous Time Recording FDC Time Entry. If an FDC Entry with time indication is created, a new Time Recording must always occur with a time indication.</li>
+            <li class="ccAufzählungblau">without time indication – the FDC Entry is also created without time indication. Further Time Recordings are only possible without time indication. Compensations create new FDC Time Entries without forcing a cancellation of the old entries.</li>
+        </ul>
+        <p class="ccTextvorlage">This means that on creation (first posting) of an FDC entry, it must be determined if a compensation results in a cancellation (time indication) or not (without time indication).</p>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#_Ref427935062" class="Figure">Fig. 3</MadCap:xref>, FDC Entry 1 is created without time indication (FDC Journal Line 1). The postings of FDC Journal Lines 2 and 3 with compensation of FDC Entry 1 are valid because the time indication for the <span class="Italics">Interruption</span> (in FDC Journal Line 2) is for information purposes only and the <span class="Italics">Time Recording</span> (FDC Journal Line 3) is done without time indication.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/Shift Structures Break Time_2.png" style="visibility: visible;mso-wrap-style: square;width: 575px;height: 194px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="_Ref427935062"></a>: Simple Compensation</p>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#_Ref427935074" class="Figure">Fig. 4</MadCap:xref>, FDC Entry 1 is created with time indication (FDC Journal Line 1). The Time Recording of FDC Journal Line 2 without time indication is not possible and results in an error because FDC Entry 1 has a time indication. Posting FDC Journal Line 3 with compensation of FDC Entry 1 leads to cancellation of FDC Time Entry 1 due to time indication. In the end, for an FDC Entry with time indication there is exactly one (non-cancelled) FDC entry with <span class="Bold">Time Entry Type</span> = <span class="Italics">Time Recording</span>. Interruptions may exist multiple times irrespective of time indication of Time Recording with or without time indication.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The reason the FDC entries with <span class="Bold">Time Entry Type</span> = <span class="Italics">Time Recording</span> were cancelled was because it was not possible to determine how to compensate for the <span class="Italics">Interruption</span>. An interruption with time indication requires a corresponding FDC Entry. As illustrated in <MadCap:xref href="#_Ref427935074" class="Figure">Fig. 4</MadCap:xref>, it is not clear if the FDC Journal Line 2 is a compensation from 07:30 to 16:30 or 08:00 to 17:00. Therefore, the <span class="Italics">Interruption</span> was assigned to FDC Journal Line 1 and an automatic correction was made to the end time in the FDC Journal Line 3 and FDC Time Entry 1 was cancelled and replaced with FDC Time Entry 2 with the correct <span class="Bold">Time (h)</span>.</p>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/Shift Structures Break Time_3.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 198px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4"><a name="_Ref427935074"></a>: Compensation with Time Indication</p>
+    </body>
+</html>

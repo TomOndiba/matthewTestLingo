@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Unspecified Inspection Result on Test Order</h3>
+        <p>When entries are not relevant for an Inspection Result, it is possible to skip a Test Property in the measuring testing by selecting the <span class="Bold">Property Tested</span> check box. This prevents the Test Order from being closed but sets the <span class="Bold">Inspection Result</span> to <span class="Italics">Items are not OK</span>, which is not necessarily correct. </p>
+        <p>This functionality provides the ability to skip these test properties without automatically setting an Inspection Result, thus allowing the correct result to be selected after testing.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">This functionality is available on the Test Order Card and Test Order/Value Recording Card. Value recording done in the Test Order Worksheet is transferred accordingly to the Test Order where the Inspection Result can be updated.</p>
+        <p>To skip test properties during value recording, select the <span class="Bold">Use Unspecified Status on Test Order</span> check box on the <span class="Bold">Quality Management Setup</span> page, which will set the <span class="Bold">Valid Determined Value</span> to <span class="Italics">TRUE</span> and the <span class="Bold">Inspection Result</span> to <span class="Italics">Unspecified</span> when no Determined Value is entered.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Unspecified Inspection Result.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Use Unspecified Status on Test Order setting in Quality Management Setup</p>
+        <p class="ccTextvorlage">When the <span class="Bold">Use Unspecified Status on Test Order</span> check box is selected, the value in the <span class="Bold">Inspection Result</span> field in the Test Order is determined as follows:</p>
+        <ul>
+            <li class="ccAufzählungblau">Items are not OK – when one of the Test Order Properties tests failed (<span class="Bold">Valid Determined Value</span> = <span class="Italics">No</span>)</li>
+            <li class="ccAufzählungblau">Items are OK – when all Test Order Properties tests passed (<span class="Bold">Valid Determined Value</span> = <span class="Italics">Yes</span>)</li>
+            <li class="ccAufzählungblau">Unspecified – when no <span class="Bold">Determined Value</span> was entered in at least one Test Order Property from a Test Order Property Set with Measuring Testing.</li>
+        </ul>
+        <p class="ccTextvorlage">The <span class="Bold">Inspection Result</span> field on the Test Order is editable when the value is set to <span class="Italics">Unspecified</span>.</p>
+        <p class="ccTextvorlage">When the test order <span class="Bold">Status</span> = <span class="Italics">Testing Finished</span> and the <span class="Bold">Inspection Result</span> = <span class="Italics">Unspecified</span>, the Test Order cannot be finished unless the <span class="Bold">Inspection Result</span> is changed to <span class="Italics">Items are OK</span> or <span class="Italics">Items are not OK</span>. However, the value in the <span class="Bold">Inspection Result</span> field can only be changed by users that have been authorized to <span class="Bold">Update Inspection Result</span> in the <span class="Bold">User Setup</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Unspecified Inspection Result_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Update Inspection Result setting in User Setup</p>
+        <p class="ccDemoStepHeading">Example – No Determined Value in Value Recording</p>
+        <p class="ccTextvorlage">In this example, value recording is done on a test order that includes one measuring test property set that does not have an expected value. Instead of entering zero (0), the <span class="Bold">Property Tested</span> check box is selected on the line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Unspecified Inspection Result_2.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 317px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Property Tested check box selected on value recording line instead of entering a Determined Value</p>
+        <p class="ccTextvorlage">After the other property sets are tested and the test order has <span class="Bold">Status</span> = <span class="Italics">Testing Finished</span>, the <span class="Bold">Inspection Result</span> field is set to <span class="Italics">Unspecified</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Unspecified Inspection Result_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Inspection Result = Unspecified for Test Order with blank Determined Value on measuring test</p>
+        <p>When the <span class="Bold">Inspection Result</span> is set to <span class="Italics">Unspecified</span>, the field is editable and must be changed to <span class="Italics">Items are OK</span>/<span class="Italics">Items are not OK</span> before the Test Order can be closed. If <span class="Bold">Finish</span> is clicked while <span class="Bold">Inspection Result</span> is set to <span class="Italics">Unspecified</span>, an error will appear.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Unspecified Inspection Result_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Error generated by trying to finish a Test Order with Inspection Result = Unspecified </p>
+        <p class="ccTextvorlage">In this example, the test was valid and did pass, so the <span class="Bold">Inspection Result</span> is set to <span class="Italics">Items are OK</span>. The <span class="Bold">Inspection Result</span> field is no longer editable and the Test Order can be finished.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Unspecified Inspection Result_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Inspection Result set to Items are OK, and ready to be finished</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Important</p>
+            <p class="ccTextvorlageNotebody">If changes need to be made to tested lines with a blank <span class="Bold">Determined Value</span> field (e.g., because it was missed during the testing process), the <span class="Bold">Property Tested</span> check box must be cleared on the line before entering a value in the <span class="Bold">Determined Value</span> field otherwise it will be ignored for the Inspection Result.</p>
+        </div>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Reset Inspection Result</h4>
+            <p>If for any reason the <span class="Bold">Inspection Result</span> needs to be reset to <span class="Italics">Unspecified</span>, only an authorized user can run the “Reset Inspection Result” function on the <span class="Bold">Actions</span> FastTab of the Test Order.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Unspecified Inspection Result_6.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 380px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Inspection Result reset to Unspecified</p>
+        </div>
+    </body>
+</html>

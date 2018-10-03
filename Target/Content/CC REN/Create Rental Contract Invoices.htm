@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="902" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Ref236733509"></a><a name="_Toc434929961"></a>Create Rental Contract Invoices</h2>
+        <p class="ccTextvorlage">As an alternative to posting invoices for each rent order individually, use the “Create Rental Contract Invoice” batch job to create invoices for multiple rent orders. </p>
+        <p class="ccTextvorlage">When the batch job is run, the program automatically fills in the relevant fields on the invoices with information from the rent order. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Create Rental Contract Invoices.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Create Rental Contract Invoice batch job opened from the Periodic Activities menu</p>
+        <p class="ccTextvorlage">When running this function from the Periodic Activities menu, the <span class="Bold">Posting Date</span> field is populated with the work date and the <span class="Bold">Invoice to Date</span> field is empty. </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If a filter is set on a <span class="Bold">Rent Order No.</span> in the <span class="Bold">Rental Instance</span> FastTab, delete the value in the filter before running the function.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434929962"></a>Exercise – Run the Create Rental Invoices Batch Job</h3>
+        <p class="ccTextvorlage">On January 1, 2019, you create and ship two orders: </p>
+        <ul>
+            <li class="ccAufzählungblau">Two units of item R-30000-01 to customer R-30000 for the period of January 1, 2019 – February 28, 2019.</li>
+            <li class="ccAufzählungblau">Four units of item R-30000-02 to customer R-30000 for the period of January 1, 2019 – January 31, 2019.</li>
+        </ul>
+        <p class="ccTextvorlage">Instead of creating separate invoices for the month of January, you decide to run the “Create Rental Contract Invoice” batch job through January 31, 2019.</p>
+        <p class="ccDemoStepHeading">Create the Rent Orders</p>
+        <p class="ccTextvorlage">Follow these steps to create the rent orders:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Set the Work Date to 01/01/19.</li>
+            <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-30000.</li>
+            <li class="ccTextvorlageNumberedList">In the lines, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Item</li><li class="ccTextvorlageNumberedList">No. = R-30000-01</li><li class="ccTextvorlageNumberedList">Quantity = 2</li><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Month Based = Yes</li><li class="ccTextvorlageNumberedList">Rental Start Date = 01/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 02/28/19</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Insert another order for customer R-30000.</li>
+            <li class="ccTextvorlageNumberedList">In the lines, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Item</li><li class="ccTextvorlageNumberedList">No. = R-30000-02</li><li class="ccTextvorlageNumberedList">Quantity = 4</li><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Rental Start Date = 01/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 01/31/19</li><li class="ccTextvorlageNumberedList">Rate Unit Price = 280 (if missing)</li></ol></li>
+        </ol>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Close the Rent Order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Run the Create Rental Contract Invoices Batch Job</p>
+        <p class="ccTextvorlage">Follow these steps to run the “Create Rental Contract Invoice” batch job:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under <span class="CCBausteinInhaltZchn">cc|rental</span>, click <span class="Bold">Periodic Activities &gt; Create Contract Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 01/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 01/31/19. </li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Bill to Customer No.</span> filter, enter R-30000.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rent Order No.</span> filter, delete the value if one exists.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Create Rental Contract Invoices_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Create Rental Contract Invoice batch job with the Rent Order No. filter cleared</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> and accept the confirmation messages. The following message appears stating how many invoices were created:</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Create Rental Contract Invoices_2.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Invoice creation confirmation message</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the message.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under <span class="CCBausteinInhaltZchn">cc|rental</span>, click <span class="Bold">Contract Management &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the first invoice and notice that the invoice period is 01/01/19 – 01/31/19, not through the rental end date of 02/28/19 because the invoice to date was set to 01/31/19.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Create Rental Contract Invoices_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Invoice created from the Create Rental Contract Invoice batch job</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Open the second invoice and notice that the invoice period is 01/01/19 – 01/31/19.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Create Rental Contract Invoices_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Invoice created from the Create Rental Contract Invoice batch job</p>
+        <ol start="12">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under <span class="CCBausteinInhaltZchn">cc|rental</span>, click <span class="Bold">Contract Management &gt; Rent Orders</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open each rent order created in this exercise and then click <span class="Bold">Navigate &gt; Entries &gt; Rental Ledger Entries</span> on the ribbon. Notice that the posted entries have been closed.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Create Rental Contract Invoices_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Rental Ledger Entries for posted invoices created from the Create Rental Contract Invoice batch job</p>
+        <p class="ccTextvorlagenospace">
+        </p>
+    </body>
+</html>

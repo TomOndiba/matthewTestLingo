@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="758" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256668"></a>Trading Unit – Items</h3>
+            <p class="ccTextvorlage">Item Trading Units require more settings than variants. In the <span class="Bold">Units of Measure</span> page, one item extension must be entered for each unit of measure. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Trading Unit Items.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Item extension for units of measure</p>
+        </div>
+        <p class="ccTextvorlage">When a new item unit of measure is added to an item that has the Item trading unit selected, a new item is created automatically and is linked to the base item. The entry made in the <span class="Bold">Item Extension</span> field of the corresponding unit of measure is added to the end of the new item number.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Trading Unit Items_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="_Ref286332338"></a>: New unit of measure 4 L added to item P-10502</p>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#_Ref286332338" class="Figure">Fig. 2</MadCap:xref>, the 4 L unit of measure was added to item P-10502. The 4 L unit of measure is set up with an item extension of -4L.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Trading Unit Items_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="_Ref286332361"></a>: Item P-10502-4L created from item P-10502</p>
+        <p class="ccTextvorlage">As <MadCap:xref href="#_Ref286332361" class="Figure">Fig. 3</MadCap:xref> illustrates, item P-10502-4L was created from item P-10502. The same information from P-10502 was transferred to item P-10502-4L with some exceptions, including but not limited to:</p>
+        <ul>
+            <li class="ccAufzählungblau"><span class="Bold">Item No.</span> contains the item extension</li>
+            <li class="ccAufzählungblau"><span class="Bold">Base Unit of Measure</span> from the unit of measure added to item P-10502 and the base unit of measure of the base item has been converted to 4 L</li>
+            <li class="ccAufzählungblau"><span class="Bold">Trading Unit per Item UOM</span> is blank</li>
+            <li class="ccAufzählungblau"><span class="Bold">Trading Unit Item</span> check box is selected</li>
+            <li class="ccAufzählungblau"><span class="Bold">Base Trading Unit Item</span> links to item P-10502</li>
+        </ul>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Base Trading Unit Item Sorting</h4>
+            <p class="ccTextvorlage">In the <span class="Bold">Item List</span> page (or <span class="Bold">Items</span> list page), the <span class="Bold">Base Trading Unit Item</span> field has been added to provide an overview of the item trading unit structure. </p>
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">This field must be added manually using the “Choose Columns” function.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Trading Unit Items_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Base Trading Unit Item field added to Item List page, sorted by item number</p>
+        </div>
+        <p class="ccTextvorlage">Click the <span class="Bold">Base Trading Unit Item</span> field name to re-sort the <span class="Bold">Item List</span> page and indent the sub-items below the base item.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Trading Unit Items_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Sub-items indented below the base item P-10502</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Trading Unit – Item Adjustments</h4>
+        <p class="ccTextvorlage">To simplify the maintenance of the data that is copied to the new sub-item that is created for each item unit of measure of a base item, use the <span class="Bold">Trading Unit Item Adjustment</span> page to define the fields that should be copied for all sub-items during changes in the base item.</p>
+        <p class="ccTextvorlage">The <span class="Bold">Trading Unit Item Adjustment</span> page is accessed from the Manufacturing, Administration menu, under Setup.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Trading Unit Items_5.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 599px;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6"><a name="_Ref390245150"></a>: Trading unit item adjustment setup</p>
+        <p class="ccTextvorlage">When creating a sub-item, the quantity per unit of measure related to the base item can be taken into consideration by selecting the <span class="Bold">Consider Quantity</span> check box. For example, a sub-item is created for a pallet (1 pallet = 10 pieces). If the unit price is 7 EUR for one piece, then the unit price of the sub-item for pallets is 70 because the unit price from the base unit was multiplied by 10. </p>
+        <p class="ccTextvorlage">Select the <span class="Bold">Skip</span> check box on any fields that should not be copied to the sub-item. As illustrated in <MadCap:xref href="#_Ref390245150" class="Figure">Fig. 6</MadCap:xref>, the value in the <span class="Bold">Shelf No.</span> field will not be transferred from base items when sub-items are created.</p>
+    </body>
+</html>

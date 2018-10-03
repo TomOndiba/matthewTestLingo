@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434256613"></a>Manufacturing Dimensions on Production Order Lines</h2>
+        <p class="ccTextvorlage">When production order lines are created, the default manufacturing dimensions from the item are transferred to the production order line. If the production order line contains an item variant code and the manufacturing dimension setup for the item variant exists, the default manufacturing dimensions of the item variant are copied to the production order line instead of the default manufacturing dimension of the item.</p>
+        <p class="ccTextvorlage">If the production order lines are sequence planned, the default manufacturing dimensions from any existing sequence work center, tool, or insert are also transferred to the production order line. </p>
+        <p class="ccTextvorlage">If the production order line is related to a sales order line, the customer manufacturing dimension value of the sales order is also transferred to the production order line. If multiple production order lines are combined that are connected to different sales orders, and customer manufacturing dimensions exist with different priorities, then only the dimension with the highest priority is transferred to the production order line.</p>
+        <p class="ccTextvorlage">The <span class="Bold">Priority</span> field in the <span class="Bold">Manufacturing Dimensions Setup</span> page defines the order of the different default manufacturing dimensions to transfer.</p>
+        <p class="ccTextvorlage">For example, assume that the item and the work center in a production order line have the same default manufacturing dimension. Only the default manufacturing dimension value of the type with the highest priority in the manufacturing dimension setup is transferred to the production order line. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Manufacturing Dimensions on Prod.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref286332171"></a>: Priority on manufacturing dimensions</p>
+        <p class="ccTextvorlage">As <MadCap:xref href="#_Ref286332171" class="Figure">Fig. 1</MadCap:xref> illustrates, the item has a higher priority than the work center, so the manufacturing dimensions on the production order line will come from the item.</p>
+    </body>
+</html>

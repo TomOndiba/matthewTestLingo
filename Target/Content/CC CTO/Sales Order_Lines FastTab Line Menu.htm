@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="914" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref369439994"></a><a name="_Toc434568017"></a>Lines FastTab, Line Menu</h3>
+        <p class="ccTextvorlage">The following menu items appear on the <span class="Bold">Line</span> menu, accessed from the <span class="Bold">Lines</span> FastTab.</p>
+        <ul>
+            <li class="ccAufzählungorange"><span class="Underline">Checklist</span>: Opens the assigned document checklist.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Attributes</span>: Here attributes and attribute variants are assigned to the item in the sales line. This assignment applies only for the sales line. If attributes have already been assigned to the item in the item master, these are transferred to the sales line but can be modified here.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Document BOM</span>: Opens the document BOM. If no document BOM exists when this menu item is selected, the “Request BOM” function is run automatically to create one.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Split Order Line</span>: Opens the <span class="Bold">Sales Line Splitting</span> page where sales lines – which already have checklists and/or Document BOMs – can be split into separate lines for individual configuration (refer to topic <MadCap:xref href="Sales Line Splitting.htm#_Ref311196568">“Sales Line Splitting” on page 1</MadCap:xref>). </li>
+            <li class="ccAufzählungorange"><span class="Underline">Create Prod. Order</span>: Generates a production order based on the document BOM if it was generated from the configuration or created manually. If the production order is generated here, there are two options:<ul><li>Create Prod. Order without Variants – This function creates a production order without creating variant codes, production BOMs, or routings.</li><li>Create Prod. Order with Variants – The system generates a variant for all production items with the <span class="Bold">Part Type</span> field set to <span class="Italics">Production</span> and generates a manufacturing schedule and a manufacturing BOM. The automatically generated production BOMs and routings are linked to the item variant.</li></ul></li>
+        </ul>
+        <p class="ccAufzahlungorangenobullet">Whether the system creates production orders with or without variant codes by default is defined on the <span class="Bold">Configure to Order Setup</span> page (refer to topic <MadCap:xref href="Manufacturing FastTab.htm#_Ref402527007">“Manufacturing FastTab” on page 1</MadCap:xref>).</p>
+        <div class="ccDIV">
+            <p class="ccAufzahlungorangenobullet">When the production order is generated for the <span class="Italics">Create Prod. Order with Variants</span> option, the following steps are performed by the system:</p>
+            <ol style="list-style-type: decimal;margin-left: 72pt;" start="1">
+                <li class="ccTextvorlageNumberedListinBulletList">Generation of one variant per production item with the <span class="Bold">Part Type</span> field set to <span class="Italics">Production</span>.</li>
+            </ol>
+            <ol style="list-style-type: decimal;margin-left: 72pt;" start="2">
+                <li class="ccTextvorlageNumberedListinBulletList">Creation of a manufacturing BOM using the default number series (refer to topic <MadCap:xref href="Manufacturing FastTab.htm#_Ref402526987">“Manufacturing FastTab” on page 1</MadCap:xref>).</li>
+            </ol>
+            <ol style="list-style-type: decimal;margin-left: 72pt;" start="3">
+                <li class="ccTextvorlageNumberedListinBulletList">Creation of a manufacturing routing using the default number series (refer to topic <MadCap:xref href="Manufacturing FastTab.htm#_Ref402526994">“Manufacturing FastTab” on page 1</MadCap:xref>).</li>
+            </ol>
+            <ol style="list-style-type: decimal;margin-left: 72pt;" start="4">
+                <li class="ccTextvorlageNumberedListinBulletList">Assignment of the manufacturing BOM and the routing on the Item Variant table.</li>
+            </ol>
+            <ol style="list-style-type: decimal;margin-left: 72pt;" start="5">
+                <li class="ccTextvorlageNumberedListinBulletList">Creation of the production order based on the BOM entered and the routing.</li>
+            </ol>
+        </div>
+        <ul>
+            <li class="ccAufzählungorange"><span class="Underline">PDB Interface</span>: Enables the document BOM to be exported to the PDM system “ProfiDB”, or a document BOM created there can be imported. </li>
+            <li class="ccAufzählungorange"><span class="Underline">Characteristic Search Tree</span>: Opens the <span class="Bold">Characteristic Search Tree</span> page where an item can be searched using characteristics (refer to topic <MadCap:xref href="Search Characteristics.htm#_Ref277406973">“Search Characteristics” on page 1</MadCap:xref>).</li>
+            <li class="ccAufzählungorange"><span class="Underline">Document Schedule</span>: Either opens a generated Document Schedule or the user is asked to create one (refer to topic <MadCap:xref href="Operation Scheduling.htm#_Ref277406996">“Operation Scheduling” on page 1</MadCap:xref>).</li>
+            <li class="ccAufzählungorange"><span class="Underline">Construction Order</span>: Either opens the construction order generated or asks the user to create one. The Document BOM will be copied into the Construction Order.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Create Construction Orders</span>: Creates construction orders for each selected line on a sales order.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Order Network</span>: Refer to topic <MadCap:xref href="Order Network.htm#_Toc434568049">“Order Network” on page 1</MadCap:xref>.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Line Texts</span>: Opens the <span class="Bold">Edit Text</span> page, where line-related text can be stored. Refer to topic <MadCap:xref href="cc text module.htm">“cc|text module” on page 1</MadCap:xref> for more information.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Calculation Doc. BOM</span>: Opens the <span class="Bold">Calculation List</span> page to create a new calculation or to view an existing calculation for the Document BOM (refer to topic <MadCap:xref href="Document BOM Calculations.htm#_Ref310346505">“Document BOM Calculations” on page 1</MadCap:xref>). </li>
+        </ul>
+    </body>
+</html>

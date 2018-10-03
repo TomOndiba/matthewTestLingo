@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="903" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref382152844"></a><a name="_Toc445394541"></a>Vacation Administration</h2>
+        <p class="ccTextvorlage"><span class="CCBausteinInhaltZchn">cc|project</span> includes vacation administration functionality that has been designed to fit in with the job structures. This enables vacation administration to be performed together with job planning.</p>
+        <p class="ccTextvorlage">The individual vacation requests are entered by line. Once the date details have been entered, the scheduled time is calculated automatically and set up in the calendar as scheduled time.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc445394542"></a>Setup</h3>
+        <p class="ccTextvorlage">It is not necessary to create job lines to use the functionality of the vacation module. This is only needed if all processing should be done with <span class="CCBausteinInhaltZchn">cc|project</span> as a common platform.  </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Vacation Administration.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Vacation Administration job in the Job Budget Calculation view</p>
+        <p class="ccTextvorlage">There is no binding structure for the lines; it is only important that a link is created to a <span class="CCBausteinInhaltZchn">cc|project</span> WBS Position. </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Resource Card</h4>
+        <p class="ccTextvorlage">Settings for vacation administration are defined for a person on the Resource Card. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Vacation Administration_1.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Vacation Administration settings on the Resource Card</p>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Vacation</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 142px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Vacation Entitlement Days/Year</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the number of vacation days per year for which the employee is entitled.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Vacation Entitlement Available</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the number of vacation days available for the employee, populated by posting the Entitlement values in the Vacation Entry process (refer to topic <MadCap:xref href="#_Ref383164949">“Vacation Entitlement Posting” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Application for Leave</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the number of vacation days pending in the Application for Leave process (refer to topic <MadCap:xref href="#_Ref383164993">“Application for Leave” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Vacation Job No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Provides the link to a vacation job in <span class="CCBausteinInhaltZchn">cc|project</span>; used when Application for Leave is posted and job journal entries are created.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Vacation WBS</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the link to the specific WBS position of the vacation job in <span class="CCBausteinInhaltZchn">cc|project</span>; used when Application for Leave is posted and job journal entries are created </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc445394543"></a>Vacation Processing</h3>
+            <p class="ccTextvorlage">All vacation postings will be posted and recorded through an individual vacation journal. Two types of postings can be undertaken:</p>
+            <ul>
+                <li class="ccAufzählungblau">Vacation Entitlement Posting –Typically used for annual vacation entitlement but can be used for special types of leave.</li>
+                <li class="ccAufzählungblau">Application for Leave – Each application for leave will be registered through the journal.</li>
+            </ul>
+            <p class="ccTextvorlage">All leave-related postings can be registered through the menu processing in the journal. The vacation entries per person are then transferred to the Resource Card for each person. </p>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.1    "><a name="_Ref383164949"></a>Vacation Entitlement Posting</h4>
+        <p class="ccTextvorlage">The initial entry of vacation entitlement for each person is registered and posted in the <span class="Bold">Vacation Entry</span> page, accessed from the <span class="CCBausteinInhaltZchn">cc|project</span> menu by clicking <span class="Bold">Processing &gt; Vacation Entry</span>.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">This process should be done annually to register vacation entitlements.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Vacation Administration_2.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Vacation Entry page with new line added but no entries</p>
+        <p class="ccTextvorlage">Entitlement can be entered manually or through the “Next Entitlement for All” function, which automatically suggests the vacation entitlement for all resources with <span class="Bold">Type</span> = <span class="Italics">Person</span>. To use the “Next Entitlement for All” function, enter a line to be used as a template for the other resources. The following data will then be transferred to all other persons: </p>
+        <ul>
+            <li class="ccAufzählungblau">Document No.</li>
+            <li class="ccAufzählungblau">Posting date</li>
+            <li class="ccAufzählungblau">Start </li>
+            <li class="ccAufzählungblau">Finish</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Vacation Administration_3.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Preparing to select the “Next Entitlement for All” function after template line entry</p>
+        <p class="ccTextvorlage">Once the template is entered, click <span class="Bold">Actions &gt; Next Entitlement for All</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Vacation Administration_4.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Remaining resources added with the vacation entitlement as indicated on their Resource Cards</p>
+        <p class="ccTextvorlage">The Document No. is used as the basis for the administration of leave applications. Vacation entries can only be created if there is enough entitlement remaining for the document number.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">No link has been set to the VACATION job because it is only used with the “Application for Leave” function (refer to topic <MadCap:xref href="#_Ref383164993">“Application for Leave” on page 1</MadCap:xref>).</p>
+        <p class="ccTextvorlage">Once all lines have been created and are ready for posting, click <span class="Bold">Post</span> on the ribbon.</p>
+        <p class="ccTextvorlage">The current entitlement can be reviewed on the Resource Card for each person. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Vacation Administration_5.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Vacation entitlement assigned to resource P016</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.2.2    "><a name="_Ref383164993"></a>Application for Leave</h4>
+            <p class="ccTextvorlage">Applications for leave can be performed:</p>
+            <ul>
+                <li class="ccAufzählungblau">per person from the <span class="Bold">Resource Card</span> or in the <span class="Bold">Vacation Entry</span> page</li>
+                <li class="ccAufzählungblau">in a batch for multiple persons/days in the <span class="Bold">Vacation Entry</span> page</li>
+            </ul>
+        </div>
+        <p class="ccTextvorlage">From the Resource Card, click <span class="Bold">Navigate &gt; Application for Leave</span>. The <span class="Bold">Vacation Entry</span> page opens with the <span class="Bold">Person No.</span> and <span class="Bold">Entry Type</span> fields auto-populated with the &lt;Resource No.&gt; and Application for leave, respectively.</p>
+        <p class="ccTextvorlage">The document number of the last open vacation entitlement is displayed in the <span class="Bold">Document No.</span> field and the <span class="Bold">Description</span> field indicates the description of the last open vacation entitlement and the remaining number of days.</p>
+        <p class="ccTextvorlage">The <span class="Bold">Start</span> and <span class="Bold">Finish</span> dates need to be entered, which will be the base for the calculation of Vacation Days of the relevant calendar for this person. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Vacation Administration_6.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Vacation Entry with granted application for leave for resource P016</p>
+        <p class="ccTextvorlage">Vacation days can only be posted if they are scheduled and granted. To schedule the days, click <span class="Bold">Actions &gt; Schedule Vacation</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Vacation Administration_7.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Vacation Entry with scheduled leave for resource P016</p>
+        <p class="ccTextvorlage">The scheduler will generate calendar entries, which can be manually amended (i.e. for half days). In any case, the number of days entered must match the number of days scheduled.</p>
+        <p class="ccTextvorlage">Prior to posting, the <span class="Bold">Granted</span> check box must be manually selected on the line if unselected. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Vacation Administration_8.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Vacation Entry with granted leave for resource P016</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">This entire process can also be done for multiple users and days directly in the <span class="Bold">Vacation Entry</span> page, when opened from the <span class="CCBausteinInhaltZchn">cc|project</span> <span class="Bold">&gt; Processing</span> menu.</p>
+        <p class="ccTextvorlage">By posting the vacation days, the available entitlement is deducted and indicated on the Resource Card. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Vacation Administration_9.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Resource Card with entitlement and remaining leave for resource P016</p>
+        <p class="ccTextvorlage">Posted entries are accessible by clicking the value in the <span class="Bold">Vacation Entitlement Available</span> field on the Resource Card.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Vacation Administration_10.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Posted vacation entries for resource P016</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Additionally, the vacation days are transferred to the resource’s Time Entry job journal. The <span class="Bold">Job No.</span> and <span class="Bold">WBS</span> assigned to the Resource Card are automatically populated.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Vacation Administration_11.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Vacation entries transferred to the Job Time Entry page</p>
+        </div>
+    </body>
+</html>

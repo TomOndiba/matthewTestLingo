@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="922" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref421543557"></a><a name="_Toc442095782"></a>Purchase Line</h2>
+        <p class="ccTextvorlage">In this section, the <span class="CCBausteinInhaltZchn">cc|vendor rating</span>-specific fields on the purchase line are described.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Purchase Line.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref418244716"></a>: Purchase Order page with vendor rating fields on the lines</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 122px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Duty of Rating</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">This check box is selected if the <span class="Bold">Duty of Rating</span> check box is selected on the Vendor Card and/or in the <span class="Bold">Item Vendor Catalog/Vendor Item Catalog</span> pages. This field is not editable.</p>
+                        <p class="ccTabellenText">Only these purchase lines are considered for the vendor rating that have the <span class="Bold">Duty of Rating</span> check box selected.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Assert Terms of Delivery</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">This check box must be selected manually if the delivery date (Promised Receipt Date) and the shipment quantity are known.</p>
+                        <p class="ccTabellenText">The check box will be selected automatically when releasing the order if the <span class="Bold">Assert Terms of Delivery on Release</span> check box is selected in the <span class="Bold">Vendor Rating Setup</span> page. An additional effect of this setting is that the value in the <span class="Bold">Planned Receipt Date</span> field of the purchase line is copied to the <span class="Bold">Promised Receipt Date</span> field if a promised receipt date has not been entered yet.</p>
+                        <p class="ccTabellenText">If this check box is not selected automatically when releasing the order, the <span class="Bold">Promised Receipt Date</span> must be entered manually. If this field is blank during the posting of the receipt, the receipt line will be rated with a score of 100 in the Due Date Rating.</p>
+                        <p class="ccTabellenText">The ordered quantity must be entered in the <span class="Bold">Quantity</span> field. The system automatically copies this value to the <span class="Bold">Assert Purchase Order Quantity</span> field if the <span class="Bold">Assert Terms of Delivery</span> check box is selected.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">If the value in the <span class="Bold">Quantity</span> field is changed, then the <span class="Bold">Assert Terms of Delivery</span> check box should be re-selected to refresh the quantity in the <span class="Bold">Assert Purchase Order Quantity</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Promised Receipt Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The promised receipt of goods date is entered in the <span class="Bold">Promised Receipt Date</span> field on the <span class="Bold">Shipping</span> FastTab and is then transferred to the purchase line if the <span class="Bold">Assert Terms of Delivery</span> check box is selected. This is the receipt date being promised by the vendor.</p>
+                        <p class="ccTabellenText">This field must be filled before posting the receipt. Together with the <span class="Bold">Arrival Date</span>, the promised receipt date serves as a calculation field for the automatic Due Date Rating of a shipment. This field was added because the actual delivery date may often vary profoundly from the posting date of the delivery and thus the delivery line rating would be falsified.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Arrival Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Actual date of the receipt. This field is initialized with the posting date of the purchase order – if the <span class="Bold">Use Post. Date as Arrival Date</span> check box is selected on the <span class="Bold">Vendor Rating Setup</span> page – but can be changed manually by the user. </p>
+                        <p class="ccTabellenText">Together with the <span class="Bold">Promised Receipt Date</span>, the arrival date serves as a calculation field for the automatic Due Date Rating of a shipment.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Assert Purchase Order Quantity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Non-editable field that is filled automatically with the value from the <span class="Bold">Quantity</span> field if the <span class="Bold">Assert Terms of Delivery</span> check box has been selected by the user.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

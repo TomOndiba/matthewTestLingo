@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="2" MadCap:lastHeight="559" MadCap:lastWidth="605" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref310440211"></a><a name="_Ref310440217"></a><a name="_Ref310440290"></a><a name="_Ref310440354"></a><a name="_Ref310440361"></a><a name="_Ref310440374"></a><a name="_Toc434568073"></a>Create Purchase Documents for G/L Account and Components</h2>
+        <p class="ccTextvorlage">Instead of using a dummy item number when an item does not exist when demand is created, a purchase quote (for open Document BOM lines), purchase order or requisition line can be created against a G/L account or a component. This functionality is available from a Document BOM or Construction Order Line.</p>
+        <p class="ccTextvorlage">On each page, there is a “Purch. G/L Acc./Item” function (on the <span class="Bold">Actions</span> tab) that allows the user to create either a Requisition Line, Purchase Quote or a Purchase Order for a line type = <span class="Italics">G/L Account</span> or <span class="Italics">Item</span>. </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The G/L Account must have a vendor assigned in the <span class="Bold">Vendor No.</span> field on the <span class="Bold">Purchase</span> FastTab of <span class="Bold">G/L Account Card</span> page.</p>
+        <p class="ccTextvorlageNotebody">Additionally, a check has been included to prevent the creation of Purchase Quotes for released Document BOM lines because Microsoft Dynamics NAV cannot create a reservation to a Purchase Quote. Therefore, this check ensures that the Document BOM line will not create any other demand while a purchase quote has been created against it.</p>
+        <p class="ccTextvorlage">Once a purchase document is created for a Document BOM/Construction Order Line, no changes can be made to the line, even after posting. If the user needs to delete the Document BOM line or Construction Order line, the system generates warning and question messages.</p>
+        <p class="ccTextvorlage">Line Text that is linked to the Document BOM/Construction Order Line is also copied to the purchase order line.</p>
+    </body>
+</html>

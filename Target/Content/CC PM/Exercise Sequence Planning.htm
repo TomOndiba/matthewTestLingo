@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="845" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256590"></a>Exercise – Sequence Planning</h3>
+            <p class="ccTextvorlage">Create and release a sales order for customer 50000 with the following three lines of item P-10002:</p>
+            <ul>
+                <li class="ccAufzählungblau">Planned Shipment Date February 5, 2019, 25 PCS</li>
+                <li class="ccAufzählungblau">Planned Shipment Date February 10, 2019, 30 PCS</li>
+                <li class="ccAufzählungblau">Planned Shipment Date February 28, 2019, 45 PCS</li>
+            </ul>
+        </div>
+        <p class="ccTextvorlage">Release the sales order and then create the production orders directly from each sales line. Afterwards, test the Sequence Planning with different functions.</p>
+        <p class="ccDemoStepHeading">Create the Sales Order</p>
+        <p class="ccTextvorlage">Follow these steps to create the sales order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under Manufacturing, click <span class="Bold">Planning &gt; Sales Orders</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">Press ENTER to insert the next number in the series.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Customer</span> field, enter 50000.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, in the <span class="Bold">Type</span> field, enter Item.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter P-10002.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Location Code</span> field, enter MAINWH.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 25.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Planned Shipment Date</span> field, enter 02/05/19.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, in the <span class="Bold">No.</span> field, enter P-10002.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Location Code</span> field, enter MAINWH.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 30.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Planned Shipment Date</span> field, enter 02/10/19.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, in the <span class="Bold">No.</span> field, enter P-10002.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Location Code</span> field, enter MAINWH.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 45.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Planned Shipment Date</span> field, enter 02/28/19.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Release</span>.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create the Production Orders from the Sales Order</p>
+            <p class="ccTextvorlage">Follow these steps to create the production order for each order:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">Select the first and third sales lines.</li>
+                <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Order &gt; Create Prod. Order</span>.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Create Order From Sales Line</span> dialog box, click <span class="Bold">Yes</span> to accept the default settings.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the confirmation message.</li>
+                <li class="ccTextvorlageNumberedList">Select the second sales line.</li>
+                <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Order &gt; Create Prod. Order</span>.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Create Order From Sales Line</span> dialog box, select the status of <span class="Italics">Released</span> and then click <span class="Bold">Yes</span>.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the confirmation message.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the Sales Order.</li>
+            </ol>
+        </div>
+        <p class="ccDemoStepHeading">Review the Production Orders in Sequence Planning</p>
+        <p class="ccTextvorlage">Follow these steps to review the production orders in Sequence Planning:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under Manufacturing, click <span class="Bold">Planning &gt; Sequence Planning</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">General</span> section, select the line for work center M002.</li>
+            <li class="ccTextvorlageNumberedList">Scroll to the bottom of the <span class="Bold">Lines</span> FastTab and review the last three lines, which were created from the sales order.</li>
+            <li class="ccTextvorlageNumberedList">Test various functions.</li>
+        </ol>
+    </body>
+</html>

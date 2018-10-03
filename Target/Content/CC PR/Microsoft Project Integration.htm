@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref381259745"></a><a name="_Ref381296394"></a><a name="_Toc445394495"></a>Microsoft Project Integration</h2>
+        <p class="ccTextvorlage">For more complex planning needs, <span class="CCBausteinInhaltZchn">cc|project</span> integrates with Microsoft Project, thereby allowing project plans to be exported from <span class="CCBausteinInhaltZchn">cc|project</span> into Microsoft Project though a bi-directional interface. From there, project plans can be modified and then returned to <span class="CCBausteinInhaltZchn">cc|project</span>. </p>
+        <p class="ccTextvorlage">Additionally, complete project structures can be defined in Microsoft Project and then imported back into <span class="CCBausteinInhaltZchn">cc|project</span> and/or section of project structures.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc445394496"></a>Considerations for Microsoft Project Interface</h3>
+        <p class="ccTextvorlage">It is important to consider that there are two complex systems with separate logics (data export and data import). The interface is a great challenge for <span class="CCBausteinInhaltZchn">cc|project</span>, because as many structures as possible are integrated from Microsoft Project in <span class="CCBausteinInhaltZchn">cc|project</span>. But in some places compromises are needed because not all can be integrated 100%.</p>
+        <p class="ccTextvorlage">In practice it is necessary to adjust the interface data. There are some issues in different areas; the most important issues are described in the following sections.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Export to Microsoft Project</h4>
+        <p class="ccTextvorlage">This section explains the considerations for exporting to Microsoft Project.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 125px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 475px;" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Limitation</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Considerations</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Structures</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">In <span class="CCBausteinInhaltZchn">cc|project</span>, a process can be a normal process and a summary process at the same time. The reason for this is that a process can have a sub-structure – and on the other side, the process can be a planning process itself because there is time to plan from a remaining quantity. </p>
+                        <p class="ccTabellenText">In Microsoft Project, both functions are not possible.</p>
+                        <p class="ccTabellenText">The structure must be checked before export and some processes may need to be split into two processes. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calendar Entries</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Calendar entries can be exported from <span class="CCBausteinInhaltZchn">cc|project</span> to Microsoft Project. </p>
+                        <p class="ccTabellenText">In <span class="CCBausteinInhaltZchn">cc|project</span>, the calendar entries are administered independently from processes. Volitional dependencies will calculate by special functions, such as the Finish date of a process by using Effort Driven processes. </p>
+                        <p class="ccTabellenText">However, the interface needs to exactly match the calendar entries with the existing duration. If there are differences, Microsoft Project will calculate with own logic. This is a technical issue, but it’s important to know there could be problems.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Actual Work</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">In principle, this option has the same conventions as the calendar entries, but it is more difficult. The combinations of exiting calendar entries and actual work make the interface more complex. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Web Client / Mobile Application</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">When using the Web Client or Mobile Application, the export directly into a new file in Microsoft Project is not supported. Therefore, with these interfaces, the export file is downloaded from Microsoft Dynamics NAV and then opened manually in Microsoft Project.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td colspan="2" class="TableStyle-CC_TableStyleSheet-BodyA-Column1-Body1">
+                        <p class="ccTabellenText"><span class="Bold">Conclusion</span>
+                            <br />An export with the right structure and without the additional options works very well. The export should be used for a better planning in Microsoft Project with the graphical tool. However, use caution with trying to match calendar entries and actual.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Import from Microsoft Project</h4>
+        <p class="ccTextvorlage">This section explains the considerations for importing from Microsoft Project.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 125px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Limitation</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Considerations</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Structures</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Existing structures in <span class="CCBausteinInhaltZchn">cc|project</span> must match the structures in Microsoft Project before data is imported. </p>
+                        <p class="ccTabellenText">During the import, <span class="CCBausteinInhaltZchn">cc|project</span> tries to find every task using of the following mechanisms:</p>
+                        <ul>
+                            <li class="ccAufzählung">Import is based on a former export. <br /></li>
+                        </ul>
+                        <p class="ccAufzählung">In this case, the structure information has been sent to Microsoft Project before. Therefore, <span class="CCBausteinInhaltZchn">cc|project</span> can find the position exactly.</p>
+                        <ul>
+                            <li class="ccAufzählung">New positions the system can find by hierarchical structures only <br /></li>
+                        </ul>
+                        <p class="ccAufzählung">In this case, the exact position is not unique. Maybe a transfer of this position to another hierarchical structure is needed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Components</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">In Microsoft Project there are no components because it is not an ERP system. This can be handled using a preset default component for all import lines. For example, enter “Type” and “No.” in Microsoft Project because there are extended fields for that purpose. </p>
+                        <p class="ccTabellenText">But, this requires careful management.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Cost and Profit Planning</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Cost information cannot be transferred with the interface. The purpose of the interface is for planning. For all cost issues, <span class="CCBausteinInhaltZchn">cc|project</span> is the master system.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Resources</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText"><span class="CCBausteinInhaltZchn">cc|project</span> detects resources by the <span class="Bold">Code</span> field (a standard field in Microsoft Project in the Resource table). </p>
+                        <p class="ccTabellenText">Resources that do not exist in <span class="CCBausteinInhaltZchn">cc|project</span> but have been created in Microsoft Project can be imported, but this is not advised under normal circumstances because:</p>
+                        <ul>
+                            <li class="ccAufzählung">The available persons should be defined within <span class="CCBausteinInhaltZchn">cc|project</span>.</li>
+                            <li class="ccAufzählung">Capacities of these persons have to be calculated in <span class="CCBausteinInhaltZchn">cc|project</span>.</li>
+                            <li class="ccAufzählung">All data may be duplicated unnecessarily in <span class="CCBausteinInhaltZchn">cc|project</span>. </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calendar</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Importing data from an external system creates an issue of the leading system. In <span class="CCBausteinInhaltZchn">cc|project</span>, the calendar is organized. Normally it is not necessary to define it externally.</p>
+                        <p class="ccTabellenText">An external calendar can be imported if necessary and it will be used to calculate the processes. However, an external calendar cannot be imported with exception days because there is no structure for this in standard Microsoft Dynamics NAV.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Assignments</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Assignments are the resources to be linked with the processes.</p>
+                        <p class="ccTabellenText">These assignments can be imported from an external system. Alternatively, complete the assignments in <span class="CCBausteinInhaltZchn">cc|project</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calendar Entries</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">All existing calendar entries (except those with <span class="Bold">Schedule Type</span> = <span class="Italics">Fixed</span>) in <span class="CCBausteinInhaltZchn">cc|project</span> will be deleted if calendar entries are imported from Microsoft Project.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td colspan="2" class="TableStyle-CC_TableStyleSheet-BodyA-Column1-Body1">
+                        <p class="ccTabellenText"><span class="Bold">Conclusion</span>
+                            <br />For processes, predecessor links, Start, Finish and initial resource assignments (for existing resources) the import is very practical. All additional options need careful consideration so as to avoid unexpected planning conflicts.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc445394497"></a>Setup</h3>
+            <p class="ccTextvorlage">This section explains the setup necessary in <span class="CCBausteinInhaltZchn">cc|project</span> to use the Microsoft Project interface.</p>
+            <h4 class="Heading4" MadCap:autonum="1.1.2.1    ">Jobs Setup</h4>
+            <p class="ccTextvorlage">The following fields must be defined on the <span class="Bold">Planning</span> FastTab in the <span class="Bold">Jobs Setup</span> page. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Microsoft Project Integration.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Microsoft Project setup fields on the Jobs Setup page</p>
+        </div>
+        <p class="ccTextvorlage">The required fields in the <span class="Bold">Jobs Setup</span> page are explained in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 104px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">MSP Path</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the path to the Microsoft Project application.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">MSP Date Format</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines the format in which dates will be presented. The options are DDMMYY and MMDDYY.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">This format can be different than the one in the Microsoft Project version.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">MSP Import Comp. Type </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the type of component to be imported; used with the <span class="Bold">MSP Import Comp. No.</span> field. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Service (resource)</li>
+                            <li class="ccAufzählung">Item </li>
+                            <li class="ccAufzählung">General (component)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">MSP Import Comp. No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the specific component number based on the selected option in the <span class="Bold">MSP Import Comp. Type</span> field:</p>
+                        <ul>
+                            <li class="ccAufzählung">Service – Opens the <span class="Bold">Resource List</span> page</li>
+                            <li class="ccAufzählung">Item – Opens the <span class="Bold">Item List</span> page</li>
+                            <li class="ccAufzählung">General – Opens the <span class="Bold">General Components List</span> page</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.2    ">MSP Codes</h4>
+        <p class="ccTextvorlage">The MSP Code manages all the settings that are necessary for the interface with Microsoft Project. These codes are set up in the <span class="Bold">MSP Codes</span> page, accessed from the Job Card or the Job Budget Calculation view, each by clicking  <span class="Bold">Navigate &gt; MSP Codes</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Microsoft Project Integration_1.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: MSP Codes</p>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">MSP Codes</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 95px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier for the MSP Code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Short description of the MSP Code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Jobs</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">System-generated, indicates the number of jobs connected to this MSP Code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Multiple Jobs</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">If selected, multiple jobs are displayed within a single Microsoft Project.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h5 class="Heading5" MadCap:autonum="1.1.2.2.1    ">Actions Tab</h5>
+        <p class="ccTextvorlage">The <span class="Bold">Actions</span> tab contains only the “Create Standard Code” function, which is used to create an MSP Code for the current job. It populates the <span class="Bold">Code</span> and <span class="Bold">Description</span> fields with the same values from the job and auto-populates the <span class="Bold">Jobs</span> field with a 1.</p>
+        <div class="ccDIV">
+            <h5 class="Heading5" MadCap:autonum="1.1.2.2.2    ">Navigate Tab</h5>
+            <p class="ccTextvorlage">The functions on the <span class="Bold">Navigate</span> tab are described in the following sections.</p>
+            <h6 class="Heading6" MadCap:autonum="1.1.2.2.2.1    ">Options (Import and Export Default Settings)</h6>
+            <p class="ccTextvorlage">The <span class="Bold">Options</span> action opens the <span class="Bold">MSP Interface Options</span> page, which is used to set up the import and export defaults.</p>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Microsoft Project Integration_2.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: MSP Interface Options</p>
+        <p class="ccTextvorlage">The fields on the page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 64px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 93px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">FastTab</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td colspan="3" class="TableStyle-CC_TableStyleSheet-BodyD-Column1-Body1">
+                        <p class="ccTabellenText">General</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Transferred from the MSP Code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Transferred from the MSP Code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">MSP Path</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Transferred from Jobs Setup.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">MSP Filename</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Auto-generated file name starting with “MSP-CODE” concatenated with the Code value and “.xml” extension.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Jobs</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Transferred from the MSP Code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Multiple Jobs</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Transferred from the MSP Code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td colspan="3" class="TableStyle-CC_TableStyleSheet-BodyD-Column1-Body1">
+                        <p class="ccTabellenText">Import</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Import Comp. Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines the kind of new task to be passed from Microsoft Project.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Import Comp. No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines the specific number of the new task to be passed from Microsoft Project.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">New Planning Resources</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, newly created resources are passed from Microsoft Project.</p>
+                        <p class="ccTabellenTextNoteheading">Caution</p>
+                        <p class="ccTabellenTextNotebody">This option creates new Planning Resources in <span class="CCBausteinInhaltZchn">cc|project</span>. </p>
+                        <p class="ccTabellenText">The system checks the resources by the <span class="Bold">Code</span> field in the (MSP resource table). These new Planning Resources have no links to a person (resource) or resource group and therefore will have no capacity.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Import Assignments with Res.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the assignment of resources to tasks in Microsoft Project is accepted.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">This setting is transferred to the MSP Import Options dialog.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Import Calendar Entries</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, all calendar entries are passed from Microsoft Project individually.</p>
+                        <p class="ccTabellenTextNoteheading">Caution</p>
+                        <p class="ccTabellenTextNotebody">Importing existing processes will delete all calendar entries for this process (except for entries with <span class="Bold">Schedule Type</span> = Fixed).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td colspan="3" class="TableStyle-CC_TableStyleSheet-BodyD-Column1-Body1">
+                        <p class="ccTabellenText">Export</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Export Sorting</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines the sorting of lines to Microsoft Project. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">WBS – the existing job structure is exported.</li>
+                            <li class="ccAufzählung">Sorting No. – the job structure is exported based on the manual settings in the <span class="Bold">Sorting No.</span> field on the <span class="Bold">Planning Processes</span> page.</li>
+                        </ul>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">This setting is transferred to the MSP Export Options dialog.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Resources in Other jobs</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, export sums of all scheduled entries in other jobs to Microsoft ​​Project. </p>
+                        <p class="ccTabellenText">A date range must be specified in the <span class="Bold">Scheduled Start</span> and <span class="Bold">Scheduled Finish</span> fields. </p>
+                        <p class="ccTabellenText">When using this setting, it is important to consider the times that have been planned outside the current project. </p>
+                        <p class="ccTabellenText">This information is exported as the first line in Microsoft Project.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Scheduled Start</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies from which start date to transfer the scheduled times for planning resources from the project team to Microsoft ​​Project. </p>
+                        <p class="ccTabellenText">When using this setting, it is important to consider the times that have been planned outside the current project. </p>
+                        <p class="ccTabellenText">The corresponding date is represented by the <span class="Bold">Start</span> field in the first line of Microsoft Project.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Scheduled Finish</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies up to which date to transfer the scheduled times for planning resources from the project team to Microsoft ​​Project. </p>
+                        <p class="ccTabellenText">When using this setting, it is important to consider the times that have been planned outside the current project. </p>
+                        <p class="ccTabellenText">The corresponding date is represented by the <span class="Bold">Finish</span> field in the first line of Microsoft Project.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Export Calendar Entries</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, all of the individual calendar entries are exported to Microsoft Project.</p>
+                        <p class="ccTabellenTextNoteheading">Caution</p>
+                        <p class="ccTabellenTextNotebody">There is no guarantee of an exact export because Microsoft Project performs an independent calculation under different circumstances.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">Export Actual Work</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">If selected, current work is transferred to Microsoft Project.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc445394498"></a>Data Export to Microsoft Project</h3>
+            <p class="ccTextvorlage">Data from <span class="CCBausteinInhaltZchn">cc|project</span> can be exported to Microsoft Project from the following pages:</p>
+            <ul>
+                <li class="ccAufzählungblau">MSP Codes (<span class="Bold">Navigate</span> tab)</li>
+                <li class="ccAufzählungblau">Job Budget Calculation (<span class="Bold">Navigate</span> tab)</li>
+                <li class="ccAufzählungblau">Planning Processes (<span class="Bold">Job Planning and Processing &gt; Per Block &gt; Home</span> tab)</li>
+            </ul>
+        </div>
+        <p class="ccTextvorlage">In the <span class="Bold">Planning Processes</span> page, the lines to be exported are determined by the <span class="Bold">MSP Interface</span> check box.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Microsoft Project Integration_3.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: MSP Interface field on Planning Processes page</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The <span class="Bold">MSP Interface</span> check box is selected by default but can be cleared and re-selected by clicking <span class="Bold">MSP Lines &gt; Reset</span> or <span class="Bold">Set</span> on the <span class="Bold">Navigate</span> tab.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">To start the export process, click <span class="Bold">MS Project Export</span> on the ribbon.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Microsoft Project Integration_4.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: MSP Export Options</p>
+        </div>
+        <p class="ccTextvorlage">In the MSP Export Options dialog, choose to sort export lines by the WBS or Sorting No. For this example, leave the <span class="Bold">Export Sorting</span> field set to <span class="Italics">WBS</span>.</p>
+        <p class="ccTextvorlage">
+            <MadCap:xref href="#_Ref382469160" class="Figure">Fig. 6</MadCap:xref> displays the lines exported from <span class="CCBausteinInhaltZchn">cc|project</span> to Microsoft Project.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Microsoft Project Integration_5.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6"><a name="_Ref382469160"></a>: Exported lines from cc|project into Microsoft Project</p>
+        <p class="ccTextvorlage">During the transfer, Microsoft Project performs independent calculation processes, which results in messages and errors. It is important to review this information to ensure optimal matching of the logic between the systems.</p>
+        <p class="ccTextvorlage">No errors were found but there are some messages (as indicated by the envelope and question mark icon (<img src="../Resources/Images/CC PR/Microsoft Project Integration_6.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;width: 13px;height: 14px;" />) in the <span class="Bold">Indicators</span> field and the underlined dates in the <span class="Bold">Finish</span> field).</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Many changes can be made to address the issues. In this example, the following amendments were applied:</p>
+            <ul>
+                <li class="ccAufzählungblau">Manufacturing 1 was set to auto-schedule and therefore moved the finish date to March 28, 2017</li>
+                <li class="ccAufzählungblau">Manufacturing 2 and 3 were reassigned to Thorsten Scholl, resource P013</li>
+            </ul>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Microsoft Project Integration_7.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Amended lines exported from cc|project into Microsoft Project</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.3.1    ">Exercise – Save the Microsoft Project File for Import</h4>
+        <p class="ccTextvorlage">Data from Microsoft Project must be saved as an XML file in order to import into <span class="CCBausteinInhaltZchn">cc|project</span>.</p>
+        <p class="ccTextvorlage">To save the Microsoft Project file for import, follow these steps:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Once planning is ready for import back into Microsoft Dynamics NAV, click <span class="Bold">File &gt; Save As</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the path to save the file.</li>
+            <li class="ccTextvorlageNumberedList">Update the <span class="Bold">File name</span> as needed.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Save as type</span> field, click the drop-down arrow and select <span class="Italics">XML Format</span> (*.xml).</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Save</span>.</li>
+            <li class="ccTextvorlageNumberedList">Close Microsoft Project without saving changes.</li>
+        </ol>
+        <p class="ccTextvorlage">Alternatively, a macro for saving as XML can be created in Microsoft Project. </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc445394499"></a>Data Import to cc|project</h3>
+            <p class="ccTextvorlage">Once saved as XML file, the data can be imported into <span class="CCBausteinInhaltZchn">cc|project</span> from the following pages:</p>
+            <ul>
+                <li class="ccAufzählungblau">MSP Codes (<span class="Bold">Navigate</span> tab)</li>
+                <li class="ccAufzählungblau">Job Budget Calculation (<span class="Bold">Navigate</span> tab)</li>
+                <li class="ccAufzählungblau">Planning Processes (<span class="Bold">Job Planning and Processing &gt; Per Block &gt; Home</span> tab)</li>
+            </ul>
+        </div>
+        <p class="ccTextvorlage">To start the import process in the <span class="Bold">Planning Processes</span> page, click <span class="Bold">MS Project Import</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Microsoft Project Integration_8.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: MSP Import Options</p>
+        <p class="ccTextvorlage">In the MSP Import Options dialog, select the <span class="Bold">Import Assignments with Res.</span> check box to import assignments (tasks) with resources from Microsoft Project.</p>
+        <p class="ccTextvorlage">After Import the lines are updated with the finish date of Manufacturing 1 set to March 28, 2017 and Manufacturing 2 and Manufacturing 3 also include resource P013.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Microsoft Project Integration_9.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Imported entries into cc|project from Microsoft Project</p>
+        <p class="ccTextvorlage">Based on new Start and Finish dates, a new planning can now be calculated in the following two steps:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Delete existing planning (planned scheduled entries reduce the resource availability) by clicking <span class="Bold">Delete Schedule Entries</span> on the ribbon of the <span class="Bold">Planning Processes</span> page.</li>
+            <li class="ccTextvorlageNumberedList">New Scheduling – Select the Project Deadline position and then click <span class="Bold">Actions &gt; Schedule (with links) &gt; Schedule Processes</span>.</li>
+        </ol>
+        <p class="ccTextvorlage">The new planning created calendar entries, which means that:</p>
+        <ul>
+            <li class="ccAufzählungblau">Available capacities are considered</li>
+            <li class="ccAufzählungblau">Processes are marked as Effort driven</li>
+            <li class="ccAufzählungblau">Dates are moved</li>
+        </ul>
+    </body>
+</html>

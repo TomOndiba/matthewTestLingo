@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434834897"></a>Item Calculation Groups</h2>
+        <p>Item Calculation Groups identify items (in a production BOM) that need to be combined in a separate calculation line. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Item Calculation Groups.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Item Calculation Groups</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">It is only necessary to use Item Calculation Groups if items or work centers in the calculation need to be separately represented.</p>
+        <div class="ccDIV">
+            <p>Define the calculation to be performed on a group of items in the <span class="Bold">Calculation Group Code</span> field on the Item Card.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CA/Item Calculation Groups_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Calculation Group Code defined on item 1100</p>
+        </div>
+        <p>With this function, costing calculation groups can be created.</p>
+        <p>For example, an item’s production BOM contains raw materials, semi-finished materials, and packing materials. In the Item Card, a user enters the RAW item calculation group for the raw materials, SEMI for the semi-finished materials, and PACK for the packaging materials.</p>
+        <div class="ccDIV">
+            <p>In the calculation schedule, the user adds the following lines:</p>
+            <ul>
+                <li class="ccAufzählungblau">First for the raw material costs and enters the RAW item calculation group. </li>
+                <li class="ccAufzählungblau">Second for the semi-finished material and enters the SEMI item calculation group.</li>
+                <li class="ccAufzählungblau">Third for the packaging materials and enters the PACK item calculation group.</li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CA/Item Calculation Groups_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="_Ref286301921"></a>: Sales Calculation with item calculation group setup</p>
+        </div>
+        <p>When a calculation is created for the item, the costs of the raw materials are totaled in the first calculation line, the costs of the semi-finished lines are totaled in the second one, and the costs of the packaging lines are totaled in the third line.</p>
+        <p>In this example, the system checks the assigned BOM of the calculated item and differentiates between the items by those that have the Calculation Group Code of RAW, SEMI, and PACK and then any other lines will be calculated in the Misc. material line (refer to <MadCap:xref href="#_Ref286301921" class="Figure">Fig. 3</MadCap:xref>).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Item Calculation Groups_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Sales Calculation for item 1100 with raw material and semi-finished material calculations</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">To ensure that the values for the material costs are correct after calculation, all items included in the production BOM must have a value in the <span class="Bold">Standard Cost</span> field. The calculation is generally based on the item’s base unit of measure.</p>
+    </body>
+</html>

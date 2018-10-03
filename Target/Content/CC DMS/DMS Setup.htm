@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Ref425339961"></a><a name="_Toc434330858"></a>DMS Setup</h2>
+        <p class="ccTextvorlage">Basic setup is performed in the <span class="Bold">DMS Setup</span> page, accessed from the navigation pane by clicking <span class="Bold">Departments &gt; </span><span class="CCBausteinInhaltZchn">cc|dms</span><span class="Bold"> &gt; Setup &gt; DMS Setup</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DMS/DMS Setup.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: DMS Setup</p>
+        <p class="ccTextvorlage">When the <span class="Bold">DMS Setup</span> page is opened for the first time, the setup initializes itself. The setup contains all important global configuration for <span class="CCBausteinInhaltZchn">cc|dms</span>. </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434330859"></a>General FastTab</h3>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">General</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 111px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Doc. Library Nos.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the number series used to create new document libraries. The number series should allow manual numbering.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Upload Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines how to upload documents. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Client – Documents will immediately be uploaded in the current Microsoft Dynamics NAV user’s context after defining the MetaData.</li>
+                            <li class="ccAufzählung">Queue – After defining the MetaData, all documents will be copied into a Queue (Document Entry), which must be processed by a Navision Application Server (NAS) or a user manually. The upload will use the NAS’ user context.</li>
+                        </ul>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Document Actions.htm#_Ref425177975">“Document Actions” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">SharePoint File Duplicate</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines how duplicate file names will be handled in the target document library. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">New Version – Creates a new Version for the uploaded document. If Versioning is disabled in the document library, the existing document will be overwritten.</li>
+                            <li class="ccAufzählung">Add Timestamp on File Name – Appends a timestamp at the end of the new file’s name and before the extension: &lt;Year&gt;-&lt;Month&gt;-&lt;Day&gt; - &lt;Hour&gt;-&lt;Minute&gt;-&lt;Second&gt;, for example Bicycle_Image 2014-04-03 11-23-54.bmp.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Report Upload Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates additional actions when uploading a report via automated “Upload PDF” or “Post and Upload PDF” functions.</p>
+                        <ul>
+                            <li class="ccAufzählung">Only Upload – The report will be uploaded into SharePoint without any further action.</li>
+                            <li class="ccAufzählung">Upload and Open – After uploading the report, the local copy (from a temporary path) will be opened, e.g. to manually print it.</li>
+                            <li class="ccAufzählung">Upload and E-Mail – A new Email will be created by the default application with the PDF automatically attached.</li>
+                        </ul>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Report Upload.htm#_Ref425178517">“Report Upload” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Report File Name Formula</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the formula to generate the file name when automatically uploading a report. Possible variables are [RECORDID], [REPORT.ID], [REPORT.NAME], [REPORT.CAPTION], [TODAY], [TIME], [COMPANY] and [USERID]. An example for a formula would be “[RECORDID] - [REPORT.ID].pdf”.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Service Timeout</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines the timeout in milliseconds until the service aborts an action (such as retrieve document list for DocumentBox). “0” will use the default settings.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Save Xml Nodes (Debug)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">If selected, the XML files are saved for processing in the corresponding document entry fields. This field should only be activated for Debugging purposes.</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434330860"></a>Document Box FastTab</h3>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Document Box</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 112px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Document Box Height</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Sets the height of the DocumentBox. The user cannot resize the height on each page. Therefore, it should be configured to a suitable value for all display resolutions and number of document libraries.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Document Box Sorting</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Sorts the order of documents in the DocumentBox, either ascending or descending, for the creation date or file name.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Doc.-Box Layout</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the layout of the DocumentBox. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Logo and TreeView – Shows the Logo on the top section of the DocumentBox and the document list below.</li>
+                            <li class="ccAufzählung">TreeView Only – Displays only the document list, without the logo. This option is useful for a narrow implementation.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Document Box Bitmap</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Stores the picture to be displayed on the top section of the DocumentBox. Uses standard Microsoft Dynamics NAV picture insertion functionality.</p>
+                        <p class="ccTabellenText">For an optimized performance, the picture size should not be more than 200 kb.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc434330861"></a>History FastTab</h3>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">History</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 111px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Save Document Entries</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, document entries will not be deleted after successful processing. This enables a tracking of document actions from Microsoft Dynamics NAV. Tracked actions can be upload, delete and modify.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Remove Documents from Doc. Entries</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Determines if the document (binary, BLOB) is saved for each upload in the Microsoft Dynamics NAV database.</p>
+                        <ul>
+                            <li class="ccAufzählung">If selected, the needed database volume increases with the saved document. </li>
+                            <li class="ccAufzählung">If not selected, the document BLOB is removed after successful upload.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc434330862"></a>Navision Application Server FastTab</h3>
+            <p class="ccTextvorlage">The fields on the <span class="Bold">Navision Application Server</span> FastTab are described in the following table.</p>
+            <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 110px;" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Protocol Entry Delete Formula</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Defines a formula to delete the protocol entries, created by NAS, which are older than the calculated formula compared to the current date.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Document Entry Delete Formula</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Defines a formula to delete the document entries, created by <span class="Bold">Upload Type</span> = <span class="Italics">Queue</span>, which are older than the calculated formula compared to the current date. </p>
+                            <p class="ccTabellenText">A running NAS for <span class="CCBausteinInhaltZchn">cc|dms</span> is necessary to perform this auto delete.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">NAS Poll Interval (Milliseconds)</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Sets a time interval between the end of the previous and the start of the next NAS processing. A high interval results in longer breaks between the definition and the processed action (upload, modify, delete) of a document, if <span class="Bold">Upload Type</span> = <span class="Italics">Queue</span>.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                            <p class="ccTabellenText">Log Document Entry Heartbeat</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                            <p class="ccTabellenText">If selected, a heartbeat protocol entry will be created after each poll interval to check the vital sign of the NAS.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3 class="Heading3" MadCap:autonum="1.1.5    "><a name="_Toc434330863"></a>Product Version Information</h3>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">About</span> to display the current product version information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DMS/DMS Setup_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Product version information accessed by clicking About on the ribbon</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.6    "><a name="_Toc434330864"></a>Actions Tab</h3>
+            <p class="ccTextvorlage">The <span class="Bold">Actions</span> tab includes two items that are relevant to table setup in <span class="CCBausteinInhaltZchn">cc|dms</span>. Both are described in the following table.</p>
+            <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Action</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Release All</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Releases all Table Setups in the system.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                            <p class="ccTabellenText">Reopen All</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                            <p class="ccTabellenText">Opens all released Table Setups in the system.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3 class="Heading3" MadCap:autonum="1.1.7    "><a name="_Toc434330865"></a>Navigate Tab</h3>
+        <p class="ccTextvorlage">The <span class="Bold">Navigate</span> tab includes items that are relevant to report selections and user rights in <span class="CCBausteinInhaltZchn">cc|dms</span>. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DMS/DMS Setup_2.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 239px;" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Actions on the Navigate tab in DMS Setup</p>
+        <p class="ccTextvorlage">Each is described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 132px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Action</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Report Selection - Sales / Report Selection - Purchase / Report Selection - Service</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the report selections for sales, purchase and service; also includes fields for configuring the document library and content type to upload the PDF to SharePoint.</p>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Report Upload.htm#_Ref425188328">“Report Upload” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">User Credentials</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">DMS User Credentials</span> page, where users without access to uploading files in SharePoint can be assigned a “SharePoint User Account” that can upload files. Without any configuration, the Microsoft Dynamics NAV user account communicates with SharePoint. </p>
+                        <p class="ccTabellenText">Settings here affect all Document Libraries, while settings on the Document Libraries affect only those libraries.</p>
+                        <p>A global function in the DMS - Management codeunit verifies the “global” User ID entries (entered here) and the User ID entries for a special document library. This function also allows for the usage of a “default user” by entering an asterisk (*) in the <span class="Bold">User ID (NAV)</span> field.</p>
+                        <p class="ccBildabstand">
+                            <img src="../Resources/Images/CC DMS/DMS Setup_3.png" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+                        </p>
+                        <p class="ccTabellenText">Additionally, the user credentials set here are used for service adapter pattern queries, which allows the service adapter pattern to run for SharePoint Online. For information about the Service Adapter Pattern, refer to the “cc|dms 2015 SP1 - LibrarySet User Manual” documentation.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

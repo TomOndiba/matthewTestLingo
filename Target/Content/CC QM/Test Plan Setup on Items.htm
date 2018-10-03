@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Test Plan Setup on Items</h3>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The Item Test Order Option, Sampling Method and Inspection Severity Code can be allocated to the respective item in the <span class="Bold">Test Plan Setup</span> page, which is accessed from the ribbon on the Item Card.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Test Plan Setup.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Test Plan Setup for item Q-20001</p>
+        </div>
+        <p class="ccTextvorlage">In this page, assign test plans to different Source Types (such as Purchase Orders, Production Order and so on) item (group) specifically. Furthermore, this page offers the opportunity to enter customer-specific or vendor-specific test plans.</p>
+        <p class="ccTextvorlage">The fields in the header of this page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 129px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Source Type Filter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Source type to allocate the test plan to. The options are Inventory, Purchase Order, Purchase Receipt, Sales Order, Sales Return Order, Sales Return Receipt, Production Order, Operation, None, Order-specific and Component.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Source No. Filter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of the source type selected in the <span class="Bold">Source Type Filter</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Item No. Filter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Item to be affected by these settings.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Item Category Filter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Item category to be affected by these settings.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">The fields in the lines are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 128px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Item Test Order Option</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the level on which an item should be tested. The options are: </p>
+                        <ul>
+                            <li class="ccAufzählung">No Test – no test orders are created.</li>
+                            <li class="ccAufzählung">Test on Item Level – a single test order is created for the item, regardless of lot- or serial numbers.</li>
+                            <li class="ccAufzählung">Test on Lot No. Trading Unit – a test order is created for each lot number.</li>
+                            <li class="ccAufzählung">Test on Serial No. – a test order is created for each serial number.</li>
+                            <li class="ccAufzählung">Test on Trading Unit – a test order is created for each trading unit of a lot.</li>
+                        </ul>
+                        <p class="ccTabellenText">For example, if a user posts a Receipt with two lots (Lot A and Lot B) the following tests are created, based on the Item Test Order Option:</p>
+                        <ul>
+                            <li class="ccAufzählung">Test on Item Level: </li>
+                        </ul>
+                        <p class="ccAufzählung">One Test Order – Item No. is populated in the <span class="Bold">General</span> FastTab; lot information is empty on the <span class="Bold">Test Plan Source</span> FastTab</p>
+                        <ul>
+                            <li class="ccAufzählung">Test on Lot No. Trading Unit:</li>
+                        </ul>
+                        <p class="ccAufzählung">Two Test Orders (one for each lot) – Item No. and Lot No. are populated</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTextvorlageNotebody">In <span class="CCBausteinInhaltZchn">cc|process manufacturing</span>, trading units are an integral part of the storage unit functionality. Therefore, the “Test on Lot No.” option was renamed to “Test on Lot No. Trading Unit” to accommodate the integration of <span class="CCBausteinInhaltZchn">cc|quality management</span> with <span class="CCBausteinInhaltZchn">cc|process manufacturing</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sampling Method</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines for the item if the sampling method according to Oeser/Strohecker or DIN ISO 2859 should be applied. </p>
+                        <p class="ccTabellenText">If the <span class="Italics">DIN ISO 2859</span> option is selected, the <span class="Bold">Inspection Severity Code</span> and <span class="Bold">Sampling Method</span> fields must be filled with the ISO2859 or DIN2859 values. In this case, the system will apply an acceptance sample testing based on faulty parts or errors.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Inspection Severity Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Required if the <span class="Italics">DIN ISO 2859</span> option is selected in the <span class="Bold">Sampling Method</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Insp. Severity on Test Prop.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates whether an inspection severity has been assigned to a test property (refer to topic <MadCap:xref href="#_Ref441486560">“Inspection Severities of Test Properties” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Inspection Level</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the Inspection Level for counting (AQL) to be used for testing; if this field is empty, Inspection Level II is used.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Plan No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of the test plan that should be allocated to the item depending on the source type.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Adjust Lot Status on Test</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">If selected, the lot status will automatically be set to:</p>
+                            <ul>
+                                <li class="ccAufzählung">The value in the <span class="Bold">Lot-/Serial No.-Status on Test Order Release</span> field in the <span class="Bold">Quality Management Setup</span> page when a test order is <span class="Italics">Released</span>.</li>
+                                <li class="ccAufzählung">The value in the <span class="Bold">Lot-/Serial No.-Status on Test Order Finish</span> field in the <span class="Bold">Quality Management Setup</span> page when a test order is <span class="Italics">Finished</span>.</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No Test Order on Subcontr.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, prevents duplicate testing requirements when creating a Purchase Order for a Production Order line, which may already contain Test Plan Setup (<span class="Bold">Source Type</span> = <span class="Italics">Purchase Receipt</span>) for the subcontracting order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Wait Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the time needed to start testing, beginning from the Test Order creation. For example, it may define offset time to start testing after goods receipt posting. The <span class="Bold">Wait Time Unit of Meas. Code</span> field is required to specify this time. </p>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Test Order Scheduling.htm">“Test Order Scheduling” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Wait Time Unit of Meas. Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Used with the <span class="Bold">Test Wait Time</span> field to complete the time specification. Codes of Capacity Units of Measure (from manufacturing) can be assigned here. </p>
+                        <p>Refer to topic <MadCap:xref href="Test Order Scheduling.htm">“Test Order Scheduling” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Copy Item Test Plan Setup </h4>
+            <p class="ccTextvorlage">Existing Test Plan Setup records can be copied from a selected item to a selection of one or more items. This can be used from the Item Test Plan Setup or the Periodic Activities on the <span class="CCBausteinInhaltZchn">cc|quality management</span> menu and provides the ability to copy the Test Plan Setup for a specific Source Type or for all existing Source Types of the “Template” Item.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Test Plan Setup_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Preparing to copy all Test Plan Setup from item Q-40014 to item Q-40013</p>
+        </div>
+        <p class="ccTextvorlage">The Template Item setup(s) can be copied to one or more items based on specific item filters in one step.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Test Plan Setup_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: All Test Plan Setup copied from item Q-40014 to item Q-40013</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.2    "><a name="_Ref441486560"></a>Inspection Severities of Test Properties</h4>
+            <p class="ccTextvorlage">Different schedules can be assigned to each test property so that testing is done based on the Inspection Severities of a property as opposed to the Inspection Severity of the overall test plan.</p>
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">Properties without a specific Inspection Severity will use the one assigned to the Test Plan Setup line.</p>
+            <p class="ccTextvorlage">On the ribbon of the <span class="Bold">Test Plan Setup</span> page, click <span class="Bold">Property Inspection Severities</span> to open the <span class="Bold">Item Test Prop. Insp. Severities</span> page.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Test Plan Setup_3.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 285px;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4"><a name="_Ref309571643"></a>: Inspection Severities for Test Properties</p>
+        </div>
+        <p class="ccTextvorlage">As <MadCap:xref href="#_Ref309571643" class="Figure">Fig. 6</MadCap:xref> illustrates, the first line has the <span class="Bold">Test Each Used</span> check box selected, which means that a value has been entered in the <span class="Bold">Test Each (Times)</span> field for the test property (refer to <MadCap:xref href="Test Plans.htm#_Ref395372163" class="Figure">Fig. 2</MadCap:xref>), and therefore an Inspection Severity cannot be entered on this line. A different Inspection Severity Code has been entered for the last property. When the page is closed, the <span class="Bold">Insp. Severity on Test Prop.</span> field is set to <span class="Italics">Yes</span> on the <span class="Bold">Test Plan Setup</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Test Plan Setup_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Test Plan Setup with Inspection Severity on a Test Property</p>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="2" MadCap:lastHeight="838" MadCap:lastWidth="603" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434567999"></a>Filter Expressions in Decision Table Lines</h3>
+        <p class="ccTextvorlage">It is also possible to use filter expressions like "&lt;100" or "250..300" or "BLUE|GREEN|RED" in the Decision Table lines (used within the GETVALUE function).</p>
+        <p class="ccTextvorlage">With these setup options, it is possible that more than one line will match all conditions. The system will always use the first Decision Table line that matches all dimension values so the <span class="Bold">Search Sequence</span> field can be used to indicate the proper order for the search. </p>
+        <p class="ccTextvorlage">Each <span class="Bold">Dimension Value…</span> field must be marked if the filter should be used as an alphanumeric filter or as a numeric filter. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Filter Expressions in Decision.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref406495975"></a>: Decision Table with filtering</p>
+        <p class="ccDemoStepHeading">Example – Get Values with Filters</p>
+        <p class="ccTextvorlage">The examples in this section show how filters can be used with the GETVALUE function in the checklist lines. </p>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#_Ref406495975" class="Figure">Fig. 1</MadCap:xref>, three lines are defined with mostly numeric values in the Decision Table. However, the third line contains also an alphanumeric filter for <span class="Bold">Dimension Value 1</span>.</p>
+        <p class="ccTextvorlage">A Checklist Template has been defined so that different values can be entered in the three Dimension lines, which will be assigned to the variables “DIM1”, “DIM2” and “DIM3”. In the last line, the GETVALUE function will be started using the decision table DT00001, <span class="Bold">Value Code</span> = <span class="Italics">PRICE</span> and the three dimensions. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Filter Expressions in Decision_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Checklist Template with filtering for Decision Table</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If any of the dimension values are outside of the specified values in the Decision Table, no result value is returned.</p>
+        <p class="ccTextvorlage">In the first example, numerical values are entered in the <span class="Bold">Input</span> field for the Dimension lines on the document checklist and then the “Recalculate” function is run to calculate the GETVALUE formula.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Filter Expressions in Decision_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Document Checklist with results from numeric values of Decision Table</p>
+        <p>The value 100 of the first line of the decision table is transferred to the last checklist line because 15 is between 10..20, 16 is between 10..30 and -7 is between -10..-5.</p>
+        <p>In the second example, alphanumeric and numeric values are entered.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Filter Expressions in Decision_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Document Checklist with results from alphanumeric and numeric values of Decision Table</p>
+        <p class="ccTextvorlage">The value 300 of the third line of the Decision Table is transferred to the last checklist line because “BLUE” matches the third line of the Decision Table, and the other dimensions are within the filtered areas. </p>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="818" MadCap:lastWidth="602" MadCap:fileTags="StatusFileTags.6 Needs to be Sent for Review" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc434929951"></a>Exercise – Create a 3rd Party Purchase Order from a Rent Order</h2>
+        <p class="ccTextvorlage">Customer R-40000 needs to rent a 20 Feet Store Container (item R-40000-01) from March 1, 2019 through April 30, 2019 which is not currently available. The container must be rented from vendor R-40000 in order to rent it to the customer.</p>
+        <p class="ccDemoStepHeading">Create the Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to create the Rent Order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Set the Work Date to 02/15/19.</li>
+            <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-40000.</li>
+            <li class="ccTextvorlageNumberedList">On the first line of the <span class="Bold">Lines</span> FastTab, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Item</li><li class="ccTextvorlageNumberedList">No. = R-40000-01</li><li class="ccTextvorlageNumberedList">Quantity = 1</li><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Month Based = Yes</li><li class="ccTextvorlageNumberedList">Rental Start Date = 03/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 04/30/19</li><li class="ccTextvorlageNumberedList">Rate Unit Price = add if a value is missing</li></ol></li>
+        </ol>
+        <p class="ccDemoStepHeading">Create the 3rd Party Purchase Order</p>
+        <p class="ccTextvorlage">Follow these steps to create the 3rd Party Purchase Order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Functions &gt; Create Purchase Order</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Vendor No.</span> field, enter R-40000.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Create a 3rd Party.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Create Rental Purchase Order, Vendor input page </p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to edit the purchase order. Notice the following:<ul start="3"><li class="ccTextvorlageNumberedList">The line contains the G/L Account entered in the <span class="Bold">3rd Party Rent Account</span> field in the <span class="Bold">General Posting Setup</span> page.</li><li class="ccTextvorlageNumberedList"><span class="Bold">Location Code</span> is set to EXTERNAL, the location entered in the <span class="Bold">External Rental Loc. Code</span> field in the <span class="Bold">Rental Mgt. Setup</span> page.</li><li class="ccTextvorlageNumberedList"><span class="Bold">Rental Start Date</span> is set to 3/1/2019 and the <span class="Bold">Rental End Date</span> is set to 4/30/2019.</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Create a 3rd Party_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: 3rd Party Purchase Order created from the Rent Order</p>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Purchase Order</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Notice that the <span class="Bold">Location Code</span> field in the selected line of the Rent Order is set to EXTERNAL.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Shipment</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Serial No.</span> field, type EXT001.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity (Base)</span> field, type 1.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Create a 3rd Party_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Item Tracking Lines, with no availability</p>
+        <ol start="11">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> and then click <span class="Bold">Yes</span> to dismiss the Availability Warnings and close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Purchase Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Show Document</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rent Cost per Rent Base Unit Excl. VAT</span> field on the line, enter the daily rental cost.</li>
+            <li class="ccTextvorlageNumberedList">Update the value in the <span class="Bold">No. of Rent Base Units</span> field as needed.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rental Start Date</span> and <span class="Bold">Rental End Date</span> fields, enter the rental date range from the vendor invoice. </li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Create a 3rd Party_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: 3rd Party Purchase Order with updated rental information</p>
+        <p class="ccDemoStepHeading">Post the 3rd Party Purchase Order and Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to receive/invoice the 3rd Party Purchase Order and ship/invoice the Rent Order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Vendor Invoice No.</span> field, type the number from the vendor invoice.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive and Invoice</span> option and then click <span class="Bold">OK</span>.<br />Note that the <span class="Bold">Qty. to Return</span> = 1 on the purchase order line.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Create a 3rd Party_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Received and Invoiced 3rd Party Purchase Order</p>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Purchase Order</span> and <span class="Bold">Purchase Lines</span> pages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon of the Rent Order, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> and accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">Open and post the Service Invoice Rental.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon of the Rent Order, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 04/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 04/30/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> and accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">Open and post the Service Invoice Rental.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Post the Rent Order Return and the 3rd Party Purchase Order Return</p>
+            <p class="ccTextvorlage">Follow these steps to post the return to the Rent Order and the return to the 3rd Party Purchase Order:</p>
+        </div>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 04/30/19.</li>
+            <li class="ccTextvorlageNumberedList">On the rental item line, enter 04/30/19 in the <span class="Bold">Rental Return Date</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Return Qty. to Receive</span> field, enter 1. </li>
+            <li class="ccTextvorlageNumberedList">Select the rental item line and then click <span class="Bold">Line &gt; Item Tracking Lines</span> on the <span class="Bold">Lines</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Confirm that the serial number is correct (EXT001) and then click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>. </li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Purchase Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Show Document</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Select Rent Return Serial Nos.</span></li>
+            <li class="ccTextvorlageNumberedList">Confirm that the serial number is correct (EXT001) and then select the <span class="Bold">To Return</span> check box on the line.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Create a 3rd Party_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: 3rd Party Purchase Order with updated rental information</p>
+        <ol start="13">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Service Contract Line List</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Return</span> option and then click <span class="Bold">OK</span>.<br />Note that the <span class="Bold">Qty. Returned</span> field is set to 1, to indicate the rental item return to the 3rd party vendor.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Create a 3rd Party_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Received, Invoiced and Returned 3rd Party Purchase Order</p>
+        <ol start="16">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Vendor Invoice No.</span> field, add a variation, such as “-2” to the number from the vendor invoice (since the number was already used in a previous step).</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">
+                <MadCap:annotation MadCap:createDate="2017-10-01T15:19:13.8310221-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="Possible issue:\r\n\r\nI still get the error i've been getting for years:\r\n\r\nLine 0 of the receipt, which you are attempting to invoice, has already been invoiced.\r\n\r\nIt's possible you ahve explained this error to me in the past, but i can't find any notes. If you think it's an issue and need to recreate, just follow this exercise exactly; you'll get the same error." MadCap:editor="NDOKS" MadCap:editDate="2017-11-02T14:44:58.1379058-05:00">Select the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span> to finish the 3rd Party Purchase Order process. </MadCap:annotation>
+            </li>
+            <li class="ccTextvorlageNumberedList">Close the open pages.</li>
+        </ol>
+    </body>
+</html>

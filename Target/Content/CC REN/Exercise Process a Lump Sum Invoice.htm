@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="823" MadCap:lastWidth="604" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    ">Exercise –  Process a Lump Sum Invoice</h2>
+        <p>Customer R-30000 has agreed to pay 3350.00 to rent item R-30000-01 starting February 1, 2019 through December 31, 2019. This item typically rents for 350.00 per month but since it is rarely rented in September and October, an agreement was reached to pay this reduced amount, in full, at the start of the rental period. </p>
+        <p>You create the rent order with <span class="Bold">Invoice Period</span> = <span class="Italics">None</span>, update the pricing and post the invoice for the full amount.</p>
+        <p class="ccDemoStepHeading">Set Up the Price Structure</p>
+        <p class="ccTextvorlage">Follow these steps to set up the price structure:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Ensure that the work date is 01/26/19.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|rental</span><span class="Bold"> &gt; Contract Management &gt; Items</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate item R-30000-01 and then click <span class="Bold">Navigate &gt; Prices</span> (in the Rental group).</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rental Prices</span> page, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Sales Type = All Customers</li><li class="ccTextvorlageNumberedList">Unit of Measure Code = PCS</li><li class="ccTextvorlageNumberedList">Rental Rate Code = MONTH</li><li class="ccTextvorlageNumberedList">Unit Price = 350</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Lump Sum.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Rental Prices for item R-30000-01</p>
+        <p class="ccDemoStepHeading">Create the Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to create the rent order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-30000.</li>
+            <li class="ccTextvorlageNumberedList">On the first line of the <span class="Bold">Lines</span> FastTab, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Item</li><li class="ccTextvorlageNumberedList">No. = R-30000-01</li><li class="ccTextvorlageNumberedList">Quantity = 1</li><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Invoice Period = None</li><li class="ccTextvorlageNumberedList">Prepaid = Yes</li><li class="ccTextvorlageNumberedList">Rental Start Date = 02/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 12/31/19</li><li class="ccTextvorlageNumberedList">Invoice Multiple = Yes</li></ol></li>
+            <li class="ccTextvorlageNumberedList">Notice that the <span class="Bold">Unit Price Total Rental Time</span> is 3850.00, which is calculated by the Rate Unit Price * Total No. of Rate Units (350 * 11).</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Lump Sum_1.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Rent Order with Invoice Period = None and standard rate pricing</p>
+        <p class="ccDemoStepHeading">Change Pricing</p>
+        <p class="ccTextvorlage">Follow these steps to change the pricing on the line:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Unit Price Total Rental Time</span> field, enter 3350.</li>
+            <li class="ccTextvorlageNumberedList">Notice that the <span class="Bold">Total No. of Rate Units</span> changed to 9.57, which is calculated by the Unit Price Total Rental Time / Rate Unit Price (3350 / 350).</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Lump Sum_2.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Updated pricing on rent order line</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Process the Invoices</p>
+            <p>Follow these steps to process the invoices:</p>
+            <ol>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+                <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+                <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/01/19.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 12/31/19.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+                <li class="ccTextvorlageNumberedList">Open the invoice and notice that the agreement pricing (3350.00) is used.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Lump Sum_3.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Invoice with lump sum agreement pricing</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Post the invoice and then escape back to the Rent Order.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, notice that the <span class="Bold">Quantity Invoiced</span> field is not updated for the rental position. This field is updated when the return is posted.</li>
+        </ol>
+    </body>
+</html>

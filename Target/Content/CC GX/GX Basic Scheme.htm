@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="912" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434333810"></a>GX Basic Scheme</h2>
+        <p class="ccTextvorlage">The GX Basic Scheme is the basic setup for a GX view. All GX views are based on the same basics that can be configured on the <span class="Bold">GX Basic Scheme Card</span> page. For a specific GX view (for example, Prod. Order Planning View) an additional configuration is needed that reacts like an extension to the basic scheme (for example, Prod. Order Planning Setup).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC GX/GX Basic Scheme.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: GX Basic Scheme Card page, General FastTab</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref287717378"></a><a name="_Toc434333811"></a>General FastTab</h3>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">General</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 100px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier of a basic scheme.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Short description for the scheme.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">View Starting Date / View Ending Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used to build a date range that is the base of the data that will be displayed in the view. If you open a view that displays capacity profiles, only the capacity ledger entries in the date range are displayed.</p>
+                        <p class="ccTabellenText">In these fields, enter a Microsoft Dynamics NAV-specific date formula that is used for the date calculation based on the work date.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Visible Range</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Width of the view (in time units) when the view is opened.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Job Height</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Default render-height of jobs. A value of zero forces the view to use an internal default value.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Shadows</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Enables or disables the rendering of shadows. It might be useful to disable shadow rendering for client PCs with a very low performance.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Scroll Duration (ms)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Animates the scrolling process when skipping to a special job, a special date, or a special row. The value in this field defines the duration of each scroll process. A value of zero disables animated scrolling and lets the view jump to the target position instantly.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Job Displacement Pixels</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Vertical displacement when rendering overlapping jobs. This value affects the initial height of the rows that contain jobs. When changing the row height manually, the displacement value is recalculated internally.</p>
+                        <p class="BoldItalicsTable">Examples</p>
+                        <p class="ccTabellenTextIndent">Job Displacement Pixels = 5:</p>
+                        <p class="ccTabellenTextIndent">
+                            <img src="../Resources/Images/CC GX/GX Basic Scheme_1.png" style="width: 193px;height: 46px;" />
+                        </p>
+                        <p class="ccTabellenTextIndent">Job Displacement Pixels = 30:</p>
+                        <p class="ccTabellenTextIndent">
+                            <img src="../Resources/Images/CC GX/GX Basic Scheme_2.png" style="width: 199px;height: 65px;" />
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434333812"></a>Base Patterns FastTab</h3>
+            <p class="ccTextvorlage">The <span class="Bold">Base Patterns</span> FastTab has a set of patterns that are used in each GX application.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC GX/GX Basic Scheme_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: GX Basic Scheme Card page, Base Patterns FastTab</p>
+        </div>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 108px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Weekday Pattern Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Background for the days from Monday to Friday:</p>
+                        <p class="ccBildabstand">
+                            <img src="../Resources/Images/CC GX/GX Basic Scheme_4.png" style="width: 432px;height: 134px;" />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Saturday Pattern Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Background for Saturdays:</p>
+                        <p class="ccBildabstand">
+                            <img src="../Resources/Images/CC GX/GX Basic Scheme_5.png" style="width: 432px;height: 133px;" />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sunday Pattern Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Background for Sundays:</p>
+                        <p class="ccBildabstand">
+                            <img src="../Resources/Images/CC GX/GX Basic Scheme_6.png" style="width: 432px;height: 133px;" />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Job Warnings Pattern Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">A job can have a due date. If the end of a job is past its due date, this pattern will be drawn (in addition to the job’s pattern) over the job area that is past the due date:</p>
+                        <p class="ccBildabstand">
+                            <img src="../Resources/Images/CC GX/GX Basic Scheme_7.png" style="width: 371px;height: 54px;" />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Capacity Load Pattern Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If a capacity profile is enabled, this pattern is used to render the capacity load:</p>
+                        <p class="ccBildabstand">
+                            <img src="../Resources/Images/CC GX/GX Basic Scheme_8.png" style="width: 432px;height: 61px;" />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Capacity Overload Pattern Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If a capacity profile is enabled, this pattern is used to render an overload – that is, if the capacity load is greater than 100% of the maximum capacity:</p>
+                        <p class="ccBildabstand">
+                            <img src="../Resources/Images/CC GX/GX Basic Scheme_9.png" MadCap:mediastyle="@media print { max-width: 75%; }" />
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Current Capacity Pattern Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The capacity load of the current job is rendered with this pattern (in addition to the Capacity Load Pattern Code):</p>
+                        <p class="ccBildabstand">
+                            <img src="../Resources/Images/CC GX/GX Basic Scheme_10.png" MadCap:mediastyle="@media print { max-width: 75%; }" />
+                        </p>
+                        <p class="ccTabellenText">In this example, the cross hatched areas are drawn by the Capacity Load Pattern.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Job Capa. Load Pattern Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">This pattern is rendered in the job area. Where a job has a capacity load, this pattern is drawn in addition to the job’s pattern code:</p>
+                        <p class="ccBildabstand">
+                            <img src="../Resources/Images/CC GX/GX Basic Scheme_11.png" style="width: 432px;height: 62px;" />
+                        </p>
+                        <p class="ccTabellenText">In this example, the brighter areas are drawn by the Job Capa. Load Pattern.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Hot Track Job Pattern Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">This pattern is rendered if the mouse cursor is on a job. This pattern is drawn in addition to the job’s pattern code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Selected Jobs Pattern Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Multiple jobs can be selected by clicking them while pressing the CTRL key. All selected jobs are drawn with this pattern. This pattern is drawn in addition to the job’s pattern code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Current Job Pattern Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The current job is the last job that has been clicked. This pattern is drawn in addition to the job’s pattern code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sel. Res. Caption Pattern Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Multiple resources can be selected. This pattern is drawn in addition to the resource’s pattern code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Cur. Res. Caption Pattern Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The current resource is the last clicked row or the row of the current job. This pattern is drawn in addition to the resource’s pattern code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Current Order Pattern Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Multiple jobs can be combined into an order. If you selected a job, all jobs that belong to this job’s order are rendered with this pattern. This pattern is drawn in addition to the job’s pattern code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Selected Order Pattern Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">This pattern is drawn in addition to the job’s pattern code.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

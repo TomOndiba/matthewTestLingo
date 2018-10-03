@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="290" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434330856"></a>User Rights</h2>
+        <p class="ccTextvorlage">The actions (refer to topic <MadCap:xref href="Document Actions.htm#_Ref425177186">“Document Actions” on page 1</MadCap:xref>) are processed in context of the RoleTailored Client’s user or by the NAS account user. Accordingly, both need to be able to connect with SharePoint to retrieve and send documents and data. </p>
+        <p class="ccTextvorlage">The reports (save as pdf) and the upload of files by the upload queue both use the temporary directory of the user to store files. Therefore, each Microsoft Dynamics NAV user needs rights to write into his or her temporary directory. If there are issues with rights, in urgent cases, replace the references for the “ServerTempFileName” with any local path in:</p>
+        <ul>
+            <li class="ccAufzählungblau">Codeunit “DMS - DocumentBox Management”, function “UploadFile()” </li>
+            <li class="ccAufzählungblau">Codeunit “DMS - Upload PDF”, function “InitializeByReportSelection()”</li>
+        </ul>
+    </body>
+</html>

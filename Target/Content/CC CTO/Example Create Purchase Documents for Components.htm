@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="899" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref429154827"></a><a name="_Toc434568094"></a>Example – Create Purchase Documents for  Components</h3>
+        <p class="ccTextvorlage">In this example, different purchase documents are created for items D-7014 (Requisition), D-7016 (Quote), D-7017 (Quote) and D-7019 (Order) using the “Purch. G/L Acc./Item” function. </p>
+        <p class="ccTextvorlage">The check for open Document BOM lines for creation of Purchase Quotes is reviewed, as well as the release of an entire Document BOM if open Purchase Quotes exist. Additionally, a production order and construction order are created to explain how reservations are maintained if the “Purch. G/L Acc./Item” function is run on other items in the Document BOM after a production order or construction order has been made.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Create Purchase Documents.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Document BOM lines to be used with the “Purch. G/L Acc./Item” function</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create Requisition Worksheet for Component</p>
+            <p class="ccTextvorlage">Select the line for item D-7014 and then click <span class="Bold">Actions &gt; Purch. G/L Acc/Item</span> on the ribbon.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Create Purchase Documents_1.png" style="visibility: visible;mso-wrap-style: square;width: 230px;height: 191px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Purchase document creation dialog</p>
+        </div>
+        <p class="ccTextvorlage">With the <span class="Italics">Requisition Line</span> option selected, click <span class="Bold">OK</span> and then select the appropriate requisition worksheet from the <span class="Bold">Req. Wksh. Names</span> page. </p>
+        <p class="ccTextvorlage">A confirmation message is generated and on the  line for item D-7014:</p>
+        <ul>
+            <li class="ccAufzählungblau">Purchase Exists = Yes</li>
+            <li class="ccAufzählungblau">Purchase Status = Purchase Created</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Create Purchase Documents_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Document BOM line updated after Requisition line created</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The “Purch. G/L Acc./Item” function is run again on the line to open the <span class="Bold">Requisition Lines</span> page. Notice that a reservation has been made for this item.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Create Purchase Documents_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Requisition Line created from Document BOM</p>
+        </div>
+        <p class="ccTextvorlage">Close the <span class="Bold">Requisition Lines</span> page and go back to the Document BOM. </p>
+        <p class="ccDemoStepHeading">Create Purchase Quote for Component</p>
+        <p class="ccTextvorlage">Select the line for item D-7016 and then click <span class="Bold">Purch. G/L Acc./Item</span>. In the request page, select <span class="Bold">Purchase Quote</span> and then click <span class="Bold">OK</span>. </p>
+        <p class="ccTextvorlage">A confirmation message is generated and on the line for item D-7016:</p>
+        <ul>
+            <li class="ccAufzählungblau">Purchase Exists = Yes</li>
+            <li class="ccAufzählungblau">Purchase Status = Purchase Created</li>
+        </ul>
+        <p class="ccTextvorlage">Also notice that the <span class="Bold">Status</span> = <span class="Italics">Open</span> and therefore the purchase quote could be created for the Document BOM line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Create Purchase Documents_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Document BOM line updated after Purchase Quote created for open line</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Confirm Check for Open Document BOM Lines</p>
+            <p class="ccTextvorlage">On the line for item D-7017, change the <span class="Bold">Status</span> to <span class="Italics">Released</span>. Click <span class="Bold">Purch. G/L Acc./Item</span> and notice that  the <span class="Italics">Purchase Quote</span> option is not available for selection in the purchase document creation dialog.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Create Purchase Documents_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Purchase Quote option not available for released Document BOM lines</p>
+        </div>
+        <p class="ccTextvorlage">For an additional check of the release function with purchase quotes, re-open the line for item D-7017  and then click <span class="Bold">Purch. G/L Acc./Item</span>. In the purchase document creation dialog, select <span class="Italics">Purchase Quote</span>. </p>
+        <p class="ccTextvorlage">Go back to the Document BOM. If the <span class="Bold">Status</span> is changed to <span class="Italics">Released</span>, an error message appears stating that a purchase quote exists for the line and it must be made into an order or deleted in order to release it.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Create Purchase Documents_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Error generated when attempting to release Document BOM line with a related Purchase Quote</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Discard the release function; re-open the  Purchase Quote and make it into a Purchase Order. Notice that a reservation has been made for this item to the Document BOM line.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Create Purchase Documents_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Purchase Order created from Purchase Quote with reservation created to Document BOM line</p>
+        </div>
+        <p class="ccTextvorlage">It is now possible to release the Document BOM line with the related Purchase Order.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Create Purchase Documents_8.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Document BOM line released after creating Purchase Order from related Purchase Quote</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Select the line for item D-7019 and then click <span class="Bold">Purch. G/L Acc./Item</span>. In the request page, select <span class="Bold">Purchase Order</span> and then click <span class="Bold">OK</span>. </p>
+            <p class="ccTextvorlage">A confirmation message is generated and on the line for item D-7019:</p>
+            <ul>
+                <li class="ccAufzählungblau">Purchase Exists = Yes</li>
+                <li class="ccAufzählungblau">Purchase Status = Purchase Created</li>
+            </ul>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Create Purchase Documents_9.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Document BOM line updated after Purchase Order created</p>
+        <p class="ccTextvorlage">Now a requisition line, purchase quote, purchase quote to a purchase order, and a purchase order have been created. If the “Release” function is run for the entire Document BOM, an error will appear because of the open Purchase Quote.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Create Purchase Documents_10.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Error generated when attempting to release entire Document BOM with an open Purchase Quote</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Reservations on Production/Construction Order</p>
+            <p class="ccTextvorlage">Change the purchase quote for item D-7016 into an order and then create a production order  from the Sales Order.</p>
+            <p class="ccTextvorlage">Re-open the Document BOM, select the line for item D-7100 and then click <span class="Bold">Purch. G/L Acc./Item</span>. A message appears stating that a production order already exists for this Document BOM line and confirms if the process should continue.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Create Purchase Documents_11.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Message generated when “Purch. G/L Acc./Item” function is run on Document BOM with production order</p>
+        </div>
+        <p class="ccTextvorlage">If the process continues, then everything works the same, only the reservation will be made directly between requisition/purchase order line and the production order component. </p>
+        <p class="ccTextvorlage">If a Construction Order was created instead of a production order, and an item should be purchased, a message appears stating that the construction order already exists.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Create Purchase Documents_12.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Message generated when “Purch. G/L Acc./Item” function is run on Document BOM with construction order</p>
+        <p class="ccTextvorlage">Cancel the process of creating the purchase document. Any further purchase processing for the item should be handled in the construction order.</p>
+    </body>
+</html>

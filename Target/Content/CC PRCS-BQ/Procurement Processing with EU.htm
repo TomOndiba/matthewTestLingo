@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="767" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Procurement Processing with Execution Units</h3>
+        <p>Procurement processing from PaC Structural Plans created with Execution Units is generally handled the same way as other jobs in <span class="CCBausteinInhaltZchn">cc|project</span>. This section briefly shows the procurement processing for work packages and then more detailed usage of procurement processing of the placing units.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Procurement Processing with Work Packages</h4>
+        <p>PaC Structural Plans created from work packages uses the standard <span class="CCBausteinInhaltZchn">cc|project</span> planning and procurement functionality. On the <span class="Bold">PaC Structural Plan</span> page for the Work Package PaC job, click <span class="Bold">Planning and Processing</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Procurement Processing with EU.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Accessing the Job Planning and Procurement for the PaC work package</p>
+        <p class="ccTextvorlage">The <span class="Bold">Job Planning and Procurement</span> page opens with the complete structure from the PaC Structural Plan, ready for procurement processing. The procurement planning lines can be created based on different procurement channels. For example, planning can be started for construction or engineering services , or any material procurements.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Procurement Processing with EU_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Job Planning and Processing with PaC Structural Plan from work package</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Procurement Processing with Placing Units</h4>
+        <p>Procurement processing with placing units also uses the standard <span class="CCBausteinInhaltZchn">cc|project</span> functionality, but some defaults can be set up in the Execution Unit before planning (or the PaC Structural Plan) begins. It is not manadatory to set up the defaults, it simply automates some of the steps in the procurement processing.</p>
+        <p>On the <span class="Bold">Execution Unit</span> page for the placing unit, expand the <span class="Bold">Procurement</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Procurement Processing with EU_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Procurement defaults added to placing unit</p>
+        <p class="ccTextvorlage">In this example, the same vendor used in the PQM placing process is used for the ordering procurement process.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If the procurement defaults are added after the PaC Structural Plan was created, the existing Structural Plan will need to be deleted first and then recreated using the “Insert Execution Unit” function.</p>
+        <p>On the <span class="Bold">PaC Structural Plan</span> page for the Placing Unit PaC job, click <span class="Bold">Planning and Processing</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Procurement Processing with EU_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Accessing the Job Planning and Procurement for the PaC placing unit</p>
+        <p class="ccTextvorlage">The <span class="Bold">Job Planning and Procurement</span> page opens with the complete structure from the PaC Structural Plan, ready for procurement processing. The procurement defaults from the Execution Unit are also available.</p>
+        <p class="ccTextvorlage">For the purpose of this example, the planning and procurement processes are run to generate a Purchase Order. First, the procurement “Planning” function is run.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Procurement Processing with EU_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Running the procurement Planning function</p>
+        <p class="ccTextvorlage">In this example, planning needs to be done for the current line and sub-structure. Click <span class="Bold">OK</span> to create the procurement planning lines. The <span class="Bold">Procurement Planning</span> field is updated accordingly.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Procurement Processing with EU_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Procurement Planning field updated after Planning process</p>
+        <p class="ccTextvorlage">Now, click <span class="Bold">Release</span> to create the Purchase Order for the current line and sub-structure.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Procurement Processing with EU_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Running the procurement Release function</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to release the procurement planning lines. A message appears asking to create the Procurement Documents. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Procurement Processing with EU_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Message to create Procurement Documents from released procurement lines</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Yes</span> to create the Purchase Order. The <span class="Bold">Procurement Planning</span> and <span class="Bold">Procurement Release</span> fields are updated accordingly.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Procurement Processing with EU_8.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Procurement Planning and Procurement Release fields updated after Release process</p>
+        <p class="ccTextvorlage">Click the <span class="Bold">Yes</span> value in one of the released planning lines to open the Purchase Order based on the BoQ position structure. Note that the Execution Code is assigned in the <span class="Bold">General</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Procurement Processing with EU_9.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Purchase Order created based on the BoQ Position structure</p>
+    </body>
+</html>

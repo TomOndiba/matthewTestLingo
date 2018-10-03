@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="10" MadCap:lastHeight="369" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434332528"></a>DC - Generate Totals Codeunit</h3>
+        <p class="ccTextvorlage">This Codeunit calculates the amounts for totaling of documents printed from the Sales Header and Purchase Header tables. The way this codeunit is used is to set up the Section (Document Layout Line) to run it once per record, which then updates the Variables values that are used in the Document Layout.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');margin-left: auto;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 161px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTextvorlage" style="font-weight: bold;color: #FFFFFF;">Table ID</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTextvorlage" style="font-weight: bold;color: #FFFFFF;">Table Name</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTextvorlage" style="font-weight: bold;color: #FFFFFF;">Variables Created</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">36</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Sales Header</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">InvoiceDiscAmount <br />InvoiceRoundAmount <br />TotalAmount<br />VATAmount</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">38</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">Purchase Header</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">InvoiceDiscAmount <br />InvoiceRoundAmount <br />TotalAmount<br />VATAmount</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

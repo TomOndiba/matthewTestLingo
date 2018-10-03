@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    ">Invoice by Part Invoice</h3>
+            <p>When invoicing by part invoices, the Cumulative Invoicing model is used. With this model, partial invoices are created for measurements as they occur during the construction process. These invoices contain the measurement quantity, not the sales order quantity. This is done so that the original Sales Order quantities are not modified. Partial invoices are sent to the customer with either adjustments for cumulative invoices and payment, or just payments. </p>
+            <p>For each new partial invoice, the previous partial invoices are moved back into the new partial invoice for internal accounting adjustments.</p>
+        </div>
+        <p>Once the Construction process is complete, measurement quantities are taken over to the order quantities, previous partial invoice is moved back into the sales order and a single line is added to the end of the sales order with a negative quantity and amount to offset the measurement changes.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Prerequisites</h4>
+        <p>Before creating the invoice, the following settings must be done:</p>
+        <ul>
+            <li class="ccAufzählungblau">Job Card, Invoice Model = Cumulative Invoicing</li>
+            <li class="ccAufzählungblau">BoQ Budget Calculation = Sales Code must have Posting by = Sales Order</li>
+            <li class="ccAufzählungblau">Registered Measurement has been created and confirmed</li>
+            <li class="ccAufzählungblau">Report Selections Sales = Invoice set to report 5292686</li>
+        </ul>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Open the Sales Order </h4>
+        <p>When it is time to post an order with measurements, open the Job Card and click the value in the <span class="Bold">Orders</span> field of the Project Information FactBox.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Opening the Sales Order from the Job Card</p>
+        <p class="ccTextvorlage">In the Sales Orders list page, click <span class="Bold">Edit</span>. The Sales Order opens with Job positions, registered measurement values (as confirmed in section <MadCap:xref href="Registered Measurement Documents.htm">“Registered Measurement Documents” on page 1</MadCap:xref>) and proper invoice settings in the <span class="Bold">Construction Invoicing</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Sales Order with positions and registered measurements</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">Create Part Invoice</h4>
+        <p>The partial invoice is created based on registered measurements in the Sales Order lines. Click <span class="Bold">Navigate &gt; Create Part Invoice</span>. A message appears asking to create the partial invoice.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_2.png" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Message to create a partial invoice</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Yes</span> to create the partial invoice, <span class="Bold">No</span> to stop the creation process. The Sales Invoice opens.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_3.png" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Partial Sales Invoice for registered measurements</p>
+        <p class="ccTextvorlage">Notice that the Base Calculation FactBox includes original calculation information about the selected position.</p>
+        <p class="ccTextvorlage">Also note that the <span class="Bold">Measurement Summary Code</span> field is  populated in the <span class="Bold">Construction Invoicing</span> FastTab. Click <span class="Bold">Navigate &gt; Measurement Summary</span> to view the summary document that will be used for printing.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Measurement Summary assigned to Sales Order</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the <span class="Bold">Measurement Summary</span> page.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.4    ">Add Construction Charges to Invoice</h4>
+        <p class="ccTextvorlage">Depending on customer agreements, special calculations can be entered now for the invoice. Since the template was assigned to the job, the Invoicing document is copied automatically when the “CS Invoice Calculation” function is run. On the  <span class="Bold">Navigate</span> tab, click <span class="Bold">CS Invoice Calculation</span>. The <span class="Bold">CS Invoicings</span> page opens.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Running the CS Invoice Calculation function</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Edit</span> to open the <span class="Bold">Invoicing</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Invoicing page with Charge percentages assigned in Job Template</p>
+        <p class="ccTextvorlage">Change the <span class="Bold">Status</span> to <span class="Italics">Released</span> and then click <span class="Bold">Calculate</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Invoicing released and ready for calculation</p>
+        <p>The <span class="Bold">Value</span> and <span class="Bold">Cum. Value</span> fields are calculated.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_8.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Values updated with Calculate function</p>
+        <p class="ccTextvorlage">To transfer these values to the Sales Invoice, click <span class="Bold">Transfer Values</span>. The <span class="Bold">Calculation Value Transfer </span>page opens.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_9.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Calculation Value Transfer page with calculated values</p>
+        <p class="ccTextvorlage">Charges (in the top of the page) can be transferred below any selected line in the <span class="Bold">Transfer to Line(s)</span> FastTab but are typically added to the end of the invoice. To transfer both charges to the end of the invoice, select both charges and then select the last line in the <span class="Bold">Transfer to Line(s)</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_10.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Both charge lines to be transferred below the last invoice line</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Transfer Values</span> to complete the transfer process.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_11.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Charges have been transferred below the last invoice line</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the <span class="Bold">Calculation Value Transfer</span> and <span class="Bold">Invoicing</span> pages, click <span class="Bold">Close</span> to close the <span class="Bold">CS Invoicings</span> page.</p>
+        <p class="ccTextvorlage">In the Sales Invoice, notice that the charges have been added below the last sales line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_12.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Charges transferred to Sales Invoice</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.5    ">Update Sales Order</h4>
+        <p class="ccTextvorlage">Prior to posting the sales invoice, ensure that the <span class="Bold">Posting Date</span> is correct in the <span class="Bold">General</span> FastTab.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.6    ">Post Sales Invoice and Print Document</h4>
+        <p class="ccTextvorlage">Click <span class="Bold">Home &gt; Post</span> to post the sales invoice. After posting, click <span class="Bold">Yes</span> to open the Posted Sales Invoice. The <span class="Bold">Construction Invoicing</span> FastTab displays related construction information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_13.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">:Posted Sales Invoice</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Actions &gt; Print</span> to open the Sales - Invoice dialog (for report 5292686). The<span class="Bold"> BoQ Print Options</span> FastTab includes special printing options. Select the <span class="Bold">Print Measurement Lines</span> check box.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_14.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Sales - Invoice print dialog</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Print</span> to generate a document or <span class="Bold">Preview</span> to view the document. The Sales Invoice document contains measurement information as well as Construction Charges.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_15.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Sales Invoice with Measurements and Construction Charges</p>
+        <p class="ccTextvorlage">Escape back to the Sales Order.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.7    ">Add New Measurements</h4>
+        <p>As previously stated, invoices are created through the construction process for all measurements until all positions have been invoiced. This section shows how to add measurements. </p>
+        <p>In the Sales Order, click <span class="Bold">Home &gt; Measurement Document</span>. A message appears asking to insert the complete BoQ in the measurement document.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_16.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Creating a new Measurement Document for the sales order</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Yes</span> to insert the complete BoQ. A new Measurement Recording Card opens.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_17.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 18">: New Measurement Recording Card for job</p>
+        <p class="ccTextvorlage">The process of updating the Measurement Recording Card is the same as described in topic .</p>
+        <p class="ccTextvorlage">Populate the <span class="Bold">Measurement Date</span>, <span class="Bold">Measurement Page No.</span> and <span class="Bold">Measurement Location</span> fields, being sure to update the lines as well.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_18.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 19">: Measurement fields updated in header and lines</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the <span class="Bold">Lines</span> FastTab, enter the measured quantities in the <span class="Bold">Quantity</span> field. If any new measurements were taken on registered quantities, the <span class="Bold">Cum. Quantity</span> field will show the cumulative total. For example, three lines have registered quantities (4, 4, and 7, respectively). New totals are entered for all three lines (5, 4, and 6, respectively) and the <span class="Bold">Cum. Quantity</span> field shows the cumulative total of the new <span class="Bold">Quantity</span> and <span class="Bold">Cum. Registered Quantity</span> (9, 8, and 13, respectively).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_19.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 20">: New measurements added for registered positions and new positions</p>
+        </div>
+        <p class="ccTextvorlage">Click <span class="Bold">Register</span> and then click <span class="Bold">Yes</span> to register the document. The Measurement Recording Card closes. </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.8    ">Create Second Invoice</h4>
+            <p>Now that new measurements have been added to the sales order, the next invoice can be created using the same process described previously. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_20.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 21">: Sales order with new and previously invoiced lines</p>
+        </div>
+        <p class="ccTextvorlage">Notice that the registered measurement quantities appear in the lines, taking special notice that the measurement quantity (9) for position 3. 1. 50. exceeds the order quantity (8) by 1.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.9    ">Create Part Invoice</h4>
+        <p>Now that new measurements have been added, a new partial invoice can be created. Click <span class="Bold">Navigate &gt; Create Part Invoice</span>. A message appears asking to create the partial invoice.</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Yes</span> to create the partial invoice, <span class="Bold">No</span> to stop the creation process. The Sales Invoice opens.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_21.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 22">: Partial Sales Invoice for registered measurements</p>
+        <p class="ccTextvorlage">The <span class="Bold">Measurement Summary Code</span> field is  populated in the <span class="Bold">Construction Invoicing</span> FastTab. Click <span class="Bold">Navigate &gt; Measurement Summary</span> to view the summary document that will be used for printing.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_22.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 23">: Measurement Summary assigned to Sales Invoice</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the <span class="Bold">Measurement Summary</span> page.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.10    ">Move Part Invoices</h4>
+        <p>Partial Invoices that have been posted need to be moved from the invoice back to the Sales Order so that previously posted entries are not doubled during posting.</p>
+        <p>On the <span class="Bold">Navigate</span> tab of the Sales Invoice, click <span class="Bold">Move Part Invoices</span>. The <span class="Bold">Select Posted Sales Invoices</span> page opens.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_23.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 24">: Select Posted Sales Invoices opened from Move Part Invoices function</p>
+        <p class="ccTextvorlage">With the line selected for the previously posted partial sales invoice, click <span class="Bold">OK</span>. A negative entry is added to the end of the sales invoice.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_24.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 25">: Negative entry added to Sales Invoice to adjust posted partial invoice </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.11    ">Add Construction Charges to Invoice</h4>
+        <p class="ccTextvorlage">On the  <span class="Bold">Navigate</span> tab, click <span class="Bold">Get CS Invoicing Calc. from Job</span> and then click <span class="Bold">CS Invoice Calculation</span>. The <span class="Bold">CS Invoicings</span> page opens.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_25.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 26">: Running the CS Invoice Calculation function</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Edit</span> to open the <span class="Bold">Invoicing</span> page, change the <span class="Bold">Status</span> to <span class="Italics">Released</span> and then click <span class="Bold">Calculate</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_26.png" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 27">: Invoicing released and ready for calculation</p>
+        <p>The <span class="Bold">Value</span> and <span class="Bold">Cum. Value</span> fields are calculated. Click <span class="Bold">Transfer Values</span> to open the <span class="Bold">Calculation Value Transfer</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_27.png" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 28">: Calculation Value Transfer page with calculated values</p>
+        <p class="ccTextvorlage">Select both charges and then select the last line in the <span class="Bold">Transfer to Line(s)</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_28.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 29">: Both charge lines to be transferred below the last invoice line</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Transfer Values</span> to complete the transfer process.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_29.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 30">: Charges have been transferred below the last invoice line</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the <span class="Bold">Calculation Value Transfer</span> and <span class="Bold">Invoicing</span> pages, click <span class="Bold">Close</span> to close the <span class="Bold">CS Invoicings</span> page.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the Sales Invoice, notice that the charges have been added below the last sales line.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_30.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 31">: Charges transferred to Sales Invoice</p>
+        </div>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.12    ">Post Sales Invoice and Print Document</h4>
+            <p class="ccTextvorlage">Click <span class="Bold">Home &gt; Post</span> to post the sales invoice. After posting, click <span class="Bold">Yes</span> to open the Posted Sales Invoice. </p>
+            <p class="ccTextvorlage">Click <span class="Bold">Actions &gt; Print</span> to open the Sales - Invoice dialog (for report 5292686). The <span class="Bold">Saved Settings</span> FastTab appears indicating that the last used options and filters have been set.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_31.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 32">: Sales - Invoice print dialog with Saved Settings FastTab</p>
+        </div>
+        <p class="ccTextvorlage">Click <span class="Bold">Print</span> to generate a document or <span class="Bold">Preview</span> to view the document. The Sales Invoice document contains the cumulative quantities for invoiced/new and new measurements, as well as Construction Charges.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_32.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 33">: Sales Invoice with Measurements and Construction Charges (less partial invoice)</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.13    ">Add New Measurements</h4>
+            <p>In the Sales Order, click <span class="Bold">Home &gt; Measurement Document</span>. A message appears asking to insert the complete BoQ in the measurement document.</p>
+            <p class="ccTextvorlage">Click <span class="Bold">Yes</span> to insert the complete BoQ. A new Measurement Recording Card opens.</p>
+            <p class="ccTextvorlage">The process of updating the Measurement Recording Card is the same as described in topic .</p>
+            <p class="ccTextvorlage">Populate the <span class="Bold">Measurement Date</span>, <span class="Bold">Measurement Page No.</span> and <span class="Bold">Measurement Location</span> fields, being sure to update the lines as well.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_33.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 34">: Measurement fields updated in header and lines</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the <span class="Bold">Lines</span> FastTab, enter the measured quantities in the <span class="Bold">Quantity</span> field. Since this is the last invoice, all open positions should have registered measurements or new measurements. For example, the first four positions have new quantities, the next three positions have registered quantities, and the last four have new and registered quantities. Notice that a new measurement was not entered for position 3. 1. 70., which means the final measurement quantity is less than the order quantity. This will be handled in the Take over Measurement process in the Sales Order.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_34.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 35">: New measurements added for registered positions and new positions</p>
+        </div>
+        <p class="ccTextvorlage">Click <span class="Bold">Register</span> and then click <span class="Bold">Yes</span> to register the document. The Measurement Recording Card closes. </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.14    ">Create Final Invoice</h4>
+            <p>Now that all measurements have been added to the sales order, the final invoice can be created using various process described previously. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_35.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 36">: Final sales order with new and previously invoiced lines</p>
+        </div>
+        <p class="ccTextvorlage">Notice that the registered measurement quantities appear in the lines, taking special notice that the measurement quantity (13) for position 3. 1. 70. is less than the order quantity (14) by 1.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.15    ">Take Over Measurements</h4>
+        <p class="ccTextvorlage">In the Sales Order, click <span class="Bold">Reopen</span> (if Released) and then click <span class="Bold">Actions &gt; Take over Measurements</span>. A message appears asking to update the order quantity from the measurement quantity.</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Yes</span> to continue the process. A message appears asking to keep or update the order quantity.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_36.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 37">: Keep or update order quantity message </p>
+        <p class="ccTextvorlage">Select the <span class="Bold">Update order quantity</span> option and then click <span class="Bold">OK</span>. In all lines, The <span class="Bold">Quantity</span> and <span class="Bold">Qty. to Ship</span> fields are updated to match the Measurement Quantity.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_37.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 38">: Quantity and Qty. to Ship updated with measurement quantities </p>
+        <p class="ccTextvorlage">The <span class="Bold">Measurement Summary Code</span> field is now populated in the <span class="Bold">Construction Invoicing</span> FastTab. Click <span class="Bold">Navigate &gt; Measurement Summary</span> to view the summary document that will be used for printing.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_38.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 39">: Measurement Summary assigned to Sales Order with cumulative quantities</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the <span class="Bold">Measurement Summary</span> page.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.16    "><a name="Add"></a>Add Construction Charges to Order</h4>
+            <p class="ccTextvorlage">On the  <span class="Bold">Navigate</span> tab, click <span class="Bold">Get CS Invoicing Calc. from Job</span> and then click <span class="Bold">CS Invoice Calculation</span>. The <span class="Bold">CS Invoicings</span> page opens.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_39.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 40">: Running the CS Invoice Calculation function</p>
+        </div>
+        <p class="ccTextvorlage">Click <span class="Bold">Edit</span> to open the <span class="Bold">Invoicing</span> page, change the <span class="Bold">Status</span> to <span class="Italics">Released</span> and then click <span class="Bold">Calculate</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_40.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 41">: Invoicing released and ready for calculation</p>
+        <p>The <span class="Bold">Value</span> and <span class="Bold">Cum. Value</span> fields are calculated. Click <span class="Bold">Transfer Values</span> to open the <span class="Bold">Calculation Value Transfer</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_41.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 42">: Calculation Value Transfer page with calculated values</p>
+        <p class="ccTextvorlage">Select both charges and then select the last line in the <span class="Bold">Transfer to Line(s)</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_42.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 43">: Both charge lines to be transferred below the last invoice line</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Transfer Values</span> to complete the transfer process.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_43.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 44">: Charges have been transferred below the last order line</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the <span class="Bold">Calculation Value Transfer</span> and <span class="Bold">Invoicing</span> pages, click <span class="Bold">Close</span> to close the <span class="Bold">CS Invoicings</span> page.</p>
+        <p class="ccTextvorlage">In the Sales Invoice, notice that the charges have been added below the last sales line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_44.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 45">: Charges transferred to Sales Invoice</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.17    ">Move Part Invoices</h4>
+        <p>Partial Invoices that have been posted need to be moved from the invoice back to the Sales Order so that previously posted entries are not doubled during posting.</p>
+        <p>On the <span class="Bold">Navigate</span> tab of the Sales Order, click <span class="Bold">Move Part Invoices</span>. The <span class="Bold">Select Posted Sales Invoices</span> page opens.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_45.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 46">: Select Posted Sales Invoices opened from Move Part Invoices function with both invoices selected</p>
+        <p class="ccTextvorlage">With all lines selected for the previously posted partial sales invoices, click <span class="Bold">OK</span>. Negative entries are added to the end of the sales invoice.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_46.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 47">: Negative entries added to Sales Invoice to adjust posted partial invoices </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.18    ">Update Sales Order</h4>
+        <p class="ccTextvorlage">Prior to posting the sales order, in the <span class="Bold">General</span> FastTab, update the <span class="Bold">Posting Date</span> field.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_47.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 48">: Posting Date updated in sales order</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.19    ">Post Sales Order and Print Document with Past Invoices</h4>
+        <p class="ccTextvorlage">Click <span class="Bold">Home &gt; Post</span> to ship and invoice the sales order. After posting, click <span class="Bold">Yes</span> to open the Posted Sales Invoice. The <span class="Bold">Construction Invoicing</span> FastTab displays related construction information.</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Actions &gt; Print</span> to open the Sales - Invoice dialog (for report 5292686). The <span class="Bold">Saved Settings</span> FastTab appears indicating that the last used options and filters have been set.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_48.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 49">: Sales - Invoice print dialog with Saved Settings FastTab</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Print</span> to generate a document or <span class="Bold">Preview</span> to view the document. The Sales Invoice document contains cumulative measurement information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_49.png" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 50">: Sales Invoice with cumulative Measurements and Construction Charges (less partial invoices)</p>
+        <p class="ccTextvorlage">The Sales Order was deleted since it has been completely processed. </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.20    "> Print Posted Sales Invoice without Past Invoices</h4>
+        <p class="ccTextvorlage">If none of the partial invoices have been paid by the customer, the <span class="Bold">Print Invoice/Payment History</span> field can be set to <span class="Italics">Payments</span> in the Sales - Invoice dialog. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_50.png" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 51">: Sales - Invoice print dialog with Payments setting</p>
+        <p class="ccTextvorlage">Using this setting will omit previous invoices and show any posted payments.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Part Invoice_51.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 52">: Sales Invoice without previous invoices and no posted payments</p>
+    </body>
+</html>

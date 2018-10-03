@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="761" MadCap:lastWidth="603" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 class="Heading1" MadCap:autonum="1   "><a name="_Toc434329974"></a>Demonstration – Validity Dates and Multiple Commission Recipients</h1>
+        <p class="ccTextvorlage">This demonstration provides an overview of how to use validity periods for commission rates and how to use multiple commission recipients on one customer with the identification of the primary recipient.</p>
+        <p class="ccTextvorlage"><span class="Bold">Scenario</span>: Kevin, the sales manager at CRONUS, decides to increase the sales volume within the LONDON responsibility center for a specific item. He grants Mark, who is responsible for that area, higher commission rates for a short period to push this project. </p>
+        <p class="ccTextvorlage">In addition, he grants Adam Green, who was the responsible commission recipient for the customers in Great Britain serviced from the LONDON responsibility center, an extra commission for these customers.</p>
+        <p class="ccTextvorlage">Susan, the sales order processor, enters a new sales order after Mark visits a customer and receives a new order. </p>
+        <p class="ccTextvorlage">At the end of the month, Arnie, the accounts receivable administrator, creates the commission statements, verifies several values and then issues the commission statement for Mark and Adam.</p>
+        <p class="ccDemoStepHeading">Specify Commission Rates for Validity Periods</p>
+        <p class="ccTextvorlage">Phyllis, the accounting manager, enters Marks’ commission rates for item 1964-W, INNSBRUCK Storage Unit. The commission rate is only valid for sales orders posted from February 11th to 15th, 2019.</p>
+        <p class="ccTextvorlage">Follow these steps to enter commission rates:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="CCBausteinInhaltZchn">cc|commission</span> menu, click <span class="Bold">Commission Rates</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the header, set the following filters:<ul start="1"><li class="ccTextvorlageNumberedList">Sales Type Filter = Customer Commission Group</li><li class="ccTextvorlageNumberedList">Comm. Recipient Type Filter = Commission Recipient</li><li class="ccTextvorlageNumberedList">Comm. Recipient Code Filter = C-0005 </li><li class="ccTextvorlageNumberedList">Type Filter = Item</li><li class="ccTextvorlageNumberedList">Code Filter = 1964-W</li></ul></li>
+            <li class="ccTextvorlageNumberedList">On the first line, enter the following information:<div class="ccDIV"><ul start="1"><li class="ccTextvorlageNumberedList">Sales Code = RETAIL</li><li class="ccTextvorlageNumberedList">Commission Type = Percent </li><li class="ccTextvorlageNumberedList">Commission = 6</li><li class="ccTextvorlageNumberedList">Starting Date = 02/11/19</li><li class="ccTextvorlageNumberedList">Ending Date = 02/15/19</li></ul></div></li>
+            <li class="ccTextvorlageNumberedList">On the next line, enter the following information:<ul start="1"><li class="ccTextvorlageNumberedList">Sales Code = STANDARD</li><li class="ccTextvorlageNumberedList">Commission Type = Percent </li><li class="ccTextvorlageNumberedList">Commission = 6</li><li class="ccTextvorlageNumberedList">Starting Date = 02/11/19</li><li class="ccTextvorlageNumberedList">Ending Date = 02/15/19</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Validity Dates.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Commission Rates for Mark Colins for item 1964-W</p>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Commission Rates</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Allocate Multiple Commission Recipients to One Customer</p>
+        <p class="ccTextvorlage">Phyllis re-allocates Adam Green to the customers in Great Britain serviced from the LONDON responsibility center. Adam receives 25% from the normal commission calculated for sales documents of these customers.</p>
+        <p class="ccTextvorlage">Follow these steps to allocate multiple commission recipients to customers:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the Sales &amp; Marketing menu, click <span class="Bold">Sales &gt; Customers</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate and select customer 50000, Guildford Water Department.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Commission Recipients</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, in the <span class="Bold">Commission Recipient No.</span> field, enter C-0002 (Adam Green).</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Share %</span> field, type 25.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Validity Dates_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Commission Recipients for customer 50000</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Customer Comm. Recipient Catalog</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Locate and select customer 60000, Blanemark Hifi Shop.</li>
+            <li class="ccTextvorlageNumberedList">Repeat steps 3–6.</li>
+            <li class="ccTextvorlageNumberedList">Locate and select customer 61000, Fairway Sound.</li>
+            <li class="ccTextvorlageNumberedList">Repeat steps 3–6.</li>
+            <li class="ccTextvorlageNumberedList">Locate and select customer 62000, The Device Shop.</li>
+            <li class="ccTextvorlageNumberedList">Repeat steps 3–6.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Create Posted Sales Document Lines for Items</p>
+        <p class="ccTextvorlage">Susan, the sales order processor, enters a new sales order after Mark visited his customer 60000, Blanemark Hifi Shop and made a new order on February 7, 2019. Since the order can be delivered directly, Susan can post the shipment and the invoice.</p>
+        <p class="ccTextvorlage">On February 14, 2019, Susan enters the next new sales order after Mark has visited his customer 61000 Fairway Sound and made a new order. The order can be delivered directly. Susan can post the shipment and the invoice.</p>
+        <p class="ccTextvorlage">Follow these steps to enter and post two sales orders:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the Sales &amp; Marketing menu, click <span class="Bold">Order Processing &gt; Sales Orders</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span> and then press ENTER.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Sell-to Customer No.</span> field, enter 60000.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/07/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Order Date</span> field, enter 02/07/19.</li>
+            <li class="ccTextvorlageNumberedList">On ribbon, click <span class="Bold">Navigate &gt; Commission Recipients</span> to confirm that the correct commission recipients are allocated to the sales order.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Validity Dates_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Commission Recipients assigned to the sales order</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Sales Commission Recipients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the first sales line, select <span class="Italics">Item</span> in the <span class="Bold">Type</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter 1964-W.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Location Code</span> field, enter BLUE.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 5.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship and Invoice</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">No</span> to close the confirmation message without opening the posted invoice.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span> and then press ENTER.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Sell-to Customer No.</span> field, enter 61000.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/14/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Order Date</span> field, enter 02/14/19.</li>
+            <li class="ccTextvorlageNumberedList">Review the allocated Commission Recipients as needed.</li>
+            <li class="ccTextvorlageNumberedList">On the first sales line, select <span class="Italics">Item</span> in the <span class="Bold">Type</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter 1964-W.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Location Code</span> field, enter BLUE.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 3.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship and Invoice</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">No</span> to close the confirmation message without opening the posted invoice.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Automatically Create Commission Statements</p>
+        <p class="ccTextvorlage">At the end of the month, Arnie, the accounts receivable administrator, creates the monthly commission statements for Mark and Adam.</p>
+        <p class="ccTextvorlage">Follow these steps to create an automated commission statement:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="CCBausteinInhaltZchn">cc|commission</span> menu, click <span class="Bold">Create Commission Statements</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/28/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Document Date</span> field, enter 02/28/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Statement from</span> field, enter 02/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Statement to</span> field, enter 02/28/19.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Commission Recipient</span> FastTab, enter C-0002|C-0005 in the <span class="Bold">No.</span> field.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Validity Dates_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Create Commission Statement for both Adam and Mark</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to run the Create Commission Statement batch job.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Verify Commission Lines </p>
+            <p class="ccTextvorlage">After he has created the commission statement for Mark and Adam, Arnie checks the commission statement and verifies the values. </p>
+            <p class="ccTextvorlage">To check the commission statement and verifying the values:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">On the <span class="CCBausteinInhaltZchn">cc|commission</span> menu, click <span class="Bold">Commission Statements</span>.</li>
+                <li class="ccTextvorlageNumberedList">Locate and open the commission statement for Adam Green.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Validity Dates_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5"><a name="_Ref287357724"></a>: Commission Statement for Adam </p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Calculation Information</span>. Confirm the information, for example, that the calculation only uses 25% of the commission amount to calculate the commission. </li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Validity Dates_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Commission line information for Adam </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNumberedListNoteHeadingIndent">Note</p>
+            <p class="ccTextvorlageNumberedListNoteBodyIndent">The commission percentage is adjusted to reflect the 25% share requirement.</p>
+        </div>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Commission Line Information</span> and <span class="Bold">Commission Statement</span> pages.</li>
+            <li class="ccTextvorlageNumberedList">Locate and open the commission statement for Mark Colins.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Validity Dates_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Commission Statement for Mark showing different commissions based on posting dates</p>
+        <p class="ccTabellenText" style="margin-left: 36pt;">Notice that the lines have different commission values due to the date on which the sales documents were posted. This is not the case for Adam (refer to <MadCap:xref href="#_Ref287357724" class="Figure">Fig. 4</MadCap:xref>), who did not have validity dates assigned for the sale of this item.</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Calculation Information</span>. Confirm the information, for example, that the calculation uses 100% of the commission amount to calculate the commission.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Validity Dates_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Commission line information for Mark</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Commission Line Information</span> and <span class="Bold">Commission Statement</span> pages.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Issue Commission Statements </p>
+        <p class="ccTextvorlage">After Arnie checks the commission statements, he issues and then prints the commission statement for Mark and Adam to use it as the basis for the payment.</p>
+        <p class="ccTextvorlage">Follow these steps to issue and print issued commission statements:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon of the Commission Statements list page, click <span class="Bold">Issue.</span></li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Commission Statement Header</span> FastTab, enter CS-10005|CS-10006 in the <span class="Bold">No.</span> field (the commission statements for Adam and Mark).</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Validity Dates_8.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Issue Commission Statement for Adam and Mark</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to run the Issue Commission Statement batch job.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="CCBausteinInhaltZchn">cc|commission</span> menu, click <span class="Bold">Issued Commission Statements</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the last issued commission statement for Adam (ICS-10002) and then click <span class="Bold">Print</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Validity Dates_9.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Printing Commission Statement for Adam </p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Preview</span> to review the commission statement for Adam.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Validity Dates_10.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Printed Commission Statement for Adam </p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Repeat steps 5–7 to review the commission statement (ICS-10003) for Mark.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Demonstration Validity Dates_11.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Printed Commission Statement for Mark</p>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+        </ol>
+    </body>
+</html>

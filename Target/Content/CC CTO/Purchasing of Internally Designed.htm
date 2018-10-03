@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref310330883"></a><a name="_Toc434568066"></a>Purchasing of Internally Designed Items</h3>
+        <p class="ccTextvorlage">The BOM of components that are simultaneously purchased and designed internally can be entered as text and transferred to the Purchase Order, which provides the vendor with the BOM structure.</p>
+        <p class="ccTextvorlage">The <span class="Bold">Copy BOM to Text</span> field is available on the lines of the Master BOM, Document BOM, Construction Order, Service BOM and Prod. Order Component (and archived documents). This field has the following options:</p>
+        <ul>
+            <li class="ccAufzählungblau">Production BOM – The current production BOM of the item will be copied to the purchase line text. This option is not dependent on the document type that created the demand (Document BOM, Construction Order Line or Production Order Component).</li>
+            <li class="ccAufzählungblau">Doc./Constr. BOM – The BOM from the Document BOM / Construction Order will be copied to the purchase line text. The Document BOM / Construction Order Lines will be copied based on the following criteria:<ul><li>If a Document BOM / Construction Order line created the demand and the component has a Sub BOM.</li><li>If a Production Order has been created from a Document BOM / Construction Order line and the Prod. Order Component created the demand.</li></ul></li>
+        </ul>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Example – Line Text from Document BOM</h4>
+            <p class="ccTextvorlage">A sales order is created for one unit of item D-9000. In the Document BOM, two components are added below item D-9006, where the <span class="Bold">Copy to BOM to Text</span> field is set to <span class="Italics">Doc./Constr. BOM</span>.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Purchasing of Internally Designed.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Document BOM set to copy BOM to purchase line text </p>
+        </div>
+        <p class="ccTextvorlage">After the Document BOM is released, the “Calculate Plan” function is run in the Requisition Worksheet for item D-9006.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Purchasing of Internally Designed_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Requisition Worksheet for item D-9006 from Document BOM</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The text copied to the Requisition Worksheet line from the document BOM/construction order/production BOM line can be opened by clicking <span class="Bold">Navigate &gt; Line Texts</span>.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The “Carry Out Action Message” function is run and then the Purchase Order is opened to view the line text. The two components added for item D-9006 in the Document BOM are listed in the line text (<span class="Bold">Lines FastTab &gt; Line &gt; Line Texts</span>).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Purchasing of Internally Designed_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Purchase Line Text copied from Document BOM </p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">The same process occurs when a Construction Order is created except the purchase line text will be copied from the Construction Order line.</p>
+        </div>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Example – Line Text from Production BOM</h4>
+            <p class="ccTextvorlage">In this example, a production BOM with the two components is assigned to item D-9006 and then a sales order is created for 1 unit of item D-9000.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Purchasing of Internally Designed_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Production BOM assigned to item D-9006</p>
+        </div>
+        <p class="ccTextvorlage">On the Document BOM for the sales order, set the <span class="Bold">Copy BOM to Text</span> field to <span class="Italics">Production BOM</span> on the line for item D-9006.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Purchasing of Internally Designed_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Document BOM set to copy BOM to purchase line text from Production BOM</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">After the Document BOM is released, the “Calculate Plan” function is run in the Requisition Worksheet for item D-9006. The “Carry Out Action Message” function is run and then the Purchase Order is opened to view the line text. The two components from the Production BOM are listed in the line text (<span class="Bold">Lines FastTab &gt; Line &gt; Line Texts</span>).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Purchasing of Internally Designed_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Purchase Line Text copied from Production BOM </p>
+        </div>
+    </body>
+</html>

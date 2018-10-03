@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:fileTags="StatusFileTags.6 Needs to be Sent for Review,StatusFileTags.5 Needs to be Finished with Edits" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc445394452"></a>Entering Information in the Job Budget Calculation</h2>
+        <p class="ccTextvorlage">This section includes processes for entering information in the Job Budget Calculation view.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc445394453"></a>Exercise – Create Job Calculation Lines</h3>
+        <p class="ccTextvorlage">This exercise explains how to enter general, service or standard items in the Job Budget Calculation view. For information on entering items with BOMs, refer to topic <MadCap:xref href="#_Ref383522176">“Entering BOMs in Job Structure” on page 1</MadCap:xref>.</p>
+        <p class="ccTextvorlage">To create job calculation lines, follow these steps:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the navigation pane, click <span class="Bold">Departments</span> &gt; <span class="CCBausteinInhaltZchn">cc|project</span> &gt; <span class="Bold">Jobs &gt; Jobs</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate the relevant Job Card to add budget calculation lines.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Budget Calculation</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New Position</span>. </li>
+            <li class="ccTextvorlageNumberedList">If the first position is a header line with no pricing, follow these steps:<ol start="1"><li class="ccTextvorlageNumberedList">Leave the <span class="Bold">Type</span> and <span class="Bold">No.</span> fields empty.</li><li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type a short description for the Position.</li><li class="ccTextvorlageNumberedList">Leave the remaining fields empty.</li></ol></li>
+            <li class="ccTextvorlageNumberedList">If the first position is used to identify the total job price, follow these steps:<ol start="1"><li class="ccTextvorlageNumberedList">In the <span class="Bold">Type</span> field, enter General.</li><li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter the appropriate general component. Remember that the selection here determines which G/L account is posted to when this order is invoiced.</li><li class="ccTextvorlageNumberedList">If the <span class="Bold">Description</span> field is not populated from the selected number, type a short description, for example, Total Price. This description will appear on the invoice.</li><li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 1 since this is a single line entry for the full cost of the job budget.</li><li class="ccTextvorlageNumberedList">In the <span class="Bold">Direct Unit Cost</span> field, type the full cost of the job budget. </li><li class="ccTextvorlageNumberedList">In the <span class="Bold">Unit Price (LCY)</span> field, type the full price of the job, if not already calculated.</li><li class="ccTextvorlageNumberedList">Alternatively, leave the <span class="Bold">Quantity</span>, <span class="Bold">Direct Unit Cost</span> and <span class="Bold">Unit Price (LCY)</span> fields blank so that these values can be automatically calculated using the Rollup functionality.</li></ol></li>
+            <li class="ccTextvorlageNumberedList">While on the first Position, insert the next line, click one of the following actions on the ribbon:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">New Level</span> to insert a Level of that Position. </li><li class="ccTextvorlageNumberedList"><span class="Bold">New Position</span> to insert a new Position.</li></ol></li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Type</span> field, enter the type of job line to be created, such as a service to be performed, or an item to be purchased.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter the appropriate number corresponding to the selected <span class="Bold">Type</span>.</li>
+            <li class="ccTextvorlageNumberedList">Update the <span class="Bold">Description</span> field as needed.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type the number of days, hours, and so on, budgeted for this level/position.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Unit of Measure Code</span> field, enter the appropriate unit of measure for this level/position.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Direct Unit Cost</span> field, type the unit cost in the relevant unit of measure for this level/position. </li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Unit Price (LCY)</span> field, type the unit price in the relevant unit of measure for this level/position.</li>
+            <li class="ccTextvorlageNumberedList">Repeat steps 7–14 for the remaining calculation lines.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Job Budget Calculation view with sample entries</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Ref383522176"></a><a name="_Toc445394454"></a>Entering BOMs in Job Structure</h3>
+        <p class="ccTextvorlage">Complete item BOMs can be considered for the job structure plan.</p>
+        <p class="ccTextvorlage">If the system identifies that a production or assembly BOM is present, the Job Line BOM Control dialog box appears.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_1.png" MadCap:mediastyle="@media print { max-width: 4.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Job Line BOM Control dialog box opened by adding item D-1000 to the Budget Calculation </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The usage of Document BOMs are described in topic <MadCap:xref href="cc configure to order.htm">“cc|configure to order” on page 1</MadCap:xref>.</p>
+        <p class="ccTextvorlage">When a Production BOM Item is inserted as a component on a job structure, the entire Production BOM and Routing assigned to the item can be “exploded” in the Job Budget Calculation view.</p>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#_Ref380762808" class="Figure">Fig. 3</MadCap:xref>, a BOM is included on item D-1000, Conveyor System. When expanded, the substructure (Production BOM and Routing) can be modified and then the modified Production BOM and Routing can be used in a Production Order created from the job.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_2.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="_Ref380762808"></a>: Conveyor System item with expanded production BOM and routings </p>
+        <p class="ccTextvorlage">The production BOM of the pallet rotating device can be expanded further. Here it can be decided if the BOM will be modified for the project or if it should be purchased as a whole (item).</p>
+        <p>BOMs can also be added to the Job Budget Calculation from a General Component to which an item with an assembly BOM has been assigned.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: BOM Item assigned to general component FREIGHT</p>
+        <p class="ccTextvorlage">When the general component is added to the Job Budget Calculation line, the  Job Line BOM Control dialog box opens, identifying  it as an Assembly BOM.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_4.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Job Line BOM Control dialog box opened by adding general component with item BOM to Job Budget Calculation </p>
+        <p class="ccTextvorlage">The BOM behind the item can be exploded to the job line budget without creating an additional level.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: General component with BOM item added to Job Budget Calculation</p>
+        <p class="ccTextvorlage">Any Production BOM or Assembly BOM that was added to the  Job Budget Calculation line without exploding it upon insertion (by setting <span class="Bold">BOM Levels</span> = <span class="Italics">No BOM</span> in the  Job Line BOM Control dialog box) can be exploded at any time using the “Expand BOM” function on the <span class="Bold">Actions</span> tab, which reopens the  Job Line BOM Control dialog box.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc445394455"></a>Copy and Move Positions and Levels</h3>
+        <p class="ccTextvorlage">This section explains how to copy and move Positions and Levels within the Job Budget Calculation view.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.3.1    ">Copying Positions and Levels</h4>
+        <p class="ccTextvorlage">Within <span class="CCBausteinInhaltZchn">cc|project</span>, it is possible to copy Positions from one job to another. When a Position is copied, the subordinate Levels are copied with it. </p>
+        <h5 class="Heading5" MadCap:autonum="1.1.3.1.1    ">Exercise – Copy Job Structure</h5>
+        <p class="ccTextvorlage">To copy positions and levels from one job to another, follow these steps:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the navigation pane, click <span class="CCBausteinInhaltZchn">cc|project</span> <span class="Bold">&gt; Jobs &gt; Jobs</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate and select the job to which the structure will be copied.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Budget Calculation</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New Position</span>.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNumberedListNoteHeadingIndent">Note</p>
+            <p class="ccTextvorlageNumberedListNoteBodyIndent">At least one Position must exist before a structure can be copied.   </p>
+        </div>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Actions &gt; Copy from</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Job</span> FastTab, enter in the <span class="Bold">No.</span> filter field the job number to be copied.</li>
+            <li class="ccTextvorlageNumberedList">Enter other filters as needed and then click <span class="Bold">OK</span>. <br />Results that match the filtering criteria display in the <span class="Bold">Search Job Lines</span> page. </li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_6.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Search Job Lines page displaying lines available for copying </p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Search Job Lines</span> page, select the line to be copied and then click <span class="Bold">OK</span>. The Levels are copied with the Position.</li>
+            <li class="ccTextvorlageNumberedList">If additional lines need to be copied, add additional positions and then repeat steps 5–8. </li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">Complete job structures can also be copied from one job to another using the “Copy Job” function.</p>
+        </div>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.3.2    "><a name="_Ref380760800"></a>Moving Positions and Levels</h4>
+            <p class="ccTextvorlage">It is possible to move Positions and Levels in the Job Budget Calculation view by clicking <span class="Bold">Actions &gt; Move</span> and then specifying the direction and degree of the move. The options are:</p>
+            <ul>
+                <li class="ccAufzählungblau">Up (from one Position)</li>
+                <li class="ccAufzählungblau">Down (from one Position)</li>
+                <li class="ccAufzählungblau">Level Up (move up within a Level)</li>
+                <li class="ccAufzählungblau">Level down (move down within a Level)</li>
+            </ul>
+        </div>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Ref383522161"></a><a name="_Toc445394456"></a>Rollup Functionality</h3>
+            <p class="ccTextvorlage">The Rollup functionality enables lines to be summarized. Lines with a Rollup Type are then summarized on the next higher level in the hierarchy according to the selected Rollup Type. The options are:</p>
+            <ul>
+                <li class="ccAufzählungblau">Value – Only amounts are passed (with a Quantity of 1)</li>
+                <li class="ccAufzählungblau">Quantity+Value – Quantities and amounts are passed</li>
+                <li class="ccAufzählungblau">BOM – BOM components are passed to the main BOM; the quantity in upper structure will not change</li>
+            </ul>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_7.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8"><a name="_Ref380754727"></a>: Rollup calculations in Job Budget Calculation view </p>
+        <p class="ccTextvorlage">The summary of the quantity information can be applied to a different unit in the higher level. As shown in <MadCap:xref href="#_Ref380754727" class="Figure">Fig. 5</MadCap:xref>, WBS positions 1.1.1.–1.1.3. produce 280 hours in the summarized WBS position 1.1. This can be done because WBS position 1.1 was subsequently set up with a component that uses hours as the base unit, but can also be used with day units with a conversion factor of 8.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">No plausibility checks are carried out for the units when WBS positions are linked.</p>
+        </div>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.5    "><a name="_Ref383434051"></a><a name="_Toc445394457"></a>Budgeting</h3>
+            <p class="ccTextvorlage">The Budgeting functionality enables fixed calculation values to be assigned to WBS positions. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Entering Information in the_8.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Budgeting in Job Budget Calculation view </p>
+        </div>
+        <p class="ccTextvorlage">WBS positions are fixed by selecting the <span class="Bold">Budget</span> check box, which also selects the <span class="Bold">Budget Costs</span> check box. Both fields can be used independently:</p>
+        <ul>
+            <li class="ccAufzählungblau">Budget – used for quantity and sales amounts.</li>
+            <li class="ccAufzählungblau">Budget Costs – used for quantity, total direct cost, and total cost.</li>
+        </ul>
+        <p class="ccTextvorlage">Once the check boxes are selected, the budget line can be modified, meaning that direct budgeting operations can then be performed on the WBS position.</p>
+        <p class="ccTextvorlage">The essential calculation data and remaining budget differences will be displayed in the WBS Calculation FactBox box for the actual position. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_9.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Budgeting in Job Budget Calculation view </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.6    "><a name="_Ref383424355"></a><a name="_Toc445394458"></a>Special Direct Unit Costs from Vendors</h3>
+        <p class="ccTextvorlage">Stored direct unit costs from vendors can be applied when the direct unit costs are calculated.</p>
+        <p class="ccTextvorlage">When an item is selected, the master vendor is displayed automatically in the <span class="Bold">Vendor No.</span> field. If the system finds a special direct unit cost for the item from the vendor, this value is included in the calculation. The parent remaining budget is adjusted.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_10.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Vendor direct costs in Job Budget Calculation view </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.6.1    ">Job-Specific Purchase Conditions</h4>
+        <p>Purchase prices and line discounts can be transferred from the item to the Job Budget Calculation. This feature uses the standard Purchase Prices and Line Discounts from the Item. The difference is that pricing can be made specific to a job.</p>
+        <p>For example, item D-7015 has a direct unit cost of 2500 but also has a purchase price of 2200 for 1 PCS to vendor 40000 when used for job J00010.01.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_10a.png" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Job-specific Purchase Prices for item D-7015</p>
+        <p>Note that the <span class="Bold">Main Job No.</span> and <span class="Bold">Job No.</span> fields are populated. This means that the special pricing is used not only for this job (J00010.01) but also applies to any job relating to the main job (J00010).</p>
+        <p>When this item is added to the Job Budget Calculation, the direct unit cost is 2500.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_10b.png" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Item with purchase prices added to Job Budget Calculation without vendor</p>
+        <p class="ccTextvorlage">When the vendor with special pricing is added, the cost is updated to 2200. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_10c.png" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Direct Unit Cost updated from vendor purchase price</p>
+        <p class="ccTextvorlage">If a line discount exists for this job, perhaps a 1.5 percent discount if 2 PCS are purchased from vendor 40000, the Purchase Line Discount %/Amount is also updated in the Job Budget Calculation.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_10d.png" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Purchase Line Discount applied to Job Budget Calculation</p>
+        <p>It is possible to transfer purchase prices and line discounts from a purchase quote to the master data (Item). If a job is attached to the purchase quote line, the related job information is also included as well as the source document (purchase quote) information.</p>
+        <p>The “Transfer Purchase Conditions” function can be used at any time a purchase quote is created, such as during the procurement process or when using <span class="CCBausteinInhaltZchn">cc|purchase quotes manager</span>. </p>
+        <p>Refer to topic <MadCap:xref href="Procurement.htm#Transfer">“Transfer Purchase Conditions from Purchase Quote” on page 1</MadCap:xref> for more information.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.7    "><a name="_Ref383250833"></a><a name="_Ref383424043"></a><a name="_Toc445394459"></a>Calculation with Currencies</h3>
+            <p class="ccTextvorlage">Calculations can be performed using prices (sales and purchases) in foreign currencies.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Entering Information in the_11.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Purchase currency assigned to vendor 01587796 for item D-7011, Engine </p>
+        </div>
+        <p class="ccTextvorlage">Foreign currencies can be entered directly in the relevant job line or are predefined through the vendor setup. Purchase prices in foreign currencies will be converted internally for the process of job calculation.  </p>
+        <p class="ccTextvorlage">The <span class="Bold">Purchase Currency Date</span> and <span class="Bold">Sales Currency Date</span> fields are set up on the individual lines. If this field is blank, the current date is used. </p>
+        <p class="ccTextvorlage">Alternative currencies can be defined for sales invoices on the Job Card. Refer to topic <MadCap:xref href="Invoicing.htm#Invoicin">“Invoicing with Foreign Currencies” on page 1</MadCap:xref>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_12.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Sales currencies on Job Card </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.8    "><a name="_Toc445394460"></a>Recalculate Charges </h3>
+        <p class="ccTextvorlage">Job Charges that are added or modified after the Job Budget Calculation has been created can be recalculated. There are two options for recalculation charges:</p>
+        <ul>
+            <li class="ccAufzählungblau">“Update Calculation” function from the <span class="Bold">Actions</span> tab on the Job Budget Calculation view</li>
+            <li class="ccAufzählungblau"> “Update Extra Charges” function from the <span class="Bold">Job Charges</span> page</li>
+        </ul>
+        <h4 class="Heading4" MadCap:autonum="1.1.8.1    ">Update Calculation</h4>
+        <p class="ccTextvorlage">As described in topic <MadCap:xref href="Job Budget Calculation View.htm#_Ref383449886">“Update Calculation” on page 1</MadCap:xref>, the “Update Calculation” function updates the existing calculation depending on the line type. </p>
+        <p class="ccTextvorlage">
+            <MadCap:xref href="#_Ref381902073" class="Figure">Fig. 11</MadCap:xref> illustrates the calculation that has been created based on the defined project surcharges.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_13.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 18"><a name="_Ref381902073"></a>: Job Charges in Job Budget Calculation view</p>
+        <p class="ccTextvorlage">For all low level calculation lines, an Indirect Cost % of 10 has been added to the unit cost, which results in the calculated unit price.</p>
+        <p class="ccTextvorlage">The Extra Charge % will only be calculated for the component lines if the <span class="Bold">Unit Price Base</span> from the Job Card is <span class="Bold">Cost</span>. In case of <span class="Bold">Price</span>, the surcharge will be calculated based on the Unit Cost and Unit Price fields.</p>
+        <p class="ccTextvorlage">Job charges are set up by defining the <span class="Bold">Indirect Cost %</span> and <span class="Bold">Extra Charge %</span> fields on the Job Card by clicking <span class="Bold">Navigate &gt; Charges</span>. These charges can be changed at any time.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_14.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 19">: Indirect Cost % and Extra Charge % values updated for Job J000001.01</p>
+        <p class="ccTextvorlage">In the Job Budget Calculation view, click <span class="Bold">Actions &gt; Update Calculation</span> to begin the update process. Depending on the line(s) selected, a selection dialog may open first to ensure the correct line(s) are included in the update.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_15.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 20">: Update Calculation request page</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Refer to topic <MadCap:xref href="Job Budget Calculation View.htm#_Ref383449886">“Update Calculation” on page 1</MadCap:xref> for more information about the options in this dialog.</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to open the <span class="Bold">Update Calculation</span> request page. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_16.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 21">: Update Calculation request page </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Refer to topic <MadCap:xref href="Job Budget Calculation View.htm#_Ref383449886">“Update Calculation” on page 1</MadCap:xref> for more information about the fields on this page.</p>
+        <p class="ccTextvorlage">
+            <MadCap:xref href="#_Ref383449863" class="Figure">Fig. 15</MadCap:xref> illustrates the calculations after the “Recalculate Charges” function was run with the following settings for all job lines:</p>
+        <ul>
+            <li class="ccAufzählungblau">Reset Budget = Cost</li>
+            <li class="ccAufzählungblau">Direct Unit Costs, Indirect Cost %, Extra Charge % and Unit Prices = Pricing</li>
+            <li class="ccAufzählungblau">Unit Price Base = Extra Charge %</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_17.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 22"><a name="_Ref383449863"></a>: Job Budget Calculation view lines recalculated with reset budget lines</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.8.2    ">Update Extra Charges</h4>
+        <p class="ccTextvorlage">The “Update Extra Charges” function offers the ability to update the Extra Charge % on specific Job Budget lines with Calculation Group codes. </p>
+        <p class="ccTextvorlage">
+            <MadCap:xref href="#:" class="Figure">Fig. 19</MadCap:xref> illustrates the extra charges and calculation groups for a new job.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_18.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 23"><a name=":"></a>: Extra Charges and Calculation Groups in Job Budget Calculation view</p>
+        <p class="ccTextvorlage">When the “Update Extra Charges” function is run from the <span class="Bold">Job Charges</span> page, a message appears asking to confirm the update.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_19.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 24">: Running the “Update Extra Charges” function for job budget lines with MAT calculation group</p>
+        <p class="ccTextvorlage">Select <span class="Bold">Yes</span> to update the extra charges for the calculation group or <span class="Bold">No</span> to cancel the process.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_20.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 25">: Job Budget Calculation view lines with Calculation Group = MAT recalculated with reset budget lines</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.9    "><a name="_Ref383424958"></a><a name="_Ref383441436"></a><a name="_Ref383442040"></a><a name="_Toc445394461"></a>Calculation Schedules</h3>
+            <p class="ccTextvorlage">The Calculation Schedule is a worksheet that is used to perform various calculations on a job line to determine its Unit Price. </p>
+            <p class="ccTextvorlage">Calculation Schedules rely on Calculation Groups, which are set up on the components.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Entering Information in the_21.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 26">: Job Budget Calculation view with Calculation Groups</p>
+        </div>
+        <p class="ccTextvorlage">Calculation Schedules can only be used on lines that are hierarchically below or within itself. For example, line 1.1. can have a Calculation Schedule that is the result of the following formula: (line 1.1.1. + line 1.1.2.) * 1.05% + line 1.1.3. Notice that the formula is comprised of subsections hierarchically within line 1.1.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Extra charges can be calculated once they are set up in the <span class="Bold">Job Calc. Extra Charges</span> page, which is accessed from the <span class="CCBausteinInhaltZchn">cc|project</span> menu by clicking <span class="Bold">Administration &gt; Calc. Schedule Extra Charges</span>.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Entering Information in the_22.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 27">: Job Calculation Extra Charges</p>
+        </div>
+        <p class="ccTextvorlage">In <MadCap:xref href="#_Ref383449998" class="Figure">Fig. 22</MadCap:xref>, notice the Extra Charge lines and the corresponding Job Calc. Extra Charge codes in the <span class="Bold">Totaling</span> field.</p>
+        <p class="ccTextvorlage">The Calculation Schedule is accessed from the Job Budget Calculation view. </p>
+        <p class="ccTextvorlage">With the proper job line selected, click <span class="Bold">Navigate &gt; Calculation Schedule</span>. If a calculation schedule does not exist, a message appears asking to create one for the WBS line (alternatively, a new schedule – or an additional version – can be created by clicking <span class="Bold">Actions &gt; Create Calc. Schedule</span>). If a calculation exists, the <span class="Bold">Job Calc. Schedule Job Line</span> page opens. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_23.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 28">: New Job Calculation Schedule for WBS 1.</p>
+        <p class="ccTextvorlage">To populate the calculation schedule lines with a standard template, click <span class="Bold">Import from template</span> on the ribbon. To update the calculation in the lines, click <span class="Bold">Calculate</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_24.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 29"><a name="_Ref383449998"></a>: Job Calc. Schedule with standard calculation template and Quote Calculation</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.9.1    ">General FastTab</h4>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">General</span> FastTab of the <span class="Bold">Job Line Calc. Schedule</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 114px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">For internal use only.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Job No. </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Job Budget Calculation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">WBS</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Job Budget Calculation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Version No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">System-generated; indicates the current version of the Calculation Schedule for the job line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Job Budget Calculation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculation Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Manages the calculation of the corresponding fields in the column. The status is changed automatically when a Sales Quote or Sales Order is generated:</p>
+                        <ul>
+                            <li class="ccAufzählung">Quote Calculation – initial status</li>
+                            <li class="ccAufzählung">Order Calculation – changed from Quote Calculation when Sales Quote is created</li>
+                            <li class="ccAufzählung">Procurement+Actual – changed from Order Calculation when Sales Order is created</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculation Row No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the line from where the value in the <span class="Bold">Calculation Value</span> field originates.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculation Value</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the value that will be transferred to the job line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Pass Amount Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Manages which sum will be transferred as the Calculation Value if the “Transfer Calculated Value” function is run. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Total Direct Cost</li>
+                            <li class="ccAufzählung">Total Cost</li>
+                            <li class="ccAufzählung">Total Price</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Pass Automatic</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the calculation of the schedule is triggered automatically with each pricing in Budget Calculation.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.9.2    ">Status FastTab</h4>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Status</span> FastTab indicate by whom and when the Calculation Schedule was created and modified.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.9.3    ">Lines FastTab</h4>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Lines</span> FastTab that are specific to the <span class="Bold">Job Calc. Schedule Job Line</span> page are described in the following table. Refer to topic <MadCap:xref href="Calculation.htm#_Ref437873970">“Calculation Schedule Templates” on page 1</MadCap:xref> for descriptions of the other fields.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Quote Calculation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the calculation for <span class="Bold">Status</span> = <span class="Italics">Quote Calculation</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Order Calculation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the calculation for <span class="Bold">Status</span> =<span class="Italics">Order Calculation</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Procurement</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the calculation for <span class="Bold">Status</span> = <span class="Italics">Procurement+Actual</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Actual</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the calculation for <span class="Bold">Status</span> = <span class="Italics">Procurement+Actual</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Error</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">If selected, an error has occurred during the calculation.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h5 class="Heading5" MadCap:autonum="1.1.9.3.1    ">Show Budget Lines</h5>
+        <p class="ccTextvorlage">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Show Budget Lines</span> to display all the lines with the Calculation Group indicated in the <span class="Bold">Totaling</span> field. </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">This function only works on lines with <span class="Bold">Totaling Type</span> = Calculation Group.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_25.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 30"><a name="_Ref438132189"></a>: Job Budget Calculation lines with MAT calculation group</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.9.4    ">Actions Tab</h4>
+            <p class="ccTextvorlage">The functions on the <span class="Bold">Actions</span> Tab are described in the following table.</p>
+            <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 131px;" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                            <p class="ccTebellenüberschrift">Function</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                            <p class="ccTebellenüberschrift">Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Import from template</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Imports a standard template into the calculation schedule.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Calculate</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Calculates the Calculation Schedule for a job line based on the complete substructure. The substructures must link with the <span class="Bold">Rollup Type</span>.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                            <p class="ccTabellenText">Transfer Calculated Amount</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                            <p class="ccTabellenText">Transfers the calculated value to the Job Budget Calculation view (refer to topic <MadCap:xref href="#_Ref382322403">“Transfer Calculated Amount” on page 1</MadCap:xref>).</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="ccTextvorlagenospace"> </p>
+        </div>
+        <h5 class="Heading5" MadCap:autonum="1.1.9.4.1    "><a name="_Ref382322403"></a>Transfer Calculated Amount</h5>
+        <p class="ccTextvorlage">Once the calculation is complete, the amount indicated in the <span class="Bold">Calculation Value</span> field can be transferred (as indicated in the <span class="Bold">Pass Amount Type</span> field) to the Job Budget Calculation view.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_26.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 31">: Calculated value of 27,600 transferred to the Total Price on the Job Budget Calculation view</p>
+        <p class="ccTextvorlage">As <MadCap:xref href="#_Ref438138390" class="Figure">Fig. 25</MadCap:xref> illustrates, the total price in the Job Budget Calculation view has been updated with the calculated value of 27,600.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Entering Information in the_27.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 32"><a name="_Ref438138390"></a>: Total prices updated with calculated value from the calculation schedule</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.10    "><a name="_Ref383425362"></a><a name="_Toc445394462"></a>Summarize Position</h3>
+            <p class="ccTextvorlage">Calculation structures can be different than processing structures.</p>
+            <p class="ccTextvorlage">It is possible to create sums for a component without the value of this sum being used in the calculation. These WBS positions are used for processing because it is sometimes easier to enter time on one WBS position instead of on detailed WBS positions.</p>
+            <p class="ccTextvorlage">To use the summarize WBS position feature, a new WBS position must be created. After the component to be summarized is inserted, select the <span class="Bold">Summarize Position</span> check box to create the sums.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Entering Information in the_28.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 33"> : Summarized Position for Assembly lines in the Job Budget Calculation view</p>
+        </div>
+        <p class="ccTextvorlage">If the <span class="Bold">Summarize Position</span> check box is selected and WBS positions exist for the same component, the <span class="Bold">Quantity</span> and <span class="Bold">Direct Unit Cost</span> fields will be updated automatically.</p>
+    </body>
+</html>

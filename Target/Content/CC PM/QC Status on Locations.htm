@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="839" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref415832936"></a><a name="_Toc434256724"></a>QC Status on Locations</h3>
+            <p class="ccTextvorlage">When a QC Status change occurs, the history can be tracked with the item tracing functionality if the QC Status is used with locations. </p>
+            <p class="ccTextvorlage">For each QC status, a fixed location can be specified. This status indicates in which location an item must be stored during certain processes. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/QC Status on Locations.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 331px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: QC Status with standard location codes highlighted</p>
+        </div>
+        <p class="ccTextvorlage">For example, items that are set up to default to the Blocked QC status must be placed in the BLOCKED location during transfers, items with QC Status = <span class="Italics">FREE</span> must be placed in the MAINWH location during all processing, and so on.</p>
+        <p class="ccTextvorlage">This information not only controls whether certain goods with a certain status will be properly stored, but also when changing from one status to another.</p>
+        <p class="ccTextvorlage">In the <span class="Bold">QC Status Change</span> page, if the <span class="Bold">Transfer</span> check box is selected, the location code is also changed in the item ledger entries to match the standard location code connected to the status entered in the <span class="Bold">New QC Status</span> field. </p>
+        <p class="ccTextvorlage">The <span class="Bold">Transfer</span> check box can only be selected when the <span class="Bold">New QC Status</span> field is filled in. When the <span class="Bold">Transfer</span> check box is selected, the <span class="Bold">Posting Date</span> and <span class="Bold">Document Date</span> fields become available and indicate the dates used during the transfer posting.</p>
+        <p class="ccTextvorlage"> </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/QC Status on Locations_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="_Ref286332444"></a>: QC Status set to be changed from Blocked to Free</p>
+        <p class="ccTextvorlage">As <MadCap:xref href="#_Ref286332444" class="Figure">Fig. 2</MadCap:xref> illustrates, the QC Status is set to be changed from <span class="Italics">Blocked</span> to <span class="Italics">Free</span> and the current Location Code is set to <span class="Italics">BLOCKED</span>. Since the <span class="Bold">Transfer</span> check box is selected, the Location Code will change to <span class="Italics">MAINWH</span> when the function is run.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/QC Status on Locations_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: QC Status changed to Free and Location Code set to MAINWH</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">As previously stated, the item ledger entries are updated with the QC Status, date and Location Code changes.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/QC Status on Locations_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Item Ledger Entries updated with date, QC status and location changes</p>
+        </div>
+        <p class="ccTextvorlage">The “Transfer” function is also available in the <span class="Bold">Batch QC Status Change</span> page.</p>
+    </body>
+</html>

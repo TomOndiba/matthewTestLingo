@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434929934"></a>Processing Failures</h2>
+        <p class="ccTextvorlage">Failures are processed based on the following parameters:</p>
+        <ul>
+            <li class="ccAufzählungblau">Periods within the invoicing period are regarded as negative lines (credit lines) on the invoice. </li>
+            <li class="ccAufzählungblau">Periods before the current invoicing period are regarded in a separate Credit Memo.</li>
+            <li class="ccAufzählungblau">Periods after the current invoicing period are regarded as negative lines (credit lines) on the invoice in the proper period. </li>
+        </ul>
+        <p class="ccTextvorlage">These scenarios are demonstrated in the following sections.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434929935"></a>Exercise – Failure Period within the Invoicing Period</h3>
+        <p class="ccTextvorlage">Customer R-30000 orders four units of item R-30000-01 for the period of January 1, 2019 through March 3, 2019 at a price of 350.00 each. This is a monthly invoicing agreement; however the customer has asked to be invoiced for January and February immediately.</p>
+        <p class="ccTextvorlage">At the beginning of March, the customer calls to say that one of the units is damaged. They want to return it and not be billed for it for the month of March.</p>
+        <p class="ccDemoStepHeading">Create, Ship and Invoice the Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to create the rent order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Set the Work Date to 01/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|rental</span><span class="Bold"> &gt; Contract Management &gt; Rent Orders</span>.</li>
+            <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-30000.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Item</li><li class="ccTextvorlageNumberedList">No. = R-30000-01</li><li class="ccTextvorlageNumberedList">Quantity = 4</li><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Month Based = Yes</li><li class="ccTextvorlageNumberedList">Rental Start Date = 01/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 03/31/19</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 01/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 02/28/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and then on the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Create the Failure</p>
+        <p class="ccTextvorlage">Follow these steps to create the failure:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Enter Failure</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to create the failure period.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Start Date Failure</span> field, enter 03/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">End Date Failure</span> field, enter 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Failure Type</span> field, enter DAMAGE.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, enter 1.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Release</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Processing Failures.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Released Rental Failure Card </p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the value in the <span class="Bold">Qty. Failures</span> field and review the failure information.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Processing Failures_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Failure assigned to the rental line</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Process the Invoice with the Failure</p>
+        <p class="ccTextvorlage">Follow these steps to process the invoice with the failure:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and notice the following:<ul start="1"><li class="ccTextvorlageNumberedList">A negative credit line for the failed unit from 03/01/19 – 03/31/19 appears on the invoice.</li><li class="ccTextvorlageNumberedList">The credit is correctly calculated for the damaged unit (350 rate unit price for the month of March).</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Processing Failures_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Failure assigned to the rental line</p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the Rent Order.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Entries &gt; Rental Ledger Entries</span>.</li>
+            <li class="ccTextvorlageNumberedList">Notice that the credit line appears for the proper amount, in the proper date range, and for the proper quantity.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Processing Failures_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Rental Ledger Entries including failure credit</p>
+        <ol start="12">
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">Click the value in the <span class="Bold">Qty. Failures</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rental Failures</span> page, notice that the failure invoice was created through 03/31/19.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Processing Failures_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Updated rental failure line</p>
+        <ol start="15">
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Process the Return</p>
+        <p class="ccTextvorlage">Follow these steps to process the return:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/05/19.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, enter 03/05/19 in the <span class="Bold">Rental Return Date</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Return Qty. to Receive</span> field, type 1.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Notice that the <span class="Bold">Return Qty. Received</span> and <span class="Bold">Quantity Invoiced</span> fields are 1.</li>
+            <li class="ccTextvorlageNumberedList">Process the return of the remaining three items on 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">Notice that the <span class="Bold">Return Qty. Received</span> and <span class="Bold">Quantity Invoiced</span> fields are 4.</li>
+        </ol>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434929936"></a>Exercise – Failure Period before the Invoicing Period</h3>
+            <p class="ccTextvorlage">Customer R-30000 orders five units of item R-30000-01 for the period of January 1, 2019 through March 31, 2019 at a price of 350 each. This is a monthly invoicing agreement and the January invoice is posted immediately.</p>
+            <p class="ccTextvorlage">In mid-January, the customer calls to say that two of the units are damaged. You assure them that the items can be fixed at no cost for the down period of January 15th through January 20th and tell them that they will receive a credit memo with the next invoice billing.</p>
+            <p class="ccDemoStepHeading">Create, Ship, and Invoice the Rent Order</p>
+            <p class="ccTextvorlage">Follow these steps to create the rent order:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-30000.</li>
+                <li class="ccTextvorlageNumberedList">On the first line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Item</li><li class="ccTextvorlageNumberedList">No. = R-30000-01</li><li class="ccTextvorlageNumberedList">Quantity = 5</li><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Month Based = Yes</li><li class="ccTextvorlageNumberedList">Prepaid = Yes</li><li class="ccTextvorlageNumberedList">Rental Start Date = 01/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 03/31/19</li></ol></li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+                <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+                <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 01/01/19.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 01/31/19.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+                <li class="ccTextvorlageNumberedList">Open the invoice and then on the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+                <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            </ol>
+        </div>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create the Failure</p>
+            <p class="ccTextvorlage">Follow these steps to create the failure:</p>
+        </div>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Enter Failure</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to create the failure period.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Start Date Failure</span> field, enter 01/15/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">End Date Failure</span> field, enter 01/20/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Failure Type</span> field, enter DAMAGE.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, enter 2.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Release</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the value in the <span class="Bold">Qty. Failures</span> field and review the failure information.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Process the Invoice with the Failure</p>
+        <p class="ccTextvorlage">Follow these steps to process the invoice with the failure:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 02/28/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages, noting that one invoice and one credit memo was created.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Processing Failures_5.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Invoice and Credit Memo creation message</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and notice that no credit entries appear.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Processing Failures_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: No failure lines assigned to invoice</p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Credit Memos</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the credit memo and notice that the credit is correctly calculated by the number of days for the two units (350 rate unit price / 31 days * 6 days * 2 units = 135.48).</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Processing Failures_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Failure credit memo</p>
+        <ol start="12">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the credit memo.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Entries &gt; Rental Ledger Entries</span>.</li>
+            <li class="ccTextvorlageNumberedList">Notice that there are two credit memo entries for the proper amount, in the proper date range.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Processing Failures_8.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Rental Ledger Entries including failure credit</p>
+        <ol start="16">
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">Click the value in the <span class="Bold">Qty. Failures</span> field and notice that the failure invoice/credit memo was created through 01/20/19.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Processing Failures_9.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Updated rental failure line</p>
+        <ol start="18">
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Process the Final Invoice and Return</p>
+        <p class="ccTextvorlage">Follow these steps to process the final invoice and complete the return:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and then on the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, enter 03/31/19 in the <span class="Bold">Rental Return Date</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Return Qty. to Receive</span> field, enter 5.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Notice that the <span class="Bold">Return Qty. Received</span> field is 5.</li>
+        </ol>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc434929937"></a>Exercise – Failure Period after the Invoicing Period</h3>
+        <p class="ccTextvorlage">Customer R-30000 orders five units of item R-30000-01 for the period of January 1, 2019 through March 31, 2019 at a price of 350 each. This is a monthly invoicing agreement and January will be posted immediately.</p>
+        <p class="ccTextvorlage">Before other invoicing occurs, you notify the customer that an inspection is required on two items which may cause some downtime from March 1st through March 5th so you will credit 70% of the price for this time on the March invoice. The customer agrees to this arrangement and you create the failure.</p>
+        <p class="ccDemoStepHeading">Create, Ship, and Invoice the Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to process the rent order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-30000.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Item</li><li class="ccTextvorlageNumberedList">No. = R-30000-01</li><li class="ccTextvorlageNumberedList">Quantity = 5</li><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Month Based = Yes</li><li class="ccTextvorlageNumberedList">Rental Start Date = 01/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 03/31/19</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 01/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 01/31/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and then on the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create the Failure</p>
+            <p class="ccTextvorlage">Follow these steps to create the failure:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Enter Failure</span>.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to create the failure period.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Start Date Failure</span> field, enter 03/01/19.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">End Date Failure</span> field, enter 03/05/19.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Failure Type</span> field, enter INSPECTION. Notice that the Discount % is set to 70.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, enter 2.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Release</span>.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+                <li class="ccTextvorlageNumberedList">Click the value in the <span class="Bold">Qty. Failures</span> field and review the failure information.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Processing Failures_10.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Failure assigned to the rental line</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Process the Invoice for the Second Period</p>
+        <p class="ccTextvorlage">Follow these steps to process the invoice for the second period with no failure adjustments:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 02/28/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and notice that no credit entries appear.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Credit Memos</span>. Notice that no credit memos were created.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Process the Final Invoice and Return</p>
+        <p class="ccTextvorlage">Follow these steps to process the final invoice and complete the return:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and notice the following:<ul start="1"><li class="ccTextvorlageNumberedList">A negative credit line for the downtime on two units from 03/01/19 – 03/05/19 appear on the invoice.</li><li class="ccTextvorlageNumberedList">The credit is correctly calculated for the two units (350 rate unit price / 31 * 5 days * 2 units - 70% = 79.03).</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Processing Failures_11.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Failure assigned to the rental line</p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">Click the value in the <span class="Bold">Qty. Failures</span> field and notice that the failure invoice was created through 3/5/2019.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Processing Failures_12.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Updated rental failure line</p>
+        <ol start="11">
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/31/19.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, enter 03/31/19 in the <span class="Bold">Rental Return Date</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Return Qty. to Receive</span> field, enter 5.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Notice that the <span class="Bold">Return Qty. Received</span> field is 5.</li>
+        </ol>
+    </body>
+</html>

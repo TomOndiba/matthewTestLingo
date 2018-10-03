@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="897" MadCap:lastWidth="605" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc435107524"></a>FDC – Overall Equipment Effectiveness</h2>
+        <p class="ccTextvorlage">The Overall Equipment Effectiveness (OEE) serves the rating of machines and therefore only considers FDC Resources of type Work Center or Work Center Group. The OEE Value is used for analysis and optimizing of machines and is calculated as follows:</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/FDC Overall Equipment Effectiveness.png" style="width: 315px;height: 26px;" />
+        </p>
+        <p class="ccTextvorlage">The availability is calculated by the ratio of Primary Use Time (PUT) and Planned Occupancy Time (POT). POT is the actual available time the machine could have been run. The defined shift structure is crucial for this value. If no fitting shift is found for the corresponding day, a value can be entered in the <span class="Bold">Default Planned Occupancy Time</span> field in the <span class="Bold">Options</span> FastTab on the request page. If the POT is exceeded through overtime, this value increases accordingly. The overtime is listed in the Availability page. The Availability is calculated as follows:</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/FDC Overall Equipment Effectiveness_1.png" style="width: 296px;height: 35px;" />
+        </p>
+        <p class="ccTextvorlage">The Setup Time is considered if the <span class="Bold">Consider setup time</span> field is selected on the request page.</p>
+        <p class="ccTextvorlage">Effectiveness displays the ratio of actual output and the output that could have been made during the PUT. For calculating the possible output, the Expected Run Time of an item on a specific machine is used. These values are found in the Routing line of a Work Order Line and should be corrected if the Effectiveness exceeds the value of 1, because 1 is the optimum value and cannot be exceeded in reality. If different items are produced in one day, the remaining producible quantity of a day is always calculated by using the latest produced item. The Effectiveness is calculated as follows:</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/FDC Overall Equipment Effectiveness_2.png" style="width: 207px;height: 46px;" />
+        </p>
+        <p class="ccTextvorlage">The remaining value of OEE Calculation is the Quality Rating, which represents the yield in ratio to the output. It is calculated as follows:</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/FDC Overall Equipment Effectiveness_3.png" style="width: 152px;height: 46px;" />
+        </p>
+        <p class="ccTextvorlage">Further options on the request page are:</p>
+        <ul>
+            <li class="ccAufzählungblau">Start Date/ End Date – the range of time in which the data should be considered for calculation. The Posting Date of FDC Entries is crucial.</li>
+            <li class="ccAufzählungblau">View by – specifies the period for each table. The Total shows one table.</li>
+            <li class="ccAufzählungblau">Show as Chart – a period, not Total, can be shown as a chart. The value selected in the <span class="Bold">View By</span> field defines the data that should be shown weekly, monthly, and so on.</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/FDC Overall Equipment Effectiveness_4.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 599px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Overall Equipment Effectiveness (OEE)</p>
+    </body>
+</html>

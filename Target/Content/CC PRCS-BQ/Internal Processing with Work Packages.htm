@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="907" MadCap:lastWidth="605" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Internal Processing with Work Packages</h3>
+        <p>In <span class="CCBausteinInhaltZchn">cc|project</span>, Work Packages are used to create the work breakdown structure of PaC Jobs. The process of creating the Execution Units for work packages is similar to the placing units, in that an Execution Unit is created, the <span class="Bold">Type</span> is set to <span class="Italics">Work Package</span> and then entries from the BoQ Position List are assigned in the lines.</p>
+        <p>Often, different work package will contain the same BoQ Positions, to allow for different procurement processing.</p>
+        <p>The work packages are created, a PaC job is assigned to each Execution Unit. From there, a Structural Plan is created in the PaC job, and the standard procurement planning of Construction Work Processing can begin.</p>
+        <p>This section describes how to create work packages using Execution Units.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Example – Create Work Packages</h4>
+        <p>This example uses the same job that was set up with various BoQ Budget Calculation entries for a construction site. The cables and lines were already processed for subcontracting. Now, two work packages are created for the remaining BoQ Positions: one with the complete entries, and one for only a portion of the Network Distribution, which is handled differently in procurement.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.1    ">Create First Work Package</h5>
+        <p>The first step is to create the Execution Units for the BoQ positions. This example starts in the BoQ Position List, but note that the Execution Units can also be accessed from the Job Card/Jobs list.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: BoQ Position List with subcontractor quoting needs</p>
+        <p class="ccTextvorlage">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Execution Units </span>to open the <span class="Bold">Execution Units</span> page. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Execution Units page  with existing Placing Unit</p>
+        <p class="ccTextvorlage">Click <span class="Bold">New</span> to create an Execution Unit.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Execution Unit page</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Code</span> field, enter a unique code for this execution unit. Change the <span class="Bold">Type</span> field to <span class="Italics">Work Package</span>, and then enter a <span class="Bold">Description</span> of the execution unit.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Execution Unit header populated</p>
+        <p class="ccTextvorlage">To add the BoQ Positions to the Execution Unit, use the lookup in the <span class="Bold">BoQ Pos. No.</span> field in the <span class="Bold">Lines</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Opening the BoQ Position List for addition to Execution Unit lines</p>
+        <p class="ccTextvorlage">Select the BoQ Positions to add to the Execution Unit. To add a position with sub-positions, select the main position. In this example, the Construction Site Setup and Distributions positions are selected, which will include the sub-positions.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Construction Site Setup selection for addition to execution unit</p>
+        <p class="ccTextvorlage">A message appears asking if the found substructure should be expanded. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_6.png" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Substructure expansion message</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Yes</span>. The Execution Unit lines are populated with the BoQ Positions.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: BoQ Positions added to the Execution Unit</p>
+        <p class="ccTextvorlage">Now, add the Distributions position to the work package.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_8.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Distributions selection for addition to execution unit</p>
+        <p class="ccTextvorlage">The Distributions substructures are expanded and added to the work package.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_9.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: : BoQ Positions added to the Execution Unit</p>
+        <p class="ccTextvorlage">If necessary, the planned quantity can be changed if calculations were done based on the specification, but more or less time and/or materials are required. The <span class="Bold">Assigned Quantity</span> field shows the quantities that have been assigned to the Execution Unit. Therefore, it is possible to split BoQ Positions into different Execution Units. In this example, the Network Distribution position is split into two work packages. A quantity of 30 PCS will be assigned to the current work package, and a new work package will be created for the remaining 20 PCS.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_10.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Quantity changed from 50 to 30 for Network Distribution position</p>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">Update Controlling Values</span> and then expand the <span class="Bold">Controlling</span> FastTab. Note that the budgeted cost/price values are lower than the original cost/price values from the BoQ Calculation, due to the changed quantity in the work package.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_11.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Updated values on the Controlling FastTab</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.2    ">Create Second Work Package</h5>
+        <p class="ccTextvorlage">Create another work package Execution Unit for the Network Distribution.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_12.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: New work package Execution Unit</p>
+        <p class="ccTextvorlage">Add the Network Distribution position only to the work package.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_13.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Network Distribution selection for addition to execution unit</p>
+        <p class="ccTextvorlage">The position is added to the work package, with no message to expand the substructure.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_14.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Network Distribution added to work package</p>
+        <p class="ccTextvorlage">Note that the <span class="Bold">Assigned Quantity</span> field is red because 30 has already been assigned in the previous Execution Unit, and therefore has been over-allocated. In this example, the remaining 20 PCS are assigned to this Execution Unit. To see what has been assigned to this BoQ Position, click the value in the <span class="Bold">Assigned Quantity</span> field. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_15.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Viewing assigned quantities for the BoQ Position</p>
+        <p class="ccTextvorlage">Close the assigned quantity lines.</p>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">Update Controlling Values</span> and then expand the <span class="Bold">Controlling</span> FastTab. Note that the budgeted cost/price values are lower than the original cost/price values from the BoQ Calculation, due to the changed quantity in the work package.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Internal Processing_16.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Updated values on the Controlling FastTab</p>
+    </body>
+</html>

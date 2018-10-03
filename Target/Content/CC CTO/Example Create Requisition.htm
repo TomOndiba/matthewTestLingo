@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="714" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434568074"></a>Example – Create Requisition Line for G/L Account from Document BOM</h3>
+            <p class="ccTextvorlage">A Sales Order and Document BOM are created for 1 unit of item D-1000. On the last line of the Document BOM, a line is inserted for G/L Account = ACCOUNT, Exp. Quantity = 1 and Unit Cost (CC) = 100.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Create Requisition.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Document BOM with G/L Account line</p>
+        </div>
+        <p class="ccTextvorlage">Click <span class="Bold">Actions &gt; Purch. G/L Acc./Item</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Create Requisition_1.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Purchase G/L Account function request page</p>
+        <p class="ccTextvorlage">With the <span class="Italics">Requisition Line</span> option selected, click <span class="Bold">OK</span> and then select the appropriate requisition worksheet from the <span class="Bold">Req. Wksh. Names</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Create Requisition_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 4.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Req. Wksh. Names page</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">A confirmation message is generated and on the G/L Account line:</p>
+            <ul>
+                <li class="ccAufzählungblau">Purchase Exists = selected</li>
+                <li class="ccAufzählungblau">Purchase Status = Purchase Created</li>
+            </ul>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Create Requisition_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Document BOM with G/L Account requisition line created indicated</p>
+        <p class="ccTextvorlage">If the “Purch. G/L Acc./Item” function is run again, the following message is generated.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Create Requisition_4.png" style="visibility: visible;mso-wrap-style: square;" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Message to open requisition line</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Yes</span> to open the <span class="Bold">Requisition Lines</span> page and then click <span class="Bold">Navigate &gt; Show Worksheet</span> to open the <span class="Bold">Req. Worksheet</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Create Requisition_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Requisition Worksheet with G/L Account purchase from Document BOM</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Run the “Carry Out Action Message” function, go back to the <span class="Bold">Document BOM</span> page and run the “Purch. G/L Acc./Item” function again. Click <span class="Bold">Yes</span> to open the <span class="Bold">Purchase Lines</span> page and then open the Purchase Order. The Purchase Order has been created for the G/L Account for the Unit Cost entered on the Document BOM line.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Create Requisition_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Purchase Order created from the Requisition Worksheet with G/L Account purchase from Document BOM</p>
+        </div>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If the value in the <span class="Bold">Direct Unit Cost Excl. VAT</span> field is changed prior to posting the Purchase Order, the new amount will transfer to the Document BOM line.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Post the Purchase Order, go back to the Document BOM and notice on the G/L Account line:</p>
+            <ul>
+                <li class="ccAufzählungblau">Purchase Exists = not selected</li>
+                <li class="ccAufzählungblau">Purchase Status = Purchase Posted</li>
+            </ul>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Create Requisition_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Document BOM line updated with Purchase Order posting</p>
+    </body>
+</html>

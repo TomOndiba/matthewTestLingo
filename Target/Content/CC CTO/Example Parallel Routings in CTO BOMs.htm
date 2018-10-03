@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="917" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434568085"></a>Example – Parallel Routings in CTO BOMs</h2>
+            <p class="ccTextvorlage">The routing fields (<span class="Bold">Operation No.</span>, <span class="Bold">Previous Operation No.</span> and <span class="Bold">Next Operation No.</span>) in the Master BOM lines and the setting in the <span class="Bold">Routing Type</span> field in the Master BOM header determine how routings are processed in <span class="CCBausteinInhaltZchn">cc|configure to order</span> (refer to topic <MadCap:xref href="Master BOM_Lines FastTab.htm" class="RelLinkPageNumber">"Master BOM Lines" on page 1</MadCap:xref>).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Parallel Routings in CTO BOMs.png" MadCap:mediastyle="@media print { max-width: 5.25in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Routing Type in header and routing fields in lines</p>
+        </div>
+        <p class="ccTextvorlage">As opposed to creating the operations on certification, the “Set Operation Codes” action on the Master BOM can be used to automatically populate the fields in the CTO BOM lines.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Parallel Routings in CTO BOMs_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.25in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Operations updated automatically on the Master BOM line using the “Set Operation Codes” function </p>
+        <p class="ccTextvorlage">Additionally, the <span class="Bold">Parallel Operation Code</span> field on the CTO BOM lines provides a simplified process for defining parallel routings. For example, if Work Center 100 and 400 should be done parallel, both lines are assigned the same Parallel Operation Code, such as 1.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Parallel Routings in CTO BOMs_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Parallel Operation Code added to work center 100 and 400 </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">When the “Set Operation Codes” function is run, the <span class="Bold">Operation No.</span>,<span class="Bold"> Previous Operation No.</span> and <span class="Bold">Next Operation No.</span> fields will be set automatically.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Parallel Routings in CTO BOMs_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Parallel Operations updated by running the “Set Operation Codes” function </p>
+        </div>
+        <p class="ccTextvorlage">The <span class="Bold">Operation No.</span>, <span class="Bold">Previous Operation No.</span> and <span class="Bold">Next Operation No.</span> fields can be populated manually as well.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">If some other routings should work parallel, a higher code must be used, such as 2. For example, if the next group of Work Centers (400, 100 and 200) should be done parallel, each line is assigned Parallel Operation Code “2”.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Parallel Routings in CTO BOMs_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Parallel Operation Code “2” added to work centers 400, 100 and 200</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">When the “Set Operation Codes” function is run, the <span class="Bold"><span class="Bold">Operation No.</span>, Previous Operation No.</span> and <span class="Bold">Next Operation No.</span> fields will be set automatically.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Parallel Routings in CTO BOMs_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Parallel Operations updated by running the “Set Operation Codes” function </p>
+        </div>
+        <p class="ccTextvorlage">The fields in the Master BOM line are also available in Document BOM, Construction Lines and Service BOMs. Fields populated in the Master BOM Lines are copied to Document BOM/Construction Lines/Service BOM Line; otherwise these fields are empty.</p>
+        <p class="ccTextvorlage">In the Document BOM and Construction Line, the fields are populated when the status is changed to <span class="Italics">Released</span>. At the latest, these fields are calculated when the “Create Prod. Order” function is run.</p>
+        <p class="ccTextvorlage">The values in the <span class="Bold">Operation No.</span>, <span class="Bold">Next Operation No.</span> and <span class="Bold">Previous Operation No.</span> fields are copied to the Prod. Order Routing Lines.</p>
+    </body>
+</html>

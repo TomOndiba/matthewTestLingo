@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc434330882"></a>Document Box</h2>
+        <p class="ccTextvorlage">The Document Box is a FactBox, implemented on Microsoft Dynamics NAV pages in the RoleTailored Client on the right side of a page. It supports Drag and Drop from files on the logo or specific content types, and a context menu for the list items (content types and documents). The square brackets show the number of documents found for the content type configuration. The height of the client add-in can be defined in the <span class="Bold">DMS Setup</span> page (refer to topic <MadCap:xref href="DMS Setup.htm#_Ref425339961">“DMS Setup” on page 1</MadCap:xref>).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DMS/Document Box.png" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Context Menu for Document and Content Type</p>
+        <p class="ccTextvorlage">The items for the context menu can be limited and configured on the content type configuration. The actions for a document are:</p>
+        <ul>
+            <li class="ccAufzählungblau">Open File – Opens the selected file in SharePoint in the web browser. Double-clicking the document executes this action as well.</li>
+            <li class="ccAufzählungblau">Filter in SharePoint – Opens the document library with the default view in the web browser and filters only this document.</li>
+            <li class="ccAufzählungblau">Copy URL – Copies the URL of the document into the user’s clipboard.</li>
+            <li class="ccAufzählungblau">Show MetaData – Opens the <span class="Bold">Show DMS Document Entry MetaData</span> page, which displays the MetaData according to the current content type’s configuration for the selected file.</li>
+            <li class="ccAufzählungblau">Edit MetaData – Opens the <span class="Bold">Edit DMS Document Entry MetaData</span> page, which displays the MetaData for the selected file according to the current content type’s configuration, and where values can be uploaded upon confirmation.</li>
+            <li class="ccAufzählungblau">Download File – Downloads the file from SharePoint directly to a local path.</li>
+            <li class="ccAufzählungblau">Delete File – Removes the file from the SharePoint document library.</li>
+        </ul>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">For the content type, the following actions are possible:</p>
+            <ul>
+                <li class="ccAufzählungblau">Open SharePoint – Opens the default web browser and navigates to the default view of the document library.</li>
+                <li class="ccAufzählungblau">Upload File – Opens the file dialog from Windows and uploads the document similarly to the DocumentBox Drag and Drop, including possible MetaData definition, into SharePoint.</li>
+            </ul>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DMS/Document Box_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: States of the DocumentBox</p>
+        <p class="ccTextvorlage">The DocumentBox can be in different states, to be distinguished by the logo on the top section, if visible. The different states are:</p>
+        <ul>
+            <li class="ccAufzählungblau">Colored Logo – The client add-in is activated and running.</li>
+            <li class="ccAufzählungblau">Loading Circle – The client add-in is deactivated and either the document list is retrieved and/or other actions are in progress. The RoleTailored Client is useable, but closing the page might lead to errors, especially when uploading a file.</li>
+            <li class="ccAufzählungblau">Grey Logo – The client add-in is deactivated. This might be caused by any shown error, such as an exceeded license.</li>
+        </ul>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">As a FactBox, users can add or remove the DocumentBox from the implemented pages through the Customize page feature.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC DMS/Document Box_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Customize Site, FactBoxes</p>
+        </div>
+    </body>
+</html>

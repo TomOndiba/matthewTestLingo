@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434332546"></a>Set Up Document Layout</h3>
+            <p class="ccTextvorlage">After the new report is created through the Object Designer, a new Document Text is created for Item Report, and a new Document Layout is created with <span class="Bold">No.</span> = <span class="Italics">ITEM-01</span> and <span class="Bold">Description</span> = <span class="Italics">Item Report</span>. The document layout is set up to be printed from the Item record, links to the new Item Printout report and the DC - A4 Portrait render report.</p>
+            <p class="ccDemoStepHeading">Create Document Text</p>
+        </div>
+        <p class="ccTextvorlage">Follow these steps to create the document text for the new report:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the RoleTailored Client, click <span class="Bold">Document Texts</span> in the Configuration menu.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">Enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Code</span> = ItemReport</li><li class="ccTextvorlageNumberedList"><span class="Bold">Text </span>= Item Report</li><li class="ccTextvorlageNumberedList"><span class="Bold">Language Code </span>= {local language}</li><li class="ccTextvorlageNumberedList"><span class="Bold">Text </span>= {text for Item Report in local language}</li></ol></li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Text</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Create Document Layout</p>
+        <p class="ccTextvorlage">Follow these steps to create the document layout for the new report:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the Configuration menu, click <span class="Bold">Document Layouts</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, type ITEM-01.</li>
+            <li class="ccTextvorlageNumberedList">Enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Description</span> = Item Report</li><li class="ccTextvorlageNumberedList"><span class="Bold">Top DataItem Table No. </span>= 27</li><li class="ccTextvorlageNumberedList"><span class="Bold">Report No. </span>= as noted in step 18 of the previous section</li><li class="ccTextvorlageNumberedList"><span class="Bold">Render Report No. </span>= 12032027</li><li class="ccTextvorlageNumberedList"><span class="Bold">Document Label Code </span>= ITEMREPORT</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: New Document Layout for new Item Printout report</p>
+        <p class="ccDemoStepHeading">Add Sections</p>
+        <p class="ccTextvorlage">The Sections of the document layout are set up with the following: Item table as the header (sections almost always start with the same table from which the report is run), Production BOM Header table, Production BOM Lines table, Routing Header table, Routing Line table and the Integer table to print a footer. Certain Sections are indented to create the table relation hierarchy.</p>
+        <p class="ccTextvorlage">Follow these steps to add Sections to the document layout:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the first line of the <span class="Bold">Sections</span> FastTab, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"> <span class="Bold">Section Type</span> = Header</li><li class="ccTextvorlageNumberedList"> <span class="Bold">Description</span> = Header</li><li class="ccTextvorlageNumberedList"> <span class="Bold">Table No.</span> = 27</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the next line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Section Type</span> = Line</li><li class="ccTextvorlageNumberedList"><span class="Bold">Description</span> = Header for BOM</li><li class="ccTextvorlageNumberedList"><span class="Bold">Table No.</span> = 99000771</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the next line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Section Type</span> = Line</li><li class="ccTextvorlageNumberedList"><span class="Bold">Description</span> = BOM Lines</li><li class="ccTextvorlageNumberedList"><span class="Bold">Table No.</span> = 99000772</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the next line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Section Type</span> = Line</li><li class="ccTextvorlageNumberedList"><span class="Bold">Description</span> = Header for Routing</li><li class="ccTextvorlageNumberedList"><span class="Bold">Table No.</span> = 99000763</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the next line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Section Type</span> = Line</li><li class="ccTextvorlageNumberedList"><span class="Bold">Description </span>= Routing Lines</li><li class="ccTextvorlageNumberedList"><span class="Bold">Table No.</span> = 99000764</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the next line, enter the following: <ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Section Type</span> = Footer</li><li class="ccTextvorlageNumberedList"><span class="Bold">Description</span> = Footer</li><li class="ccTextvorlageNumberedList"><span class="Bold">Table No.</span> = 2000000026</li></ol></li>
+            <li class="ccTextvorlageNumberedList">Select the second line and click <span class="Bold">Line &gt; Move Right</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the third line and click <span class="Bold">Line &gt; Move Right</span>.</li>
+            <li class="ccTextvorlageNumberedList">Repeat for the third line so it is indented below the second line.</li>
+            <li class="ccTextvorlageNumberedList">Select the fourth line and click <span class="Bold">Line &gt; Move Right</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the fifth line and click <span class="Bold">Line &gt; Move Right</span>.</li>
+            <li class="ccTextvorlageNumberedList">Repeat for the fifth line so it is indented below the fourth line.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Sections added to the Document Layout for the new Item Printout report</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Set Filters on Sections</p>
+            <p class="ccTextvorlage">Filters need to be set for the Sections to define the relations between the tables. The first line connects the Item header to the Top DataItem Table (specified in the header of the Document Layout).</p>
+        </div>
+        <p class="ccTextvorlage">Follow these steps to add filters to the sections:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Select the first section line “Header” and then click <span class="Bold">Line &gt; Filters</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 1</li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Type</span> = Value</li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Field No.</span> = 1</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_2.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 228px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Filter added to the Header section of the new ITEM-01 document layout</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Document Layout Filters</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Select the second section line “Header for BOM” and then click <span class="Bold">Line &gt; Filters</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 1</li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Type</span> = Value </li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Field No.</span> = 99000751</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_3.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 228px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Filter added to the Header for BOM section of the new ITEM-01 document layout</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Document Layout Filters</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Select the third section line “BOM Lines” and then click <span class="Bold">Line &gt; Filters</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 1</li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Type</span> = Value </li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Field No.</span> = 1</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the next line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 3</li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Type</span> = Text </li><li class="ccTextvorlageNumberedList"><span class="Bold">Text</span> = ‘’ &lt;blank&gt;</li></ol></li>
+        </ol>
+        <p class="ccTextvorlageNumberedListNoteHeading">Note</p>
+        <p class="ccTextvorlageNumberedListNoteBody">A blank (‘’) filter is specified on the Version Code to omit BOM versions from printing.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_4.png" style="visibility: visible;mso-wrap-style: square;width: 508px;height: 216px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Filters added to the BOM Lines section of the new ITEM-01 document layout</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Document Layout Filters</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Select the fourth section line “Header for Routing” and then click <span class="Bold">Line &gt; Filters</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 1</li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Type</span> = Value </li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Field No.</span> = 99000750</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_5.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 226px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Filter added to the Header for Routing section of the new ITEM-01 document layout</p>
+        <ol start="13">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Document Layout Filters</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Select the fifth section line “Routing Lines” and then click <span class="Bold">Line &gt; Filters</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 1</li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Type</span> = Value </li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Field No.</span> = 1</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the next line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 2</li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Type</span> = Text </li><li class="ccTextvorlageNumberedList"><span class="Bold">Text</span> = ‘’ &lt;blank&gt;</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_6.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 226px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Filters added to the Routing Lines section of the new ITEM-01 document layout</p>
+        <ol start="17">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Document Layout Filters</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Select the last section line “Footer” and then click <span class="Bold">Line &gt; Filters</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Field No.</span> = 1</li><li class="ccTextvorlageNumberedList"><span class="Bold">Filter Type</span> = Text </li><li class="ccTextvorlageNumberedList"><span class="Bold">Text</span> = 1</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_7.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 226px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Filter added to the Footer section of the new ITEM-01 document layout</p>
+        <ol start="20">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Document Layout Filters</span> page.</li>
+        </ol>
+        <p class="ccTextvorlage">Defining the Sections and the related filters are similar to setting up the DataItems in a native report.</p>
+        <p class="ccDemoStepHeading">Assign Fields to the Sections</p>
+        <p class="ccTextvorlage">The next step is to add the different fields that need to print in the different Sections. Two columns are added to the Header fields: one with the labels and one with the values. Captions are used for the labels because this report will only be printed in the local language.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Follow these steps to assign fields to the sections:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">Select the first section line “Header” and then click <span class="Bold">Line &gt; Fields</span>.</li>
+                <li class="ccTextvorlageNumberedList">For the purpose of this example, use the data in the following screen shot to create the field entries for the item report header section.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_8.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Fields added to the Header section of the new ITEM-01 document layout</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Run Report</span> to view the settings.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Show Request Page</span> check box and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the request page, click <span class="Bold">Preview</span>.</li>
+        </ol>
+        <p class="ccBildabstand"> <img src="../Resources/Images/CC DC/Setup Document Layout_9.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" /></p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Header section on the new Item Printout report</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Document Layout Fields</span> page.</li>
+        </ol>
+        <p class="ccTextvorlage">The fields added to the “Header for BOM” section includes information from the Production BOM Header table but also labels that are acting as headings for the lines. Note that when printing Captions of fields, a field can be selected from any table in the database without having to set filters.</p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">Select the second section line “Header for BOM” and then click <span class="Bold">Line &gt; Fields</span>.</li>
+            <li class="ccTextvorlageNumberedList">For the purpose of this example, use the data in the following screen shot to create the field entries for the item report header for BOM section.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_10.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Fields added to the Header for BOM section of the new ITEM-01 document layout</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Run Report</span> to view the settings.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Show Request Page</span> check box and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the request page, click <span class="Bold">Preview</span>.</li>
+        </ol>
+        <p class="ccBildabstand"> <img src="../Resources/Images/CC DC/Setup Document Layout_11.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" /></p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Header for BOM section on the new Item Printout report</p>
+        <ol start="13">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Document Layout Fields</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Select the third section line “BOM Lines” and then click <span class="Bold">Line &gt; Fields</span>.</li>
+            <li class="ccTextvorlageNumberedList">For the purpose of this example, use the data in the following screen shot to create the field entries for the item report BOM lines section.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_12.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Fields added to the BOM Lines section of the new ITEM-01 document layout</p>
+        <ol start="17">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Run Report</span> to view the settings.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Show Request Page</span> check box and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the request page, click <span class="Bold">Preview</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_13.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: BOM Lines section on the new Item Printout report</p>
+        <ol start="20">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Document Layout Fields</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Select the fourth section line “Header for Routing” and then click <span class="Bold">Line &gt; Fields</span>.</li>
+            <li class="ccTextvorlageNumberedList">For the purpose of this example, use the data in the following screen shot to create the field entries for the item report header for routing section.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_14.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Fields added to the Header for Routing section of the new ITEM-01 document layout</p>
+        <ol start="24">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Run Report</span> to view the settings.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Show Request Page</span> check box and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the request page, click <span class="Bold">Preview</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_15.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Header for Routing section on the new Item Printout report</p>
+        <ol start="27">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Document Layout Fields</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Select the fifth section line “Routing Lines” and then click <span class="Bold">Line &gt; Fields</span>.</li>
+            <li class="ccTextvorlageNumberedList">For the purpose of this example, use the data in the following screen shot to create the field entries for the item report routing lines section.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_16.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Fields added to the Routing Lines section of the new ITEM-01 document layout</p>
+        <ol start="31">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Run Report</span> to view the settings.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Show Request Page</span> check box and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the request page, click <span class="Bold">Preview</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_17.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 18">: Routing Lines section on the new Item Printout report</p>
+        <ol start="34">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Document Layout Fields</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Select the last section line “Footer” and then click <span class="Bold">Line &gt; Fields</span>.</li>
+            <li class="ccTextvorlageNumberedList">For the purpose of this example, use the data in the following screen shot to create the field entries for the item report footer section.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_18.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 19">: Fields added to the Footer section of the new ITEM-01 document layout</p>
+        <ol start="38">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Run Report</span> to view the settings.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Show Request Page</span> check box and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the request page, click <span class="Bold">Preview</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Setup Document Layout_19.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 20">: Footer section on the new Item Printout report</p>
+        <ol start="41">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Document Layout Fields</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Certified</span> to make it available to the users.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout</span> page.</li>
+        </ol>
+    </body>
+</html>

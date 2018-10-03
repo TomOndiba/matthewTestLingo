@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="775" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256459"></a>Recipe Weight and Net Weight</h3>
+        <p class="ccTextvorlage">The fill-in quantity to produce an item can be higher that the net weight of the item. This difference is due to a reduction of material during the process of manufacture without creating scrap. To handle this difference the needed quantity of the production order components must be increased.</p>
+        <p class="ccTextvorlage">The difference between the net weight and the fill-in weight can be handled using the <span class="Bold">Recipe Weight</span> field on the <span class="Bold">Replenishment</span> FastTab of the Item Card.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Recipe Weight and Net Weight.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Item Card, highlighting the Recipe Weight field</p>
+        <p class="ccTextvorlage">The recipe weight is the basis for calculating the needed quantity for production order components that use a recipe instead of a production BOM. The recipe weight in the item must be higher than the net weight.</p>
+        <p class="ccTextvorlage">The net weight and the recipe weight are transferred to the production order line on creation of production orders.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Recipe Weight and Net Weight_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Released Production Order and line components</p>
+        <p class="ccTextvorlage">The <span class="Bold">Recipe Weight (Total)</span> field on the released production order lines can be changed manually. After changing the field, the needed quantities in production order components are recalculated. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Recipe Weight and Net Weight_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Adjusted Recipe Weight and Component Lines</p>
+        <p class="ccTextvorlage">In addition, the recipe weight is shown in the <span class="Bold">Calculation Card</span> and <span class="Bold">Prod. Order Recipe Statistics</span> pages.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Recipe Weight and Net Weight_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Calculation Card and Prod. Order Recipe Statistics pages</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">All calculations that previously used the net weight are converted to use the recipe weight.</p>
+        </div>
+    </body>
+</html>

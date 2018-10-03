@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="895" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Ref234728928"></a><a name="_Toc434256516"></a>Unit of Weight and Unit of Volume</h2>
+        <p class="ccTextvorlage">Microsoft Dynamics NAV has different fields that are unrelated to a unit of measure, for example Net Weight and Gross Weight. In the <span class="Bold">Process Manufacturing Setup</span> page, enter a unit of measure that is used for the net weight of all items, like Kilogram. Furthermore, a volume unit of measure can be determined that is used in the context of the weight unit of measure for calculating the density. Here, the weight unit of measure must correspond with the volume unit of measure to calculate the density. </p>
+        <p class="BoldItalics12pt">Example</p>
+        <p class="ccTextvorlage">Density = Kg / l</p>
+        <p class="ccTextvorlage">Density = g / cm² </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Unit of Weight and Unit of.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.25in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Process Manufacturing Setup, weight and volume units of measure</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Unit of Measure Conversions</span> page, different units of measure from the base data are linked to each other. Using this linking the calculation of the main data entry is done automatically.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Unit of Weight and Unit of_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 324px;" MadCap:mediastyle="@media print { max-width: 5.25in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="_Ref286332046"></a>: Unit of Measure Conversions page</p>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#_Ref286332046" class="Figure">Fig. 2</MadCap:xref>, the <span class="Bold">Unit of Measure Conversions</span> page serves as a general unit of measure converting table in that the relation of two weight, length, area or volume units of measure can be entered. </p>
+        <p class="ccTextvorlage">In this page, the different unit of measure areas (Weight, Length, Area, Volume and so on) cannot be mixed. For example, the relation from a weight unit of measure to a volume unit of measure cannot be done in this table and must be entered on the item instead.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Unit of Weight and Unit of_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Unit of Measure Conversions on an item</p>
+        <p class="BoldItalics12pt">Conversion Examples</p>
+        <table>
+            <col style="width: 168px;" />
+            <col />
+            <col />
+            <col style="width: 98px;" />
+            <tr>
+                <td>
+                    <p class="ccTableTextnontable" style="font-weight: bold;">General conversion:</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable" style="font-weight: bold;">1 Kilogram</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable" style="font-weight: bold;">=</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable" style="font-weight: bold;">1000 Gram</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccTableTextnontable"> </p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">1000 Meter</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">=</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">1 Kilometer</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccTableTextnontable">Item related conversion:</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">1 Kilogram</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">=</p>
+                </td>
+                <td>
+                    <p class="ccTableTextnontable">2.7 Liter</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

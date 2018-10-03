@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="2" MadCap:lastHeight="814" MadCap:lastWidth="605" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434256688"></a>Remaining Shelf Time</h2>
+        <p class="ccTextvorlage">In relation to a customer or customer group there might be delivery arrangements for the shelf life of an item. This guaranteed remaining shelf time is usually arranged between manufacturers and wholesalers. </p>
+        <p class="ccTextvorlage">When creating a sales line, the system checks if a remaining shelf time has been defined for the combination of customer and item / item category. If the item to be sold will expire within the denoted period, the system displays a warning message when assigning the lot number. The remaining shelf time is added to the Planned Delivery Date or – if existing – the Promised Delivery Date.</p>
+        <p class="ccTextvorlage">To use this functionality, the shelf time must be defined on the <span class="Bold">Remain. Shelf Life Setup</span> page, accessed from the <span class="Bold">Navigate</span> tab on either the Customer Card or Item Card. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Remaining Shelf Time.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 317px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref314489225"></a>: Remain. Shelf Life Setup page opened from Customer Card</p>
+        <p class="ccTextvorlage">Similar to Sales Prices or Line Discounts, customer and item filtering can be set in the header and then the lines contain the customer/item combination with the specified remaining shelf time.</p>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#_Ref314489225" class="Figure">Fig. 1</MadCap:xref>, when sold to customer 10000, item P-10503 has a remaining shelf time of 60 days. This means that if a lot of item P-10503 is set to expire within 60 days of delivery to customer 10000, a warning message will appear when the lot is entered for the sales line. The warning message is calculated by Warning Date (Expiration Date - Remaining Shelf Time) &lt; Planned Delivery Date.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Remaining Shelf Time_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Warning message received when planned delivery date is within specified warning date range</p>
+        <p class="ccTextvorlageNoteheading">Important</p>
+        <p class="ccTextvorlageNotebody">This is only a warning message; it does not prevent the delivery to the customer.</p>
+    </body>
+</html>

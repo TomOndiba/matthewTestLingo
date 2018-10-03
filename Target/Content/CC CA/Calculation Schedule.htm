@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref307219993"></a><a name="_Ref307220096"></a><a name="_Toc434834902"></a>Calculation Schedule</h2>
+        <p>After the setup of calculation groups is complete, the Calculation Schedules need to be defined. </p>
+        <p>A default calculation schedule can be assigned for all items in the <span class="Bold">Standard Calc. Schedule No</span>. field on the <span class="Bold">Calculation Setup</span> page and then modified as needed on the <span class="Bold">Invoicing</span> FastTab of the individual Item Cards.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Schedule.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Calculation Schedule Card for the Default Calculation with all line fields </p>
+        <p>The <span class="Bold">General</span> FastTab contains the code, description, start date, status, and how concurrent calculations are created. Active schedules must have a <span class="Bold">Status</span> of <span class="Italics">Certified</span>.</p>
+        <p>The fields in the <span class="Bold">Lines</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 114px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Row No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Optional code field that is used to identify a corresponding calculation line in the <span class="Bold">Reference to Row No.</span> field.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">With the SQL Server, it is useful to create row numbers with leading zeros (0100, 0200, and so on) to prevent sequencing from changing when numbers greater than 999 are used.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Description of the calculation, which can be indented by clicking <span class="Bold">Functions &gt; Increase Indentation</span> or <span class="Bold">Decrease Indentation</span> on the <span class="Bold">Lines</span> FastTab.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Totaling Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies what the calculation line is based on. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">&lt;blank&gt; – used on lines that have no calculation value.</li>
+                            <li class="ccAufzählung">Charge – used on lines that calculate an increase or decrease of another calculation line.</li>
+                            <li class="ccAufzählung">Sum – used on lines that total other calculation lines. Standard Microsoft Dynamics NAV filters can be used, such as range (1000..2000), either/or (1000|2000), or any of the following: * ? &gt; &lt; = @.</li>
+                            <li class="ccAufzählung">Arithm. Formula – used on lines that total other calculation lines with a mathematical formula. To use the values from other calculation lines, the "Row No." must begin with an "R". For example:<ul><li>To use the value of the line with Row No. 010 multiplied by 2, enter R010 * 2. </li><li>To calculate the material costs in Row No. 010, with an additional 10% for material, plus the resource costs in row 020, enter R010 * 10/100 + R020.</li></ul></li>
+                        </ul>
+                        <p class="ccTebellenTextNoteHeadingIndent">Note</p>
+                        <p class="ccTabellenTextNoteBodyIndent">With this option, the Formula Editor can be opened from the <span class="Bold">Totaling</span> field.</p>
+                        <ul>
+                            <li class="ccAufzählung">Item Calc. Group – used on calculation lines that gather totals from item calculation groups.</li>
+                            <li class="ccAufzählung">Capacity Calc. Group – used on calculation lines that gather totals from capacity calculation groups.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Totaling</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Values relating to the selection in the <span class="Bold">Totaling Type</span> field.</p>
+                        <p class="ccTabellenText">When <span class="Bold">Totaling Type</span> = <span class="Italics">Arithm. Formula</span>, this field can open the Formula Editor that displays which functions can be used and if the formula is correct.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Reference to Row No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Refers to the row number that applies to the charge calculation. Used only on lines with a <span class="Bold">Totaling Type</span> of <span class="Italics">Charge</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Charge Editable</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the value for the price charges in the following fields in the Calculation Card can be overwritten:</p>
+                        <ul>
+                            <li class="ccAufzählung">Charge Type</li>
+                            <li class="ccAufzählung">Charge Rate</li>
+                        </ul>
+                        <p class="ccTabellenText">Line calculations are updated as changes are made to these fields.</p>
+                        <p class="ccTabellenText">Used only on lines with a <span class="Bold">Totaling Type</span> of <span class="Italics">Charge</span> and can only be performed on Calculation Cards with the <span class="Bold">Status</span> set to <span class="Italics">New</span> or <span class="Italics">Under Development</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculate Foreign Currency</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, values are calculated in foreign currency, as seen in the <span class="Bold">Value (LCY)</span> and <span class="Bold">Value</span> fields (which display only for foreign currency). This is useful in lines with prices.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">A currency code must be assigned to the calculation – in the <span class="Bold">Foreign Trade</span> FastTab or from the sales line – to use this feature.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Value Transfer Option</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if and to where on an item the calculation value can be transferred when the “Transfer Value” function is run:</p>
+                        <ul>
+                            <li class="ccAufzählung">Standard Cost/Unit Cost</li>
+                            <li class="ccAufzählung">Unit Price</li>
+                            <li class="ccAufzählung">Sales Line Discount</li>
+                        </ul>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Calculation Functions.htm#_Ref278134180" class="RelLinkPageNumber">"Transfer Value" on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Bold</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the <span class="Bold">Description</span> on the line is bolded.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Calculation View Authorization</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Determines if certain calculation lines only be viewed by certain users (refer to topic <MadCap:xref href="Calculation Views per User.htm">“Calculation Views per User” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434834903"></a>Update Sum Calculation</h3>
+        <p>The “Update Sum Calculation” function shows which calculation lines are included in Charge, Sum and Arithm. Formula totaling lines by changing the text color of the <span class="Bold">Row No.</span> and <span class="Bold">Description</span> fields to bold blue on all lines within the calculation. To run this function, select a totaling line and then on the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Functions &gt; Update Sum Calculation</span>, or press F5.</p>
+        <p>This is helpful when setting up Calculation Schedules to confirm totaling. For example, to see the lines included in the “Total production costs” calculation, click line 0500 and then run the “Update Sum Calculation” function. Note that lines 0320, 0400 and 0450 are included, as indicated by the setup in the <span class="Bold">Totaling</span> field on line 0500.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Schedule_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Calculation lines included in row 0500 on Calculation Schedule Card </p>
+        <p>The “Update Sum Calculation” function is also available on the <span class="Bold">Calculation Card</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Schedule_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Calculation lines included in row 0500 on Calculation Card </p>
+    </body>
+</html>

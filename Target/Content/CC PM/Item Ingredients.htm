@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="879" MadCap:lastWidth="604" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256565"></a>Item Ingredients</h3>
+        <p class="ccTextvorlage">Ingredients can be assigned to any type of item: manufactured, component, finished goods, and so on. While this section is primarily focused on manufactured and component items, the process for assigning ingredients to the different items is the same.</p>
+        <p class="ccTextvorlage">Ingredients can be allocated to the manufactured items. The entered ingredients and ingredient quantities represent the nominal condition of the product, which means that the specified ingredient quantities should be achieved when producing the according intermediate or final product. The defined ingredients (and their respective quantities) are transferred to the header of the production structure. </p>
+        <p class="ccTextvorlage">To ensure that the ingredient calculation is correct for output, expected ingredients must be assigned to any component item with monitored ingredients. The ingredients and ingredient quantities that are allocated to the component should mirror the fair quality of the purchased or produced component items. The defined ingredients (and their respective quantities) are transferred to the lines of the production structure.</p>
+        <p class="ccTextvorlage">Additionally, ingredients can be assigned to finished good items for  creating declaration documents.</p>
+        <p class="ccTextvorlage">The allocation for items are entered on the Item Card by clicking <span class="Bold">Actions&gt; Ingredients</span>.</p>
+        <p class="ccBildabstand"> <img src="../Resources/Images/CC PM/Item Ingredients.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 274px;" MadCap:mediastyle="@media print { max-width: 5.5in; }" /></p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Item Ingredients assigned to a manufactured item that has base unit of measure = KG</p>
+        <p class="ccTextvorlage">The pre-defined ingredients are selected in the <span class="Bold">Ingredient No.</span> field. The <span class="Bold">Description</span> and <span class="Bold">Unit of Measure Code</span> (equals the Base Unit of Measure Code of the ingredient) fields are inherited from the master data of the ingredient.  </p>
+        <p class="ccTextvorlage">The <span class="Bold">Quantity</span> field must be filled with the quantity of the ingredient which the item should contain. This quantity is used as the standard quantity in the Production Structure header when creating a Production Structure.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Item Ingredients_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 318px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Item Ingredients assigned to a component items that have base unit of measure = KG</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Allocation Unit of Measure</h4>
+            <p class="ccTextvorlage">The <span class="Bold">Alloc. Unit of Measure Code</span> field is inherited from the Base Unit of Measure Code from the item. However, this value or the Unit of Measure Code can be changed here or later in the production process to handle quantity conversions. For example, if an item has a base unit of measure of KG, but the ingredient rate included in the raw material is very low, it would be useful to change the allocation unit of measure to T (metric ton) so the quantity will not be small, like 0.1. Conversely, if the ingredient rate included in the raw material is very high, the unit of measure or allocation unit of measure can be changed to GR.</p>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Exercise – Create Manufactured and Component Items with Ingredients</h4>
+        <p class="ccTextvorlage">Create three lot tracked component items with base unit of measure of KG and a unit of measure conversion for GR. Ingredient 1 will be assigned to Item A for a quantity of 10, Ingredient 2 will be assigned to Item B for a quantity of 30, and no ingredients will be assigned to the Filler item.</p>
+        <p class="ccTextvorlage">Then create a lot tracked manufactured item with the same unit of measure setup. Ingredient 1 will be assigned with a quantity of 1 and Ingredient 2 will be assigned with a quantity of 5.</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create Component Items with Ingredients</p>
+            <p class="ccTextvorlage">Follow these steps to create the component items with ingredients:</p>
+        </div>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Manufacturing &gt; Product Design &gt; Items</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Cancel</span> to close the template selection page.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">General</span> FastTab, click <span class="Bold">Show more fields</span> if the <span class="Bold">No.</span> field is not displayed.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, type P-I01.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type Item A.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Base Unit of Measure Code</span> field, enter KG.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Price &amp; Posting</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Gen. Prod. Posting Group</span> field, enter RMS-PMW.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Inventory Posting Group</span> field, enter RAW MAT.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Item Tracking</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Item Tracking Code</span> field, enter LOT_QUAR .</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lot Nos.</span> field, enter LOT.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Units of Measure</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Code</span> field, enter GR and then enter .001 in the <span class="Bold">Qty. per Unit of Measure</span> field.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Units of Measure</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Actions</span> tab, click <span class="Bold">Ingredients</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Ingredient No.</span> field, enter INH-0001 (Ingredient 1).</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 10.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Item Ingredients_2.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 168px;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Item Ingredient assigned to component Item A</p>
+        <ol start="16">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Actions</span> tab, click <span class="Bold">Copy Item</span> (in the Functions menu group; use the Customize Ribbon function to add the Copy Item function if not accessible by default).</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Target Item No.</span> field, enter P-I02.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Set All </span>check box.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> and then click <span class="Bold">Yes</span> to the message to edit the item.<br />Notice the new item card for item P-I02 is active.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type Item B.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Actions</span> tab, click <span class="Bold">Ingredients</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Ingredient No.</span> field, enter INH-0002 (Ingredient 2).</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 30.</li>
+        </ol>
+        <p class="ccBildabstand"> <img src="../Resources/Images/CC PM/Item Ingredients_3.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 168px;" MadCap:mediastyle="@media print { max-width: 5.3in; }" /></p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Item Ingredient assigned to component Item B</p>
+        <ol start="31">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Actions</span> tab, click <span class="Bold">Copy Item</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Target Item No.</span> field, enter P-I07.</li>
+            <li class="ccTextvorlageNumberedList">Ensure that <span class="Bold">Set All </span>check box is selected.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> and then click <span class="Bold">Yes</span> to the message to edit the item.<br />Notice the new item card for item P-I07 is active.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type Filler.</li>
+            <li class="ccTextvorlageNumberedList">Do not close the Item Card.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Create Manufacturing Item with Ingredients</p>
+        <p class="ccTextvorlage">Follow these steps to create the manufacturing item with ingredients:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the Item Card, click <span class="Bold">Home &gt; New</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the template selection page, select the ITEM01, Item FINISHED template and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, type P-I10 and then click <span class="Bold">Yes</span> to rename the record.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type Product.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Base Unit of Measure Code</span> field, enter KG.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Invoicing</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Standard Cost</span> field, type 2 and click <span class="Bold">Yes</span> to change standard cost.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Replenishment</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Replenishment System</span> field, enter Prod. Order.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Planning</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Reordering Policy</span> field, enter Order.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Item Tracking</span> FastTab and enter LOT_QUAR in the <span class="Bold">Item Tracking Code</span> field. </li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lot Nos.</span> field, enter LOT.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Units of Measure</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Code</span> field, enter GR and then enter .001 in the <span class="Bold">Qty. per Unit of Measure</span> field.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Units of Measure</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Actions</span> tab, click <span class="Bold">Ingredients</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Ingredient No.</span> field, enter INH-0001 (Ingredient 1).</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 1.</li>
+            <li class="ccTextvorlageNumberedList">Go to the next line.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Ingredient No.</span> field, enter INH-0002 (Ingredient 2).</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 5.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Item Ingredients_4.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 184px;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Item Ingredients assigned to manufactured item Product</p>
+        <ol start="24">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the Item Card.</li>
+        </ol>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">Ingredients with Lot Tracking</h4>
+        <p class="ccTextvorlage">Ideally, ingredients should be assigned to lot tracked items before initial inventory is posted so that the default ingredient quantities are automatically created in the <span class="Bold">Lot No. Ingredients</span> page (opened from the <span class="Bold">Lot No. Information Card</span> page). </p>
+        <p class="ccTextvorlage">If ingredients are added to lot tracked items after inventory has been posted, the ingredient quantities must be manually assigned to the posted Item Tracking Entries (Item Card &gt; Navigate &gt; Entries &gt; Item Tracking Entries &gt; Navigate &gt; Lot No. Information Card &gt; Edit &gt; Navigate &gt; Ingredients).</p>
+        <p class="ccTextvorlage">Refer to topics <MadCap:xref href="Receipt Testing.htm#_Ref414351033">“Receipt Testing” on page 1</MadCap:xref> and <MadCap:xref href="Item Delivery.htm#_Ref414351054">“Item Delivery” on page 1</MadCap:xref> for more information about ingredients and item tracking. </p>
+        <div class="ccDIV">
+            <h5 class="Heading5" MadCap:autonum="1.1.1.3.1    ">Exercise – Post Inventory for Components</h5>
+            <p class="ccTextvorlage">Post an item journal for 100 units each of the component items (Item A, Item B and Filler) created in “Exercise – Create Manufactured and Component Items with Ingredients”.</p>
+            <p class="ccDemoStepHeading">Post Item Journal for Components</p>
+            <p class="ccTextvorlage">Follow these steps to post the item journal for components:</p>
+        </div>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon of the <span class="Bold">Items</span> page, click <span class="Bold">Item Journal</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter January 1, 2019.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Entry Type</span> field, enter Positive Adjustment.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Item No.</span> field, enter P-I01.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 100.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lot No.</span> field, type LOT001.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity (Base)</span> field, type 100.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, enter P-I02 in the <span class="Bold">Item No.</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 100.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lot No.</span> field, type LOT002.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity (Base)</span> field, type 100.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, enter P-I07 in the <span class="Bold">Item No.</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 100.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lot No.</span> field, type LOT003.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity (Base)</span> field, type 100.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to post the journal lines.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the posting confirmation message and then close the Item Journal.</li>
+        </ol>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.4    ">Item Variants</h4>
+        <p class="ccTextvorlage">Ingredients can be assigned to item variants in the same way ingredients are assigned to the master items. On the <span class="Bold">Item Variants</span> page, click <span class="Bold">Navigate &gt; Ingredients</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Item Ingredients_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Item Variants Ingredients for item P-60017</p>
+    </body>
+</html>

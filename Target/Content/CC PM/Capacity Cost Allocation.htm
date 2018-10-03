@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="865" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Capacity Cost Allocation</h3>
+        <p>By-products that are added to production orders are allocated to the production order lines. The output of both lines are posted separately. The capacity costs (run and setup time) are only posted with the output of the normal production order line.</p>
+        <p>There are three ways in which the capacity costs can be calculated:</p>
+        <ol>
+            <li>Costs are shared proportionally.</li>
+            <li class="ccTextvorlageNumberedList">All costs are calculated on major output.</li>
+            <li>Costs are assigned by the item <b class="Bold">Costing Method</b> = <span class="Italics">Standard</span>; item unit cost is preset based on estimation.</li>
+        </ol>
+        <p>In the <span class="Bold">Process Manufacturing Setup</span> page, the <span class="Bold">By-Product Cap. Cost Alloc.</span> field determines if the first or second option is used:</p>
+        <ul>
+            <li class="ccAufzählungblau">Quantity Proportional – the total resulting capacity costs are allocated quantity proportional to each output posting.</li>
+            <li class="ccAufzählungblau">None – the capacity cost is allocated to the specific output that was posted with run or setup time.</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Capacity Cost Allocation.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: By-Product Capacity Cost Allocation options in Process Manufacturing Setup</p>
+        <p class="ccTextvorlage">Calculating the cost based on the item’s costing method of Standard uses the standard Microsoft Dynamics NAV costing functionality.</p>
+        <p class="ccTextvorlage">This section describes the different allocations based on the settings in the <span class="Bold">By-Product Cap. Cost Allocation</span> field.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Quantity Proportional Cost Allocation</h4>
+        <p>The <span class="Italics">Quantity Proportional</span> setting is the default for by-product capacity cost allocation in <span class="Bold">Process Manufacturing Setup</span>. </p>
+        <p>In this example, the following items have been set up as described for by-production:</p>
+        <ul>
+            <li class="ccAufzählungblau">P-BP01 – finished product</li>
+            <li class="ccAufzählungblau">P-BP02 – by-product</li>
+            <li class="ccAufzählungblau">P-BP03 – raw material</li>
+        </ul>
+        <p>The production structure for the finished product uses 1.5 quantity per of the raw material and includes work center M008 with a run time of 1 hour. For every 1 KG of the finished product, .5 KG of the by-product is created. The raw material has a direct unit cost of 2.00.</p>
+        <p>After a production order for 10 units of the finished product was processed and finished, the “Adjust Cost - Item Entries” function was run for all related items. The posted capacities are then reviewed.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Capacity Cost Allocation_1.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name=":"></a>: Capacity Ledger Entries for finished production order</p>
+        <p>As illustrated in <MadCap:xref href="#:" class="Figure">Fig. 2</MadCap:xref>, the posted capacity cost is 10 (Direct Cost = 9.5 + Overhead Cost = 0.5).</p>
+        <p>The actual cost allocation is visible in the Item Ledger Entries.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Capacity Cost Allocation_2.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name=":2"></a>: Item Ledger Entries with quantity proportional allocated capacity costs</p>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#:2" class="Figure">Fig. 3</MadCap:xref>, the capacity cost is allocated quantity proportional as follows:</p>
+        <ul>
+            <li class="ccAufzählungblau">Finished product = 36.67 Cost Amount (Actual)<ul><li>Raw material = 30.00</li><li>Capacity = 6.67</li><li>(10 / 15 * 10) (total cap. cost / total output qty. * qty. of finished product)</li></ul></li>
+            <li class="ccAufzählungblau">By-product = 3.33<ul><li>Raw material = 0</li><li>Capacity = 3.33</li><li>(10 / 15 * 5) (total cap. cost / total output qty. * qty. of by-product)</li></ul></li>
+        </ul>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Cost Allocation to Finished Good</h4>
+        <p>In this example, the same item by-product configuration is used, and the <span class="Italics">None</span> option is selected as the by-product capacity cost allocation in <span class="Bold">Process Manufacturing Setup</span>. </p>
+        <p>After a production order for 10 units of the finished product was processed and finished, the “Adjust Cost - Item Entries” function was run for all related items. The posted capacities are then reviewed.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Capacity Cost Allocation_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4"><a name=":"></a>: Capacity Ledger Entries for finished production order</p>
+        <p>As illustrated in <MadCap:xref href="#:" class="Figure">Fig. 4</MadCap:xref>, the posted capacity cost  is 10 (Direct Cost = 9.5 + Overhead Cost = 0.5).</p>
+        <p>The actual cost allocation is visible in the Item Ledger Entries.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Capacity Cost Allocation_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5"><a name=":2"></a>: Item Ledger Entries with capacity costs allocated to finished good only</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#:2" class="Figure">Fig. 5</MadCap:xref>, the posted capacity cost is allocated to the finished product only :</p>
+            <ul>
+                <li class="ccAufzählungblau">Finished product = 40.00 Cost Amount (Actual)<ul><li>Raw material = 30.00</li><li>Capacity = 10.00</li></ul></li>
+                <li class="ccAufzählungblau">By-product = 0.00<ul><li>Raw material = 0.00</li><li>Capacity = 0.00</li></ul></li>
+            </ul>
+        </div>
+    </body>
+</html>

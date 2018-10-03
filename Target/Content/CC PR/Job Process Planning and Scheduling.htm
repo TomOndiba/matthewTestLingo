@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="714" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Ref383506555"></a><a name="_Ref383512955"></a><a name="_Toc445394484"></a>Job Process Planning and Scheduling</h2>
+        <p class="ccTextvorlage">This section described the various planning and scheduling functions performed in the Job Planning and Processes view.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc445394485"></a>Create Processes</h3>
+        <p class="ccTextvorlage">The <span class="Bold">Process Channel</span> field is set as a default from the component. It can be checked and changed in the Job Planning and Processing view.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Job Process Planning and Scheduling.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Process Channel field on the Job Planning and Processing view</p>
+        <p class="ccTextvorlage">For WBS line 1.2.3. Documentation, no planning is needed because this is a stock item.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">To create the planning process, select the lines to include and then click <span class="Bold">Planning</span> on the ribbon (from the <span class="Bold">Navigate</span> tab, click <span class="Bold">Planning Process &gt; Planning</span>).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Job Process Planning and Scheduling_1.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Preparing to run the Process Planning function</p>
+        </div>
+        <p class="ccTextvorlage">In the dialog, click <span class="Bold">OK</span> to process the selected lines. The process-related fields are updated accordingly.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Job Process Planning and Scheduling_2.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Job Planning and Processing view after running the Process Planning function</p>
+        <p class="ccTextvorlage">To display all processes in one view (relating to the current position), click <span class="Bold">Navigate &gt; View &gt; Per Block</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Job Process Planning and Scheduling_3.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Planning Processes page</p>
+        <p class="ccTextvorlage">The initial planning run can be viewed from the <span class="Bold">Planning Processes</span> page. On the ribbon, click <span class="Bold">Navigate &gt; Planning Setup</span> to open the <span class="Bold">Job Planning Setup</span> page, which is created automatically using the default settings.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Job Process Planning and Scheduling_4.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Job Planning Setup page</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">By creating the processes, the default data sets are processed based on the following Process Channel:</p>
+            <ul>
+                <li class="ccAufzählungblau">Work – the work and unit of the job line are calculated. </li>
+                <li class="ccAufzählungblau">Lead time – the duration will be calculated using the component lead time. </li>
+            </ul>
+        </div>
+        <p class="ccTextvorlage">Missing process channel defaults can be entered directly in the Planning Processes view. </p>
+        <p class="ccTextvorlage">Click <span class="Bold">New Process</span> on the ribbon to define multiple processes for each job line, such as:  </p>
+        <ul>
+            <li class="ccAufzählungblau">Split budgeted positions into sub-processes</li>
+            <li class="ccAufzählungblau">Create milestones</li>
+            <li class="ccAufzählungblau">Include customer processes in the schedule</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Job Process Planning and Scheduling_5.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Planning Processes page with new and adjusted entries</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Ref382384251"></a><a name="_Toc445394486"></a>Process Logic</h3>
+            <p class="ccTextvorlage">Processes can be linked by using predecessors based on the Process IDs. To recalculate IDs that are out of order due to inserted processes, click <span class="Bold">Actions &gt; Structure &gt; New Process ID</span>.</p>
+            <p class="ccTextvorlage">In the <span class="Bold">Predecessor ID</span> field, type the Process ID(s) to create the link between job lines. Use the semi-colon (;) to enter multiple process IDs per line. The <span class="Bold">Predecessor</span> and <span class="Bold">Follower</span> fields are automatically updated to indicate the hierarchical link.</p>
+        </div>
+        <p class="ccTextvorlage">Constraint Types affect the calculation of the start and end dates for the planning process. The options are:</p>
+        <ul>
+            <li class="ccAufzählungblau">ASAP – As soon as possible (the follower is planned directly behind the predecessor)</li>
+            <li class="ccAufzählungblau">ALAP – As late as possible (the predecessor is planned in front of the follower)</li>
+            <li class="ccAufzählungblau">MSOn / MFOn – Must start on / Must finish on</li>
+            <li class="ccAufzählungblau">SNET / SNLT – Start not earlier then / Start not later then</li>
+            <li class="ccAufzählungblau">FNET / FNLT – Finish not earlier then / Finish not later then</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Job Process Planning and Scheduling_6.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Planning Processes page with predecessor links to process IDs and various constraint types</p>
+    </body>
+</html>

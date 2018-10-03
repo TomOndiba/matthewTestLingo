@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="829" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc442095733"></a>Example – Post Output with Retain Samples</h3>
+        <p>This section demonstrates how samples are retained during output. </p>
+        <p>Based on the settings in <MadCap:xref href="Retain Sample Instructions.htm#_Ref430423700" class="Figure">Fig. 1</MadCap:xref>, at least 10 units of item Q-40005 must be produced for 1 PCS sample to be retained. If a sample is created, it will be retained one month from the posting date.</p>
+        <p>First, a production order will be processed for 5 units of item Q-40005 to demonstrate how a sample is not created if the threshold is not met.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Example Post Output with Retain.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Output posted for 5 units of item Q-40005; did not meet threshold for sample retention</p>
+        <p>The retained samples can be viewed from the <span class="CCBausteinInhaltZchn">cc|quality management</span>, Archive menu.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Example Post Output with Retain_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 191px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: No samples retained from the output posting</p>
+        <p class="ccTextvorlage">Now a production order will be processed for 10 units of item Q-40005.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Example Post Output with Retain_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Output posted for 10 units of item Q-40005; did meet threshold for sample retention</p>
+        <p class="ccTextvorlage">The <span class="Bold">Retained Samples</span> page shows that a sample has been retained for one unit of item Q-40005. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Example Post Output with Retain_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Sample retained from the output posting</p>
+        <p class="ccTextvorlage">Additionally, the <span class="Bold">Retained Samples</span> page shows the following:</p>
+        <ul>
+            <li class="ccAufzählungblau">Lot No. – from the item’s lot number series</li>
+            <li class="ccAufzählungblau">Elimination Date – one month from output posting date (1/24/2019)</li>
+            <li class="ccAufzählungblau">Location code – from the Retain Sample Instructions</li>
+            <li class="ccAufzählungblau">Sales/Cost Amounts – from item card, depending on costing method</li>
+            <li class="ccAufzählungblau">Status – from the <span class="Bold">Retain Sample Status Code</span> in Quality Management Setup</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434568019"></a>Document BOM</h2>
+        <p class="ccTextvorlage">The document BOM is always presented as a “Resource List,” which is a multilevel BOM that includes items and capacities like Work Centers, Work Center Groups and Resources.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Document BOM.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Document BOM</p>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Document BOM</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 103px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Delete Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Required for the PDM interface to the “ProfiDB” system. The field indicates that the item marked in the PDM system’s BOM has been deleted.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Entry No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of the BOM line. The number is automatically assigned by the system and cannot be edited.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Belongs to Entry No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the higher-level BOM item to which the current line belongs. The field cannot be edited.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Level Line No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Sequential numbering of all BOM lines in a level. The field cannot be edited.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Level</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the level of the BOM structure to which the line is assigned. The number is automatically assigned by the system and cannot be edited.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the status of the BOM line, which controls whether the current line is recognized as included in supply planning by the system (refer to topic <MadCap:xref href="General FastTab.htm#_Ref406771348">“General FastTab” on page 1</MadCap:xref>) or whether a production order can be generated.</p>
+                        <ul>
+                            <li class="ccAufzählung">Open – Lines with this status are neither included in supply planning (can be set in the <span class="Bold">Configure to Order Setup</span> page), nor can a production order be generated via open lines.</li>
+                            <li class="ccAufzählung">Released – Lines with this status are included in supply planning if this is defined in the <span class="Bold">Configure to Order Setup</span> page. A production order can be generated via released lines.</li>
+                            <li class="ccAufzählung">Closed –This status must be set manually.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Separate Prod. Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Item Card or the master BOM and can be changed here if required. This field controls whether a separate production order is created for this line when a production order is generated (by clicking <span class="Bold">Create Separate Prod. Order</span> on the ribbon).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Position, Position 2 and Position 3</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the position number. These fields are used to enter the drawing position numbers of an associated CAD or design drawing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Selects the type of BOM line. The following options are available:</p>
+                        <ul>
+                            <li class="ccAufzählung">&lt;blank&gt; – Used mainly to insert a comment in a manufacturing BOM line.</li>
+                            <li class="ccAufzählung">Account (G/L) – Currently has no functionality.</li>
+                            <li class="ccAufzählung">Item – Enables an item from the item master to be entered as a BOM component. <ul><li>When an item has a master BOM itself, this is taken into consideration automatically and transferred to the document BOM if the <span class="Bold">Part Type</span> field is set to <span class="Italics">Production</span> in the item master. When an item is entered manually and if it has its own master BOM, this can be transferred to the document BOM by clicking <span class="Bold">Request BOM from Line</span> from the ribbon.</li><li>If the <span class="Bold">Part Type</span> field is set to <span class="Italics">Standard</span>, then the item is treated as in the standard.</li><li>If the <span class="Bold">Part Type</span> field is set to <span class="Italics">Purchase</span> and the status of a Document BOM  changes to <span class="Italics">Released</span>, a new Variant Code  gets inserted to the <span class="Bold">Variant Code</span> field in the BOM line.</li></ul></li>
+                        </ul>
+                        <p class="ccAufzählung">If the <span class="Bold">Information Lines</span> check box is selected for the BOM type in the document BOM configuration, then the components from items with the <span class="Bold">Part Type</span> field &lt;&gt; <span class="Italics">Standard</span> or <span class="Italics">Purchase</span> are also copied into the document BOM.</p>
+                        <ul>
+                            <li class="ccAufzählung">Resource – Enables a resource to be selected. The use of resources in the master BOM is meaningful if the capacity and value of indirect areas (e.g. construction) are also to be considered in the BOM. </li>
+                            <li class="ccAufzählung">Work Center – Selection of a work center for a series of operations.</li>
+                            <li class="ccAufzählung">Machine Center – Selection of a machine center for a series of operations.</li>
+                            <li class="ccAufzählung">Master BOM – Selection of another Master BOM. The components of this Master BOM will not be transferred in as its own assembly group, but will be copied directly into the current BOM level.</li>
+                            <li class="ccAufzählung">Production BOM – Used with the integration to <span class="CCBausteinInhaltZchn">cc|process manufacturing</span> (refer to section <MadCap:xref href="cc process manufacturing.htm">“cc|process manufacturing” on page 1.</MadCap:xref></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of the relevant item, resource, work center, machine center, master BOM, or G/L account.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description –  Description 5</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Descriptions from the Item Card. These descriptions are copied into the master BOM and can be changed here as required.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculation Group Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Groups items, work centers, machine centers, resources, or G/L accounts for calculation purposes (refer to topic <MadCap:xref href="Calculation Groups in Order.htm#_Ref310435968">“Calculation Groups in Order-Related BOMs” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Routing Link Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">This code is used to connect material with a series of operations. In <span class="CCBausteinInhaltZchn">cc|configure to order</span>, this code is used to assign material provided for an external manufacturing step.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Standard Task Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the Standard Task Code for the document BOM line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Enclosure</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates material provided for external processing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Enclosure Drop Shipment</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates material provided for external processing that must be drop shipped to the vendor.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Variant Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of the item variant if a variant item is selected.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Text Set ID</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the ID of any text from the <span class="CCBausteinInhaltZchn">cc|text module</span> that has been entered for the document BOM line (refer to topic <MadCap:xref href="cc text module.htm#_Ref406766160">“cc|text module” on page 1</MadCap:xref>). </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Copy BOM to Text</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if the BOM will be copied to the purchase line text for a purchased item that is internally designed (refer to topic <MadCap:xref href="Purchasing of Internally Designed.htm#_Ref310330883">“Purchasing of Internally Designed Items” on page 1</MadCap:xref>). </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Exp. Quantity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the number if components needed to manufacture an assembly. </p>
+                        <p class="ccTabellenText">For example, if on a higher-level line, the <span class="Bold">Calculation Formula</span> field is empty and you type a value in the <span class="Bold">Quantity per</span> field, the <span class="Bold">Quantity</span> field on the lower-level line will be populated with the same value. The <span class="Bold">Exp. Quantity</span> field on the lower-level line is then calculated by multiplying the <span class="Bold">Exp. Quantity</span> on the higher-level line by the <span class="Bold">Quantity</span> field on the component line.</p>
+                        <p class="ccTabellenText">For work centers and machine centers, this field is used for calculating the time requirement according to the following formula:</p>
+                        <p class="ItalicsCentered">Time requirement = Tr + Te/Lot size * Exp. Quantity</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculation Formula</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines how the <span class="Bold">Quantity</span> field is calculated. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">&lt;blank&gt;</li>
+                        </ul>
+                        <p class="ccAufzählung">Quantity = Quantity per</p>
+                        <ul>
+                            <li class="ccAufzählung">Length</li>
+                        </ul>
+                        <p class="ccAufzählung">Quantity = Length * Quantity per</p>
+                        <ul>
+                            <li class="ccAufzählung">Length * Width</li>
+                        </ul>
+                        <p class="ccAufzählung">Quantity = Length * Width * Quantity per</p>
+                        <ul>
+                            <li class="ccAufzählung">Length * Width * Depth</li>
+                        </ul>
+                        <p class="ccAufzählung">Quantity = Length * Width * Depth * Quantity per</p>
+                        <ul>
+                            <li class="ccAufzählung">Weight</li>
+                        </ul>
+                        <p class="ccAufzählung">Quantity = Weight * Quantity per</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Length</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies a length measurement.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Width</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies a width measurement.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Depth</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies a depth measurement.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Weight</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies a weight measurement.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Quantity per</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies a quantity per value; functions the same as in standard Microsoft Dynamics NAV.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Quantity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Shows the quantity, which is needed by the component to manufacture a unit of a higher-level item. This field is automatically updated based on the <span class="Bold">Quantity per</span> field and – if the <span class="Bold">Calculation Formula</span> field was filled in – the values in the <span class="Bold">Length</span>, <span class="Bold">Width</span>, <span class="Bold">Weight</span> and/or <span class="Bold">Depth</span> fields.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Exp. Quantity Unit of Measure</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unit of measure of the <span class="Bold">Exp. Quantity</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Setup Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Setup time for the series of operations (only relevant with the <span class="Bold">Type</span> of Work Center or Machine Center).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Setup Time Unit of Meas. Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Time unit in which the setup time is planned (only relevant with the <span class="Bold">Type</span> of Work Center or Machine Center).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Run Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Processing time for the series of operations (only relevant with the <span class="Bold">Type</span> of Work Center or Machine Center).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Run Time Unit of Meas. Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Time unit in which the processing time is planned (only relevant with the <span class="Bold">Type</span> of Work Center or Machine Center).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Wait Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Wait time for the series of operations (only relevant with the <span class="Bold">Type</span> of Work Center or Machine Center).</p>
+                        <p class="ccTabellenText">If this move time should be calculated with the help of the configuration feature, it is necessary to insert an attribute with a formula. The attribute is defined on the <span class="Bold">Dyn. BOM</span> FastTab of the <span class="Bold">Configure to Order Setup</span> page in the <span class="Bold">Variable for Wait Time</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Wait Time Unit of Meas. Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Time unit in which the wait time is planned (only relevant with the <span class="Bold">Type</span> of Work Center or Machine Center).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Move Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Move time for the series of operations (only relevant with the <span class="Bold">Type</span> of Work Center or Machine Center).</p>
+                        <p class="ccTabellenText">If this move time should be calculated with the help of the configuration feature, it is necessary to insert an attribute with a formula. The attribute is defined on the <span class="Bold">Dyn. BOM</span> FastTab of the <span class="Bold">Configure to Order Setup</span> page in the <span class="Bold">Variable for Move Time</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Move Time Unit of Meas. Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Time unit in which the move time is planned (only relevant with the <span class="Bold">Type</span> of Work Center or Machine Center).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lot Size</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Lot size in which the component is manufactured and to which the processing time relates (only relevant when work centers or groups of work centers are used).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Location Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Main location code from the item card. This default can be changed as needed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Starting Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The start date is calculated via the scheduling. In the case of series of operations (<span class="Bold">Type</span> is set to <span class="Italics">Work Center</span>, <span class="Italics">Machine Center</span> or <span class="Italics">Resource</span>) the start date of the series of operations is entered here. The field can be changed manually.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Ending Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The end date is calculated via the scheduling. In the case of series of operations (<span class="Bold">Type</span> is set to <span class="Italics">Work Center</span>, <span class="Italics">Machine Center</span> or <span class="Italics">Resource</span>) the end date of the series of operations is entered here. The field can be changed manually.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Due Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The due date is calculated via the scheduling. In the case of items, the due date of the components is entered here. The field can be changed manually.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Department Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">When entering a document number, the program retrieves the Department Code from the sales header.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Project Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">When entering a document number, the program retrieves the Project Code from the sales header. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Exp. Quantity (Base)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The quantity for the item in the line, expressed in base units. The application automatically fills in this field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Quantity (Base, Parent)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The quantity for the item from the higher-level position in the BOM structure, expressed in base units. The application automatically fills in this field. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Reserved Quantity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">When reservation items have been generated for this position (e.g. via the date of promised delivery) the reserved quantity is displayed here. The arrow opens the relevant reservation items in order to process the reservations.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Reserve</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines whether and how reservations can be made for the item. This is standard Microsoft Dynamics NAV functionality.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Reserved From</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates which line or entry the items are reserved from.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Part Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p>The part type of the item (does not apply for capacity items and resources). Defaults from the Master BOM (or item master if entered manually) and can be modified here on a BOM basis.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Spare Part</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Master BOM (or item master if entered manually) and can be modified here on a BOM basis.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Wear Part</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Master BOM (or item master if entered manually) and can be modified here on a BOM basis.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Formula Quantity</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the master BOM.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Entry No. Representation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number sequence used for the final multi-level sequence of the BOM.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Information Line</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Corresponds to the <span class="Bold">Part Type</span> field on the Item Card (Refer to topic <MadCap:xref href="Config to Order FastTab.htm#_Ref402527373" class="RelLinkPageNumber">"Config. to Order FastTab" on page 1</MadCap:xref>). </p>
+                        <p class="ccTabellenText">If the item has a <span class="Bold">Part Type</span> set to <span class="Italics">Production</span>, it is not relevant for requirements itself, but is relevant for its sub-items. In this case, the <span class="Bold">Information Line</span> check box is selected. This check box is not selected for the sub-items.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sub BOM</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates whether the line has a substructure in the document BOM or construction order. Any master or manufacturing BOM that exists for the item is not displayed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit Cost (CC)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Cost price of the BOM line. The cost price is either defaulted from the master data or calculated from the configuration (refer to topic <MadCap:xref href="Example Cost Price Calculation.htm#_Ref406766183">“Example – Cost Price Calculation” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit Amount (CC)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Cost amount of the BOM line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit Price</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Sales price of the BOM line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit Amount</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Sales amount of the BOM line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Reserved Qty. (Base)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specification of the reserved quantity in relation to the component’s base unit.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Order Tracking Relevance </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">System-internal field used for calculations within requirements planning.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Schedule Manually</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the line is not included in the “Schedule” function.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Line Discount %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The line discount percentage that is valid for the item on the line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Line Discount Amount</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The amount of the line discount.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Shipment Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The date on which the component must be available. This date is calculated from the “Schedule” function of the document BOM or construction order. Generally, it is dependent on the start date of the series of operations (refer to the <span class="Bold">Starting Date</span> field). The value proposed by the system can be changed manually.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Production Lead Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">A lead time can be entered here. When a production order is generated from the construction order, the value entered here is taken over as the lead time for the component in the production order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Scrap %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">A scrap percentage can be entered here. When a production order is generated from the construction order, the value entered here for the component is transferred into the <span class="Bold">Scrap %</span> field on the production order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Base Material</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">A base material can be entered here. If a base material is already assigned to the item card, it will default to the document BOM when created.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Production View Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the production view code for the assembly unit that will be linked to the component (refer to topic <MadCap:xref href="Example Production View.htm#_Ref418157701">“Example – Production View” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Belongs to Prod. View Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates which assembly unit this component is linked to and thus will become part of its configuration when viewing the construction order in the production view (refer to topic <MadCap:xref href="Example Production View.htm#_Ref418157708">“Example – Production View” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Constr. Inquiry Exists</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates whether a construction inquiry exists for this line (refer to topic <MadCap:xref href="Construction Inquiry.htm#_Ref351128460">“Construction Inquiry” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Separate Delivery</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if the component is planned for a separate delivery (refer to topic <MadCap:xref href="Separate Delivery of Semi.htm#_Ref277407232">“Separate Delivery of Semi-Finished Goods” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Purchase Exists</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates whether there is an open purchase order or requisition line for a G/L account (refer to topic <MadCap:xref href="Create Purchase Order or Purchase.htm#_Ref310440211">“Create Purchase Documents for G/L Account and Components” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Purchase Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates whether a purchase order or requisition line for a G/L account or component has been created or has been posted (refer to topic <MadCap:xref href="Create Purchase Order or Purchase.htm#_Ref310440217">“Create Purchase Documents for G/L Account and Components” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Changed</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if something within the Document BOM has changed (e.g., a dummy item  is replaced by a selected item or the Document BOM has been changed since the <span class="Bold">Document BOM</span> page was opened).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Operation No. / Previous Operation No. / Next Operation No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Offers the same function as in standard Microsoft Dynamics NAV routings. In the Document BOM line, these fields only work if <span class="Bold">Type</span> = <span class="Italics">Work Center</span> or <span class="Italics">Machine Center</span>.</p>
+                        <p>Refer to <MadCap:xref href="Example Parallel Routings in CTO BOMs.htm">“Example – Parallel Routings in CTO BOMs” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Parallel Operation No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Provides a simplified process for defining parallel routings (refer to <MadCap:xref href="Example Parallel Routings in CTO BOMs.htm">“Example – Parallel Routings in CTO BOMs” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Transfer to Sales Document</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if the Document BOM (where <span class="Bold">Type</span> = <span class="Italics">Item</span>) will be transferred  to the current Sales Quote/Order lines (refer to topic <MadCap:xref href="Example Transfer Components to Sales Order.htm">“Example – Transfer Components to Sales Order” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText">Type Production Structure</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText">Used with the integration to <span class="CCBausteinInhaltZchn">cc|process manufacturing</span> (refer to section <MadCap:xref href="cc process manufacturing.htm">“cc|process manufacturing” on page 1.</MadCap:xref></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

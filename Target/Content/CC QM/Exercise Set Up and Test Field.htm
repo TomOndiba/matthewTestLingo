@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="890" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc442095802"></a>Exercise – Set Up and Test Field Permissions</h3>
+        <p class="ccTextvorlage">As the database administrator, you are responsible for setting up the field permissions. Before completing a full field permission setup, you decide to set up a test environment to ensure the field permissions are controlled as needed.</p>
+        <p class="ccTextvorlage">You first enter the database-wide access and Field Permission table to your user ID. You then complete settings to test the following scenarios:</p>
+        <ul>
+            <li class="ccAufzählungblau">To test the individual user setup, grant only <span class="Bold">Description</span> field modification access on the Item table to user SUSAN. </li>
+            <li class="ccAufzählungblau">To test the SUPER role setup, grant <span class="Bold">Item Tracking Code</span> field and <span class="Bold">Description</span> field modification access on the Item table. </li>
+            <li class="ccAufzählungblau">To test the User/Role setup, remove the Item Tracking Code modification access on the Item table to user SUSAN, who is a member of the SUPER role.</li>
+        </ul>
+        <p class="ccTextvorlage">After you enter all the settings, you test the scenarios.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Ensure that both users set up in this demonstration are assigned to the SUPER security role.</p>
+        <p class="ccDemoStepHeading">Enter Field Permissions</p>
+        <p class="ccTextvorlage">Follow these steps to enter field permissions:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Login as NT.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|regulatory affairs</span><span class="Bold"> &gt; Administration &gt; Field Permissions</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, tab through all the fields to have all fields blank, except the <span class="Bold">Modification Allowed</span> check box selected.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = User</li><li class="ccTextvorlageNumberedList">ID = NT</li><li class="ccTextvorlageNumberedList">Table ID = 5060475</li><li class="ccTextvorlageNumberedList">Modification Allowed = selected</li></ol></li>
+            <li class="ccTextvorlageNumberedList">Go to the next line and enter the following to prevent all users from changing the <span class="Bold">Description</span> field on the Item table:<ol start="1"><li class="ccTextvorlageNumberedList">Table ID = 27</li><li class="ccTextvorlageNumberedList">Field No. = 3</li><li class="ccTextvorlageNumberedList">Modification Allowed = not selected</li></ol></li>
+            <li class="ccTextvorlageNumberedList">Go to the next line and enter the following to prevent all users from changing the <span class="Bold">Item Tracking Code</span> field on the Item table:<ol start="1"><li class="ccTextvorlageNumberedList">Table ID = 27</li><li class="ccTextvorlageNumberedList">Field No. = 6500</li><li class="ccTextvorlageNumberedList">Modification Allowed = not selected</li></ol></li>
+            <li class="ccTextvorlageNumberedList">Go to the next line and enter the following to allow user SUSAN to change the <span class="Bold">Description</span> field on the Item table:<ol start="1"><li class="ccTextvorlageNumberedList">Type = User</li><li class="ccTextvorlageNumberedList">ID = SUSAN</li><li class="ccTextvorlageNumberedList">Table ID = 27</li><li class="ccTextvorlageNumberedList">Field No. = 3</li><li class="ccTextvorlageNumberedList">Modification Allowed = selected</li></ol></li>
+            <li class="ccTextvorlageNumberedList">Go to the next line and enter the following to prevent user SUSAN from changing the <span class="Bold">Item Tracking Code</span> field on the Item table:<ol start="1"><li class="ccTextvorlageNumberedList">Type = User</li><li class="ccTextvorlageNumberedList">ID = SUSAN</li><li class="ccTextvorlageNumberedList">Table ID = 27</li><li class="ccTextvorlageNumberedList">Field No. = 6500</li><li class="ccTextvorlageNumberedList">Modification Allowed = not selected</li></ol></li>
+            <li class="ccTextvorlageNumberedList">Go to the next line and enter the following to allow role SUPER to change the <span class="Bold">Description</span> field on the Item table:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Role</li><li class="ccTextvorlageNumberedList">ID = SUPER</li><li class="ccTextvorlageNumberedList">Table ID = 27</li><li class="ccTextvorlageNumberedList">Field No. = 3</li><li class="ccTextvorlageNumberedList">Modification Allowed = selected</li></ol></li>
+            <li class="ccTextvorlageNumberedList">Go to the next line and enter the following to allow role SUPER to change the <span class="Bold">Item Tracking Code</span> field on the Item table:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Role</li><li class="ccTextvorlageNumberedList">ID = SUPER</li><li class="ccTextvorlageNumberedList">Table ID = 27</li><li class="ccTextvorlageNumberedList">Field No. = 6500</li><li class="ccTextvorlageNumberedList">Modification Allowed = selected</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Exercise Set Up and Test Field.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 338px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Field Permissions with Item table restrictions/access</p>
+        <ol start="11">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Field Permissions</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Test Field Permissions for User SUSAN</p>
+            <p class="ccTextvorlage">Follow these steps to ensure that user SUSAN can change the <span class="Bold">Description</span> field but not the <span class="Bold">Item Tracking Code</span> field on the Item Card:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">Login as SUSAN.</li>
+                <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Items</span> (on the Home button).</li>
+                <li class="ccTextvorlageNumberedList">Locate item Q-20005 and open the Item Card.</li>
+                <li class="ccTextvorlageNumberedList">Change the value in the <span class="Bold">Description</span> field to “Zinc Chloride”.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Card</span> page.<br />The Item Card closes and the description is changed.</li>
+                <li class="ccTextvorlageNumberedList">Reopen the Item Card.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Exercise Set Up and Test Field_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Description field changed on Item Card</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Item Tracking</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Item Tracking Code</span> field, enter LOTALL.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Card</span> page.<br />The following message appears that the user does not have permission to modify the field.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Exercise Set Up and Test Field_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Field change permission error</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to discard the change.<br />The Item Card closes and the <span class="Bold">Item Tracking Code</span> field is not changed.</li>
+            <li class="ccTextvorlageNumberedList">Reopen the Item Card and review the <span class="Bold">Item Tracking Code</span> field.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Exercise Set Up and Test Field_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Item Tracking Code field unchanged on Item Card</p>
+        <ol start="12">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Item Card</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Test Field Permissions for User NT</p>
+            <p class="ccTextvorlage">Follow these steps to ensure that user NT can change the <span class="Bold">Description</span> field and the <span class="Bold">Item Tracking Code</span> field on the Item Card:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">Login as NT.</li>
+                <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Items</span> (on the <span class="Bold">Home</span> button).</li>
+                <li class="ccTextvorlageNumberedList">Locate item Q-20005 and open the Item Card.</li>
+                <li class="ccTextvorlageNumberedList">Change the value in the <span class="Bold">Description</span> field to “Zinc Chlorid”.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Card</span> page.<br />The Item Card closes and the description is changed.</li>
+                <li class="ccTextvorlageNumberedList">Reopen the Item Card.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Exercise Set Up and Test Field_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Description field changed on Item Card</p>
+        <div class="ccDIV">
+            <ol start="7">
+                <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Item Tracking</span> FastTab.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Item Tracking Code</span> field, enter LOTALL.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Card</span> page.<br />The Item Card closes and the <span class="Bold">Item Tracking Code</span> field is changed.</li>
+                <li class="ccTextvorlageNumberedList">Reopen the Item Card and review the <span class="Bold">Item Tracking Code</span> field.</li>
+            </ol>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Exercise Set Up and Test Field_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Item Tracking Code field changed on Item Card</p>
+        </div>
+        <ol start="11">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Item Card</span> page.</li>
+        </ol>
+    </body>
+</html>

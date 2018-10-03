@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">IDS Connector</h2>
+        <p>The IDS Connector is the connection between Microsoft Dynamics NAV and wholesaler Webshops. This topic provides an overview of the communication process and then describes how to use IDS  in <span class="CCBausteinInhaltZchn">cc|project</span>.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="Communic"></a>Communication Process Overview</h3>
+        <p>To better understand the communication between Microsoft Dynamics NAV and the Webshops, the process is described here.</p>
+        <p>First, an HTML file with certain parameters must be created and invoked to attract the Webshop of the wholesaler by IDS. This file sends the parameters by HTTP to the wholesaler’s Webshop and opens their Webshop.</p>
+        <p>Next, the Webshop creates a shopping cart or button in the Webshop (e.g. “IDS Transfer”) sent as an order to the return address, that includes all the data of the shopping basket. The return address is the starting point of the tunnel service for WebHook return (e.g. ngrok). There, the data arrives and are sent through the tunnel to the IDS connector.</p>
+        <p>The IDS connector creates a “response.html” file in a directory on the server, which is then read and processed from Microsoft Dynamics NAV.</p>
+        <p>In the <span class="Bold">IDS Communication</span> page in Microsoft Dynamics NAV (<span class="CCBausteinInhaltZchn">cc|project</span> <span class="Bold">&gt; Administration</span>), the raw data files can be viewed and again transformed by action.</p>
+        <h3 MadCap:autonum="1.1.2    "><a name="Processi"></a>Processing Orders with IDS</h3>
+        <p>The two main functions of processing orders with IDS in <span class="CCBausteinInhaltZchn">cc|project</span> are:</p>
+        <ul>
+            <li class="ccAufzählungblau">Ordering directly from the Webshop (Quote Calculation)</li>
+            <li class="ccAufzählungblau">Creating IDS Basket in Microsoft Dynamics NAV and sending to the Webshop (Procurement)</li>
+        </ul>
+        <p>Each function is described in this section.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.1    ">Order Directly from Webshop</h4>
+        <p>Typically, IDS is used on the Job Budget Calculation line to create an order directly from the Webshop. This section describes how to start the process of ordering an item using IDS.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">All Webshops process information differently in their carts. Therefore, no processing within a Webshop is described in this manual.</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Open Webshop from Job Budget Calculation Line</p>
+            <p class="ccTextvorlage">Follow these steps to open the Webshop from a Job Budget Calculation line:</p>
+            <ol>
+                <li class="ccTextvorlageNumberedList">In the Job Budget Calculation view, create a header line for the Webshop entries.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">Actions &gt; IDS - Connector &gt; Open Webshop</span>.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/IDS Connector.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Opening the Webshop for a line in the Job Budget Calculation view</p>
+        <p class="ccTextvorlageNumberedListnonumber">The <span class="Bold">IDS Vendor List</span> page opens, with all vendors that have been set up as IDS Vendors (refer to topic <MadCap:xref href="IDS Setup.htm#Vendor">“Vendor Card” on page 1</MadCap:xref>).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/IDS Connector_1.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: IDS Vendor List</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">With the correct IDS Vendor selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Accept any messages that appear in regards to the HTML file; the IDS Response Timer dialog will appear and then the IDS Vendor’s Webshop will open in the specified browser.</li>
+            <li class="ccTextvorlageNumberedList">In the Webshop, add item(s) to the cart, enter any additional information, such as shipping and then click the button that transfers the information back to IDS in Microsoft Dynamics NAV, e.g. IDS Transfer. At this time, do not place the order along with transferring to IDS, if given the option.</li>
+            <li class="ccTextvorlageNumberedList">Close the web browser after the order is returned to Microsoft Dynamics NAV.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Map IDS Items to Microsoft Dynamics NAV Items</p>
+            <p>Follow these steps to map IDS Items to Items in Microsoft Dynamics NAV:</p>
+        </div>
+        <ol>
+            <li class="ccTextvorlageNumberedList">If the item is not found in Microsoft Dynamics NAV, the <span class="Bold">IDS Item Mapping</span> page will appear.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/IDS Connector_2.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: IDS Item Mapping page</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">IDS Item Mapping</span> page, click the lookup in the <span class="Bold">Action</span> field to select how to map the IDS item to an item in Microsoft Dynamics NAV. The options are:<ul MadCap:continue="true"><li class="ccTextvorlageNumberedListinBulletList">New Item – a new item is created manually based on the value in the <span class="Bold">New Item No.</span> field. The value in the <span class="Bold">New Item No.</span> field is the same as the <span class="Bold">IDS Item No.</span> but can be changed prior to processing the item mapping. If no action is selected, the IDS Item No. is used in the IDS Basket until the item mapping process is performed.</li><li class="ccTextvorlageNumberedListinBulletList">New Item from Template – a new item is created automatically from the template indicated in the <span class="Bold">IDS Setup</span> page</li><li class="ccTextvorlageNumberedListinBulletList">Connect to Item – connects the IDS item to an existing item in Microsoft Dynamics NAV</li></ul></li>
+            <li class="ccTextvorlageNumberedList">In this example, the <span class="Italics">New Item from Template</span> option is selected and the <span class="Bold">Item Template Code </span>and <span class="Bold">Template Descr.</span> fields are populated with the default from IDS Setup. This template can be changed here as needed.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/IDS Connector_3.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: New item mapping set to be created from default template</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Process Item Mapping</span>. <br />The item is mapped and the <span class="Bold">IDS Item Mapping</span> page closes.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Process Webshop Order in Job Line</p>
+            <p>Follow these steps to process the Webshop order in the Job Budget Calculation line:</p>
+        </div>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the Job Budget Calculation view, with the header line selected, click <span class="Bold">Actions &gt; IDS - Connector</span>. The options that can be used now are:<ul><li class="ccTextvorlageNumberedListinBulletList">Show Baskets – opens the <span class="Bold">IDS Baskets</span> page, which lists all baskets for this job and from where the individual <span class="Bold">IDS Basket</span> pages can be opened</li></ul><ul start="1"><li class="ccTextvorlageNumberedListinBulletList">Apply Basket – adds the item(s) in the basket to the next level(s) in the job line</li></ul></li>
+        </ol>
+        <ol start="1" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">In the Job Budget Calculation view, with the header line selected, click <span class="Bold">Actions &gt; IDS - Connector</span>. The options that can be used now are:<ul><li class="ccTextvorlageNumberedListinBulletList">Show Baskets – opens the <span class="Bold">IDS Baskets</span> page, which lists all baskets for this job and from where the individual <span class="Bold">IDS Basket</span> pages can be opened</li></ul><ul start="1"><li class="ccTextvorlageNumberedListinBulletList">Apply Basket – adds the item(s) in the basket to the next level(s) in the job line</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/IDS Connector_4.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Show and Apply Basket options for Job Budget Calculation line</p>
+        <ol start="1" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Show Baskets</span> to open the <span class="Bold">IDS Baskets</span> page.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/IDS Connector_5.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: IDS Baskets page with online shop order</p>
+        <ol start="1" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Edit</span> to open the <span class="Bold">IDS Basket</span> page.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/IDS Connector_6.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: IDS Basket  </p>
+        <ol start="1" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">The information in the IDS Basket page can be viewed for accuracy before adding to the job line. Click <span class="Bold">OK</span> to close the <span class="Bold">IDS Basket</span> page and then close the <span class="Bold">IDS Baskets</span> page.</li>
+            <li class="ccTextvorlageNumberedList">In the Job Budget Calculation view, click <span class="Bold">IDS - Connector &gt; Apply Basket</span>. <br />The <span class="Bold">IDS Baskets</span> page opens.</li>
+            <li class="ccTextvorlageNumberedList">Select the correct basket to apply and then click <span class="Bold">OK</span>. The item(s) from the basket are added below the header line, with all pricing from the Webshop.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/IDS Connector_7.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Basket applied to the Job Budget Calculation line</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Information about the item – directly from the IDS Vendor’s Webshop – can be accessed by clicking <span class="Bold">IDS - Connector &gt; Item Info (ADL)</span> in the Job Budget Calculation view. The Webshop will open specifically to the page for the item in the selected job line.</li>
+            <li class="ccTextvorlageNumberedList">Now that the basket has been applied to the job line, a sales quote can be generated for the customer by clicking <span class="Bold">Home &gt; Create Sales Quote</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/IDS Connector_8.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Sales Quote created for job line created from Webshop order</p>
+        <p class="ccTextvorlage">Further processing of the job line can be handled using Job Planning and Processing.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.2    "><a name="Create"></a>Create IDS Basket in Microsoft Dynamics NAV and Send to Webshop</h4>
+        <p>When IDS items exist in Microsoft Dynamics NAV, the items can be added directly to the job lines and then an IDS Basket can be created and sent to the Webshop for order creation. This is the beginning of the procurement process, which is described in this section.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">All Webshops process information differently in their carts. Therefore, no processing within a Webshop is described in this manual.</p>
+        <p class="ccDemoStepHeading">Add IDS Items to Job Budget Calculation </p>
+        <p class="ccTextvorlage">Follow these steps to add IDS items to a Job Budget Calculation:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">In the Job Budget Calculation, enter a header line and then manually enter the IDS item(s). Note that the “Item Info (ADL)” function (<span class="Bold">Actions &gt; IDS - Connector</span>) can be used to access information about the items from the IDS Vendor’s Webshop, such as minimum order quantity requirements.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/IDS Connector_9.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: IDS item added to the Job Budget Calculation</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Planning and Processing</span> to open the Job Planning and Processing view. <br />Note that the <span class="Bold">IDS available</span> check box is selected on the line, as this item has been set up with a cross-reference for an IDS Vendor (refer to topic <MadCap:xref href="IDS Setup.htm#Item">“Item Cross-References” on page 1</MadCap:xref>).</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/IDS Connector_10.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: IDS item in Job Planning and Processing view</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">On the line for the IDS item, set the <span class="Bold">Procurement Channel</span> to <span class="Italics">Order</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the header line selected, click <span class="Bold">Actions &gt; IDS - Connector &gt; Create Basket</span>. <br />The <span class="Bold">IDS Vendor List</span> page opens.</li>
+            <li class="ccTextvorlageNumberedList">Select the IDS Vendor in which to create the basket and then click <span class="Bold">OK</span>. <br />The <span class="Bold">IDS Basket</span> page opens.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/IDS Connector_11.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: IDS Basket with IDS item from Job Planning and Processing lines</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Send Basket</span>. The IDS Response Time dialog will appear and then the IDS Vendor’s Webshop opens to the cart for processing.</li>
+            <li class="ccTextvorlageNumberedList">In the Webshop, enter any additional information, such as shipping, and then click the button that transfers the information back to IDS in Microsoft Dynamics NAV as well as places the order, e.g. IDS Transfer &amp; Order.</li>
+            <li class="ccTextvorlageNumberedList">Close the web browser after the order is returned to Microsoft Dynamics NAV.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Plan and Release Procurement</p>
+        <p>Follow these steps to plan and release the procurement for the IDS item:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">A new IDS Basket is created for the online order, with a return message and order number displayed in the <span class="Bold">General</span> FastTab, as well as the <span class="Bold">Procurement Status</span> set to <span class="Italics">Open</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/IDS Connector_12.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Return basket order from IDS Vendor’s Webshop</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Release Procurement</span> to plan and release the procurement for this basket in the job line.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to release the Job Procurement Lines for the Basket Lines.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to create Procurement Documents.<br />The <span class="Bold">Procurement Status</span> is changed to <span class="Italics">Released</span> in the <span class="Bold">IDS Basket</span> page.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/IDS Connector_13.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: IDS Basket with updated Procurement Status</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">IDS Basket</span> page and return to the Job Planning and Processing view. Note that the <span class="Bold">Procurement Release</span> and <span class="Bold">Purchase Order</span> fields are set to <span class="Italics">Yes</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/IDS Connector_14.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Released procurement line with purchase order</p>
+        <div class="ccDIV">
+            <ol start="6">
+                <li class="ccTextvorlageNumberedList">Click the value in the <span class="Bold">Purchase Order</span> field to open the purchase order. <br />Note that the <span class="Bold">IDS Purchase Order</span> check box is selected in the <span class="Bold">General</span> FastTab, which indicates that the order was created from an IDS order. This field is transferred to the Purchase Order to the Purchase Receipt Header, Purchase Invoice Header and Purchase Credit Memo Header upon posting.</li>
+            </ol>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/IDS Connector_15.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Purchase Order created for IDS Webshop order</p>
+            <div class="ccDIV">
+                <h4 class="Heading4" MadCap:autonum="1.1.2.3    "><a name="Integrat"></a>Integration to Requisition Worksheets</h4>
+                <p>Items  from IDS can be transferred from the Job Planning and Processing view to the Requisition Worksheet. However, action messages are carried out from an IDS Basket, not the Requisition Worksheet.</p>
+                <p class="ccBildabstand">
+                    <img src="../Resources/Images/CC PR/IDS Connector_16.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+                </p>
+                <p class="ccBildFigure" MadCap:autonum="Fig. 17">: IDS item in Job Planning and Processing view sent to the Requisition Worksheet</p>
+            </div>
+            <p>When processing IDS through the requisition worksheet, an IDS Basket must be created to finish processing the order. On the <span class="Bold">Actions</span> tab, click <span class="Bold">IDS - Connector &gt; Create Basket</span>. Select the IDS Vendor as previously shown, and then click <span class="Bold">Send Basket</span> to open the webshop.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/IDS Connector_17.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 18">: IDS Basket with IDS item from Job Planning and Processing lines ready to send to Webshop</p>
+            <p>As previously described,  enter any additional information in the Webshop, and then transfer the information back to IDS in Microsoft Dynamics NAV.</p>
+            <div class="ccDIV">
+                <p>A new IDS Basket is returned with a <span class="Bold">Basket Source</span> = <span class="Italics">Online Shop</span>, a return message, order confirmation number and the <span class="Bold">Procurement Status</span> set to <span class="Italics">Open</span>.</p>
+                <p class="ccBildabstand">
+                    <img src="../Resources/Images/CC PR/IDS Connector_18.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+                </p>
+                <p class="ccBildFigure" MadCap:autonum="Fig. 19">: Return basket order from IDS Vendor’s Webshop, ready to carry out action message</p>
+            </div>
+            <p class="ccTextvorlage">The order can now be processed directly from the IDS Basket by clicking <span class="Bold">Carry Out Action Message</span>.</p>
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">The “Carry Out Action Message” function in the Requisition Worksheet cannot be used for IDS Webshop orders.</p>
+            <p> </p>
+            <p class="ccBildabstand"> </p>
+            <p> </p>
+        </div>
+    </body>
+</html>

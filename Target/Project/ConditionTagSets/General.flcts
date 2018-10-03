@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags"
+  conditions="">
+  <ConditionTag
+    Comment=""
+    Name="PDF"
+    BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#98fb98"
+    Name="Online"
+    Comment=""
+    Color="Normal"
+    OriginalName="Online" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="In Progress"
+    Comment="Do not upload online!" />
+  <ConditionTag
+    BackgroundColor="#ffff00"
+    Name="On Hold/Discontinued"
+    Comment="Content on hold or product discontinued - not online/PDF" />
+  <ConditionTag
+    BackgroundColor="#800080"
+    Name="No new version"
+    Comment="Content not updated from last year" />
+</CatapultConditionTagSet>

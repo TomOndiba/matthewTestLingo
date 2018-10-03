@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../Resources/Stylesheets/COSMO CONSULT_FINAL_PDF.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Ref525036169"></a><a name="_Ref525036284"></a><a name="_Toc525041202"></a>Drawing Status</h2>
+        <p class="ccTextvorlage">On the <span class="Bold">Drawing Status</span> page, the statuses that a drawing can assume are set up. The drawing status is only checked if the <span class="Bold">Status Check</span> field in the <span class="Bold">PDM Setup</span> page has the option <span class="Italics">Show Error</span> or <span class="Italics">Confirm Individually</span>.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If CAD / PDM or PLM systems are connected using the module <span class="CCBausteinInhaltZchn">cc|product data management – cad connector</span>, the drawing status must correspond to that of the connected system.</p>
+        <p class="ccTextvorlageNoteheading">Important</p>
+        <p class="ccTextvorlageNotebody">An item may only have ONE drawing per drawing type, which has a status code marked “Valid”. When replacing the revision status, always change the item first.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Drawing Status.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="DrawingStatusSetup"></a>: Drawing Status Setup</p>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Drawing Status</span> page are described in the following table.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');" class="TableStyle-CC_TableStyleSheet" cellspacing="0">
+            <col style="width: 99px;" />
+            <col />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Code of a drawing status. The code must be unique and can have up to 20 characters.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Descriptions of the drawing status, at maximum 50 characters.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Valid</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the status of a valid drawing. Only drawings with the status “Valid” can be assigned to an item.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Use in Item</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Controls whether drawings can be assigned to an item or not. The prerequisite is that a drawing of the same type (e.g. <span class="Italics">Mechanical)</span> has not already been assigned to the item.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Use in BOM</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Controls whether drawings can be assigned to a production BOM or not. The prerequisite is that a drawing of the same type (e.g. <span class="Italics">Mechanical</span>) has not already been assigned to the production BOM.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Use in Not Released Prod. Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Controls whether drawings can or cannot be assigned to a production order that has not been released (status <span class="Italics">simulated</span>, <span class="Italics">planned</span> or <span class="Italics">firm planned</span>). A prerequisite for an assignment is that a drawing of the same type (e.g. <span class="Italics">Mechanical</span>) has not already been assigned to the production order.</p>
+                        <p class="ccTabellenText">In addition, a production order cannot be created if the underlying BOM contains a component whose drawing status prevents it from being used in a production order that has not been released.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Use in Released Prod. Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Controls whether drawings can be assigned to a released production order or not. A prerequisite for an assignment is that a drawing of the same type (e.g. <span class="Italics">Mechanical</span>) has not already been assigned to the production order.</p>
+                        <p class="ccTabellenText">In addition, a production order cannot be created if the underlying BOM contains a component whose drawing status prevents it from being used in a production order that has not been released.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Use in Sales Line</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines whether a drawing can or cannot be used in a sales document (sales quote or sales order). Also, it is not possible to manually assign a drawing to a sales document if the status does not allow this.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Use in Purch. Line</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines whether a drawing can or cannot be used in a purchasing document (purchase quotes or purchase order). Also, it is not possible to manually assign a drawing to a purchasing document if the status does not allow this.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Use in Service</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines whether a drawing can or cannot be used in a service document or for service items / service BOMs. Nor can a drawing be assigned manually to a service BOM or service item / service BOM if the status does not allow it.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p>Allow Posting</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Controls whether documents can be posted if they contain a drawing set that is not permitted for this purpose. This setting applies to the following documents:</p>
+                        <ul>
+                            <li class="ccAufzählung">Purchase Orders </li>
+                            <li class="ccAufzählung">Warehouse Receipts </li>
+                            <li class="ccAufzählung">Sales Orders </li>
+                            <li class="ccAufzählung">Warehouse Shipments </li>
+                            <li class="ccAufzählung">Production Orders </li>
+                            <li class="ccAufzählung">Service Orders</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

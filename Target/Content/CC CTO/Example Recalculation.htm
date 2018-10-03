@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434567993"></a>Example – Recalculation</h3>
+        <p class="ccTextvorlage">The “Recalculation” function of the Dynamic Master BOM corresponds with the Dynamic Sub-Checklists (refer to topic <MadCap:xref href="Example Sub Checklists.htm#_Ref369439857">“Example – Sub-Checklists” on page 1</MadCap:xref>).</p>
+        <p class="ccTextvorlage">The Master BOM contains the <span class="Bold">Recalculate</span> check box. If this check box is selected, the Master BOM line will be copied to the Document BOM as many times as was entered/calculated in the <span class="Bold">Exp. Quantity</span> field. Each created Document BOM line will be set with <span class="Bold">Exp. Quantity</span> = 1. The number of created Document BOM lines will be the quantity that was entered in the <span class="Bold">Input</span> field on the Checklist line (NOSUBCL).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Recalculation.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Master BOM for a lower-level BOM item setup for recalculation on Document BOM lines</p>
+        <p class="ccTextvorlage">In a lower-level BOM item, a counting variable “i” is available. In the description fields and the formula fields, the syntax “#i#” can be used as a substitute symbol.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Recalculation_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="_Ref284834248"></a>: Substitute symbols in a lower-level Master BOM</p>
+        <p class="ccTextvorlage">When the Master BOM is opened in the Document BOM line:</p>
+        <ul>
+            <li class="ccAufzählungblau">The substitute symbol is replaced with the contents of the counting variables.</li>
+            <li class="ccAufzählungblau">The variables produced correspond with those from the dynamic sub-checklist.</li>
+            <li class="ccAufzählungblau">The values assigned in the checklist are available in the Document BOM.</li>
+        </ul>
+        <p class="ccTextvorlage">In this example, item D-9103 appears three times in the Document BOM by requesting the Master BOM.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Recalculation_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="_Ref284835877"></a>: Result in Document BOM</p>
+    </body>
+</html>

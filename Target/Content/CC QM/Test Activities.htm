@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    " xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Test Activities</h3>
+        <p class="ccTextvorlage">Test Activities define how to operate testing. Test Activities are used in the Test Order Scheduling process to relate one or more Test Properties to  a group that represents the test step. Refer to topic <MadCap:xref href="Test Order Scheduling.htm#Master" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">“Master Data Setup” on page 1</MadCap:xref> for more information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Test Activities.png" MadCap:mediastyle="@media print { max-width: 6in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">: Test Activities page</p>
+        <p>The fields on the <span class="Bold">Test Activities</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%; margin-left: 0; margin-right: auto;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 120px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTextvorlage" style="font-weight: bold;color: #FFFFFF;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTextvorlage" style="font-weight: bold;color: #FFFFFF;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier of the test activity.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Short description of the test activity.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Activity Group Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the category of test activity for grouping purposes.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Resource No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the standard Microsoft Dynamics NAV Resource to be used for the Activity.</p>
+                        <p class="ccTabellenText">Resources are linked to work centers in order to use the Work Center structures like capacities. Work Center Capacities are used instead of Resource Capacities for Test Order Scheduling.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Work Center No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Indicates the Work Center to be used for the activity; defaults from the linked Resource No.</p>
+                            <p>The use of the Work Center results in usage of related working time structures so that no Activities are planned outside of the  working time.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Work Center Group Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Work Center specified in the <span class="Bold">Work Center No.</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Exec. Time Unit of Measure Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Work Center specified in the <span class="Bold">Work Center No.</span> field.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace">
+        </p>
+    </body>
+</html>

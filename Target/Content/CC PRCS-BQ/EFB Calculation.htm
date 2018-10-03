@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">EFB Calculation</h2>
+        <p>EFB is a German calculation document that sometimes must be delivered with the sales quote document. It includes information about the calculation and the surcharges.</p>
+        <p>Surcharges to be included in the EFB Calculation are first defined in the <span class="Bold">EFB Surcharge</span> page (refer to section <MadCap:xref href="#">“EFB Calculation” on page 1</MadCap:xref> for more information).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/EFB Calculation.png" MadCap:mediastyle="@media print { max-width: 4.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name=":"></a>: EFB Surcharge page</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">EFB supports only the five cost types shown in <MadCap:xref href="#:" class="Figure">Fig. 54</MadCap:xref>. Since there is no consolidation of "Other" and "Other 2", the "Other 2" cost type is not considered for EFB.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">EFB Calculation Page</h3>
+        <p class="ccTextvorlage">In the Job Card, click <span class="Bold">Navigate &gt; EFB Calculation</span> to start the calculation process.</p>
+        <p> </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/EFB Calculation_1.png" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: <MadCap:annotation MadCap:createDate="2018-06-28T20:00:19.4924298-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="field captions corrected" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-06-28T20:00:27.5107351-05:00">EFB Calculation opened from Job Card</MadCap:annotation></p>
+        <p class="ccTextvorlage">In the <span class="Bold">EFB Calculation</span> page, the <span class="Bold">Values for Unit Prices Wage</span> FastTab displays that calculations of wages and surcharges and provides the ability to update values. The fields in this FastTab are described in the following table.</p>
+        <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">BoQ No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the job number for which the EFB Calculation is to be performed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Average Wage</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the average Unit Cost which is calculated based on <span class="Bold">Charging Wage</span> minus <span class="Bold">Wage Surcharge</span> minus <span class="Bold">Additional Wage Costs</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">
+                            <MadCap:annotation MadCap:createDate="2018-06-28T19:59:48.1237058-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="content switched" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-06-28T19:59:53.8038680-05:00">Additional Wage Costs</MadCap:annotation>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies additional costs for wages.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Additional Wage Costs %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p>Displays the Costs % which is calculated based on <span class="Bold">Additional Wage Costs</span> and <span class="Bold">Average Wage</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Non Wage Labour Costs</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies non wage labour costs which is used to reduce the <span class="Bold">Average Wage</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculation Wage</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the Calculation Wage which is calculated based on <span class="Bold">Charging Wage</span> minus <span class="Bold">Wage Surcharge</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculation Wage Surcharge</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the Surcharge Amount which is calculated based on <span class="Bold">Charging Wage</span> and <span class="Bold">Calculation Wage Surcharge %</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculation Wage Surcharge %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the Wage Surcharge % based on EFB Surcharges for Cost Type wage.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Charging Wage</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the wage sales price per hour.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">The <span class="Bold">Surcharges for Single Costs of Part Efforts</span> FastTab includes the surcharges set up in the <span class="Bold">EFB Surcharge</span> page. New surcharges can be added and default values can be changed as needed for the specific BoQ Job.</p>
+        <p class="ccTextvorlage">The <span class="Bold">Quote Total Calculation</span> FastTab provides statistical information about the Sales Quote calculation.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    ">Add Values to EFB Calculation</h3>
+            <p>In the <span class="Bold">Values for Unit Prices Wage</span> FastTab, enter 40 in the <span class="Bold">Charging Wage</span> field to specify the Sales Price per hour for the EFB Report.</p>
+            <p>Values in this FastTab and the <span class="Bold">Quote Total Calculation</span> FastTab are calculated and updated as well.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/EFB Calculation_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Updated values from entering Charging Wage</p>
+        </div>
+        <p class="ccTextvorlage">In the <span class="Bold">Non Wage Labour Costs</span> field, enter 3.00 to specify these costs for the EFB Report.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The <span class="Bold">Average Wage</span> is reduced by the amount entered in the <span class="Bold">Non Wage Labour Cost</span> field.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/EFB Calculation_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Non Wage Labour Cost added, reducing the Average Wage</p>
+        </div>
+        <p>In the <span class="Bold">Additional Wage Costs %</span> field, enter 20.00 to specify these costs for the EFB Report.</p>
+        <div class="ccDIV">
+            <p>The <span class="Bold">Average Wage</span> and <span class="Bold">Additional Wage Costs <MadCap:annotation MadCap:createDate="2018-06-28T20:03:25.0594696-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="not correct now with field caption change" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-06-28T20:03:43.2481264-05:00">%</MadCap:annotation></span> fields are recalculated.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/EFB Calculation_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Additional Wage Cost % added, adjusting the Average Wage </p>
+        </div>
+        <p class="ccTextvorlage">Once all values are entered, click <span class="Bold">Update EFB Calculation</span> to make sure all values are up to date. This function must be run if the  EFB surcharges are changed in order to update all values.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">To generate the report to send with the Sales Quote, click <span class="Bold">Report &gt; EFB-Price 221 (1a - 311.a)</span>. In the <span class="Bold">EFB Price 221</span> dialog, click <span class="Bold">Print</span> to print the report or <span class="Bold">Preview</span> to view the report.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/EFB Calculation_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: EFB Price 221 report to send with Sales Quote</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1992 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="879.52" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc435720942"></a>Exercises</h2>
+        <p class="ccTextvorlage">This section includes exercises to help build on information in this section. The step-by-step solutions for the exercises follow each complete exercise.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">All documents created during the exercises must be assigned to the <span class="Bold">SYS_TRAIN</span> module. Additionally, in order to display the documents, they must be validated and entered in the table of rights.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc435720943"></a>Exercise 1 – Forms</h3>
+        <p class="ccTextvorlage">In this exercise, documents with forms will be created and examples of the different form options like input fields or option lists will be shown. Also the transfer and processing of values from one document to another will be explained.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Task 1: Simple Form </h4>
+        <p class="ccTextvorlage">Create a document with a form for recording a text. Specify the system document <span class="Bold">_CHECKPARAMS</span> as the destination for the form. Create the document on the basis of the information in the table. </p>
+        <p class="ccTextvorlage">The elements needed for this task are indicated in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 126px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Object</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Value</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Card</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">TRAIN_1</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Form</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">FORMULAR</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Inputfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">VALUE</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Result</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">_CHECKPARAMS</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Task 2: Transmit Values in Forms</h4>
+        <p class="ccTextvorlage">Create a document displaying the text input in <span class="Italics">Task 1</span>. To do this, change the document created in <span class="Italics">Task 1</span> so that the result refers to the new card <span class="Bold">TRAIN_2</span>.</p>
+        <p class="ccTextvorlage">A <span class="Bold">Train_2</span> codeunit must be created for the document <span class="Bold">TRAIN_2</span> in order to generate the document. </p>
+        <p class="ccTextvorlage">The elements needed for this task are indicated in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 126px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Object</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Value</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Card</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">TRAIN_2</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Label</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">You have input the following text:</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Textfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">TEXT</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">Task 3: Dropdown List</h4>
+        <p class="ccTextvorlage">Create a new document with the name <span class="Bold">TRAIN_3</span>, copy the document <span class="Bold">TRAIN_1</span> to the current document and expand the form with a menu list with the values <span class="Italics">Hamburg</span>, <span class="Italics">Berlin</span> and <span class="Italics">Bonn</span>. </p>
+        <p class="ccTextvorlage">Expand the document <span class="Bold">TRAIN_2</span> with another text field called <span class="Italics">CITY</span> in order to display the value from the list of options. Adapt the codeunit <span class="Bold">Train_2</span> so that the values of the <span class="Bold">TRAIN_3</span> form are output in the document <span class="Bold">TRAIN_2</span>. </p>
+        <p class="ccTextvorlage">The elements needed for this task are indicated in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 169px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 162px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Object</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Value</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Dropdownlist</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">CITY</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_3</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Textfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">CITY</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_2</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.4    ">Task 4: Dynamic Menu List</h4>
+        <p class="ccTextvorlage">Expand the document called <span class="Bold">TRAIN_3</span> with another menu list with values based on the <span class="Italics">Users</span> table. The document <span class="Bold">TRAIN_2</span> should also be adapted so that the value of the new menu field is displayed.</p>
+        <p class="ccTextvorlage">Create a codeunit with the name <span class="Bold">Train_3</span> and perform all necessary entries to generate the <span class="Bold">TRAIN_3</span> document. Adapt the <span class="Bold">Train_2</span> codeunit so that the changes on the document <span class="Bold">TRAIN_2</span> are shown. </p>
+        <p class="ccTextvorlage">The elements needed for this task are indicated in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Object</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Value</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Dropdownlist</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">USER</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_3</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Entry</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">USER_ENTRY</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_3</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Dynamic</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_3</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Textfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">USER</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_2</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.5    ">Task 5: Option List</h4>
+        <p class="ccTextvorlage">Insert a list of options into the document called <span class="Bold">TRAIN_3</span> and assign the values <span class="Italics">Monday</span>, <span class="Italics">Tuesday</span>, <span class="Italics">Wednesday</span>, <span class="Italics">Thursday</span> and <span class="Italics">Friday</span> to the entries. The document <span class="Bold">TRAIN_2</span> should also be adapted so that the value of the new list of options is displayed.</p>
+        <p class="ccTextvorlage">The elements needed for this task are indicated in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Object</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Value</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Optionlist</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">DAY</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_3</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Textfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">DAY</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_2</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.6    ">Task 6: Option List with Multiple Selection</h4>
+        <p class="ccTextvorlage">Modify the document <span class="Bold">TRAIN_</span>3 so that several values from the <span class="Italics">TAG</span> list of options can be selected. </p>
+        <p class="ccTextvorlage">The elements needed for this task are indicated in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 160px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 105px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Object</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Value</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Multiple</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.7    ">Task 7: Dynamic Option List with Multiple Selection</h4>
+        <p class="ccTextvorlage">Insert a list of options with values from the <span class="Italics">Language</span> table into the document named <span class="Bold">TRAIN_3</span>. The <span class="Bold">TRAIN_2</span> document should also be adapted so that the value of the new list of options is displayed. It should be possible to select several values from the <span class="Italics">LANGUAGE</span> list of options. </p>
+        <p class="ccTextvorlage">Adapt the <span class="Bold">Train_2</span> codeunit so that the changes on the <span class="Bold">TRAIN_2</span> document are incorporated. The corresponding modifications must also be made to the <span class="Bold">Train_3</span> codeunit.</p>
+        <p class="ccTextvorlage">The elements needed for this task are indicated in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Object</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Value</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Optionlist</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">LANGUAGE</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_3</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Dynamic</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_3</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Multiple</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_3</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Textfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">LANGUAGE</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_2</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.8    ">Task 8: Form Iterations</h4>
+        <p class="ccTextvorlage">Create a document with the name <span class="Bold">TRAIN_4</span> with a Number list of options. The list of options contains the values from the <span class="Italics">Items</span> table. It should be possible to select several items. The result of document <span class="Bold">TRAIN_4</span> refers to document <span class="Bold">TRAIN_5</span>. </p>
+        <p class="ccTextvorlage">In addition, create a document called <span class="Bold">TRAIN_5</span> with an input field and a text field that are repeated as a group. The <span class="Bold">TRAIN_5</span> document is based on the <span class="Italics">Items</span> table and displays the group created for each entry found. The quantity for a given item can be specified in the input field. The reference to the document <span class="Bold">TRAIN_6</span> is defined through the result.</p>
+        <p class="ccTextvorlage">Create a document <span class="Bold">TRAIN_6</span> which displays the item number and the respective quantity. The document is structured using a table. Create a codeunit for each of the three document.</p>
+        <p class="ccTextvorlage">The elements needed for this task are indicated in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Object</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Value</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Card</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">ITEM_CARD</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_4</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Form</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">FORMULAR</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_4</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Optionlist</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">NUMBER</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_4</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Multiple</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_4</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Dynamic</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_4</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Card</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">ITEMQTY_CARD</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_5</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Formular</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">FORMULAR</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_5</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Formiteration</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">FI_ITEMQTY</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_5</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Parameter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">ITEMNO</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_5</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Textfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">ITEMNO</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_5</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Inputfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">AMOUNT</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_5</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Card</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">ITEMLIST_CARD</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_6</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Table</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">TABLE_1</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_6</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Textfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">ITEMNO</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_6</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Textfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">ITEMQTY</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_6</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc435720944"></a>Exercise 2 – Lists</h3>
+        <p class="ccTextvorlage">In this exercise, the creation of lists as tables will be shown. Therefore documents have to be created and the corresponding codeunits have to be set up.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.1    ">Task 1: Filtering Lists</h4>
+        <p class="ccTextvorlage">Create a document <span class="Bold">TRAIN_7</span> with the input fields <span class="Italics">Name</span> and <span class="Italics">Number</span>. The values from the two input fields are used as filters for the <span class="Italics">Customers</span> table. The result of the form refers to the <span class="Bold">TRAIN_8</span> document. </p>
+        <p class="ccTextvorlage">The selected data records from the <span class="Italics">Customers</span> table are shown on the <span class="Bold">TRAIN_8</span> document in a two-column table. The <span class="Italics">Number</span> and <span class="Italics">Name</span> fields of the <span class="Italics">Customers</span> table are to be shown. </p>
+        <p class="ccTextvorlage">The elements needed for this task are indicated in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Object</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Value</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Card</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">TRAIN7_CARD</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_7</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Form</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">FORMULAR</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_7</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Textfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">NAME</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_7</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Textfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">NUMBER</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_7</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Card</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">TRAIN8_CARD</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_8</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Table</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">TABLE_1</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_8</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Textfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">NAME</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_8</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Textfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">NUMBER</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_8</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.2    ">Task 2: Links in Lists</h4>
+        <p class="ccTextvorlage">Building on <span class="Italics">Task 1</span>, create a document <span class="Bold">TRAIN_9</span> with the text fields <span class="Italics">Name</span>, <span class="Italics">Number</span> and <span class="Italics">Contact Person</span>, to be assigned according to the list entry in card <span class="Bold">TRAIN_9</span>.</p>
+        <p class="ccTextvorlage">Adapt the document <span class="Bold">TRAIN_9</span> and the codeunit so that the customer number is set as a reference to the relevant customer card (document <span class="Bold">TRAIN_9</span>). </p>
+        <p class="ccTextvorlage">The elements needed for this task are indicated in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Object</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Value</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Card</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">TRAIN9_CARD</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_9</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Textfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">NAME</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_9</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Textfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">NUMBER</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_9</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Textfield</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">CONTACT</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_9</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_8</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Parameter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">NUMBER</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_8</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc435720945"></a>Exercise 3 – Cards</h3>
+        <p class="ccTextvorlage">In this exercise, the creation of cards, containing information and links of different types will be explained, as well as how to create a navigation.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.3.1    ">Task 1: Links in Cards</h4>
+        <p class="ccTextvorlage">Create a document called <span class="Bold">TRAIN_10</span> consisting of the cards <span class="Bold">TRAIN10_CARD1</span> and <span class="Bold">TRAIN10_CARD2</span>. The structure of the first card is based on a two column table. A label and image appear on the document above the table.</p>
+        <p class="ccTextvorlage">The references in the four lines of the table are to be defined as follows.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Object</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Value</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Type</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">EXTERN</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">External</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">SYS_MAIN_MENU</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">INTERN</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Internal</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">TRAIN10_CARD2</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">TELEFON</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Phone</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">0123456789</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">EMAIL</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">Mail</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">test@cosmoconsult.com</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">The second card merely contains a label and a reference to the first card.</p>
+        <p class="ccTextvorlage">The elements needed for this task are indicated in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Object</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Value</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Card</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">TRAIN10_CARD1</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_10</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Label</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">_TEXT</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_10</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Image</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">IMAGE</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_10</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Table</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">LINKTABLE</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_10</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">EXTERN</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_10</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">INTERN</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_10</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">TELEFON</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_10</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">EMAIL</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_10</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Card</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">TRAIN10_CARD2</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_10</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">LINK</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_10</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Label</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">_BACK</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_10</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.3.2    ">Task 2: Navigation</h4>
+        <p class="ccTextvorlage">Expand the card <span class="Bold">TRAIN10_CARD1</span> for document <span class="Bold">TRAIN_10</span> to include a navigation. </p>
+        <p class="ccTextvorlage">The navigation comprises the following entries (the changes must be made on the document).</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Object</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Value</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Type</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">EXTERN</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">External</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">SYS_MAIN_MENU</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">INTERN</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Internal</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">TRAIN10_CARD2</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">TELEFON</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Phone</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">0123456789</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Link</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">EMAIL</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">Mail</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">test@cosmoconsult.com</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">The elements needed for this task are indicated in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Object</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Value</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Navigation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">On document TRAIN_10</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.3.3    ">Task 3: Data Iteration</h4>
+            <p class="ccTextvorlage">Create a document called <span class="Bold">TRAIN_11</span> with the text fields <span class="Italics">USER</span>, <span class="Italics">PASSWORD</span>, <span class="Italics">NAME</span> and <span class="Italics">EXPIRATION DATE</span>. Combine these text fields to form a group. The group is displayed on the document with the corresponding values for each data record in the <span class="Italics">Users</span> table.</p>
+            <p class="ccTextvorlage">The elements needed for this task are indicated in the following table.</p>
+            <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Object</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Value</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Card</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText">TRAIN11_CARD1</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">On document TRAIN_11</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Textfield</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText">USER</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">On document TRAIN_11</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Textfield</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText">NAME</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">On document TRAIN_11</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                            <p class="ccTabellenText">Textfield</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="ccTabellenText">EXPIREDATE</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                            <p class="ccTabellenText">On document TRAIN_11</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc435720946"></a>Solution – Exercise 1</h3>
+            <p class="ccTextvorlage">This section provides a step-by-step solution for Exercise 1, Forms.</p>
+            <h4 class="Heading4" MadCap:autonum="1.1.4.1    ">Task 1: Simple Form</h4>
+            <p class="ccTextvorlage">Create a document with the following structure:</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC MS/Exercises.png" style="visibility: visible;mso-wrap-style: square;width: 556px;height: 827px;" MadCap:mediastyle="@media print { max-width: 4.7in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Document TRAIN_1</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Hint</p>
+            <p class="ccTextvorlageNotebody">Values shown in green are case-sensitive.</p>
+        </div>
+        <p class="ccTextvorlage">To create a document with the above structure, follow these steps:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the navigation pane, click <span class="Bold">Departments &gt; COSMO CONSULT &gt; </span><span class="CCBausteinInhaltZchn">cc|mobile solution</span><span class="Bold"> &gt; Application Management &gt; Documents</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">New</span> to create a document.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Name</span> field, type TRAIN_1. </li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Module</span> field, enter SYS_TRAIN.</li>
+            <li class="ccTextvorlageNumberedList">Add a <span class="Italics">card</span> element to the document. The ID of the <span class="Italics">card</span> is TRAIN1_CARD and the name attribute is assigned the value <span class="Italics">Task 1</span>. </li>
+            <li class="ccTextvorlageNumberedList">Create a <span class="Italics">form</span> with an input field and a <span class="Italics">result</span> in the <span class="Italics">card</span>. </li>
+            <li class="ccTextvorlageNumberedList">The ID of the input field is VALUE. Add the <span class="Italics">name</span> attribute with the value Value to the element. </li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Italics">type</span> of <span class="Italics">result</span> to external using the lookup. Then change the value of the <span class="Italics">target</span> attribute to _CHECKPARAMS.</li>
+            <li class="ccTextvorlageNumberedList">Add the <span class="Italics">Synchron</span> element to the <span class="Italics">result</span>.</li>
+            <li class="ccTextvorlageNumberedList">Validate the document just created with F11.</li>
+        </ol>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.4.2    ">Task 2: Transmit Values in Forms</h4>
+            <p class="ccTextvorlage">Create a document with the following structure:  </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC MS/Exercises_1.png" style="visibility: visible;mso-wrap-style: square;width: 556px;height: 683px;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Document TRAIN_2</p>
+        </div>
+        <p class="ccTextvorlage">To create a document with the above structure, follow these steps: </p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Create a new document, name it TRAIN_2 and enter SYS_TRAIN in the <span class="Bold">Module</span> field.</li>
+            <li class="ccTextvorlageNumberedList">Add a <span class="Italics">card</span> element to the document. The ID of the <span class="Italics">card</span> is TRAIN_2 and the name attribute is assigned the value data sheet.</li>
+            <li class="ccTextvorlageNumberedList">Create a label showing the text “You have input the following text”.</li>
+            <li class="ccTextvorlageNumberedList">Add a <span class="Italics">text field</span> with the ID TEXT to the <span class="Italics">card</span> TRAIN_2. </li>
+            <li class="ccTextvorlageNumberedList">Validate the document just created with F11. Now create a codeunit TRAIN_2 which processes the document. </li>
+            <li class="ccTextvorlageNumberedList">Enter the “MS – Mobile Journal Params” table in the codeunit as a record of the transmission. </li>
+            <li class="ccTextvorlageNumberedList">Create the codeunit variable GEN of <span class="Italics">MS - Generator</span> type and a text variable with the name Value in the <span class="Italics">OnRun()</span> function.</li>
+            <li class="ccTextvorlageNumberedList">Create the following code in the <span class="Italics">OnRun</span> function:</li>
+        </ol>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.Init(Rec);</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateDeck(' TRAIN_2'); </p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateCard('TRAIN_2'); </p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">getTextField('VALUE',Value); </p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.SetOutputField('TEXT', Value,false);</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseCard();</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseDeck();</p>
+        <ol start="19" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Change the number of the codeunit on document TRAIN_2 of the document editor. The new card is created after this step. Now make the necessary changes to the TRAIN_2 document. </li>
+            <li class="ccTextvorlageNumberedList">Change the value of the <span class="Italics">destination</span> attribute to TRAIN_2 in the <span class="Italics">form</span> for the <span class="Italics">result</span> element. </li>
+            <li class="ccTextvorlageNumberedList">Validate the document and test the newly created TRAIN_2 document.</li>
+        </ol>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.4.3    ">Task 3: Dropdown List</h4>
+            <p class="ccTextvorlage">To create the dropdown list, follow these steps:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">Create a new document, name it TRAIN_3 and enter SYS_TRAIN in the <span class="Bold">Module</span> field.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon of the <span class="Bold">Document</span> page, click <span class="Bold">Copy</span>. A report is opened. Select the TRAIN_1 document in the <span class="Bold">Source document</span> field and the TRAIN_3 document in the <span class="Bold">Target Document</span> field. Click <span class="Bold">OK</span>. </li>
+                <li class="ccTextvorlageNumberedList">Add a <span class="Italics">menu list</span> with the ID CITY to the form. </li>
+                <li class="ccTextvorlageNumberedList">Create three entries for the <span class="Italics">menu list</span> as shown in the screenshot below:</li>
+            </ol>
+            <p class="ccBildabstand"> <img src="../Resources/Images/CC MS/Exercises_2.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 405px;" MadCap:mediastyle="@media print { max-width: 4.8in; }" /></p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Document Lines TRAIN_3</p>
+        </div>
+        <ol start="26" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Validate the document just created.</li>
+            <li class="ccTextvorlageNumberedList">Copy the text field TEXT on document TRAIN_2 and give it the ID CITY. </li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Italics">destination</span> of the <span class="Italics">result</span> to document TRAIN_2. </li>
+            <li class="ccTextvorlageNumberedList">Create a local variable Text with the name City in the codeunit in the <span class="Italics">OnRun()</span> function. After line <span class="sourcecode" style="font-family: 'Courier New';">GEN.SetOutputField('TEXT', Value,false);</span> in the codeunit, add the following code: </li>
+        </ol>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">getTextField('CITY',city);</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.SetOutputField('CITY', city,false);</p>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">Save, compile and test the codeunit. </li>
+        </ol>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.4.4    ">Task 4: Dynamic Menu List</h4>
+            <p class="ccTextvorlage">To create a menu list containing dynamic values, follow these steps:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">Create a <span class="Italics">menu list</span> with the properties shown in the screen shot below in the form on document TRAIN_3.</li>
+            </ol>
+            <p class="ccBildabstand">  <img src="../Resources/Images/CC MS/Exercises_3.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 440px;" /></p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4"><a name=":_Document_Lines_TRAIN_3"></a>: Document Lines TRAIN_3</p>
+        </div>
+        <ol start="2">
+            <li class="ccTextvorlageNumberedList">Create the processing codeunit <span class="Italics">TRAIN_3</span> for the document. </li>
+            <li class="ccTextvorlageNumberedList">Create the following variables: </li>
+        </ol>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');margin-left: auto;margin-right: auto;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 93px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 135px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 277px;" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Name</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Type</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Further Information</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">User</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Record</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Table User</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">GEN</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Codeunit</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Codeunit MS – Generator</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Item</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">Text</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Dimension 4</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <ol start="4">
+                <li class="ccTextvorlageNumberedList">Create the following code in the <span class="Italics">OnRun</span> function of the codeunit:</li>
+            </ol>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.Init(Rec);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateDeck('TRAIN_3');</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateCard('TRAIN_3');</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">IF User.FINDFIRST THEN BEGIN</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  REPEAT</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">    Item[1] := User."User Name";</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">    Item[2] := Item[1];</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">    GEN.SetOutputValues('USER_ENTRY',Item);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  UNTIL User.NEXT = 0;</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">END ELSE BEGIN</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  Item[1] := 'No entries';</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  Item[2] := 'No entries';</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  GEN.SetOutputValues('USER_ENTRY',Item);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">END;</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseCard(); </p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseDeck();</p>
+        </div>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">Save the codeunit and assign this codeunit to document <span class="Italics">TRAIN_3</span>. Test whether the Search screen is showing the correct values so far. </li>
+            <li class="ccTextvorlageNumberedList">Insert a new <span class="Italics">text field</span> with the ID USER and the name User on document <span class="Italics">TRAIN_2</span>. </li>
+            <li class="ccTextvorlageNumberedList">After line <span class="sourcecode" style="font-family: 'Courier New';">GEN.SetOutputField('CITY', City,false);</span> in the codeunit, add the following code and create a code 20 variable user: </li>
+        </ol>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">getCodeField('USER',User); </p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.SetOutputField('USER', User,false); </p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">Save the codeunit.</li>
+        </ol>
+        <h4 class="Heading4" MadCap:autonum="1.1.4.5    ">Task 5: Option List</h4>
+        <p class="ccTextvorlage">To create an option list where one of a couple of predefined values can be selected, follow these steps:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Create a <span class="Italics">list of options</span> with the ID OPTIONDAY in the form. </li>
+            <li class="ccTextvorlageNumberedList">Add five <span class="Italics">entries</span> for each of the weekdays as shown in the screen shot below.</li>
+        </ol>
+        <p class="ccBildabstand"> <img src="../Resources/Images/CC MS/Exercises_4.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 444px;" /></p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Document Lines TRAIN_3</p>
+        <div class="ccDIV">
+            <ol start="3">
+                <li class="ccTextvorlageNumberedList">Validate the document. </li>
+                <li class="ccTextvorlageNumberedList">Expand the document <span class="Italics">TRAIN_2</span> with a text field with the ID DAY and the name Day. </li>
+                <li class="ccTextvorlageNumberedList">Add a new text variable Day to codeunit 77050. And add the following lines in front of the call-up:</li>
+            </ol>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseCard() : </p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">getTextField('DAY',Day); </p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.SetOutputField('DAY', Day, FALSE);</p>
+        </div>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Save the codeunit.</li>
+        </ol>
+        <h4 class="Heading4" MadCap:autonum="1.1.4.6    ">Task 6: Option List with Multiple Selection</h4>
+        <p class="ccTextvorlage">To create an option list, where multiple values of a predefined list of values can be selected, follow these steps:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Open document <span class="Italics">TRAIN_3</span> in the <span class="Italics">document editor</span> and add the element <span class="Italics">Multiple</span> to the <span class="Italics">form</span> for the DAY <span class="Italics">list of options</span>. </li>
+            <li class="ccTextvorlageNumberedList">Validate the document.</li>
+        </ol>
+        <h4 class="Heading4" MadCap:autonum="1.1.4.7    ">Task 7: Dynamic Option List with Multiple Selection</h4>
+        <p class="ccTextvorlage">To create an option list with dynamic entries, follow these steps:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Create the list of options as shown in the screenshot below:</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC MS/Exercises_5.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 196px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Document Lines TRAIN_3</p>
+        <div class="ccDIV">
+            <ol start="2">
+                <li class="ccTextvorlageNumberedList">In the codeunit, create a new Language record variable of type <span class="Italics">language</span> and add the following code:</li>
+            </ol>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">IF Language.FINDFIRST THEN BEGIN</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  REPEAT</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">    Item[1] := Language.Name;</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">    Item[2] := Language.Code;</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">    GEN.SetOutputValues('LANGUAGE_ENTRY',Item);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  UNTIL Language.NEXT = 0;</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">END ELSE BEGIN</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  Item[1] := 'No entries';</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  Item[2] := '';</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  GEN.SetOutputValues('LANGUAGE_ENTRY',Item);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">END; </p>
+        </div>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">Add a <span class="Italics">text field</span> LANGUAGE with the name Language on document <span class="Italics">TRAIN_2</span>. </li>
+            <li class="ccTextvorlageNumberedList">Add a new variable of type Text 250 with the name Language to the 77050 codeunit.</li>
+            <li class="ccTextvorlageNumberedList">Using the <span class="sourcecode" style="font-family: 'Courier New';">getTextField('LANGUAGE',Language);</span> function, read out the value of the <span class="Italics">LANGUAGE</span> parameter and assign this value to the <span class="Italics">LANGUAGE text field</span> by calling up <span class="sourcecode" style="font-family: 'Courier New';">GEN.SetOutputField('LANGUAGE', Language, FALSE);</span> . </li>
+            <li class="ccTextvorlageNumberedList">Save the codeunit.</li>
+        </ol>
+        <h4 class="Heading4" MadCap:autonum="1.1.4.8    ">Task 8: Form Iterations</h4>
+        <p class="ccTextvorlage">To create a repetition of a defined form, follow these steps:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Create a new document as specified in the following screenshot:</li>
+        </ol>
+        <p class="ccBildabstand"> <img src="../Resources/Images/CC MS/Exercises_6.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 745px;" MadCap:mediastyle="@media print { max-width: 4.8in; }" /></p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Document TRAIN_4</p>
+        <ol start="2">
+            <li class="ccTextvorlageNumberedList">Create a 77052 processing codeunit with the name <span class="Italics">TRAIN_4</span> and the following variables: <ul start="2"><li class="ccTextvorlageNumberedList">Record variable Item of <span class="Italics">Item</span> type</li><li class="ccTextvorlageNumberedList">Text variable Item with four dimensions </li></ul></li>
+        </ol>
+        <div class="ccDIV">
+            <ol start="3">
+                <li class="ccTextvorlageNumberedList">Add the following code to the <span class="Italics">OnRun</span> function:</li>
+            </ol>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.Init(Rec);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateDeck('TRAIN_4');</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateCard('ITEM_CARD');</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">IF Item.FINDFIRST THEN BEGIN</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  REPEAT</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">    ItemText[1] := Item."No."+ ' ' + Item.Description;</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">    ItemText[2] := Item."No.";</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">    GEN.SetOutputValues('NUMBER_ENTRY',ItemText);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  UNTIL Item.NEXT = 0;</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">END;</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseCard();</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseDeck();</p>
+        </div>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">Create a new document TRAIN_5 according to the following screenshot:  </li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC MS/Exercises_7.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 438px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Document Train_5</p>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">Create a processing codeunit TRAIN_5. </li>
+            <li class="ccTextvorlageNumberedList">Create the following local variables in the codeunit:</li>
+        </ol>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');margin-left: auto;margin-right: auto;width: 500px;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 128px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 118px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 236px;" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Name</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Type</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Further Information</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Number</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Text</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">250</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">NumberArray</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Text</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">250, Dimension 20</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Counter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Integer</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">MobileMgt</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Codeunit</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">MS - Mobile Mgt./Functions</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Index</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Integer</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Item</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Text</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">30</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Pos</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Integer</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">GEN</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">Codeunit</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">MS - Generator</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <ol start="7">
+                <li class="ccTextvorlageNumberedList">Add the following code to the <span class="Italics">OnRun</span> method of the codeunit: </li>
+            </ol>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.Init(Rec);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateDeck('TRAIN_5');</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateCard('ITEMQTY_CARD');</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GetTextField('NUMBER',Number);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">IF NOT MobileMgt.SplitTextBySeparator(Number,',',NumberArray) THEN</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  EXIT;</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">Index := 1;</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">Counter := COMPRESSARRAY(NumberArray);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">REPEAT</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> GEN.SetOutputField('ITEMNO',NumberArray[Index],FALSE);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> GEN.NextSeq();</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> Index += 1;</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">UNTIL Index &gt; Counter;</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseCard();</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseDeck();</p>
+        </div>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">Save the codeunit. </li>
+            <li class="ccTextvorlageNumberedList">Create a new document TRAIN_6 according to the following screenshot:</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC MS/Exercises_8.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 380px;" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Document TRAIN_6</p>
+        <ol start="9" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Create a processing codeunit TRAIN_6.</li>
+            <li class="ccTextvorlageNumberedList">Create the following local variables in the codeunit:</li>
+        </ol>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');margin-left: auto;margin-right: auto;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 109px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 395px;" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Name</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Type</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Number</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Text</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Qty</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Integer</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Index</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Integer</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <ol start="12">
+                <li class="ccTextvorlageNumberedList">Add the following code to the <span class="Italics">OnRun</span> method of the codeunit:</li>
+            </ol>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.Init(Rec);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateDeck('TRAIN_6');</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateCard('ITEMLIST_CARD');</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.StartTable('TABLE_1');</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">Index := 1;</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">IF Rec.GetTextField(FORMAT(Index)+'__ITEMNO',Number)</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">AND Rec.GetIntegerField(FORMAT(Index)+'__QUANTITY',Qty)</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">THEN</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> REPEAT</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  GEN.SetOutputField('ITEMNO',Number,FALSE);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  GEN.SetOutputField('ITEMQTY',FORMAT(Qty),</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  FALSE);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  GEN.NextRec();</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  Index := Index +1;</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> UNTIL NOT (Rec.GetTextField(FORMAT(Index)+</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> '__ITEMNO',Number) AND</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> Rec.GetIntegerField(FORMAT(Index)+</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> '__ITEMQTY',Qty));</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.EndTable();</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseCard();</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseDeck();</p>
+        </div>
+        <ol start="13">
+            <li class="ccTextvorlageNumberedList">Assign the corresponding codeunits to all documents and change the destinations of the result of the individual documents. </li>
+            <li class="ccTextvorlageNumberedList">Validate all newly created and modified documents.</li>
+        </ol>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.5    "><a name="_Toc435720947"></a>Solution – Exercise 2</h3>
+            <p class="ccTextvorlage">This section provides a step-by-step solution for Exercise 2, Lists.</p>
+            <h4 class="Heading4" MadCap:autonum="1.1.5.1    ">Task 1: Filtering Lists</h4>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">Create the document TRAIN_7 using the following template:  </li>
+            </ol>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC MS/Exercises_9.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 312px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Document TRAIN_7</p>
+        </div>
+        <ol start="2">
+            <li class="ccTextvorlageNumberedList">Validate the document.</li>
+            <li class="ccTextvorlageNumberedList">Create the document TRAIN_8 using the following template:</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC MS/Exercises_10.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 374px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Document TRAIN_8</p>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">Create a processing codeunit TRAIN_8.</li>
+        </ol>
+        <div class="ccDIV">
+            <ol start="5">
+                <li class="ccTextvorlageNumberedList">Create the following local variables in the codeunit:</li>
+            </ol>
+            <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');margin-left: auto;margin-right: auto;" cellspacing="0">
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 108px;" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 120px;" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 273px;" />
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Name</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Type</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Further Information</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">GEN</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText">Codeunit</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">MS – Generator</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Name</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText">Text</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Length 30</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Number</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText">Code</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Length 20</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                            <p class="ccTabellenText">Debitor</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="ccTabellenText">Record</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                            <p class="ccTabellenText">Customer</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="ccTextvorlagenospace"> </p>
+        </div>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Add the following code to the <span class="Italics">OnRun</span> method of the codeunit:</li>
+        </ol>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.Init(Rec);</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateDeck('TRAIN_8');</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateCard('TRAIN8_CARD');</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GetTextField('NAME',Name);</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GetCodeField('NUMBER',Number);</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">IF Name &gt; '' THEN</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> Debitor.SETFILTER(Name,'@'+Name+'*');</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">IF Number &gt; '' THEN</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> Debitor.SETFILTER("No.",'@'+Number+'*');</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.StartTable('TABLE_1');</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">IF Debitor.FIND('-') THEN</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> REPEAT</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> GEN.SetOutputField('NUMBER',Debitor."No.",FALSE);</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> GEN.SetOutputField('NAME',Debitor.Name,FALSE);</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> GEN.NextRec();</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> UNTIL Debitor.NEXT = 0;</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.EndTable();</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseCard();</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseDeck();</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Assign the codeunit to the document and validate the document.</li>
+        </ol>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.5.2    ">Task 2: Links in Lists</h4>
+            <p class="ccTextvorlage">To create links in a table, follow these steps:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">Create the document TRAIN_9 using the following template:  </li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC MS/Exercises_11.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 258px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Document TRAIN_9</p>
+        <ol start="2">
+            <li class="ccTextvorlageNumberedList">Create a processing codeunit TRAIN9.</li>
+            <li class="ccTextvorlageNumberedList">Create the following local variables in the codeunit:</li>
+        </ol>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');margin-left: auto;margin-right: auto;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 106px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 126px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 275px;" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Name</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Type</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Further Information</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">GEN</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Codeunit</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">MS – Generator</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Text</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Length 30</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Number</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Length 20</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Debitor</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">Record</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Customer</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">Add the following code to the <span class="Italics">OnRun</span> method of the codeunit:</li>
+        </ol>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.Init(Rec);</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateDeck('TRAIN_9');</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateCard('TRAIN9_CARD');</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GetCodeField('NUMBER',Number);</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">IF Debitor.GET(Number) THEN BEGIN</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> GEN.SetOutputField('NAME',Debitor.Name,FALSE);</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> GEN.SetOutputField('NUMBER',Debitor."No.",FALSE);</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> GEN.SetOutputField('CONTACT',</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;"> Debitor.Contact,FALSE);</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">END;</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseCard();</p>
+        <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseDeck();</p>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">Add a <span class="Italics">link</span> with <span class="Italics">parameters</span> in the <span class="Italics">Number</span> cell of table <span class="Italics">TABLE_1</span> on document <span class="Italics">TRAIN_8</span> according to the following structure:  </li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC MS/Exercises_12.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 473px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Document TRAIN_8 with Link</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.6    "><a name="_Toc435720948"></a>Solution – Exercise 3</h3>
+            <p class="ccTextvorlage">This section provides a step-by-step solution for Exercise 3, Cards.</p>
+            <h4 class="Heading4" MadCap:autonum="1.1.6.1    ">Task 1: Links in Cards</h4>
+            <p class="ccTextvorlage">To create links in a card, follow these steps:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">Create the document TRAIN_10 using the following template:</li>
+            </ol>
+            <p class="ccBildabstand"> <img src="../Resources/Images/CC MS/Exercises_13.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 543px;" /></p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Part of Document TRAIN_10</p>
+        </div>
+        <ol start="2">
+            <li class="ccTextvorlageNumberedList">Validate the document.</li>
+        </ol>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.6.2    ">Task 2: Navigation</h4>
+            <p class="ccTextvorlage">To insert a navigation to a page, follow these steps:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">Extend the document TRAIN_10 using the following template:</li>
+            </ol>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC MS/Exercises_14.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 543px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 15"> : Document TRAIN_10 with Navigation</p>
+        </div>
+        <ol start="4" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Validate the document.</li>
+        </ol>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.6.3    ">Task 3: Data Iteration</h4>
+            <p class="ccTextvorlage">To create an output of multiple data records on the same page as a list, follow these steps:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">Create the document TRAIN_11 using the following template:</li>
+            </ol>
+            <p class="ccBildabstand"> <img src="../Resources/Images/CC MS/Exercises_15.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 330px;" MadCap:mediastyle="@media print { max-width: 5in; }" /></p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Document TRAIN_11</p>
+        </div>
+        <ol start="6" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Create the following local variables in the codeunit:</li>
+        </ol>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');margin-left: auto;margin-right: auto;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 116px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 138px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 250px;" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Name</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Type</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Further Information</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">User</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Record</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">User</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">GEN</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">Codeunit</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">MS - Generator</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <ol start="3">
+                <li class="ccTextvorlageNumberedList">Add the following code to the <span class="Italics">OnRun</span> method of the codeunit:</li>
+            </ol>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.Init(Rec);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateDeck('TRAIN_11');</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CreateCard('TRAIN11_CARD1');</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">IF User.FINDFIRST THEN</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  REPEAT</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">    GEN.SetOutputField('USER',User."User Security ID",FALSE);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">    GEN.SetOutputField('NAME',User."User Name",FALSE);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">    GEN.SetOutputField('EXPIREDATE',FORMAT(</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">    User."Expiry Date"),FALSE);</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">    GEN.NextSeq();</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">  UNTIL User.NEXT = 0;</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseCard();</p>
+            <p class="ccsourcecode" style="margin-left: 36pt;text-align: left;">GEN.CloseDeck();</p>
+        </div>
+    </body>
+</html>

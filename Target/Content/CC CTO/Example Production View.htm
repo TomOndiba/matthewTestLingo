@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="886" MadCap:lastWidth="603" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref418157587"></a><a name="_Ref418157608"></a><a name="_Ref418157613"></a><a name="_Ref418157701"></a><a name="_Ref418157708"></a><a name="_Ref418157725"></a><a name="_Ref418157734"></a><a name="_Ref418157739"></a><a name="_Ref418157755"></a><a name="_Ref418157761"></a><a name="_Ref418157772"></a><a name="_Ref418157784"></a><a name="_Ref418157795"></a><a name="_Toc434568030"></a>Example – Production View</h3>
+            <p class="ccTextvorlage">The structure of a BOM in a construction order can be represented in two different views. The default is the construction view, which displays the BOM structure from the view of the design engineer. The other view displays the BOM structure from the view of the production.</p>
+            <p class="ccTextvorlage">For example, the BOM of an elevator during construction could be divided into mechanical and electronic components. From the production view, electronic components might be needed for the production of the mechanical components, although a majority of electronics is built in later.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Production View.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Construction Order in construction view</p>
+        </div>
+        <p class="ccTextvorlage">To switch between the construction and production view, two fields in the BOM tables are used: <span class="Bold">Production View Link</span> and <span class="Bold">Belongs to Prod. View Link</span>. In these fields, the Production View links are entered. The production view link provides a reference to an assembly unit, which can be assigned to additional components in the production view. Components or different assembly units, which are to be shifted then in such an assembly unit, must have the same assembly code assigned in the <span class="Bold">Belongs to Prod. View Link</span> field.</p>
+        <p class="ccTextvorlage">It is possible to switch between the views by clicking <span class="Bold">Actions &gt; Switch Const.-/Prod. View</span>. The <span class="Bold">Production View</span> check box on the <span class="Bold">General</span> FastTab indicates whether the production view is in use.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Production View_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Construction Order in production view</p>
+        <p class="ccTextvorlage">The <span class="Bold">Production View Link</span> and <span class="Bold">Belongs to Prod. View Link</span> fields can also be set up in the master BOM and in the document list. </p>
+    </body>
+</html>

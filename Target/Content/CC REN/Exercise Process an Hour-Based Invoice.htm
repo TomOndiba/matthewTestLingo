@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:fileTags="StatusFileTags.6 Needs to be Sent for Review" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    ">
+            <MadCap:annotation MadCap:createDate="2017-11-02T14:19:53.3934603-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="Entire topic is new 2017 SP1 - please review all for relevance and accuracy." MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:33:24.0892843-05:00">Exercise – Process an Hour-Based Invoice</MadCap:annotation>
+        </h2>
+        <p>Customer R-30000 had a monitor failure and needs to rent item R-30000-01 for Friday, February 1 only. They would be picking up the item at 4 PM and returning the item at 9 AM on Monday, February 4 because CRONUS is closed over the weekend. You inform the customer that the daily rate for this item is normally 25.00 but since it is an emergency and they are a good customer, you will give them the prorated monthly rate of 12.50/day.</p>
+        <p class="ccDemoStepHeading">Create the Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to create the rent order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-30000.</li>
+            <li class="ccTextvorlageNumberedList">On the first line of the <span class="Bold">Lines</span> FastTab, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Item</li><li class="ccTextvorlageNumberedList">No. = R-30000-01</li><li class="ccTextvorlageNumberedList">Quantity = 1</li><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Rental Start Date = 02/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 02/04/19</li><li class="ccTextvorlageNumberedList">Rental Shipment Time = 4:00 PM</li></ol></li>
+            <li class="ccTextvorlageNumberedList">Notice that the <span class="Bold">Unit Price Total Rental Time</span> is 38.89, <MadCap:annotation MadCap:createDate="2017-10-06T17:13:38.5214090-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="Need help - I don't know how this is calculated. This text is from a different exercise but left in so you can see how it needs to be explained." MadCap:editor="NDOKS" MadCap:editDate="2017-11-02T14:17:50.5267588-05:00">which is calculated by the Rate Unit Price / * Total No. of Rate Units (350 * 11).</MadCap:annotation></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process an Hour-Based Invoice.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Rent Order with prorated monthly rate pricing</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Process the Shipment and Confirm no Invoice</p>
+            <p>Follow these steps to process the shipment:</p>
+            <ol>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+                <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+                <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/01/19.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 02/04/19.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+                <li class="ccTextvorlageNumberedList">Note that no invoices were created.</li>
+            </ol>
+        </div>
+        <p class="ccDemoStepHeading">Process the Return and Create the Invoice</p>
+        <p>Follow these steps to process the shipment:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/04/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lines</span> FastTab, enter 02/04/19 in the <span class="Bold">Rental Return Date</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rental Return Time</span> field, enter 9:00 AM.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Return Qty. to Receive</span> field, enter 1.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Notice that the <span class="Bold">Unit Price Total Rental Time</span> is updated to 37.50, <MadCap:annotation MadCap:createDate="2017-10-06T17:13:38.5214090-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="Need help - same as above" MadCap:editor="NDOKS" MadCap:editDate="2017-11-02T14:18:00.6376589-05:00">which is calculated by the Rate Unit Price / * Total No. of Rate Units (350 * 11).</MadCap:annotation></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process an Hour-Based Invoice_2.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Hourly-based rent order with updated return pricing</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 02/04/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and notice that the hourly-based pricing (37.50) is used.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process an Hour-Based Invoice_3.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Invoice with hourly-based pricing</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">
+                <MadCap:annotation MadCap:createDate="2017-10-06T17:30:43.6291004-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="Is there anything to see here?" MadCap:editor="NDOKS" MadCap:editDate="2017-10-06T17:30:48.3617482-05:00">Post the invoice and then escape back to the Rent Order.</MadCap:annotation>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <div class="ccDIV">
+                <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref424575730"></a><a name="_Toc434332520"></a>Document Layout Fields</h3>
+                <p class="ccTextvorlage">Document Layout Fields are the fields that get printed for each Section. Here the position along with the content and format of the fields are specified.</p>
+                <p class="ccBildabstand">
+                    <img src="../Resources/Images/CC DC/Document Layout Fields.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+                </p>
+                <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Document Layout Fields</p>
+            </div>
+        </div>
+        <p class="ccTextvorlage">The fields on this page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); margin-left: auto; margin-right: auto; width: 100%; mc-table-style-original: url('../Resources/TableStyles/CC_TableStyleSheet.css');" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 100px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Line</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates on what line the field should be printed on in the section.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Indentation (pt)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the indentation of the field (e.g. the horizontal position); specified in pt.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Group Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies a grouping of fields that should be moved together. When changing the <span class="Bold">Line</span> or <span class="Bold">Indentation (pt)</span> of a grouped field, the system will also automatically update all the other fields with the same Group Code within the layout. Using this field is optional.</p>
+                        <p class="ccTabellenText">The Group Code functionality is per Document Layout, meaning that fields in different sections can be grouped. This allows for e.g., grouping the fields in the header of the lines with the fields on the lines, so that when a field on a line is moved right or left the corresponding header is also moved. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Width (pt)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the length of the field. Mandatory for fields that are right or center aligned and for fields where line breaks are allowed; specified in pt.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Alignment</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the position of the content of the field. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Left – The field is printed left aligned.</li>
+                            <li class="ccAufzählung">Center – The content of the field is centered. This option requires a value in the <span class="Bold">Field Width (pt)</span> field.</li>
+                            <li class="ccAufzählung">Right – The content of the field is right aligned. This option requires a value in the <span class="Bold">Field Width (pt)</span> field.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Short description of the field. This field is optional but makes it easier to identify the purpose of each line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines how the system should assign the value to the field. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Value – The field is based on a value from a field in a table. The table and field are specified in the <span class="Bold">Table No.</span> and <span class="Bold">Field No.</span> fields.</li>
+                            <li class="ccAufzählung">Caption – The field is based on a caption from a field in a table. The table and field are specified in the <span class="Bold">Table No.</span> and <span class="Bold">Field No.</span> fields.</li>
+                            <li class="ccAufzählung">Text – The field gets its value from what is entered in the <span class="Bold">Text</span> field.</li>
+                            <li class="ccAufzählung">Document Text – The field gets it value from a predefined Document Text specified in the <span class="Bold">Document Text Code</span> field. </li>
+                            <li class="ccAufzählung">System – The value is a system value. The value is specified in the <span class="Bold">System Value</span> field.</li>
+                            <li class="ccAufzählung">Subreport (via cc|formatted documents) – Refer to topic <MadCap:xref href="Document Layouts_FD.htm">“Document Layouts with cc|formatted documents” on page 1</MadCap:xref> for more information.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Table No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the table that is used to get the value for the field. This field is only used if the <span class="Bold">Type</span> = <span class="Italics">Value</span> or <span class="Italics">Caption</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Table Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the name of the table. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the field from which the value should come. This field is only used if the <span class="Bold">Type</span> = <span class="Italics">Value</span> or <span class="Italics">Caption</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the name of the field. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Text</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the text that will be printed if the <span class="Bold">Type</span> = <span class="Italics">Text</span>. </p>
+                        <p class="ccTabellenText">Variables can be entered into this field. HTML tags can be used as well (refer to  <a href="https://msdn.microsoft.com/en-us/library/cc645967.aspx">https://msdn.microsoft.com/en-us/library/cc645967.aspx</a> to find supported tags).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Document Text Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the code for the Document Text that will be used for the field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">System Value</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the system value to use if the <span class="Bold">Type</span> = <span class="Italics">System</span>. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">User ID – User ID logged into the system.</li>
+                            <li class="ccAufzählung">Today – Today’s day (based on the operative system).</li>
+                            <li class="ccAufzählung">Workdate – Workdate according to the Microsoft Dynamics NAV Client.</li>
+                            <li class="ccAufzählung">User Language – Language of which the Client is running.</li>
+                            <li class="ccAufzählung">Time – Current time (based on the operative system).</li>
+                            <li class="ccAufzählung">Company Name – Name of the company into which the user is logged.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Blank Zero</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if the system should print zeros for this field or not.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Skip if Blank</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if the system should skip printing a blank field or not. Skipping a blank field will leave space for other fields to be printed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Allow Line Break</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if the line should carry over and continue one line down if the content it longer then the field length. This option requires a value in the <span class="Bold">Field Width (pt)</span> field. When breaking a line, the system will always try to do the line break at a space if possible (instead of in the middle of the word).</p>
+                        <p>For FlowLayout reports, a line break will be made automatically if a field width is configured.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Carry Over</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if carry over values are used  in the document. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Create – used to identify the field for which to summarize/create the carry over (for example “Line Amount” in documents). Only one field inside the document layout can have this value. Furthermore, the field <span class="Bold">Type</span> must be <span class="Italics">Decimal</span>.</li>
+                            <li class="ccAufzählung">End – used to finish the summarizing. Multiple fields inside the document layout can have this value (for example “Total Text Value” in documents). The first occurrence when running the report will stop to summarize the value.</li>
+                        </ul>
+                        <p>Refer to topic <MadCap:xref href="Add Carry Overs for Document Sums.htm">“Add Carry Overs for Document Sums” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rounding</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the rounding precision for numeric values.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Format String</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the format in which the value should be displayed. If the value is a decimal value, the Format String can be used to set the number of decimals, etc.; if the value is a date value, the Format String can be used to set the date format.</p>
+                        <p class="ccTabellenText">Refer to online help for information about specifying different formats.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Uppercase</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if the field will be uppercase.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Last Record</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the system will use the values from the last record (instead of the first) if there is more than one record within the filter.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Fore Color</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p>Indicates the color of the foreground for the field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Font Style</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the Font Style for the field. The options are Normal and Italic.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Font Family</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the Font Family for the field. If this field is empty, the system will use the value in the <span class="Bold">Font Family</span> field in the header of the Document Layout.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Font Size</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the Font Size for the field. If this field is empty, the system will use the value in the <span class="Bold">Font Size</span> field in the header of the Document Layout.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Font Weight</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the Font Weight for the field (bold, extra bold, light, etc.).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Text Decoration</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the Font Decoration for the field (underline, overline, etc.).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Vertical Alignment</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the vertical alignment of the field. The options are Top and Middle.</p>
+                        <p>For FlowLayout reports, the vertical alignment is automatically set to Top.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">BLOB Field Usage</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the rendering of a BLOB field. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Ignore – Option for all fields that are not BLOB fields.</li>
+                            <li class="ccAufzählung">Image – The BLOB field will be rendered as a picture. This option only works in combination with flow layouts, not with the classic layouts.</li>
+                            <li class="ccAufzählung">Formatted Documents – Refer to topic <MadCap:xref href="Document Layouts_FD.htm">“Document Layouts with cc|formatted documents” on page 1</MadCap:xref> for more information.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Subreport No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p>Refer to topic <MadCap:xref href="Document Layouts_FD.htm">“Document Layouts with cc|formatted documents” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No. of Filters</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the number of filters set up for this field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">No. of Criteria</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Displays the number of criteria set up for this field. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ccDIV">
+            <p class="ccTextvorlageaftertable">The <span class="Bold">Home</span> tab has four actions related to Document Layout Fields. Each action is described in the following table.</p>
+            <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); margin-left: auto; margin-right: auto; width: 100%; mc-table-style-original: url('../Resources/TableStyles/CC_TableStyleSheet.css');" cellspacing="0">
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 100px;" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Action</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Set Field Widths</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Automatically populates the <span class="Bold">Field Width (pt)</span> field of all lines in the section.</p>
+                            <p class="ccTabellenText">The system will calculate the width based on the <span class="Bold">Indentation (pt)</span> of the next field on the same line and subtract it with the <span class="Bold">Column Margin (pt)</span> specified when running the function.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Run Report</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Generates a printed output for testing the Document Layout configuration. This function uses the current Document Layout independent of its status (when running a report from another place in the system, the user can only select from certified layouts with the valid starting and ending dates).</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Quick View Layout</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Generates a bitmap representation of the Document Layout using the first page of the last record in the database.</p>
+                            <p class="ccTabellenText">Using this function when setting up a Document Layout is quicker than running the “Run Report” function.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                            <p class="ccTabellenText">Quick View Field Positions</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                            <p class="ccTabellenText">Generates a bitmap representation of the document layout with each field showing the indentation, horizontal alignment and field width.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="ccTextvorlagenospace"> </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="903" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256569"></a>Exercise – Process a Production Order</h3>
+        <p class="ccTextvorlage">Create a Production Order from the Production Structure for item I10, Product. Confirm that the ingredients from the recipe were transferred correctly. Add lot numbers and confirm captured ingredient quantities. Post consumption and output and confirm posted ingredient quantities.</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create the Production Order</p>
+            <p class="ccTextvorlage">Follow these steps to create the production order from the production structure:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">On the Manufacturing menu, click <span class="Bold">Product Design &gt; Production Structures</span>.</li>
+                <li class="ccTextvorlageNumberedList">Open the Production Structure created in the “Create and Certify Production Structure” exercise for item P-I10.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Ingredients</span>.</li>
+                <li class="ccTextvorlageNumberedList">Note the calculated quantities of 1 and 6, respectively.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Process a Production.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 202px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Prod. Structure Ingredients</p>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Structure Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Actions &gt; Create Prod. Order</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Released</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Released Production Order</span> page, click <span class="Bold">Line &gt; Ingredients</span> on the <span class="Bold">Lines</span> FastTab.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Process a Production_1.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 179px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Prod. Order Line Ingredients</p>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">Note that the <span class="Bold">Expected Quantity (Ratio)</span> and <span class="Bold">Expected Comp. Qty. (Ratio)</span> fields match the production structure ingredients, and the <span class="Bold">Expected Quantity (Total)</span> and <span class="Bold">Expected Comp. Qty. (Total)</span> fields are the ratio multiplied by the produced quantity (100):</li>
+        </ol>
+        <p class="ItalicsCentered">1 MG per KG (Ratio) or 100 MG of Production Order line (Total 100 KG is ordered)</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Order Line Ingredients</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Add Lot Tracking to Production Order Line</p>
+            <p class="ccTextvorlage">Follow these steps to add lot tracking to the production order line:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Item Tracking Lines</span>.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lot No.</span> field, type LOT200.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity (Base)</span> field, type 100.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            </ol>
+        </div>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Review Components and Add Lot Tracking</p>
+            <p class="ccTextvorlage">Follow these steps to review the components and add lot tracking:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Components</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the first line, for Item A, click <span class="Bold">Navigate &gt; Ingredients</span>.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Process a Production_2.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 200px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Prod. Order Component Ingredients with no captured values</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">Note that the “Captured…” field values are set to 0 because no lots have been assigned.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Order Component Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Select Entries</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the line for lot LOT001 selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Ingredients</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Process a Production_3.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 200px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Prod. Order Component Ingredients with captured values</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">Note that the <span class="Bold">Contains Expected Values</span> check box is selected because no measurements exist for the assigned lots and the <span class="Bold">Captured Quantity (Ratio)</span> and <span class="Bold">Captured Quantity (Total)</span> fields are populated with the expected quantity values.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Order Component Ingredients</span> page and then close the <span class="Bold">Prod. Order Components</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Ingredients</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Process a Production_4.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 179px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Prod. Order Line Ingredients with captured values</p>
+        <ol start="13">
+            <li class="ccTextvorlageNumberedList">On the first line, note that the <span class="Bold">Contains Expected Values</span> check box is selected and the <span class="Bold">Captured Quantity (Ratio)</span> and <span class="Bold">Captured Quantity (Total)</span> fields are populated with the expected quantity values.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Order Line Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Components</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the second line for Item B and then click <span class="Bold">Navigate &gt; Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Select Entries</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the line for lot LOT002 selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Ingredients</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Process a Production_5.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 201px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Prod. Order Component Ingredients with captured values</p>
+        <ol start="21">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Order Component Ingredients</span> page and then close the <span class="Bold">Prod. Order Components</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Ingredients</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Process a Production_6.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 179px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Prod. Order Line Ingredients with captured values</p>
+        <ol start="23">
+            <li class="ccTextvorlageNumberedList">Note that both lines have captured quantities now.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Order Line Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Components</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the third line for the Filler item and then click <span class="Bold">Navigate &gt; Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Select Entries</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the line for lot LOT003 selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Order Components</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNumberedListNoteHeading">Note</p>
+            <p class="ccTextvorlageNumberedListNoteBody">Item Tracking for components with ingredients can also be assigned using the “Ingredient Lot Selection” function (refer to topic <MadCap:xref href="Ingredient Lot Selection.htm#_Ref414354402">“Ingredient Lot Selection” on page 1</MadCap:xref>).</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Post Consumption and Output</p>
+            <p class="ccTextvorlage">Follow these steps to post consumption and output through the Production Journal:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Production Journal</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the output line, select the <span class="Bold">Finished</span> check box.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to post the journal lines.</li>
+            </ol>
+        </div>
+        <div class="ccDIV">
+            <div class="ccDIV">
+                <p class="ccDemoStepHeading">Review Posted Ingredient Quantities</p>
+                <p class="ccTextvorlage">Follow these steps to review the posted ingredient quantities:</p>
+                <ol start="1">
+                    <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Ingredients</span>.</li>
+                </ol>
+            </div>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Exercise Process a Production_7.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 179px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Prod. Order Line Ingredients with posted values</p>
+        </div>
+        <ol start="2">
+            <li class="ccTextvorlageNumberedList">Note that the <span class="Bold">Posted Quantity (Ratio)</span> and <span class="Bold">Posted Quantity (Total)</span> fields are populated with the expected quantity values and the “Captured…” fields are reset to 0.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Order Line Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Components</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, for Item A, click <span class="Bold">Navigate &gt; Ingredients</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Process a Production_8.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 201px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Prod. Order Component Ingredients with posted values, no captured values</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Note that the “Captured…” field values are set to 0 because the consumption/output was posted, as indicated in the “Posted…” fields.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Order Component Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the second line, for Item B, click <span class="Bold">Navigate &gt; Ingredients</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Process a Production_9.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 201px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Prod. Order Component Ingredients with posted values, no captured values</p>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Order Component Ingredients</span> page and then close the <span class="Bold">Prod. Order Components</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Review Lot Ingredients</p>
+            <p class="ccTextvorlage">Follow these steps to review the Lot No. Ingredients:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Item Tracking Lines</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Lot No. Information Card</span> and then click <span class="Bold">Edit</span> on the ribbon.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Ingredients</span>.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Process a Production_10.png" style="visibility: visible;mso-wrap-style: square;width: 508px;height: 284px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Lot No. Ingredients created upon posting the Production Journal</p>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">Note that the <span class="Bold">Quantity (Expected</span>), <span class="Bold">Unit of Measure Code</span> and <span class="Bold">Alloc. Unit of Measure Code</span> fields match the values from the Prod. Order Line Ingredients.</li>
+        </ol>
+        <p class="ccTextvorlage">The <span class="Bold">Quantity (Actual)</span> and <span class="Bold">Actual Value</span> fields are used with <span class="CCBausteinInhaltZchn">cc|quality management</span> (refer to topic <MadCap:xref href="Receipt Testing.htm#_Ref414351033">“Receipt Testing” on page 1</MadCap:xref>) and direct inventory posting through the Item Journal (refer to topic <MadCap:xref href="Item Delivery.htm#_Ref414351054">“Item Delivery” on page 1</MadCap:xref>).</p>
+    </body>
+</html>

@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    ">Table Setup</h3>
+            <p class="ccTextvorlage">The table setup splits the content type settings to different tables (records) and is configured on the <span class="Bold">DMS Table Setup</span> FastTab in the <span class="Bold">DMS Document Library</span> page. It defines for which records (table number and Microsoft Dynamics NAV table filter) the content type should be visible in the DocumentBox. Different MetaData (refer to topic <MadCap:xref href="#_Ref425781031">“MetaData” on page 1</MadCap:xref>) and different table filters (refer to topic <MadCap:xref href="#_Ref425781036">“SharePoint Table Filter” on page 1</MadCap:xref> and topic <MadCap:xref href="#_Ref425341841">“Microsoft Dynamics NAV Table Filter” on page 1</MadCap:xref>) can be defined for each table setup. Additionally, the table setup holds a release status certification for plausibility and integrity. Only released table setup will be displayed in the DocumentBox.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC DMS/Document Library_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Table Setup of a Content Type on the DMS Document Library page</p>
+        </div>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">DMS Table Setup</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); margin-left: auto; margin-right: auto; width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 116px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Table ID</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the table number for which the setup will be configured.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Table Caption</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the caption of the related table. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the status of the table setup. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Open – Changes on MetaData or table filters are possible.</li>
+                            <li class="ccAufzählung">Released – Changes on MetaData or table filters are not possible. The DocumentBox shows only released table setups. During release, the configuration data are validated for plausibility and integrity, displaying any errors. </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">MetaData</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates whether a MetaData definition (refer to topic <MadCap:xref href="#_Ref425781031">“MetaData” on page 1</MadCap:xref>) is configured for the current table setup.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">SharePoint Table Filter</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates whether a SharePoint table filter (refer to topic <MadCap:xref href="#_Ref425781036">“SharePoint Table Filter” on page 1</MadCap:xref>) is configured for the current table setup.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Microsoft Dynamics NAV Table Filter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates whether a Microsoft Dynamics NAV table filter (refer to topic <MadCap:xref href="#_Ref425342311">“Microsoft Dynamics NAV Table Filter” on page 1</MadCap:xref>) is configured for the current table setup.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Folder Formula</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p>Enables the storage of files in a folder and is a formula field that can contain variables to be used as folder definition. Refer to topic <MadCap:xref href="Table Setups.htm#Folders">“Folders for Libraries” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Last Modification Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the last date of modification of any table setup’s sub-tables, such as MetaData or table filters.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Last Modification Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the last time of modification according to the modification date.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Modified by User</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the user according to the last modification.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Library Relative Url Formula</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p>Indicates a dynamic, record based URL instead of the fixed URL of a Document Library. Enter the full relative URL and then use "[Field Name]" to get values of the corresponding field of the currently selected record.</p>
+                        <p>For example, if a customer has a project website (e.g. websites/dms/projects), that contains sub-websites for each project based on the job's No. field (e.g. PR1234), there are two ways to enter the Library Relative Url Formula:</p>
+                        <ol>
+                            <li class="ccTextvorlageNumberedList">"websites/dms/projects/[No.]"</li>
+                            <li class="ccTextvorlageNumberedList">"[DMS Website Url]", and create a new field in the Job table that contains the value "websites/dms/projects/&lt;Job No.&gt;" (where &lt;Job No.&gt; = e.g. "PR1234")</li>
+                        </ol>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    "><a name="Folders"></a>Folders for Libraries</h4>
+        <p class="ccTextvorlage">After there are more than 5,000 elements in a SharePoint list, the filtered fields must be managed by indexed columns. Document libraries are technically lists, with a document field to store the files. Managing the indexed columns is fine, but can still create problems with the file upload via the SOAP web service, which DMS is using. A way to avoid the limitation of 5,000 elements is to upload files into folders. Each folder can again contain 5,000 elements, and so on. However, since a “folder” is an element, there should only be a maximum of 5,000 folders inside a folder, again.</p>
+        <div class="ccDIV">
+            <p>In the <span class="Bold">DMS Table Setup</span> FastTab, the <span class="Bold">Folder Formula</span> field enables the storage of files in a folder. Thereby, more than 5,000 files can be managed (especially uploaded) together with DMS. This is a formula field that can contain variables to be used as folder definition. Because this field is applied on the table setup configuration, all fields from the record can be used to create folders, as well as some system variables:</p>
+        </div>
+        <ul>
+            <li class="ccAufzählungblau">“[MM]” can be used for the current month (e.g. “02” or “12”)</li>
+            <li class="ccAufzählungblau">“[DD]” can be used for the current day (e.g. “01” or “27”)</li>
+            <li class="ccAufzählungblau">“[YYYY]” can be used for the current year (e.g. “2017”)</li>
+            <li class="ccAufzählungblau">“[No.]” is an example to retrieve the information from the current “No.” field of the current record in the current table</li>
+            <li class="ccAufzählungblau">“[Description]” is an example to retrieve the information of the “Description” field</li>
+        </ul>
+        <p>Variables can also be added to more complex structures. “[YYYY]/[MM]” will create a folder “2017” and a subfolder “03” (for March) within. Values of the fields will be translated into valid URL path names by replacing the characters \/.?&amp;%#{}~ with an underline (“_”). Before uploading the file, the existence of the folders is tested. Folders that do not exist will be created. Therefore, the user must have enough rights to create folders if necessary and upload a file into the folder.</p>
+        <p>The Document Box filters all the files, regardless of where they are stored in the SharePoint list’s folder structure. All documents that apply the DMS’ Table Setup SharePoint filter will be displayed plainly under the content type inside the Document Box. When editing the metadata, the absolute file path on the top of the page displays the correct path to the file, including folders.</p>
+        <p>More information about folder limitations can be found in the following links:</p>
+        <ul>
+            <li class="ccAufzählungblau" style="text-align: left;">SharePoint folder limitations that must be observed inside projects: <a href="https://technet.microsoft.com/en-us/library/cc262787(v=office.16).aspx#ListLibrary">https://technet.microsoft.com/en-us/library/cc262787(v=office.16).aspx#ListLibrary</a></li>
+            <li class="ccAufzählungblau" style="text-align: left;">Column indexing that should be made within SharePoint for each filtered field in document libraries with a huge number of documents (more than 5,000):  <a href="https://www.codeproject.com/Articles/1076854/Overcoming-the-List-View-Threshold-in-SharePoint-C">https://www.codeproject.com/Articles/1076854/Overcoming-the-List-View-Threshold-in-SharePoint-C</a></li>
+        </ul>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">No column indexing was done when the current Library Set was created because it is technically impossible with SOAP. Therefore, users must manage the column indexing of the filtered fields within SharePoint or the folder structure will not be visible. Column indexing must be completed before 5000 elements are reached; subsequent adjustments are not possible.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.2    "><a name="_Toc434330872"></a>DMS Table Setup Overview</h4>
+            <p class="ccTextvorlage">To view all configured table setups for a specific table number, open the <span class="Bold">DMS Table Setup Overview</span> page from the <span class="CCBausteinInhaltZchn">cc|dms</span> menu by clicking <span class="Bold">Setup &gt; DMS Table Setup Overview</span>.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC DMS/Document Library_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Table Setup for Specific Table Numbers</p>
+        </div>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.3    "><a name="_Ref425781031"></a><a name="_Toc434330873"></a>MetaData</h4>
+            <p class="ccTextvorlage">MetaData defines the fields (columns) of a document library for the content type and a specific table setup. For the DocumentBox’s actions “File Upload”, “Show MetaData” and “Edit MetaData”, only the configured fields will be shown in the dialog (refer to topic <MadCap:xref href="Document Actions.htm#_Ref425177186">“Document Actions” on page 1</MadCap:xref>). </p>
+            <p class="ccTextvorlage">Furthermore, MetaData provides the document with additional information to filter and find the documents for the DocumentBox and in SharePoint. The information sources (Field Class) can either be record specific, looked up or system values.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC DMS/Document Library_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: MetaData Configuration Worksheet</p>
+        </div>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Edit DMS MetaData</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); margin-left: auto; margin-right: auto; width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 105px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Designates the internal (static) SharePoint field (column) name that is used for MetaData information upload.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Caption</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Shows the display name (caption) of the SharePoint column. This value is not editable in Microsoft Dynamics NAV.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the type of the SharePoint column. This value is not editable in Microsoft Dynamics NAV.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Length</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the length of characters of the SharePoint column. This value is not editable in Microsoft Dynamics NAV.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Class</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Defines the source of information, as further indicated in the <span class="Bold">Default Value / Field</span> field. The options are:</p>
+                        </div>
+                        <ul>
+                            <li class="ccAufzählung">Value – Enter a user-defined value (constant) that will be used for upload as the default.</li>
+                            <li class="ccAufzählung">Field – Use the lookup in the <span class="Bold">Default Value / Field</span> field to select a field value of the current record (table setup) that will be used as the default value. </li>
+                            <li class="ccAufzählung">Option – Use the lookup in the <span class="Bold">Default Value / Field</span> field to enter option values. Later, those values can be used for selection. The <span class="Bold">Option Code</span> is a unique value, whereas the <span class="Bold">Option Value</span> represents the actually uploaded value.</li>
+                            <li class="ccAufzählung">Date Formula – Enter a date formula that is calculated before uploading a document.</li>
+                            <li class="ccAufzählung">System – Use the lookup in the <span class="Bold">Default Value / Field</span> field to select a system value from a list. The options are: User ID, Workdate, System Date, System Time, Company Code.</li>
+                            <li class="ccAufzählung">File – Use the lookup in the <span class="Bold">Default Value / Field</span> field to select file information from a list. The options are: File Name, File Path, File Extension, Absolute File Name.</li>
+                            <li class="ccAufzählung">Lookup – Use the lookup in the <span class="Bold">Default Value / Field</span> field to retrieve a value from another record from any Microsoft Dynamics NAV table. The target record can either be a filtered single result, or selected by the user from a page. </li>
+                        </ul>
+                        <p class="ccAufzählung">After entering the target Table ID in the <span class="Bold">Lookup Table No.</span> field, the <span class="Bold">Default Value / Field</span> field shows all fields of the target table. Select the field and then click the <span class="Bold">AssistEdit</span> to filter the target table. </p>
+                        <p class="ccAufzählung">Enter a value in the <span class="Bold">Lookup Page ID</span> field to show the filtered result in a page and make the user select the target record. Without a value in the <span class="Bold">Lookup Page ID</span> field, depending on the <span class="Bold">Lookup Action</span> field, the value of the first record or the last record in the filtered list will be used as default value, or no value at all.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Default Value / Field</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the actual information based on the selection in the <span class="Bold">Field Class</span> field:</p>
+                        <ul>
+                            <li class="ccAufzählung">Value – User-defined constant (fixed value)</li>
+                            <li class="ccAufzählung">Field – Field number for the current table setup</li>
+                            <li class="ccAufzählung">Option – Option code to be used as the default selected option</li>
+                            <li class="ccAufzählung">Date Formula – Microsoft Dynamics NAV formula to calculate the date</li>
+                            <li class="ccAufzählung">System – Code of the system value</li>
+                            <li class="ccAufzählung">File – Code of the file information</li>
+                            <li class="ccAufzählung">Lookup – Field number of the referenced lookup table number</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Value Caption</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Shows additional information regarding the default value. This field is not editable.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Editable</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the user can make changes before uploading the document or changing the MetaData.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Not Blank</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines whether this column must contain a value or can be empty. If the SharePoint field must contain a value, this field cannot be selected.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Visibility</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the visibility of the MetaData item. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Standard – The field (and thereby its value) are always visible.</li>
+                            <li class="ccAufzählung">Extended – The field will be invisible unless the user clicks <span class="Bold">Show Extended Fields</span> on the Define, Show and Edit MetaData dialogs.</li>
+                            <li class="ccAufzählung">Hidden – The field is always invisible but the value will be uploaded or modified in the background.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Format Property</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the formatting of the default value. The number is equal to the  Microsoft Dynamics NAV format definitions (C/AL “Format Property”).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lookup Table No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the table number from which to look up the value; used with <span class="Bold">Field Class</span> = <span class="Italics">Lookup</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lookup Table Caption</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the caption from the table number from which to look up the value. This field is not editable.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lookup Filter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if a lookup filter is defined for the current MetaData item. This field is not editable.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lookup Page ID</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the page number to open when the user clicks the lookup on the Define or Edit MetaData dialogs. The page’s source table must match the lookup table to avoid errors.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lookup Page Caption</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the caption from where the page number is to look up the value. This field is not editable.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lookup Action</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Defines the selected record from where to retrieve the looked up value. The options are:</p>
+                            <ul>
+                                <li class="ccAufzählung">First Record  – The field value of the first record from the filtered list will be used.</li>
+                                <li class="ccAufzählung">Last Record – The field value of the last record from the filtered list will be used.</li>
+                                <li class="ccAufzählung">No Record – The value will be empty and no record will be selected after filtering.</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lookup Field No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the field number from which to look up the value; used with <span class="Bold">Field Class</span> = <span class="Italics">Lookup</span>. Refer to section <MadCap:xref href="#Example">“Example – Create a Linked Lookup” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lookup Field Caption</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the caption from the field number from which to look up the value. This field is not editable. Refer to section <MadCap:xref href="#Example">“Example – Create a Linked Lookup” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field No. Linked Lookup</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies which field of the looked up value to be received; used with the <span class="Bold">Field Name Linked Lookup</span> field. Refer to section <MadCap:xref href="#Example">“Example – Create a Linked Lookup” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Name Linked Lookup</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p>Indicates another field name from this configuration to retrieve additional values if a lookup is processed. This field links the current metadata field with the field where the lookup is pressed. Refer to section <MadCap:xref href="#Example">“Example – Create a Linked Lookup” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Value by Lookup only</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the user cannot enter a value by keyboard in the metadata dialog; the Lookup must be used to select a value. Refer to section <MadCap:xref href="#Example">“Example – Create a Linked Lookup” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Sorting Position</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Displays an ongoing number that represents the sort order for the dialog. This field is system-generated and should only be changed due to data inconsistencies.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h5 class="Heading5" MadCap:autonum="1.1.1.3.1    "><a name="Example"></a>Example – Create a Linked Lookup</h5>
+            <p class="ccTextvorlage">This example explains how to create a linked lookup of a customer name to a customer number when uploading a new document. </p>
+            <p class="ccTextvorlage">To set the customer name to the metadata definition dialog when the user clicks on the lookup for the customer number during upload:</p>
+            <ul>
+                <li class="ccAufzählungblau">Define a metadata field to send the contact number to (SharePoint field name = CCDMS_Customer_No) and set the fields to Class = Lookup, Lookup Table No. = 5050, Lookup Field No. = 1, Lookup Page ID = 5052, Value by Lookup only = true</li>
+                <li class="ccAufzählungblau">Define a metadata field to send the contact name to and set the fields to Class = Lookup, Editable = false, Lookup Table No. = 5050, Lookup Field No. = 2, Linked Lookup Field Name = CCDMS_Customer_No, Linked Lookup Field No. = 2</li>
+            </ul>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.4    "><a name="_Ref425781036"></a><a name="_Toc434330874"></a>SharePoint Table Filter</h4>
+        <p class="ccTextvorlage">A SharePoint Table Filter defines which files in the document library are displayed in the DocumentBox. Only the documents from the document library that meet the filter criteria are listed.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DMS/Document Library_6.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: SharePoint Table Filter Worksheet</p>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Edit DMS SharePoint Table Filter</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); margin-left: auto; margin-right: auto; width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 94px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTextvorlage" style="font-weight: bold;color: #FFFFFF;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTextvorlage" style="font-weight: bold;color: #FFFFFF;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the internal (static) SharePoint field (column) name to be filtered.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the type of the SharePoint column. This value is not editable in Microsoft Dynamics NAV.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Caption</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Shows the display name (caption) of the SharePoint column. This value is not editable in  Microsoft Dynamics NAV.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Class</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the source of the filter value, as further indicated in the <span class="Bold">Default Value / Field</span> field. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Const – Enter a user-defined value (constant) that will be used as a fixed filter value (such as document type).</li>
+                            <li class="ccAufzählung">Field – Use the lookup in the <span class="Bold">Default Value / Field</span> field to select a field value of the current record (table setup) that will be used as the filter value. </li>
+                            <li class="ccAufzählung">Date Formula – Enter a date formula that is calculated before filtering the document list.</li>
+                            <li class="ccAufzählung">System – Use the lookup in the <span class="Bold">Default Value / Field</span> field to select a system value from a list. The options are: User ID, Workdate, System Date, System Time, Company Code.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Default Value / Field</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the actual information based on the selection in the <span class="Bold">Field Class</span> field:</p>
+                        <ul>
+                            <li class="ccAufzählung">Const – User-defined, fixed value</li>
+                            <li class="ccAufzählung">Field – Field number for the current table setup</li>
+                            <li class="ccAufzählung">Date Formula – Microsoft Dynamics NAV formula to calculate the date</li>
+                            <li class="ccAufzählung">System – Code of the system value</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Value Caption</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Shows additional information regarding the default value. This field is not editable.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Length</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the length of characters of the SharePoint column. This value is not editable in Microsoft Dynamics NAV.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Format Property</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Defines the formatting of the default value. The number is equal to the Microsoft Dynamics NAV format definitions (C/AL “Format Property”).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.5    "><a name="_Ref425327238"></a><a name="_Ref425341841"></a><a name="_Ref425342311"></a><a name="_Toc434330875"></a>Microsoft Dynamics NAV Table Filter</h4>
+            <p class="ccTextvorlage">A Microsoft Dynamics NAV Table Filter defines the display of the content type in the DocumentBox only for appropriate records that meet the filter criteria. Thereby is it possible to define different content types for sales orders and sales quotes that are both in the same Microsoft Dynamics NAV table, or a separation for different item categories.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC DMS/Document Library_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Microsoft Dynamics NAV Table Filter Worksheet</p>
+        </div>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Edit DMS Microsoft Dynamics NAV Table Filter</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); margin-left: auto; margin-right: auto; width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 116px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTabellenText" style="font-weight: bold;color: #FFFFFF;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTabellenText" style="font-weight: bold;color: #FFFFFF;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the field number for the Microsoft Dynamics NAV table to be filtered.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the type of the Microsoft Dynamics NAV field. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Caption</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the caption of the Microsoft Dynamics NAV field. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Field Class</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the source of the filter value, as further indicated in the <span class="Bold">Default Value / Field</span> field. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Const – Enter a user-defined value (constant) that will be used as a fixed filter value (such as document type). The class corresponds as SETRANGE.</li>
+                            <li class="ccAufzählung">Field – Use the lookup in the <span class="Bold">Default Value / Field</span> field to select a field value of the current record (table setup) that will be used as the filter value. </li>
+                            <li class="ccAufzählung">Filter – Enter a Microsoft Dynamics NAV filter value to define ranges. The class corresponds as SETFILTER.</li>
+                            <li class="ccAufzählung">Date Formula – Enter a date formula that is calculated before filtering the record list.</li>
+                            <li class="ccAufzählung">System – Use the lookup in the <span class="Bold">Default Value / Field</span> field to select a system value from a list. The options are: User ID, Workdate, System Date, System Time, Company Code.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Default Value / Field</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the actual information based on the selection in the <span class="Bold">Field Class</span> field:</p>
+                        <ul>
+                            <li class="ccAufzählung">Const – User-defined, fixed value</li>
+                            <li class="ccAufzählung">Field – Field number for the current table setup</li>
+                            <li class="ccAufzählung">Filter – Filter expression</li>
+                            <li class="ccAufzählung">Date Formula – Microsoft Dynamics NAV formula to calculate the date</li>
+                            <li class="ccAufzählung">System – Code of the system value</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Value Caption</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Shows additional information regarding the default value. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Field Length</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Displays the length of the Microsoft Dynamics NAV field. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.6    "><a name="_Toc434330876"></a>DMS Table Setup Actions</h4>
+        <p class="ccTextvorlage">There are three additional actions on the <span class="Bold">DMS Table Setup</span> FastTab. Each is described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); margin-left: auto; margin-right: auto; width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 138px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTextvorlage" style="font-weight: bold;color: #FFFFFF;">Action</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTextvorlage" style="font-weight: bold;color: #FFFFFF;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Status &gt; Release</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Releases the selected table setup line(s).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Status &gt; Reopen</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Reopens the selected table setup line(s).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Functions &gt; Copy from Table Setup</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Copies the line(s) from an existing table setup to the selected table setup.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

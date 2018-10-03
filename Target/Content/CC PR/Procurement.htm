@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:fileTags="StatusFileTags.6 Needs to be Sent for Review" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref425758709"></a><a name="_Toc445394501"></a>Procurement</h2>
+        <p class="ccTextvorlage">Procurement is displayed in the Job Planning and Processing view. All functions described below are executed or accessed from this view.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc445394502"></a>Process Planning Defaults</h3>
+        <p class="ccTextvorlage">After the process planning has been completed, the following data is available for the purchasing process: </p>
+        <ul>
+            <li class="ccAufzählungblau">Process start date (will be inherited from the top level structure down to the bottom level)</li>
+            <li class="ccAufzählungblau">Process end date (will be inherited from the top level structure down to the bottom level)</li>
+            <li class="ccAufzählungblau">Planned hours (calendar entries, simulated inclusively)</li>
+            <li class="ccAufzählungblau">Planned resources (existing calendar entries) </li>
+        </ul>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc445394503"></a>Procurement Planning</h3>
+        <p class="ccTextvorlage">To create purchasing activities from the calculated lines, at least the following two fields must be defined: </p>
+        <ul>
+            <li class="ccAufzählungblau">Procurement Channel – defines which purchasing process is used. </li>
+            <li class="ccAufzählungblau">Procurement Finish Date – defines the due date. The date is transferred from the process planning. If no date is defined in the process, then the current date will be used.</li>
+        </ul>
+        <p class="ccTextvorlage">The following optional data can be displayed in this view: </p>
+        <ul>
+            <li class="ccAufzählungblau">Procurement Vendor No. – can be a different from the Vendor No. used for the original calculation. </li>
+            <li class="ccAufzählungblau">Procurement Location Code – can be modified according to the inventory requirements. If nothing else is selected the default setting from the Job Card will apply. </li>
+            <li class="ccAufzählungblau">Procurement Cost Source – defines which wholesale price will be used for the purchase order. </li>
+        </ul>
+        <p class="ccTextvorlage">The “Procurement Planning” function is accessed on the <span class="Bold">Navigate</span> tab of the Job Planning and Processing view by clicking <span class="Bold">Procurement &gt; Planning</span> in the Processing action group.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Job Planning and Processing view with Procurement fields</p>
+        <p class="ccTextvorlage">The planned positions can be easily identified after a successful procurement planning run (click the <span class="Italics">Yes</span> value in the <span class="Bold">Procurement Planning</span> field for an automated procurement planning). Automated Planning will only apply for those positions holding unplanned remaining quantities. Missing dates will be supplemented. </p>
+        <p class="ccTextvorlage">Individual lines can be amended by clicking on the value in the <span class="Bold">Procurement Planning</span> field.</p>
+        <p class="BoldItalics12pt">Example</p>
+        <p class="ccTextvorlage">On the WBS position 1.1.3. for Manufacturing, three procurement lines were generated because the line was split into different process plans. The allocation of responsibilities is also based on process planning.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_1.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Job Processing Procurement view for WBS position 1.1.3</p>
+        <p class="ccTextvorlage">Procurement lines with no quantities must be planned manually. For example, position 1.1.6. is for instructions that will be charged by an expense. To generate a new procurement line, click the <span class="Bold">Procurement Planning</span> field for the line and then click <span class="Bold">New Procurement</span> on the ribbon of the <span class="Bold">Job Processing Procurement</span> page. Each new procurement line will be assigned a unique <span class="Bold">Procurement No.</span> and a quantity can be entered on the line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_2.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Job Processing Procurement view for WBS position 1.1.6</p>
+        <p class="ccTextvorlage">All procurements belonging to a structure can be displayed in one general overview by selecting the top line in the Job Planning and Processing view and then clicking <span class="Bold">Per Block</span> in the Procurement group on the <span class="Bold">Home</span> tab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_3.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: All procurement lines for job J000001.01</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.2.1    ">Job Procurement Planning View</h4>
+            <p class="ccTextvorlage">The procurement planning for all job lines can be viewed in the <span class="Bold">Job Procurement Planning</span> page, accessed from the <span class="CCBausteinInhaltZchn">cc|project</span> menu by clicking <span class="Bold">Planning &gt; Procurement Planning</span>.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Procurement_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Job Procurement Planning showing job procurement lines in March 2019</p>
+        </div>
+        <p>The fields in the <span class="Bold">General</span> and <span class="Bold">Date</span> FastTabs are used to filter the view. The actions on the ribbon allow for the accessing of Job Cards, Job Planning and Processing view as well as the ability to Release selected procurement lines.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc445394504"></a>Procurement Release</h3>
+            <p class="ccTextvorlage">After the planning process is complete, procurement WBS positions with a status of Planning can be released by clicking <span class="Bold">Navigate &gt; Procurement &gt; Release</span>.</p>
+            <p class="ccTextvorlage">Released procurement documents can be created during the release process. Created documents are displayed per procurement channel.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Procurement_5.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Released procurement lines for job J000001.01</p>
+        </div>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc445394505"></a>Rolling Calculation after Procurement Release</h3>
+            <p class="ccTextvorlage">Values from released procurement lines are displayed in the <span class="Bold">Total Direct Cost Released (LCY)</span> field on the Job Rolling Calculation view. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Procurement_6.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Rolling Calculation for job J000001.01</p>
+        </div>
+        <p class="ccTextvorlage">Released amounts in procurement documents can vary from calculated values for any of the following reasons:</p>
+        <ul>
+            <li class="ccAufzählungblau">Release is not complete.</li>
+            <li class="ccAufzählungblau">Released value is higher than calculated.</li>
+            <li class="ccAufzählungblau">Procurement Direct Unit Cost is different in procurement lines and calculation lines.</li>
+            <li class="ccAufzählungblau">Procurement values are moved to other WBS positions (Summarize Position).</li>
+        </ul>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.5    "><a name="_Toc445394506"></a>Time Entry</h3>
+            <p class="ccTextvorlage">Time entry refers to the recording of an employee’s actual time spent and expenses incurred while performing a job-related task. In <span class="CCBausteinInhaltZchn">cc|project</span>, an employee can enter their time in a personal Job Journal batch or a stand-alone Terminal can be set up for multiple user time entry.</p>
+            <p class="ccTextvorlage">In this section, the use of the Job Journal and a Terminal are explained for entering job-related tasks and expenses.</p>
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">Select the <span class="Bold">Job Time Entry Administration</span> check box in User Setup to allow a user can see all Job Journal Batches. If not set, a user can only see their own time entry journal. Refer to topic <MadCap:xref href="User Profile Setup.htm">“User/Profile Setup” on page 1 </MadCap:xref>for more information.</p>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.5.1    ">Time Entry Job Journal</h4>
+        <p class="ccTextvorlage">The Time Entry Job Journal is accessed from the navigation pane by clicking <span class="CCBausteinInhaltZchn">cc|project</span> <span class="Bold">&gt; Processing &gt; Time Entry Job Journals</span>. </p>
+        <p class="ccTextvorlage">The Time Entry Job Journal is a worksheet used for the direct recording of:  </p>
+        <ul>
+            <li class="ccAufzählungblau">Hours spent (for service lines)</li>
+            <li class="ccAufzählungblau">Travel expenses (for travel expense lines)</li>
+            <li class="ccAufzählungblau">Consumables (i.e. for maintenance jobs)</li>
+        </ul>
+        <p class="ccTextvorlage">Each person should have an individual worksheet (batch) for time recording purposes. </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Job Journal Batches are automatically created when persons are created as resources and the <span class="Bold">Person for Time Entry</span> field is populated with the corresponding Resource No.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_7.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Time Entry Job Journal for employee P001</p>
+        <p class="ccTextvorlage">Once the <span class="Bold">Job No.</span> field is populated, a particular job line can be chosen in one of the following ways:</p>
+        <ul>
+            <li class="ccAufzählungblau">Select the <span class="Bold">WBS</span> position then the <span class="Bold">Job Procurement No.</span></li>
+            <li class="ccAufzählungblau">Select the <span class="Bold">Job Procurement No.</span> directly. </li>
+        </ul>
+        <p class="ccTextvorlage">The first option will display the positions that have been released for time recording (independent of the allocated person). A released procurement line will be taken automatically if only one exists; multiple lines need to be selected separately. </p>
+        <p class="ccTextvorlage">For the second option, leave the <span class="Bold">WBS</span> field empty and click the drop-down arrow in the <span class="Bold">Job Procurement No.</span> field. This will display only the lines that have been assigned to the person logged in or which do not have a dedicated assignment. </p>
+        <p class="ccTextvorlage">
+            <MadCap:xref href="#_Ref382826838" class="Figure">Fig. 8</MadCap:xref> illustrates a job journal with recorded positions. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_8.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9"><a name="_Ref382826838"></a>: Job lines entered in the Job Journal for employee P001</p>
+        <p class="ccTextvorlage">During the posting process, job entries are generated with <span class="Bold">Type</span> = <span class="Italics">Usage</span>. These values can be found in the <span class="Bold">Total Direct Cost Usage RU (LCY)</span> field in the Job Planning and Processing view.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_9.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Posted job entries as displayed in the Total Direct Cost Usage RU (LCY) field</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">The <span class="Bold">Time Entry</span> field is still set to Yes because the Procurement Planning Lines have not been set to Finished yet.</p>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.5.2    ">Time Entry Terminal</h4>
+        <p class="ccTextvorlage">A terminal can also be used for time entry. The terminal enables a single workstation dedicated to time entry to be made available for several users. </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Posting availability for the terminal can be optionally allocated on the <span class="Bold">Procurement</span> FastTab in the <span class="Bold">Jobs Setup</span> page.</p>
+        <p class="ccTextvorlage">Discuss setting up a Terminal with your <span class="COSMOCONSULTZchn">COSMO CONSULT</span> consultant. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_10.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Job Terminal</p>
+        <p class="ccTextvorlage">After logging in, an employee enters their time the same as they would in the Job Journal. Afterwards, they can log off so that another employee can then enter their hours. </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.5.3    ">Mobile Time Entry</h4>
+            <p>Job time entries can be entered using a web client or the Microsoft Dynamics NAV App with mobile devices, such as tablets or smart phones.  In the Time Entry Journal from a web client, click/press the ellipses and then click/press <span class="Bold">Mobile Time Entry</span> to begin the time entry process. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Procurement_11.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Accessing the Mobile Time Entry function in mobile client</p>
+        </div>
+        <p class="ccTextvorlage">The <span class="Bold">Mobile Time Entry</span> screen shows the corresponding person/batch for the signed in user, as well as any entered time and capacities.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_12.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Mobile Time Entry screen with resource, totals and capacity information</p>
+        <p class="ccTextvorlage">To add a new entry, click/press the ellipses and then click/press <span class="Bold">New Entry</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_13.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Mobile Time Entry screen, accessing New Entry function</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Mobile Time Entry - New Record</span> screen, enter the <span class="Bold">Job No.</span> and <span class="Bold">WBS</span>. In the <span class="Bold">Quantity</span> field, enter the number of hours worked.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_14.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Mobile Time Entry - New Record screen with Job No., WBS and Quantity</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to finish the new entry. The totals are updated in the <span class="Bold">Mobile Time Entry</span> screen.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_15.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Mobile Time Entry screen with updated totals</p>
+        <p class="ccTextvorlage">More entries can be added using the “New Entry” function. </p>
+        <p class="ccTextvorlage">Entries made using the Mobile Time Entry are automatically added to the Job Time Entry journal in <span class="CCBausteinInhaltZchn">cc|project</span>, ready for further processing.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_16.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Mobile Time Entries in Job Time Entry journal in cc|project</p>
+        <p class="ccTextvorlage">Discuss setting up mobile access with your <span class="COSMOCONSULTZchn">COSMO CONSULT</span> consultant. </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.6    "><a name="_Toc445394507"></a>Purchase Processes</h3>
+            <p class="ccTextvorlage">Direct purchases can be triggered in the following ways:</p>
+            <ul>
+                <li class="ccAufzählungblau">Create a Purchase Quote</li>
+                <li class="ccAufzählungblau">Create a Requisition Worksheet line</li>
+                <li class="ccAufzählungblau">Create a Purchase Order directly</li>
+            </ul>
+            <p class="ccTextvorlage">As <MadCap:xref href="#_Ref382827577" class="Figure">Fig. 18</MadCap:xref> illustrates, a quote, requisition line and order have been created for the purchased items job lines. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Procurement_17.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 18"><a name="_Ref382827577"></a>: Job Planning Processing view for purchased items</p>
+        </div>
+        <p class="ccTextvorlage">Purchase Quotes and Requisition Worksheet lines will create Purchase Orders. To open the Purchase Quote or Order from the job line, click the <span class="Italics">Yes</span> value in the relevant document field or in the <span class="Bold">Procurement Release</span> field. Requisition Worksheets cannot be processed from the job views and therefore must be opened from the navigation pane by clicking <span class="Bold">Departments &gt; Purchase &gt; Planning</span>.</p>
+        <p class="ccTextvorlage">During the Purchase Order process, differences for quantity and/or costs in regards to calculation are possible. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_18.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 19">: Costs from posting purchase-related procurement lines</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.6.1    ">Purchase Quote Administration</h4>
+        <p>Three informational fields in the <span class="Bold">Processing</span> FastTab of the Purchase Quote are transferring to the Purchase Receipt Header, Purchase Invoice Header and Purchase Credit Memo Header upon posting.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_18a.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 20">: Vendor quote information fields on Purchase Quote</p>
+        <p>These fields are described in the following table.</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Expected Quote Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date by which a quote is expected from the vendor.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Quote Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date on which the quote was received from the vendor.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Vendor Quote No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the quote number provided by the vendor.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.6.2    ">Purchase Order Confirmation</h4>
+        <p>Three informational fields in the <span class="Bold">Processing</span> FastTab of the Purchase Order are transferred to the Purchase Receipt Header, Purchase Invoice Header and Purchase Credit Memo Header upon posting.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_18b.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 21">: Vendor order confirmation fields on Purchase Order</p>
+        <p>These fields are described in the following table.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1">
+            </col>
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2">
+            </col>
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Order Confirmation Required</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines whether an order confirmation from the vendor is required or not.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Order Confirmation Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date on which the order confirmation was received from the vendor.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Order Confirmation No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the order confirmation number provided by the vendor.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.6.3    ">Transfer Purchase Conditions from Purchase Quote</h4>
+        <p>Purchase prices and line discounts can be transferred from the purchase quote to the master data (Item). In this example, the purchase quote created during Procurement has been opened and pricing has been updated according to the vendor. The price remains but a small discount has been added. Currently, there are no purchase prices or line discounts assigned to this item (as displayed in the Purchase Line Details FactBox).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_18c.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 22">: Purchase Quote created from procurement, preparing to run Transfer Purchase Conditions function</p>
+        <p class="ccTextvorlage">When the “Transfer Purchase Conditions” function is run, a message appears to select if this is general pricing or job-specific pricing. </p>
+        <ul>
+            <li class="ccAufzählungblau">If <span class="Italics">General Pricing</span> is selected, the purchase price and/or line discount is transferred without any job information.</li>
+            <li class="ccAufzählungblau">If<span class="Italics">Job specific price</span> is selected, the purchase price and/or line discount is transferred with job information so that the pricing is relevant only for the job.</li>
+        </ul>
+        <p class="ccTextvorlage">In this example, the <span class="Italics">Job specific price</span> option is selected and a confirmation message appears with the results.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_18d.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 23">: Confirmation message from running the “Transfer Purchase Conditions” function</p>
+        <p class="ccTextvorlage">In the Purchase Line Details FactBox, notice that both Purchase Prices and Purchase Line Discounts indicate purchasing conditions have been created. Clicking the Purchase Prices/Purchase Line Discount value opens the <span class="Bold">Get Purchase Price</span> and<span class="Bold"> Get Purchase Line Disc.</span> pages, which show the job-specific information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_18e.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 24">: Job-specific purchase price and line discount information</p>
+        <p class="ccTextvorlage">Notice that not only is the job number assigned but also the Main Job No. This means that the special pricing is valid for any job created for the main job. If this item and vendor combination is used in other jobs not related to this main job, the special pricing is not used.</p>
+        <p class="ccTextvorlage">The <span class="Bold">Source Quote No.</span> and <span class="Bold">Source Version No.</span> fields provide historical information to indicate where the pricing originated. Clicking <span class="Bold">Actions &gt; Show Source Document</span> opens the <span class="Bold">Purchase Quote Archive</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_18f.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 25">: Purchase Quote Archive created from running Transfer Purchase Conditions function</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Ideally, all costing/pricing should be handled in the job budgeting phase and, therefore , the “Transfer Purchase Conditions” function is most beneficial when used with the <span class="CCBausteinInhaltZchn">cc|purchase quotes manager</span>.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.7    "><a name="_Toc445394508"></a>Inventory Requests</h3>
+            <p class="ccTextvorlage">Inventory Requests are used for inventory items. The Inventory Request will generate demand for procurement requisitioning in the same way a sales order generates demand. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Procurement_19.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 26"><a name="_Ref382828680"></a>: Job Planning Processing view for indirect and direct inventory requests</p>
+        </div>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#_Ref382828680" class="Figure">Fig. 20</MadCap:xref>, two inventory requests are set to be created:</p>
+        <ul>
+            <li class="ccAufzählungblau">WBS position 1.2.1. (Apron Conveyor) is an indirect inventory request. It is needed for produced quantities from the Production Order to post it to the job.</li>
+            <li class="ccAufzählungblau">WBS position 1.2.3. (Documentation) is a direct inventory request.</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_20.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 27">: Job Inventory Request created during procurement release</p>
+        <p class="ccTextvorlage">If no value is entered in the <span class="Bold">Posting Date</span> field, the current date will be used as the default.</p>
+        <p class="ccTextvorlage">The <span class="Bold">Outstanding Qty. (Base)</span> field contains the required quantity demand. </p>
+        <p class="ccTextvorlage">During posting, quantity availability in the selected location is checked if the <span class="Bold">Check Quantity in Inv. Req.</span> check box is selected in the <span class="Bold">Procurement</span> FastTab on the <span class="Bold">Jobs Setup</span> page.</p>
+        <p class="ccTextvorlage">In this example, 10 pieces of documentation have been added to the BLUE location with a direct unit cost of 60. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_21.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 28">: Job Planning and Processing with posted inventory request cost</p>
+        <p class="ccTextvorlage">After posting inventory items, an adjustment might be necessary. If so, the job lines must also be updated by running the “Update Job Item Cost” batch job, accessed from the navigation pane by clicking <span class="CCBausteinInhaltZchn">cc|project</span> <span class="Bold">&gt; Periodic Activities</span>.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.7.1    ">Posted Inventory Request</h4>
+            <p>Posted Inventory Requests are located on the <span class="Bold">Posted Documents</span> button of the navigation pane.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Procurement_22.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 29">: Posted Inventory Request</p>
+        </div>
+        <p class="ccTextvorlage">From here, the posted Inventory Request can be viewed and reprinted.</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Posted Inv. Request </span><span class="Bold">Lines</span> FastTab, the “Navigate” function opens the standard Microsoft Dynamics NAV <span class="Bold">Navigate</span> page where posted entries related to the Inventory Request can be viewed.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_23.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 30">: Navigation of posted Inventory Request entries</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.8    "><a name="_Toc445394509"></a>Production Orders</h3>
+            <p class="ccTextvorlage">During the procurement release process, a Production Order was created for WBS position 1.2.1. (Pallet rotating device).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Procurement_24.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 31">: Job Planning and Processing view with released production procurement documents</p>
+        </div>
+        <p class="ccTextvorlage">The related Production Order has two lines and the job is linked through the <span class="Bold">Project Code</span> field on the <span class="Bold">Posting</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_25.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 32">: Firm Planned Production Order created from released procurement line</p>
+        <p class="ccTextvorlage">The main production order line is automatically reserved against the Inventory Request (IR000080) created with the released production order procurement line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_26.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 33">: Reservation Entry for (indirect) inventory request</p>
+        <p class="ccTextvorlage">The Production Order is processed using the standard Microsoft Dynamics NAV methods, and then the Inventory Request is ready for posting by the user. </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">These processes are not included in the example.</p>
+        </div>
+        <h3 class="Heading3" MadCap:autonum="1.1.9    "><a name="_Toc445394510"></a>Additional Procurement Processes</h3>
+        <p class="ccTextvorlage">The previous sections described the commonly used procurement processes. This section describes some additional processes.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">A new job is used in these sections to separate processing functionality.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.9.1    "><a name="_Ref383424210"></a><a name="_Ref383502318"></a>Service Module Integration</h4>
+        <p class="ccTextvorlage">If a job line has <span class="Bold">Procurement Channel</span> = <span class="Italics">Service Order</span>, a new Service Order will be created during the release process with a link to the job line. The service item can be added manually in a service line or set up in the procurement line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_27.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 34">: Job Planning and Processing with planned service order line</p>
+        <p class="ccTextvorlage">In the Service Order, notice the link to the job line in the <span class="Bold">Job</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_28.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 35">: Service Order created from the procurement line, WBS position 1.2.4</p>
+        <p class="ccTextvorlage">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Order &gt; Service Lines</span> to enter the resources, items, etc.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_29.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 36">: Resources added to the Service Lines</p>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">Post</span> and with the <span class="Italics">Ship and Consume</span> option selected, click <span class="Bold">OK</span> to create job ledger entries to the linked job line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_30.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 37">: Job Planning and Processing with posted service costs</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.9.2    "><a name="_Ref383458523"></a>Job Order</h4>
+        <p class="ccTextvorlage">A Job Order is a summarized procurement view for a part of a job based on the normal procurement lines. This is an additional document to the existing procurement documents and provides a better overview for a job within a job.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">This section uses a different job without purchase processing to show job order procurement.</p>
+        <p class="ccTextvorlage">To create a Job Order for a procurement line(s), the <span class="Bold">Procurement by Job Order</span> check box must be selected, either directly on the line or can be preset on the component.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_31.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 38"><a name="_Ref382908986"></a>: Job Planning and Processing with WBS position 1.2.2.4 set for job order procurement</p>
+        <div class="ccDIV">
+            <p class="BoldItalics12pt">Example</p>
+            <p class="ccTextvorlage">The four lines selected in <MadCap:xref href="#_Ref382908986" class="Figure">Fig. 36</MadCap:xref> belong to the same procurement process but each has a different Procurement Channel. To manage the processing of each channel in one overview document, the <span class="Bold">Procurement by Job Order</span> check box is selected on the Assembly line and then all lines to be included in the document are highlighted.</p>
+        </div>
+        <p class="ccTextvorlage">After the procurement planning process, <span class="CCBausteinInhaltZchn">cc|project</span> will create a Job Order document in addition to all other procurement documents.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_32.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 39">: Job Order with lines from procurement planning</p>
+        <p class="ccTextvorlage">The lines in the Job Order may be used like normal procurement lines; the same functionality is available. However, to release lines for creating procurement documents, click <span class="Bold">Functions &gt; Release All</span> or <span class="Bold">Release Line</span> for a single line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_33.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 40">: Released job order lines, highlighting the created Purchase Quote, Requisition Line and Purchase Order</p>
+        <p class="ccTextvorlage">The information in the Job Order is transferred to the Job Planning and Procurement view.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Procurement_34.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 41">: Job Planning and Processing view with updated lines from Job Order</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.9.3    ">Posting by General Journal</h4>
+            <p class="ccTextvorlage">Another way of creating job usage is by directly posting a general journal. To assign the journal entry to the job line, the following fields must be shown in the <span class="Bold">General Journal</span> page:</p>
+            <ul>
+                <li class="ccAufzählungblau">Usage Job No.</li>
+                <li class="ccAufzählungblau">Usage WBS</li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Procurement_35.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 42">: General Journal with job costs to be posted directly to WBS position 1.3.1</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Job ledger entries are created when the General Journal is posted.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Procurement_36.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 43">: Job Planning and Processing with posted cost from general journal</p>
+        </div>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.10    "><a name="_Toc445394511"></a>Finish Procurement</h3>
+            <p class="ccTextvorlage">When the procurement documents (purchase orders and inventory requests) are posted, the Procurement Status on the released procurement lines is automatically set to <span class="Italics">Finished</span> if the:</p>
+            <ul>
+                <li class="ccAufzählungblau"><span class="Bold">Post Released Quantity Only</span> check box is selected on the <span class="Bold">Procurement</span> FastTab in the <span class="Bold">Jobs Setup</span> page</li>
+                <li class="ccAufzählungblau">full quantity has been allocated</li>
+            </ul>
+            <p class="ccTextvorlage">For time entry lines, there is no such automation because usually no direct quantity matching can be achieved. Therefore, these lines are set to finished manually by clicking <span class="Bold">Navigate &gt; Procurement &gt; Set Finished</span>. </p>
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">This function can be used on any lines that need to be set as finished.</p>
+            <p class="ccTextvorlage">Finished procurement lines are indicated through the <span class="Bold">Procurement Finished</span> field.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Procurement_37.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 44">: Finished procurements lines manually (WBS 1.1.4.) and automatically (WBS 1.2.2.1. – 1.2.2.3.)</p>
+        </div>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.11    "><a name="_Toc445394512"></a>Rolling Calculation after Procurement</h3>
+            <p class="ccTextvorlage">After the different procurement processes are posted, usage is displayed in the <span class="Bold">Total Direct Cost Usage (LCY)</span> field.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Procurement_38.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 45">: Job Rolling Calculation usage from posted procurement</p>
+        </div>
+    </body>
+</html>

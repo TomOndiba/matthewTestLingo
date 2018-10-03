@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="853" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256712"></a>Planned Maintenance Orders / Maintenance Order Templates</h3>
+        <p class="ccTextvorlage">A maintenance order template can be created manually. The <span class="Bold">Status</span> is set to <span class="Italics">Planning</span> when created manually.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Planned Maintenance Orders.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Maintenance Order Template for machine number W-M-002</p>
+        <p class="ccTextvorlage">If the maintenance is performed by an external service provider, the vendor is entered in the <span class="Bold">Vendor No.</span> field on the <span class="Bold">General</span> FastTab and only G/L accounts can be entered in the lines.</p>
+        <p class="ccTextvorlage">To insert comments into lines, leave the <span class="Bold">Type</span> field blank and enter the comment in the <span class="Bold">Description</span> field. </p>
+        <p class="ccTextvorlage">The validity dates of the template can be specified in the <span class="Bold">Starting Date</span> and <span class="Bold">Ending Date</span> fields on the <span class="Bold">General</span> FastTab. The <span class="Bold">Starting Date</span> determines the <span class="Bold">Next Maintenance Date</span>, which is when the next service should be performed. This date can be manually changed.</p>
+        <p class="ccTextvorlage">After service has been performed, the <span class="Bold">Next Maintenance Date</span> field is recalculated (based on the <span class="Bold">Maintenance Interval</span>), and the <span class="Bold">Last Maintenance Date</span> field contains the date of the most recent service. This date cannot be edited.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Create Maintenance Orders</h4>
+            <p class="ccTextvorlage">Maintenance Orders can be created using either of the following methods:</p>
+            <ul>
+                <li class="ccAufzählungblau">Single order directly from the maintenance template</li>
+                <li class="ccAufzählungblau">Multiple orders using the “Create Maintenance Orders” periodic activity</li>
+            </ul>
+        </div>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.1    ">Create Single Maintenance Order</h5>
+        <p class="ccTextvorlage">After the template is set up, a maintenance order can be created by clicking <span class="Bold">Create Maintenance Order</span> on the ribbon. Click <span class="Bold">Yes</span> to create the maintenance order on the date specified in the <span class="Bold">Next Maintenance Date</span> field. This date appears as the <span class="Bold">Starting Date</span> on the new maintenance order.</p>
+        <p class="ccTextvorlage">If created from a template, the number appears in the <span class="Bold">Created-by Template No.</span> field on the maintenance order. </p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.2    ">Create Multiple Maintenance Orders</h5>
+        <p class="ccTextvorlage">The <span class="Bold">Create Maintenance Orders</span> batch job is accessed from the Plant Maintenance menu.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Planned Maintenance Orders_1.png" style="visibility: visible;mso-wrap-style: square;width: 567px;height: 388px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Create Maintenance Orders batch job request page</p>
+        <p class="ccTextvorlage">Limit the maintenance orders created by entering start and end dates on the <span class="Bold">Options</span> FastTab. Select the <span class="Bold">Create all orders in period</span> check box to include all the templates where the Next Maintenance Date falls within the specified period.</p>
+        <p class="ccTextvorlage">On the <span class="Bold">Maintenance Order</span> FastTab, filter on the templates, machine numbers and so on to include in the creation process. Click <span class="Bold">OK</span> to begin the creation process.</p>
+    </body>
+</html>

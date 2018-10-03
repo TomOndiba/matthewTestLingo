@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref382228664"></a><a name="_Toc445394537"></a>Traveling Expenses</h2>
+        <p class="ccTextvorlage">Traveling expenses are assigned to customers when specific rates are agreed upon between the company and its customer. These expenses can then be transferred to jobs relating to the customer.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc445394538"></a>Pricing Considerations for Traveling Expenses</h3>
+        <p class="ccTextvorlage">When determining prices for traveling expenses while using <span class="CCBausteinInhaltZchn">cc|project</span>, consider these factors:</p>
+        <ul>
+            <li class="ccAufzählungblau_beforesublist">Prices are based on the Work Type assigned to the Traveling Expense.</li>
+        </ul>
+        <p class="ccTextvorlageNumberedListNoteHeadingIndent">Note</p>
+        <p class="ccTextvorlageNumberedListNoteBodyIndent">The Work Type is typically  entered into the calculation during, not prior to, posting.   </p>
+        <ul>
+            <li class="ccAufzählungblau_beforesublist">Multiple currencies for traveling expenses are not supported. Thus, any entries for traveling expenses must be made in the local currency (LCY).</li>
+            <li class="ccAufzählungblau_beforesublist">Prices can be defined by Job. </li>
+        </ul>
+        <p class="ccTextvorlage">Prices can be derived from the Traveling Expenses Card; however, this is not recommended. </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc445394539"></a>Setup</h3>
+        <p class="ccTextvorlage">The following setup is required for using traveling expenses.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.1    ">Components</h4>
+        <p class="ccTextvorlage">A minimum of one resource must be set up for the Job Budget Calculation with the following settings:</p>
+        <ul>
+            <li class="ccAufzählungblau_beforesublist"><span class="Bold">Type</span> = Traveling</li>
+            <li class="ccAufzählungblau_beforesublist"><span class="Bold">Procurement Channel</span> = Time Entry</li>
+            <li class="ccAufzählungblau_beforesublist"><span class="Bold">Procurement Cost Source</span> = Standard Costs</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Traveling Expenses.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.1in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Resource Card for Traveling Expenses</p>
+        <p class="ccTextvorlage">Different work types can be set up for traveling expenses and a default can be assigned to the component in the <span class="Bold">Traveling Work Type Code</span> field on the <span class="Bold">Calculation</span> FastTab of the <span class="Bold">Resource Card</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Traveling Expenses_1.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Work Types for Traveling Expenses accessed from the Resource Card</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.2    "><a name="_Ref383248138"></a>General Traveling Expenses</h4>
+        <p class="ccTextvorlage">Other setup for general traveling expenses is defined in the <span class="Bold">Job Traveling Expenses</span> page, accessed from the <span class="CCBausteinInhaltZchn">cc|project</span> menu by clicking <span class="Bold">Administration &gt; Job Travel Codes</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Traveling Expenses_2.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: General Job Traveling Expenses</p>
+        <p class="ccTextvorlage">If the travel expenses should be reimbursed to the employee, the <span class="Bold">Reimbursement</span> check box must be selected.</p>
+        <p class="ccTextvorlage">The travel expense can be set as a default per customer and per project by clicking <span class="Bold">Navigate &gt; Traveling Expenses</span> on the Customer Card or <span class="Bold">Home &gt; Traveling Expenses</span> on the Job Card.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Traveling Expenses_3.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Job Traveling Expenses assigned to job J000001.01</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.3    ">Job Budget Calculation</h4>
+        <p class="ccTextvorlage">To process traveling information, a minimum of one job line with <span class="Bold">Type</span> = <span class="Italics">Traveling</span> must be entered in the Job Budget Calculation view.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Traveling Expenses_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5"><a name="_Ref381694230"></a>: Traveling Expenses line assigned in the Job Budget Calculation view for job J000001.01</p>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#_Ref381694230" class="Figure">Fig. 5</MadCap:xref>, the travel expenses are calculated on a Time and Materials, Non-Chargeable and Flat Rate basis. The sales price is calculated based on cost plus project surcharges,  non-invoicable and per usage (Sales Code = KO+, NI and USG, respectively).</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc445394540"></a>Traveling Expense Processing</h3>
+            <p class="ccTextvorlage">This section explains the procurement and sales processing of traveling expenses.</p>
+            <h4 class="Heading4" MadCap:autonum="1.1.3.1    ">Procurement Planning</h4>
+            <p class="ccTextvorlage">For procurement planning, it is important to consider that two procurement channels may need to be released (i.e., time recording and purchase order).  </p>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Traveling Expenses_5.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Traveling Expenses line set up in the Job Planning and Processing view for job J000001.01</p>
+        <p class="ccTextvorlage">As no quantity is entered, the lines need to be planned manually (with the “New Procurement” function in the <span class="Bold">Job Processing Procurement</span> page) and a purchasing document is not necessary. The lines are then available for posting through purchasing and time recording. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Traveling Expenses_6.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Released Traveling Expenses ready for time entry posting</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.3.2    ">Posting by Time Entry</h4>
+            <p class="ccTextvorlage">To enter traveling expenses in Time Entry, use the <span class="Bold">Travel Code</span> field to copy the information from the Job Card setup to the time entry line.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Traveling Expenses_7.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 8"><a name="_Ref381696457"></a>: Traveling Expenses entered in Time Entry for WBS positions 2.1.–2.3. in job J000001.01</p>
+        </div>
+        <p class="ccTextvorlage">The purchasing prices will be transferred from the predefined travel codes and the sales prices are transferred from the predefined markup of the calculation lines as well as the job traveling expenses. Both types can be manually adjusted in Time Entry as needed.</p>
+        <p class="ccTextvorlage">As illustrated in the second and third lines in <MadCap:xref href="#_Ref381696457" class="Figure">Fig. 8</MadCap:xref>, the kilometers driven with the personal car will not be invoiced, but a distance flat rate will be charged. </p>
+        <p class="ccTextvorlage">The following costs have been posted as consumption from Time Entry for job J000001.01.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Traveling Expenses_8.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Traveling Expenses posted to WBS positions 2.1.–2.3. in job J000001.01 from Time Entry</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.3.3    ">Posting by Purchase</h4>
+            <p class="ccTextvorlage">A new purchase invoice can be created to enter the traveling expenses.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Traveling Expenses_9.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Traveling Expenses entered in a Purchase Invoice for WBS position 2.1. in job J000001.01</p>
+        </div>
+        <p class="ccTextvorlage">The following cost has been posted as consumption from the Purchase Invoice for job J000001.01.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Traveling Expenses_10.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Traveling Expense posted to WBS position 2.1. from Purchase Invoice</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.3.4    ">Invoice Run</h4>
+            <p class="ccTextvorlage">The invoicing “Planning” function – accessed on the ribbon of the Job Budget Sales view – starts the invoice run process. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Traveling Expenses_11.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Traveling Expenses line planned for invoicing </p>
+        </div>
+        <p class="ccTextvorlage">Notice that the kilometers driven with the personal car are not included in the invoice planning.</p>
+        <p class="ccTextvorlage">The following lines have been included by running the “Planning” function.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Traveling Expenses_12.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Traveling Expenses included in invoice planning</p>
+        <p class="ccTextvorlage">The sales invoice for the traveling expenses can be generated from the Job Budget Sales view by clicking <span class="Bold">Release</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Traveling Expenses_13.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Traveling Expenses on sales invoice generated from Job Budget Sales view</p>
+        <p class="ccTextvorlage">The following entries have been posted from the Sales Invoice for job J000001.01.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Traveling Expenses_14.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Traveling Expense posted to WBS positions 2.1. and 2.3. from Sales Invoice</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.3.5    ">Reimbursement of Travel Expenses</h4>
+            <p class="ccTextvorlage">Travel expenses can be reimbursed to employees through a purchase invoice created automatically or manually. Before a purchase invoice can be created for reimbursement, the employee must be set up as a vendor in Microsoft Dynamics NAV and the Vendor No. must be assigned in the <span class="Bold">Processing</span> FastTab of the Resource Card. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Traveling Expenses_15.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Vendor number assigned to the resource card for employee P016</p>
+        </div>
+        <h5 class="Heading5" MadCap:autonum="1.1.3.5.1    ">Automatic Purchase Invoice</h5>
+        <p class="ccTextvorlage">The request page for the Employee Traveling Expenses report provides the ability to create the invoice while generating the report. The report and invoice will only include job lines that have travel codes with the <span class="Bold">Reimbursement</span> check box selected.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Traveling Expenses_16.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Employee Traveling Expenses report request page</p>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Options</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 108px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Create Invoice</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, a Purchase Invoice will be automatically created for the resource, preliminary a vendor number needs to be created for each employee and needs to be linked to the personal card of each employee by filling the field vendor no.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">With Invoiced Entries</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, previously invoiced entries will appear on the report with the open entries.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Vendor Invoice No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the number of the invoice from the vendor; will be transferred to the <span class="Bold">Vendor Invoice No.</span> field on the Purchase Invoice.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">To access the report from the <span class="CCBausteinInhaltZchn">cc|project</span> menu, click <span class="Bold">Reports &gt; Employee Traveling Expenses</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Traveling Expenses_17.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 18">: Employee Traveling Expenses report filtered on Resource No. P016</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The following Purchase Invoice was created automatically to vendor V0020 – which is linked to resource P016 – because the <span class="Bold">Create Invoice</span> check box was selected in the Employee Traveling Expenses report request page when the report was generated.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Traveling Expenses_18.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 19">: Purchase Invoice automatically created for reimbursable expenses by running the Employee Traveling Expenses report </p>
+        </div>
+        <p class="ccTextvorlage">Additionally, the <span class="Bold">Reimbursed</span> check box is automatically selected on the job ledger lines after the invoice is generated.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Traveling Expenses_19.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 20">: Reimbursable expenses updated in the job ledger entries by running the Employee Traveling Expenses report with Create Invoice selected</p>
+        <div class="ccDIV">
+            <div class="ccDIV">
+                <h5 class="Heading5" MadCap:autonum="1.1.3.5.2    ">Manual Purchase Invoice</h5>
+                <p class="ccTextvorlage">Instead of generating the Purchase Invoice from the Employee Traveling Expenses report, the expenses can be entered directly in a Purchase Invoice and linked back to the job lines.</p>
+                <p class="ccTextvorlage">In the purchase invoice, enter the employee’s vendor in the <span class="Bold">Vendor</span> field and in the lines, enter the traveling expenses to the appropriate job line(s) and purchase account(s).</p>
+            </div>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Traveling Expenses_20.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 21">: Traveling Expenses to be reimbursed manually to employee P016</p>
+        </div>
+    </body>
+</html>

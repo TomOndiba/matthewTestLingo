@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="923" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref351531911"></a><a name="_Ref351531912"></a><a name="_Ref351531913"></a><a name="_Ref351531914"></a><a name="_Ref351531915"></a><a name="_Toc434567989"></a>Dynamic Master BOM</h2>
+        <p class="ccTextvorlage">The Dynamic Master BOM is the second element of the configuration feature of <span class="CCBausteinInhaltZchn">cc|configure to order</span>. The Master BOMs are opened “dynamically” if they are used for the automatic generation of BOMs relating to orders (Document BOM). In addition, within the BOM lines, formulas are entered. Usually checklists and Dynamic Master BOMs are used together for a configuration. The information entered in the checklist is stored as variables, which are then used for formula evaluation within the Dynamic Master BOM (refer to topic <MadCap:xref href="Dynamic Checklist.htm#_Ref406766135">“Dynamic Checklist” on page 1</MadCap:xref>).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Dynamic Master BOM.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Master BOM</p>
+        <p class="ccTextvorlage">In addition to the fields previously described, the fields in the following table are specific for dynamic calculations within the Master BOM.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 96px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Formula Valid</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">In this field, enter a formula for use with calculation. Use the arrow to open the Formula Editor, which can assist with formula creation. The result of the formula evaluation (TRUE or FALSE) determines whether the line – when opening the Master BOM – is transferred to the Document BOM or not.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Formula Quantity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">An alternative to the <span class="Bold">Quantity</span> field, enter a formula for the calculation of the expected quantity. Use the arrow to open the Formula Editor. For work centers and machine centers, this field is used for the calculation of the time requirement according to the following formula: </p>
+                        <p class="ItalicsCentered">Time requirement = Tr + Te /lot size * quantity</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">If “quantity” is registered as a value in the field, it is overwritten by the result of the formula evaluation by opening the BOM.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Formula Quantity Per</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">An alternative to the <span class="Bold">Quantity per</span> field; enter a formula for the calculation of the component quantity. Use the arrow to open the Formula Editor.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Recalculate</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected on a BOM line, then this line is often transferred to the Document BOM, as the <span class="Bold">Exp. Quantity</span> is calculated or registered. The variables used in a support BOM are supplemented before calculation of the formula around the contents of the counting variable “i”. In addition, the syntax #i# must be used (refer to topic <MadCap:xref href="Example Sub Checklists.htm#_Ref369439849">“Example – Sub-Checklists” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Formula Setup Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">For a work center or machine center, the necessary setup time can be calculated through a formula. Use the arrow to open the Formula Editor.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">If a value is registered in the <span class="Bold">Setup Time</span> field, it is overwritten by the result of the formula evaluation by opening the BOM.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Formula Run Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">For machine centers or work centers, the necessary run time can be calculated through a formula. Use the arrow to open the Formula Editor.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">If a value is registered in the <span class="Bold">Run Time</span> field, it is overwritten by the result of the formula evaluation by opening the BOM.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlage"> </p>
+    </body>
+</html>

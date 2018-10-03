@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="882" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434332540"></a>Merge Fields</h2>
+        <p class="ccTextvorlage">This example shows how the <span class="Bold">Description</span> and <span class="Bold">Description 2</span> fields are merged into one field to be displayed on the Sales Quote printout. Merging fields are done with Variables. </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Before starting this example, add <span class="Bold">Description 2</span> text to some items and assign to a new Sales Quote.</p>
+        <p class="ccDemoStepHeading">Review Variables in the Document Layout</p>
+        <p class="ccTextvorlage">Follow these steps to review variables in a document layout:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Open the SQ-01, Sales Quote, Document Layout.</li>
+            <li class="ccTextvorlageNumberedList">Select the “Lines” section in the <span class="Bold">Sections</span> FastTab and then click <span class="Bold">Line &gt; Variables</span> to open the <span class="Bold">Document Layout Variables</span> page. </li>
+            <li class="ccTextvorlageNumberedList">Notice that two variables exist for descriptions:<ol start="1"><li class="ccTextvorlageNumberedList">Description1 for the <span class="Bold">Description</span> field</li><li class="ccTextvorlageNumberedList">Description2 for the <span class="Bold">Description 2</span> field</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Merge Fields.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Variables for descriptions for the sales quote lines</p>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout Variables</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Review Field with Merged Variables</p>
+        <p class="ccTextvorlage">The next step is to review the settings of the merged variables for the <span class="Bold">Description</span> field in the Document Layout Fields. </p>
+        <p class="ccTextvorlage">Follow these steps to review the merged fields for printing:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">With the “Lines” section still selected, click <span class="Bold">Line &gt; Fields</span> on the <span class="Bold">Sections</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">Locate the line for the <span class="Bold">Description</span> field.</li>
+            <li class="ccTextvorlageNumberedList">Notice the following:<ol start="1"><li class="ccTextvorlageNumberedList">The merged description variables have been entered in the <span class="Bold">Text</span> field as [Description1] [Description2].</li><li class="ccTextvorlageNumberedList">The <span class="Bold">Allow Line Break</span> check box is selected.</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Merge Fields_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Merged variables of Description fields for the sales quote lines</p>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Run Report</span> to view the report changes.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Show Request Page</span> check box and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the request page, click <span class="Bold">Preview</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Merge Fields_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Merged variables of Description fields in the Sales Quote lines</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNumberedListNoteHeading">Note</p>
+            <p class="ccTextvorlageNumberedListNoteBody">Since the <span class="Bold">Allow Line Break</span> check box is enabled on the Description line in the <span class="Bold">Document Layout Field</span> page, the system will print the descriptions longer than the width of the field on two lines (with a line break where there is a space, if possible).</p>
+        </div>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout Fields</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Certified</span> to make it available to the users.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout</span> page.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434834899"></a>Calculation Charges</h2>
+        <p>Calculation Charges are used to define percentile or absolute charges to a calculation, such as discounts, freight costs, or mark-up.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Charges.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="CalculationChargesFig"></a>: Calculation Charges</p>
+        <p>The fields in this page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 110px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier for the calculation charge.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Starting Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Controls when the price increases and discounts for the calculation should apply.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Description of the calculation charge.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if the calculation charge is a percentage of cost or an absolute value. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rate</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Value of the percentage or absolute value defined in the <span class="Bold">Type</span> field. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Type of Reference Value</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">To calculate the correct discount and payment discount in calculations, set this field to <span class="Italics">Reduced Basic Value</span>. The charge is calculated with the basic value if this field is empty or set to <span class="Italics">Basic Value</span>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434834900"></a>Example – Percentage Charge</h3>
+        <p>As illustrated in <MadCap:xref href="#CalculationChargesFig" class="Figure">Fig. 1</MadCap:xref> and <MadCap:xref href="#CalcCharges_SalesCalcFig" class="Figure">Fig. 2</MadCap:xref>, depending on the date of the calculation, the Material overhead costs (MOC) Calculation Charge is set to calculate a percentage of material overhead cost. A 15% charge is calculated between January 1, 2019 through March 31, 2019 and a 17% charge starting on April 1, 2019.</p>
+        <p>In the Sales Calculation, Row No. 0200 is set up to calculate the MOC charge on the calculated value in Row No. 0150.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Charges_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="CalcCharges_SalesCalcFig"></a>: Calculation Charges assigned to the Sales Calculation</p>
+        <p>When the Sales Calculation is run as of January 24, 2019, Row No. 0200 is calculated at 15% of the value on Row No. 0150 (refer to <MadCap:xref href="#MOCCalChargesFig1" class="Figure">Fig. 3</MadCap:xref>).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Charges_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.1in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="MOCCalChargesFig1"></a>: MOC Calculation Charges calculated on January 24, 2019 to get a 15% charge rate</p>
+        <p>When the Sales Calculation is run as of April 1, 2019, Row No. 0200 is calculated at 17% of the value on Row No. 0150 (refer to <MadCap:xref href="#MOCCalChargesFig2" class="Figure">Fig. 4</MadCap:xref>).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Charges_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.1in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4"><a name="MOCCalChargesFig2"></a>: MOC Calculation Charges calculated on April 1, 2019 to get a 17% charge rate</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434834901"></a>Example – Type of Reference Value</h3>
+        <p>As illustrated in <MadCap:xref href="#CalculationChargesFig" class="Figure">Fig. 1</MadCap:xref>, the CDISCOUNT and DISCOUNT Calculation Charges are set to <span class="Italics">Reduced Basic Value</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Charges_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Reduced Basic Value discount calculation on the Sales Calculation</p>
+        <p>When the Sales Calculation is run, the reduced basic value is calculated as follows:</p>
+        <p><span class="Italics">Net list price = Target retail price / (100 - Reduction) * 100</span>
+        </p>
+        <p>Therefore, the <span class="Bold">Net list price</span> was calculated as <span class="Italics">275.34 = 234.04 / (100 - 15) * 100</span>.</p>
+    </body>
+</html>

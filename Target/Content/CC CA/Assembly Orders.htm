@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434834929"></a>Assembly Orders</h2>
+        <p>Calculations on Assembly Orders are similar to production orders in that Expected and Actual cost calculations are available:</p>
+        <ul>
+            <li class="ccAufzählungblau">Expected cost calculations consider the Assembly BOM</li>
+            <li class="ccAufzählungblau">Actual cost calculations consider all posted values for an Assembly Order</li>
+        </ul>
+        <p>The difference to production orders, however, is that calculations are performed at the order level, not the line level.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Assembly Orders.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Calculation functions accessed on an Assembly Order (Actions tab)</p>
+        <p>If no calculation is available for the Assembly Order, no calculations appear in the <span class="Bold">Calculation List</span> page. Click <span class="Bold">New</span> to create a new calculation and then press ENTER or TAB to assign a number.  It is possible to create more than one calculation for one Assembly Order.</p>
+        <p>If the <span class="Bold">Standard Calc. Schedule No.</span> field on the item used in the Assembly Order is filled in, the standard calculation schedule is used for the new calculation. Otherwise the application shows the calculation schedule list and the user must select a calculation schedule manually.</p>
+        <p>The values of the Assembly Order are transferred to the calculation header; note that the <span class="Bold">Replenishment System</span> field is set to <span class="Italics">Assembly</span> because the item has an Assembly BOM. The link between the Assembly Order and the calculation is shown on the <span class="Bold">Document</span> FastTab in the Calculation Card.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Assembly Orders_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Expected calculation created for an Assembly Order</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434834930"></a>Calculation Groups in Assembly BOM </h3>
+        <p>Item and capacity calculation groups are transferred from the item and resource via the Assembly BOM lines to the Assembly Order lines. </p>
+        <p>Since Assembly Order calculations use the calculation groups from the Assembly BOM – not directly from the item and resource – the calculation groups can be changed on the Assembly Order lines.</p>
+    </body>
+</html>

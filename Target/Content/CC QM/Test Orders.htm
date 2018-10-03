@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc442095725"></a>Test Orders</h3>
+            <p class="ccTextvorlage">In the test orders, the determined actual values of a test are entered and, if available, compared with the predetermined required value. The goal of the test order is to determine if a test was successful within its required value specifications.</p>
+            <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Test Order Card</h4>
+            <p class="ccTextvorlage">Test orders can be opened from the <span class="Bold">Test Orders</span> list page where all test orders are listed or from the Test Order per Status menu which provides access to test orders by status.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Test Orders.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Accessing the test orders</p>
+        </div>
+        <p class="ccTextvorlage">The structural composition of the Test Order is essentially the same as that of the Test Plan.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Test Orders_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="_Ref286332766"></a>: Test order created automatically by posting purchase receipt for item Q-40014</p>
+        <p class="ccTextvorlage">The compilation of test orders can occur in different ways. Test orders can be created according to specification from an arrival or by arrival of material from a production order. These test orders can be created manually or automatically (based on Test Plan Setup, refer to the table in topic <MadCap:xref href="Test Order Creation.htm">“Test Order Creation” on page 1</MadCap:xref>) and can be processed immediately. In the following sections, the fields are explained based on an automatically generated test order.</p>
+        <p class="ccTextvorlage">When creating a test order manually, the entry fields must be filled accordingly.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.1    ">General FastTab</h5>
+        <p class="ccTextvorlage">The fields on this FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 119px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier from the number series or manually entered if manual numbering is allowed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Description of the test order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Destination Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Predetermined if the test order to be carried out is related to test device or to an item test.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Destination No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number that builds the basis for the test order, based on the value in the <span class="Bold">Test Destination Type</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Destination Variant Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Variant that applies to the item, based on the value in the <span class="Bold">Test Destination No.</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Date the test order is created. This date can be changed manually if the test is to be carried out at a later date.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Document Type / External Document Path</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if the Test Plan is within Microsoft Dynamics NAV (Integrated Document) or if the test is related to an External Document. </p>
+                        <p class="ccTabellenText">For Test Plans with an External Document, a mapping (data link) can be entered in the <span class="Bold">External Document Path</span> field to indicate where the document is stored. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Vendor No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Vendor number which builds the basis for the test order, if it is a Test Plan that has been generated upon arrival.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Quantity to Test</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The value in this field (= delivery quantity; is transferred from the recorded quantity in the arrivals) serves as a calculation basis for the calculation of the value in the <span class="Bold">Random Sample Quantity</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No. of Units</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Delivered quantity of bins.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Plan No. / Test Plan Version Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Automatically filled according to specification of the chosen Test Plan.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Current processing state of the Test Order. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Created – Set if no processing has occurred.</li>
+                            <li class="ccAufzählung">Value Recording – Set manually by clicking <span class="Bold">Release</span> on the ribbon. Now it is possible to begin the test by entering the determined actual values. Erroneously entered determined values can be changed or tests can be cancelled while in this status.</li>
+                            <li class="ccAufzählung">Testing Finished – Set when all property sets have been processed. </li>
+                            <li class="ccAufzählung">Finished – Set manually, by clicking <span class="Bold">Finish</span> on the ribbon, when all property sets have been processed. No changes can be made with this status.</li>
+                            <li class="ccAufzählung">Cancelled – Set manually, by clicking <span class="Bold">Cancel</span> on the ribbon, when a test order needs to be cancelled. This may be necessary, for example, if one determined value lies beyond the expected values and as a result all further values are irrelevant.</li>
+                        </ul>
+                        <p>It is also possible to change the status of multiple test orders using the “Change Test Order Status” function, accessible from the <span class="CCBausteinInhaltZchn">cc|quality management</span> menu by clicking <span class="Bold"> Tasks &gt; Change Test Order Status</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Stability Test Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Current processing state of the Stability Test. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">In Process – Set automatically and used internally to prevent parallel processing.</li>
+                            <li class="ccAufzählung">On Hold – Set when the order is created or after processing when further stability tests exist. </li>
+                            <li class="ccAufzählung">Cancelled – Set manually, by clicking <span class="Bold">Cancel</span> on the ribbon, when a test order needs to be cancelled. This may be necessary, for example, if one determined value lies beyond the expected values and as a result all further values are irrelevant. This function can cancel only the Test Order or the Test Order and the Stability Test (refer to topic <MadCap:xref href="Cancel a Stability Test.htm">“Cancel a Stability Test” on page 1</MadCap:xref>).</li>
+                            <li class="ccAufzählung">Finished – Set manually, by clicking <span class="Bold">Finish</span> on the ribbon, when all property sets have been processed. No changes can be made with this status.</li>
+                        </ul>
+                        <p>It is also possible to change the status of multiple test orders using the “Change Test Order Status” function, accessible from the <span class="CCBausteinInhaltZchn">cc|quality management</span> menu by clicking <span class="Bold"> Tasks &gt; Change Test Order Status</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No. Printed</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Automatically populated/updated each time the test order is printed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Invalid Determined Value</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Automatically selected if there are any differences after entering the actual values to the required value specification of the property set.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Blocked Test Devices</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Automatically selected if a test device is used in the test order that is blocked due to a lack in inspection or manual blocking.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No. of Units to Test</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the number of (trading) units from which to draw a sample, calculated on:</p>
+                        <ul>
+                            <li class="ccAufzählung">Release of a Test Order</li>
+                            <li class="ccAufzählung">Calculate Sample Size action on the Test Order</li>
+                            <li class="ccAufzählung">Creation of a Repeat Order</li>
+                        </ul>
+                        <p class="ccTabellenText">This value is automatically filled and cannot be changed manually.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Random Sample Quantity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Quantity of the random sample that is to be tested when running an attribute testing (faulty/not faulty parts). The basis for this calculation is the <span class="Bold">Quantity To Test</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Inspection Result</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Test result, calculated based on the test property values.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Responsibility Center</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Responsibility Center that is allocated to the test order.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace">
+        </p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.2    ">Lines FastTab</h5>
+        <p class="ccTextvorlage">In the <span class="Bold">Lines</span> FastTab, the Test Property Sets are allocated to the Test Order from the Test Plan. </p>
+        <h6 class="Heading6" MadCap:autonum="1.1.1.1.2.1    ">Test Property Set Menu</h6>
+        <p class="ccTextvorlage">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Test Property Set</span> to access menu items that relate to the selected Test Property Set line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Test Orders_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Test Property Set menu items on Lines FastTab</p>
+        <div class="ccDIV">
+            <h5 class="Heading5" MadCap:autonum="1.1.1.1.3    ">Test Plan Source FastTab</h5>
+            <p class="ccTextvorlage">The <span class="Bold">Test Plan Source</span> FastTab contains fields that display information about the source document that created the test plan.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Test Orders_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Test Plan Source FastTab on Test Order created automatically by posting purchase receipt for item Q-40014</p>
+        </div>
+        <p class="ccTextvorlage">The fields on this FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Source Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Origin of the test order, if generated from a purchase delivery, a sales document, a production order, a process step, a stability test, or a production order component.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Source Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Status of the production order, if the <span class="Bold">Source Type</span> field is set to <span class="Italics">Production Order</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Source No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of the source document.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Source Line No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Line number of the source document to which the test order refers.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Source Routing No. / Source Operation No. / Source Component Line No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Routing, operation, or component line numbers from which the test order originated if the <span class="Bold">Source Type</span> field is filtered on Production Order, Operation, or Component.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Order-specific</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the Test Order was created from a Sales Order with an Order-specific test plan.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Creation Date / Created by / Last Date Modified / Last Modified by</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Test order creation and modification information. These values are automatically determined based on the current date and the active User ID and are non-editable.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lot No. / Serial No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Item tracking information to which the test order refers; populated based on the Item Test Order Option selection in the Test Order Setup for the item (refer to topic <MadCap:xref href="Test Plan Setup on Items.htm">“Test Plan Setup on Items” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Test Incident No. / Test Incident Order No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Used with Test Incidents (refer to topic <MadCap:xref href="Test Incidents.htm">“Test Incidents” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.4    ">Miscellaneous FastTab</h5>
+        <p class="ccTextvorlage">The <span class="Bold">Miscellaneous</span> FastTab contains information about test types and repeat orders.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Test Orders_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Miscellaneous FastTab on Test Order created automatically by posting purchase receipt for item Q-40014</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Test Type</span> and <span class="Bold">Test No.</span> fields, the test type that builds the basis for the test order is indicated by number. The values for these fields are transferred from the <span class="Bold">Test Status</span> page, if they exist, on release of the Test Order. After completion of the test order, this page is filled by the appropriate newly determined value from the <span class="Bold">Inspection Severity</span> page.</p>
+        <p class="ccTextvorlage">The <span class="Bold">Repeat No.</span> and <span class="Bold">First Order No.</span> fields indicate respective information as to the original test order, if the current test order is a repeat test order.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.5    ">Planning FastTab</h5>
+        <p>Test Orders can be scheduled and therefore, receive Starting Date-Time and Ending Date-Time. The fields on the <span class="Bold">Planning</span> FastTab are used with the Test Order Scheduling function. If no activities are assigned to Test Order Properties, then no Ending Date-Time is calculated.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Test Orders_4a.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Planning FastTab on Test Order created automatically by posting purchase receipt for item Q-40014</p>
+        <p class="ccTextvorlage">The Starting Date / Time and Ending Date / Time are calculated based on the Source Type and the duration in the Test Order Activities. Refer to topic <MadCap:xref href="Test Order Scheduling.htm">“Test Order Scheduling” on page 1</MadCap:xref> for more information.</p>
+        <div class="ccDIV">
+            <h5 class="Heading5" MadCap:autonum="1.1.1.1.6    ">Navigate Tab</h5>
+            <p class="ccTextvorlage">Several functions are available for the Test Order by clicking the <span class="Bold">Navigate</span> tab. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Test Orders_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Navigate tab actions</p>
+        </div>
+        <p class="ccTextvorlage">Each function is described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 151px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Function</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Order Property Sets</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Test Order Property Set</span> page, which lists all property sets that are allocated to this test order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Order Properties</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Test Order Properties</span> page, which lists the values from the properties that were entered for the Test Property Set in the <span class="Bold">Lines</span> FastTab.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Internal Comments / External Comments</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Comments can be used to add notes and remarks about a test order. </p>
+                        <ul>
+                            <li class="ccAufzählung">Internal comments are printed on documents that will not leave the company. </li>
+                            <li class="ccAufzählung">External comments will appear on documents that can be sent to the customer or vendor.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Show External Document</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the external document that was entered in the <span class="Bold">External Document Path</span> field on the <span class="Bold">General</span> FastTab.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Value Recording</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">QM Value Recording</span> page, which contains various pieces of information that refer to the respective property set. All property sets to be examined are displayed consecutively and the ascertained actual-value is entered. Use the buttons to have the property sets displayed or to be set to examine.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Return Orders</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the Return Orders that are created from the Test Order. This can be used if the Return Order is related to a Purchase Receipt.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Activities</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Test Order Activities</span> page, which displays all activities related to this Test Order. </p>
+                        <p class="ccTabellenText">An activity listed on this page may refer to more than one Test Order Property. It defines the starting and ending of individual testing activities and includes a link to assigned Resource and Work Center. All listed activities are parallel operations and therefore, the longest Execution Time defines the Ending Date-Time of the entire Test Order.</p>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Test Order Scheduling.htm">“Test Order Scheduling” on page 1</MadCap:xref> for more information. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h5 class="Heading5" MadCap:autonum="1.1.1.1.7    ">Actions Tab</h5>
+            <p class="ccTextvorlage">Several functions and reports are available for the Test Order by clicking the <span class="Bold">Actions</span> tab. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Test Orders_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Actions tab actions </p>
+        </div>
+        <p class="ccTextvorlage">Each function/report is described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 143px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Function / Report</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Copy Test Plan</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Copies a Test Plan which differs from the requirements in the master data for the examination of an item or test device, respectively. In doing so, the test types and property sets registered with the new Test Plan of the copied Test Plan are overwritten. The copying of a Test Plan is only possible when the <span class="Bold">Status</span> field is set to <span class="Italics">Created</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Copy Test Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Copies test types and their allocated property sets from an existing test order into the current test order. This function is equipped with a safety scan in the occasion that existing test types and property set lines are entered with the current test order. The copying of one test order into another is only possible if the <span class="Bold">Status</span> field of the destination order is set to <span class="Italics">Created</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Create Repeat Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The pre-condition for creating a repeat order is that the <span class="Bold">Status</span> field of the test order is set to <span class="Italics">Finished</span>. When this function is run, a message appears that states the test number of the repeat order. </p>
+                        <p class="ccTabellenText">The repeat order is created with the <span class="Bold">Status</span> field set to <span class="Italics">Created</span> and can be processed. In the <span class="Bold">Miscellaneous</span> FastTab, the number of the original (source) test order is displayed in the <span class="Bold">First Order No.</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calc. Sample Size</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Calculates the random sample quantity and assigns it in the <span class="Bold">Random Sample Quantity</span> field if the test order <span class="Bold">Status</span> field is set to <span class="Italics">Created</span>. </p>
+                        <p class="ccTabellenText">The basis for this calculation is the value in the <span class="Bold">Quantity to Test</span> field. Based on this value, a key letter is determined in the <span class="Bold">Sample Size/Inspection Level</span> page. The required sample size is allocated to this key letter in the <span class="Bold">Sample Instruction for Test Type</span> page. The sample size will be transferred to the <span class="Bold">Random Sample Quantity</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Release </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Populates the <span class="Bold">Test Type</span> and <span class="Bold">Test No.</span> fields on the <span class="Bold">Miscellaneous</span> FastTab, determines the current values from the Inspection Severity Plan, and populates the maximum accepted error quantity fields. It then changes the <span class="Bold">Status</span> to <span class="Italics">Value Recording</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Cancel</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used when a test order needs to be cancelled. This may be necessary, for example, if one determined value lies beyond the expected values and as a result all further values are irrelevant. Changes the <span class="Bold">Status</span> to <span class="Italics">Cancelled</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Finish</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used when all test order processing has been completed. Changes the <span class="Bold">Status</span> to <span class="Italics">Finished</span>; no changes can be made with this status.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Decision</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">On a Finished test order, opens the <span class="Bold">Lot-/Serial No. Administration</span> page, which is used to release or block a lot (refer to topic <MadCap:xref href="Lot Serial No Administration.htm">“Lot-/Serial No. Administration” on page 1</MadCap:xref> for more information).</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">If a test order that has not been finished but exists for a lot, this lot cannot be released. It is merely possible to block the lot or conditionally release it for production.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Reset Value Recording</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Resets the <span class="Bold">Status</span> of a test order from <span class="Italics">Value Recording</span> back to <span class="Italics">Created</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Create Return Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used to create a Purchase Return Order. This function is only available if the Test Order is related to a Purchase Receipt and the <span class="Bold">Inspection Result</span> = <span class="Italics">Items are not OK</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Compare Test Result</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used if the item has vendor-related Test Plans, the Test Order <span class="Bold">Status</span> = <span class="Italics">Testing Finished</span> or <span class="Italics">Finished</span>, and the <span class="Bold">Inspection Result</span> = <span class="Italics">Items are not OK</span>. The results are compared to the Sales Order Test Plans that are related to a single customer number.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Reset Inspection Result</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used to reset the value to <span class="Italics">Unspecified</span> in the <span class="Bold">Inspection Result</span> field (refer to topic <MadCap:xref href="Unspecified Inspection Result on Test Order.htm">“Unspecified Inspection Result on Test Order” on page 1</MadCap:xref>). This function can only be run by an authorized user.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Generates the Test Order report for preview or printing; typically an internal document.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Analysis Certificate</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Generates the Analysis Certificate report for preview or printing, which displays the test results of a test order. It is an external document that is provided to the customer.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Sample Spare Label</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Generates a Spare Label for a sample (refer to topic <MadCap:xref href="Sample Planning.htm">“Sample Planning” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace" />
+    </body>
+</html>

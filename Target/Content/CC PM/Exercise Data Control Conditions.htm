@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="806" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 MadCap:autonum="1.1.1    " class="Heading3"><a name="_Toc434256604"></a>Exercise – Data Control Conditions</h3>
+        <p class="ccTextvorlage">Set up a new condition called EXERCISE for the Production Order Line table, 5406 with the following controls:</p>
+        <ul>
+            <li class="ccAufzählungblau">If the <span class="Bold">Status</span> is Released, the Planning Pool line needs to display a green picture. </li>
+            <li class="ccAufzählungblau">If the <span class="Bold">Status</span> is Firm Planned, the Planning Pool line needs to display a yellow picture. </li>
+            <li class="ccAufzählungblau">In all other cases, the Planning Pool line needs to display a red picture.</li>
+        </ul>
+        <p class="ccDemoStepHeading">Create a New Data Control Condition</p>
+        <p class="ccTextvorlage">Follow these steps to create a new condition:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the Manufacturing, Administration menu, click <span class="Bold">Data Control Conditions</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, type EXERCISE.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Table No.</span> field, enter 5406.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type Production Order Status.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Def. Color</span> field, enter RED.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, in the <span class="Bold">Field No.</span> field, enter 1.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Operator</span> field, enter =.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Type</span> field, enter Value.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Value</span> field, enter 3.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Color</span> field, enter GREEN.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, in the <span class="Bold">Field No.</span> field, enter 1.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Operator</span> field, enter =.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Type</span> field, enter Value.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Value</span> field, enter 2.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Color</span> field, enter YELLOW.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Data Control Conditions</span> page and then <span class="Bold">Data Control Condition List</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Set the Filter in the Planning Pool</p>
+            <p class="ccTextvorlage">Follow these steps to set the filter in the <span class="Bold">Planning Pool</span> page:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">In the navigation pane, under Manufacturing, click <span class="Bold">Planning &gt; Planning Pool</span>.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Data Control</span> section, enter EXERCISE in the <span class="Bold">Condition</span> field.</li>
+                <li class="ccTextvorlageNumberedList">Press ENTER or TAB.</li>
+                <li class="ccTextvorlageNumberedList">Verify that the correct colors are used in the <span class="Bold">DC</span> field by setting a filter in the <span class="Bold">Prod. Order Status Filter</span> field on the <span class="Bold">General</span> FastTab.</li>
+            </ol>
+        </div>
+    </body>
+</html>

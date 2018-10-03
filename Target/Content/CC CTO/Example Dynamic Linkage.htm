@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434567994"></a>Example – Dynamic Linkage of Items</h3>
+        <p class="ccTextvorlage">During the dynamic linkage of items, a dummy or a substitute symbol item in the Dynamic Master BOM is replaced by an item that is selected in the checklist.</p>
+        <p class="ccTextvorlage">In the Master BOM, item D-999999 is registered as the dummy or substitute symbol item. This item must be set up with the COMP attribute, which matches the default attribute defined in the <span class="Bold">Variable for Component</span> field in the <span class="Bold">Configure to Order Setup</span> page (refer to topic <MadCap:xref href="Dynamic BOM FastTab.htm#_Ref402686651">“Dynamic BOM FastTab” on page 1</MadCap:xref>). The attribute was set up on the item in the Master BOM line by clicking the <span class="Bold">Lines FastTab &gt; Line &gt; Attributes</span>. In the <span class="Bold">Formula Value</span> field, the COLOR variable is registered, thus creating the link to the checklist line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Dynamic Linkage.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Functionality for Dynamic Linkage of Item in the Master BOM Template</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the Checklist Template, the corresponding line is set up with <span class="Bold">Input Type</span> = <span class="Italics">Text</span>, <span class="Bold">Variable for Dynamic BOM</span> = <span class="Italics">COLOR</span>, <span class="Bold">Component Type</span> = <span class="Italics">Item</span> and <span class="Bold">Item Category Code</span> = <span class="Italics">COLOR</span>.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Dynamic Linkage_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Dynamic Linkage of Item in the Checklist Template setup</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Based on these settings, in the document checklist, the <span class="Bold">Input</span> field on the “Select standard color” line will contain an arrow that opens a list of items that are set up with the <span class="Bold">Item Category Code</span> of COLOR. The item selected is stored in the COLOR variable and will later transfer to the Document BOM.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Dynamic Linkage_2.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 403px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Item lookup in document checklist</p>
+        </div>
+        <p class="ccTextvorlage">Now, when the Document BOM is opened, item D-999999 is replaced by the item selected in the checklist (in this example, item 7003 “Ruby Red”). </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Dynamic Linkage_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Result of the dynamic item linkage in the Document BOM</p>
+    </body>
+</html>

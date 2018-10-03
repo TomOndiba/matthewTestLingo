@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="841" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Subcontractor Processing with Placing Units</h3>
+        <p>Subcontractor quotes can be brought into the BoQ Calculation through the use of the <span class="CCBausteinInhaltZchn">cc|purchase quotes manager</span> (PQM) with the placing units. With PQM, different vendors can be selected for quoting the external services/items, and then the selected vendor and costs are transferred automatically to the Execution Units and BoQ Budget Calculation. Once the PQM process is complete, further processing of the BoQ job can continue, such as creating the PaC job and beginning the procurement processes.</p>
+        <p>This section describes how to use placing units and the PQM to choose a vendor.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Example – Subcontractor Quoting with PQM</h4>
+        <p>In this example, a job has been set up with various BoQ Budget Calculation entries for a construction site. The cables and lines need to be subcontracted to a vendor with the materials and skills for installation. CRONUS International Ltd. has two vendors for this purpose: 10000 and 20000. To get the best price and selection, the PQM will be used to send a quote to both vendors. </p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.1    ">Create Execution Unit</h5>
+        <p>The first step of the subcontractor quoting process is to create the Execution Unit for the BoQ positions that will be subcontracted to a vendor. This example starts in the BoQ Position List, but note that the Execution Units can also be accessed from the Job Card/Jobs list.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: BoQ Position List with subcontractor quoting needs</p>
+        <p class="ccTextvorlage">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Execution Units </span>to open the <span class="Bold">Execution Units</span> page. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Execution Units page</p>
+        <p class="ccTextvorlage">Click <span class="Bold">New</span> to create an Execution Unit.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Execution Unit page</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Code</span> field, enter a unique code for this execution unit. Leave the <span class="Bold">Type</span> field set to <span class="Italics">Placing Unit</span>, and then enter a <span class="Bold">Description</span> of the execution unit.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Execution Unit header populated</p>
+        <p class="ccTextvorlage">To add the BoQ Positions to the Execution Unit, use the lookup in the <span class="Bold">BoQ Pos. No.</span> field in the <span class="Bold">Lines</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Opening the BoQ Position List for addition to Execution Unit lines</p>
+        <p class="ccTextvorlage">Select the BoQ Positions to add to the Execution Unit. To add a position with sub-positions, select the main position. In this example, the Cables &amp; Lines position is selected, which will include the two sub-positions.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Cables &amp; Lines selection for addition to execution unit</p>
+        <p class="ccTextvorlage">A message appears asking if the found substructure should be expanded. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_6.png" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Substructure expansion message</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Yes</span>. The Execution Unit lines are populated with the BoQ Positions.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: BoQ Positions added to the Execution Unit</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.2    "><a name="Create"></a>Create Quotes with PQM</h5>
+        <p>Now that the lines have been updated with the BoQ positions, the quoting process can begin. </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">This example shows basic processing using PQM. It does not provide an overview of or any setup/detailed processing information. Therefore, business practices will typically be more intensive than what is demonstrated in this exercise. <MadCap:annotation MadCap:createDate="2018-06-03T16:58:17.4028387-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="Need new reference since not in manual " MadCap:editor="NTadajewski0100" MadCap:editDate="2018-06-03T16:58:37.5281781-05:00">Refer to topic <MadCap:xref href="../CC PR/cc pqm.htm">“cc|purchase quotes manager” on page 1</MadCap:xref> for more information about using the PQM.</MadCap:annotation></p>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">Create PQM</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_8.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Preparing to start the quoting process with PQM</p>
+        <p class="ccTextvorlage">The <span class="Bold">PQM</span> page opens with relevant information from the Execution Unit.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_9.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: PQM page created from execution unit</p>
+        <p class="ccTextvorlage">Vendors must be assigned before quotes can be created. In the <span class="Bold">General</span> FastTab, click the <span class="Bold">Assigned Vendors</span> field to open the <span class="Bold">PQM Vendors</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_10.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Assigning vendors to the PQM</p>
+        <p class="ccTextvorlage">Click <span class="Bold">New</span> to add each vendor to be included in the quoting process.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_11.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Vendors assigned to the PQM </p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to complete the vendor assignment. The value in the <span class="Bold">Assigned Vendors</span> field is updated accordingly.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_12.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Preparing to create purchase quotes to assigned vendors</p>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">Create Purch. Quotes</span>.The quotes are created and the <span class="Bold">PQM Matrix</span> page opens. Note that this page can be opened from the ribbon also by clicking <span class="Bold">Purchase Quotes Matrix</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_13.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: PQM Matrix opened by running the Create Purch. Quotes function</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Show Matrix</span> to open the <span class="Bold">PQM Placing Matrix</span> page, which lists the BoQ Positions as well as the two vendors for quoting.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_14.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: PQM Placing Matrix</p>
+        <p class="ccTextvorlage">At this point, in a typical process, the quotes have been sent to the vendors and now each will be updated with the quoted costs from the vendor. On either “Normal Position” line, click the value in the field for vendor 10000. The related purchase quote opens. </p>
+        <p class="ccTextvorlage">Note that the project number and execution unit code appear in the <span class="Bold">General</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_15.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Purchase Quote highlighting project and execution unit codes, and empty cost in lines</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Direct Unit Cost</span> field on the substructure lines, enter the quoted costs from the vendor. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_16.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Purchase Quote lines updated with costs from vendor 10000</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the Purchase Quote. In the <span class="Bold">PQM Placing Matrix</span> page, click <span class="Bold">Refresh</span> to update the line for vendor 10000 with the individual costs. If lead time calculations were used, the dates would indicate material delivery.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_17.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 18">: Costs from vendor 10000 updated for both BoQ Position lines</p>
+        <p class="ccTextvorlage">Next, repeat the same process for vendor 20000. Click the value in either field and in the Purchase Quote, enter the quoted costs.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_18.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 19">: Purchase Quote lines updated with costs from vendor 20000</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the Purchase Quote. In the <span class="Bold">PQM Placing Matrix</span> page, click <span class="Bold">Refresh</span> to update the line for vendor 20000 with the individual costs.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_19.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 20">: Costs from vendor 20000 updated for both BoQ Position lines</p>
+        <p class="ccTextvorlage">Now that the quotes have been updated, the placing (vendor selection) process can begin. On the ribbon, click <span class="Bold">Placing</span>. A message appears asking to use all lines or selected lines only.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_20.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 21">: Placing line selection message</p>
+        <p class="ccTextvorlage">With the default set to <span class="Bold">All lines</span>, click <span class="Bold">OK</span>. The <span class="Bold">PQM Placing</span> page opens.</p>
+        <p class="ccTextvorlage">In the middle section, the preferred vendor can be selected manually in the <span class="Bold">Vendor No.</span> field, or the best price can be selected automatically. To choose the vendor manually, clear the <span class="Bold">Select Best Price</span> check box. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_21.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 22">: PQM Placing page</p>
+        <p class="ccTextvorlage">In this example, vendor 10000 is the preferred vendor and had the best price, so the <span class="Bold">Select Best Price</span> check box remains selected. </p>
+        <p class="ccTextvorlage">In the <span class="Bold">Options</span> FastTab, the <span class="Bold">Update Source Data</span> check box is selected in order to transfer the costs to the execution unit and BoQ positions.</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to complete the placing process. The PQM Placing Matrix is updated to indicate the winning vendor (information cleared for vendor 20000) and that the lines were placed.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_22.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 23">: PQM Placing Matrix with placing information</p>
+        <p class="ccTextvorlage">Close the open pages to return to the <span class="Bold">Execution Unit</span> page. The costs and purchase amounts from the quoting process have been added.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_23.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 24">: Unit Cost and Purchase Line Amounts added to Execution Unit</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">On the ribbon, click <span class="Bold">Update Controlling Values</span> to update the values in the <span class="Bold">Controlling</span> FastTab. Note that there are differences between the original and budgeted values because no changes were made.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_24.png" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 25">: Updated values in the Controlling FastTab</p>
+        </div>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the Execution Unit and return to the BoQ Position List. Note that the prices have been updated, based on the new unit costs and settings in the BoQ Budget Calculation.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_25.png" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 26">: Prices updated in BoQ Position List based on costs in the BoQ Budget Calculation</p>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">Budget Calculation</span>. The placing process created new BoQ Budget Calculation lines with the external service component, which have the transferred Direct Unit Costs.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Subcontracting Processing_26.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 27">: New external service component lines in BoQ Budget Calculation with costs from the PQM placing process</p>
+        <p class="ccTextvorlage"> </p>
+    </body>
+</html>

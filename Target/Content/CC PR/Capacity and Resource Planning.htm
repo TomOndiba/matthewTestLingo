@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:fileTags="StatusFileTags.5 Needs to be Finished with Edits" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref383418531"></a><a name="_Ref383503258"></a><a name="_Toc445394487"></a>Capacity and Resource Planning</h2>
+        <p class="ccTextvorlage">The enhanced capacity and resource planning capabilities within <span class="CCBausteinInhaltZchn">cc|project</span> helps plan resources in the same way production can be planned, thus providing greater resource visibility into projects.</p>
+        <p class="ccTextvorlage">By using the integrated capacity and resource planning function in <span class="CCBausteinInhaltZchn">cc|project</span>, resources can be allocated during the planning status of a project. This might include actual resources (individual employees and resource groups) or other assets that are relevant to the planning procedure, such as automotive vehicles and machines. </p>
+        <p class="ccTextvorlage">Vacation Management is also included within the resource planning function. Approval controls are integrated to manage employees that have been assigned to individual projects (refer to topic <MadCap:xref href="Vacation Administration.htm#_Ref382152844">“Vacation Administration” on page 1</MadCap:xref> for more information. </p>
+        <p class="ccTextvorlage">This section includes information on calculating capacities, managing resource calendars, synchronizing calendar entries, object planning, scheduling times across all resources and planning using employee groups.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc445394488"></a>Provide Capacity</h3>
+        <p class="ccTextvorlage">The capacity for the internal resources must be set up before availability can be calculated.  </p>
+        <p class="ccTextvorlage">Capacity is assigned to each person by running the “Create Person Capacity” function from the Resource Card. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Capacity and Resource Planning.png" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Create Person Capacity request page</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Running this function deletes existing entries and creates new capacity entries. Select the <span class="Bold">Keep History</span> check box in the <span class="Bold">Options</span> FastTab to retain existing capacity entries.</p>
+        <p class="ccTextvorlage">The calculation uses the setup from the <span class="Bold">Base Calendar Code</span> and <span class="Bold">Job Work-Hour Template Code</span> fields on the <span class="Bold">Person</span> FastTab on the Resource Card.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Capacity and Resource Planning_1.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Resource Card, Person FastTab</p>
+        <p class="ccTextvorlage">The capacities for individual persons can be viewed in the <span class="Bold">Planning View Person</span> page, accessed from the <span class="CCBausteinInhaltZchn">cc|project</span> menu by clicking <span class="Bold">Planning &gt; Person Planning</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Capacity and Resource Planning_2.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.25in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Planning View Person showing monthly capacity per person</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The values displayed in the <span class="Bold">Planning View Person</span> page are defaulted from the <span class="Bold">Planning</span> FastTab in the <span class="Bold">Jobs Setup</span> page but can be changed on the <span class="Bold">View Options</span> FastTab.</p>
+        <p class="ccTextvorlage">The capacity for a Resource Group (based on capacities for every person) is summarized in the <span class="Bold">Planning View Person Groups</span> page, accessed from the <span class="CCBausteinInhaltZchn">cc|project</span> menu by clicking <span class="Bold">Planning &gt; Resource Groups Planning</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Capacity and Resource Planning_3.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.25in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Planning View Person Groups showing monthly capacity by resource group</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Ref383503173"></a><a name="_Toc445394489"></a>Assign Planning Resources</h3>
+        <p class="ccTextvorlage">On the <span class="Bold">Planning Processes</span> page, planning resources can be entered in the <span class="Bold">Assigned Resource No.</span> field. This can be done directly in the field or by clicking the AssistEdit button to open the <span class="Bold">Job Process</span> page for entering in the lines. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Capacity and Resource Planning_4.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Planning Processes showing assigned resources, capacity and work planned hours</p>
+        <p class="ccTextvorlage">Every Planning Resource from the Job Team can be used, as well as Persons and Resource Groups.</p>
+        <p class="ccTextvorlage">After the assignments are done, the planned hours are allocated to the resources as displayed in the <span class="Bold">Work Planned Hours</span> field. The allocation is equal, but it can be re-allocated manually in the <span class="Bold">Assigned Resources</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Capacity and Resource Planning_5.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Resources assigned to the Consulting lines</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Ref383508672"></a><a name="_Ref383513384"></a><a name="_Toc445394490"></a>Calculation of Schedule Entries</h3>
+        <p class="ccTextvorlage">Capacity planning can begin once the processes are linked and the planning resources have been assigned. The following prerequisites exist:</p>
+        <ul>
+            <li class="ccAufzählungblau">Planning quantity and planning resources are known. </li>
+            <li class="ccAufzählungblau">Installation and customer testing are not supposed to be calculated by effort. In all other lines, the <span class="Bold">Effort driven</span> check box is selected, which controls if the process, start date or end date should be limited by their planned availabilities. </li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Capacity and Resource Planning_6.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Effort driven planning process lines</p>
+        <p class="ccTextvorlage">If capacity limitations prevent an effort driven process to be finished with its planned resources, then the finishing date of this process is automatically assigned to the last planned date. </p>
+        <p class="ccTextvorlage">For non-effort driven processes, the start and finish date will be calculated based on the process duration independent of their related process planning.  </p>
+        <p class="ccTextvorlage">For process planning without the calculation of predecessors and successors, run the “Schedule Process” function by clicking <span class="Bold">Actions &gt; Schedule &gt; Schedule Process</span>. </p>
+        <p class="ccTextvorlage">For linked process planning, run the “Schedule Processes” function by clicking <span class="Bold">Actions &gt; Schedule (with Links) &gt; Schedule Processes</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Capacity and Resource Planning_7.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Result of running the Schedule Processes function</p>
+        <p class="ccTextvorlage">The calendar entries are the result of the schedule process and the calculation is always based on available capacities. If no <span class="Bold">Schedule Type</span> is selected, the <span class="Italics">Simulated</span> option is used as the default (refer to topic <MadCap:xref href="#_Ref382413078">“Scheduling and Schedule Types” on page 1</MadCap:xref>). </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Capacity and Resource Planning_8.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Job Schedule Entries for the Consulting line</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Ref382413078"></a><a name="_Toc445394491"></a>Scheduling and Schedule Types</h3>
+            <p class="ccTextvorlage">The different <span class="Bold">Schedule Types</span> are described in the following table.</p>
+            <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 114px;" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                            <p class="ccTebellenüberschrift">Schedule Type</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                            <p class="ccTebellenüberschrift">Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Simulated</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Simulated calendar entries are NOT used to calculate availabilities of planning resources. </p>
+                            <p class="ccTabellenText">Every new planning deletes all simulated entries and creates new ones.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Planned</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Planned calendar entries are used for availabilities.</p>
+                            <p class="ccTabellenText">Every new planning deletes all planned entries and creates new ones.</p>
+                            <p class="ccTabellenTextNoteheading">Note</p>
+                            <p class="ccTabellenTextNotebody">This is the default for all process lines.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                            <p class="ccTabellenText">Fixed</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                            <p class="ccTabellenText">Fixed calendar entries are used for availabilities.</p>
+                            <p class="ccTabellenText">A new planning does NOT delete these entries.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="ccTextvorlageaftertable">From a process view, the planning can be changed rapidly. Therefore, changing the <span class="Bold">Schedule Type</span> directly in the overview automatically changes all related processes to this planning level. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Capacity and Resource Planning_9.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Planning Processes highlighting the Schedule Type</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The “Update Scheduling” function on the <span class="Bold">Actions</span> tab provides several functions that can be applied to marked process lines (as seen in <MadCap:xref href="#_Ref382730816" class="Figure">Fig. 10</MadCap:xref>). </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Capacity and Resource Planning_10.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 11"><a name="_Ref382730816"></a>: Update Scheduling options</p>
+        </div>
+        <p class="ccTextvorlage">Released lines are available for selection in the Job Calendar (<span class="CCBausteinInhaltZchn">cc|project</span> menu &gt; <span class="Bold">Planning</span>) by clicking the drop-down arrow in the <span class="Bold">Job Process No.</span> field. </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.5    "><a name="_Ref383513974"></a><a name="_Toc445394492"></a>Availability Overview</h3>
+        <p class="ccTextvorlage">An availability overview is accessible from different planning-related pages.</p>
+        <p class="ccTextvorlage">On the <span class="Bold">Planning Processes</span> page, select a line to review and then click <span class="Bold">Resource Availability</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Capacity and Resource Planning_11.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Planning Processes highlighting the Resource Availability action</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The <span class="Bold">Planning Res. Availability</span> page is preset with the following criteria:</p>
+            <ul>
+                <li class="ccAufzählungblau">Start Date (in this case “Start” from process)</li>
+                <li class="ccAufzählungblau">Resource Group Filter and/or Person Filter, depending on the assigned planning resources</li>
+                <li class="ccAufzählungblau">Process No.</li>
+            </ul>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Capacity and Resource Planning_12.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Daily planning availability for resources P001|P016 for the Consulting process (PI0000104)</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.6    "><a name="_Ref383505045"></a><a name="_Toc445394493"></a>Resource Allocation</h3>
+            <p class="ccTextvorlage">Using resource groups is recommended if a job needs to be planned but there is some uncertainty about which employee will be available for the task but the task needs to be scheduled anyway. The planning can be amended in the short term with the desired resource. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Capacity and Resource Planning_13.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Planning Processes highlighting the Resource Allocation action</p>
+        </div>
+        <p class="ccTextvorlage">While planning with a resource group, the scheduled dates are assigned to all members of the group and the group member availability will be reconciled with the resource group. To plan with a resource group, click <span class="Bold">Resource Allocation</span> on the ribbon. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Capacity and Resource Planning_14.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Planning Res. Allocation </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the <span class="Bold">Planning Res. Allocation</span> page, define the options for the matrix and then click <span class="Bold">Show Matrix</span>.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Capacity and Resource Planning_15.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Planning Res. Allocation Matrix</p>
+        </div>
+        <p class="ccTextvorlage">In this example, the hours in the <span class="Bold">Process Planning</span> column should be distributed for resource P001. </p>
+        <p class="ccTextvorlage">First, the available resource capacities should be reviewed. On the line for Period Start 3/18/2019, click the value in the P001 column to open the <span class="Bold">Planning Allocation</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Capacity and Resource Planning_16.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Planning Allocation </p>
+        <p class="ccTextvorlage">The group availability is shown and in this case it is sufficient for this task. In the <span class="Bold">Person Process Planning</span> field, enter the full quantity of hours for the person, for example 8 hours.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Capacity and Resource Planning_17.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 18"><a name="_Ref382415337"></a>: Planning Allocation with group/person allocation</p>
+        <p class="ccTextvorlage">
+            <MadCap:xref href="#_Ref382415337" class="Figure">Fig. 18</MadCap:xref> shows the result of the resource allocation: </p>
+        <ul>
+            <li class="ccAufzählungblau">P001 – 32 available | 8 planned</li>
+            <li class="ccAufzählungblau">Process Planning – 0h (remaining to be assigned)</li>
+        </ul>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.7    "><a name="_Ref383508086"></a><a name="_Toc445394494"></a>Detect Conflicts</h3>
+            <p class="ccTextvorlage">Planning can become a complex issue and it can be hard at times to keep the full picture in view. It is extremely important to spot planning conflicts in the system to be able to regulate them. </p>
+            <p class="ccTextvorlage"><span class="CCBausteinInhaltZchn">cc|project</span> supports the process of finding conflicts with the <span class="Bold">Signal Conflict</span> field’s two types of planning conflicts:  </p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">Predecessor/Successor: Start and End Date do not match</li>
+                <li class="ccTextvorlageNumberedList">Planned Date (Start or End of the process) cannot be matched (planned too early/too late) </li>
+            </ol>
+            <h4 class="Heading4" MadCap:autonum="1.1.7.1    ">Predecessor/Successor Conflict </h4>
+            <p class="ccTextvorlage">There are currently two fields to indicate predecessor/successor conflicts:</p>
+            <ul>
+                <li class="ccAufzählungblau">The Signal Conflict field displays “!&gt;” for successor conflict and “!&lt;” for predecessor conflict.</li>
+                <li class="ccAufzählungblau">The Signal Conflicts field displays (in bolded blue) an F for successor conflict and a P for predecessor conflict.</li>
+            </ul>
+            <p class="ccTextvorlage">In this example, the customer processes (IDs 13 and 14) are causing a conflict because the successor (ID 14, Customer Test OK) is set to be started/finished before the predecessor (ID 13, Customer Test (ID 13).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Capacity and Resource Planning_18.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 19">: Predecessor/Successor Conflict on customer testing lines (showing both signal conflict options)</p>
+        </div>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.7.2    ">Planning Conflicts</h4>
+            <p class="ccTextvorlage">There are currently two fields to indicate planning conflicts:</p>
+            <ul>
+                <li class="ccAufzählungblau">The <span class="Bold">Signal Conflict</span> field displays “X+” for a planned after finish conflict and “-X” for a planned before start conflict.</li>
+                <li class="ccAufzählungblau">The <span class="Bold">Signal Conflicts</span> field displays (in bolded blue) “T+” for planned after finish and “-T” for planned before start.</li>
+            </ul>
+            <p class="ccTextvorlage">Planning Conflicts are usually a result of differences between:</p>
+            <ul>
+                <li class="ccAufzählungblau">Capacity independent planning of processes</li>
+                <li class="ccAufzählungblau">Capacity dependent planning of resources</li>
+            </ul>
+            <p class="ccTextvorlage">This becomes a problem when there are not enough resources available or additional deadlines need to be set after the desired finishing date or a reverse planning must be done (refer to example in <MadCap:xref href="#_Ref445309612" class="Figure">Fig. 19</MadCap:xref>).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Capacity and Resource Planning_19.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 20"><a name="_Ref445309612"></a>: Planning Conflict on installation line (showing both signal conflict options)</p>
+        </div>
+    </body>
+</html>

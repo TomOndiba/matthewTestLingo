@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="898" MadCap:lastWidth="605" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc434929975"></a>Internal Service Orders</h2>
+        <p class="ccTextvorlage">When dealing with machine type items, it may be necessary to post a Service Order for non-customer related purposes. The invoicing should be done using the general purchase Unit Cost for items and an internal amount for services as Sales Price.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434929976"></a>Exercise – Create an Internal Service Order</h3>
+        <p class="ccTextvorlage">A new excavator must be assembled after it is received and before it can be sold or rented. The services that are expended for that have to be posted using an Internal Service Order. </p>
+        <p class="ccTextvorlage">Before the Service Order can be created, the Service Order Type for internal services must be set up.</p>
+        <p class="ccDemoStepHeading">Set Up an Internal Service Order Type</p>
+        <p class="ccTextvorlage">Follow these steps to set up an internal Service Order Type:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Service &gt; Administration &gt; Service Order Types</span>.</li>
+            <li class="ccTextvorlageNumberedList">Use the “Choose Columns” function to add the <span class="Bold">Internal Cost</span> field.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Code</span> field, type INTERNAL.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type Internal Services.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Internal Cost</span> check box.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Internal Service Orders.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 316px;" MadCap:mediastyle="@media print { max-width: 4.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: New Service Order Type for internal services</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Service Order Types</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create an Internal Service Order</p>
+            <p class="ccTextvorlage">Follow these steps to create the internal service order:</p>
+        </div>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Service &gt; Order Processing &gt; Service Orders</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span> and then press ENTER to automatically populate the <span class="Bold">No.</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type Internal Service Order.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Customer No.</span> field, enter R-99999.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Service Order Type</span> field, select INTERNAL.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lines</span> FastTab, click the arrow in the <span class="Bold">Service Item No.</span> field.</li>
+            <li class="ccTextvorlageNumberedList">Select the line for <span class="Bold">Item No.</span> = R-10000-01 and <span class="Bold">Serial No.</span> = RTW150-00003 and then click <span class="Bold">OK</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Internal Service Orders_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Internal Service Order </p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Service Item Worksheet</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, select <span class="Italics">Item</span> in the <span class="Bold">Type</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter 70104.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Location</span> field, enter BLUE.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, enter 1.</li>
+            <li class="ccTextvorlageNumberedList">Notice that the <span class="Bold">Unit Price</span> is 1.40 (the Unit Cost from the Item Card).</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the open pages.</li>
+        </ol>
+    </body>
+</html>

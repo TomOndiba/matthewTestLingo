@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:fileTags="StatusFileTags.6 Needs to be Sent for Review" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434929905"></a>Rent Quotes</h2>
+        <p class="ccTextvorlage">In the <span class="Bold">Rent Quote</span> page, enter the subject to be rented, the period of renting and invoicing, and the price for the rate period. In addition to the Rate Code, the Rental Start Date, Rental End Date (optional), Rate Unit Price and Invoicing Period can be entered. The appropriate current period for invoicing is retrieved from the information entered in the <span class="Bold">Invoice Period</span>, <span class="Bold">Month Based</span> and <span class="Bold">Prepaid</span> fields. The price for this period depends on its length and the price for the rate period.</p>
+        <p class="ccTextvorlage">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|rental</span><span class="Bold"> &gt; Contract Management &gt; Rent Quotes</span> to view existing or create new Rent Quotes. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Rent Quotes.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: <MadCap:annotation MadCap:createDate="2018-08-24T11:08:01.8528348-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="Again - what is this Email Contract action? (Possibly) doesn't appear in the 2017 SP2 product config" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T11:08:42.3558088-05:00">Rent Quote page </MadCap:annotation></p>
+        <p class="ccTextvorlage">This page contains the same fields as the sales order, plus the rental-specific fields, which are described with other relevant fields in the following sections. </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434929906"></a>Lines FastTab</h3>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Lines</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 98px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rental Position</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies if the line is a <span class="Italics">Sales</span> or <span class="Italics">Rental</span> item or a <span class="Italics">Rate Component</span>. The <span class="Italics">Sales</span> option is the default, but it automatically changes to <span class="Italics">Rental</span> when a rental item is entered. </p>
+                        <p class="ccTabellenText">While it is unnecessary to select a value in this field when entering lines, it can be useful to change it to <span class="Italics">Rental</span> so that the Item No. list is filtered by rent items.</p>
+                        <p class="ccTabellenText">When the line is to be used as a <span class="Italics">Rate Component</span>, then this field must be set to <span class="Italics">Rate Part</span> or <span class="Italics">One-Time Invoicing</span>. A Rate Component can be manually entered below a Rental position and will be linked to that item line automatically.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies what is being rented or sold. The options are G/L Account, Item and Resource.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of the G/L Account, Item or Resource.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rate Component No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Contains the number of the Rate Component if the <span class="Bold">Rental Position</span> field is set to <span class="Italics">Rate Part</span> or <span class="Italics">One-Time Invoicing</span>. These lines are related to the item line above. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Description of the G/L Account, Item or Resource.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Location Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the <span class="Bold">Location Code</span> field on the <span class="Bold">Shipping</span> FastTab. If a Rental Location Code is specified on the <span class="Bold">Rental</span> FastTab on the Customer Card, it defaults to this field. </p>
+                        <p class="ccTabellenText">For Rental line types, this field must indicate the proper rental location to process the rent order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Customer Location Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the <span class="Bold">Customer Location Code</span> field on the Customer Card. This field must be filled in to process the rent order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Quantity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of units to be rented or sold.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit of Measure Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Measurement of units to be rented or sold.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rental Rate Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines the Rate Unit Price on the rental line as set up in the <span class="Bold">Rent Prices</span> or <span class="Bold">Line Discounts</span> pages.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Invoice Period</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines how the periods on the invoice are created. The options are:</p>
+                        <table>
+                            <col style="width: 215px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <p class="cctablenospacingwithbullets">Month</p>
+                                </td>
+                                <td>
+                                    <p class="cctablenospacingwithbullets">Half Year</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="cctablenospacingwithbullets">Two Months</p>
+                                </td>
+                                <td>
+                                    <p class="cctablenospacingwithbullets">Year</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="cctablenospacingwithbullets">Quarters</p>
+                                </td>
+                                <td>
+                                    <p class="cctablenospacingwithbullets">None</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p class="ccTabellenText">For more information, refer to topic <MadCap:xref href="Invoicing.htm#_Ref236733261">“Invoicing Parameters” on page 1</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Month Based</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, invoices are geared toward the calendar month. For example, if the contract period is 05/15/2019 through 08/31/2019 and this check box is selected, the first invoice period will be from 05/15/2019 through 05/31/2019, and then the next period will be 06/01/2019 through 06/30/2019, and so on. The price on the first period will be prorated accordingly.</p>
+                        <p class="ccTabellenText">For more information, refer to topic <MadCap:xref href="Invoicing.htm#_Ref237316924">“Invoice Periods and Month Based Date Calculations” on page 1</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prepaid</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the line is processed by the date it is invoiced and the account to which it is posted.</p>
+                        <p class="ccTabellenText">For more information, refer to topic <MadCap:xref href="Invoicing.htm#_Ref417370058">“Invoice Periods and Prepaid Date Calculations” on page 1</MadCap:xref>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rental Start Date </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Beginning of the rental contract period. This date is included in the item availability and is integral with the invoicing functionality (refer to topic <MadCap:xref href="Invoicing.htm#_Ref236733331">“Invoicing” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rental End Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">End of the rental contract period; this date is optional.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rental Return Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used with the return of the rental item (refer to topic <MadCap:xref href="Returns.htm#_Ref355092985">“Returns” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Next Invoice Period</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the next period to be invoiced after an invoice has been created. This field must be displayed using the “Choose Columns” function.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rate Unit Price</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Price from the Rental Rate Code/Rent Price combination set up for the rental item. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit Price Total Rental Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p>Total price for the complete rental duration:</p>
+                        <p class="ItalicsCentered"><span class="Italics">Number of Rate Periods resulting from the </span><span class="Italics"><br />Rental Start Date and Rental End Date fields * Rate Unit Price</span>
+                        </p>
+                        <p>For example:</p>
+                        <ul>
+                            <li class="ccAufzählung">If Rental Rate Code = MONTH, Rental Period = 2/1/2019 – 2/28/2019, and Rate Unit Price = 300, then the Unit Price Total Rental Time = 300.</li>
+                            <li class="ccAufzählung">If Rental Rate Code = DAY for the same period (28 days), and Rate Unit Price = 9.5, then Unit Price Total Rental Time = 266 (28 * 9.5).</li>
+                        </ul>
+                        <p class="ccTabellenText">The total is also based on whether the <span class="Bold">Month Based</span> check box is selected (refer to topic <MadCap:xref href="Invoicing.htm#_Ref236733403">“Invoicing” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Amount Total Rental Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Total price based on the following calculation:</p>
+                        <p class="ItalicsCentered">Quantity * Unit Price Total Rental Time - Rental Line Discount Amount</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Return Qty. to Receive / Return Qty. Received</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used with the return of the rental item (refer to topic <MadCap:xref href="Returns.htm#_Ref355092985">“Returns” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Qty. Extensions</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the number of extensions that have been processed for the order line (refer to topic <MadCap:xref href="Extensions.htm#_Ref237338128">“Extensions ” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Qty. Failures</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the number of failures that have been processed for the order line (refer to topic <MadCap:xref href="Failures.htm#_Ref280771265">“Failures” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">
+                            <MadCap:annotation MadCap:createDate="2017-10-06T09:30:56.7365367-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="New 2017 SP1\r\n\r\nDoes this belong in the Rent Quote topic, or is it more relevant on the Rent Order? There are many fields described on the Order but not on the Rent Reservation or Quote." MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:48:45.2749139-05:00">Machine No.</MadCap:annotation>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Automatically populates the <span class="Bold">Item No.</span> field on the rental contract line and the Serial No. in Item Tracking Lines with the corresponding numbers of the selected Machine. The <span class="Bold">Quantity</span> is also automatically set to 1, which is required when using this field. </p>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Machines.htm">“Machines” on page 1</MadCap:xref> for more information about setting up and working with Machines.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace">
+        </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434929907"></a>Rental FastTab</h3>
+        <p class="ccTextvorlage">As with other information entered at the header level, the information entered in the fields on the <span class="Bold">Rental</span> FastTab will default to the lines, making data entry simpler when entering multiple rental lines. The fields on this FastTab have no effect on sales positions.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Rent Quotes_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Rent Quote page, Rental FastTab </p>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="876" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref415832785"></a><a name="_Ref415832819"></a><a name="_Toc434256598"></a>Split Production Orders</h3>
+        <p class="ccTextvorlage">There are many reasons for splitting a production order, such as:</p>
+        <ul>
+            <li class="ccAufzählungblau">Disperse to more machines</li>
+            <li class="ccAufzählungblau">Multiple charge on one machine (mixing)</li>
+            <li class="ccAufzählungblau">Disperse the production quantity on different time schedules (part of sales order)</li>
+        </ul>
+        <p class="ccTextvorlage">There are multiple ways in which a production order can be split. In <span class="CCBausteinInhaltZchn">cc|process manufacturing</span>, new production orders are created per split line and the originating production order is deleted.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">Calculations are created for each new production order line if a production order is split (refer to topic <MadCap:xref href="Update Concurrent Calculations.htm#_Toc434256784">“Update Concurrent Calculations on Production Order Splitting” on page 1</MadCap:xref>).</p>
+        </div>
+        <p class="ccTextvorlage">The “Split Prod. Orders” function can be used in the <span class="Bold">Planning Pool</span> or <span class="Bold">Sequence Planning</span> pages, or directly on the Production Order line.</p>
+        <p class="ccTextvorlage">Select the production order line to split and then use the “Split Prod. Order Line” function:</p>
+        <ul>
+            <li class="ccAufzählungblau">Sequence Planning – On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Functions &gt; Split Prod. Order Line</span>.</li>
+            <li class="ccAufzählungblau">Planning Pool – On the <span class="Bold">Actions</span> tab, click <span class="Bold">Split Prod. Order Line</span>.</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Split Production Orders.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Selected production order line to split on the Planning Pool page</p>
+        <p class="ccTextvorlage">In the header of the <span class="Bold">Prod. Order Splitting</span> page, the quantity is displayed and depending on the entry, also the current split quantity and remaining quantity. </p>
+        <p class="ccTextvorlage">Each line can be split by work center and quantity. Only after the <span class="Bold">Quantity</span> is split in the lines can the split process continue.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Split Production Orders_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 272px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Production order line split allocations</p>
+        <p class="ccTextvorlage">For each line and each quantity, a new production order is created after the process is run.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Split Production Orders_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: New production orders from the split production order</p>
+        <p class="ccTextvorlage">As with the combine production order function, the original order tracking remains.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The split production order lines are marked as sequence planning when a sequence work center is used. </p>
+    </body>
+</html>

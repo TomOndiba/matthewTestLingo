@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">Exercise – PQM Processing on Job Budget Calculation</h2>
+        <p class="ccTextvorlage">Create a project that uses item D-7014 in the Job Budget Calculation. Then use the PQM to determine the best vendor from which to purchase 10 units of this item.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">This exercise uses the setup described in the topic <MadCap:xref href="PQM Setup.htm">“Setup” on page 1</MadCap:xref></p>
+        <p class="ccDemoStepHeading">Create PQM for Item D-7014</p>
+        <p class="ccTextvorlage">Follow these steps to create a PQM for item D-7014:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">On the navigation pane, click <span class="CCBausteinInhaltZchn">cc|project </span><span class="Bold">&gt; Jobs &gt; Jobs</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate and select the job, and then click <span class="Bold">Budget Calculation</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Job Budget Calculation</span> page, select the line for item D-7014 and then click <span class="Bold">Navigate &gt; Create</span> in the PQM menu group.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/PQM Processing on Job.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Creating PQM for item D-7014 on Job Budget Calculation line</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Notice that the  <span class="Bold">No.</span> and <span class="Bold">Description</span> fields are populated in the <span class="Bold">General</span> FastTab and the <span class="Bold">Lines</span> FastTab contains the following information from the Job Budget Calculation line:<ul MadCap:continue="true"><li class="ccTextvorlageNumberedList">Item number and description</li><li class="ccTextvorlageNumberedList">Quantity</li><li class="ccTextvorlageNumberedList">Vendor No. </li><li class="ccTextvorlageNumberedList">Unit Cost</li><li class="ccTextvorlageNumberedList">Order Date</li><li class="ccTextvorlageNumberedList">Total Direct Cost</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/PQM Processing on Job_1.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: PQM created from Job Budget Calculation line</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Navigate</span> &gt; <span class="Bold">Assigned Vendors</span>.</li>
+            <li class="ccTextvorlageNumberedList">Enter the following Lead Time Calculations:<ul><li class="ccTextvorlageNumberedList">Vendor 60000, Lead Time Calculation = 21D</li><li class="ccTextvorlageNumberedList">Vendor 61000, Lead Time Calculation = 28D</li><li class="ccTextvorlageNumberedList">Vendor 62000, Lead Time Calculation = 2W</li></ul></li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Assigned Vendors</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Actions &gt; Assigned Vendors &gt; Copy from Header to Lines</span>.<br />Notice that the value of <span class="Bold">Assigned Vendors</span> is 3 on the <span class="Bold">Lines</span> FastTab.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/PQM Processing on Job_2.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: PQM page with header and line information</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create Purchase Quotes for PQM Lines</p>
+            <p class="ccTextvorlage">Follow these steps to create the purchase quotes for the PQM lines:</p>
+            <ol>
+                <li class="ccTextvorlageNumberedList">On the <span class="Bold">Actions</span> tab, click <span class="Bold">Create Purch. Quotes</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Show Matrix</span>.<br />Notice that the price is populated for each quote, based on the purchase price of 10 units of item D-7014.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/PQM Processing on Job_3.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: PQM Placing Matrix, quotes with no pricing</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Close</span> to close the <span class="Bold">PQM Placing Matrix</span> page and then click <span class="Bold">OK</span> to return to the <span class="Bold">PQM</span> page.</li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lines</span> FastTab, notice that the:<ul><li class="ccTextvorlageNumberedList"><span class="Bold">Status Created</span>  field = Yes</li><li class="ccTextvorlageNumberedList"><span class="Bold">Status Verified, Status Placed</span> and <span class="Bold">Status Not Placed</span> fields = No</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/PQM Processing on Job_4.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Status fields updated on PQM Lines</p>
+        <p class="ccDemoStepHeading">Change Quote Status</p>
+        <p class="ccTextvorlage">Depending on business processes, the status of each quote can be changed to Verified once the quotes are validated by the vendors. To do so, follow these steps:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lines</span> FastTab, click the value in the <span class="Bold">Status Created</span> field to open the <span class="Bold">PQM Vendors</span> page.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/PQM Processing on Job_5.png" MadCap:mediastyle="@media print { max-width: 4.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: PQM Vendors with quote Status = Created</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">For each quote, change the <span class="Bold">Status</span> to <span class="Italics">Verified</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">PQM Vendors</span> page. </li>
+            <li class="ccTextvorlageNumberedList">If necessary, refresh the <span class="Bold">PQM</span> page and notice that the:<ul><li class="ccTextvorlageNumberedList"><span class="Bold">Status Verified</span> field = Yes</li><li class="ccTextvorlageNumberedList"><span class="Bold">Status Created, Status Placed</span> and <span class="Bold">Status Not Placed</span> fields = No</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/PQM Processing on Job_6.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Status fields updated on PQM Lines</p>
+        <p class="ccDemoStepHeading">Place Best Quote</p>
+        <p class="ccTextvorlage">Follow these steps to  place the best quote:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">Based on the price and delivery date, the quote for vendor 62000 should be chosen.</li>
+            <li class="ccTextvorlageNumberedList">Open the <span class="Bold">PQM Placing Matrix</span> page (<span class="Bold">Home &gt; Purchase Quotes Matrix &gt; Show Matrix</span>).</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Placing</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to select all lines for placement.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">PQM Placing</span> page, allow the system to select the best price (which will be vendor 62000). Alternatively, enter 62000 in the <span class="Bold">Vendor No.</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Options</span> FastTab, select the <span class="Bold">Update Source Data</span> check box.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/PQM Processing on Job_7.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Settings on the PQM Placing page</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">PQM Placing Matrix</span> page, notice that the:<ul><li class="ccTextvorlageNumberedList"><span class="Bold">Assigned</span> check box is selected</li><li class="ccTextvorlageNumberedList">Values are cleared for vendors 60000 and 61000</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/PQM Processing on Job_8.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: PQM Placing Matrix, quote assigned for vendor 62000</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Close</span> to close the <span class="Bold">PQM Placing Matrix</span> page and then click <span class="Bold">OK</span> to return to the <span class="Bold">PQM</span> page.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lines</span> FastTab, notice that the:<ul><li class="ccTextvorlageNumberedList"><span class="Bold">Status Created</span> and <span class="Bold">Status Verified</span> fields = No</li><li class="ccTextvorlageNumberedList"><span class="Bold">Status Placed</span> and <span class="Bold">Status Not Placed</span> fields = Yes</li><li class="ccTextvorlageNumberedList"><span class="Bold">Placing Vendor No.</span> = 62000</li><li class="ccTextvorlageNumberedList"><span class="Bold">Placing Unit Cost</span> = 48.50 (direct unit cost from placed purchase quote)</li><li class="ccTextvorlageNumberedList"><span class="Bold">Difference Unit Cost</span> = -1.50 (Source Unit Cost - Placing Unit Cost)</li><li class="ccTextvorlageNumberedList"><span class="Bold">Assigned</span> check box is selected</li><li class="ccTextvorlageNumberedList"><span class="Bold">Source Status</span> = Updated (due to <span class="Bold">Update Source Data</span> check box selected)</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/PQM Processing on Job_9.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Status and placing fields updated on PQM Lines</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click the value in the <span class="Bold">Status Placed</span> field. <br />Notice that the quote for vendor 62000 appears.</li>
+            <li class="ccTextvorlageNumberedList">Go back to the <span class="Bold">PQM</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Click the value in the <span class="Bold">Status Not Placed</span> field. <br />Notice that the quotes for vendors 60000 and 61000 appear.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/PQM Processing on Job_10.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Placed quote for vendor 62000 and Not Placed quotes for vendors 60000 and 61000</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Go back to the <span class="Bold">PQM</span> page.</li>
+            <li class="ccTextvorlageNumberedList">If no further changes need to be made, click <span class="Bold">Finish</span> on the ribbon to complete the processing for this PQM.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Review Job Budget Calculation Line</p>
+        <p>Follow these steps to review the changes to the Job Budget Calculation line:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">PQM</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Refresh the <span class="Bold">Job Budget Calculation</span> page, if necessary. Notice that the:<ul><li class="ccTextvorlageNumberedList">Vendor No. = 62000</li><li class="ccTextvorlageNumberedList">Direct Unit Cost = 48.50</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/PQM Processing on Job_11.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Updated Job Budget Calculation line for item D-7014</p>
+        <p class="ccTextvorlage">To access the PQM again at any time for this Job Budget Calculation line, click <span class="Bold">Show PQM</span> on the <span class="Bold">Navigate </span>FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/PQM Processing on Job_12.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: PQM page reopened from Job Budget Calculation line</p>
+        <p class="ccTextvorlage">As previously noted, the quotes can be deleted or kept, depending on the company’s business processes for procurement.</p>
+    </body>
+</html>

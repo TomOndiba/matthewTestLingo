@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Order-Specific Lot Requirements</h3>
+        <p class="ccTextvorlage">In addition to suggesting lots based on Test Plans at the customer level, it is possible to base the suggestion on the sales order line level.</p>
+        <p class="ccTextvorlage">This function allows users to copy the existing sales order Test Plan to a sales order line and edit the accepted values or tolerances (upper/lower limit) of each property. This criterion will be used in the “Suggest Lots” function to search for lots in inventory that fulfill the accepted value or that are within the tolerance. </p>
+        <p class="BoldItalics12pt">Example</p>
+        <p class="ccTextvorlage">In this example, customer 20000 orders 250 units of item Q-40005 that has 300 units on hand in three lots: LOT1000, LOT1001 and LOT1002. This customer has defined that net weight must be between 200–205 but only LOT1000 and LOT1002 meet this criterion; and therefore 50 units cannot be fulfilled. The customer decides that a slight variance is acceptable so the entire order can ship immediately.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Order-Specific Lot Req.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Lot Selection page showing lots that are available for the customer </p>
+        <p class="ccTextvorlage">The order processor creates an order-specific test plan for the sales line and runs the “Suggest Lots” function again.</p>
+        <p class="ccTextvorlage">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Order-specific Test Plan</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Order-Specific Lot Req_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Accessing the order-specific test plan setup</p>
+        <p class="ccTextvorlage">The <span class="Bold">Test Plan Setup</span> page opens with an Order-specific line that uses the customer-specific Test Plan in the <span class="Bold">Test Plan No.</span> field. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Order-Specific Lot Req_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Order-specific test plan with customer-specific test plan number </p>
+        <p class="ccTextvorlage">Click <span class="Bold">Copy Test Plan</span> on the ribbon. </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">A new test plan is created from the customer-specific test plan and is inserted into the <span class="Bold">Test Plan No.</span> field.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Order-Specific Lot Req_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Order-specific test plan </p>
+        </div>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">Customize Test Plan</span> to make the order-specific changes. In the <span class="Bold">Test Plan Card</span> page, update information on the <span class="Bold">General</span> FastTab as needed. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Order-Specific Lot Req_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Test Plan Card for order-specific test plan </p>
+        <p class="ccTextvorlage">Select the first line and then click <span class="Bold">Property Set &gt; Card</span> on the <span class="Bold">Lines</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Order-Specific Lot Req_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Test Plan Prop. Set Card for order-specific test plan </p>
+        <p class="ccTextvorlage">In the <span class="Bold">Lower Limit</span> field for the net weight test property field, change the value from 200.00 to 198.00.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Order-Specific Lot Req_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Modified Test Plan Property Set for order-specific test plan </p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the <span class="Bold">Test Plan Prop. Set Card</span> page. </p>
+        <p class="ccTextvorlage">On the <span class="Bold">General</span> FastTab of the <span class="Bold">Test Plan Card</span> page, enter a date in the <span class="Bold">Valid from</span> field and then change the <span class="Bold">Status</span> to <span class="Italics">Certified</span>. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Order-Specific Lot Req_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Certified order-specific test plan </p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the <span class="Bold">Test Plan Card</span> page and then close the <span class="Bold">Test Plan Setup</span> page.</p>
+        <p class="ccTextvorlage">On the Sales Order, click <span class="Bold">Functions &gt; Suggest Lots</span> on the <span class="Bold">Lines</span> FastTab. Now all three lots (LOT1000, LOT1001 and LOT1002) appear in the <span class="Bold">Lot Selection</span> page since each meet the criteria for this sales order line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Order-Specific Lot Req_8.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: LOT1001 added to the lots that meet order-specific test plan criteria appear for selection </p>
+        <p class="ccTextvorlage">The Order Processor selects LOT1000 and LOT1002 to take full inventory from these lots and then runs the function again to select the remaining 50 from LOT1001 to fulfill the order.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Order-Specific Lot Req_9.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Lots reserved for the sales order based on the order-specific test plan criteria </p>
+    </body>
+</html>

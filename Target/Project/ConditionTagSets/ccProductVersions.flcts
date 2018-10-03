@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet
+  Comment="My set of condition tags">
+  <ConditionTag
+    Comment="To be included if SP1-SPX"
+    Name="SP1 all"
+    BackgroundColor="#ff00ff"
+    OriginalName="SP1 all" />
+  <ConditionTag
+    Comment="To be excluded if base, SP2-SPX"
+    Name="SP1 only"
+    BackgroundColor="Red"
+    OriginalName="SP1 only" />
+  <ConditionTag
+    BackgroundColor="#ff8c00"
+    Name="SP2 only"
+    Comment="To be excluded if base, SP1, SPX"
+    OriginalName="SP2 only" />
+  <ConditionTag
+    BackgroundColor="#eee8aa"
+    Name="SP2 all"
+    Comment="To be included if SP2-SPX"
+    OriginalName="SP2 all" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="SP3 all"
+    Comment="To be included if SP3-SPX"
+    OriginalName="SP3 all" />
+  <ConditionTag
+    BackgroundColor="#0000ff"
+    Name="SP3 only"
+    Comment="To be excluded if base, SP1-SP2, SPX"
+    OriginalName="SP3 only" />
+  <ConditionTag
+    BackgroundColor="#9acd32"
+    Name="SP4 all"
+    Comment="To be included if SP4-SPX"
+    OriginalName="SP4 all" />
+  <ConditionTag
+    BackgroundColor="#20b2aa"
+    Name="SP4 only"
+    Comment="To be excluded if base, SP1-SP3, SPX"
+    OriginalName="SP4 only" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="SP5 all"
+    Comment="To be included if SP5-SPX"
+    OriginalName="SP5 all" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="SP5 only"
+    Comment="To be excluded if base, SP1-SP4, SPX"
+    OriginalName="SP5 only" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="Base only"
+    Comment="To be excluded if base version only"
+    OriginalName="Base only" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="SP1 HF1 all"
+    Comment="To be included if SP1 HF1-SPX" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="SP1 HF1 only"
+    Comment="To be excluded if base, SP1, SP2-SPX" />
+</CatapultConditionTagSet>

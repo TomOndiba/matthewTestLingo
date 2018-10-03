@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="723" MadCap:lastWidth="604" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref310440441"></a><a name="_Ref310440453"></a><a name="_Ref310440460"></a><a name="_Toc434568059"></a>Drop Shipment to the Subcontractor</h3>
+        <p class="ccTextvorlage">An enclosure drop shipment to a subcontractor can be assigned in the Master BOM, Document BOM, or Construction Order Line and processed in the <span class="Bold">Subcontracting Prod. Order</span> page as a Purchase Order. The vendor location address is copied to the Ship-to fields and the Vendor Location Code is copied to the <span class="Bold">Location Code</span> field on the line.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Example – Process a Drop Shipment to a Subcontractor</h4>
+        <p class="ccTextvorlage">In this example, a sales order and construction order have been created for 1 unit of item D-1000. The enclosed material will be ordered from a vendor other than the subcontractor and then the needed component will be sent directly to the subcontractor. Therefore, the Construction Order Lines have been set up with a work center and three enclosure components; one is set as a drop shipment. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Drop Shipment to the Subcontractor.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Construction BOM with Enclosure Drop Shipment line</p>
+        <p class="ccTextvorlage">To set the <span class="Bold">Enclosure Drop Shipment</span> check box, the <span class="Bold">Enclosure</span> check box must be selected. If the <span class="Bold">Reordering Policy</span> for the item is not blank, a warning message appears.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The drop shipment item must have a <span class="Bold">Vendor No.</span> assigned on the Item Card.</p>
+        <p class="ccTextvorlage">After the Construction Order is released and the Production Order is created, use the <span class="Bold">Subcontracting Prod. Order</span> page (refer to topic <MadCap:xref href="Subcontracting Production.htm#_Ref310440478">“Subcontracting Production Order” on page 1</MadCap:xref>) to process the drop shipment to the subcontractor, along with the other subcontractor processes.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Drop Shipment to the Subcontractor_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Subcontracting Prod. Order with Enclosure Drop Shipment</p>
+        <p class="ccTextvorlage">After running the “Create Subcontracting Worksheet” and “Create Purchase Order” functions, the Subcontracting Prod. Order line is updated with a Purchase Line, Transfer Order and Encl. Drop Shipment order.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Drop Shipment to the Subcontractor_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Results of running the Create Subcontracting Worksheet and Create Purchase Order functions</p>
+        <p class="ccTextvorlage">First, post the Transfer Order.</p>
+        <p class="ccTextvorlage">Then open the Encl. Drop Shipment purchase order (click the field on the line or click <span class="Bold">Open Encl. Drop Shipment</span> from the <span class="Bold">Line</span> menu on the <span class="Bold">Subcontracting Routing Lines</span> FastTab).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Drop Shipment to the Subcontractor_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Enclosure Drop Shipment Purchase Order </p>
+        <p class="ccTextvorlage">The <span class="Bold">Location Code</span> field is set to the Vendor Location Code (assigned to the Work Center Card) and the Ship-to address fields are populated with the vendor location.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Post the Enclosure Drop Shipment purchase order and reopen the <span class="Bold">Subcontracting Purch. Order</span> page.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Drop Shipment to the Subcontractor_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Results of posting the Transfer Order and Enclosure Drop Shipment purchase order</p>
+        </div>
+        <p class="ccTextvorlage">The <span class="Bold">Encl. Drop Shipment</span> field displays the purchase receipt number, indicating that the purchase order was posted. Also note that the <span class="Bold">Posted Transfer Order</span> field contains the number of the posted transfer order (done prior to posting the enclosure drop shipment order).</p>
+        <p class="ccTextvorlage">When the subcontractor delivers the completed item, the main subcontracting purchase order can be posted (from the <span class="Bold">Purchase Line</span> field).</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">All related subcontracting purchase orders and transfer orders can be opened from the main <span class="Bold">Purchase Order</span> page by clicking <span class="Bold">Navigate &gt; Enclosure</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Drop Shipment to the Subcontractor_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Enclosures opened from completed (un-posted) item Purchase Order</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Drop Shipment to the Subcontractor_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Results of posting the completed item Purchase Order</p>
+    </body>
+</html>

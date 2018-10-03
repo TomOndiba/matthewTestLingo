@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc434929932"></a>Rental Failure Card</h2>
+        <p class="ccTextvorlage">The Rental Failure Card is accessed from the Rent Order by selecting the proper line, and then clicking <span class="Bold">Line &gt; Enter Failure</span> on the <span class="Bold">Lines</span> FastTab. The following message will appear:</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Rental Failure Card.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Create Failure confirmation message</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Failures cannot be assigned to a line until it has shipped.</p>
+        <p class="ccTextvorlage">After clicking <span class="Bold">Yes</span> to the message, the <span class="Bold">Rental Failure Card</span> page appears, with the <span class="Bold">Rental Start Date</span> and <span class="Bold">Rental End Date</span> fields filled in from the Rent Order line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Rental Failure Card_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Rental Failure Card page</p>
+        <p class="ccTextvorlage">The fields on this page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 121px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rental Start Date / Rental End Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Dates from the rental line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Start Date Failure / End Date Failure</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Date period of the failure to be processed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Failure Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines how the failure will be processed, as specified in the <span class="Bold">Failure Types</span> page (refer to topic <MadCap:xref href="Rental Setup.htm#_Ref280780564">“Failure Types” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Description of the Failure Type.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Quantity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of units that need to be included in the Failure adjustment.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Create Credit Memo</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, a credit memo should be created for the failure.</p>
+                        <p class="ccTabellenText">Defaults from the <span class="Bold">Failure Type</span>, but can be changed as needed here without affecting the <span class="Bold">Failure Type</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Discount %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Percentage of the rate to be credited.</p>
+                        <p class="ccTabellenText">Defaults from the <span class="Bold">Failure Type</span>, but can be changed as needed.</p>
+                        <div class="ccDIV">
+                            <p class="ccTabellenTextNoteheading">Note</p>
+                            <p class="ccTabellenTextNotebody">If the <span class="Bold">Create Credit Memo</span> check box is not selected and a value is entered in this field, the check box is then automatically selected.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the status of the Failure, which cannot be processed until it is <span class="Italics">Released</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Invoice created until</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Date the invoice/credit memo was created for the line; will be the same as the <span class="Bold">End Date Failure</span> if the failure is completely processed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">
+                            <MadCap:annotation MadCap:createDate="2017-10-05T17:25:50.5852677-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="New 2017 SP1\r\n\r\nNeed to update the topic reference when decide where to put more content." MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:50:42.7801760-05:00">Reduce Free Counter</MadCap:annotation>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p>Indicates if the calculated free counter is reduced completely or by the discount percentage when the failure is posted (refer to topic...</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">After filling in the <span class="Bold">Rental Failure Card</span> page, it must be released by clicking <span class="Bold">Release</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Rental Failure Card_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Preparing to release the failure</p>
+        <p class="ccTabellenTextNoteheading">Note</p>
+        <p class="ccTabellenTextNotebody">If the failure is not released before closing this page, it can be done by re-opening the page from the <span class="Bold">Rental Failures</span> page (refer to <MadCap:xref href="#_Ref384372114" class="Figure">Fig. 5</MadCap:xref>).</p>
+        <p class="ccTextvorlage">Once released, click <span class="Bold">OK</span> (otherwise the information will not be saved and the failure entry will not be created). The <span class="Bold">Qty. Failures</span> field indicates the number of failures assigned to it.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Rental Failure Card_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Qty. Failures field on the Rent Order</p>
+        <p class="ccTextvorlage">Clicking the value in this field opens the <span class="Bold">Rental Failures</span> page, which contains all failures assigned to the line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Rental Failure Card_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5"><a name="_Ref384372114"></a>: Rental Failures page</p>
+        <p class="ccTextvorlage">From this page, access the <span class="Bold">Rental Failure Card</span> page by clicking <span class="Bold">Navigate &gt; Card</span> on the ribbon.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434929933"></a>Edit Invoicing Information</h3>
+        <p class="ccTextvorlage">When an invoice has more than one period from the same document line, the system resets the <span class="Bold">Next Invoice Period</span> field on the rent order line to the latest invoicing period. With the “Edit Invoicing Information” function, users can set the Invoice created until field on the failure to a date before this point.</p>
+        <p class="ccTextvorlage">This function is accessed on the Rental Failure Card by clicking <span class="Bold">Navigate &gt; Edit Invoicing Information</span> on the ribbon. </p>
+    </body>
+</html>

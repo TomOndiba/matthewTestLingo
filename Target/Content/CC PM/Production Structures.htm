@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="907" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref414350980"></a><a name="_Toc434256566"></a>Production Structures </h3>
+            <p class="ccTextvorlage">When a production structure is created for an item with ingredients, the related ingredients are copied to the <span class="Bold">Prod. Structure Ingredients</span> page, accessed on the ribbon by clicking <span class="Bold">Navigate &gt; Ingredients</span>.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Production Structures.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Ingredients for item P-60017 copied to the production structure header</p>
+        </div>
+        <p class="ccTextvorlage">Some of the fields in the <span class="Bold">Prod. Structure Ingredients</span> page are described in the following table.  </p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 113px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Quantity (Expected)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the Item Ingredients that were assigned to the manufacturing item.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Alloc. Unit of Measure Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the relationship between ingredient quantity and component quantity. </p>
+                        <p class="ccTabellenText">The value can be edited to convert the quantity when producing in different amounts.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Quantity (Calc.)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Displays the sum of the <span class="Bold">Quantity (Calc.)</span> fields of all component ingredients per ingredient. </p>
+                        <p class="ccTabellenText">This field is set to zero (0) until component lines are added to the Production Structure lines (refer to topic <MadCap:xref href="#_Ref421543397">“Production Structure Component Ingredients” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    "><a name="_Ref421543397"></a>Production Structure Component Ingredients</h4>
+        <p class="ccTextvorlage">A component or variant with ingredients can be entered in the <span class="Bold">Lines</span> FastTab of the Production Structure as an <span class="Italics">Item</span> or <span class="Italics">Share of Recipe</span> type.</p>
+        <p class="ccTextvorlage">Ingredients are accessed from the <span class="Bold">Lines</span> FastTab by clicking <span class="Bold">Line &gt; Ingredients</span>. The ingredients can be modified per production structure. Normally, modifications of the ingredients should be performed directly on the (component) item card and should only differ per production structure in exceptional cases.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Ingredients can be added to lines without an item (<span class="Bold">Type</span> = Item and <span class="Bold">No.</span> = &lt;blank&gt;) on Development Structures and Laboratory Structures. However, to certify the Laboratory Structure the lines must have an item number. When the “New Item” function is run from the Production Structure line, the ingredient information will be transferred as Item Ingredients for the new item.</p>
+        <p class="ccTextvorlage">To reach the specified ingredient quantity of the item to be produced, quantities must be allocated to the components in the <span class="Bold">Quantity per</span> or <span class="Bold">Share %</span> fields.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structures_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Components with ingredients added to Production Structure lines</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The system automatically calculates the ingredient quantity in the <span class="Bold">Prod. Structure Line Ingredients</span> page based on the specified ingredient quantity of the item. As illustrated in <MadCap:xref href="#_Ref413748671" class="Figure">Fig. 3</MadCap:xref>, the <span class="Bold">Quantity (Calc.)</span> field is calculated for ingredients of component items P-60018 and P-60019 by multiplying the <span class="Bold">Quantity per</span> of the production structure line by the <span class="Bold">Quantity</span> of the ingredient.</p>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structures_2.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 439px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="_Ref413748671"></a>: Calculated ingredients for component items P-60018 and P-60019</p>
+        <p class="ccTextvorlage">Recipe ingredients are calculated based on the <span class="Bold">Share %</span> in relation to the recipe weight of the item in the Production Structure header.</p>
+        <p class="ccTextvorlageNoteheading">Important</p>
+        <p class="ccTextvorlageNotebody">Ingredients must be calculated in quantities – ingredient potency cannot be defined in percentages.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Expected and Calculated Ingredient Quantities</h4>
+            <p class="ccTextvorlage">In the <span class="Bold">Quantity (Calc.)</span> field in the <span class="Bold">Prod. Structure Ingredients</span> page of the item to be produced, the system automatically displays the sum of the <span class="Bold">Quantity (Calc.)</span> fields of all component ingredients per ingredient. Thus, users can control within this page if the specified potency of the item to be produced can be achieved with the allocated component ingredients.</p>
+            <p class="ccTextvorlage">Ingredients added to the components will appear as new lines in the <span class="Bold">Prod. Structure Ingredients</span> page with the <span class="Bold">Quantity (Expected)</span> field set to 0.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Production Structures_3.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 229px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4"><a name="_Ref413748217"></a>: Expected and calculated ingredients assigned to a production structure</p>
+        </div>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#_Ref413748217" class="Figure">Fig. 4</MadCap:xref>, the expected and calculated ingredient quantities do not match because of the following calculated component quantities:</p>
+        <ul>
+            <li class="ccAufzählungblau_beforesublist">Ingredient No. INH-0001<ul><li>Component P-60018, 4 mg</li><li>Component P-60019, 9 mg</li></ul></li>
+            <li class="ccAufzählungblau_beforesublist">Ingredient No. INH-0002<ul><li>Component P-60018, 8 mg</li><li>Component P-60019, 15 mg</li></ul></li>
+        </ul>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Expected and calculated quantities can be different. If the production structure is certified without equal quantities, the expected quantity will be overwritten with the calculated ingredient quantities. However, these changes are not transferred back to the item.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">When the Production Structure is certified, the header and line ingredients are copied to the Production BOM header and lines and will be used with production orders.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Production Structures_4.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 284px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Expected and calculated ingredient quantities assigned to the production BOM header, and base/calculated ingredient quantities assigned to the production BOM lines</p>
+        </div>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The Production BOM Header and Line Ingredients cannot be changed or deleted. Any changes that need to be made to the ingredients in a BOM/Recipe must be done in the corresponding Production Structure.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">Exercise – Create and Certify Production Structure</h4>
+        <p class="ccTextvorlage">Create a Production Structure for item P-I10, Product and add component lines with the following share of recipe:</p>
+        <ul>
+            <li class="ccAufzählungblau">Item A = 10%</li>
+            <li class="ccAufzählungblau">Item B = 20%</li>
+            <li class="ccAufzählungblau">Filler = 70%</li>
+        </ul>
+        <p class="ccTextvorlage">Confirm that all ingredients are calculated properly. Change the Allocation Unit of Measure to ensure that the quantities are correctly recalculated. Certify the Production Structure and review the Production BOM header and line ingredients.</p>
+        <p class="ccDemoStepHeading">Create Production Structure</p>
+        <p class="ccTextvorlage">Follow these steps to create the production structure:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Manufacturing &gt; Product Design &gt; Production Structures</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span> and then press ENTER to automatically populate the <span class="Bold">No.</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Item No.</span> field, enter P-I10.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lot Size</span> field, type 100.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Ingredients</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structures_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Ingredients for item P-I10 copied to the production structure header</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Structure Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, enter <span class="Italics">Share of Recipe</span> in the <span class="Bold">Type</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter P-I01, Item A.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Share %</span> field, type 10.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> Fast Tab, click <span class="Bold">Line &gt; Ingredients</span>. </li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structures_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Ingredients from Production Structure line</p>
+        <ol start="11">
+            <li class="ccTextvorlageNumberedList">Note that the <span class="Bold">Quantity (Calc.)</span> = 1 MG, based on the ingredient calculation of Share % x Item Ingredient Quantity for Ingredient 1 (10% x 10 = 1). </li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Structure Line Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Go to the next line and enter <span class="Italics">Share of Recipe</span> in the <span class="Bold">Type</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter P-I02, Item B.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Share %</span> field, type 20.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> Fast Tab, click <span class="Bold">Line &gt; Ingredients</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structures_7.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 195px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Ingredients from Production Structure line</p>
+        <ol start="17">
+            <li class="ccTextvorlageNumberedList">Note that the <span class="Bold">Quantity (Calc.)</span> = 6 MG, based on the ingredient calculation of Share % x Item Ingredient Quantity for Ingredient 1 (20% x 30 = 6).</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Structure Line Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Ingredients</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structures_8.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 202px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Calculated ingredient quantities from Production Structure lines</p>
+        <ol start="20">
+            <li class="ccTextvorlageNumberedList">Note that the <span class="Bold">Quantity (Calc.)</span> is 1 for Ingredient 1 (from the first component) and 6 for Ingredient 2 (from the second component).</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Structure Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Go to the next line and enter <span class="Italics">Share of Recipe</span> in the <span class="Bold">Type</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter P-I07, Filler.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Share %</span> field, type 70.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Change Allocation Unit of Measure</p>
+        <p class="ccTextvorlage">The value in the <span class="Bold">Alloc. Unit of Measure</span> field defines the relationship between Ingredient Qty. and Component Qty. Therefore, Ingredient 1 = 10 MG per KG of the component, and Ingredient 2 = 30 MG per KG of the component.</p>
+        <p class="ccTextvorlage">The <span class="Bold">Allocation Unit of Measure</span> field on the manufacturing item is the reference unit that is needed to calculate the absolute quantity. Therefore, to show the quantity in one unit of measure to another, e.g. 10 G per KG, units of measure per Allocation Unit of Measure is needed.    </p>
+        <p class="ccTextvorlage">Follow these steps to change the allocation unit of measure to confirm recalculation:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Ingredients</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the line for Ingredient 1, change the <span class="Bold">Alloc. Unit of Measure</span> from KG to GR.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structures_9.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 205px;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Preparing to change the allocation unit of measure</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">Note that the <span class="Bold">Quantity (Calc.)</span> has changed to .001.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structures_10.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 202px;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Recalculated quantity based on changing the allocation unit of measure</p>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">Reset the <span class="Bold">Alloc. Unit of Measure Code</span> field back to <span class="Italics">KG</span>.</li>
+            <li class="ccTextvorlageNumberedList">Do not close the <span class="Bold">Prod. Structure Ingredients</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Certify the Production Structure</p>
+        <p class="ccTextvorlage">Follow these steps to certify the Production Structure:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Prod. Structure Ingredients</span> page, note that the <span class="Bold">Quantity (Expected)</span> and <span class="Bold">Quantity (Calc.)</span> do not match.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structures_11.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 202px;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Expected and calculated quantities do not match</p>
+        <ol start="2">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">General</span> FastTab, change the <span class="Bold">Status</span> to <span class="Italics">Certified</span>.<br />A warning message appears stating that the expected ingredient quantities will be overwritten with the calculated ingredient quantities.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structures_12.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Warning message on certification because expected and calculated quantities do not match</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to continue with the certification process.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Ingredients</span>.</li>
+            <li class="ccTextvorlageNumberedList">Note that the expected and calculated quantities now match.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structures_13.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 202px;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Expected and calculated quantities match after certification</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Prod. Structure Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">In the Production Structure Details FactBox, click the item number link for P-I10 to open the Item Card.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Actions &gt; Ingredients</span>.</li>
+            <li class="ccTextvorlageNumberedList">Note that the item ingredient quantities were not changed to match the calculated quantities from the production structure certification.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structures_14.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 182px;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Item Ingredients quantities remain unchanged after production structure certification</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Ingredients</span> page and then close the Item Card.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Review Recipe Ingredients</p>
+        <p class="ccTextvorlage">Follow these steps to review the ingredients on the recipe:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">General</span> FastTab on the Production Structure, click the recipe link in the <span class="Bold">Production BOM No.</span> field and then click <span class="Bold">Advanced</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Production BOM/Recipe List</span> page, click <span class="Bold">Navigate &gt; Card</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Recipe Header</span> page, click <span class="Bold">Navigate &gt; Ingredients</span>.</li>
+            <li class="ccTextvorlageNumberedList">Note that the expected and calculated quantities were transferred from the production structure.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structures_15.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Expected and calculated ingredient quantities assigned to the production BOM header</p>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Close</span> to close the <span class="Bold">Production BOM Header Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Select the first line and then click <span class="Bold">Component &gt; Ingredients</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structures_16.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 283px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Expected and calculated ingredient quantities assigned to the first production BOM line</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Close</span> to close the <span class="Bold">Production BOM Line Ingredients</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Select the second line and then click <span class="Bold">Component &gt; Ingredients</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Structures_17.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 283px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 18">: Expected and calculated ingredient quantities assigned to the second production BOM line</p>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">Close all the open pages.</li>
+        </ol>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.4    ">Ingredients in Production Structure Report</h4>
+            <p class="ccTextvorlage">Ingredients can be displayed in the Production Structure report by selecting the <span class="Bold">Print Ingredients</span> check box in the Production Structure report print dialog.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Production Structures_18.png" style="visibility: visible;mso-wrap-style: square;width: 571px;height: 338px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 19">: Print Ingredients check box selected in the Production Structure print dialog</p>
+            <p class="ccTextvorlage">Ingredient information is displayed for the item and the component lines.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Production Structures_19.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 20">: Ingredients displayed in the Production Structure report</p>
+        </div>
+    </body>
+</html>

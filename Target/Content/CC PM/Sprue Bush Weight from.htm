@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="849" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Sprue Bush Weight from Work Center Production Rate</h3>
+        <p>Sprue Bush increases the expected quantity of Production Order components like scrap. It represents additional material needed for production. It is entered on Work Center Production Rates as weight related to the <span class="Bold">Prod. Rate Unit of Measure</span> field and will be converted into a percentage in the Production Order components on calculation.</p>
+        <p class="BoldItalics12pt">Example</p>
+        <p>In production structure PST-014, a Sprue Bush Weight has been defined in the Work Center Production Rate for work center M007. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Sprue Bush Weight.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Empty setup and run times for work center M003</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Sprue Bush Weight is converted to <span class="Bold">Sprue Bush %</span> in Planning Worksheet and Production Order calculation. The Prod. Rate Unit of Measure is KG; therefore, the Sprue Bush Weight of 0.1 will be converted to 10%.</p>
+        <p>When a sales order is generated for item P-10103, the demand can be processed in the Planning Worksheet. </p>
+        <div class="ccDIV">
+            <p>In the Planning Components, the Expected Quantity is calculated to include the Sprue Bush Weight from the Work Center Production Rate. This is the same calculation that would be used if a production order was created directly from the sales line.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Sprue Bush Weight_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Planning Components calculated with Sprue Bush Weight from Work Center Production Rate</p>
+        </div>
+        <p>The Expected Quantity is calculated as:</p>
+        <p class="ItalicsCentered">(Quantity from Planning Worksheet Line * Quantity per from Planning Component) * Sprue Bush %</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Modifications to the Planning Components do not include Sprue Bush calculations.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The expected quantities in the Planning Components are transferred to the production order.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Sprue Bush Weight_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Expected Quantities in production order components created from Planning Worksheet</p>
+        </div>
+    </body>
+</html>

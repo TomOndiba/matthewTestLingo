@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "> <a name="_Toc442095798"></a>Setup</h3>
+        <p class="ccTextvorlage">The two setup pages used for verification functionality are:</p>
+        <ul>
+            <li class="ccAufzählungblau">Verification Setup – defines the general settings and processes that require verification</li>
+            <li class="ccAufzählungblau">User Authorization – defines which users are authorized to verify which processes</li>
+        </ul>
+        <p class="ccTextvorlage">Each page (accessed from <span class="CCBausteinInhaltZchn">cc|regulatory affairs</span><span class="Bold"> &gt; Administration</span>) is described in this section.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Verification Setup</h4>
+        <p class="ccTextvorlage">In the <span class="Bold">Verification Setup</span> page, general settings are defined, such as:</p>
+        <ul>
+            <li class="ccAufzählungblau">Verification activation</li>
+            <li class="ccAufzählungblau">Maximum quantity of failed logins</li>
+            <li class="ccAufzählungblau">Password requirements</li>
+        </ul>
+        <p class="ccTextvorlage">Furthermore, users can specify all sensitive processes or actions that will be subject to verification.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Setup_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Verification Setup </p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.1    ">General FastTab</h5>
+        <p class="ccTextvorlage">The <span class="Bold">Verification Activated</span> check box enables or disables the Verification functionality. </p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.2    ">Area FastTabs</h5>
+        <p class="ccTextvorlage">The area-specific FastTabs in the <span class="Bold">Verification Setup</span> page contains several processes which can be included in the verification. The type of verification to be applied to each process can be specified as well. The available options are described in the following table.</p>
+        <p class="ccTextvorlageNoteheading">Important</p>
+        <p class="ccTextvorlageNotebody">All corresponding documents MUST be posted before one of the options in the <span class="Bold">Verification Setup</span> page is enabled. For example, to use verification on sales orders, all existing Sales Orders must be posted prior to selecting any options in the <span class="Bold">Verify Sales Order</span> field.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 180px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Option</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">None</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">No verification will be applied.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Password Check</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">An authorized user’s password must be entered.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Password Check + Documentation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">An authorized user’s password and an additional description must be entered.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Password Check + Diff. User</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The verification with User ID and password must be done by two authorized users. </p>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Processing.htm#_Ref421543573" class="RelLinkPageNumber">"Four-Eyes Principle" on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Password Check + Documentation + Diff. User</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">The verification with User ID, password and documentation must be done by two authorized users. </p>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Processing.htm#_Ref421543573" class="RelLinkPageNumber">"Four-Eyes Principle" on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h6 class="Heading6" MadCap:autonum="1.1.1.1.2.1    ">Inventory FastTab</h6>
+        <p class="ccTextvorlage">This FastTab includes verification required to complete inventory processes.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Item Journal</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post an item journal.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Reclass. Journal</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post an item reclassification journal.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Phys. Inventory Journal</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a physical inventory journal.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Revaluation Journal</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a revaluation journal.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Transfer Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a transfer order.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">The verification is only required on the transfer shipment.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Verify Status Change</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to change lot information in the <span class="Bold">Lot-/Serial No. Administration</span> page.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h6 class="Heading6" MadCap:autonum="1.1.1.1.2.2    ">Warehouse FastTab</h6>
+        <p class="ccTextvorlage">This FastTab includes verification required to complete warehouse processes.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 150px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Whse. Receipt</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a warehouse receipt.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">If verification is required to post a Purchase Order that is linked to a warehouse receipt, then this process must be enabled because the Purchase Order will not require verification once the Warehouse Receipt has posted, regardless of the setting in the <span class="Bold">Verify Purchase Order</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Whse. Put Away</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to register a warehouse put-away.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Whse. Shipment</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a warehouse shipment.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">If verification is required to post a Sales Order linked to a warehouse shipment, then this process must be enabled because the Sales Order will not require verification once the Warehouse Shipment has posted, regardless of the setting in the <span class="Bold">Verify Sales Order</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Whse. Pick</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to register a warehouse pick.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Whse. Movements</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to register a warehouse movement.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Whse. Item Journal</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a warehouse item journal.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Whse. Reclass. Journal</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a warehouse reclassification journal.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Verify Whse. Phys. Invt. Jnl.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a warehouse physical inventory journal.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h6 class="Heading6" MadCap:autonum="1.1.1.1.2.3    ">Sales FastTab</h6>
+        <p class="ccTextvorlage">This FastTab includes verification required to complete sales processes.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 149px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Sales Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a sales order.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">This process is overridden by the Verify Warehouse Shipment process if warehousing is required.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Sales Invoice</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a sales invoice.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Sales Return Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a sales return order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Verify Sales Credit Memo</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a sales credit memo.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h6 class="Heading6" MadCap:autonum="1.1.1.1.2.4    ">Purchase FastTab</h6>
+        <p class="ccTextvorlage">This FastTab includes verification required to complete purchase processes.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 154px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Purchase Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a purchase order.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">This process is overridden by the Verify Warehouse Receipt process if warehousing is required.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Purchase Invoice</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a purchase invoice.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Purchase Return Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a purchase return order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Verify Purchase Credit Memo</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a purchase credit memo.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h6 class="Heading6" MadCap:autonum="1.1.1.1.2.5    ">Manufacturing FastTab</h6>
+        <p class="ccTextvorlage">This FastTab includes verification required to complete manufacturing processes.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 147px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Certify Prod. BOM</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to certify a Production BOM or Production BOM Version.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Reset Prod. BOM Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to reset a Production BOM or Production BOM Version from the <span class="Italics">Certified</span> status.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">Only Password Check and Password Check+Documentation verifications are available for this process.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Certify Routing</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to certify a Production Routing or Production Routing Version.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Reset Routing Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to reset a Production Routing or Production Routing Version from the <span class="Italics">Certified</span> status.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">Only Password Check and Password Check+Documentation verifications are available for this process.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Insert PO Component</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required if a Production Order Component is inserted.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Delete PO Component</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required if a Production Order Component is deleted.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Replace PO Component</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required if the <span class="Bold">Item No.</span> is replaced on a Production Order Component line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Verify Change PO Component</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required if a Production Order Component is changed. </p>
+                        <p class="ccTabellenText">The following field changes are verified: Description, Scrap %, Calculation Formula, Length, Width, Depth, Weight, Quantity per, Unit of Measure Code, Variant Code, Flushing Method and Routing Link Code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Insert PO Routing</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required if a Machine- or Work Center is inserted in a Production Order Routing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Delete PO Routing</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required if a Machine- or Work Center is deleted in a Production Order Routing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Replace PO Routing</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required if the <span class="Bold">Type</span> and/or <span class="Bold">No.</span> field is replaced on a Production Order Routing line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Change PO Routing</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required if a Machine- or Work Center is changed in a Production Order Routing. </p>
+                        <p class="ccTabellenText">The following field changes are verified: Description, Flushing Method, Fixed Scrap Quantity and Scrap Factor %.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Consumption Journal</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post a Consumption Journal.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Other Item in Consumption Jnl.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required when adding a new or modifying an existing item (if one does not already exist in the production BOM) in the Consumption Journal.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Output Journal</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to post an Output Journal.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Verify Other MCenter in Output Jnl.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required when adding a new or modifying an existing Machine- or Work Center (if one does not already exist in the routing) in the Output Journal.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h6 class="Heading6" MadCap:autonum="1.1.1.1.2.6    ">Quality Management FastTab</h6>
+        <p class="ccTextvorlage">This FastTab includes verification required to complete quality management processes.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Certify Test Plan</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to certify a Test Plan.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Verify Reset Test Plan Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to reset a Test Plan from the <span class="Italics">Certified</span> status.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">Only Password Check and Password Check+Documentation verifications are available for this process.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Verify Change Fin. Test Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Verification is required to change the determined values of a Test Order with the <span class="Bold">Status</span> of <span class="Italics">Testing Finished</span>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.3    ">Password Policies FastTab</h5>
+        <p class="ccTextvorlage">On this FastTab, define the rules for verification passwords.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 143px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Max. Qty. Failed Logins</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of incorrect logins that a user is permitted before his/her login is blocked.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Minimum Password Length</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Minimum length of the password.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Password Change Interval</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of days when a password expires; entered as a standard Microsoft Dynamics NAV date formula. </p>
+                        <p class="ccTabellenText">For example, every user must change his/her password every three months (3M) from the date it was first entered or last changed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Password Change Warning Period</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of days before a password expires. Entered as a standard Microsoft Dynamics NAV date formula, the system will issue a warning to remind the user to change his/her password soon. </p>
+                        <p class="ccTabellenText">For example, seven days (7D) before the password expires, a user will receive a warning that his/her password will expire in 7 days.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prevent Use of Prev. Passwords</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the number (up to six) of previously used passwords that can be issued by the user. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Min. No. of Uppercase Letters</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Minimum number of uppercase letters that a password must contain. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Min. No. of Lowercase Letters</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Minimum number of lowercase letters that a password must contain.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Min. No. of Numbers</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Minimum number of numbers that a password must contain.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Min. No. of Non-Alphanumeric Characters</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Minimum number of non-alphanumeric characters that a password must contain.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace">
+        </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Product Version Information</h4>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">About</span> to display the current product version information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Setup_2_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Product version information accessed by clicking About on the ribbon</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">Exercise – Set Up Verifications and Password Policies</h4>
+        <p class="ccTextvorlage">For the purpose of the other exercises in this manual, set up the following verifications:</p>
+        <ul>
+            <li class="ccAufzählungblau">Change Lot Information = password check + documentation</li>
+            <li class="ccAufzählungblau">Post a Sales Order = password check</li>
+            <li class="ccAufzählungblau">Post a Purchase Order = password check</li>
+            <li class="ccAufzählungblau">Post Output = password check + documentation</li>
+            <li class="ccAufzählungblau">Certify a Test Plan = password check + documentation + different user</li>
+        </ul>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Additionally, define the following password policies:</p>
+            <ul>
+                <li class="ccAufzählungblau">Max. Qty. Failed Logins = 3</li>
+                <li class="ccAufzählungblau">Minimum Password Length = 5</li>
+                <li class="ccAufzählungblau">Min. No. of Uppercase Letters = 1</li>
+                <li class="ccAufzählungblau">Min. No. of Numbers = 1</li>
+                <li class="ccAufzählungblau">Min. No. of Non-Alphanumeric Characters = 1</li>
+            </ul>
+        </div>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Set up Verifications</p>
+            <p class="ccTextvorlage">Follow these steps to set up the necessary sales and manufacturing verifications:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Departments &gt; </span><span class="CCBausteinInhaltZchn">cc|regulatory affairs</span><span class="Bold"> &gt; Administration &gt; Verification Setup</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the <span class="Bold">General</span> FastTab, select the <span class="Bold">Verification Activated</span> check box.</li>
+                <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Inventory</span> FastTab and enter <span class="Italics">Password Check+Documentation</span> in the <span class="Bold">Verify Status Change</span> field.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Setup_2_2.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 271px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Verifications set up on General and Inventory FastTabs</p>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Sales</span> FastTab and enter <span class="Italics">Password Check</span> in the <span class="Bold">Verify Sales Order</span> field.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Purchase</span> FastTab and enter <span class="Italics">Password Check</span> in the <span class="Bold">Verify Purchase Order</span> field.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Manufacturing</span> FastTab and enter <span class="Italics">Password Check+Documentation</span> in the <span class="Bold">Verify Output Journal</span> field. </li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Quality Management</span> FastTab and enter <span class="Italics">Password Check+Documentation+Diff. User</span> in the <span class="Bold">Verify Certify Test Plan</span> field.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Set up Password Policies</p>
+            <p class="ccTextvorlage">Follow these steps to enter the password policies:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Password Policies</span> FastTab.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Max. Qty. Failed Logins</span> field, type 3.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Minimum Password Length</span> field, type 5.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Min. No. of Uppercase Letters</span> field, type 1.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Min. No. of Numbers</span> field, type 1.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Min. No. of Non-Alphanumeric Characters</span> field, type 1.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Setup_2_3.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 270px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Verifications set up on Password Policies FastTab</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Verification Setup</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.4    ">User Authorization</h4>
+            <p class="ccTextvorlage">Define the sensitive processes and actions that a user is allowed to execute on the <span class="Bold">User Authorizations</span> page.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Setup_2_4.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 309px;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: User Authorizations </p>
+        </div>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 96px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">User ID</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Windows login for the authorized user.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Qty. Failed Logins</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">System-tracked number of failed logins. </p>
+                        <p class="ccTabellenText">If the user is released after having been blocked or types the correct password – before the <span class="Bold">Max. Qty. Failed Logins</span> is reached – this field is reset to zero (0).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Blocked</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the user cannot verify any specified processes.</p>
+                        <p class="ccTabellenText">This check box is automatically selected if the user reaches the <span class="Bold">Max. Qty. Failed Logins</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Expiration Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date until which the user is permitted to verify the specified processes.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Area settings</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Defines the specific processes – from the area verifications on the <span class="Bold">Verification Setup</span> page – to which the user is permitted to complete verifications.</p>
+                        <p class="ccTabellenText">For example, if verification is entered in the <span class="Bold">Verify Sales Order</span> field on the <span class="Bold">Sales</span> FastTab of the <span class="Bold">Verification Setup</span> page, then verification is required. For a specific user to provide the verification, he or she must have the <span class="Bold">Verify Sales Order</span> check box selected for his/her User ID in this page. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.5    ">Exercise – Set Up User Authorization and Set Up Verification Passwords </h4>
+        <p class="ccTextvorlage">Certain user can verify certain processes. In this exercise, define the following users:</p>
+        <table>
+            <col style="width: 192px;" />
+            <col style="width: 198px;" />
+            <col style="width: 202px;" />
+            <tr>
+                <td class="ccTableTextSpacing">
+                    <p class="ccTabellenText" style="font-weight: bold;">NT (your Windows Login):</p>
+                </td>
+                <td class="ccTableTextSpacing">
+                    <p class="ccTabellenText" style="font-weight: bold;">EMIL (second Windows Login):</p>
+                </td>
+                <td class="ccTableTextSpacing">
+                    <p class="ccTabellenText" style="font-weight: bold;">OSCAR (third Windows Login):</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ccTableTextSpacing">
+                    <p class="ccAufzahlungblaunospacing">Verify Status Change</p>
+                </td>
+                <td class="ccTableTextSpacing">
+                    <p class="ccAufzahlungblaunospacing">Verify Output Journal </p>
+                </td>
+                <td class="ccTableTextSpacing">
+                    <p class="ccAufzahlungblaunospacing">Verify Certify Test Plan</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ccTableTextSpacing">
+                    <p class="ccAufzahlungblaunospacing">Verify Sales Order </p>
+                </td>
+                <td class="ccTableTextSpacing">
+                    <p class="ccAufzahlungblaunospacing">Verify Certify Test Plan</p>
+                </td>
+                <td class="ccTableTextSpacing">
+                    <p class="ccAufzahlungblaunospacing">Blocked</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ccTableTextSpacing">
+                    <p class="ccAufzahlungblaunospacing">Verify Purchase Order</p>
+                </td>
+                <td class="ccTableTextSpacing">
+                    <p> </p>
+                </td>
+                <td class="ccTableTextSpacing">
+                    <p> </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="ccTableTextSpacing">
+                    <p class="ccAufzahlungblaunospacing">Verify Certify Test Plan</p>
+                </td>
+                <td class="ccTableTextSpacing">
+                    <p> </p>
+                </td>
+                <td class="ccTableTextSpacing">
+                    <p> </p>
+                </td>
+            </tr>
+        </table>
+        <p class="ccTextvorlageaftertable">After setting up the user verification authorization, the users set up their passwords.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">To complete the remaining exercises in your own environment, you will need three Windows Logins – that have been set up in Microsoft Dynamics NAV – and the ability to login to Microsoft Dynamics NAV as different users to set up passwords.</p>
+        <p class="ccDemoStepHeading">Set up User Authorization</p>
+        <p class="ccTextvorlage">Follow these steps to set up the necessary users for verification authorization:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Login as NT.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|regulatory affairs</span><span class="Bold"> &gt; Administration &gt; User Authorizations</span>. </li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">New</span> on the ribbon.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">User ID</span> field, enter NT. </li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Inventory</span> FastTab and then select the <span class="Bold">Verify Status Change</span> check box.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Setup_2_5.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 357px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: User Authorization Card page, General and Inventory FastTabs</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Sales</span> FastTab and select the <span class="Bold">Verify Sales Order</span> check box.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Purchase</span> FastTab and select the <span class="Bold">Verify Purchase Order</span> check box.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Quality Management</span> FastTab and select the <span class="Bold">Verify Certify Test Plan</span> check box.</li>
+            <li class="ccTextvorlageNumberedList">Click the arrow on the <span class="Bold">OK</span> button and select <span class="Bold">OK &amp; New</span>. </li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">User ID</span> field, enter EMIL.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Manufacturing</span> FastTab and select the <span class="Bold">Verify Output Journal</span> check box.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Quality Management</span> FastTab, select the <span class="Bold">Verify Certify Test Plan</span> check box.</li>
+            <li class="ccTextvorlageNumberedList">Click the arrow on the <span class="Bold">OK</span> button and select <span class="Bold">OK &amp; New</span>. </li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">User ID</span> field, enter OSCAR. </li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Quality Management</span> FastTab, select the <span class="Bold">Verify Certify Test Plan</span> check box.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the open pages.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Set up Verification Passwords</p>
+            <p class="ccTextvorlage">Follow these steps to set up the verification passwords for the users:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|regulatory affairs</span><span class="Bold"> &gt; Verification &gt; Change Verification Password</span>. </li>
+            </ol>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Setup_2_6.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 229px;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Change Verification Password page</p>
+        </div>
+        <ol start="2">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">New Password</span> field, type 123$.</li>
+            <li class="ccTextvorlageNumberedList">Press ENTER.<br />Note the error that the password must be at least five characters long.</li>
+            <li class="ccTextvorlageNumberedList">Go back to the <span class="Bold">New Password</span> field and type 1234%.</li>
+            <li class="ccTextvorlageNumberedList">Press ENTER.<br />Note the error that at least one uppercase character must be used.</li>
+            <li class="ccTextvorlageNumberedList">Go back to the <span class="Bold">New Password</span> field and type 12S4%.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Reenter New Password</span> fields, type 12S4%.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.<br />The password is accepted and the <span class="Bold">Change Verification Password</span> page closes.</li>
+            <li class="ccTextvorlageNumberedList">Login as EMIL.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Departments &gt; </span><span class="CCBausteinInhaltZchn">cc|regulatory affairs </span><span class="Bold">&gt; Verification &gt; Change Verification Password</span>. </li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">New Password</span> and <span class="Bold">Reenter New Password</span> fields, type @bCD3.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.<br />The password is accepted and the <span class="Bold">Change Verification Password</span> page closes.</li>
+            <li class="ccTextvorlageNumberedList">Login as OSCAR.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Departments &gt; </span><span class="CCBausteinInhaltZchn">cc|regulatory affairs</span><span class="Bold"> &gt; Verification &gt; Change Verification Password</span>. </li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">New Password</span> and <span class="Bold">Reenter New Password</span> fields, type @Bcd5.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.<br />The password is accepted and the <span class="Bold">Change Verification Password</span> page closes.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNumberedListNoteHeading">Note</p>
+            <p class="ccTextvorlageNumberedListNoteBody">Passwords can also be set up during a user’s first verification process as long as he/she is logged into his/her Windows account.</p>
+        </div>
+        <ol start="17">
+            <li class="ccTextvorlageNumberedList">Login as NT.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Departments &gt; </span><span class="CCBausteinInhaltZchn">cc|regulatory affairs</span><span class="Bold"> &gt; Administration &gt; User Authorizations</span>. </li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Blocked</span> check box on the line for OSCAR. </li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">User Authorizations</span> page.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="905" MadCap:lastWidth="605" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">PaC Structural Plan with Execution Units</h3>
+        <p>Execution Units for both work packages and placing units can be used to create the PaC Structural Plan. The difference is the creation method. In the PaC Structural Plan, there are three options:</p>
+        <ul>
+            <li class="ccAufzählungblau">Get Calculation Groups – creates the PaC Structural Plan in different levels: the first is the  Execution Units of type Work Package, and the second is cost types with the associated calculation groups. This is the most common way to create the work packages in PaC jobs.</li>
+            <li class="ccAufzählungblau">Get Material Demands – adds specified calculated materials to the PaC structural plan for each work package. This step is done after the “Get Calculation Groups function” is run.</li>
+            <li class="ccAufzählungblau">Insert Execution Unit – creates structure based on the BoQ structure. This is typically used for placing units.</li>
+        </ul>
+        <p>This section describes how to create the PaC Structural Plans for work packages and placing units. </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Example – Create PaC Structural Plan for Work Packages</h4>
+        <p>In this example, a PaC job has been set up for the work package. Once created, this job is allocated to the Execution Units for the work packages. In the <span class="Bold">PaC Structural Plan</span> page, the “Get Calculation Groups” function is run to create the structure per execution unit, and then the “Get Material Demands” function is run to add the material (item D-9008) from the Power Distribution position.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.1    ">Assign PaC Job to Execution Units</h5>
+        <p>Execution Units must be released to be used in the PaC Structural Plan. Therefore, each work package is released after the PaC job is assigned. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU.png" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Execution Unit work packages to be assigned a PaC job and then released</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The “Update Controlling Values” function should also be run prior to release; however, this step was previously done and all values are current.</p>
+        <p class="ccTextvorlage">The first work package Execution Unit for WP 01 is opened. In the <span class="Bold">Assigned PaC Job No.</span> field, click the drop-down and select the PaC job.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Selecting PaC job in work package Execution Unit</p>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">Release</span> to release the Execution Unit for PaC Structural Plan usage.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Work package Execution Unit released with assigned PaC job</p>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">Next</span> to open work package Execution Unit WP 02.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Preparing to assign PaC job and release work package Execution Unit</p>
+        <p class="ccTextvorlage">Repeat the steps to assign the Work Package PaC job and then release the Execution Unit.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Work package Execution Unit released with assigned PaC job</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the <span class="Bold">Execution Unit</span> pages and return to the <span class="Bold">Execution Units</span> page. Note that the <span class="Bold">Assigned PaC Job No.</span> and <span class="Bold">Status</span> fields have been updated.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Execution Units page with updated work package information</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.2    ">Create PaC Structural Plan</h5>
+        <p>In the Job Card for the Work Package PaC job, click <span class="Bold">Structural Plan</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Accessing the Structural Plan from the PaC job for the work package</p>
+        <p class="ccTextvorlage">As with any <span class="CCBausteinInhaltZchn">cc|project</span> structure, a new position must be created before any lines can be added.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Position added from the New Position function</p>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">Get Calculation Groups</span> to create the PaC Structural Plan based on the work package Execution Units.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_8.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: PaC Structural Plan created from work package Execution Unit</p>
+        <p class="ccTextvorlage">The first level of the structure is based on the work package Execution Units: WP 01 Complete Step 1 and WP 02 Step 2. The next levels are the substructures that are based cost types and calculation groups. The substructures include the calculated components from the Execution Unit assignment.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.3    ">Get Material Demand</h5>
+        <p>The current PaC Structural Plan only includes PaC job lines based on calculation groups, but no specific material that was calculated. The BoQ Budget Calculation specified an entry for item D-9008 within the Power Distribution position. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_9.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Material demand specified in the BoQ Budget Calculation</p>
+        <p class="ccTextvorlage">To add the material demand to the PaC Structural Plan, click <span class="Bold">Get Material Demands</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_10.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Material demand added to the PaC Structural Plan</p>
+        <p class="ccTextvorlage">The material demand list will be added to each work package area. In this example, item D-9008 was added, which was calculated and assigned to work package WP 01.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Example – Create PaC Structural Plan for Placing Units</h4>
+        <p>In this example, a PaC job has been set up for the placing unit.  In the <span class="Bold">PaC Structural Plan</span> page, the “Insert Execution Unit” function is run to create the structure directly from an Execution Unit.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The Execution Units for placing units do not need to be assigned to a PaC job prior to creating the Structural Plan. After the “Insert Execution Unit” function is run, the PaC job is automatically assigned to the Execution Unit.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.2.1    ">Assign PaC Job to Execution Units</h5>
+        <p>Execution Units must be released to be used in the PaC Structural Plan. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_11.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Execution Unit work packages to be assigned a PaC job and then released</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The “Update Controlling Values” function should also be run prior to release; however, this step was previously done and all values are current.</p>
+        <p class="ccTextvorlage">The Execution Unit for placing unit PU 01 is opened. On the ribbon, click <span class="Bold">Release</span> to release the Execution Unit for PaC Structural Plan usage.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_12.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Execution Unit for placing unit  released</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the <span class="Bold">Execution Unit</span> page and return to the <span class="Bold">Execution Units</span> page. Note that the <span class="Bold">Status</span> fields has been updated.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_13.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Execution Units page with updated work package information</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.2.2    ">Create PaC Structural Plan</h5>
+        <p>In the Job Card for the Placing Unit PaC job, click <span class="Bold">Structural Plan</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_14.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Accessing the Structural Plan from the PaC job for the placing unit</p>
+        <p class="ccTextvorlage">As with any <span class="CCBausteinInhaltZchn">cc|project</span> structure, a new position must be created before any lines can be added.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_15.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Position added from the New Position function</p>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">Insert Execution Unit</span> to create the PaC Structural Plan based on the Execution Units. The <span class="Bold">Execution Units</span> page opens for placing unit selection.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_16.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Selecting Execution Unit from Insert Execution Unit function</p>
+        <p class="ccTextvorlage">With the Placing Unit line selected, click <span class="Bold">OK</span>. A message appears to expand the placing unit like a BOM. Click <span class="Bold">Yes</span> to expand the placing unit.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_17.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 18">: Message to expand placing unit</p>
+        <p class="ccTextvorlage">The structure is created as a one-to-one copy of the BoQ Budget Calculation, including all components that were used for the calculation.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_18.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 19">: PaC Structural Plan created from  Execution Unit</p>
+        <p class="ccTextvorlage">For purposes of review, click <span class="Bold">Navigate &gt; Execution Units</span>. Note that the <span class="Bold">Assigned PaC Job No.</span> field is populated with the current PaC job number</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/PaC Structural Plan with EU_19.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 20">: Execution Unit for placing unit updated with PaC job number</p>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="690" MadCap:lastWidth="602" MadCap:fileTags="StatusFileTags.6 Needs to be Sent for Review" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h1 class="Heading1" MadCap:autonum="1   "><a name="_Toc434929967"></a>
+            <MadCap:annotation MadCap:createDate="2017-10-05T15:33:04.5773651-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="Should we include a mention here that the machines sold to a customer can be seen in the Machines page from the Customer Card?\r\n\r\nPosting occurs during Sell a Rented Truck to Customer exercise." MadCap:editor="NDOKS" MadCap:editDate="2017-10-05T15:39:03.6068755-05:00">Machines</MadCap:annotation>
+        </h1>
+        <p class="ccTextvorlage">A special approach may be used if a serial number-based item that is handled as a specific entity with special attributes is used in Purchasing, Sales, Service or Rental. These items:</p>
+        <ul>
+            <li class="ccAufzählungblau">Are valued as an entity (<span class="Bold">Costing Method</span> = <span class="Italics">Specific</span>)</li>
+            <li class="ccAufzählungblau">Use serial numbers (Item Tracking Code contains SN-specific Tracking)</li>
+            <li class="ccAufzählungblau">May have separate attributes such as equipment</li>
+        </ul>
+        <p class="ccTextvorlage">To differentiate these items from each other, <span class="CCBausteinInhaltZchn">cc|rental</span> categorizes items types. Each is described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 105px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Type</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Item</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">No attributes are pre-allocated from the <span class="Bold">Type</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Machine</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">SN Specific Tracking, Costing Method Specific, Unit of Measure Code from Machines Setup (should be like PCS).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Supplementary Part</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">SN Specific Tracking, Unit of Measure Code from the Machines Setup (should be PCS).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Machine Component</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Unit of Measure Code from the Machines Setup (should be PCS).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">For each purchased machine-based Type item, a Card is available in the Machines menu that is auto-populated with the type-specific fields.</p>
+        <p class="ccTextvorlage">If Machines or Supplementary Parts are bought or posted to inventory, a Machine Card or Supplementary Part Card is created automatically. These cards are used to collect the data from commercial transactions on a Serial No. basis.</p>
+        <p class="ccTextvorlage">Additionally, Machines can be connected to Fixed Assets and purchased and sold like a Fixed Asset.</p>
+    </body>
+</html>

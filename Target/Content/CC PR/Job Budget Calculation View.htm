@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Ref383498728"></a><a name="_Toc445394442"></a>Job Budget Calculation View</h2>
+        <p class="ccTextvorlage">In the Job Budget Calculation view, a significant number of fields are populated with default values from the work packages (<span class="Bold">Type</span> and <span class="Bold">No.</span> of the selected components). Many of these fields were defined in topic <MadCap:xref href="Setup.htm#_Ref437878859">“Setup” on page 1</MadCap:xref> and others are defined within process sections later in this documentation. Therefore, this section does not provide a complete description of each field.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Job Budget Calculation View.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Job Budget Calculation for job J000001.01</p>
+        <p class="ccTextvorlage">The fields in the Job Budget Calculation view are described in the following table.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Some of the field calculations are based on special line settings, such as rollup functionality, job charges and budgeting. Therefore, field calculations described in this section are described based on general line settings.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 125px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">+/-</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if the directory levels are expanded or collapsed (refer to topic <MadCap:xref href="Job Hierarchical Structure.htm#_Ref383419747">“Job Directories” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">WBS</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the line position or level created using the “New Position” or “New Level” functions (refer to topic <MadCap:xref href="Job Hierarchical Structure.htm#_Ref383419713">“Work Packages” on page 1</MadCap:xref> and <MadCap:xref href="Job Hierarchical Structure.htm#_Ref383419721">“Positions and Levels” on page 1</MadCap:xref>). </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Together with the <span class="Bold">No.</span> field, creates the work package in the job structure. The work package can be set up with the following components: </p>
+                        <table style="margin-left: auto;margin-right: auto;">
+                            <col style="width: 181px;" />
+                            <col style="width: 234px;" />
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li class="ccAufzählung">Service </li>
+                                        <li class="ccAufzählung">Item </li>
+                                        <li class="ccAufzählung">General</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li class="ccAufzählung">Traveling</li>
+                                        <li class="ccAufzählung">Machine Center</li>
+                                        <li class="ccAufzählung">Work Center</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the specific number of the component entered in the <span class="Bold">Type</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Description of the component selected in the <span class="Bold">Type</span> and <span class="Bold">No.</span> fields; can be edited.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Quantity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the number of units to be budgeted for the component; can be auto-calculated based on Rollup Type and Summarized Positions.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit of Measure Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the unit of measure to be budgeted for the component.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rollup Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Summarizes lines on the next higher level in the hierarchy (refer to topic <MadCap:xref href="Entering Information in the.htm#_Ref383522161">“Rollup Functionality” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Manual Pricing</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">By-passes automatically triggered pricing (refer to topic <MadCap:xref href="Basic Cost and Earnings Planning.htm#_Ref383421809">“Manual Pricing” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Direct Unit Cost</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the direct unit cost from the component or work type costing; can be manually changed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Total Direct Cost Budget (LCY)</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the calculated value of Quantity * Direct Unit Cost (LCY).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Indirect Cost %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies a special job charge that will be used to calculate the Unit Cost (refer to topic <MadCap:xref href="Calculation.htm#_Ref437878999">“Job Charges” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Extra Charge %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies a special job charge that will be used if no Unit Price is found. If a Unit Price is found, this field is calculated. Refer to topic <MadCap:xref href="Calculation.htm#_Ref437879023">“Job Charges” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit Price (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unit price (in local currency) from the component or calculated by the <span class="Bold">Extra Charge %</span> field or manually entered.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sales Line Amount Budget (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the calculated value of Quantity * Unit Price (LCY).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Budget / Budget Costs</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Enables fixed calculation values to be assigned to WBS positions (refer to topic <MadCap:xref href="Entering Information in the.htm#_Ref383434051">“Budgeting” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Total Cost Procurement (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the calculated value of all related procurement lines from the <span class="Bold">Total Cost (LCY)</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sales Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines the sales process for the WBS position (refer to topic <MadCap:xref href="Base Setup.htm#_Ref437879040">“Sales Codes” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sales Quote</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if a Sales Quote exists for the WBS position.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sales Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if a Sales Order exists for the WBS position.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculation Group</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Transfers from the selected component (refer to topic <MadCap:xref href="Entering Information in the.htm#_Ref383424958">“Calculation Schedules” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculation Schedule</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if a Calculation Schedule exists for the WBS position (refer to topic <MadCap:xref href="Entering Information in the.htm#_Ref383424958">“Calculation Schedules” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculation Schedule Value</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays values calculated in the Calculation Schedule if the “Show Job Budget Lines” function is called from Calculation Schedule subpage.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Checklist No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the Checklist No. of related Checklist from <span class="CCBausteinInhaltZchn">cc|configure to order</span> integration (refer to <MadCap:xref href="cc configure to order.htm">“cc|configure to order” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Comment</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if a job comment line exists for the WBS position.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Comment General</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if a job comment line with <span class="Bold">Comment Type</span> = <span class="Italics">General</span> exists for the WBS position.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Comment Long Text</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if a job comment line with <span class="Bold">Comment Type</span> = <span class="Italics">Long Text</span> exists for the WBS position.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Comment Procurement</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if a job comment line with <span class="Bold">Comment Type</span> = <span class="Italics">Purchase</span> exists for the WBS position.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Comment Sales</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if a job comment line with <span class="Bold">Comment Type</span> = <span class="Italics">Sale</span> exists for the WBS position.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Component Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates an alternative, user-defined component package, entered by leaving the <span class="Bold">Type</span> and <span class="Bold">No.</span> fields empty.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description 2</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Value from the <span class="Bold">Description 2</span> field of the component selected in the <span class="Bold">Type</span> and <span class="Bold">No.</span> fields; can be edited.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Direct Unit Cost (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Direct unit cost from the component or work type costing (in local currency); can be manually changed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Document BOM No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the Document BOM No. of related Document BOM from <span class="CCBausteinInhaltZchn">cc|configure to order</span> integration (refer to <MadCap:xref href="cc configure to order.htm">“cc|configure to order” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Inv. Discount Amount (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the invoice discount amount granted in the related sales document.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Job Line Dimension 1 .. Job Line Dimension 3</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Transfers from the designated field values in the <span class="Bold">Job</span> FastTab on the <span class="Bold">Jobs Setup</span> page (e.g., Department Code, Project Code, Purchaser Code, etc.).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Milestone Triggers</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the number of milestone triggers have been set up for the WBS position (refer to topic <MadCap:xref href="Processing with Milestones.htm#_Ref383435456">“Processing with Milestones” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Outline Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Use this field to enter your own structure information.</p>
+                        <p class="ccTabellenText">Creates a job structure with fixed codes. In contrast to the WBS position, this field is not affected by structural shifts and can be edited directly by the user.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Procurement Finish Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date procurement is set to be finished; calculated in the Job Planning and Processing view (refer to topic <MadCap:xref href="Procurement.htm#_Ref425758709">“Procurement” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prod. Order from Document BOM</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if a Document BOM has been created for the WBS position from the <span class="CCBausteinInhaltZchn">cc|configure to order</span> integration, and therefore  a Production Order will be created from the Document BOM. Refer to topic <MadCap:xref href="cc configure to order.htm">“cc|configure to order” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Profit %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the percent margin of the WBS position.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Profit Amount Budget (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the difference between Total Price Budget (LCY) and Total Cost Budget (LCY).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Purch. Currency Code / Purch. Currency Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies a foreign currency to be used for purchase price calculations on the WBS position (refer to topic <MadCap:xref href="Entering Information in the.htm#_Ref383424043">“Calculation with Currencies” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Purch. Line Discount %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the discount percent assigned to the purchase line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Purch. Line Discount Amount</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the purchase discount amount granted based on the Direct Unit Cost and Purch. Line Discount %. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Quantity per</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Sets the <span class="Bold">Rollup Type</span> field to <span class="Italics">BOM</span> and calculates the quantity = upper line Quantity * Quantity per.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rem. Budget Quantity (Base)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the difference between the Quantity and the sum of the amounts from related substructures.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rem. Budget Total Cost (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the difference between the Total Cost (LCY) and the sum of the amounts in the associated substructures.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rem. Budget Total Direct Cost (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the difference between the Total Direct Cost (LCY) and the sum of the amounts from the associated substructures.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rem. Budget Total Price (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the difference between the Total Price (LCY) and the sum of the amounts from the associated substructures.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Responsible</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if a job team member has been assigned to the WBS position.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sales Currency Code / Sales Currency Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies a foreign currency to be used for sales price calculations on the WBS position (refer to topic <MadCap:xref href="Entering Information in the.htm#_Ref383424043">“Calculation with Currencies” on page 1</MadCap:xref>). </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sales Line Amount</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the calculated value of Quantity * Unit Price (LCY).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sales Line Disc. Amount (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the difference between the <span class="Bold">Sales Line Amount</span> and <span class="Bold">Sales Line Disc. Amount</span> fields (in local currency).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sales Line Discount %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the discount percent assigned to the sales line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sales Line Discount Amount</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Difference between the <span class="Bold">Sales Line Amount</span> and <span class="Bold">Sales Line Discount Disc. Amount</span> fields.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sales Milestone</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if the WBS position has milestone triggers (refer to topic <MadCap:xref href="Processing with Milestones.htm#_Ref383435456">“Processing with Milestones” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Service Item No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies a service item number to be used when creating a service order for a WBS position (refer to topic <MadCap:xref href="Procurement.htm#_Ref383424210">“Service Module Integration” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Setup Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Transfers from the selected component (<span class="Bold">Type</span> = <span class="Italics">Machine Center</span>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Special Alternative to WBS </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the connection to the alternate WBS position for the special position (refer to topic <MadCap:xref href="Special Positions for Sales.htm#_Ref383425640">“Special Positions for Sales Documents” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Special Position</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies a WBS position that is not included in the calculation because it only provides information about quantity and price (refer to topic <MadCap:xref href="Special Positions for Sales.htm#_Ref439940429">“Special Positions for Sales Documents” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Special Quantity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates a quantity for the special position in which no calculation values ​​are calculated (refer to topic <MadCap:xref href="Special Positions for Sales.htm#_Ref383425640">“Special Positions for Sales Documents” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Summarize Position</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Creates a sum for a component without the value of this sum being used in the calculation (refer to topic <MadCap:xref href="Entering Information in the.htm#_Ref383425362">“Summarize Position” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Total Cost Budget (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the calculated value of Quantity * Unit Cost (LCY) in local currency.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Total Price</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the calculated value of Quantity * Unit Price (LCY).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Total Price Budget (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the calculated value of Quantity * Unit Price (LCY) in local currency.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Travel Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Transfers from the selected traveling expense component (refer to topic <MadCap:xref href="Traveling Expenses.htm#_Ref382228664">“Traveling Expenses” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit Cost (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the Direct Unit Cost in local currency. If Indirect Costs % are used it displays the Direct Unit Cost plus Indirect Costs in local currency.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit Price</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the Unit Price in foreign currency if a job currency is used.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit Price Base</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if the unit price is based on Cost or Price; used with the “Recalculate Charges” function. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Variant Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Transfers from the selected component (<span class="Bold">Type</span> = <span class="Italics">Item</span>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Vendor No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Transfers from the selected component; used with special vendor pricing (refer to topic <MadCap:xref href="Entering Information in the.htm#_Ref383424355">“Special Direct Unit Costs from Vendors” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Work Type Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Transfers from the selected component (refer to topic <MadCap:xref href="Calculation.htm#_Ref437879139">“Work Types” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc445394443"></a>Path FastTab</h3>
+        <p>The <span class="Bold">Path</span> FastTab provides a trail from the top position to the current level of the selected line.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc445394444"></a>Actions Tab</h3>
+        <p class="ccTextvorlage">The functions on the <span class="Bold">Actions</span> tab are described in the following sections.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.1    "><a name="_Ref380676476"></a>Create Structure</h4>
+        <p class="ccTextvorlage">The functions in the “Create Structure” function manage the hierarchical structure in the Job Budget Calculation view:</p>
+        <ul>
+            <li class="ccAufzählungblau">New Position – creates a new position</li>
+            <li class="ccAufzählungblau">New Level – creates a new level below the position</li>
+            <li class="ccAufzählungblau">Delete Position – deletes a position and all related levels</li>
+        </ul>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.2    ">Move</h4>
+        <p class="ccTextvorlage">Positions and Levels can be moved by direction and degree. Refer to topic <MadCap:xref href="Entering Information in the.htm#_Ref380760800">“Moving Positions and Levels” on page 1</MadCap:xref> for more information.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.2.3    "><a name="_Ref380676572"></a>Expand/Collapse</h4>
+            <p class="ccTextvorlage">The directory levels can be expanded and collapsed by clicking <span class="Bold">Actions &gt; Expand/Collapse</span>:</p>
+            <ul>
+                <li class="ccAufzählungblau">Current Position – only relevant on Position lines; expands or collapses depending on the current state, e.g., expanded lines within the Position will be collapsed when the function is run.</li>
+                <li class="ccAufzählungblau">Expand All – all levels are expanded.</li>
+                <li class="ccAufzählungblau">Collapse All – all levels are collapsed to the Position level.</li>
+            </ul>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.4    "><a name="_Ref383449886"></a>Update Calculation</h4>
+        <p class="ccTextvorlage">This function updates the existing calculation depending on the line type. Also, depending on the selected line when the function is accessed, a selection dialog may open first to ensure the correct line(s) are included in the update.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Job Budget Calculation View_1.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Update Calculation request page</p>
+        <p class="ccTextvorlage">Select the correct option:</p>
+        <ul>
+            <li class="ccAufzählungblau">Current line – only the selected line is included in the calculation</li>
+            <li class="ccAufzählungblau">Current line + sub-structure – the selected line and related positions/levels are included in the calculation</li>
+            <li class="ccAufzählungblau">All lines – all lines are included in the calculation</li>
+            <li class="ccAufzählungblau">Selected lines – only selected lines are included in the calculation</li>
+        </ul>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">This line selection dialog appears during many different processes.</p>
+        </div>
+        <p class="ccTextvorlage">After the selection is made, click <span class="Bold">OK</span> to open the <span class="Bold">Update Calculation</span> request page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Job Budget Calculation View_2.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Update Calculation request page</p>
+        <p class="ccTextvorlage">The fields on the request page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Reset Budget</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Budget amounts can be updated in summary lines. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Cost</li>
+                            <li class="ccAufzählung">Sale and Cost</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Reset Discount</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Sales Line Discount % can be updated in summary lines. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Direct Unit Costs</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Direct Unit Cost information can be updated in base lines. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Pricing – line is recalculated with standard price information.</li>
+                            <li class="ccAufzählung">Fix prices – changed price on the line can be fixed.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Indirect Cost %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indirect Cost % in the base lines is recalculated with standard price information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Extra Charge %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Extra Cost % in the base lines is recalculated with standard price information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit Prices</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unit Price information can be updated in base lines. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Pricing – line is recalculated with standard price information.</li>
+                            <li class="ccAufzählung">Fix prices – changed price on the line can be fixed.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit Price Base</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines the change to the Unit Price. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Unit Price – Sales Price finding is used to find an Unit Price</li>
+                            <li class="ccAufzählung">Extra Charge % – Unit Price is calculated from Unit Cost plus Extra Charge %</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Target Total Price</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Changes the current sales amount to a target price.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Type of Change</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines the change to the target total price. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Line Amount – a change will create a line discount.</li>
+                            <li class="ccAufzählung">Total Price – a direct change without a line discount.</li>
+                            <li class="ccAufzählung">Profit – an update based on the profit value in all lines.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Total Price</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the new total price based on the Target Total Price and Type of Change.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Total Price (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the new total price (LCY) based on the Target Total Price and Type of Change.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Profit (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the new profit (LCY) based on the Target Total Price and Type of Change.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Profit %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the new profit % based on the Target Total Price and Type of Change.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.2.5    ">Copy from…</h4>
+            <p class="ccTextvorlage">This function copies WBS positions from one job to another. When a WBS position is copied, the subordinate Levels are copied with it.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Job Budget Calculation View_3.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Copy from function</p>
+        </div>
+        <p class="ccTextvorlage">The Search Job Line request page appears, in which the search criteria can be delimited. After clicking <span class="Bold">OK</span>, all suitable results are displayed in the <span class="Bold">Search Job Lines</span> page.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the <span class="Bold">Search Job Lines</span> page, select the WBS position which is to be copied to the new job. The WBS position and the relevant substructure are then integrated at the current job WBS position.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Job Budget Calculation View_4.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Search Jobs Lines to copy to another job</p>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.6    ">Expand BOM</h4>
+        <p>This function explodes the BOM in the Job Budget Calculation line if it was not exploded when the item was inserted. Refer to topic <MadCap:xref href="Entering Information in the.htm#_Ref383522176">“Entering BOMs in Job Structure” on page 1</MadCap:xref> for more information.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.7    ">Create Calc. Schedule</h4>
+        <p class="ccTextvorlage">This function creates a new Calculation Schedule for the selected WBS position. Refer to topic <MadCap:xref href="Entering Information in the.htm#_Ref383441436">“Calculation Schedules” on page 1</MadCap:xref> for more information.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.8    ">Sales Quote</h4>
+        <p class="ccTextvorlage">This action contains two functions for sales quote management. Refer to topic <MadCap:xref href="Create Sales Quotes.htm#_Ref383441484">“Create Sales Quotes” on page 1</MadCap:xref> for more information. </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.9    ">Sales Order</h4>
+        <p class="ccTextvorlage">This action contains three functions for sales order management. Refer to topic <MadCap:xref href="Create and Release Sales Orders.htm#_Ref439940608">“Create and Release Sales Orders” on page 1</MadCap:xref> for more information. </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.10    "><a name="_Ref380676476"></a>IDS - Connector</h4>
+        <p class="ccTextvorlage">This action contains functions that are used when processing job lines with the  IDS Webshop interface. Refer to topic <MadCap:xref href="IDS Connector.htm">“IDS Connector” on page 1</MadCap:xref> for more information.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc445394445"></a>Navigate Tab</h3>
+            <p class="ccTextvorlage">The <span class="Bold">Navigate</span> tab includes four action groups: PQM, MS Project, Line and Views. The actions within each are described in the following sections.</p>
+            <h4 class="Heading4" MadCap:autonum="1.1.3.1    ">PQM Action Group</h4>
+            <p class="ccTextvorlage">The actions in the PQM group are related to the Purchase Quotes Manager functionality. Refer to topic <MadCap:xref href="cc pqm.htm">“cc|purchase quotes manager” on page 1</MadCap:xref> for more information.</p>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.3.2    ">MS Project Action Group</h4>
+        <p class="ccTextvorlage">The actions in the MS Project group are used with the Microsoft Project integration. Refer to topic <MadCap:xref href="Microsoft Project Integration.htm#_Ref381296394">“Microsoft Project Integration” on page 1</MadCap:xref> for more information about using these actions.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.3.3    ">Line Action Group</h4>
+        <p class="ccTextvorlage">The actions in the Line group are specific to the selected line in the Job Budget Calculation view. Each is described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 86px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Action</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Position Card</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Job Position Card</span> page, which provides a card view of all the information in the Job Budget Calculation view for the selected WBS position.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Dimensions</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Job Line Dimensions</span> page, which displays any dimensions assigned to the job line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Comments</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Job Comments can be added to the Item Card, Service Card and General Component Card. These comments will then be copied to the appropriate job view when the component is selected in the Job Budget Calculation view. The options are:</p>
+                        <table style="margin-left: auto;margin-right: auto;">
+                            <col style="width: 225px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li class="ccAufzählung">General </li>
+                                        <li class="ccAufzählung">Rough Concept </li>
+                                        <li class="ccAufzählung">Detailed Concept</li>
+                                        <li class="ccAufzählung">Processing</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li class="ccAufzählung">Support</li>
+                                        <li class="ccAufzählung">Procurement</li>
+                                        <li class="ccAufzählung">Sale</li>
+                                        <li class="ccAufzählung">Long Text</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculation Schedule</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Job Calc. Schedule Job Line</span> page, which displays calculations for the job line.</p>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Entering Information in the.htm#_Ref383442040">“Calculation Schedules” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Milestone Triggers</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Job Sales Milestone Triggers</span> page, which displays any milestone triggers that have been assigned to the job line.</p>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Processing with Milestones.htm#_Ref383442119">“Processing with Milestones” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sales Quote</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the related Sales Quote for the line or the <span class="Bold">Sales List</span> page if multiple quotes exist.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sales Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the related Sales Order for the line or the <span class="Bold">Sales List</span> page if multiple orders exist.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Ledger Entries</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Job Ledger Entries</span> page, displaying all posted entries for the selected line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Job Documents</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Job Documents</span> page, which displays all documents relating to the selected line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Change Log Entries</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Change Log Entries</span> page, which displays changes made to the selected job line.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.3.4    ">Views Action Group</h4>
+        <p class="ccTextvorlage">The Views group provides direct access to the other views relating to the job. Each view is described in more detail in other topics.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.3.5    ">Job Action Group</h4>
+        <p>The Job group opens the <span class="Bold">Job Charges</span> page, which displays all extra charges relating to the job.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc445394446"></a>FactBoxes</h3>
+        <p class="ccTextvorlage">The Job Budget Calculation view includes two <span class="CCBausteinInhaltZchn">cc|project</span>-specific FactBoxes:</p>
+        <ul>
+            <li class="ccAufzählungblau">WBS Calculation – displays quantity, costs, price, profit, remaining budget information about the budget calculation line.</li>
+            <li class="ccAufzählungblau">Job Comment Lines – displays all comments assigned to the budget calculation line.</li>
+        </ul>
+    </body>
+</html>

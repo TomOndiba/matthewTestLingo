@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="657" MadCap:lastWidth="602" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434567991"></a>Example – IF/WENN Statements and String Variable Comparison</h3>
+            <p class="ccTextvorlage">In this example,  the IF statement is used in a dynamic formula to make a comparison with an empty value (using double quotes ""), a special string (value = blue) and a non-empty string (using not equal to brackets &lt;&gt;). This process works the same for the WENN statement. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example IF WENN Statements.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: IF statements for string variable comparisons in Checklist Template</p>
+        </div>
+        <p class="ccTextvorlage">In the first line of the checklist template, a color specification is expected. The input becomes stored as the variable “CL_COLOR”.  The results are listed in the next three lines: if the color variable matches the formula, then a true value (100) is returned; otherwise a false value (200) is returned.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage"> If the variable has no value, then the result of the formula will be true (100) on the first comparison line and false (200) on the second and third lines.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example IF WENN Statements_1.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Empty value calculated in Checklist Template</p>
+        </div>
+        <p class="ccTextvorlage">If the variable “CL_COLOR” has a value of blue, then the result of the formula will be true (100) on the second and third comparison lines – because blue is the correct option for the second line and because the value is not blank for the third line – and false (200) on the first  line. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example IF WENN Statements_2.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Valid value calculated in Checklist Template</p>
+        <p class="ccTextvorlage">If the variable “CL_COLOR” has a value that is not blank but is not blue (e.g., green), then the result of the formula will be true (100) on the third comparison line and false (200) on the first  and second comparison lines. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example IF WENN Statements_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Non-blank, not blue, value calculated in Checklist Template</p>
+    </body>
+</html>

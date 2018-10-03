@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 class="Heading1" MadCap:autonum="1   "><a name="_Ref415222247"></a><a name="_Toc434929947"></a>
+            <MadCap:annotation MadCap:createDate="2018-08-24T10:17:40.5813303-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="Unconfirmed, partial 2017 SP1 and SP2 updates" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:17:59.9764008-05:00">3rd Party Rental</MadCap:annotation>
+        </h1>
+        <p class="ccTextvorlage">If a customer wants to rent an item that is not in stock, it can be useful to rent the item from a vendor instead of buying it or not being able to rent the item to the customer. This type of renting from a vendor is referred to as 3rd Party Rental.</p>
+        <p class="ccTextvorlage"><span class="CCBausteinInhaltZchn">cc|rental</span> offers two ways to initiate the 3rd party rental process:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Create a 3rd Party Purchase Order for the Vendor<br />A Purchase Order is created from a Rent Order (<span class="Bold">Lines FastTab &gt; Functions &gt; Create Purchase Order</span>). Then a vendor is selected and the system subsequently creates the purchase order for the 3rd Party Rental. These purchase order lines have G/L Accounts to post the rental revenue and are linked to the Rent Order lines from which they are created. <br /></li>
+        </ol>
+        <ol start="2">
+            <li class="ccTextvorlageNumberedList">Create a Requisition Worksheet<br />A Requisition Worksheet is filled with the lines from a Rent Order (<span class="Bold">Lines FastTab &gt; Functions &gt; Create Requisition</span>). In the Requisition Worksheet, the demand can be covered by the creation of a 3rd Party Purchase Order, supply from an alternative location, or from a production order.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/3rd Party Rental.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Rent Order page, highlighting Create 3rd Party Requisition / Purchase Order functions</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Using either of the functions opens a page to choose the vendor:</p>
+            <ul>
+                <li class="ccAufzählungblau">If creating a 3rd Party Purchase Order, the <span class="Bold">Vendor No.</span> field must be populated. </li>
+                <li class="ccAufzählungblau">If creating a Requisition Worksheet, the <span class="Bold">Vendor No.</span> field can be left blank. The <span class="Bold">Vendor No.</span> field in the Requisition Worksheet will not be pre-populated. </li>
+            </ul>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/3rd Party Rental_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Create Rental Purchase Order page</p>
+        <p class="ccTextvorlage">If a requisition worksheet is created, a message appears stating that the requisition was created but the requisition worksheet is not opened automatically. On the ribbon of the Rent Order, click <span class="Bold">Navigate &gt; Requisition Lines</span> to open the document. </p>
+        <p class="ccTextvorlage">If a purchase order is created, a message appears stating that the order was created and asks if you want to edit the order. Clicking <span class="Bold">Yes</span> opens the purchase order; clicking <span class="Bold">No</span> closes the message. The  order can later be accessed by clicking <span class="Bold">Navigate &gt; Purchase Lines</span> on the ribbon of the Rent Order. </p>
+        <p> </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/3rd Party Rental_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: <MadCap:annotation MadCap:createDate="2018-08-24T10:23:01.0603112-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="2017 SP2 screen shot" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:23:06.9099583-05:00">Rent Order, View created supply documents</MadCap:annotation></p>
+        <p class="ccTextvorlage">A list with the created lines appears from where the purchase order or requisition worksheet can be opened. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/3rd Party Rental_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Requisition Lines page</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the Requisition Worksheet, there are six <span class="Bold">Replenishment System</span> options that can be selected:</p>
+            <ul>
+                <li class="ccAufzählungblau">Purchase – A Purchase Order is created</li>
+                <li class="ccAufzählungblau">Prod. Order – A Production Order is initiated</li>
+                <li class="ccAufzählungblau">Transfer – The item is transferred from another location to the rental location before shipment</li>
+                <li class="ccAufzählungblau">Assembly – An Assembly Order is created</li>
+                <li class="ccAufzählungblau">Rent – A 3rd Party Purchase Order is created (3rd Party Rental)</li>
+                <li class="ccAufzählungblau">Alternative Location – The item is shipped from another rental location</li>
+            </ul>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/3rd Party Rental_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Requisition Worksheet with 3rd party rental information</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">If the <span class="Italics">Rent</span> option is selected, the <span class="Bold">Vendor No.</span> field must be populated to create the Purchase Order when the “Carry Out Action Message” function is run. Upon creation of the Purchase Order, the Location Code in the Rent Order is changed to the 3rd Party Location Code that is entered in the <span class="Bold">External Rental Loc. Code</span> field in the <span class="Bold">Rental Mgt. Setup</span> page. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC REN/3rd Party Rental_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: <MadCap:annotation MadCap:createDate="2018-08-24T10:27:32.6000944-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="2017 SP2 screen shot" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:27:33.3925581-05:00">Rent Order page, 3rd Party Location </MadCap:annotation></p>
+        </div>
+        <p class="ccTextvorlage">If the item to be rented requires serial number-specific tracking, a new serial number must be entered for the Rent Order line. Refer to topic <MadCap:xref href="Return Rented Items to the.htm#_Ref355074359">“Return 3rd Party Item with Serial Number” on page 1</MadCap:xref> for more information about returning serialized items to the 3rd party vendor.</p>
+        <p class="ccTextvorlage">The shipment of the Purchase Order posts the positive adjustment for the items to make them available on the 3rd Party Location. </p>
+    </body>
+</html>

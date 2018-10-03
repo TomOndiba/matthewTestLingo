@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc442095747"></a>Automatic Email with Lot-/Serial No. Status Change</h3>
+            <p>On the <span class="Bold">Item Categories</span> page, click <span class="Bold">Actions &gt; Lot Status Email Setup</span> to define whether an email should be sent in case of a lot-/serial number status change for that Item Category and what setup must be used when the status changes from Status A to Status B.</p>
+            <p>The emails can be set up for changes of From Status &gt; To Status, only To Status or only From Status.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Automatic Email with Lot Status.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Lot status change settings for e-mail distribution on RAW MATERI item category</p>
+        </div>
+        <p class="ccTextvorlage">The email setup is managed in the <span class="Bold">Email Distribution Setup</span> page, accessed from the Departments menu via <span class="Bold">Administration &gt; Application Setup &gt; General</span>. Here the usage of Outlook or SMTP Mail can be defined as well as standard Recipients, Subject line format, or special usage filters like Customer/Vendor/Contact/Responsibility Center and Language Code.</p>
+        <div class="ccDIV">
+            <p>Subject text can be entered in the <span class="Bold">Subject Text</span> field. The text may contain placeholders to use dynamic parts in the Subject line as well as in the Email Body Text. Some possible placeholders are:</p>
+            <table>
+                <col style="width: 270px;" />
+                <col style="width: 243px;" />
+                <tr>
+                    <td>
+                        <p class="ccAufzahlungblaunospacing">%1 – Item No.</p>
+                    </td>
+                    <td>
+                        <p class="ccAufzahlungblaunospacing">%4 – From Status</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="ccAufzahlungblaunospacing">%2 – Variant Code</p>
+                    </td>
+                    <td>
+                        <p class="ccAufzahlungblaunospacing">%5 – To Status</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="ccAufzahlungblaunospacing">%3 – Lot No.</p>
+                    </td>
+                    <td>
+                        <p class="ccAufzahlungblaunospacing">%6 – Serial No.</p>
+                    </td>
+                </tr>
+            </table>
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">Numerous placeholders can be used in the Body Text. Refer to the current “cc|document configurator” documentation for the complete list.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Automatic Email with Lot Status_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Email Distribution settings for lot status change with Navigate tab showing Text Module and Attachment access</p>
+        </div>
+        <p>Attachments can be assigned to the specific email distribution setup entries. Attached file(s) will be included in the emails sent using this distribution.</p>
+        <p>Additionally, <span class="CCBausteinInhaltZchn">cc|text module</span> functionality can be used on each Email Distribution Setup line to define the text to appear in the body of the email.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Automatic Email with Lot Status_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: cc|text module text added to the LOTCHANGE Email Distribution code </p>
+        <div class="ccDIV">
+            <p>With these settings, an email is generated or automatically sent when a lot status change is posted from the <span class="Bold">Lot-/Serial No. Administration</span> page. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Automatic Email with Lot Status_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Email generated from changing lot status from RELEASED to QUARANTINE for item with RAW MATERI category</p>
+        </div>
+        <p class="ccTextvorlage">The <span class="Bold">Send Email</span> page includes the <span class="Bold">Edit in Outlook</span> check box, which will open the email in Outlook to allow for further functionality. To send the email without opening Outlook, clear the <span class="Bold">Edit in Outlook</span> check box and click <span class="Bold">OK</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Automatic Email with Lot Status_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Email opened in Outlook from the Send Email page </p>
+    </body>
+</html>

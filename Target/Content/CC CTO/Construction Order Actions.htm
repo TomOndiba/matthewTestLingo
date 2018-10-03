@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434568028"></a>Construction Order, Actions Tab</h3>
+        <p class="ccTextvorlage">The following menu items appear within the Function and Posting groups on the <span class="Bold">Actions</span> tab of the Construction Order ribbon. </p>
+        <ul>
+            <li class="ccAufzählungorange"><span class="Underline">Request BOM</span>: Enables the complete master BOM of the item in the construction header to be opened. However, to do this all the construction lines must be deleted first. If the configuration feature is being used, the entries in the document checklist are considered (refer to topic <MadCap:xref href="Configuration.htm#_Ref351308270">“Configuration” on page 1</MadCap:xref>).</li>
+            <li class="ccAufzählungorange"><span class="Underline">Schedule</span>: With this function, scheduling occurs based on the construction order. In this case, scheduling considers all the times for resources, work centers and groups of work centers entered in the construction order. The items are always scheduled so that they must be available to an assembly at the start of the first series of operations. Limited capacities are taken into consideration. The following types of scheduling are possible:<ul><li>Forward – Here scheduling of the construction order is performed for the future starting at the start date. The <span class="Bold">Starting Date</span> field is available in the construction header and is transferred from the sales order. It can, however, also be entered manually.</li><li>Backward – Here scheduling of the construction order is performed backward starting at the end date. The <span class="Bold">Ending Date</span> field is available in the construction header and is transferred from the sales order. It can, however, also be entered manually.</li></ul></li>
+        </ul>
+        <ul>
+            <li class="ccAufzählungorange"><span class="Underline">Transfer Due Date in Shipment Date</span>: This function enables the scheduling result to be transferred into the <span class="Bold">Shipment Date</span> on the construction lines.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Release</span>: Changes the status of the construction order to <span class="Italics">Released</span>. Lines with this status are relevant for requirements if this is defined in the <span class="Bold">Configure to Order Setup</span> page. Additionally, a variant code will be created automatically for released lines with <span class="Bold">Part Type</span> = <span class="Italics">Purchase</span>.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Reverse Status</span>: Changes the status of the construction order from <span class="Italics">Released</span> to <span class="Italics">Open</span>.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Assign New Line No.</span>: This function enables the lines of the construction order to be renumbered. This is necessary when no further new lines can be added to the construction order using the “Auto Split Key” function of Microsoft Dynamics NAV.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Order Promising</span>: This function enables, for example, critical parts or long-running items to be planned in advance. This function is based on the standard order promising functionality. The system calculates the earliest possible procurement date. If you accept the proposal, planning proposals are generated immediately which are connected with the document BOM line or the construction line via the reservation management of Microsoft Dynamics NAV. </li>
+            <li class="ccAufzählungorange"><span class="Underline">Update Unit Cost &amp; Price</span>: Updates the unit cost and unit price of lines (<span class="Bold">Type</span> &lt;&gt; <span class="Italics">G/L Account</span>, <span class="Bold">Purchase Status</span> &lt;&gt; <span class="Italics">Purchase Posted</span>) with the current costs and prices.  Refer to topic <MadCap:xref href="Example Update Unit Costs Prices in.htm">“Example – Update Unit Costs/Prices in CTO BOMs” on page 1</MadCap:xref> for more information.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Reserve</span>: Enables reservations to be made manually (e.g. from the warehouse stock).</li>
+            <li class="ccAufzählungorange"><span class="Underline">Item Tracking Lines</span>: Here item tracking can be assigned to components that are subject to management in batches or by serial numbers; standard Microsoft Dynamics NAV functionality.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Create Prod. Order</span>: Creates a production order for the entire Construction Order. If the production order is generated here, there are two options:<ul><li>Create Prod. Order without Variants – This function creates a production order for the overall construction order without creating variant codes, production BOMs, or routings.</li><li>Create Prod. Order with Variants – This function creates a production order based on the construction order. The system generates a variant for all production items with the <span class="Bold">Part Type</span> field set to <span class="Italics">Production</span> and generates a manufacturing routing and a manufacturing BOM. The automatically generated production BOMs and routings are linked to the item variant.</li></ul></li>
+        </ul>
+        <p class="ccAufzahlungorangenobullet">Whether the system creates production orders with or without variant codes by default is defined on the <span class="Bold">Configure to Order Setup</span> page (refer to topic <MadCap:xref href="Manufacturing FastTab.htm#_Ref402528390">“Manufacturing FastTab” on page 1</MadCap:xref>).</p>
+        <p class="ccAufzahlungorangenobullet">When the production order is generated for the <span class="Italics">Create Prod. Order with Variants</span> option, the following steps are performed by the system:</p>
+        <ol style="list-style-type: decimal;margin-left: 72pt;" start="1">
+            <li class="ccTextvorlageNumberedListinBulletList">Generation of one variant per production item with the <span class="Bold">Part Type</span> field set to <span class="Italics">Production</span>.</li>
+        </ol>
+        <ol style="list-style-type: decimal;margin-left: 72pt;" start="7" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedListinBulletList">Creation of a manufacturing BOM using the default number series (refer to topic <MadCap:xref href="Manufacturing FastTab.htm#_Ref402528396">“Manufacturing FastTab” on page 1</MadCap:xref>).</li>
+        </ol>
+        <ol style="list-style-type: decimal;margin-left: 72pt;" start="8" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedListinBulletList">Creation of a manufacturing routing using the default number series (refer to topic <MadCap:xref href="Manufacturing FastTab.htm#_Ref402528403">“Manufacturing FastTab” on page 1</MadCap:xref>).</li>
+        </ol>
+        <ol style="list-style-type: decimal;margin-left: 72pt;" start="9" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedListinBulletList">Assignment of the manufacturing BOM and the routing on the Item Variants table.</li>
+        </ol>
+        <ol style="list-style-type: decimal;margin-left: 72pt;" start="10" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedListinBulletList">Creation of the production order based on the BOM entered and the routing.</li>
+        </ol>
+        <div class="ccDIV">
+            <ul>
+                <li class="ccAufzählungorange"><span class="Underline">Transfer Changes to Prod. Order</span>: Transfers changes that were executed after the creation of a production order from the construction order. This function compares the construction order lines with the production lines, production components, and production routings. Lines for transfer to the production order are displayed  in the <span class="Bold">Changes Prod. Order Constr.</span> page for the following modifications:<ul><li>Changed quantities for components or times for routing lines </li><li>Deletion of components/routing lines </li><li>Insertion of new components/routing lines </li></ul></li>
+            </ul>
+            <p class="ccAufzahlungorangenobullet">As illustrated in <MadCap:xref href="#_Ref284835272" class="Figure">Fig. 1</MadCap:xref>, four changes were made in the Construction BOM: the quantity was changed for item E1011, item E1023 was changed, work center 200 was deleted and machine center 340 was added. </p>
+        </div>
+        <p class="ccAufzahlungorangenobullet">Additionally, inserting machine center 340 between other routing lines (without filling out any of the operation number fields) updated and recalculated the fields, causing work center 300 to be deleted and reinserted with the new operation codes.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Construction Order Actions.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref284835272"></a>: Changes to be transferred to the existing production order</p>
+        <p class="ccAufzahlungorangenobullet">If new lines were added, then the <span class="Bold">Line Inserted</span> check box is selected, and if a line was deleted, then the <span class="Bold">Line Deleted</span> check box is selected.</p>
+        <p class="ccAufzahlungorangenobullet">The user can decide which changes can be transferred to the production order by clearing the <span class="Bold">Transfer Change</span> check box for the lines not to transfer.</p>
+        <p class="ccAufzahlungorangenobullet">By clicking <span class="Bold">OK</span>, the selected changes are transferred to the production order. A message appears that indicates the number of lines that were transferred to the production order.</p>
+        <p class="ccTextvorlageNumberedListNoteHeadingIndent">Note</p>
+        <p class="ccTextvorlageNumberedListNoteBodyIndent">This function cannot change the BOM structure of the Production Order. It can only transfer changes of components and routing lines – not the deletion or insertion of items that have assemblies. </p>
+        <ul>
+            <li class="ccAufzählungorange"><span class="Underline">Transfer Back to Service BOM</span>: Updates the Service BOM if lines were changed in a construction order that was created from a Service Order (refer to topic <MadCap:xref href="Create Construction Order.htm#_Ref288829687">“Create Construction Order from Service Item Worksheet” on page 1</MadCap:xref>).</li>
+            <li class="ccAufzählungorange"><span class="Underline">Archive Construction</span>: Creates an archived version of the construction order. The archived versions can be opened from the construction order header by clicking the arrow in the <span class="Bold">No. of Archived Versions</span> field.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Switch Const.-/Prod. View</span>: Switches between the construction view and the production view (refer to topic <MadCap:xref href="Example Production View.htm#_Ref418157784">“Example – Production View” on page 1</MadCap:xref>).</li>
+            <li class="ccAufzählungorange"><span class="Underline">Archive and Finish</span>: Archives the current construction order and deletes the current version. Normally this function is used when the construction order has been completed.</li>
+        </ul>
+    </body>
+</html>

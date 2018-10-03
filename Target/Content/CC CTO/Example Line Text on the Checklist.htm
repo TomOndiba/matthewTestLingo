@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="559" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref374103354"></a><a name="_Toc434567997"></a>Example – Line Text on the Checklist</h3>
+            <p class="ccTextvorlage">Line text can be entered in checklists. This text can be opened and edited by clicking <span class="Bold">Line &gt; Line Texts</span> on the <span class="Bold">Lines</span> FastTab (refer to topic <MadCap:xref href="cc text module.htm#_Ref406766160">“cc|text module” on page 1</MadCap:xref> for more information).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Line Text on the Checklist.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Entering Line Text in the Checklist</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Once text has been entered, the text identification number is displayed in the <span class="Bold">Text Set ID</span> field, thus indicating that text exists for the line.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Line Text on the Checklist_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Line Text entered in the Checklist</p>
+        </div>
+        <p class="ccTextvorlage">In the <span class="Bold">Configure to Order Setup</span> page, a <span class="Bold">Variable for Extended Text</span> can be entered (refer to topic <MadCap:xref href="Dynamic BOM FastTab.htm#_Ref402686327">“Dynamic BOM FastTab” on page 1</MadCap:xref>). </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Line Text on the Checklist_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Variable for Extended Text set to TEXTBOX</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the <span class="Bold">Master BOM Attributes</span> page, in the <span class="Bold">Attribute</span> field, enter the same attribute that was entered in the <span class="Bold">Configure to Order Setup</span> page. In the <span class="Bold">Formula Value</span> field, enter the same variable that was entered in the <span class="Bold">Variable for Dynamic BOM</span> field on the checklist line (that contains the extended text), in this example, the variable “APRON”. The value of the APRON variable must not equal zero or TRUE if the text should be copied to the BOM.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Line Text on the Checklist_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Assignment of the Extended Text variable in the Master BOM</p>
+        </div>
+        <p class="ccTextvorlage">During the calculation of the BOM, the text that was entered in the checklist will be copied as line text to the BOM line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Line Text on the Checklist_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Line Text transferred to document BOM line</p>
+    </body>
+</html>

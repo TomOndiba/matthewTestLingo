@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="881.52" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc442095801"></a>Field Permissions Setup</h3>
+        <p class="ccTextvorlage">The following procedure can be regarded as a reasonable Field Permission setup:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the first line, create a data record which allows all modifications with the following settings:</li>
+        </ol>
+        <p class="ccTextvorlageNumberedListnonumber"><span class="Bold">Type</span> = &lt;blank&gt;; <span class="Bold">ID</span> = &lt;blank&gt;; <span class="Bold">Table ID</span> = 0; <span class="Bold">Field No.</span> = 0; <span class="Bold">Modification Allowed</span> = selected</p>
+        <ol start="2">
+            <li class="ccTextvorlageNumberedList">Grant permission to one user or role to change everything (same as step 1 except with a user or role assigned) or assign the Field Permission table (5060475) to a user or role with the <span class="Bold">Modification Allowed</span> check box selected.</li>
+        </ol>
+        <p class="ccTextvorlageNumberedListNoteHeadingIndent">IMPORTANT</p>
+        <p class="ccTextvorlageNumberedListNoteBody" style="margin-left: 36pt;">If this step is not done, no field permission changes can be made once the <span class="Bold">Field Permissions</span> page is closed or after Microsoft Dynamics NAV is restarted.</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">All critical fields should generally be blocked for modifications.</li>
+            <li class="ccTextvorlageNumberedList">These fields can then be released for modifications by authorized users or roles.</li>
+        </ol>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Field Permission Levels</h4>
+        <p class="ccTextvorlage">Field permission set up can be accomplished on different levels of detail that are checked by the system in the following order. The check occurs if the user leaves the respective data record. As soon as the system locates a restriction about a prohibited action, the check is terminated on this level:</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Level</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Type</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Table ID</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field No.</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">1.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">User</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">X</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">X</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">2.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Role </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">X</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">X</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">3.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">&lt;blank&gt;</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">X</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">X</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">4.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">User</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">X</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">&lt;blank&gt;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">5.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Role </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">X</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">&lt;blank&gt;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">6.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">&lt;blank&gt;</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">X</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">&lt;blank&gt;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">7.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">User</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">&lt;blank&gt;</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">&lt;blank&gt;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">8.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Role </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">&lt;blank&gt;</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">&lt;blank&gt;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">9.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">&lt;blank&gt;</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">&lt;blank&gt;</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">&lt;blank&gt;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <p class="BoldItalics12pt">Example</p>
+            <p class="ccTextvorlage">The following example shows how users set up with and without field permissions are allowed to modify fields on the Item Card based on the system level checks in the above table.</p>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Field Permissions Setup.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 389px;" MadCap:mediastyle="@media print { max-width: 5.00in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref307904598"></a>: Field Permissions page example setup</p>
+        <p class="ccTextvorlage">Based on the setup in <MadCap:xref href="#_Ref307904598" class="Figure">Fig. 1</MadCap:xref>, the following results occur:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">The <span class="Bold">Gen. Prod. Posting Group</span> field on the Item Card is modified by the user LISA, who has not been set up with field permissions and who is not a member of the SUPER role. When doing a check on level 3 (refer to table above), the system locates the data record in the third line of the <span class="Bold">Field Permissions</span> page. The user LISA is not allowed to modify the field. The system returns a message that she does not have Field Permissions and the field keeps its original value.</li>
+            <li class="ccTextvorlageNumberedList">The <span class="Bold">Gen. Prod. Posting Group</span> field on the Item Card is modified by the user SUSAN. When doing a check on level 1 (refer to table above), the system locates the data record in the seventh line of the <span class="Bold">Field Permissions</span> page. The user SUSAN is allowed to modify the field.</li>
+            <li class="ccTextvorlageNumberedList">The <span class="Bold">Costing Method</span> field on the Item Card is modified by the user SUSAN. When doing a check on level 4 (refer to table above), the system locates the data record in the sixth line of the <span class="Bold">Field Permissions</span> page. The user SUSAN is not allowed to modify the field, because user SUSAN is only permitted to change the <span class="Bold">Gen. Prod. Posting Group</span> field on the Item Card.</li>
+            <li class="ccTextvorlageNumberedList">The <span class="Bold">Gen. Prod. Posting Group</span> field on the Item Card is modified by the user NT, who is a member of the SUPER role. When doing a check on level 2 (refer to table above), the system locates the data record in the ninth line of the <span class="Bold">Field Permissions</span> page. The user NT is allowed to modify the field.</li>
+        </ol>
+    </body>
+</html>

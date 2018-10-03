@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref383441484"></a><a name="_Toc445394465"></a>Create Sales Quotes</h2>
+        <p class="ccTextvorlage">In this section, Sales Quotes are created for fixed price orders, invoicing from the Job, and are updated with Optional and Alternative positions and then the Rolling Calculation is reviewed.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref383070697"></a><a name="_Toc445394466"></a>Exercise – Create a Sales Quote for Fixed Price Orders</h3>
+        <p class="ccTextvorlage">The job lines to be included in the sales quote must be highlighted, and the line(s) that contain the pricing must have a Sales Code assigned.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Create Sales Quotes.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref382322835"></a>: Job lines to be included in sales quote</p>
+        <p class="ccTextvorlage">As <MadCap:xref href="#_Ref382322835" class="Figure">Fig. 1</MadCap:xref> illustrates, a fixed price sales quote is to be created for the Total Price line. With <span class="Bold">Sales Code</span> = SALESORDER, the fixed price quote will be invoiced directly by posting the sales order – it cannot be invoiced from the job.</p>
+        <p class="ccDemoStepHeading">Create a Sales Quote for a Fixed Price Order</p>
+        <p class="ccTextvorlage">To create a sales quote for a fixed price order, follow these steps:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the navigation pane, click <span class="CCBausteinInhaltZchn">cc|project</span> &gt; <span class="Bold">Jobs &gt; Jobs</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate and open the job for which the quote is to be created.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Budget Calculation</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the position(s) for which the quote is to be created.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Actions</span> &gt; <span class="Bold">Sales Quote &gt; Create Sales Quote</span>. <br />The following dialog appears.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Create Sales Quotes_1.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Create Sales Quote position message</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Select the correct option:<ul start="6"><li class="ccTextvorlageNumberedList">Current line – only the selected line is included on the quote</li><li class="ccTextvorlageNumberedList">Current line + sub-structure – the selected line and related positions/levels are included on the quote</li><li class="ccTextvorlageNumberedList">All lines – all lines are included on the quote</li><li class="ccTextvorlageNumberedList">Selected lines – only selected lines are included on the quote</li></ul></li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">If the <span class="Bold">Status</span> is not set to <span class="Italics">Quote</span> already, a message will appear asking if you want to set it to Quote. Click <span class="Bold">Yes</span>.</li>
+            <li class="ccTextvorlageNumberedList">If the system is set up to create versions with new quotes, a prompt will display asking if you want to create a new version for the job with a link to the quote. Click <span class="Bold">Yes</span> or <span class="Bold">No</span>, depending on your business process. </li>
+            <li class="ccTextvorlageNumberedList">A message appears, asking if you want to budget all sales positions. Click <span class="Bold">Yes</span> or <span class="Bold">No</span>, depending on your business process.</li>
+        </ol>
+        <p class="ccTextvorlage">The Sales Quote opens based on the previously selected job position(s). </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Create Sales Quotes_2.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Sales Quote for selected Job lines </p>
+        <p class="ccTextvorlage">This quote can be edited and processed as normal. </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Changes made on the Sales Quote will not be reflected in the Job; such changes must be made manually.     </p>
+        <p class="ccTextvorlage">Components without a Sales Code are only shown with the respective unit or quantity. For calculation lines without components, only the Description will be transferred. </p>
+        <p class="ccTextvorlage">In the Job Budget Calculation view, the selected lines indicate that a Sales Quote has been generated.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Create Sales Quotes_3.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Job lines updated with sales quote acknowledgment</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Sales Orders follow similar steps; rather than selecting <span class="Bold">Sales Quote</span> from the <span class="Bold">Actions</span> tab, select <span class="Bold">Sales Order</span>.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc445394467"></a>Exercise – Create a Sales Quote for Invoicing from Job</h3>
+        <p class="ccTextvorlage">In the previous exercise, a fixed price sales quote was created that was set up for direct posting from the sales order. This section explains how to create a sales quote that begins the invoice process from the job by using the Job Invoicing Planning and Job Invoicing Release batch jobs.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Create Sales Quotes_4.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5"><a name="_Ref382334071"></a>: New job lines to be invoiced from job</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">As <MadCap:xref href="#_Ref382334071" class="Figure">Fig. 5</MadCap:xref> illustrates, three lines have been added to the Job Budget Calculation view for invoicing:</p>
+            <ul>
+                <li class="ccAufzählungblau">The Installation line is set up with a fixed price Sales Code (FP), which means that this line cannot be invoiced via the sales order.</li>
+                <li class="ccAufzählungblau">The Training line is set up with a limited quantity Sales Code (LQ SP), which means that this line is chargeable to a maximum of 16 hours. Fewer hours can be invoiced, but more than 16 hours are not chargeable.</li>
+                <li class="ccAufzählungblau">The Instruction line is set up with a chargeable as used, time and material Sales Code (USG). </li>
+            </ul>
+        </div>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create a Sales Quote for Invoicing from Job</p>
+            <p class="ccTextvorlage">To create a sales quote for invoicing from the job, follow these steps:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">On the navigation pane, click <span class="CCBausteinInhaltZchn">cc|project</span><span class="Bold"> &gt; Jobs &gt; Jobs</span>.</li>
+                <li class="ccTextvorlageNumberedList">Locate and open the job for which the quote is to be created.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Budget Calculation</span>.</li>
+                <li class="ccTextvorlageNumberedList">Select the position(s) for which the quote is to be created.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Actions</span> &gt; <span class="Bold">Sales Quote &gt; Create Sales Quote</span>. </li>
+                <li class="ccTextvorlageNumberedList">A dialog appears; select the correct option:<ul start="1"><li class="ccTextvorlageNumberedList">Current line – only the selected line is included on the quote</li><li class="ccTextvorlageNumberedList">Current line + sub-structure – the selected line and related positions/levels are included on the quote</li><li class="ccTextvorlageNumberedList">All lines – all lines are included on the quote</li><li class="ccTextvorlageNumberedList">Selected lines – only selected lines are included on the quote</li></ul></li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+                <li class="ccTextvorlageNumberedList">If the system is set up to create versions with new quotes, a prompt will display asking if you want to create a new version for the job with a link to the quote. Click <span class="Bold">Yes</span> or <span class="Bold">No</span>, depending on your business process. </li>
+                <li class="ccTextvorlageNumberedList">A message appears, asking if you want to budget all sales positions. Click <span class="Bold">Yes</span> or <span class="Bold">No</span>, depending on your business process.</li>
+            </ol>
+        </div>
+        <p class="ccTextvorlage">The Sales Quote opens based on the previously selected job position(s). </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Create Sales Quotes_5.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Sales Quote for selected Job lines </p>
+        <p class="ccTextvorlage">A resulting order cannot be posted directly; the invoicing will be controlled by the “Job Invoicing” function.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc445394468"></a>Update Sales Quote Positions</h3>
+            <p class="ccTextvorlage">After creating a sales quote, and during the negotiation process, it may be necessary to change the calculation to win the order. </p>
+            <p class="ccTextvorlage">Changed job lines can automatically update the attached sales quote line(s) using the “Update” function.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Create Sales Quotes_6.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Quantity changed on Installation position to be updated on attached Sales Quote</p>
+        </div>
+        <p class="ccTextvorlage">Once the line(s) are updated, highlight the lines on the Job Budget Calculation view, and then click <span class="Bold">Actions &gt; Sales Quote &gt; Update</span>.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the dialog, click <span class="Bold">OK</span> and then click <span class="Bold">Yes</span> to modify the sales line. In the Job Budget Calculation, click <span class="Bold">Yes</span> in the <span class="Bold">Sales Quote</span> column for any of the selected lines to view the updated Sales Quote.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Create Sales Quotes_7.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Sales Quote with updated quantity on Installation position</p>
+        </div>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc445394469"></a>Rolling Calculation after Creating Sales Quotes</h3>
+            <p class="ccTextvorlage">Based on the sales quotes created in the previous sections, the Job Rolling Calculation view is updated as seen in <MadCap:xref href="#_Ref382336586" class="Figure">Fig. 9</MadCap:xref>. The Job Rolling Calculation view is accessed from the Job Card or Job Budget Calculation view by clicking <span class="Bold">Rolling Calculation</span> on the ribbon.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Create Sales Quotes_8.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 9"><a name="_Ref382336586"></a>: Job Rolling Calculation for Sales Quotes on the Job Budget Calculation view</p>
+        </div>
+        <p class="ccTextvorlage">The three most important amounts from the Job Budget Calculation view are shown in the following fields:</p>
+        <ul>
+            <li class="ccAufzählungblau">Total Direct Cost Budget (LCY)</li>
+            <li class="ccAufzählungblau">Total Cost Budget (LCY)</li>
+            <li class="ccAufzählungblau">Sales Line Amount Budget (LCY)</li>
+        </ul>
+        <p class="ccTextvorlage">If a Quote and/or Order exist on a line, click the <span class="Bold">Yes</span> value in the <span class="Bold">Sales Quote</span> or <span class="Bold">Sales Order</span> fields to open the sales document.</p>
+    </body>
+</html>

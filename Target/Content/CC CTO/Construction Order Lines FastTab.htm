@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="867" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434568029"></a>Construction Order Lines FastTab </h3>
+        <p class="ccTextvorlage">The menu items on the <span class="Bold">Line</span> and <span class="Bold">Function</span> tabs are described in this section.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Lines FastTab, Line Tab</h4>
+        <p class="ccTextvorlage">The following menu items appear on the <span class="Bold">Line</span> tab, accessed from the <span class="Bold">Lines</span> FastTab.</p>
+        <ul>
+            <li class="ccAufzählungorange"><span class="Underline">Attributes</span>: Opens the attributes that were assigned to the construction line. Attributes can also be assigned manually here.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Open File</span>: Opens the file specified in the <span class="Bold">Drawing</span> field for the current line.</li>
+            <li class="ccAufzählungorange"><span class="Underline">BOM</span>: Opens the construction lines in an editable format. In contrast to clicking <span class="Bold">Construction Lines</span> on the ribbon, this function presents only the current item and its substructure in the <span class="Bold">Construction BOM</span> page. </li>
+            <li class="ccAufzählungorange"><span class="Underline">Reserve</span>: Enables reservations to be made manually (e.g. from the warehouse stock).</li>
+            <li class="ccAufzählungorange"><span class="Underline">Reserve Ledger Entry</span>: Displays the reserved quantity when reservation items have been generated for this position (e.g. via the date of promised delivery).</li>
+            <li class="ccAufzählungorange"><span class="Underline">Item Tracking Lines</span>: Here item tracking can be assigned to components that are subject to management in batches or by serial numbers; standard Microsoft Dynamics NAV functionality.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Order Promising</span>: This function enables, for example, critical parts or long-running items to be planned in advance. This function is based on the standard function for “date of promised delivery”. The system calculates the earliest possible procurement date. If you accept the proposal, planning proposals are generated immediately which are connected with the document BOM line or the construction line via the reservation management of Microsoft Dynamics NAV. </li>
+            <li class="ccAufzählungorange" style="text-align: justify;"><span class="Underline">Create Separate Prod. Order</span>: Creates a production order for construction order lines that have the <span class="Bold">Separate Prod. Order</span> check box selected. If the production order is generated here, there are two options:<ul><li style="text-align: justify;">Create Prod. Order without Variants – This function creates a production order for the overall construction order without creating variant codes, production BOMs, or routings.</li><li style="text-align: justify;">Create Prod. Order with Variants – This function creates a production order based on the construction order. The system generates a variant for all production items with the <span class="Bold">Part Type</span> field set to <span class="Italics">Production</span> and generates a manufacturing routing and a manufacturing BOM. The automatically generated production BOMs and routings are linked to the item variant.</li></ul></li>
+        </ul>
+        <p class="ccAufzahlungorangenobullet">Whether the system creates production orders with or without variant codes by default is defined on the <span class="Bold">Configure to Order Setup</span> page (refer to topic <MadCap:xref href="Manufacturing FastTab.htm#_Ref402528537">“Manufacturing FastTab” on page 1</MadCap:xref>).</p>
+        <p class="ccAufzahlungorangenobullet">When the production order is generated for the <span class="Italics">Create Prod. Order with Variants</span> option, the following steps are performed by the system:</p>
+        <ol style="list-style-type: decimal;margin-left: 72pt;" start="1">
+            <li class="ccTextvorlageNumberedListinBulletList">Generation of one variant per production item with the <span class="Bold">Part Type</span> field set to <span class="Italics">Production</span>.</li>
+        </ol>
+        <ol style="list-style-type: decimal;margin-left: 72pt;" start="12" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedListinBulletList">Creation of a manufacturing BOM using the default number series (refer to topic <MadCap:xref href="Manufacturing FastTab.htm#_Ref402528543">“Manufacturing FastTab” on page 1</MadCap:xref>).</li>
+        </ol>
+        <ol style="list-style-type: decimal;margin-left: 72pt;" start="13" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedListinBulletList">Creation of a manufacturing routing using the default number series (refer to topic <MadCap:xref href="Manufacturing FastTab.htm#_Ref402528550">“Manufacturing FastTab” on page 1</MadCap:xref>).</li>
+        </ol>
+        <ol style="list-style-type: decimal;margin-left: 72pt;" start="14" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedListinBulletList">Assignment of the manufacturing BOM and the routing on the Item Variants table.</li>
+        </ol>
+        <ol style="list-style-type: decimal;margin-left: 72pt;" start="15" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedListinBulletList">Creation of the production order based on the BOM entered and the routing.</li>
+        </ol>
+        <ul>
+            <li class="ccAufzählungorange"><span class="Underline">Cut</span>: This function enables individual items, multiple items and complete structures from the same or a different construction order to be cut and copied to the clipboard.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Copy</span>: This function enables individual items, multiple items and complete structures from the same or a different construction order to be copied to the clipboard.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Paste</span>: If a line was copied to the clipboard from the same or a different construction order it can be inserted here. Individual items, multiple items and complete structures can be inserted.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Comments</span>: Comments can be informatively entered; standard Microsoft Dynamics NAV.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Dimensions</span>: Displays the dimensions assigned to the construction order line.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Tools</span>: Tools information can be informatively entered; standard Microsoft Dynamics NAV.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Personnel</span>: Personnel information can be informatively entered; standard Microsoft Dynamics NAV.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Quality Measures</span>: Quality measures can be informatively entered; standard Microsoft Dynamics NAV.</li>
+            <li class="ccAufzählungorange"><span class="Underline">Line Texts</span>: Opens the <span class="Bold">Edit Text</span> page where line-related text can be stored. Refer to topic <MadCap:xref href="cc text module.htm">“cc|text module” on page 1</MadCap:xref> for more information.</li>
+        </ul>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Lines FastTab, Function Menu</h4>
+            <p class="ccTextvorlage">The following menu item appears on the <span class="Bold">Function</span> menu, accessed from the <span class="Bold">Lines</span> FastTab. </p>
+            <ul>
+                <li class="ccAufzählungorange"><span class="Underline">Request BOM from Line</span>: Opens the Master BOM for the component in a construction line, if it has its own master BOM.</li>
+            </ul>
+        </div>
+    </body>
+</html>

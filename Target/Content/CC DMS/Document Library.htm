@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434330867"></a>Document Library</h2>
+        <p class="ccTextvorlage">Document libraries are configured in the <span class="Bold">DMS Document Library</span> page, accessed from the navigation pane by clicking <span class="Bold">Departments &gt; </span><span class="CCBausteinInhaltZchn">cc|dms</span><span class="Bold"> &gt; Setup &gt; DMS Document Library List</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DMS/Document Library.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: DMS Document Library Card</p>
+        <p class="ccTextvorlage">A DMS Document Library in Microsoft Dynamics NAV defines the connection to the corresponding document library in SharePoint. A document library owns several content types (refer to topic <MadCap:xref href="Content Type.htm">“Content Type” on page 1</MadCap:xref>) which furthermore bind different tables (refer to topic <MadCap:xref href="Table Setups.htm">“Table Setup” on page 1</MadCap:xref>) with independent MetaData (refer to topic <MadCap:xref href="Table Setups.htm#_Ref425781031">“MetaData” on page 1</MadCap:xref>) and table filters (refer to topic <MadCap:xref href="Table Setups.htm#_Ref425781036">“SharePoint Table Filter” on page 1</MadCap:xref> and topic <MadCap:xref href="Table Setups.htm#_Ref425327238">“Microsoft Dynamics NAV Table Filter” on page 1</MadCap:xref>).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DMS/Document Library_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 257px;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Hierarchy of Configuration</p>
+        <p class="ccTextvorlage">After configuring the document library, it is necessary to open the field list by clicking <span class="Bold">Fields</span> on the ribbon and then click <span class="Bold">Update Fields</span> to update the list from SharePoint. The list of fields will be retrieved in the current Microsoft Dynamics NAV’s signed in user context. Therefore, the Microsoft Dynamics NAV RoleTailored Client must access SharePoint and the user must have at least reading rights for the document library.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="General"></a>General FastTab</h3>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">General</span> FastTab of the <span class="Bold">DMS Document Library</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');margin-left: auto;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 103px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier for the document library.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Server</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the server where the document library is stored.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Server URL</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the URL of the server. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Short internal description of the document library.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Relative URL</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the part of the document library's address (URL), in-between the server url and the internal (static) name. This par is usually defined by website collections and websites. An address (URL) is structured in the following way:</p>
+                        <p class="ccTabellenText">“<span class="GrunAccentTabellenText">&lt;Server&gt;</span>/<span class="GrauAccentTabellenText">&lt;Relative URL&gt;</span>/<span class="BlauAccentTabellenText">&lt;Internal Doc. Library Name&gt;</span>/Forms/&lt;View&gt;.aspx” e.g. “<span class="GrunAccentTabellenText">http://www.cosmoconsult.com</span>/<span class="GrauAccentTabellenText">finance</span>/<span class="BlauAccentTabellenText">documents</span>/Forms/AllItems.aspx”</p>
+                        <p class="ccTabellenText">Other examples to retrieve the relative URL are:</p>
+                        <ul>
+                            <li class="ccAufzählungsmall">http://intranet/marketing/corporate/Forms/AllItems.aspx <br />        <span style="font-size: 11pt;">Relative URL: “marketing”</span></li>
+                            <li class="ccAufzählungsmall">http://www.mycompany.com/dms/operations/customer/Forms/AllItems.aspx <br />        <span style="font-size: 11pt;">Relative URL: “dms/operations”</span></li>
+                            <li class="ccAufzählungsmall">http://localhost:80000/websites/documents/items/Forms/FlatView.aspx<br />        <span style="font-size: 11pt;">Relative URL: “websites/documents”</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>SharePoint List GUID</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p>Populated with information of the selected Library via lookup through communication with SharePoint.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Absolute URL</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the complete path of the server, relative URL and internal static name of the document library.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Root Folder</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p>Populated with information of the selected Library via lookup through communication with SharePoint.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Static Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the name in which the document library was created in SharePoint. If a document library is renamed, this value will always be the same. Refer to the <span class="Bold">Relative URL</span> field for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Display Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Shows the (current) display name of the document library in SharePoint. When renaming (new caption) the library in SharePoint, this configuration must be changed too.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Service Timeout</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Sets the timeout in milliseconds until the service aborts an action (such as retrieve document list for DocumentBox). “0” will use the settings from the DMS Setup.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Total Released</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Selected automatically if all table setups are released.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434330868"></a>Document Library Actions</h3>
+        <p class="ccTextvorlage">The actions on the ribbon of the <span class="Bold">DMS Document Library</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');margin-left: auto;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 71px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 90px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTextvorlage" style="font-weight: bold;color: #FFFFFF;">Tab</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                        <p class="ccTextvorlage" style="font-weight: bold;color: #FFFFFF;">Action</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTextvorlage" style="font-weight: bold;color: #FFFFFF;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Actions</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Open in Web Browser</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the SharePoint address for the document library.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Test Connection</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Tests the connection to the server URL for the document library current Microsoft Dynamics NAV’s signed in user context.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Release All</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Simultaneously releases all table setups for a document library.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Reopen All</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Simultaneously reopens all table setups for a document library.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Navigate</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Fields</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">DMS Document Library Fields</span> page, which displays all fields used in the document library. </p>
+                        <p class="ccTabellenText">Use the “Update Fields” function after configuring the document library to update the list from SharePoint, in the current Microsoft Dynamics NAV’s signed in user context.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">User Credentials</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">DMS User Credentials</span> page, which displays any credentials assigned to the document library.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">Document Entries</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">DMS Document Entries</span> page, which displays any actions tracked or saved in Microsoft Dynamics NAV for the document library. Refer to topic <MadCap:xref href="Document Entries.htm#_Ref425437295">“Document Entries” on page 1</MadCap:xref> for more information. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

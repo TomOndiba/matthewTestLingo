@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="638" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434568004"></a>Example – Price Calculation</h3>
+        <p class="ccTextvorlage">In this example, an item has a sales price of 3500.00 EUR according to the sales line. On the <span class="Bold">Calculation</span> FastTab, a 10% discount is entered. </p>
+        <p class="ccTextvorlage">The system first calculates the 10% discount of the 3500.00 EUR and determines a calculation price of 3150.00 EUR.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Price Calculation.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Example Price Calculation via Checklist</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The Frame Type option of City - Senior has an additional charge of 50 EUR. On this amount, a 5% discount is granted since this option is set up for additional discounts. That means, the 10% discount on the <span class="Bold">Calculation</span> FastTab is used in addition to the line discount: <span class="Italics">50 EUR - 2.50 EUR (5%) - 5 EUR (10%) = 42.50 EUR</span>. This amount will be added to the calculation price of 3150.00 EUR as the net additional charge and a new calculation price of 3,192.50 EUR is calculated when the “Calculate Price” function is run.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Price Calculation_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Price calculation including City - Senior frame</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The Frame Height option of 55 has a gross additional charge of 20 EUR. On that line, a 10% discount (2 EUR) is granted. Since this option is not set up for additional discounts, only the 18 EUR net discount is added to the calculation price. When the “Calculate Price” function is run, the result is 3,210.50 EUR, as indicated in the <span class="Bold">Calculation Price</span> field on the <span class="Bold">Calculation</span> FastTab.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Price Calculation_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Price calculation including frame height of 55</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The Frame Height option of 55 has an additional weight of 5 kg, which is added to the item’s current net weight of 12 kg. Therefore, the <span class="Bold">Calculation Weight</span> field on the <span class="Bold">Calculation</span> FastTab is calculated to 17 kg when the “Calculate Price” function is run.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Price Calculation_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Weight calculation including additional weight for frame height of 55</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">New price calculations are activated for changes in the lines by clicking <span class="Bold">Calculate Price</span> on the ribbon (or pressing CTRL+F9). To recalculate formulas only, click <span class="Bold">Recalculate</span> on the ribbon (or press F9). To transfer the calculated sales price and net weight to the sales line, click <span class="Bold">Transfer Unit Price</span> on the ribbon (or press CTRL+S).  </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Price Calculation_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Calculation functions on the ribbon</p>
+        </div>
+    </body>
+</html>

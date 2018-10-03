@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434256452"></a>Planning Extension Setup</h2>
+        <p class="ccTextvorlage">The <span class="Bold">Planning Extension Setup</span> page is opened from the Manufacturing menu, under Administration, by clicking <span class="Bold">Planning Extension Setup</span>. This page provides the basic planning and maintenance settings for the process manufacturing module. The following sections explain the fields and the <span class="Bold">About</span> action on this page.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="General"></a>General FastTab</h3>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">General</span> FastTab are described in the following table.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/General FastTab_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }">
+            </img>
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Planning Extension Setup page, General FastTab</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 122px;">
+            </col>
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2">
+            </col>
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Start Period Utiliz. Display</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Default period of time that is shown when the <span class="Bold">Work Center Load</span> page is opened.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Start Period Plan Table</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Default period of time that is shown when the <span class="Bold">Plan Table Work Center</span> page is opened.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Delimiter Plan Table</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Character that is used as a delimiter for the plan table. Any character can be used.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No Plan. Flex. on Seq. Plan.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the <span class="Bold">Planning Flexibility</span> field is set to <span class="Italics">None</span> on the lines of the <span class="Bold">Sequence Planning</span> page during scheduling (refer to topic <MadCap:xref href="Planning Flexibility in Sequence.htm#_Ref379128597">“Planning Flexibility in Sequence Planning” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Upd. Prod. Order Line Due Date</p>
+                        </div>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">By default, the due dates of components are changed when a production order is moved in Sequence Planning. </p>
+                        <p class="ccTabellenText">If this check box is selected, and the components are supplied by another production order line, then the due dates of the supplying production order line are also changed.</p>
+                        <p class="ccTabellenText">Not selecting this check box could result in production order recalculation in MRP because the due dates are not changed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Update Multilevel Prod. Orders</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If a production order is created over several dependent production stages, the scheduling calculates each production stage independently. </p>
+                        <p class="ccTabellenText">If this check box is selected, dependent production order lines of a production order are updated according to schedule. For example, the ending date/time of lower production stages will be transferred to the <span class="Bold">Starting Date</span> and <span class="Bold">Starting Time</span> fields of higher production stages.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Omit Reversed Orders in Schedule</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, schedules reversed production order lines in Sequence Planning only if their Start Date/Time is before the End Date/Time of the last planned production order line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No Pick for Reversed Prod. Order Lines</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, a warehouse pick is created for production order lines reversed in Sequence Planning (sequence position 999,999,999,999).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Customer Mfg. Dimension Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Manufacturing Dimension of which its dimension values can be assigned to customers. These values can be used for priority planning.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Setup Hours per Day</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Time per day, which is used as the base calculation for the setup time. The number of hours affects the necessary setup personnel.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="Maintena"></a>Maintenance FastTab</h3>
+        <p class="ccTextvorlage">The fields on this FastTab are described in topic <MadCap:xref href="Planning Extension Setup Maintenance.htm">“Planning Extension Setup, Maintenance FastTab” on page 1</MadCap:xref>.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="Product"></a>Product Version Information</h3>
+            <p class="ccTextvorlage">On the ribbon, click <span class="Bold">About</span> to display the current product version information.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/PX_Product Version Information.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Product version information accessed by clicking About on the ribbon</p>
+        </div>
+    </body>
+</html>

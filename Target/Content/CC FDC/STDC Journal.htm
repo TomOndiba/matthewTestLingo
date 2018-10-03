@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="853" MadCap:lastWidth="603" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc435107519"></a>STDC Journal</h2>
+        <p class="ccTextvorlage">In the STDC Journal, just like the FDC Journal, STDC captures can be made. In STDC, every STDC Entry has at least one STDC Detailed Entry.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/STDC Journal.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 342px;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: STDC Journal</p>
+        <p class="ccTextvorlage">Every STDC Journal line results in maximum one STDC Entry and at least one STDC Detailed Entry. Similar to the FDC Journal, Start Time and End Time is captured, resulting in a full time entry (refer to topic <MadCap:xref href="STDC Entries.htm#_Ref427922119" class="RelLinkPageNumber">"STDC Entries" on page 1</MadCap:xref>).</p>
+        <p class="ccTextvorlage">Capturing in the STDC Journal occurs using a detailed entry type. The selection of detailed entry type defines, if the <span class="Bold">Time (h)</span> field is work time (<span class="Italics">Recording</span>), setup time or idle time (posted as positive value), or if it is a break time or unplanned failure time (posted as negative value).</p>
+        <p class="ccTextvorlage">Beside <span class="Bold">Time (h)</span>, an additional FDC <span class="Bold">Detailed Entry Type</span> = <span class="Italics">Interruption</span> may be generated for the FDC Entry while posting, using the <span class="Bold">Contained Break Time (h)</span> field. That way it is e.g. possible to enter a recording and a time of interruption in one single FDC Journal Line. Contained times are deducted from the duration. However, postings containing times should be processed without Start and End Time, because they will not correspond to the total time.</p>
+        <p class="ccTextvorlage">If an interruption of a STDC Entry should be posted afterwards, either the “Recording” and “Interruption” with time details must be posted, or a chargeback must occur (<span class="Bold">Applies-to STDC Entry</span> field). Finding the interruption time of a recording time is done by the time details of a line extended by the <span class="Bold">Recording Time Assignment Lapse (h)</span> field. That means that a “Recording” from 08:00 to 12:00 and an “Interruption” from 13:00 to 14:00 is combined to the same STDC Entry, if an Assignment Lapse is greater than “1” (h).</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The fields in the <span class="Bold">STDC Journal</span> page are described in the following table.</p>
+            <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 107px;" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Posting Date</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Specifies the date on which the processing should be posted.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Document No.</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">A code field for entering a number.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Detailed Entry Type</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Determined based on Entry Type:</p>
+                            <ul>
+                                <li class="ccAufzählung"><span class="Italics">Recording</span> is a positive duration</li>
+                                <li class="ccAufzählung"><span class="Italics">Break</span> and <span class="Italics">Unplanned Failure</span> result in a negative posting</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Applies-to STDC Entry</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Creates the new detailed Entry within the STDC Entry that is to be applied.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">FDC Resource No.</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Identifies the FDC resource for the entry to be created.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">FDC Shift Structure</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Indicates the shift structure of the STDC Entry.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Work Shift</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Indicates the shift of the STDC Entry.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">FDC Break Time Pattern</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Defines the deposited Break Time Pattern, to which the break should be posted.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Shift Start Date</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Indicates the shift start date on which the shift has begun.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Contained Break Time (h)</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Reduces the <span class="Bold">Time (h)</span> and generates an additional <span class="Bold">Detailed Entry Type</span> = <span class="Italics">Break</span>.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Time (h)</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Contains the time of the Detailed Entry Type.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Start Date-Time</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Specifies the Start Date and Time of the detailed entry. Only breaks with Start Time and End Time is to be transferred to FDC when using automatic invoicing.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">End Date-Time</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Specifies the End Date and Time of the detailed entry. If a Start Time is entered, entering an End Time is required.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                            <p class="ccTabellenText">Cancel STDC Detailed Entry</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                            <p class="ccTabellenText">Cancels an existing STDC Detailed Entry while posting a new Detailed Entry.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

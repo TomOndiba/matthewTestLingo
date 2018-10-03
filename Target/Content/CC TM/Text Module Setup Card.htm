@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="787" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc435103008"></a>Text Module Setup Card</h2>
+        <p class="ccTextvorlage">The <span class="Bold">Text Module Setup Card</span> page is accessed from the navigation pane by clicking <span class="Bold">Departments &gt; </span><span class="CCBausteinInhaltZchn">cc|text module</span><span class="Bold"> &gt; Tasks &gt; Text Module Setup.</span> In the <span class="Bold">Local Language Code</span> field, enter the relevant Language Code. The system equates this Language Code with a &lt;blank&gt; language code. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC TM/Text Module Setup Card.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Text Module Setup Card with the English language selected</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc435103009"></a>Product Version Information</h3>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">About</span> to display the current product version information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC TM/Text Module Setup Card_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Product version information accessed by clicking About on the ribbon</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc435103010"></a>Navigate Tab</h3>
+            <p class="ccTextvorlage">The <span class="Bold">Navigate</span> tab contains actions in the Setup and Expert groups. Each is described in this section.</p>
+            <p class="ccBildabstand"> <img src="../Resources/Images/CC TM/Text Module Setup Card_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" /></p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Text Module Setup Card with Setup and Expert groups highlighted</p>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.1    ">Predefined Setup</h4>
+        <p class="ccTextvorlage">The “Predefined Setup” function creates data for standard finance, manufacturing and service areas, as well as for <span class="CCBausteinInhaltZchn">cc|configure to order</span>. The Expert setup pages are populated with this default data.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">New areas and customized reports/tables must be added manually to the <span class="Bold">Text Module Use in Area Base List</span> and <span class="Bold">Text Module Objects Setup</span> pages.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.2    ">Use in Area Base List</h4>
+        <p class="ccTextvorlage">In the <span class="Bold">Text Module Use in Area Base List</span> page, define each Microsoft Dynamics NAV module that can use the <span class="CCBausteinInhaltZchn">cc|text module</span>.</p>
+        <p class="ccBildabstand"> <img src="../Resources/Images/CC TM/Text Module Setup Card_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" /></p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Text Module Use in Area Base List page </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.2.3    ">Object Setup</h4>
+            <p class="ccTextvorlage">In the <span class="Bold">Text Module Objects Setup</span> page, define all objects where the text should be printed and/or shown. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC TM/Text Module Setup Card_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 4.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Text Module Objects Setup page filtered on Sales and Purchase report and table objects</p>
+        </div>
+        <p class="ccTextvorlage">The value in the <span class="Bold">Object Type</span> field determines where and how text is displayed:</p>
+        <ul>
+            <li class="ccAufzählungblau">Report – indicates that text will appear on a printed report. For example, in the header of an Order Confirmation report or the lines of a Purchase Order report. </li>
+            <li class="ccAufzählungblau">Table – indicates that text will appear in a document header/lines. Additionally, the text to be copied will be displayed in a pop-up page. For example, text assigned to a customer will appear in a pop-up page when the <span class="Bold">Sell-to Customer No.</span> field is populated in a Sales Order.</li>
+        </ul>
+        <p class="ccTextvorlage">Therefore, to print text in a report or to appear as a pop-up in a page, the <span class="Bold">Use</span> check box must be selected for that line. By default, the <span class="Bold">Use</span> check box is selected on all reports and tables.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">In various versions of Microsoft Dynamics NAV, some reports from the ID range 1300 are set up in the <span class="Bold">Report Selection - Sales</span> and <span class="Bold">Report Selection - Purchase</span> pages. These reports are not prepared to print text from the <span class="CCBausteinInhaltZchn">cc|text module</span>. Therefore, ensure that the correct reports are set up for sales (ID range 200..) and purchases  (ID range 400..) in the respective Report Selection page.</p>
+    </body>
+</html>

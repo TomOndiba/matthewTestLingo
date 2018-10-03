@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">Add Carry Overs for Document Sums</h2>
+        <p>Carry Overs are used in <span class="CCBausteinInhaltZchn">cc|document configurator</span> reports to carry values over multiple pages. The carry overs are added in the RDL in the reports header and footer section. </p>
+        <p>The carry over header and footer text that appears in the report header and footer is determined by the Document Text settings in the <span class="Bold">Document Configurator Setup</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Add Carry Overs.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Header and Footer text for carry overs in Document Layouts</p>
+        <p class="ccTextvorlage">The carry over’s font type and size are defined by the document layout headers configuration. Custom formatting of a decimal value can be defined in the <span class="Bold">Carry Over Format</span> field in the <span class="Bold">General</span> FastTab of the Document Layout. An RDL formatting string must be used in order to change the default value.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Add Carry Overs_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Font and Format fields in Document Layout, currently using defaults not custom settings</p>
+        <p class="ccTextvorlage">In the Document Layout Fields, the <span class="Bold">Carry Over</span> field determines if the carry over is starting (Create) or ending (Stop). </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Add Carry Overs_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Carry over creation on “Lines” row for Sales Line in Document Layout section </p>
+        <p>The <span class="Italics">Create</span> option can only be used on only one field in the Document Layout, while the <span class="Italics">Stop</span> option can be used on multiple fields.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Add Carry Overs_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Two Carry over stops on “Total Section” row in Document Layout section </p>
+        <p>The left position is used according to the layout field's setting. All other markups and positions need to be changed inside RDL. An example for the Carry Over Format value could be “#,0.00' €'”. Refer to <a href="https://msdn.microsoft.com/en-us/library/4fb56f4y(v=vs.90).aspx">https://msdn.microsoft.com/en-us/library/4fb56f4y(v=vs.90).aspx</a> for more information.</p>
+        <div class="ccDIV">
+            <p>When a document is generated which carries over to multiple pages,   the footer text and value appears on the first page of the document when using the document layout OC-03-TM.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC DC/Add Carry Overs_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Carry Over Footer Text and Value on first page of document</p>
+        </div>
+        <p class="ccTextvorlage">On the following page(s), the header text and value appears on  the document when using the document layout OC-03-TM.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Add Carry Overs_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Carry Over Header Text and Value on next page of document</p>
+        <p> </p>
+        <p> </p>
+    </body>
+</html>

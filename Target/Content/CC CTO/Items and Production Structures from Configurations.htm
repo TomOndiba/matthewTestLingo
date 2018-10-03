@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="3" MadCap:lastHeight="610" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Items and Production Structures from Configurations</h3>
+        <p>Items and Production Structures can be created from Sales Quote/Order lines and Construction Order headers using the “Create Item &amp; Prod. Structure” function. </p>
+        <p>With this function, a new item gets created as a copy of the existing item, which replaces that item in the Sales document line/Construction Order header. Concurrently, a new Production Structure gets created, and depending on the setup in the <span class="Bold">Configure to Order Setup</span> page, can be automatically certified with a new Routing/Production BOM.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Standard Business Process</h4>
+        <p>Typically, a Checklist Template and Master BOM have been set up for an item configuration (typically a dummy item). When this item is entered in a Sales Quote, the standard <span class="CCBausteinInhaltZchn">cc|configure to order</span> processes are performed: the Checklist is completed, the Document BOM is created and calculations for pricing are made. Once the customer accepts the pricing, an order is created.</p>
+        <p> If this item configuration needs to be produced using <span class="CCBausteinInhaltZchn">cc|process manufacturing</span> functionalities, the “Create Item &amp; Prod. Structure” function is run, a new Item is created along with a new Production Structure, and the dummy item in the sales line is replaced with the new item. At this point, all further processing is managed through <span class="CCBausteinInhaltZchn">cc|process manufacturing</span>, such as the definition of recipes within the Production Structure, the final creation of the Routing and Production BOM, and the production of the item.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Example – Create Item and Production Structure from Sales Order</h4>
+        <p>In this example, a plastics processing company orders a configurable plastic plate. This item has a Checklist Template and Master BOM that include configurations for dimensions and colors. The items in the Master BOM are set up as <span class="Italics">Share of Recipe</span> so the <span class="Bold">Quantity per</span> field is used in the Document BOM.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures from Configurations.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Checklist and Master BOM for configurable plastic item</p>
+        <p>The entire configuration will be produced with the <span class="CCBausteinInhaltZchn">cc|process manufacturing</span> functionalities. The design department will handle the detailed specifications after the order is placed; therefore, the <span class="Bold">Certify Production Structure</span> check box is not selected in the <span class="Bold">Configure to Order Setup</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures from Configurations_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Sales Order for configurable plastic item</p>
+        <p class="ccTextvorlage">In the Checklist, the measurements are entered and the color is selected.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures from Configurations_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Checklist with measurements and selected color</p>
+        <p class="ccTextvorlage">In the Document BOM, the quantity per is calculated for the measurement and selected color.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures from Configurations_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Document BOM with measurements and selected color</p>
+        <p class="ccTextvorlage">Close the Document BOM. </p>
+        <p class="ccTextvorlage">In the Sales Order, click <span class="Bold">Line &gt; Create Item &amp; Prod. Structure</span> on the <span class="Bold">Lines</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures from Configurations_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Preparing to create Item and Production Structure from sales line</p>
+        <p class="ccTextvorlage">A message appears asking to keep the values for the Share of Recipe. Click <span class="Bold">Yes</span> to transfer the shares to the Production Structure.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures from Configurations_5.png" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Message to keep Share of Recipe values for transfer to Production Structure</p>
+        <p class="ccTextvorlage">After the process runs, a confirmation message appears with the new Item and Production Structure numbers. Click <span class="Bold">Yes</span> to open the Production Structure.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures from Configurations_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Confirmation message from Item and Production Structure creation</p>
+        <p class="ccTextvorlage">The Production Structure has been created for the new item with the calculated shares of the components. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures from Configurations_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Production Structure for new configured item</p>
+        <p class="ccTextvorlage">The Design department will now check the Production Structure or add any further specifications before certifying the Production Structure and creating the Routing and Production BOM.</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the Production Structure.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the Sales Order line, the dummy item has been replaced with the new configured item. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Items and Production Structures from Configurations_8.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Sales Order line with new item</p>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">Item and Production Structure from Construction Order</h4>
+        <p class="ccTextvorlage">The same process is used for creating an Item and Production Structure from a Construction Order header, except a reservation to the Construction Header cannot exist (i.e., order must be created manually), the “Create Item &amp; Prod. Structure” function is accessed from the <span class="Bold">Actions</span> tab and the Item No. is changed in the <span class="Bold">General</span> FastTab. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Items and Production Structures from Configurations_9.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Create Item &amp; Prod. Structure function in the Construction Order</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.4    ">Item and Production Structure from Manual Configuration</h4>
+        <p>It is also possible to create an Item and Production Structure for a manually created Document BOM or Construction BOM using the “Create Item &amp; Prod. Structure” function. Refer to topic <MadCap:xref href="Items and Production Structures for Multilevel Products.htm">“Items and Production Structures for Multilevel Products” on page 1</MadCap:xref> for information about using the function in those pages.</p>
+    </body>
+</html>

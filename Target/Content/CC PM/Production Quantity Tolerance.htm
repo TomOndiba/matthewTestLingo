@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="750" MadCap:lastWidth="603" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434256745"></a>Production Quantity Tolerance</h2>
+        <p class="ccTextvorlage">The use of the Production Quantity Tolerances is slightly different than the Delivery Tolerances because it is used internally. </p>
+        <p class="ccTextvorlage">Initially, a production tolerance, a replenishment tolerance or a sales tolerance is entered for each item on the Item Card.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Quantity Tolerance.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Production quantity tolerance assigned to item P-10500</p>
+        <p class="ccTextvorlage">The production quantity tolerance does not apply to creating a production order for an item that has a production tolerance; the quantity can be adjusted without considering the planning tolerances.</p>
+        <p class="ccTextvorlage"> </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Quantity Tolerance_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Order to produce 1000 units of item P-10500</p>
+        <p class="ccTextvorlage">Production quantity tolerance is used when posting output.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Quantity Tolerance_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Message received when changing the posting quantity from 1000 to 985 units of output for item P-10500</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">After changing production quantities, the related production order line is updated accordingly. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Production Quantity Tolerance_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Updated production order lines based on output change</p>
+        </div>
+        <p class="ccTextvorlage">With production tolerance, users can reduce the quantity within the range of the tolerance and the system will reduce the quantity that must be posted. This ensures that there is no remaining quantity after posting, which avoids the need to start a partial production for a small quantity with new setup times.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Quantity Tolerance_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Production Journal</p>
+        <p class="ccTextvorlage">The original quantity entered is stored in the <span class="Bold">Original Quantity</span> field in the <span class="Bold">Delivery Tolerance Entries</span> page from the Item Card; this value is never changed. If the quantity to handle is changed, the quantity in the document line is changed, but not the original quantity in the delivery tolerance entries. If the quantity is re-entered in the document line, the delivery tolerance entry is deleted.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Production Quantity Tolerance_5.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 246px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Production quantity tolerance entries for posted output</p>
+    </body>
+</html>

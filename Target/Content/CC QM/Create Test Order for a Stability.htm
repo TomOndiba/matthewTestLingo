@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc442095738"></a>Create Test Order for a Stability Test</h3>
+            <p class="ccTextvorlage">Once the setup of the Stability Card is complete, the initial Test Order for the stability tests must be created using the “Create Stability Test” function. This function can be run from the:</p>
+            <ul>
+                <li class="ccAufzählungblau">Stability Test Card by clicking <span class="Bold">Create Stability Test</span> on the ribbon</li>
+                <li class="ccAufzählungblau">Navigation pane by clicking <span class="CCBausteinInhaltZchn">cc|quality management</span><span class="Bold"> &gt; Tasks &gt; Create Stability Test</span></li>
+            </ul>
+        </div>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Define the user(s) who are authorized to run this function in the <span class="Bold">QM Permissions</span> page (refer to topic <MadCap:xref href="QM Permissions.htm" class="RelLinkPageNumber">"QM Permissions" on page 1</MadCap:xref>). </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Create Test Order for a Stability.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Create Stability Test request page opened from the Stability Test Card</p>
+        <p class="ccTextvorlage">On the <span class="Bold">Options</span> FastTab, define the time frame and determine whether the process should stop creating/refreshing test orders if an error occurs or not. On the <span class="Bold">Stability Test Header</span> FastTab, set a filter on the stability test(s) for which to create test orders. </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Click <span class="Bold">OK</span> to run the function; a confirmation message appears.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Create Test Order for a Stability_1.png" style="visibility: visible;mso-wrap-style: square;width: 278px;height: 147px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Create Stability Test function confirmation</p>
+        </div>
+        <p class="ccTextvorlageNoteheading">Recommendation</p>
+        <p class="ccTextvorlageNotebody">This function should be added to the object waiting queue and automatically run daily. Hereby it must be filtered for the current date.  </p>
+        <p class="ccTextvorlage">If a Stability Test’s starting date is within the stated time frame and no test order exists yet, an initial test order for the stability test is created. The <span class="Bold">Stability Test Card</span> page is updated with the test order information. The test order number is displayed in the header and lines, and the first line is now marked as Scheduled, which means that tests have been issued.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Create Test Order for a Stability_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Updated Stability Test </p>
+        <p class="ccTextvorlage">The Test Property Set and Test Properties of the assigned Test Plan are copied into the generated Test Order. </p>
+        <p class="ccTextvorlage">On the Test Order, the <span class="Bold">Status</span> is set to <span class="Italics">Created</span> and the <span class="Bold">Stability Test Status</span> is set to <span class="Italics">On Hold</span>. The <span class="Bold">Test Destination Type</span>, <span class="Bold">Test Destination No.</span> and <span class="Bold">Test Destination Variant Code</span> fields contain the originating data from the stability test and the <span class="Bold">Test Date</span> field is set to the same date as the Starting Date on the stability test. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Create Test Order for a Stability_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Initial Test Order created for the Stability Test</p>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Test Plan Source</span> FastTab relate to the information entered on the stability test, such as the stability test number and line number reference; item tracking; and creation/modified user and dates.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Create Test Order for a Stability_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Test Plan Source FastTab with Stability Test information</p>
+        <p class="ccTextvorlage">The <span class="Bold">Stability Test Status</span> field changes to <span class="Italics">In Process</span> when the Test Order is released.</p>
+        <p class="ccTextvorlage">After completing the Value Recording process, the <span class="Bold">Status</span> reverts to <span class="Italics">Created</span> and the <span class="Bold">Stability Test Status</span> reverts to <span class="Italics">On Hold</span> if the Stability Test is designed to have further tests. In addition, the <span class="Bold">Inspection Result</span> field is updated as either <span class="Italics">Items are OK</span> or <span class="Italics">Items are not OK</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Create Test Order for a Stability_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Test Order after Value Recording </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The corresponding line on the Stability Test Card is updated as follows:</p>
+            <ul>
+                <li class="ccAufzählungblau"><span class="Bold">Tested</span> check box is selected</li>
+                <li class="ccAufzählungblau"><span class="Bold">Inspection Result</span> field is set to <span class="Italics">OK</span> or <span class="Italics">NOK</span></li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Create Test Order for a Stability_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Stability Test updated after Test Order processing</p>
+        </div>
+    </body>
+</html>

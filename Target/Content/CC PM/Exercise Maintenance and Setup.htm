@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="887" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 MadCap:autonum="1.1    " class="Heading2"><a name="_Toc434256633"></a>Exercise – Maintenance and Setup Order</h2>
+        <p class="ccTextvorlage">Several items are processed on machine M001. When priority planning is run, there is always a change from P-10001 to P-10005 and P-10005 to P-10006. </p>
+        <p class="ccTextvorlage">The changing from P-10001 to P-10005 has been defined in the Setup Matrix. You need to define the change of six hours from P-10005 to P-10006 with a new Setup Order named Setup Order Material Change 3.</p>
+        <p class="ccTextvorlage">Set up the Maintenance-/Setup Job Type and define the change in the Setup Matrix. In Sequence Planning, run priority planning and then test the results. </p>
+        <p class="ccDemoStepHeading">Create the Maintenance-/Setup Job Type</p>
+        <p class="ccTextvorlage">Follow these steps to create the Maintenance-/Setup Job Type:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under Manufacturing, click <span class="Bold">Maintenance-/Setup Job &gt; Maintenance-/Setup Job Types</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, type WA009.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type Setup Order Material Change 3. </li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Order Type Code</span> field, enter SETUP.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Standstill Code</span> field, enter SETUP.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Setup Time</span> field, type 6.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Setup Time Unit of Meas. Code</span> field, enter HOURS.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Maintenance-/Setup Job Type</span> page and then close the <span class="Bold">Maint.-/Setup Job Type List</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Define the Machine Change in the Setup Matrix</p>
+        <p class="ccTextvorlage">Follow these steps to define the machine change in the Setup Matrix:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the Maintenance-/Setup Job menu, click <span class="Bold">Maintenance-/Setup Matrix</span>.</li>
+            <li class="ccTextvorlageNumberedList">Right-click the first line from item P-10005 to item P-953-KP001 and then click <span class="Bold">New Line</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Work Center No.</span> field, enter M001.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">From Item No.</span> field, enter P-10005.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">To Item No.</span> field, enter P-10006.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Maint.-Setup Job Type No.</span> field, enter WA009.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Maintenance-/Setup Matrix</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Review the Maintenance-/Setup Orders in Sequence Planning</p>
+            <p class="ccTextvorlage">Follow these steps to review the maintenance-/setup orders in the <span class="Bold">Sequence Planning</span> page:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">In the navigation pane, under Manufacturing, click <span class="Bold">Planning &gt; Sequence Planning</span>.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">Priority Planning</span> on the ribbon, select the <span class="Bold">Schedule Deferred Prod. Order Lines</span> check box and then click <span class="Bold">OK</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Actions &gt; Maintenance-/Setup Matrix &gt; Planning Maintenance-/Setup Matrix</span>.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> in the message to run the function.</li>
+                <li class="ccTextvorlageNumberedList">Confirm that a production order for “Setup Order Material Change 3” was inserted between all changes from item P-10005 to P-10006.</li>
+                <li class="ccTextvorlageNumberedList">Select one of the new production orders for “Setup Order Material Change 3” and then click <span class="Bold">Line &gt; Routing</span> on the <span class="Bold">Lines</span> FastTab.</li>
+                <li class="ccTextvorlageNumberedList">Confirm that the <span class="Bold">Setup Time</span> is set to 6 hours.</li>
+            </ol>
+        </div>
+    </body>
+</html>

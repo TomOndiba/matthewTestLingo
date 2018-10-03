@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="917" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256793"></a>Lot-/Serial No. Status</h3>
+        <p class="ccTextvorlage">In addition to setting filters on Customers and Countries in the <span class="Bold">Lot-/Serial No. Status</span> page, it is possible to set filters on Customer Groups. The settings of the <span class="Bold">Color Code</span> field can also be used on Ingredient Management pages in <span class="CCBausteinInhaltZchn">cc|process manufacturing</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Lot Serial No Status.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Lot-/Serial No. Status page </p>
+        <p class="ccTextvorlage">These fields are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 99px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Customer Group Filter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Customer Group that the status relates to. The filter entered here is considered at the following places within the application:</p>
+                        <ul>
+                            <li class="ccAufzählung">Planning – Inventory that was released for certain customer groups is only considered for the fulfillment of demand of orders by customers that belong to this customer group. For all other customers, this inventory is considered as not available in planning.</li>
+                            <li class="ccAufzählung">Picking – Inventory that was released for certain customer groups is only used in the picking order if the respective sales order was created for a customer belonging to this customer group.</li>
+                            <li class="ccAufzählung">Item Availability Check in the Sales Order – When item availability is checked in the Sales Order, only inventory where the deposited customer group filter at the status matches the customer group of the customer in the sales header is viewed as available. Inventory where the customer group filter of the status does not match the customer group of the customer in the sales header cannot be entered in the item tracking line. </li>
+                        </ul>
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Furthermore, the shipment posting is denied if the customer group filter of the status does not match the customer group of the customer in the sales header (such as if the status was altered after entering the item tracking line).</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Color Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Indicates a color to provide visualization to  the <span class="Bold">Status</span> field on the <span class="Bold">Ingredient Lot Overview</span> and <span class="Bold">Ingredient Lot - Select</span> pages.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

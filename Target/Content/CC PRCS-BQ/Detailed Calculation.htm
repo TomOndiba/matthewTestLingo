@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">Detailed Calculation</h2>
+        <p>Detailed calculations are handled through the <span class="Bold">BoQ Budget Calculation</span> page, which is essentially the same as the <span class="Bold">Job Budget Calculation</span> page but with additional functions for Construction Works Processing. This page is opened from the Job Card by clicking <span class="Bold">Budget Calculation</span> or from the BoQ Position List by clicking <span class="Bold">BoQ Budget Calculation</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: BoQ Budget Calculation</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="BoQ2"></a>BoQ Budget Calculation Page</h3>
+        <p class="ccTextvorlage">Many of the fields on the <span class="Bold">BoQ Budget Calculation</span> page are the same as fields in the <span class="Bold">BoQ Position List</span>. Therefore, only the fields that are specific to the BoQ Calculation are described in the following table.</p>
+        <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 130px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Allocated Quantity to PaC</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the quantity assigned to a PaC Job.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Allocated Sales Line Amount to PaC</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the Sales Line Amount assigned to a PaC Job.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Allocated Total Cost to PaC</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the Total Cost assigned to a PaC Job.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Allocation Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the status of allocation. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">None – used if the allocation is completely removed.</li>
+                            <li class="ccAufzählung">Partially – used if the complete quantity is not assigned.</li>
+                            <li class="ccAufzählung">Complete – used if the complete quantity is assigned.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Amendment Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the type of amendment. The options are:</p>
+                        <table>
+                            <col style="width: 190px;" />
+                            <col />
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li class="ccAufzählung">Amendment</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li class="ccAufzählung">Decrease</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li class="ccAufzählung">Increase</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <p> </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Assigned PaC Job No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the Pac Job which is assigned to the Job Line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Exp. Alloy Price (p. B. U.) FF</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the expected Alloy Price per Base Unit of Measure, which is calculated based on the selected item and the alloy quotation.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">The actions on the <span class="Bold">Actions</span> tab that are related to the BoQ Calculation are described in the following table.</p>
+        <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 130px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Action</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Copy to</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Copies the entire position line in the BoQ Budget Calculation; used with the “Paste from” function.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Paste from</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Pastes the copied position line to a new position in the BoQ Budget Calculation; used with the “Copy to” function.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Copy Calculation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">BoQ Position List</span> page, where new job budget lines can be copied to a single position or multiple positions to reduce manual entry of the same item/service on other budget lines.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Change Calculation Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Calculation Status</span> dialog, which allows for the change of Calculation Status for the selected position(s).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Set BoQ Position No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Creates a BoQ Position No. for current position and substructure or all positions based on the <span class="Bold">OZ Mask</span> field from the Job Card. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculate Alloy Surcharges</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Calculates the Alloy Surcharges for the entire job.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculate Rate Unit Cost</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p>Opens the <span class="Bold">Calc. Rate Unit Cost</span> dialog, which is used to calculate the price parts for Unit Prices and Unit Costs.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Wage Group Change</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Wage Group Change</span> dialog, which is used to adjust service costs.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">The actions on the <span class="Bold">Navigate</span> tab that are related to the BoQ Calculation are described in the following table.</p>
+        <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 129px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Action</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Statistic</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p>Opens the <span class="Bold">Calculation Statistics</span> page, which displays detailed calculation information.</p>
+                        <p>Refer to section <MadCap:xref href="#View">“View Calculation Statistics and Edit Vernier Adjustments” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Alloy Statistic</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText" MadCap:conditions="">Opens the <span class="Bold">Alloy Statistics</span> page, which is used with the <span class="CCBausteinInhaltZchn">cc|alloy management</span> integration with Construction Works Processing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rate Unit Cost</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Base Calculation Card</span> page, which provides an overview of the agreed upon calculations.</p>
+                        <p class="ccTabellenText">Refer to section <MadCap:xref href="Base Calculation.htm">“Base Calculation” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Alloy Surcharges Lines</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Alloy Surcharges Lines</span> page, where the calculation details for the Alloy Price are available.</p>
+                        <p class="ccTabellenText">Refer to section  <MadCap:annotation MadCap:createDate="2018-06-03T16:48:47.2811811-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="update" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-06-03T16:48:48.9171471-05:00">XXXX </MadCap:annotation>for more information about the fields on this page.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Long Text</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">LV Job Texts - Short Text</span> page, where short text for the selected position can be viewed.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable"><a name="Export2"></a>
+        </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    ">Add Items and Services in BoQ Budget Calculation</h3>
+        <p>As previously mentioned, any data entered in the Fast Calculation and/or updated in the BoQ Position List is transferred to the BoQ Budget Calculation.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="BoQBudgFast"></a>: BoQ Budget Calculation with data from Fast Calculation</p>
+        <p class="ccTextvorlage">
+            <MadCap:xref href="#BoQBudgFast" class="Figure">Fig. 2</MadCap:xref> shows that the entries made for wages and materials in the Fast Calculation for positions 3. 1. 10. and 3. 1. 20. have been created as separate general component lines in the BoQ Budget Calculation.</p>
+        <p class="ccTextvorlage">Actual services and items that are known during the quoting process can be entered in the BoQ Budget Calculation. These positions can then be copied to other positions in the calculation with the “Copy Calculation” function. Any services/items entered in the BoQ Budget Calculation will transfer to the PaC Job, which reduces data entry during the processing phase.</p>
+        <p class="ccTextvorlage">New lines are created in the BoQ Budget Calculation just like in the Job Budget Calculation: select the position to add a line and then click <span class="Bold">New Level</span>. In the <span class="Bold">Type</span> field, enter <span class="Italics">Item</span> or <span class="Italics">Service</span>, in the <span class="Bold">No.</span> field, enter the relevant Item or Resource, update quantities as needed and then enter any costs.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Item added to BoQ Budget Calculation</p>
+        <p class="ccTextvorlage">Add another line by clicking <span class="Bold">New Position</span> and then filling in the <span class="Bold">Type</span>, <span class="Bold">No.</span> , quantities and cost fields.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Service added to the BoQ Budget Calculation</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Scroll to the <span class="Bold">Calculation Status</span> field and note that the status on the position is set to <span class="Italics">Progress</span>.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Calculation Status on position with new lines</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">With the position selected, click <span class="Bold">Change Calculation Status</span> to set this position as Calculated.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Changing calculation status to Calculated on position with new lines</p>
+        </div>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    ">Copy Calculations</h3>
+            <p>Calculations that have been added to positions can be copied to other positions in the BoQ Budget Calculation. This is useful when the same items and/or services are used in multiple positions.</p>
+            <p>With the position line selected, click <span class="Bold">Actions &gt; Copy Calculation</span>. The BoQ Position List opens for selection of position(s) to copy the calculations.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_6.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7">: BoQ Position List opened from Copy Calculation function </p>
+        </div>
+        <p>In the BoQ Position List, select the position(s) in which to copy the calculations from the position selected in the BoQ Budget Calculation, and then click <span class="Bold">OK</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_7.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Selected positions to copy calculations from budget lines</p>
+        <p>In the BoQ Budget Calculation, the positions selected in the BoQ Position List are updated with the calculations copied from the originating budget position.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_8.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: BoQ Budget Calculation positions with copied calculations</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.4    ">Copy Positions</h3>
+            <p>Similar to the “Copy Calculation” function, one position can be copied to another position using the “Copy to” and “Paste from” functions.</p>
+            <p>In the BoQ Budget Calculation, select the position to be copied and then click <span class="Bold">Actions &gt; Copy to</span>.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_9.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Position to be copied to another position</p>
+        </div>
+        <p>Select the position where to copy the position and then on the <span class="Bold">Actions</span> tab, click <span class="Bold">Create Structure &gt; New Level</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_10.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: New level for pasting position</p>
+        <p class="ccTextvorlage">Select the new level position and then on the <span class="Bold">Actions</span> tab, click <span class="Bold">Paste from</span>. The copied position is pasted below the selected position.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_11.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Copied position pasted to new level</p>
+        <p class="ccTextvorlage">In the empty line above, a line for, e.g., an item can be added.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_12.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Item added to the position</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.5    ">Change Wage Group</h3>
+        <p class="ccTextvorlage">Wage Groups can be changed on positions using the <span class="Bold">Wage Group Change</span> function, which swaps service components and work types or changes the average calculation wage for a title, subtitle, position or the complete BoQ.</p>
+        <p class="ccTextvorlage">A new service calculation is added to a position in the BoQ Budget Calculation.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_13.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Service added to position</p>
+        <p class="ccTextvorlage">All new entries that have not been set with a calculation status of <span class="Italics">Calculated</span> are selected and the “Change Calculation Status” function is run. Once finished, click <span class="Bold">Actions &gt; Wage Group Change</span> to open the <span class="Bold">Wage Group Change</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_14.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Wage Group Change page</p>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Wage Group Change</span> page are described in the following table.</p>
+        <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 132px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">BoQ Pos. No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the BoQ Position No. to be included in the Wage Group change.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Complete BoQ</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, all positions in the BoQ are to be included in the Wage Group change.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculate Fixed BoQ Positions</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, BoQ Positions that are set as Fixed will be included in the Wage Group change.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Extra Charge %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies how to update the <span class="Bold">Extra Charge %</span> field in the BoQ Budget Calculation. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Keep (Calculate Unit Price)</li>
+                            <li class="ccAufzählung">Update (Keep Unit Price)</li>
+                            <li class="ccAufzählung">Find (Calculate Unit Price)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Wage Hours</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the current number of wage hours for the selected position(s).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Wage Cost</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the current wage cost for the selected position(s).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Avg. Wage (h)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the average wage (in hours) for the selected position(s).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Avg. Wage (h) (New)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the new average wage (in hours) to be used for the wage change.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calc. Res. No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the Calculation Resource to be changed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calc. Res. No. (New)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the Calculation Resource to replace the current Calculation Resource during the Wage Group change.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Work Type (New)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Specifies the new Work Type to be added to the Calculation Resource during the Wage Group change, if necessary.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>In the <span class="Bold">BoQ Position No.</span> field, the main position for the new calculations is selected from the BoQ Position List; the <span class="Bold">Complete BoQ</span> check box is automatically cleared.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_15.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 16">: BoQ Position specified in the Wage Group Change page</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Extra Charge %</span> field, the <span class="Italics">Find (Calculate Unit Price)</span> option is selected to update the Extra Charge % field from the Job Calculation Group page, which recalculates the Unit Price based on Unit Cost + the new Extra Charge %.</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Calc. Res. No.</span> field, the service to change is selected from the Resource List, which is filtered by only the resources included within the BoQ Position.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_16.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Selecting the Calculation Resource to change</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the <span class="Bold">Calc. Res. No. (New)</span> field, the new resource is selected from the Resource List, which now displays all service resources.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_17.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 18">: Selecting the new Calculation Resource to replace existing resource</p>
+        </div>
+        <p class="ccTextvorlage">For this change, no new work type is selected.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_18.png" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 19">: Wage Group Change ready to process</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Wage Group Change</span> page, click <span class="Bold">OK</span>. The resource for position 3. 2. 70. is changed from S005 to S007.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_19.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 20">: Wage Group changed for position 3. 2. 70. from S005 to S007</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.6    ">Create Sales Quote</h3>
+        <p>Now that calculations have been added to some positions in the BoQ Budget Calculation, a Sales Quote can be created.</p>
+        <p>On the <span class="Bold">Home</span> tab, click <span class="Bold">Create Sales Quote</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_20.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 21">: Creating a sales quote from the BoQ Budget Calculation</p>
+        <p class="ccTextvorlage">In the dialog, select <span class="Bold">All positions without components</span> to omit internal calculation components in the Sales Quote, and then click <span class="Bold">OK</span>.</p>
+        <p class="ccTextvorlage">A message appears asking to budget all sales positions; click <span class="Bold">No</span> to have the ability to use the "Wage Group Change" or "Vernier Adjustment" functions later in the calculation process.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_21.png" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 22">: Message to budget sales positions</p>
+        <p class="ccTextvorlage">The Sales Quote opens.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_22.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 23">: Sales Quote created from the BoQ Budget Calculation</p>
+        <p class="ccTextvorlage">Close the Sales Quote to return to the BoQ Budget Calculation.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.7    "><a name="View"></a>View Calculation Statistics and Edit Vernier Adjustments</h3>
+        <p class="ccTextvorlage">In the <span class="Bold">BoQ Budget Calculation</span> page, select a position and then click <span class="Bold">Navigate &gt; Statistic</span>. The <span class="Bold">Calculation Statistics</span> page opens, displaying total values as well as values for the selected position.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_23.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 24">: Calculation Statistics for complete job and a sub-position</p>
+        <p class="ccTextvorlage">Fields in the <span class="Bold">General</span> FastTab provide detailed information about total values and position values. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_24.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 25">: Flow- and DropDown Fields in General FastTab</p>
+        <p class="ccTextvorlage">Each is described in the following table.</p>
+        <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 151px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" style="width: 449px;" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">BoQ Positions (Open/In Progress)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the number of BoQ positions for the total job budget and/or for the selected position that have a <span class="Bold">Calculation Status</span> = <span class="Italics">Empty</span> or <span class="Italics">Progress</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">BoQ Positions (Calculated/Fixed)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the number of BoQ positions for the total job budget and/or for the selected position that have a <span class="Bold">Calculation Status</span> = <span class="Italics">Calculated</span> or <span class="Italics">Fixed</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">BoQ Positions (Fixed)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the number of BoQ positions for the total job budget and/or for the selected position that have a <span class="Bold">Calculation Status</span> = <span class="Italics">Fixed</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Wage Hours Calculated</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the number of wage hours for the total job budget and/or for the selected position.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Wage Days Calculated</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the number of wage days for the total job budget and/or for the selected position.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Average Wage</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the average wage for the total job budget and/or for the selected position.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Calculation Group Filter Total / Calculation Group Filter Position</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Filters the values for the total job budget and/or selected position by a Calculation Group.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_25.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 26">: Calculation Group Wages opened for Total Wage Hours Calculated</p>
+        <p class="ccTextvorlage">On the ribbon of the <span class="Bold">Calculation Statistics</span> page, click <span class="Bold">Init Preview</span>. This transfers preview values to the <span class="Bold">Total (Preview)</span> and <span class="Bold">Position (Preview)</span> FastTabs, which had no values until the function was run.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_26.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 27">: Populated Total (Preview) and Position (Preview) FastTabs</p>
+        <p class="ccTextvorlage">Additionally, the “Edit Vernier Adjustment Total”, “Edit Vernier Adjustment Position” and “Transfer Preview” functions become available on the ribbon after the “Init Preview” function is run.</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Edit Vernier Adjustment Total</span> to make temporary changes in the Calculation Statistics,  not directly in the BoQ Budget Calculation. This page is used for trying different calculations without affecting the actual budget calculation. New calculations that are beneficial to the bid can be transferred to the BoQ Budget Calculation.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_27.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 28">: Vernier Adjustment Edit Values</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The <span class="Bold">Vernier Adjustment Edit Values</span> page contains basically the same information in all FastTabs, with the <span class="Bold">Total (External)</span> FastTab containing a few extra fields. This page provides the ability to change average Line Discount %, Line Discount Amount and Target Price for the entire job, or average Extra Charge % and Line Discount % on individual components (Wages, Materials, External Service, Equipment, Others) for the entire job.</p>
+        </div>
+        <p class="ccTextvorlage">For example, to change the average Extra Charge % for Wages from 20.00 to 23.00, enter 23 in the <span class="Bold">Extra Charge % (Average)</span> field in the <span class="Bold">Wages</span> FastTab. Leaving the field prompts a message regarding transferring values to positions.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_28.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 29">: Changing average Extra Charge % for Wages</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Yes </span>to transfer the changes or <span class="Bold">No</span> to stop the process. If <span class="Italics">Yes</span> is selected, values are updated in the <span class="Bold">Vernier Adjustment Edit Values</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_29.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 30">: Updated values after Extra Charge % change for wages</p>
+        <p class="ccTextvorlage">Close the <span class="Bold">Vernier Adjustment Edit Values</span> page to return to the <span class="Bold">Calculation Statistics</span> page, which has been updated with changes.</p>
+        <p class="ccTabellenTextNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Vernier Adjustments can be made for specific positions using the same process with the “Edit Vernier Adjustment Position” function.</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Calculation Statistics</span> page, click <span class="Bold">Transfer Values</span> to transfer all changes to the BoQ Budget Calculation. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_30.png" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 31">: Values updated in Calculation Statistics</p>
+        <p class="ccTextvorlage">A message appears asking to transfer the preview values. Click <span class="Bold">Yes</span> to transfer the values to the BoQ Budget Calculation, click <span class="Bold">No</span> to cancel the transfer.</p>
+        <p class="ccTextvorlage">The <span class="Bold">Total (Preview)</span> and <span class="Bold">Position (Preview)</span> FastTabs are cleared.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_31.png" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 32">: Cleared preview FastTabs in Calculation Statistics</p>
+        <p class="ccTextvorlage">Values in the <span class="Bold">Total</span> and <span class="Bold">Position</span> FastTabs are updated with information from the BoQ Budget Calculation.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_32.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 33">: Updated values in Total and Position FastTabs</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">To restart the Vernier Adjustment process, click <span class="Bold">Refresh Statistics</span>. </p>
+        <p class="ccTextvorlage">Escape back to the <span class="Bold">BoQ Budget Calculation</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Detailed Calculation_33.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 34">: BoQ Budget Calculation with Vernier adjustments</p>
+    </body>
+</html>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="750" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    ">Exercise – Add Extra Usage from Counters to Invoices</h2>
+        <p>Item R-10000-02, ReTex TC240 LC Crawler Excavator, is now equipped with a counter for Operation Hours. Based on a monthly invoice period, 160 hours are included in the rental price of 1500. If this number of hours has been exceeded upon return of the item, the extra usage will be added to the invoice at a price of 9.38 per hour (Rate Price / Free Operation Hours).</p>
+        <p>Customer R-10000 needs to rent item R-10000-02 for the entire month of January 2019. Upon shipment, the hourly counter in the Stock Movement shipment is updated to 10 to match the counter on the item. When the item is returned on January 31st, the counter is checked and 195 is entered in the Stock Movement return. Since the number of hours was exceeded by 25 (return counter - shipment counter - free operation hours (195-10-160)), an entry for extra hours is added to the invoice.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">The same process can be performed for miles counters using the Free Operation Miles in Rental Prices and Operation Miles in Stock Movements.</p>
+        </div>
+        <p class="ccDemoStepHeading">Set Up the Price Structure</p>
+        <p class="ccTextvorlage">Follow these steps to set up the price structure:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Ensure that the work date is 01/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|rental</span><span class="Bold"> &gt; Contract Management &gt; Items</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate item R-10000-02 and then click <span class="Bold">Navigate &gt; Prices</span> (in the Rental group).</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rental Prices</span> page, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Sales Type = All Customers</li><li class="ccTextvorlageNumberedList">Unit of Measure Code = PCS</li><li class="ccTextvorlageNumberedList">Rental Rate Code = MONTH</li><li class="ccTextvorlageNumberedList">Unit Price = 1500</li><li class="ccTextvorlageNumberedList">Free Operation Hours = 160</li><li class="ccTextvorlageNumberedList">Include Counters = Yes</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Add Extra Usage.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Rental Prices for item R-10000-02</p>
+        <p class="ccDemoStepHeading">Create the Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to create the rent order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-10000.</li>
+            <li class="ccTextvorlageNumberedList">On the first line of the <span class="Bold">Lines</span> FastTab, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Item</li><li class="ccTextvorlageNumberedList">No. = R-10000-02</li><li class="ccTextvorlageNumberedList">Quantity = 1</li><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Invoice Period = Month</li><li class="ccTextvorlageNumberedList">Rental Start Date = 01/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 01/31/19</li></ol></li>
+            <li class="ccTextvorlageNumberedList">Notice that the <span class="Bold">Include Counters</span> check box is selected on the line.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Add Extra Usage_1.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Rent Order with item that includes hourly counters in invoice</p>
+        <ol start="1" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Shipment</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Select Entries</span>.</li>
+            <li class="ccTextvorlageNumberedList">Note which serial number is selected and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the line for the Insurance rate component, enter 150 in the <span class="Bold">Rate Unit Cost</span> field.</li>
+            <li class="ccTextvorlageNumberedList">On the line for the Cleaning rate component, enter 50 in the <span class="Bold">Unit Price Excl. VAT</span> field.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Update Counter for Shipment </p>
+        <p class="ccTextvorlage">Follow these steps to manually update the counter prior to posting the shipment:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>. <br />A message appears stating that lines are using counter based invoicing, should the current counter be used as the default? Clicking <span class="Bold">Yes</span> uses the current setting in the Machine Card;  clicking <span class="Bold">No</span> allows for a manual update of the counter in the Stock Movement. </li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">No</span> to update the counter manually and close the message.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Add Extra Usage_2.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Counter based invoicing message on shipment</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Another message appears asking to update the counters before posting.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|rental</span> <span class="Bold">&gt; Stock Movement &gt; Shipments</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rental Shipments</span> page, locate the correct rental order and then click <span class="Bold">Update Counter</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Add Extra Usage_3.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Preparing to update counter for item R-10000-02 shipment</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Counter Input</span> page, enter 10 in the <span class="Bold">Operation Hours</span> field.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Add Extra Usage_4.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Hourly counter updated manually prior to shipment</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Counter Input</span> page and then the <span class="Bold">Rental Shipments</span> page.</li>
+            <li class="ccTextvorlageNumberedList">In the Rent Order, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Process the Return</p>
+        <p>Follow these steps to process the return:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 01/31/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lines</span> FastTab, enter 01/31/19 in the <span class="Bold">Rental Return Date</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Return Qty. to Receive</span> field, enter 1.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Ensure that the noted serial number is selected and then click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.<br />A message appears stating that lines are using counter based invoicing and update the counters before posting.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Add Extra Usage_5.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Message to update counters before return posting</p>
+        <ol start="1" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+            <li>
+                <p>In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|rental</span> <span class="Bold">&gt; Stock Movement &gt; Return Orders</span>.</p>
+            </li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rental Returns</span> page, locate the correct rental order and then click <span class="Bold">Update Counter</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Add Extra Usage_6.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Preparing to update counter for item R-10000-02 return</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Counter Input</span> page, enter 195 in the <span class="Bold">Operation Hours</span> field.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Add Extra Usage_7.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Hourly counter updated manually prior to shipment</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Counter Input</span> page and then the <span class="Bold">Rental Returns</span> page.</li>
+            <li class="ccTextvorlageNumberedList">In the Rent Order, click <span class="Bold">Post</span>.</li>
+        </ol>
+        <ol start="1" MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Process the Invoice</p>
+        <p>Follow these steps to process the invoice:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 01/31/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 01/31/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and notice that a line has been added for the extra usage of 25 hours in the amount of 234.38, which is calculated at the Hourly Rental Rate of 9.38 (25 * 9.38).</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Add Extra Usage_8.png" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Invoice with extra hourly usage from counters</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Post the invoice and then close the Rent Order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Review Updated Counter Information on Machine Card</p>
+        <p>Follow these steps to view the update counter information on the Machine Card:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under Machines, click <span class="Bold">Machines &gt; Machines</span>.</li>
+            <li class="ccTextvorlageNumberedList">Double-click the line for item R-10000-02 with the serial number used in this exercise.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Technical Data</span> FastTab and notice that the <span class="Bold">Operation Hours</span> field is updated to 195, which was the hourly counter entered in the Stock Movement on return of this item.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Add Extra Usage_9.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Machine Card with updated hourly counter information </p>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the Machine Card.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="912" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref383424707"></a><a name="_Toc445394531"></a>Personal Unit Prices</h2>
+        <p class="ccTextvorlage">During contract negotiations, special unit prices for certain resources may be agreed upon. In these cases, the unit price on the invoice depends on if the person has posted usage.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc445394532"></a>Special Setup</h3>
+        <p class="ccTextvorlage">The special settings that should be considered when setting up personal unit prices are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 121px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Setup Page</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Service Card (Resource Card, General Component Card) </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">In the <span class="Bold">Procurement Cost Source</span> field, select <span class="Italics">Standard Costs</span> to use the direct unit costs from the person with the posting process.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Work Types for Services (assigned as Service Work Type Code on Resource Card)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">It is possible to use more Work Type Codes than the default assigned on the Resource Card for Services (resources with <span class="Bold">Type</span> = <span class="Italics">Service</span>). </p>
+                        <p class="ccTabellenText">Work Types are used to set up different prices. For example, Service Consulting has three entries in the <span class="Bold">Work Types</span> page:</p>
+                        <ul>
+                            <li class="ccAufzählung">SV CONS is the standard work type for calculation</li>
+                            <li class="ccAufzählung">SV CON JUN and SV CON SEN are for pricing setup</li>
+                        </ul>
+                        <p class="ccBildabstand">
+                            <img src="../Resources/Images/CC PR/Personal Unit Prices.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 3.8in; }" />
+                        </p>
+                        <p class="ccTabellenText">Service Work Types are used to define direct unit costs and unit prices for the calculation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Resource Card</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Persons (resources with <span class="Bold">Type</span> = <span class="Italics">Person</span>) have default work types, which are defined in the <span class="Bold">Person Work Type Code</span> field on the <span class="Bold">Person</span> FastTab.</p>
+                        <ul>
+                            <li class="ccAufzählung">Person Work Types are the basis for direct unit costs in the job journal.</li>
+                            <li class="ccAufzählung">Sales prices for Person Work Types only need to be set up for personal unit prices. Otherwise unit prices are taken from the job line.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Service resources and Service Work Type Codes are linked on the <span class="Bold">Job Sales Work Types</span> page (refer to topic <MadCap:xref href="#_Ref383093871">“Services and Persons Link” on page 1</MadCap:xref>). Additionally, Resources and Work Type Codes can be linked to a unit price on the Job Card through the <span class="Bold">Job Resource Prices</span> page (refer to topic <MadCap:xref href="#_Ref383521620">“Pricing Setup” on page 1</MadCap:xref>).</p>
+        <p class="ccTextvorlage">To use personal unit prices in job journal lines, a special Job Sales Code must be set up in order to select the sales position in the job line. The fields must be set up as follows:</p>
+        <ul>
+            <li class="ccAufzählungblau"><span class="Bold">Sales Channel</span> = <span class="Italics">Usage</span></li>
+            <li class="ccAufzählungblau"><span class="Bold">Sales Price Source</span> = <span class="Italics">Standard Prices</span></li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Personal Unit Prices_1.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.4in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Job Sales Codes for personal unit prices selection in job journal lines</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Ref383093871"></a><a name="_Toc445394533"></a>Services and Persons Link</h3>
+        <p class="ccTextvorlage">In <span class="CCBausteinInhaltZchn">cc|project</span>, the service is used as a component in the calculation and the person is used to enter time against a service position. All necessary information is linked in the <span class="Bold">Job Sales Work Types</span> page, accessed from the <span class="CCBausteinInhaltZchn">cc|project</span> menu by clicking <span class="Bold">Administration &gt; Job Sales Work Types</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Personal Unit Prices_2.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Job Sales Work Types </p>
+        <p class="ccTextvorlage">Use the <span class="Bold">Job Sales Work Types</span> page to specify which <span class="Bold">Service Work Type Code</span> has to be taken for pricing based on the Service (component in calculation) and Person (<span class="Bold">Person Work Type Code</span> field in time entry) combination.</p>
+        <p class="ccTextvorlage">As <MadCap:xref href="#_Ref383094276" class="Figure">Fig. 3</MadCap:xref> illustrated, Work Type Code LCG1 and LCG6 were assigned to persons P018 and P016, respectively.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Personal Unit Prices_3.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="_Ref383094276"></a>: Work Types assigned to persons P018 and P016</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Ref383521620"></a><a name="_Toc445394534"></a>Pricing Setup</h3>
+            <p class="ccTextvorlage">There are two settings for personal unit prices:</p>
+            <ul>
+                <li class="ccAufzählungblau">Standard Unit Price on the Service Work Type Code (<span class="CCBausteinInhaltZchn">cc|project</span> &gt; <span class="Bold">Administration &gt; Work Types &gt; Prices</span>)</li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Personal Unit Prices_4.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Standard unit price for the SV CON JUN service work type</p>
+            <ul>
+                <li class="ccAufzählungblau">Special Unit Price for a Job (<span class="Bold">Job Card &gt; Navigate &gt; Resource</span>)</li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Personal Unit Prices_5.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5"><a name="_Ref383096181"></a>: Job Resource Prices (for services) assigned to job J000001.02</p>
+        </div>
+        <p class="ccTextvorlage">Notice that the standard Unit Price for SV CON JUN is 80.00 but for job J000001.02, the unit price for a junior consultant is 90.00.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc445394535"></a>Calculation</h3>
+            <p class="ccTextvorlage">Services – but not actual person-type resources – can be used as a component in a calculation line. Therefore, the standard work type for services is adequate for calculating the price.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Personal Unit Prices_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Job Budget Calculation with work type codes </p>
+        </div>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.5    "><a name="_Toc445394536"></a>Time Entry</h3>
+            <p class="ccTextvorlage">The unit price is calculated by the defined rules in Time Entry.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Personal Unit Prices_7.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7"><a name="_Ref381689147"></a>: Job Time Entry with pricing from work type codes</p>
+        </div>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#_Ref381689147" class="Figure">Fig. 7</MadCap:xref>, the Unit Prices are based on the Work Type Codes (refer to <MadCap:xref href="#_Ref383096181" class="Figure">Fig. 5</MadCap:xref>), not the Unit Prices from the Resource Cards.</p>
+    </body>
+</html>

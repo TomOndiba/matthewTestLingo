@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="887" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref277405077"></a><a name="_Toc434568070"></a>Discontinued Items</h2>
+        <p class="ccTextvorlage">The discontinued item functionality provides the ability of steering the removal of old items/assembly units and their replacement by new components. Standard functionality in Microsoft Dynamics NAV regulates the trigger of new items in manufacturing using a validity date in the production BOM. <span class="CCBausteinInhaltZchn">cc|configure to order</span> offers an alternative method of handling discontinued items since a concrete date is not used (because of the depletion of remainder of stock, deadline shift and so on). </p>
+        <p class="ccTextvorlage">On the Item Card, a part is defined as a discontinued item and one or more replacement items are assigned. A replacement date is entered, which indicates the earliest from which an exchange is possible.</p>
+        <p class="ccTextvorlage">If the status of a production order is changed to <span class="Italics">Released</span>, the system will check if there are components marked as discontinued items. The user can check the inventory status of the discontinued item and the substitute item and then decide if he or she wants to replace the discontinued item. </p>
+        <p class="ccTextvorlage">On the Item Card, a discontinued item is defined by the fields highlighted in <MadCap:xref href="#_Ref284835524" class="Figure">Fig. 1</MadCap:xref>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Discontinued Items.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref284835524"></a>: Discontinued item settings on the Item Card</p>
+        <p class="ccTextvorlage">If the <span class="Bold">Discontinued Item</span> check box is selected, the system checks whether the items can be exchanged after the release of a production order or not. This check box can only be selected if an item substitution is assigned already. It is possible to enter a date starting from when this item is to be considered as discontinued (see the <span class="Bold">Replacement possible from</span> field).  </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">The date is checked against the work date, not the document date.  </p>
+        </div>
+        <p class="ccTextvorlage">When the check box is selected, the <span class="Bold">Item Navigate</span> page is opened automatically. This page is comparable to the standard <span class="Bold">Navigate</span> page except this page searches for an item in all <span class="CCBausteinInhaltZchn">cc|configure to order</span> tables. If this item is used as a component in a production order and the status is changing to <span class="Italics">Released</span>, then the <span class="Bold">Discontinued Components</span> page appears.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Discontinued Items_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Discontinued Components</p>
+        <p class="ccTextvorlage">The <span class="Bold">Discontinued Components</span> page displays all components on this production order that are defined as discontinued items. Further information about the component is available on the different menu buttons, such as item availability. To replace a discontinued item with a substitution, click <span class="Bold">Navigate &gt; Select Item Substitution</span> on the ribbon. A list of the assigned substitutes for the item appears. Select an item and click the <span class="Bold">OK</span> button to confirm the change and return to the <span class="Bold">Discontinued Components</span> page. By clicking the <span class="Bold">OK</span> button, the status change is carried out and the discontinued item is exchanged by the substitute.</p>
+    </body>
+</html>

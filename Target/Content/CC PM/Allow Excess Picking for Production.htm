@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="581" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256748"></a>Allow Excess Picking for Production Order Consumption</h3>
+        <p class="ccTextvorlage">Pick quantities can exceed the needed quantities for production order consumption in order to put bulk items in manufacturing locations. This excess quantity is only used for the warehouse movement, not for consumption (can pick more than needed but cannot use more than needed). </p>
+        <p class="ccTextvorlage">To use this functionality, the <span class="Bold">Excess Pick for Consumption</span> check box must be selected on the <span class="Bold">General</span> FastTab in the <span class="Bold">Warehouse Setup</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Allow Excess Picking for Production.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 238px;" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Warehouse Setup page</p>
+        <p class="ccTextvorlage">Once this check box is selected, a higher quantity value can be entered in the <span class="Bold">Qty. to Handle</span> field in a pick worksheet than specified by the quantity of the respective Sales or Production Order. Thus, it is possible to take a higher quantity from the inventory than necessary for the order. </p>
+        <p class="ccTextvorlage">However, the withdrawn excess quantity is not allocated to the specific order, but remains in the specified picking location as available inventory. Therefore, the original order is not changed.</p>
+        <div class="ccDIV">
+            <p class="BoldItalics12pt">Example</p>
+            <p class="ccTextvorlage">Component item 30300 has a quantity of 344 on a production order, which is transferred to the Warehouse Pick document line. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Allow Excess Picking for Production_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.4in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Warehouse Pick line with actual component quantities</p>
+        </div>
+        <p class="ccTextvorlage">In this example, 350 KG need to be picked and moved to the manufacturing location.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Allow Excess Picking for Production_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.4in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Warehouse Pick line quantity increased</p>
+        <p class="ccTextvorlage">The component quantity remains at 344 before and after the Warehouse Pick is registered.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Allow Excess Picking for Production_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Registered Pick and related Prod. Order Component line</p>
+        <p class="ccTextvorlage">In the Production Journal, the user is prevented from increasing the Consumption Quantity to 350, even though the Pick quantity was increased to that amount.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Allow Excess Picking for Production_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Consumption Quantity increase prevented</p>
+    </body>
+</html>

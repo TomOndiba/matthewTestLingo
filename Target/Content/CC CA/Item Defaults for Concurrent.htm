@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="608" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref416871328"></a><a name="_Toc434834938"></a>Item Defaults for Concurrent Calculations</h2>
+        <p>Item information can be automatically added to concurrent calculations depending on certain conditions. Each default is described below.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434834939"></a>Item Calculation</h3>
+        <p>When a concurrent calculation is created from a document calculation, an item calculation is added automatically to the concurrent calculation line (<span class="Bold">Line Type</span> = <span class="Italics">Item</span>) when both of the following conditions are met:</p>
+        <ul>
+            <li class="ccAufzählungblau">The concurrent calculation line for the item exists with an empty <span class="Bold">Calculation No.</span> field. </li>
+            <li class="ccAufzählungblau">Only one certified calculation exists for the item.</li>
+        </ul>
+        <p>For example, item 1900 has two calculations but only one is certified. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Item Defaults for Concurrent.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Calculations assigned to item 1900 (one Certified, one Under Development)</p>
+        <div class="ccDIV">
+            <p>When a new concurrent calculation is created from a document calculation (and thus the <span class="Bold">Calculation No.</span> field is empty on the <span class="Italics">Item</span> line type), the Item line is populated with the certified calculation. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CA/Item Defaults for Concurrent_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Concurrent calculation created for item with one certified calculation and empty Calculation No. field</p>
+        </div>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434834940"></a>Item Filter</h3>
+        <p>The <span class="Bold">Item Filter</span> field on the concurrent calculation header is set with the item number from the calculation when both of the following conditions are met:</p>
+        <ul>
+            <li class="ccAufzählungblau">The concurrent calculation line for the item exists with an empty <span class="Bold">Calculation No.</span> field. </li>
+            <li class="ccAufzählungblau">Only one document calculation line (Quote, Blanket Order, and so on) exists for the concurrent calculation.</li>
+        </ul>
+        <p>This filter shows only calculations relating to the item number when a user clicks the arrow in the <span class="Bold">Calculation No.</span> field on the lines. The filter can be deleted to show all calculations.</p>
+    </body>
+</html>

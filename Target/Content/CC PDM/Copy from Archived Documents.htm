@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/COSMO CONSULT_FINAL_PDF.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc525041210"></a>Copy from Archived Documents</h2>
+        <p class="ccTextvorlage">The situation is different when copying documents from archives: If a document is restored from the archives, the drawings that were assigned to the document at that time are <span class="BoldUnderline">NOT</span> copied, but the revisions that are always valid are.</p>
+        <p class="ccTextvorlage">
+            <MadCap:xref href="#SalesOrderWithDrawingPerLine" class="Figure">Fig. 1</MadCap:xref> shows the creation of a sales order with a valid drawing and revision level A.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Copy from Archived Documents.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="SalesOrderWithDrawingPerLine"></a>: Sales order with drawing per line</p>
+        <p class="ccTextvorlage">The sales order is transferred to the archive because it has been completely processed. The drawing set is also transferred to the archive.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Copy from Archived Documents_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Sales Order Archive, Archived Drawing</p>
+        <p class="ccTextvorlage">After some time, there is a new drawing for the item and thus a revision level. In the Drawing Card, the revision level is set to “blocked”. This must be done before the new revision is released. Otherwise a message will open stating that a valid drawing already exists for the item and it is not possible to assign the new revision to the item.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Copy from Archived Documents_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Drawing with multiple valid number</p>
+        <p class="ccTextvorlage">In this case, the drawing set must be replaced manually in the Item Card.</p>
+        <p class="ccTextvorlage">The drawing set still contains the blocked drawing revision.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Copy from Archived Documents_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Drawing Set for Item</p>
+        <p class="ccTextvorlage">This is manually replaced by the new drawing revision.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Copy from Archived Documents_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Drawing Set Exchanged to Item</p>
+        <p class="ccTextvorlage">The sales order archive shows that revision level A is assigned to the drawing used at that time, but that the status was changed to “BLOCKED”.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Copy from Archived Documents_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Drawing Set Status Change</p>
+        <p class="ccTextvorlage">Now create a new sales order and copy the archived order.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Copy from Archived Documents_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Copy from Archive in Sales Order</p>
+        <p class="ccTextvorlage">By confirming the selection, all information from the archived sales order is now transferred. With one exception: The drawing set is always the current one, but never the obsolete one.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Copy from Archived Documents_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Copied Sales Order with New Drawing</p>
+    </body>
+</html>

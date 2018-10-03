@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc442095723"></a>Test Property Set</h3>
+            <p class="ccTextvorlage">A variety of inspection criteria is summarized in the Test Property Set Card. For example, a “Measuring Testing” test property set could be created, in which the Length, Width and Diameter inspection criteria are allocated and which are consulted to determine the measurement requirements of the item that is to be inspected.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Test Property Set.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 423px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Test Property Set Card for measurement testing</p>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">General FastTab</h4>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">General</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 87px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier from the number series or manually entered if manual numbering is allowed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Description of the test property set.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Testing Method</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines the testing method of the test property set. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Counting (AQL) – counting procedure (such as in the component inspection), for example, if the acceptance random inspection is applicable according to the number of faulty units or mistakes according to DIN ISO 2859 - part 1.</li>
+                            <li class="ccAufzählung">Measuring – measured actual values (for example, inner depth, drop point, number bacteria per colony and so on) are compared with the predetermined required system values.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">AQL Values</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">If the <span class="Italics">Counting (AQL)</span> testing method is selected, the AQL values must be entered for the indicated types of mistakes (Zero Defect, Severe Defect, Critical Defect, Major Defect, Minor Defect). These are the basis for a later calculation of the assumption numbers in the test order.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace" />
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Lines FastTab</h4>
+        <p class="ccTextvorlage">On the <span class="Bold">Lines</span> FastTab, enter the test criteria to be taken into consideration within a Test Property Set. </p>
+        <ul>
+            <li class="ccAufzählungblau">In the <span class="Bold">Test Property Code</span> field, enter the test property number; all additional information from the Test Property is transferred to the line. Many of these fields can be changed as needed.</li>
+            <li class="ccAufzählungblau">The <span class="Bold">Result Type Code</span>, <span class="Bold">Expected Value</span>, <span class="Bold">Output External</span> and <span class="Bold">Output Internal</span> fields are editable to allow a test property to be modified in the test property set.  </li>
+            <li class="ccAufzählungblau">In the <span class="Bold">AQL Value</span> fields, select the check boxes according to which error type the test property is to be tested. Error types symbolize a decrease of the Inspection Severity. Increasing the AQL Values connected to the error type also increases the related acceptance numbers.</li>
+        </ul>
+        <p class="ccTextvorlage">Click <span class="Bold">Line &gt; Test Device</span> to open the <span class="Bold">Test Property Set Test Devices</span> page where test devices can be assigned retroactively to the test property set. Alternatively, click the value in the <span class="Bold">Test Device</span> field to open the page.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">Miscellaneous FastTab</h4>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Miscellaneous</span> FastTab contain test property set modification information. These values are automatically determined based on the current date and the active User ID and are non-editable.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.4    ">Navigate Tab</h4>
+        <p class="ccTextvorlage">The <span class="Bold">Navigate</span> tab contains three processes; each is described in the following table. </p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 124px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Process </p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Internal Comments / External Comments</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Comments can be used to add notes and remarks about a test property set. </p>
+                        <ul>
+                            <li class="ccAufzählung">Internal comments are printed on documents that will not leave the company such as test plans. </li>
+                            <li class="ccAufzählung">External comments will appear on documents that can be sent to the customer or vendor.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Translations</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Test Translation</span> page, where translations for the Test Property Set can be defined for use on pages that are provided for Value Recording and on selected reports/documents (refer to topic <MadCap:xref href="Test Property Translations.htm">“Test Property Translations” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace">
+        </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.5    ">Actions Tab</h4>
+        <p class="ccTextvorlage">The <span class="Bold">Actions</span> tab contains two processes and one report; each is described in the following table. </p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 124px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Process / Report</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Copy</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Copies the Test Property Set (properties and comments) to a new Test Property Set.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Update Test Plans</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Update Test Plan Property Set</span> request page, where changed test property sets can be modified in all related test plans in one mass update (refer to topic <MadCap:xref href="Mass Updates of Test Plans.htm">“Mass Updates of Test Plans” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Test Property Set List</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Generates the Test Property Set List report for preview or printing.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

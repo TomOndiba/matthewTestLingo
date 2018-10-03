@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc442095724"></a>Test Plans</h3>
+            <p class="ccTextvorlage">Test Plans are the templates for a test order to be carried out during or afterwards the item or lot has been received on stock and has gone into quarantine. The Test Plan uses the defined Test Property Sets and Test Devices. </p>
+            <p class="ccTextvorlage">Test Plans can be created item-specific. Either they are related to an item via the Item Card or via the related routing. That means a Test Plan must be allocated to each item that is to be tested.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Test Plans.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Test Plan Card </p>
+        </div>
+        <p class="ccTextvorlage">In the header of the Test Plan template there is general information regarding the Test Plan. In the lines of the template the selected Test Property Sets are listed or are managed.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">General FastTab</h4>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">General</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 153px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier from the number series or manually entered if manual numbering is allowed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Version</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Current version of the test plan. Since Test Plans are versioned, when a Test Plan is certified, it starts with version 1. It is allocated automatically by the system and serially numbered through.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Description of the test plan.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Document Type / External Document Path</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if the Test Plan is within Microsoft Dynamics NAV (Integrated Document) or if the test is related to an External Document. </p>
+                        <p class="ccTabellenText">For Test Plans with an External Document, a mapping (data link) can be entered in the <span class="Bold">External Document Path</span> field to indicate where the document is stored. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Current state of the Test Plan. The options are New, Certified, Under Development and Closed. </p>
+                        <p class="ccTabellenText">New Test Plans are set with the <span class="Italics">New</span> status. Test Plans that are not certified cannot be used or selected for test orders.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies if the test plan is related to an Item or a Test Device.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Valid from / Valid to</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies in which period the test plan can be used. If a test plan has expired and is connected to an item, the system will return a message upon posting of the receivable.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Default</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if the testing has been defined internally or if it should be executed based on an external request (for example, testing according to the technical supervision society).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">De.-/Certification Date / De.-/Certified by</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Date and User ID of when certification status changes.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Responsibility Center</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Responsibility Center that is allocated to the test plan.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Ready for Certification</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Automatically selected when the status is changed to <span class="Italics">Certified</span>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace" />
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Lines FastTab</h4>
+        <p class="ccTextvorlage">In the <span class="Bold">Lines</span> FastTab, the Test Property Sets are allocated to the Test Plan. The pre-selected test values from the Test Property Sets are also copied. It is possible to change certain editable fields of the copied Test Property Sets and criteria. This may be necessary if some of the expected test results have to be changed to fit the related item or routing.</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.2.1    ">Test Plan Property Set Card</h5>
+        <p class="ccTextvorlage">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Property Set &gt; Card</span> to open the <span class="Bold">Test Plan Prop. Set Card</span> for a line. For Test Properties that have a Testing Method of Counting (AQL), specific properties can be tested in a given interval of test quantity. Use the “Choose Columns” function in the <span class="Bold">Test Plan Prop. Set Card</span> page to show the <span class="Bold">Test Each (Times)</span> field.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Test Plans_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="_Ref395372163"></a>: Test Plan Prop. Set Card page for Testing Method = Counting (AQL)</p>
+        <p class="ccTextvorlage">The <span class="Bold">Test Activity No.</span> field is used to assign a predefined activity to an individual Test Plan Property Set line and specifies how long it takes to perform testing of this property. For more information about Test Order Scheduling, refer to topic <MadCap:xref href="Test Order Scheduling.htm">“Test Order Scheduling” on page 1</MadCap:xref>.</p>
+        <p class="ccTextvorlage">The information entered in the <span class="Bold">Test Each (Times)</span> field determines whether the lot- or serial number has to be tested or not. For example, if this field is set to 3 on the Scratch test property, scratches will be tested on the first and then again on the fourth test.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The <span class="Bold">Test Each (Times)</span> field cannot be populated if an <span class="Bold">Inspection Severity Code</span> is entered on the <span class="Bold">Item Test Prop. Insp. Severities</span> page (refer to topic <MadCap:xref href="Test Plan Setup on Items.htm#_Ref441486560">“Inspection Severities of Test Properties” on page 1</MadCap:xref>).</p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.2.2    "><a name="Interpre"></a>Interpret Determined Value</h5>
+        <p>In the Value Recording process, the interpretation of the Determined Value can be managed in two ways. The most critical aspect for interpretation is the Expected Value in combination with Upper Limit and/or Lower Limit. If Expected Value is between these limits, but not relevant to accept Determined Value as valid, then the “Use Without Expected Value” feature has to be activated. If not activated, the system will interpret Expected Value as limit itself. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Test Plans_1a.png" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Various Expected Values, Upper/Lower Limits set in a Test Plan Prop.Set Card</p>
+        <p>In the <span class="Bold">Quality Management Setup</span> page, selecting the <span class="Bold">Use Without Expected Value</span> check box calculates the <span class="Bold">Valid Determined Value</span> field in the Value Recording process based on the Upper Limit and/or Lower Limit fields and therefore, the value in the <span class="Bold">Expected Value</span> field is not considered.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Test Plans_1b.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Use Without Expected Value in Quality Management Setup</p>
+        <p>The following table shows how the system decides if the Determined Value is valid based on empty Upper/Lower Limits.</p>
+        <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 95px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" style="width: 151px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift" style="text-align: left;">Use Without Expected Value</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Example Settings</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Results</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Lower Limit = 5<br />Upper Limit = ‘’<br />Expected Value = 10</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">System replaces the Upper Limit with the Expected Value; then creates a range from 5 to 10 to decide if the Determined Value is valid.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Lower Limit = ‘’<br />Upper Limit = 20<br />Expected Value = 12</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">System replaces the Lower Limit with the Expected Value; then creates a range from 12 to 20 to decide if the Determined Value is valid.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Yes</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column2-Body1">
+                        <p class="ccTabellenText">Lower Limit = 5<br />Upper Limit = ‘’<br />Expected Value = 10</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">System uses the Lower Limit an ignores the  Expected Value; then creates a range from 5 (5..) to decide if the Determined Value is valid.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText"> </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column2-Body1">
+                        <p class="ccTabellenText">Lower Limit = ‘’<br />Upper Limit = 20<br />Expected Value = 12</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">System uses the Upper Limit an ignores the  Expected Value; then creates a range to 20 (..20) to decide if the Determined Value is valid.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If an open Upper/Lower Limit range is used and <span class="Bold">Use Without Expected Value</span> = Yes, negative Determined Values are also valid.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">Miscellaneous FastTab</h4>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Miscellaneous</span> FastTab contain test plan modification information. These values are automatically determined based on the current date and the active User ID and are non-editable.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.4    ">Home Tab</h4>
+        <p class="ccTextvorlage">The <span class="Bold">Home</span> tab contains five processes and two reports; each is described in the following table. </p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 122px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Process / Report</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Copy Test Plan</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Copies all Test Property Sets and criteria of an existing Test Plan to a new Test Plan.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Create New Version</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Creates a new version of an existing Test Plan version (same Test Plan number, new version).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Show External Document</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the external document that was entered in the <span class="Bold">External Document Path</span> field on the <span class="Bold">General</span> FastTab.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Internal Comments / External Comments</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Comments can be used to add notes and remarks about a test plan. </p>
+                        <ul>
+                            <li class="ccAufzählung">Internal comments are printed on documents that will not leave the company such as test plans. </li>
+                            <li class="ccAufzählung">External comments will appear on documents that can be sent to the customer or vendor.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Activities</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Test Plan Activities</span> page, which is  used for the Test Order Scheduling process (refer to topic <MadCap:xref href="Test Order Scheduling.htm">“Test Order Scheduling” on page 1</MadCap:xref>).</p>
+                        <p class="ccTabellenText">Test Plan Activities define how much time is required for the test process and links the times   to resources and manufacturing capacity. Activities added to a Test Plan can be then assigned to one or more Test Plan Property Set lines. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Plan</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Generates the Test Plan report for preview or printing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Test Plan List</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Generates the Test Plan List report for preview or printing.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

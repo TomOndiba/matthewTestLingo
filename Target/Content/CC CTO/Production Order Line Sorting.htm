@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="3" MadCap:lastHeight="665" MadCap:lastWidth="602" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">Production Order Line Sorting</h2>
+        <p>In standard Microsoft Dynamics NAV, Production Order lines are always sorted by level. Most of the time this is not the same sorting that is shown in Document BOMs/Construction Orders.</p>
+        <p>As illustrated in <MadCap:xref href="#:" class="Figure">Fig. 1</MadCap:xref>, Assembly 3 and Assembly 4 are part of Main assembly 1, and Assembly 5 is part of Main assembly 2 in the Construction BOM.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Production Order Line Sorting.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name=":"></a>: Construction Order highlighting the relation of the assembly lines (level 2) to main assembly lines (level 1)</p>
+        <p>When a Production Order is opened, the lines are sorted by level. As illustrated in <MadCap:xref href="#:2" class="Figure">Fig. 2</MadCap:xref>, Assembly 3 – 5 all appear directly behind the Main assembly 2.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Production Order Line Sorting_1.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name=":2"></a>: Production Order with lines sorted by level (standard Microsoft Dynamics NAV)</p>
+        <p>To sort Production Order Lines to match the structure of the Document BOM/Construction Order, use the “Change Sorting” function (<span class="Bold">Lines FastTab &gt; Line</span>) in the Production Order lines.</p>
+        <div class="ccDIV">
+            <p>As illustrated in <MadCap:xref href="#:3" class="Figure">Fig. 3</MadCap:xref>, Assembly 3 and Assembly 4 are now shown directly behind Main assembly 1, and Assembly 5 is shown directly behind Main assembly 2 in the Production Order lines.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Production Order Line Sorting_2.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name=":3"></a>: Production Order with lines sorted with Change Sorting function</p>
+        </div>
+        <p class="ccTextvorlage"> </p>
+    </body>
+</html>

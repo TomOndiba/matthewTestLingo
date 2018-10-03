@@ -1,0 +1,2012 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xliff
+  version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-strict.xsd" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+  MadCap:translationStatus="untranslated">
+  <file
+    xml:space="preserve"
+    original="PQM Processing on Req Worksheet.htm"
+    source-language="en-us"
+    MadCap:file-filter=""
+    datatype="xhtml"
+    target-language="af">
+    <header>
+      <skl><external-file
+          href="PQM Processing on Req Worksheet.htm.skl" /></skl>
+      <phase-group>
+        <phase
+          phase-name="translation"
+          process-name="translation" />
+        <phase
+          phase-name="completion"
+          process-name="translation" />
+        <phase
+          phase-name="approval"
+          process-name="review" />
+        <phase
+          phase-name="pretrans"
+          process-name="pre-translation" />
+      </phase-group>
+      <count-group
+        name="MadCap Statistics">
+        <count
+          count-type="total"
+          unit="segment">187</count>
+        <count
+          count-type="x-subflow"
+          unit="trans-unit">0</count>
+      </count-group>
+      <tool
+        tool-id="MadCap Lingo 10.2"
+        tool-name="Lingo"
+        tool-version="10.2.6786.30644"
+        tool-company="MadCap Software" />
+    </header>
+    <body><trans-unit
+        id="1"
+        restype="x-xml-h2"
+        phase-name="pretrans"><source>PQM Processing on Requisition Worksheet</source><seg-source><mrk
+            mtype="seg"
+            mid="1">PQM Processing on Requisition Worksheet</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="2"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>The Purchase Quote Manager can also be used for Requisitions Worksheet lines. Similar to the running the functions on the PQM page, purchase quotes can be created for each assigned vendor and then the quote that is most cost-effective and/or provides the best delivery time can be chosen for order placement.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">The Purchase Quote Manager can also be used for Requisitions Worksheet lines.</mrk><mrk
+            mtype="protected"
+            mid="2"> </mrk><mrk
+            mtype="seg"
+            mid="3">Similar to the running the functions on the PQM page, purchase quotes can be created for each assigned vendor and then the quote that is most cost-effective and/or provides the best delivery time can be chosen for order placement.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="2"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="3"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="3"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>This topic provides a demonstration of how to use the Purchase Quote Manager with the Requisition Worksheet.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">This topic provides a demonstration of how to use the Purchase Quote Manager with the Requisition Worksheet.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="4"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>Note</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Note</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="5"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>This demonstration uses the setup described in the topic <ph
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;MadCap:xref href="../CC PR/PQM Setup.htm" class="RelLinkPageNumber" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;"Setup" on page 1.&lt;/MadCap:xref&gt;</ph></source><seg-source><mrk
+            mtype="seg"
+            mid="1">This demonstration uses the setup described in the topic <ph
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;MadCap:xref href="../CC PR/PQM Setup.htm" class="RelLinkPageNumber" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;"Setup" on page 1.&lt;/MadCap:xref&gt;</ph></mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="6"
+        restype="x-xml-h3"
+        phase-name="pretrans"><source>Demonstration – Place Quote from PQM in Requisition Worksheet</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Demonstration – Place Quote from PQM in Requisition Worksheet</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="7"
+        restype="x-xml-p"
+        phase-name="pretrans"><source><bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Scenario<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>: Item D-7014, Hydraulic Ventile Type 70/B, has been set up with a Reorder Quantity of 100. When Alicia, the purchasing agent at CRONUS International, Ltd., runs the Calculate Plan function in the Req. Worksheet, a line is created for 100 units of item D-7014.</source><seg-source><mrk
+            mtype="seg"
+            mid="1"><bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Scenario<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>: Item D-7014, Hydraulic Ventile Type 70/B, has been set up with a Reorder Quantity of 100.</mrk><mrk
+            mtype="protected"
+            mid="2"> </mrk><mrk
+            mtype="seg"
+            mid="3">When Alicia, the purchasing agent at CRONUS International, Ltd., runs the Calculate Plan function in the Req.</mrk><mrk
+            mtype="protected"
+            mid="4"> </mrk><mrk
+            mtype="seg"
+            mid="5">Worksheet, a line is created for 100 units of item D-7014.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="2"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="3"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="4"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="5"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="8"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>Three vendors supply this item to the company, each with different prices and lead times. Instead of creating separate quotes and checking the purchase prices, she creates a PQM for this item, creates the quotes and checks for the best price/delivery date.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Three vendors supply this item to the company, each with different prices and lead times.</mrk><mrk
+            mtype="protected"
+            mid="2"> </mrk><mrk
+            mtype="seg"
+            mid="3">Instead of creating separate quotes and checking the purchase prices, she creates a PQM for this item, creates the quotes and checks for the best price/delivery date.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="2"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="3"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="9"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>Create PQM for Item D-7014</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Create PQM for Item D-7014</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="10"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>Follow these steps to create a PQM for item D-7014:</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Follow these steps to create a PQM for item D-7014:</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="11"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>On the navigation pane, click <bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Purchase &gt;<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> <bpt
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Planning &gt; Requisition Worksheets<ept
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">On the navigation pane, click <bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Purchase &gt;<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> <bpt
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Planning &gt; Requisition Worksheets<ept
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="12"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>Click <bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Calculate Plan<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> for the correct date range and filter on item D-7014.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Click <bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Calculate Plan<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> for the correct date range and filter on item D-7014.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="13"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>Select the line for item D-7014 and then click <bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Navigate &gt; Create<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> in the PQM menu group.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Select the line for item D-7014 and then click <bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Navigate &gt; Create<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> in the PQM menu group.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="14"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>: Creating PQM for item D-7014 on Req. Worksheet line</source><seg-source><mrk
+            mtype="seg"
+            mid="1">: Creating PQM for item D-7014 on Req.</mrk><mrk
+            mtype="protected"
+            mid="2"> </mrk><mrk
+            mtype="seg"
+            mid="3">Worksheet line</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="2"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="3"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="15"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>Notice that the  <bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>No.<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> and <bpt
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Description<ept
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> fields are populated in the <bpt
+            id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>General<ept
+            id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> FastTab and the <bpt
+            id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Lines<ept
+            id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> FastTab contains the following information from the Req. Worksheet line:<bpt
+            id="5" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ul MadCap:continue="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt><bpt
+            id="6" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Item number and description<ept
+            id="6" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="7" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Quantity<ept
+            id="7" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="8" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Vendor No. <ept
+            id="8" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="9" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Unit Cost<ept
+            id="9" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="10" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Order Date<ept
+            id="10" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="11" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Total Direct Cost<ept
+            id="11" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+            id="5" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ul&gt;</ept></source><seg-source><mrk
+            mtype="seg"
+            mid="1">Notice that the <bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>No.<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept></mrk><mrk
+            mtype="protected"
+            mid="2"> </mrk><mrk
+            mtype="seg"
+            mid="3">and <bpt
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Description<ept
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> fields are populated in the <bpt
+              id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>General<ept
+              id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> FastTab and the <bpt
+              id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Lines<ept
+              id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> FastTab contains the following information from the Req.</mrk><mrk
+            mtype="protected"
+            mid="4"> </mrk><mrk
+            mtype="seg"
+            mid="5">Worksheet line:</mrk><mrk
+            mtype="seg"
+            mid="6"><bpt
+              id="5" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ul MadCap:continue="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="7"><bpt
+              id="6" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Item number and description<ept
+              id="6" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="8"><bpt
+              id="7" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Quantity<ept
+              id="7" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="9"><bpt
+              id="8" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Vendor No.</mrk><mrk
+            mtype="protected"
+            mid="10"> </mrk><mrk
+            mtype="seg"
+            mid="11"><ept
+              id="8" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="12"><bpt
+              id="9" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Unit Cost<ept
+              id="9" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="13"><bpt
+              id="10" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Order Date<ept
+              id="10" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="14"><bpt
+              id="11" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Total Direct Cost<ept
+              id="11" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+              id="5" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ul&gt;</ept></mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="2"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="3"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="4"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="5"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="6"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="7"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="8"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="9"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="10"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="11"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="12"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="13"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="14"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="16"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>: PQM created from Req. Worksheet line</source><seg-source><mrk
+            mtype="seg"
+            mid="1">: PQM created from Req.</mrk><mrk
+            mtype="protected"
+            mid="2"> </mrk><mrk
+            mtype="seg"
+            mid="3">Worksheet line</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="2"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="3"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="17"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>Click <bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Navigate<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> &gt; <bpt
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Assigned Vendors<ept
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Click <bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Navigate<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> &gt; <bpt
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Assigned Vendors<ept
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="18"
+        restype="x-xml-madcap:annotation"
+        phase-name="pretrans"><source>Enter the following Lead Time Calculations:</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Enter the following Lead Time Calculations:</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="19"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>Vendor 60000, Lead Time Calculation = 21D</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Vendor 60000, Lead Time Calculation = 21D</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="20"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>Vendor 61000, Lead Time Calculation = 28D</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Vendor 61000, Lead Time Calculation = 28D</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="21"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>Vendor 62000, Lead Time Calculation = 2W</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Vendor 62000, Lead Time Calculation = 2W</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="22"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>Click <bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to close the <bpt
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Assigned Vendors<ept
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Click <bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to close the <bpt
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Assigned Vendors<ept
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="23"
+        restype="x-xml-li"
+        phase-name="pretrans"><source><bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;MadCap:annotation MadCap:createDate="2016-09-06T12:07:12.0799480-05:00" MadCap:creator="NTADAJEWSKI0100" MadCap:initials="NT" MadCap:comment="If you make a change to the Assigned Vendors and run this again, the lines are not updated with the changes." MadCap:editor="NTADAJEWSKI0100" MadCap:editDate="2016-09-06T12:07:38.6356847-05:00" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt>Click <bpt
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Actions &gt; Assigned Vendors &gt; Copy from Header to Lines<ept
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/MadCap:annotation&gt;</ept>
+                <ph
+            id="1"
+            ctype="lb" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;br /&gt;</ph>Notice that the value of <bpt
+            id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Assigned Vendors<ept
+            id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> is 3 on the <bpt
+            id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Lines<ept
+            id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> FastTab.</source><seg-source><mrk
+            mtype="seg"
+            mid="1"><bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;MadCap:annotation MadCap:createDate="2016-09-06T12:07:12.0799480-05:00" MadCap:creator="NTADAJEWSKI0100" MadCap:initials="NT" MadCap:comment="If you make a change to the Assigned Vendors and run this again, the lines are not updated with the changes." MadCap:editor="NTADAJEWSKI0100" MadCap:editDate="2016-09-06T12:07:38.6356847-05:00" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="2">Click <bpt
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Actions &gt; Assigned Vendors &gt; Copy from Header to Lines<ept
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</mrk><mrk
+            mtype="seg"
+            mid="3"><ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/MadCap:annotation&gt;</ept></mrk><mrk
+            mtype="protected"
+            mid="4"> </mrk><mrk
+            mtype="seg"
+            mid="5"><ph
+              id="1"
+              ctype="lb" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;br /&gt;</ph></mrk><mrk
+            mtype="seg"
+            mid="6">Notice that the value of <bpt
+              id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Assigned Vendors<ept
+              id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> is 3 on the <bpt
+              id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Lines<ept
+              id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> FastTab.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="2"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="3"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="4"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="5"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="6"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="24"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>: PQM page with header and line information</source><seg-source><mrk
+            mtype="seg"
+            mid="1">: PQM page with header and line information</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="25"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>Create Purchase Quotes for PQM Lines</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Create Purchase Quotes for PQM Lines</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="26"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>Follow these steps to create the purchase quotes for the PQM lines:</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Follow these steps to create the purchase quotes for the PQM lines:</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="27"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>On the <bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Actions<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> tab, click <bpt
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Create Purch. Quotes<ept
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">On the <bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Actions<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> tab, click <bpt
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Create Purch.</mrk><mrk
+            mtype="protected"
+            mid="2"> </mrk><mrk
+            mtype="seg"
+            mid="3">Quotes<ept
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="2"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="3"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="28"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>On the ribbon, click <bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Show Matrix<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.<ph
+            id="1"
+            ctype="lb" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;br /&gt;</ph><bpt
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;MadCap:annotation MadCap:createDate="2016-09-07T12:45:45.9251462-05:00" MadCap:creator="NTADAJEWSKI0100" MadCap:initials="NT" MadCap:comment="Why does it work this way? If there is a quantity/due date, why are these transferred here when there are purchase prices/lead time calculations for each vendor that does not match this? \r\n\r\nBetter question: Why doesn't it work the same as in the Job Budget Calculation? There is a quantity on the JBC line yet the correct purchase prices/delivery dates come into this page correctly." MadCap:editor="NTADAJEWSKI0100" MadCap:editDate="2016-09-07T12:47:37.6793660-05:00" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt>Notice that the price is populated for each quote as 49.00, which is based on the purchase price of 10+ units of item D-7014 for vendor 60000 (source vendor number from requisition worksheet line).<ept
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/MadCap:annotation&gt;</ept></source><seg-source><mrk
+            mtype="seg"
+            mid="1">On the ribbon, click <bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Show Matrix<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</mrk><mrk
+            mtype="seg"
+            mid="2"><ph
+              id="1"
+              ctype="lb" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;br /&gt;</ph></mrk><mrk
+            mtype="seg"
+            mid="3"><bpt
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;MadCap:annotation MadCap:createDate="2016-09-07T12:45:45.9251462-05:00" MadCap:creator="NTADAJEWSKI0100" MadCap:initials="NT" MadCap:comment="Why does it work this way? If there is a quantity/due date, why are these transferred here when there are purchase prices/lead time calculations for each vendor that does not match this? \r\n\r\nBetter question: Why doesn't it work the same as in the Job Budget Calculation? There is a quantity on the JBC line yet the correct purchase prices/delivery dates come into this page correctly." MadCap:editor="NTADAJEWSKI0100" MadCap:editDate="2016-09-07T12:47:37.6793660-05:00" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="4">Notice that the price is populated for each quote as 49.00, which is based on the purchase price of 10+ units of item D-7014 for vendor 60000 (source vendor number from requisition worksheet line).</mrk><mrk
+            mtype="seg"
+            mid="5"><ept
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/MadCap:annotation&gt;</ept></mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="2"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="3"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="4"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="5"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="29"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>: PQM Placing Matrix, quotes with pricing and delivery dates from vendor 60000</source><seg-source><mrk
+            mtype="seg"
+            mid="1">: PQM Placing Matrix, quotes with pricing and delivery dates from vendor 60000</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="30"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>Click <bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Close<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to close the <bpt
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing Matrix<ept
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page and then click <bpt
+            id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+            id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to return to the <bpt
+            id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM<ept
+            id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Click <bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Close<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to close the <bpt
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing Matrix<ept
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page and then click <bpt
+              id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+              id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to return to the <bpt
+              id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM<ept
+              id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="31"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>In the <bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Lines<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> FastTab, notice that the:<bpt
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ul&gt;</bpt><bpt
+            id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+            id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Created<ept
+            id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>  field = Yes<ept
+            id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="5" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+            id="6" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Verified, Status Placed<ept
+            id="6" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> and <bpt
+            id="7" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Not Placed<ept
+            id="7" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> fields = No<ept
+            id="5" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ul&gt;</ept></source><seg-source><mrk
+            mtype="seg"
+            mid="1">In the <bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Lines<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> FastTab, notice that the:</mrk><mrk
+            mtype="seg"
+            mid="2"><bpt
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ul&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="3"><bpt
+              id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+              id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Created<ept
+              id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> field = Yes<ept
+              id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="4"><bpt
+              id="5" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+              id="6" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Verified, Status Placed<ept
+              id="6" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> and <bpt
+              id="7" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Not Placed<ept
+              id="7" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> fields = No<ept
+              id="5" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ul&gt;</ept></mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="2"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="3"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="4"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="32"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>: Status fields updated on PQM Lines</source><seg-source><mrk
+            mtype="seg"
+            mid="1">: Status fields updated on PQM Lines</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="33"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>Click <bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Home &gt; Purchase Quotes Matrix<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Click <bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Home &gt; Purchase Quotes Matrix<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="34"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>On the ribbon, click <bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Show Matrix<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">On the ribbon, click <bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Show Matrix<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="35"
+        restype="x-xml-li"
+        phase-name="pretrans"><source><bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;MadCap:annotation MadCap:createDate="2016-09-07T12:45:18.0608140-05:00" MadCap:creator="NTADAJEWSKI0100" MadCap:initials="NT" MadCap:comment="I don't think these are the correct steps to getting correct quote information but i don't know what else to do." MadCap:editor="NTADAJEWSKI0100" MadCap:editDate="2016-09-07T12:45:36.8039019-05:00" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt>Click<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/MadCap:annotation&gt;</ept> the value for vendor 60000 to open the purchase quote.</source><seg-source><mrk
+            mtype="seg"
+            mid="1"><bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;MadCap:annotation MadCap:createDate="2016-09-07T12:45:18.0608140-05:00" MadCap:creator="NTADAJEWSKI0100" MadCap:initials="NT" MadCap:comment="I don't think these are the correct steps to getting correct quote information but i don't know what else to do." MadCap:editor="NTADAJEWSKI0100" MadCap:editDate="2016-09-07T12:45:36.8039019-05:00" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt>Click<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/MadCap:annotation&gt;</ept> the value for vendor 60000 to open the purchase quote.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="36"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>Revalidate the item number in the <bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>No.<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> field and then click <bpt
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to return to the <bpt
+            id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing Matrix<ept
+            id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Revalidate the item number in the <bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>No.<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept></mrk><mrk
+            mtype="protected"
+            mid="2"> </mrk><mrk
+            mtype="seg"
+            mid="3">field and then click <bpt
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to return to the <bpt
+              id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing Matrix<ept
+              id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="2"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="3"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="37"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>Repeat steps 7-8 for vendors 61000 and 62000.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Repeat steps 7-8 for vendors 61000 and 62000.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="38"
+        restype="x-xml-li"
+        phase-name="pretrans"><source>Refresh the <bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing Matrix<ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page. <ph
+            id="2"
+            ctype="lb" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;br&gt;&lt;/br&gt;</ph>Notice that the prices are updated for each quote.</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Refresh the <bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing Matrix<ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.</mrk><mrk
+            mtype="protected"
+            mid="2"> </mrk><mrk
+            mtype="seg"
+            mid="3"><ph
+              id="2"
+              ctype="lb" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;br&gt;&lt;/br&gt;</ph>Notice that the prices are updated for each quote.</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="2"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="3"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="39"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>: PQM Placing Matrix, quotes with updated pricing and delivery dates</source><seg-source><mrk
+            mtype="seg"
+            mid="1">: PQM Placing Matrix, quotes with updated pricing and delivery dates</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="40"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>Change Quote Status</source><seg-source><mrk
+            mtype="seg"
+            mid="1">Change Quote Status</mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit><trans-unit
+        id="41"
+        restype="x-xml-p"
+        phase-name="pretrans"><source>Depending on business processes, the status of each quote can be changed to Verified once the quotes are validated by the vendors. To do so, follow these steps:<bpt
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol&gt;</bpt><bpt
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Click <bpt
+            id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Close<ept
+            id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to close the <bpt
+            id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing Matrix<ept
+            id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page and then click <bpt
+            id="5" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+            id="5" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to return to the <bpt
+            id="6" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM<ept
+            id="6" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.<ept
+            id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="7" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>In the <bpt
+            id="8" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Lines<ept
+            id="8" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> FastTab, click the value in the <bpt
+            id="9" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Assigned Vendors<ept
+            id="9" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> field to open the <bpt
+            id="10" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Vendors<ept
+            id="10" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page and then click <bpt
+            id="11" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Edit List<ept
+            id="11" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.<ept
+            id="7" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+            id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><ph
+            id="12" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_6.png" MadCap:mediastyle="@media print { max-width: 4.8in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;&lt;/img&gt;&lt;/p&gt;</ph><bpt
+            id="14" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 7" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt>: PQM Vendors with quote Status = Created<ept
+            id="14" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+            id="15" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol MadCap:continue="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt><bpt
+            id="16" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>For each quote, change the <bpt
+            id="17" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status<ept
+            id="17" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to <bpt
+            id="18" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Italics"&gt;</bpt>Verified<ept
+            id="18" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.<ept
+            id="16" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="19" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt> Click <bpt
+            id="20" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+            id="20" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to close the <bpt
+            id="21" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Vendors<ept
+            id="21" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page. <ept
+            id="19" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="22" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>If necessary, refresh the <bpt
+            id="23" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM<ept
+            id="23" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page and notice that the:<bpt
+            id="24" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ul&gt;</bpt><bpt
+            id="25" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+            id="26" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Verified<ept
+            id="26" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> field = Yes<ept
+            id="25" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="27" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+            id="28" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Created, Status Placed<ept
+            id="28" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> and <bpt
+            id="29" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Not Placed<ept
+            id="29" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> fields = No<ept
+            id="27" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+            id="24" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ul&gt;</ept><ept
+            id="22" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+            id="15" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><ph
+            id="30" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_7.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;&lt;/img&gt;&lt;/p&gt;</ph><bpt
+            id="32" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 8" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt>: Status fields updated on PQM Lines<ept
+            id="32" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+            id="33" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccDemoStepHeading"&gt;</bpt>Place Best Quote<ept
+            id="33" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+            id="34" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p&gt;</bpt>Follow these steps to  place the best quote:<ept
+            id="34" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+            id="35" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol&gt;</bpt><bpt
+            id="36" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Based on the price and delivery date, the quote for vendor 62000 should be chosen.<ept
+            id="36" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="37" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Open the <bpt
+            id="38" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing Matrix<ept
+            id="38" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page (<bpt
+            id="39" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Home &gt; Purchase Quotes Matrix &gt; Show Matrix<ept
+            id="39" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>).<ept
+            id="37" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="40" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>On the ribbon, click <bpt
+            id="41" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Placing<ept
+            id="41" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.<ept
+            id="40" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="42" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Click <bpt
+            id="43" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+            id="43" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to select all lines for placement.<ept
+            id="42" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="44" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>In the <bpt
+            id="45" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing<ept
+            id="45" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page, allow the system to place by best price (which will be vendor 62000). Alternatively, enter 62000 in the <bpt
+            id="46" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Vendor No.<ept
+            id="46" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> field.<ept
+            id="44" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="47" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>In the <bpt
+            id="48" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Options<ept
+            id="48" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> FastTab, select the <bpt
+            id="49" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Update source data<ept
+            id="49" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> check box.<ept
+            id="47" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+            id="35" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><ph
+            id="50" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_8.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /&gt;&lt;/p&gt;</ph><bpt
+            id="51" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 9" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt>: Settings on the PQM Placing page<ept
+            id="51" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+            id="52" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol MadCap:continue="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt><bpt
+            id="53" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Click <bpt
+            id="54" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+            id="54" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.<ept
+            id="53" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="55" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>In the <bpt
+            id="56" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing Matrix<ept
+            id="56" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page, notice that the:<bpt
+            id="57" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ul&gt;</bpt><bpt
+            id="58" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+            id="59" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Assigned<ept
+            id="59" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> check box is selected<ept
+            id="58" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="60" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Values are cleared for vendors 60000 and 61000<ept
+            id="60" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+            id="57" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ul&gt;</ept><ept
+            id="55" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+            id="52" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><ph
+            id="61" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_9.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /&gt;&lt;/p&gt;</ph><bpt
+            id="62" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 10" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt>: PQM Placing Matrix, quote assigned for vendor 62000<ept
+            id="62" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+            id="63" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol MadCap:continue="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt><bpt
+            id="64" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Click <bpt
+            id="65" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Close<ept
+            id="65" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to close the <bpt
+            id="66" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing Matrix<ept
+            id="66" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page and then click <bpt
+            id="67" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+            id="67" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to return to the <bpt
+            id="68" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM<ept
+            id="68" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.<ept
+            id="64" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="69" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>In the <bpt
+            id="70" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Lines<ept
+            id="70" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> FastTab, notice that the:<bpt
+            id="71" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ul&gt;</bpt><bpt
+            id="72" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+            id="73" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Created<ept
+            id="73" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> and <bpt
+            id="74" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Verified<ept
+            id="74" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> fields = No<ept
+            id="72" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="75" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+            id="76" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Placed<ept
+            id="76" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> and <bpt
+            id="77" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Not Placed<ept
+            id="77" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> fields = Yes<ept
+            id="75" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="78" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+            id="79" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Placing Vendor No.<ept
+            id="79" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> = 62000<ept
+            id="78" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="80" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+            id="81" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Placing Unit Cost<ept
+            id="81" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> = 48.50 (direct unit cost from placed purchase quote)<ept
+            id="80" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+            id="71" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ul&gt;</ept><bpt
+            id="82" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ul&gt;</bpt><bpt
+            id="83" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+            id="84" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Difference Unit Cost<ept
+            id="84" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> = -0.05 (Source Unit Cost - Placing Unit Cost)<ept
+            id="83" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="85" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+            id="86" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Assigned<ept
+            id="86" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> check box is selected<ept
+            id="85" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="87" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+            id="88" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Source Status<ept
+            id="88" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> = Updated (due to <bpt
+            id="89" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Update Source Data<ept
+            id="89" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> check box selected)<ept
+            id="87" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+            id="82" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ul&gt;</ept><ept
+            id="69" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+            id="63" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><ph
+            id="90" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_10.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /&gt;&lt;/p&gt;</ph><bpt
+            id="91" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 11" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt>: Status and placing fields updated on PQM Lines<ept
+            id="91" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+            id="92" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol MadCap:continue="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt><bpt
+            id="93" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Click the value in the <bpt
+            id="94" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Placed<ept
+            id="94" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> field. <ph
+            id="4"
+            ctype="lb" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;br /&gt;</ph>Notice that the quote for vendor 62000 appears.<ept
+            id="93" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="95" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Go back to the <bpt
+            id="96" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM<ept
+            id="96" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.<ept
+            id="95" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="97" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Click the value in the <bpt
+            id="98" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Not Placed<ept
+            id="98" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> field. <ph
+            id="5"
+            ctype="lb" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;br /&gt;</ph>Notice that the quotes for vendors 60000 and 61000 appear.<ept
+            id="97" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+            id="92" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><ph
+            id="99" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_11.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /&gt;&lt;/p&gt;</ph><bpt
+            id="100" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 12" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt>: Placed quote for vendor 62000 and Not Placed quotes for vendors 60000 and 61000<ept
+            id="100" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+            id="101" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol MadCap:continue="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt><bpt
+            id="102" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Go back to the <bpt
+            id="103" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM<ept
+            id="103" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.<ept
+            id="102" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="104" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>If no further changes need to be made, click <bpt
+            id="105" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Finish<ept
+            id="105" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> on the ribbon to complete the processing for this PQM.<ept
+            id="104" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+            id="101" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><bpt
+            id="106" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccDemoStepHeading"&gt;</bpt>Review Requisition Worksheet Line<ept
+            id="106" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+            id="107" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p&gt;</bpt>Follow these steps to review the changes to the Req. Worksheet line:<ept
+            id="107" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+            id="108" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol&gt;</bpt><bpt
+            id="109" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Click <bpt
+            id="110" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+            id="110" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to close the <bpt
+            id="111" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM<ept
+            id="111" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.<ept
+            id="109" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="112" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Refresh the <bpt
+            id="113" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Req. Worksheet<ept
+            id="113" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page, if necessary. <bpt
+            id="114" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;MadCap:annotation MadCap:createDate="2016-09-06T16:55:26.2312718-05:00" MadCap:creator="NTADAJEWSKI0100" MadCap:initials="NT" MadCap:comment="Once this is all done, is there any relation to the Purchase process? " MadCap:editor="NTADAJEWSKI0100" MadCap:editDate="2016-09-07T12:43:47.7738544-05:00" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt>Notice that the:<ept
+            id="114" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/MadCap:annotation&gt;</ept><bpt
+            id="115" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ul&gt;</bpt><bpt
+            id="116" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Vendor No. = 62000<ept
+            id="116" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><bpt
+            id="117" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Direct Unit Cost = 48.50<ept
+            id="117" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+            id="115" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ul&gt;</ept><ept
+            id="112" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+            id="108" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><ph
+            id="118" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_12.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /&gt;&lt;/p&gt;</ph><bpt
+            id="119" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 13" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt>: Updated Req. Worksheet line for item D-7014<ept
+            id="119" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+            id="120" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p&gt;</bpt>To access the PQM again at any time for this Req. Worksheet line, click <bpt
+            id="121" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Show PQM<ept
+            id="121" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> on the <bpt
+            id="122" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Navigate <ept
+            id="122" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>FastTab.<ept
+            id="120" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><ph
+            id="123" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_10.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /&gt;&lt;/p&gt;</ph><bpt
+            id="124" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 14" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt>: PQM page reopened from Req. Worksheet line<ept
+            id="124" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept></source><seg-source><mrk
+            mtype="seg"
+            mid="1">Depending on business processes, the status of each quote can be changed to Verified once the quotes are validated by the vendors.</mrk><mrk
+            mtype="protected"
+            mid="2"> </mrk><mrk
+            mtype="seg"
+            mid="3">To do so, follow these steps:<bpt
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="4"><bpt
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Click <bpt
+              id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Close<ept
+              id="3" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to close the <bpt
+              id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing Matrix<ept
+              id="4" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page and then click <bpt
+              id="5" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+              id="5" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to return to the <bpt
+              id="6" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM<ept
+              id="6" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.</mrk><mrk
+            mtype="seg"
+            mid="5"><ept
+              id="2" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="6"><bpt
+              id="7" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>In the <bpt
+              id="8" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Lines<ept
+              id="8" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> FastTab, click the value in the <bpt
+              id="9" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Assigned Vendors<ept
+              id="9" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> field to open the <bpt
+              id="10" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Vendors<ept
+              id="10" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page and then click <bpt
+              id="11" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Edit List<ept
+              id="11" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.<ept
+              id="7" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+              id="1" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><ph
+              id="12" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_6.png" MadCap:mediastyle="@media print { max-width: 4.8in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;&lt;/img&gt;&lt;/p&gt;</ph></mrk><mrk
+            mtype="seg"
+            mid="7"><bpt
+              id="14" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 7" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="8">: PQM Vendors with quote Status = Created<ept
+              id="14" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+              id="15" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol MadCap:continue="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="9"><bpt
+              id="16" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>For each quote, change the <bpt
+              id="17" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status<ept
+              id="17" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to <bpt
+              id="18" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Italics"&gt;</bpt>Verified<ept
+              id="18" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.<ept
+              id="16" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="10"><bpt
+              id="19" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt></mrk><mrk
+            mtype="protected"
+            mid="11"> </mrk><mrk
+            mtype="seg"
+            mid="12">Click <bpt
+              id="20" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+              id="20" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to close the <bpt
+              id="21" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Vendors<ept
+              id="21" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.</mrk><mrk
+            mtype="protected"
+            mid="13"> </mrk><mrk
+            mtype="seg"
+            mid="14"><ept
+              id="19" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="15"><bpt
+              id="22" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>If necessary, refresh the <bpt
+              id="23" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM<ept
+              id="23" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page and notice that the:</mrk><mrk
+            mtype="seg"
+            mid="16"><bpt
+              id="24" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ul&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="17"><bpt
+              id="25" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+              id="26" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Verified<ept
+              id="26" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> field = Yes<ept
+              id="25" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="18"><bpt
+              id="27" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+              id="28" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Created, Status Placed<ept
+              id="28" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> and <bpt
+              id="29" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Not Placed<ept
+              id="29" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> fields = No<ept
+              id="27" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+              id="24" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ul&gt;</ept><ept
+              id="22" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+              id="15" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><ph
+              id="30" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_7.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;&lt;/img&gt;&lt;/p&gt;</ph></mrk><mrk
+            mtype="seg"
+            mid="19"><bpt
+              id="32" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 8" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="20">: Status fields updated on PQM Lines<ept
+              id="32" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+              id="33" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccDemoStepHeading"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="21">Place Best Quote<ept
+              id="33" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+              id="34" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p&gt;</bpt>Follow these steps to place the best quote:<ept
+              id="34" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+              id="35" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="22"><bpt
+              id="36" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Based on the price and delivery date, the quote for vendor 62000 should be chosen.</mrk><mrk
+            mtype="seg"
+            mid="23"><ept
+              id="36" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="24"><bpt
+              id="37" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Open the <bpt
+              id="38" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing Matrix<ept
+              id="38" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page (<bpt
+              id="39" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Home &gt; Purchase Quotes Matrix &gt; Show Matrix<ept
+              id="39" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>).</mrk><mrk
+            mtype="seg"
+            mid="25"><ept
+              id="37" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="26"><bpt
+              id="40" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>On the ribbon, click <bpt
+              id="41" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Placing<ept
+              id="41" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</mrk><mrk
+            mtype="seg"
+            mid="27"><ept
+              id="40" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="28"><bpt
+              id="42" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Click <bpt
+              id="43" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+              id="43" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to select all lines for placement.</mrk><mrk
+            mtype="seg"
+            mid="29"><ept
+              id="42" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="30"><bpt
+              id="44" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>In the <bpt
+              id="45" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing<ept
+              id="45" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page, allow the system to place by best price (which will be vendor 62000).</mrk><mrk
+            mtype="protected"
+            mid="31"> </mrk><mrk
+            mtype="seg"
+            mid="32">Alternatively, enter 62000 in the <bpt
+              id="46" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Vendor No.<ept
+              id="46" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept></mrk><mrk
+            mtype="protected"
+            mid="33"> </mrk><mrk
+            mtype="seg"
+            mid="34">field.</mrk><mrk
+            mtype="seg"
+            mid="35"><ept
+              id="44" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="36"><bpt
+              id="47" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>In the <bpt
+              id="48" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Options<ept
+              id="48" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> FastTab, select the <bpt
+              id="49" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Update source data<ept
+              id="49" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> check box.<ept
+              id="47" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+              id="35" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><ph
+              id="50" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_8.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /&gt;&lt;/p&gt;</ph></mrk><mrk
+            mtype="seg"
+            mid="37"><bpt
+              id="51" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 9" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="38">: Settings on the PQM Placing page<ept
+              id="51" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+              id="52" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol MadCap:continue="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="39"><bpt
+              id="53" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Click <bpt
+              id="54" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+              id="54" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>.</mrk><mrk
+            mtype="seg"
+            mid="40"><ept
+              id="53" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="41"><bpt
+              id="55" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>In the <bpt
+              id="56" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing Matrix<ept
+              id="56" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page, notice that the:</mrk><mrk
+            mtype="seg"
+            mid="42"><bpt
+              id="57" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ul&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="43"><bpt
+              id="58" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+              id="59" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Assigned<ept
+              id="59" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> check box is selected<ept
+              id="58" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="44"><bpt
+              id="60" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Values are cleared for vendors 60000 and 61000<ept
+              id="60" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+              id="57" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ul&gt;</ept><ept
+              id="55" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+              id="52" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><ph
+              id="61" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_9.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /&gt;&lt;/p&gt;</ph></mrk><mrk
+            mtype="seg"
+            mid="45"><bpt
+              id="62" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 10" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="46">: PQM Placing Matrix, quote assigned for vendor 62000<ept
+              id="62" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+              id="63" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol MadCap:continue="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="47"><bpt
+              id="64" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Click <bpt
+              id="65" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Close<ept
+              id="65" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to close the <bpt
+              id="66" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Placing Matrix<ept
+              id="66" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page and then click <bpt
+              id="67" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+              id="67" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to return to the <bpt
+              id="68" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM<ept
+              id="68" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.</mrk><mrk
+            mtype="seg"
+            mid="48"><ept
+              id="64" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="49"><bpt
+              id="69" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>In the <bpt
+              id="70" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM Lines<ept
+              id="70" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> FastTab, notice that the:</mrk><mrk
+            mtype="seg"
+            mid="50"><bpt
+              id="71" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ul&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="51"><bpt
+              id="72" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+              id="73" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Created<ept
+              id="73" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> and <bpt
+              id="74" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Verified<ept
+              id="74" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> fields = No<ept
+              id="72" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="52"><bpt
+              id="75" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+              id="76" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Placed<ept
+              id="76" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> and <bpt
+              id="77" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Not Placed<ept
+              id="77" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> fields = Yes<ept
+              id="75" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="53"><bpt
+              id="78" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+              id="79" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Placing Vendor No.<ept
+              id="79" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept></mrk><mrk
+            mtype="protected"
+            mid="54"> </mrk><mrk
+            mtype="seg"
+            mid="55">= 62000<ept
+              id="78" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="56"><bpt
+              id="80" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+              id="81" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Placing Unit Cost<ept
+              id="81" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> = 48.50 (direct unit cost from placed purchase quote)<ept
+              id="80" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+              id="71" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ul&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="57"><bpt
+              id="82" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ul&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="58"><bpt
+              id="83" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+              id="84" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Difference Unit Cost<ept
+              id="84" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> = -0.05 (Source Unit Cost - Placing Unit Cost)<ept
+              id="83" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="59"><bpt
+              id="85" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+              id="86" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Assigned<ept
+              id="86" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> check box is selected<ept
+              id="85" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="60"><bpt
+              id="87" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt><bpt
+              id="88" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Source Status<ept
+              id="88" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> = Updated (due to <bpt
+              id="89" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Update Source Data<ept
+              id="89" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> check box selected)<ept
+              id="87" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+              id="82" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ul&gt;</ept><ept
+              id="69" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+              id="63" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><ph
+              id="90" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_10.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /&gt;&lt;/p&gt;</ph></mrk><mrk
+            mtype="seg"
+            mid="61"><bpt
+              id="91" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 11" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="62">: Status and placing fields updated on PQM Lines<ept
+              id="91" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+              id="92" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol MadCap:continue="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="63"><bpt
+              id="93" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Click the value in the <bpt
+              id="94" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Placed<ept
+              id="94" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> field.</mrk><mrk
+            mtype="protected"
+            mid="64"> </mrk><mrk
+            mtype="seg"
+            mid="65"><ph
+              id="4"
+              ctype="lb" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;br /&gt;</ph></mrk><mrk
+            mtype="seg"
+            mid="66">Notice that the quote for vendor 62000 appears.</mrk><mrk
+            mtype="seg"
+            mid="67"><ept
+              id="93" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="68"><bpt
+              id="95" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Go back to the <bpt
+              id="96" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM<ept
+              id="96" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.</mrk><mrk
+            mtype="seg"
+            mid="69"><ept
+              id="95" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="70"><bpt
+              id="97" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Click the value in the <bpt
+              id="98" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Status Not Placed<ept
+              id="98" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> field.</mrk><mrk
+            mtype="protected"
+            mid="71"> </mrk><mrk
+            mtype="seg"
+            mid="72"><ph
+              id="5"
+              ctype="lb" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;br /&gt;</ph></mrk><mrk
+            mtype="seg"
+            mid="73">Notice that the quotes for vendors 60000 and 61000 appear.<ept
+              id="97" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+              id="92" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><ph
+              id="99" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_11.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /&gt;&lt;/p&gt;</ph></mrk><mrk
+            mtype="seg"
+            mid="74"><bpt
+              id="100" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 12" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="75">: Placed quote for vendor 62000 and Not Placed quotes for vendors 60000 and 61000<ept
+              id="100" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+              id="101" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol MadCap:continue="true" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="76"><bpt
+              id="102" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Go back to the <bpt
+              id="103" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM<ept
+              id="103" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.</mrk><mrk
+            mtype="seg"
+            mid="77"><ept
+              id="102" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="78"><bpt
+              id="104" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>If no further changes need to be made, click <bpt
+              id="105" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Finish<ept
+              id="105" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> on the ribbon to complete the processing for this PQM.</mrk><mrk
+            mtype="seg"
+            mid="79"><ept
+              id="104" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+              id="101" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><bpt
+              id="106" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccDemoStepHeading"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="80">Review Requisition Worksheet Line<ept
+              id="106" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+              id="107" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p&gt;</bpt>Follow these steps to review the changes to the Req.</mrk><mrk
+            mtype="protected"
+            mid="81"> </mrk><mrk
+            mtype="seg"
+            mid="82">Worksheet line:<ept
+              id="107" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+              id="108" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ol&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="83"><bpt
+              id="109" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Click <bpt
+              id="110" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>OK<ept
+              id="110" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> to close the <bpt
+              id="111" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>PQM<ept
+              id="111" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page.</mrk><mrk
+            mtype="seg"
+            mid="84"><ept
+              id="109" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="85"><bpt
+              id="112" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Refresh the <bpt
+              id="113" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Req.</mrk><mrk
+            mtype="protected"
+            mid="86"> </mrk><mrk
+            mtype="seg"
+            mid="87">Worksheet<ept
+              id="113" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> page, if necessary.</mrk><mrk
+            mtype="protected"
+            mid="88"> </mrk><mrk
+            mtype="seg"
+            mid="89"><bpt
+              id="114" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;MadCap:annotation MadCap:createDate="2016-09-06T16:55:26.2312718-05:00" MadCap:creator="NTADAJEWSKI0100" MadCap:initials="NT" MadCap:comment="Once this is all done, is there any relation to the Purchase process? " MadCap:editor="NTADAJEWSKI0100" MadCap:editDate="2016-09-07T12:43:47.7738544-05:00" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt>Notice that the:<ept
+              id="114" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/MadCap:annotation&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="90"><bpt
+              id="115" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;ul&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="91"><bpt
+              id="116" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Vendor No.</mrk><mrk
+            mtype="protected"
+            mid="92"> </mrk><mrk
+            mtype="seg"
+            mid="93">= 62000<ept
+              id="116" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept></mrk><mrk
+            mtype="seg"
+            mid="94"><bpt
+              id="117" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;li class="ccTextvorlageNumberedList"&gt;</bpt>Direct Unit Cost = 48.50<ept
+              id="117" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+              id="115" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ul&gt;</ept><ept
+              id="112" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/li&gt;</ept><ept
+              id="108" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/ol&gt;</ept><ph
+              id="118" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_12.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /&gt;&lt;/p&gt;</ph></mrk><mrk
+            mtype="seg"
+            mid="95"><bpt
+              id="119" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 13" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="96">: Updated Req.</mrk><mrk
+            mtype="protected"
+            mid="97"> </mrk><mrk
+            mtype="seg"
+            mid="98">Worksheet line for item D-7014<ept
+              id="119" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><bpt
+              id="120" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p&gt;</bpt>To access the PQM again at any time for this Req.</mrk><mrk
+            mtype="protected"
+            mid="99"> </mrk><mrk
+            mtype="seg"
+            mid="100">Worksheet line, click <bpt
+              id="121" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Show PQM<ept
+              id="121" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept> on the <bpt
+              id="122" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;span class="Bold"&gt;</bpt>Navigate <ept
+              id="122" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/span&gt;</ept>FastTab.<ept
+              id="120" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept><ph
+              id="123" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildabstand"&gt;&lt;img src="../Resources/Images/CC PR/PQM Processing on Req_10.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /&gt;&lt;/p&gt;</ph></mrk><mrk
+            mtype="seg"
+            mid="101"><bpt
+              id="124" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;p class="ccBildFigure" MadCap:autonum="Fig. 14" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"&gt;</bpt></mrk><mrk
+            mtype="seg"
+            mid="102">: PQM page reopened from Req.</mrk><mrk
+            mtype="protected"
+            mid="103"> </mrk><mrk
+            mtype="seg"
+            mid="104">Worksheet line<ept
+              id="124" xmlns="urn:oasis:names:tc:xliff:document:1.2">&lt;/p&gt;</ept></mrk></seg-source><target
+          state="needs-translation"><mrk
+            mtype="seg"
+            mid="1"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="2"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="3"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="4"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="5"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="6"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="7"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="8"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="9"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="10"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="11"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="12"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="13"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="14"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="15"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="16"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="17"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="18"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="19"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="20"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="21"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="22"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="23"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="24"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="25"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="26"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="27"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="28"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="29"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="30"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="31"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="32"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="33"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="34"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="35"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="36"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="37"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="38"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="39"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="40"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="41"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="42"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="43"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="44"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="45"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="46"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="47"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="48"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="49"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="50"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="51"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="52"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="53"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="54"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="55"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="56"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="57"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="58"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="59"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="60"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="61"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="62"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="63"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="64"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="65"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="66"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="67"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="68"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="69"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="70"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="71"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="72"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="73"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="74"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="75"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="76"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="77"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="78"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="79"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="80"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="81"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="82"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="83"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="84"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="85"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="86"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="87"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="88"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="89"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="90"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="91"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="92"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="93"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="94"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="95"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="96"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="97"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="98"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="99"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="100"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="101"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="102"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="protected"
+            mid="103"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /><mrk
+            mtype="seg"
+            mid="104"
+            MadCap:segmentStatus="Untranslated"
+            MadCap:matchPercent="0" /></target></trans-unit></body>
+  </file>
+</xliff>

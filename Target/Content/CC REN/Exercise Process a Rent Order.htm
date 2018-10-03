@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="9" MadCap:lastHeight="620" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434929930"></a>Exercise – Process a Rent Order with Rate Components</h2>
+        <p class="ccTextvorlage">On January 31, 2019, customer R-20000 requests one unit of item R-20000-01 for the period of 02/01/19 through 02/28/19. This item includes two rate parts (taxes and insurance) and a one-time cleaning fee due at the end of the rental. </p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create and Ship the Rent Order</p>
+            <p class="ccTextvorlage">Follow these steps to create and ship the rent order:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">Set the Work Date to 01/31/19.</li>
+                <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|rental </span><span class="Bold">&gt; Contract Management &gt; Rent Orders</span>.</li>
+                <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-20000.</li>
+                <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Rental</span> FastTab and enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Rental Start Date = 02/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 02/28/19</li><li class="ccTextvorlageNumberedList">Prepaid = Yes</li></ol></li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lines</span> FastTab, select <span class="Italics">Item</span> in the <span class="Bold">Type</span> field.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter R-20000-01 and then press ENTER. Notice the following:<ul start="1"><li class="ccTextvorlageNumberedList">Three lines are added below the rent item line:<ul start="1"><li class="ccTextvorlageNumberedList">Two Rate Part line (INSURANCE and TAX1)</li><li class="ccTextvorlageNumberedList">One-Time Invoicing line (CLEANRETURN)</li></ul></li><li class="ccTextvorlageNumberedList">Rental information on the rent item line (except for the Rate Unit Price) is the same as on the Rate Part lines, but is not carried to the One-Time Invoicing line</li></ul></li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Order.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Rent Order with rate component lines</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">On the rent item line, enter 1 in the <span class="Bold">Quantity</span> field. Notice that the same quantity is added to the Rate Component lines.</li>
+        </ol>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rate Unit Price</span> field, enter the following values (if missing):<ul start="7"><li class="ccTextvorlageNumberedList">Rent item line  = 1375</li><li class="ccTextvorlageNumberedList">Insurance line = 50</li><li class="ccTextvorlageNumberedList">Tax line = 80</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Order_1.png" style="visibility: visible;mso-wrap-style: square;width: 508px;height: 362px;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Rent Order with rate unit prices added</p>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">Select the rent item line and then click <span class="Bold">Line &gt; Item Tracking Lines</span> on the <span class="Bold">Lines</span> FastTab.<br />A dialog opens for item tracking selection.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Order_2.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Shipment selection for item tracking</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Shipment</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Select Entries</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Order_3.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 196px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Serial Number selection</p>
+        <ol start="12">
+            <li class="ccTextvorlageNumberedList">Note which serial number is selected and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Invoice the Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to invoice the rent order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 02/28/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> and accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Double-click the line to open the <span class="Bold">Service Invoice Rental</span> page. Notice that the rental item and the two Rate Part components appear with the same values entered on the Rent Order line.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Order_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Service Invoice for rental and rate part component positions</p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the Rent Order.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Entries &gt; Rental Ledger Entries</span>. Notice that the rental and rate part component lines appear.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Order_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Rental Ledger Entries for a posted invoice with rental and rate part component positions</p>
+        <ol start="11">
+            <li class="ccTextvorlageNumberedList">Escape back to the Rent Order.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Return the Rent Order and Invoice the One-Time Invoicing Component</p>
+            <p class="ccTextvorlage">Follow these steps to return the rent order and invoice the One-Time Invoicing component:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/28/19.</li>
+                <li class="ccTextvorlageNumberedList">On the rental item line, enter 02/28/19 in the <span class="Bold">Rental Return Date</span> field.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Return Qty. to Receive</span> field, enter 1. Notice that the Rate Part component lines are updated with the return information, but the One-Time Invoicing component line is still unchanged.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Order_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Rent Order lines ready for return processing</p>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList">Select the rental item line and then click <span class="Bold">Line &gt; Item Tracking Lines</span> on the <span class="Bold">Lines</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Order_7.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Receipt selection for item tracking </p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">Confirm that the serial number is correct and then click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Order_8.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Serial number to be returned</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>. </li>
+            <li class="ccTextvorlageNumberedList">Notice the following:<ul start="7"><li class="ccTextvorlageNumberedList">The receipt is processed on the rent item line and the rate part components.</li><li class="ccTextvorlageNumberedList">The <span class="Bold">Quantity Shipped</span> field and <span class="Bold">Qty. to Invoice</span> fields are set to 1 on the One-Time Invoicing component line.</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Order_9.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Rent Order after return processing</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Reopen</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the One-Time Invoicing component line, type 100 in the <span class="Bold">Unit Price Excl. VAT</span> field.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/28/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 02/28/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and notice that the cleaning charge appears on the line with the amount entered in step 11 as the unit price.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Order_10.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Sales invoice for the One-Time Invoicing component</p>
+        <ol start="19">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order. Notice that the <span class="Bold">Quantity Invoiced</span> field on the One-Time Invoicing component line is set to 1.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Entries &gt; Rental Ledger Entries</span>. Notice that the One-Time Invoicing component line appears.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Process a Rent Order_11.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Rental Ledger Entries for posted invoices with rental and all component positions</p>
+        <ol start="22">
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+        </ol>
+    </body>
+</html>

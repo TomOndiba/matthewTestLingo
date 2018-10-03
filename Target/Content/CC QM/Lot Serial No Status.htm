@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="897" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref393798349"></a><a name="_Toc442095707"></a>Lot-/Serial No. Status</h3>
+        <p class="ccTextvorlage">In the <span class="Bold">Lot-/Serial No. Status</span> page, several statuses can be created, which can then be assigned to a lot- or serial number. In addition to simply creating statuses, different use restrictions can be determined per status and up to ten statuses can be selected for display on the <span class="Bold">Item Card</span> and the <span class="Bold">Inventory List</span> pages.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Lot Serial No Status.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 186px;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Lot-/Serial No. Status page </p>
+        <p class="ccTextvorlage">The fields in this page are defined in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 108px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier for the status.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Brief description of the status.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Status Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Identifies how the status is used and controls the meaning of the <span class="Bold">Customer Filter</span> and <span class="Bold">Country Filter</span> fields. The options are:</p>
+                            <ul>
+                                <li class="ccAufzählung">Released – The lot is automatically released for all material movements. No entries can be made in the <span class="Bold">Customer Filter</span> and <span class="Bold">Country Filter</span> fields. </li>
+                                <li class="ccAufzählung">Blocked – The lot is automatically blocked for all material movements. No entries can be made in the <span class="Bold">Customer Filter</span> and <span class="Bold">Country Filter</span> fields. </li>
+                                <li class="ccAufzählung">Conditionally Released – at least one filter must be set in one of the following fields: <span class="Bold">Customer Filter</span> or <span class="Bold">Country Filter</span>. The chosen settings are checked in Sales.</li>
+                            </ul>
+                            <p class="ccTabellenText">When the <span class="Italics">Released</span> or <span class="Italics">Blocked</span> option is selected, certain fields for the data record are automatically pre-determined.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Pick - Sales</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the respective status is allowed for the sales picking. If not selected, inventory with this status cannot be picked in sales. In addition, this inventory is not taken into consideration for the automatic proposal of lot- or serial numbers in the picking order.</p>
+                        <p class="ccTabellenText">This also applies for the Picks as well as the Inventory Picks in Microsoft Dynamics NAV.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Pick - Manufacturing</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the respective status is allowed for the manufacturing picking. If not selected, inventory with this status cannot be picked in manufacturing. In addition, this inventory is not taken into consideration for the automatic proposal of lot- or serial numbers in the picking order.</p>
+                        <p class="ccTabellenText">This also applies for the Picks as well as the Inventory Picks in Microsoft Dynamics NAV.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Pick - Transfer</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the respective status is allowed for the transfer order picking. If not selected, inventory with this status cannot be picked for transfer orders. In addition, this inventory is not taken into consideration for the automatic proposal of lot- or serial numbers in the picking order.</p>
+                        <p class="ccTabellenText">This also applies for the Picks as well as the Inventory Picks in Microsoft Dynamics NAV.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Customer Filter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Customer that the status relates to. The filter entered here is considered at the following places within the application:</p>
+                        <ul>
+                            <li class="ccAufzählung">Planning – Inventory that was released for certain customers is only considered for the fulfillment of demand of orders by these customers. For all other customers, this inventory is considered as not available in planning.</li>
+                            <li class="ccAufzählung">Picking – Inventory that was released for certain customers is only used in the picking order if the respective sales order was created for this customer. </li>
+                            <li class="ccAufzählung">Item Availability Check in the Sales Order – When item availability is checked in the Sales Order, only inventory where the deposited customer filter on the status matches the customer number in the sales header is viewed as available. Inventory where the customer filter of the status does not match the customer in the sales header cannot be entered in the item tracking line.</li>
+                        </ul>
+                        <p class="ccTabellenText">Furthermore, the shipment posting is denied if the customer filter of the status does not match the customer number in the sales header (such as if the status was altered after entering the item tracking line).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Country Filter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Country that this status relates to. The filter entered here is considered at the following places within the application:</p>
+                        <ul>
+                            <li class="ccAufzählung">Planning – Inventory that was released for a certain country is only considered for the fulfillment of demand of orders by customers where the country code of the customer matches the country code of the status. For all other sales- or blanket orders this inventory is considered as not available in planning.</li>
+                            <li class="ccAufzählung">Picking – Inventory that was released for certain countries is only used in the picking order if the country code of the customer in the sales order matches the country code in the status.</li>
+                            <li class="ccAufzählung">Item Availability check in the Sales Order – When item availability is checked in the Sales Order, only inventory where the deposited country code filter at the status matches the country code of the customer in the sales header is viewed as available. Inventory where the country code filter of the status does not match country code of the customer in the sales header cannot be entered in the item tracking line. </li>
+                        </ul>
+                        <p class="ccTabellenText">Furthermore, the shipment posting is denied if the country code filter of the status does not match the country code of the customer in the sales header (such as if the status was altered after entering the item tracking line).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prod. Rel. Comp. Check</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected – and the status of a manufactured lot or serial number is changed to this status – the system will check if the lot statuses of the consumed lots are permitted for the alteration of the status of the manufactured lot. </p>
+                        <p class="ccTabellenText">The definition which lot statuses of the consumed lots are permitted is based on the <span class="Bold">Allowed at Prod. Rel. Comp. Check</span> field (refer to next field).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Allowed at Prod. Rel. Comp. Check</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the respective lot status at the <span class="Bold">Prod. Rel. Comp. Check</span> field is permitted and thus the lot status change of the manufactured lot is allowed. </p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">Ensure that this status is set up as an allowed posting for the consumption posting in the <span class="Bold">Inventory Posting Permission Setup</span> page.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Reorder Point</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, inventory with this status is taken into consideration in the Microsoft Dynamics NAV planning for the fulfillment of a defined reorder point on the Item Card.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Safety Stock</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, inventory with this status is taken into consideration in the Microsoft Dynamics NAV planning for the fulfillment of a defined safety stock on the Item Card.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Order Check</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected – and the status is changed to this status – the system checks whether an open Test Order (status other than <span class="Italics">Finished</span>) for this lot- or serial number exists. If an open Test Order exists, the action will be interrupted.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Available for Planning</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, inventory with this status is viewed as available in the Microsoft Dynamics NAV planning. This field is also taken into consideration during the availability check in the item availability pages.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Exprd. Invt. avail. for Plng.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, inventory with this status where the expiration date is passed is viewed as available in the Microsoft Dynamics NAV planning.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Pick expir. Inv. - Sales</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, expired lots with this status can be selected in the pick document for sales orders.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Pick expir. Inv. - Manuf.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, expired lots with this status can be selected in the pick document for production orders.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Pick expir. Inv. - Transfer</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, expired lots with this status can be selected in the pick document for transfer orders.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Show in Inv. List / Item Card</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the available inventory for the status is shown in the <span class="Bold">Inventory List</span> page and on the <span class="Bold">QM</span> FastTab of the Item Card. Furthermore, the selected statuses appear in the <span class="Bold">Item Details - Inventory</span> FactBox on the Sales Order and <span class="Bold">Prod. Order Components</span> pages.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">This check box can be selected on a maximum of ten statuses.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Color Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Indicates a color to provide status visualization to either the entire line or only the <span class="Bold">Status</span> field on the following pages:</p>
+                        <ul>
+                            <li class="ccAufzählung">Lot-/Serial No. Administration – entire line except the <span class="Bold">New Status</span> field will show the relevant status color until the change is posted</li>
+                            <li class="ccAufzählung">Inventory Overview – entire line</li>
+                            <li class="ccAufzählung">Item Tracing – <span class="Bold">Status</span> field only</li>
+                            <li class="ccAufzählung">Lot/Serial No. Information Card – <span class="Bold">Status</span> field only</li>
+                        </ul>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Color Codes.htm">“Color Codes” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

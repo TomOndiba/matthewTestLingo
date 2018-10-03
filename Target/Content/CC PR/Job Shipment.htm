@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="862" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc445394513"></a>Job Shipment</h2>
+        <p class="ccTextvorlage">Job Shipments are displayed in the Job Planning and Processing view. All functions described below are executed or accessed from this view.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref383456691"></a><a name="_Ref383504248"></a><a name="_Toc445394514"></a>Shipment Planning</h3>
+        <p class="ccTextvorlage">The fields relevant for WBS positions that are to be delivered to the customer are:</p>
+        <ul>
+            <li class="ccAufzählungblau"><span class="Bold">Shipment Channel</span> – specifies the shipment process.</li>
+            <li class="ccAufzählungblau"><span class="Bold">Shipment Date</span> – defines the shipment due date. If no date is entered, <span class="CCBausteinInhaltZchn">cc|project</span> assumes the current date.</li>
+        </ul>
+        <p class="ccTextvorlage">To create a delivery schedule for the Conveyor System – as illustrated in <MadCap:xref href="#_Ref383011444" class="Figure">Fig. 1</MadCap:xref> – the <span class="Bold">Shipment Plan</span> check box was selected on WBS position 1.2. This resulted in an automated planning for this position (as indicated in the <span class="Bold">Shipment Planning</span> field) and the Shipment Date was taken from the process planning. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Job Shipment.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref383011444"></a>: Job Planning and Processing view with Shipment fields</p>
+        <p class="ccTextvorlage">The shipment lines are then displayed in the Shipment Planning view, accessed from the navigation pane by clicking <span class="CCBausteinInhaltZchn">cc|project</span> <span class="Bold">&gt; Planning &gt; Shipment Planning</span>. On the ribbon, click <span class="Bold">Planning and Processing</span> to display the complete structure levels (including the lower levels). </p>
+        <p class="ccTextvorlage">Now the complete structure of the shipment can be planned. On the Job Planning and Processing view, select the Conveyor System line, then click <span class="Bold">Navigate &gt; Shipment &gt; Planning</span> (in the Processing action group) and then select <span class="Italics">Current line + sub-structure</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Job Shipment_1.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Complete Conveyor System planned for shipment</p>
+        <p class="ccTextvorlage">The automatic Planning Process is based on the entry in the <span class="Bold">Shipment Channel</span> field:</p>
+        <ul>
+            <li class="ccAufzählungblau">Structure Position – creates a shipment plan without a quantity.  </li>
+            <li class="ccAufzählungblau">Job Line – creates a shipment plan with the calculated quantity.  </li>
+            <li class="ccAufzählungblau">Posted Item – creates a shipment plan only if an item was posted through a purchase or inventory request on the job that has not been delivered so far.</li>
+        </ul>
+        <p class="ccTextvorlage">All shipment plans belonging to a structure can be viewed and edited together in the Job Processing Shipment Plan view, accessed from the <span class="Bold">Navigate</span> tab by clicking <span class="Bold">Shipment &gt; Per Block</span> (in the Views action group).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Job Shipment_2.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: All shipment plans for Conveyor System </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Job Shipment Planning View</h4>
+        <p class="ccTextvorlage">The shipment planning for all job lines can be viewed in the <span class="Bold">Job Shipment Planning</span> page, accessed from the <span class="CCBausteinInhaltZchn">cc|project</span> menu by clicking <span class="Bold">Planning &gt; Shipment Planning</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Job Shipment_3.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Job Shipment Planning showing shipment lines in the second quarter of 2019</p>
+        <p>The fields in the <span class="Bold">General</span> and <span class="Bold">Date</span> FastTabs are used to filter the view. The actions on the ribbon allow for the accessing of Job Cards, Job Planning and Processing view as well as the ability to Release selected shipment lines.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc445394515"></a>Shipment Release</h3>
+            <p class="ccTextvorlage">Planned shipment WBS positions (<span class="Bold">Shipment Status</span> = <span class="Italics">Planning</span>) can be released by clicking <span class="Bold">Navigate &gt; Shipment &gt; Release</span> (in the Processing action group).</p>
+            <p class="ccTextvorlage">Shipment documents can be created during the release process. The created documents for the lines are indicated in the <span class="Bold">Job Shipment</span> field on the Job Planning and Processing view. </p>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Job Shipment_4.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Job Planning and Processing view with released shipment lines and documents</p>
+        <p class="ccTextvorlage">To open the Job Shipment document, click the value in the <span class="Bold">Job Shipment</span> field or click <span class="Bold">Navigate &gt; Shipment &gt; Job Shipment</span> (in the Views action group).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Job Shipment_5.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Job Shipment for Conveyor System</p>
+        <p class="ccTextvorlage">The shipment can be arranged in multiple partial shipments (e.g., for multiple trucks) by modifying the value in the <span class="Bold">Qty. to Ship</span> field.</p>
+        <p class="ccTextvorlage">A job shipment must be released as a document and can then be posted. </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    ">Posted Job Shipments</h3>
+            <p>Posted Job Shipments are located on the <span class="Bold">Posted Documents</span> button of the navigation pane.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Job Shipment_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Posted Job Shipment</p>
+        </div>
+        <p class="ccTextvorlage">From here, the posted Job Shipment can be viewed and reprinted.</p>
+    </body>
+</html>

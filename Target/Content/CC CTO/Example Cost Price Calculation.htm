@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref406766183"></a><a name="_Ref406766193"></a><a name="_Toc434567995"></a>Example – Cost Price Calculation</h3>
+            <p class="ccTextvorlage">In the <span class="Bold">Configure to Order Setup</span> page, an attribute for cost price can be defined in the <span class="Bold">Variable for Unit Cost</span> field (refer to topic <MadCap:xref href="Dynamic BOM FastTab.htm#_Ref402686292">“Dynamic BOM FastTab” on page 1</MadCap:xref>). The assignment of the variables is similar to the variable for components in the Master BOM lines. In the <span class="Bold">Formula Value</span> field on the <span class="Bold">Master BOM Attributes</span> page, enter a formula for price calculation that relates back to the variable on the checklist.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Cost Price Calculation.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Variable for Cost Price on Master BOM</p>
+        </div>
+        <p class="ccTextvorlage">Thereby all variables of the checklists and the Master BOM can be accessed. The result of the calculation is transferred to the Document BOM in the <span class="Bold">Unit Cost (CC)</span> field. </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In this example, the value 200 is entered in the <span class="Bold">Input</span> field on the document checklist line. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Cost Price Calculation_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Cost Price assigned on document checklist line</p>
+        </div>
+        <p class="ccTextvorlage">When the Document BOM is created, the system multiplies the value in the <span class="Bold">Input</span> field by 2, as defined in the Master BOM Attribute, and 400 is transferred to the <span class="Bold">Unit Cost (CC)</span> field.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Cost Price Calculation_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Calculated Cost Price in Document BOM</p>
+    </body>
+</html>

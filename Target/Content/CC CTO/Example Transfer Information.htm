@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="11" MadCap:lastHeight="703" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434567987"></a>Example – Transfer Information into Checklists</h3>
+            <p class="ccTextvorlage">Often it is necessary to have information e.g. from the Sales Header (Language Code) or Sales Line (Quantity) in a checklist line. Instead of entering this information manually into the checklist, the origin of the input can be defined on the Checklist Template line in the following fields.</p>
+            <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Field </p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Get Value from Table  </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Indicates the table of origin. The options are:</p>
+                            <table>
+                                <col style="width: 200px;" />
+                                <col />
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li class="ccAufzählung">Sales Header</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li class="ccAufzählung">Purchase Line</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li class="ccAufzählung">Sales Line</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li class="ccAufzählung">Service Item</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li class="ccAufzählung">Construction Header</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li class="ccAufzählung">Service Header</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li class="ccAufzählung">Purchase Header</li>
+                                        </ul>
+                                    </td>
+                                    <td> </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Get Value from Table ID</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Automatically populated with the number of the table selected in the <span class="Bold">Get Value from Table</span> field.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Get Value from Field ID</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Indicates the field from which data from the selected table is to be transferred.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                            <p class="ccTabellenText">Get Value from Field</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                            <p class="ccTabellenText">Automatically populated with the name of the field selected in the <span class="Bold">Get Value from Field ID</span> field.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The <span class="Bold">Formula Function</span> field cannot be populated if any of the <span class="Bold">Get Value from …</span> fields are populated. In addition, if the <span class="Bold">Formula Function</span> field is not empty,  a table cannot be selected in the <span class="Bold">Get Value from Table</span> field.</p>
+        <p class="ccTextvorlageaftertable">After recalculation of the Document Checklist, the values of the origin field will be transferred into the <span class="Bold">Input</span> field on the checklist line. The <span class="Bold">Always Overwrite</span> and <span class="Bold">Value of Function is Default</span> fields should thereby also be used in the Checklist Template line(s). Additionally, the <span class="Bold">Free Text</span> field should be used for any expected text values that should not be interpreted by the system.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Transfer Information.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Checklist Template with sales information for transfer to document checklist</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageaftertable">In this example, a checklist template is set up to transfer the following information to the checklist:</p>
+            <table>
+                <col style="width: 274px;" />
+                <col style="width: 259px;" />
+                <tr>
+                    <td>
+                        <p class="ccAufzahlungblaunospacing">Sales document type = order</p>
+                    </td>
+                    <td>
+                        <p class="ccAufzahlungblaunospacing">Item number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="ccAufzahlungblaunospacing">Sales order number</p>
+                    </td>
+                    <td>
+                        <p class="ccAufzahlungblaunospacing">Quantity</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="ccAufzahlungblaunospacing">Customer name</p>
+                    </td>
+                    <td>
+                        <p class="ccAufzahlungblaunospacing">Shipment date</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p class="ccTextvorlage">This checklist template is assigned to item 1001 and then a sales order is created for 2 units of the item to customer 20000, Selangorian Ltd. with shipment date of January 24, 2019.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Transfer Information_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 409px;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Document Checklist before recalculation</p>
+        <p class="ccTextvorlage">When the checklist is opened from the sales order and the “Recalculate” function is run, the specified fields will be populated with information from the linked sales header and line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Transfer Information_2.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 409px;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Document Checklist after recalculation with transferred information from sales line and header</p>
+    </body>
+</html>

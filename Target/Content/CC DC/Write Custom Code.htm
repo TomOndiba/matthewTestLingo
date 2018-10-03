@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="692" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref424673264"></a><a name="_Ref424673276"></a><a name="_Toc434332547"></a>Write Custom Code</h2>
+        <p class="ccTextvorlage">Developers can write C/AL code in Codeunits that are run when running the report. Creating Codeunits that will work together with <span class="CCBausteinInhaltZchn">cc|document configurator</span> requires some special code in order to retrieve the record being processed. To simplify this process, the Sample DMP Database includes a Codeunit that can be copied and used as a starting point, named “DC - Template Codeunit” (50000). Alternatively, refer to the following screen shots for information about the special code. </p>
+        <p class="ccTextvorlage">The RecRef variable in this Codeunit is the Record currently being processed, and from there on regular C/AL code can be written.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Write Custom Code.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Copied demo template codeunit to extend cc|document configurator by custom code</p>
+        <p class="ccTextvorlage">From a Codeunit it is also possible to create <span class="CCBausteinInhaltZchn">cc|document configurator</span> Variables and assign them values. This is done with the function highlighted in the screen shot below.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Write Custom Code_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Set the value of a cc|document configurator variable</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">To write code that will not run when the report is in preview or if it prints a copy, then use the statement highlighted in the screen shot below.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC DC/Write Custom Code_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Example of how to check a codeunit for preview or copy selection of a report</p>
+        </div>
+        <p class="ccTextvorlage"> </p>
+    </body>
+</html>

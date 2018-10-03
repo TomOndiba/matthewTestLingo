@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">Create Project and Sub-Jobs</h2>
+        <p>This section provides an overview of how to create the Project and BoQ/PaC Job structure used in the previous sections.</p>
+        <p class="BoldItalics12pt">Create Project</p>
+        <p>Follow these steps to create a Project:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">On the navigation pane, click <span class="Bold">Departments &gt; </span><span class="CCBausteinInhaltZchn">cc|project</span><span class="Bold">&gt; Construction &gt; Processing &gt; Projects</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span> and then press Enter or Tab to insert a new number.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> and <span class="Bold">Description 2</span> fields, enter relevant descriptions of the project.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Sell-to Customer No.</span> field, enter the number of the customer who sent the quote request.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Job Type</span> field, enter STRUCTURE.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Person Responsible</span> field, enter the resource responsible for the project.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Create Project and Sub-Jobs.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Project Card</p>
+        <p class="BoldItalics12pt">Create BoQ Job</p>
+        <p>Follow these steps to create the BoQ Job:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Create Job</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the Copy Job dialog page, select the Job Type associated with <span class="Bold">Structure Type</span> = <span class="Italics">Bill of Quantities</span> (refer to section<MadCap:xref href="Job Types Setup.htm">“Job Types Setup” on page 1</MadCap:xref> for more information).</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Create Project and Sub-Jobs_1.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Copy Job dialog page with BoQ-related Job Type selected</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.<br />The Bill of Quantities job is created with links to the project.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Create Project and Sub-Jobs_2.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: BoQ Job created from Project</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the BoQ Job Card.</li>
+            <li>Click <span class="Bold">OK</span> to close the Project Card.</li>
+        </ol>
+        <p class="BoldItalics12pt">Create PaC Job</p>
+        <p>Follow these steps to create the PaC Job from the BoQ Job:</p>
+        <ol>
+            <li class="ccTextvorlageNumberedList">On the navigation pane, under<span class="CCBausteinInhaltZchn"> cc|project</span>, click <span class="Bold">Construction &gt; Processing &gt; Job List</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the sub-job of the project, with <span class="Bold">Structure Type</span> = <span class="Italics">Bill of Quantities</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Create Project and Sub-Jobs_3.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Selecting BoQ Job from Job List</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Actions &gt; Create PaC Job</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Create Project and Sub-Jobs_4.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Create PaC Job function on BoQ Job</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">A message appears asking to create calculation group totals, which would be beneficial if the BoQ is calculated before the PaC Job is created because it creates a new job line structure based on the calculation.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Create Project and Sub-Jobs_5.png" MadCap:mediastyle="@media print { max-width: 0; }" />
+            <img src="../Resources/Images/CC PRCS-BQ/Create Project and Sub-Jobs_5.png" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Message to create calculation group totals in the PaC Job</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Since calculations have not been done yet in the BoQ Job, click <span class="Bold">No</span> in the message.<br />The Process and Controlling job is created with links to the project.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Create Project and Sub-Jobs_6.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: PaC Job created from BoQ Job</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the BoQ Job Card.</li>
+        </ol>
+        <p>In the Job List, review the Project and Sub-Job structure.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Create Project and Sub-Jobs_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Project and Sub-Job (BoQ/PaC) Structure in Job List</p>
+    </body>
+</html>

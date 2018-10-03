@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">Processing</h2>
+        <p>This topic describes how alloy surcharges are processed in sales and purchase documents.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="Alloy"></a>Alloy Management for Sales</h3>
+        <p>The calculation of the expected alloy amount is performed in the Sales Order. Once an item with alloy specifications is entered in the sales order line, click <span class="Bold">Lines &gt; Alloy Surcharge Lines</span> in the <span class="Bold">Lines</span> FastTab to open the <span class="Bold">Alloy Surcharges Lines</span> page. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/cc alloy mgmt process.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="AlloySurchargeLinesSO"></a>: Alloy Surcharges Lines on sales order line</p>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Alloy Surcharges Lines</span> page are described in the following table.</p>
+        <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 120px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Alloy Type Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Alloy Type assigned to the item.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Alloy Weight (per Base Unit)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Alloy Condition assigned to this Alloy Type for this customer.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Total Alloy Weight</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Calculated by the Quantity in the sales line + Alloy Weight (per Base Unit).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Exp. Alloy Amount</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Automatically calculated using the following formula:</p>
+                        <p class="ItalicsCentered">(Alloy Quotation – Alloy Base) / 100 * Total Alloy Weight in KG</p>
+                        <p class="ccTabellenText">If the above fields are not pre-populated with data, this field is not automatically calculated.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Alloy Base</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Alloy Condition assigned to this Alloy Type for this customer.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Alloy Quotation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Alloy Quotation of the Alloy Type, if the sales Order Date matches a date in the Alloy Quotation. Otherwise, this field is blank.</p>
+                        <p class="BoldItalicsTable">Example</p>
+                        <p class="ccTabellenText">The CU alloy type has quotation values for three days in July 2019, one of those days is July 27, which is the order date on the Sales Order in <MadCap:xref href="AlloySurchargeLinesSO" class="Figure">Fig. 1</MadCap:xref>.</p>
+                        <p class="ccTabellenText">The Average Quotation value is used in <MadCap:xref href="AlloySurchargeLinesSO" class="Figure">Fig. 1</MadCap:xref> because the Alloy Condition MID DAY, which uses an average quotation base, was assigned to the CU alloy type for this customer.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Fix Values</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the calculation of the Exp. Alloy Price and Exp. Alloy Amount is different:</p>
+                        <p class="ItalicsCentered">(Exp. Alloy Price (per B. Unit) * Sales Line.Quantity (Base)) / Total Alloy Weight</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Sales Invoicing</h4>
+            <p>When sales invoices are processed using the “Get Shipment Lines” function, the alloy surcharge is added as an item charge and assigned to the item.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/cc alloy mgmt process_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="AlloySurchargeLinesBO"></a>: Alloy surcharge included as Item Charge in Sales Invoice line using Get Shipment Lines function</p>
+        </div>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="Alloy2"></a>Alloy Management for Purchases</h3>
+            <p>The process of purchasing items with alloy surcharges is generally the same as for selling items with alloy surcharges, except the Expected Alloy Surcharge amount is visible from the Purchase Order line.</p>
+            <p>The calculation of the expected alloy amount is performed in the Purchase Order. Once an item with alloy specifications is entered in the purchase order line, click <span class="Bold">Lines &gt; Alloy Surcharge Lines</span> in the <span class="Bold">Lines</span> FastTab to open the <span class="Bold">Alloy Surcharges Lines</span> page. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/cc alloy mgmt process_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name=": Alloy2"></a>: Alloy Surcharges Lines on purchase order line</p>
+        </div>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Alloy Surcharges Lines</span> page are described in the following table.</p>
+        <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 94px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Alloy Type Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Alloy Type assigned to the item.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Alloy Weight (per Base Unit)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Alloy Condition assigned to this Alloy Type for this vendor.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Total Alloy Weight</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Calculated by the Quantity in the purchase line + Alloy Weight (per Base Unit).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Exp. Alloy Amount</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Automatically calculated using the following formula:</p>
+                        <p class="ItalicsCentered">(Alloy Quotation – Alloy Base) / 100 * Total Alloy Weight in KG</p>
+                        <p class="ccTabellenText">If the above fields are not pre-populated with data, this field is not automatically calculated.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Alloy Base</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Alloy Condition assigned to this Alloy Type for this vendor.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Alloy Quotation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Alloy Quotation of the Alloy Type, if the purchase Order Date matches a date in the Alloy Quotation. Otherwise, this field is blank.</p>
+                        <p class="BoldItalicsTable">Example</p>
+                        <p class="ccTabellenText">The CU alloy type has quotation values for three days in July 2019, one of those days is July 27, which is the order date on the Purchase Order in <MadCap:xref href="AlloySurchargeLinesBO" class="Figure">Fig. 3</MadCap:xref>.</p>
+                        <p class="ccTabellenText">The Average Quotation value is used in <MadCap:xref href="AlloySurchargeLinesBO" class="Figure">Fig. 3</MadCap:xref> because the Alloy Condition MID DAY, which uses an average quotation base, was assigned to the CU alloy type for this vendor.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Fix Values</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the calculation of the Exp. Alloy Price and Exp. Alloy Amount is different:</p>
+                        <p class="ItalicsCentered">(Exp. Alloy Price (per B. Unit) * Purchase Line.Quantity (Base)) / Total Alloy Weight</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.2.1    ">Purchase Invoicing</h4>
+            <p>When purchase invoices are processed using the “Get Receipt Lines” function, the alloy surcharge is added as an item charge and assigned to the item.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/cc alloy mgmt process_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Alloy surcharge included as Item Charge in Purchase Invoice line using Get Receipt Lines function</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="814" MadCap:lastWidth="605" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref355092985"></a><a name="_Toc434929927"></a>Returns</h2>
+        <p class="ccTextvorlage">The following information must be entered in the Rent Order lines to post a return of the shipped goods:</p>
+        <ul>
+            <li class="ccAufzählungblau">The return date must be entered in the <span class="Bold">Rental Return Date</span> field. This is the date that is used to return the full or partial quantity that was shipped back to the Rental Location. </li>
+            <li class="ccAufzählungblau">The quantity to be returned must be inserted to the <span class="Bold">Return Qty. to Receive</span> field. </li>
+        </ul>
+        <p class="ccTextvorlage">If the period of time between the last invoiced date and the Return Date is not invoiced yet, it will be regarded in the next invoice(s) that is created. If the period is invoiced before the return, a credit memo is created if necessary.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">For rental returns that use serial tracking, the proper serial number must be selected for return if the quantity is &gt;1 and processed automatically when quantity = 1.</p>
+        <p class="ccTextvorlage">The return will be considered within the batch for invoicing. If the Return Date is before the current Invoice Period, a separate Credit Memo is created with the lines. In any other cases, the return will be accounted in the Invoice (invoicing until Return Date). </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434929928"></a>Exercise – Return the Rented Items</h3>
+        <p class="ccTextvorlage">On February 28, 2019, you receive the rental item back from customer R-30000.</p>
+        <p class="ccDemoStepHeading">Post the Item Return</p>
+        <p class="ccTextvorlage">Follow these steps to post the item return:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Open the rent order created in the “Record a Rental Position on a Rent Order” exercise.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/28/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lines</span> FastTab, enter 02/28/19 in the <span class="Bold">Rental Return Date</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Return Qty. to Receive</span> field, enter 1.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Use the “Choose Columns” function to show the <span class="Bold">Next Invoice Period</span> field in the lines.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Rental</span> FastTab and then click <span class="Bold">Show more fields</span>.</li>
+        </ol>
+        <div class="ccDIV">
+            <ol start="9">
+                <li class="ccTextvorlageNumberedList">Notice the following:<ul start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Qty. to Invoice</span> and <span class="Bold">Return Qty. to Receive</span> fields are blank</li><li class="ccTextvorlageNumberedList"><span class="Bold">Return Qty. Received</span> and <span class="Bold">Quantity Invoiced</span> fields are 1 </li><li class="ccTextvorlageNumberedList"><span class="Bold">Next Invoice Period</span> field is blank because all invoicing is complete</li><li class="ccTextvorlageNumberedList"><span class="Bold">Availability</span> is 33 in the Rent Line Details FactBox</li><li class="ccTextvorlageNumberedList"><span class="Bold">Closed</span> check box is selected on the <span class="Bold">Rental</span> FastTab</li></ul></li>
+            </ol>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC REN/Returns.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Fully processed rent order</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Review the Posted Documents</p>
+            <p class="ccTextvorlage">Follow these steps to review the posted documents:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Returns</span>.</li>
+                <li class="ccTextvorlageNumberedList">Double-click the line to open the <span class="Bold">Posted Rental Return</span> page.</li>
+            </ol>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC REN/Returns_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Posted Rental Return from the customer </p>
+        </div>
+        <p class="ccTextvorlageNumberedListNoteHeadingIndent">Note</p>
+        <p class="ccTextvorlageNumberedListNoteBodyIndent">This document is also available from the navigation pane by clicking <span class="CCBausteinInhaltZchn">cc|rental</span><span class="Bold"> &gt; Archive &gt; Posted Returns</span>.</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">Close the open pages.</li>
+        </ol>
+    </body>
+</html>

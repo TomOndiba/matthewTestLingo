@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="744" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434929971"></a>Connect Machines to Fixed Assets</h2>
+        <p class="ccTextvorlage">Machines can be related to Fixed Assets. The purchase of the Fixed Asset related to the Machine is done by selecting the <span class="Bold">Fixed Asset No.</span> in the document line and for sales, added automatically to the sales line when selecting the serial number assigned to the Fixed Asset Machine.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">When using this function, the document line can only have a quantity of one.</p>
+        <p class="ccTextvorlage">In the navigation pane, click <span class="Bold">Machines &gt; Fixed Assets &gt; Fixed Asset Machines</span> to open existing fixed asset machines or create a new fixed asset machine. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Connect Machines to Fixed.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Fixed Asset Machine Card page without assigned serial number </p>
+        <p class="ccTextvorlage">Refer to online help for descriptions of the fields on this page, and refer to the Microsoft Dynamics® NAV Fixed Assets training materials for more information about working with Fixed Assets.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434929972"></a>Fixed Asset Purchase for Machines</h3>
+            <p class="ccTextvorlage">To purchase a Fixed Asset Machine, set up the document line as follows:</p>
+            <ul>
+                <li class="ccAufzählungblau">Type = Item</li>
+                <li class="ccAufzählungblau">No. = Item number assigned to the Fixed Asset Machine </li>
+                <li class="ccAufzählungblau">Quantity = 1</li>
+                <li class="ccAufzählungblau">Item Fixed Asset Purchase = Yes</li>
+                <li class="ccAufzählungblau">Item Fixed Asset No. = Fixed Asset Machine number</li>
+            </ul>
+        </div>
+        <p class="ccTextvorlage">Open the <span class="Bold">Item Tracking Lines</span> page and assign the Serial No. to the purchase line. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Connect Machines to Fixed_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Serial number assigned to Fixed Asset Machine from purchase order </p>
+        <p class="ccTextvorlage">The <span class="Bold">Serial No.</span> field is updated on the Fixed Asset Machine Card to match the serial number assigned on the purchase line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Connect Machines to Fixed_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Serial number transferred to Fixed Asset Machine assigned to purchase order </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434929973"></a>Fixed Asset Sale for Machines</h3>
+            <p class="ccTextvorlage">As opposed to purchases, the <span class="Bold">Item Fixed Asset No.</span> field on the sales line is automatically populated if the:</p>
+            <ul>
+                <li class="ccAufzählungblau"><span class="Bold">Item Fixed Asset Sale</span> check box is selected on the sales line</li>
+                <li class="ccAufzählungblau"><span class="Bold">Serial No.</span> assigned to the Fixed Asset Machine is assigned to the sales line</li>
+            </ul>
+        </div>
+        <p class="ccTextvorlage">For example, serial number NTGX26-00024 is assigned to the Fixed Asset Machine Card FA000110 for item R-20000-02.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Connect Machines to Fixed_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Fixed Asset Machine Card page with assigned serial number </p>
+        <p class="ccTextvorlage">On the sales line, item R-20000-02 is assigned for a quantity of one and then the <span class="Bold">Item Fixed Asset Sale</span> check box is selected. The <span class="Bold">Item Fixed Asset No.</span> field remains empty on the sales line until the serial number is assigned.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Connect Machines to Fixed_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Assigning the serial number to the sales line</p>
+        <p class="ccTextvorlage">After serial number NTGX26-00024 is assigned to the line, the <span class="Bold">Item Fixed Asset No.</span> field is automatically populated with the corresponding Fixed Asset Machine number (FA000110).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Connect Machines to Fixed_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Fixed Asset Machine assigned to sales order</p>
+    </body>
+</html>

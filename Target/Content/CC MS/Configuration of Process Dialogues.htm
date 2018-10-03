@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="909.52" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="Configur"></a>Configuration of Process Dialogues</h2>
+        <p><a name="Configur"></a>The process dialogues of <span class="CCBausteinInhaltZchn">cc|mobile solution</span> offer multiple settings that can be partially applied in the Microsoft Dynamics NAV RoleTailored Client and also in the underlying Codeunit. The different settings are explained in the following sections.</p>
+        <h3 MadCap:autonum="1.1.1    " class="Heading3"><a name="Mobile2"></a>Mobile Setup, Universal Dlg. Settings FastTab</h3>
+        <p>The settings in this FastTab apply to all process dialogues that use the Universal Dialogue. The fields on this FastTab are described in section <MadCap:xref href="Mobile Application Setup.htm#Universa">“Universal Dlg. Settings FastTab” on page 1</MadCap:xref>.</p>
+        <h3 MadCap:autonum="1.1.2    " class="Heading3"><a name="Document"></a>Document, Universal Dlg. Settings FastTab</h3>
+        <p>The settings in this FastTab apply to a specific process dialogue. The fields on this FastTab are described in topic <MadCap:xref href="Document Editor.htm#Universa">“Universal Dlg. Settings FastTab” on page 1</MadCap:xref>.</p>
+        <p>The following table shows the current process dialogues that use the universal dialogue and their supported settings ("-" not supported) with the corresponding default values (ON / OFF).</p>
+        <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); mc-table-style-original: url('../Resources/TableStyles/CC_TableStyleSheet.css');" class="TableStyle-CC_TableStyleSheet" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 181px;">
+            </col>
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 145px;">
+            </col>
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 145px;">
+            </col>
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2">
+            </col>
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Process Dialogue</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1" style="text-align: left;">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Confirm Post</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1" style="text-align: left;">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Posting per Line</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1" style="text-align: left;">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Print</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:pattern="2">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column1-Body1" colspan="4">Inventory &amp; Warehouse</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Receipt			</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">ON</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">OFF</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">ON</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Put-Away			</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">ON</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">OFF</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">-</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Reclassification	</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">ON	</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">-</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">OFF</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Pick &amp; Shipment		</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">OFF	</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">OFF</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">OFF</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Pick PO	</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">OFF</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">-</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">-</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Shipment	</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">OFF</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">OFF</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">OFF</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Phys. Inventory	</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">ON</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">-</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">-</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Pos./Neg. Adjustment	</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">ON</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">-</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">-</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Order Request	</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">ON</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">-</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">-</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column1-Body1" colspan="4">
+                        <p>Manufacturing</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>PO Output</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">ON</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">-</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">OFF</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>PO Consumption	</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">ON</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">-</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">-</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column1-Body1" colspan="4">
+                        <p>cc|factory data capture</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Logout	</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">ON</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">-</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">-</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Output	</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">ON</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">-</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">-</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Consumption	</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">ON</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">-</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">-</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column1-Body1" colspan="4">
+                        <p>cc|project</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Job Consumption	</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">ON</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">-</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">-</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Job Takeback	</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">ON</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">-</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">-</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p>Job Inv. Request	</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">OFF</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1" style="text-align: center;">OFF</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1" style="text-align: center;">ON</td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p>Job Shipment	</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1" style="text-align: center;">OFF</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1" style="text-align: center;">OFF</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1" style="text-align: center;">ON</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageNoteheading">NOTE</p>
+        <p class="ccTextvorlageNotebody">The “Print” setting must be configured in a commented area in the underlying Codeunit.</p>
+        <div class="ccDIV">
+            <h3 MadCap:autonum="1.1.3    " class="Heading3"><a name="Underlyi"></a>Underlying Codeunit Settings</h3>
+            <p>In addition to the settings in the Microsoft Dynamics NAV RoleTailored Client, there are several other settings in the codeunits according to the documents.</p>
+            <h4 class="Heading4" MadCap:autonum="1.1.3.1    ">Ask for Additional Fields</h4>
+            <p>By using the Universal Dialogue, the user can be asked for additional fields that are not implemented in the default process dialogues.</p>
+            <p>Process dialogues have two parameters that can be used for getting two additional values. The following global variables can be used for collecting additional values:</p>
+            <ul>
+                <li class="ccAufzählungblau">SpecialFields[2]	of type Integer</li>
+                <li class="ccAufzählungblau">SpecialFieldCaptions[2] of type Text</li>
+            </ul>
+            <p>SpecialFields represent a Field No. of the Table 83 “Item Journal Line”. To buffer those values, the table was extended by fields of different data types.</p>
+            <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); mc-table-style-original: url('../Resources/TableStyles/CC_TableStyleSheet.css');" class="TableStyle-CC_TableStyleSheet" cellspacing="0">
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column1">
+                </col>
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 200px;">
+                </col>
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 125px;">
+                </col>
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2">
+                </col>
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Field No.</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Field Name</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Data Type</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Length</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">5308000</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 1 Code 010</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Code</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">10</td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p>5308001	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 2 Code 010	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Code</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">10</td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p>5308002	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 3 Code 010	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Code</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">10</td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p>5308003	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 1 Code 020	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Code</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">20</td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p>5308004	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 2 Code 020	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Code</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">20</td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p>5308005	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 3 Code 020	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Code</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">20</td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p>5308006	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 1 Integer	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Integer</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1"> </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p>5308007	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 2 Integer	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Integer</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1"> </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p>5308008	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 3 Integer	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Integer</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1"> </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p>5308009	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 1 Decimal	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Decimal</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1"> </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p>5308010	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 2 Decimal	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Decimal</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1"> </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p>5308011	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 3 Decimal	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Decimal</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1"> </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p>5308012	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 1 Boolean	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Boolean</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1"> </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p>5308013	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 2 Boolean	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Boolean</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1"> </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p>5308014	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 1 Text	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Text</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">250</td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p>5308015	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">MD Buffer 2 Text	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">Text</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">250</td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                            <p>5308016	</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">MD Buffer 3 Text	</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">Text</td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">250</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="ccTextvorlageNoteheading">NOTE</p>
+        <p class="ccTextvorlageNotebody">It is possible that some of the fields are already used by the Codeunits. Therefore it is important to check that the desired field is “available” for SpecialFields usage. It is also possible to use default fields of the table, but in this case a check of “already-in-use” should be done.</p>
+        <p>In the process dialogues, an initial implementation for SpecialFields has to be adjusted.</p>
+        <p>The <span class="sourcecode">InitMD</span> function contains the following lines:</p>
+        <p class="ccsourcecode">SpecialFields[1] := 0;</p>
+        <p class="ccsourcecode">SpecialFieldCaptions[1] := '';</p>
+        <p class="ccsourcecode">SpecialFields[2] := 0;</p>
+        <p class="ccsourcecode">SpecialFieldCaptions[2] := '';</p>
+        <p>The Field No. of the value to be asked for must be assigned to the variable “SpecialFields”. The variable “SpecialFieldsCaptions” specifies the desired caption to be displayed.</p>
+        <p>Since <span class="Bold">Data Type</span> = <span class="Italics">Text</span>, the <span class="sourcecode">GEN.TransDef()</span> function can be used for Labeltexts to ensure Multilingual Support.</p>
+        <p>After running the Universal Dialogue, the values can be processed in the <span class="sourcecode">FinishMD();</span> function.</p>
+    </body>
+</html>

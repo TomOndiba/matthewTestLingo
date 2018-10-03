@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="860" MadCap:lastWidth="604" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256593"></a>Scheduling on Due Date in Sequence Planning</h3>
+        <p class="ccTextvorlage">When a sales order is created with a desired delivery date and a quantity of an item which the order can be scheduled, the planning function is used to direct the production. </p>
+        <p class="ccTextvorlage">This option is especially useful for fast processing of smaller work orders, such as when customers cut lengths of standard products from the bearing.</p>
+        <p class="ccTextvorlage">In this example, a sales order for 1000 KG of item P500 is created with the desired delivery date of March 14, 2019. On the ribbon, click <span class="Bold">Actions &gt; Planning</span>. The standard <span class="Bold">Sales Order Planning</span> page appears. To create the production order, click <span class="Bold">Create Prod. Order</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Scheduling on Due Date in.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Planning on Specified Date check box and Specified Date field populated</p>
+        <p class="ccTextvorlage">When the <span class="Bold">Planning on Specified Date</span> check box is selected, the system checks whether a scheduling order on the work center is possible at the specified time. Depending on the option, either a production order is created, scheduled and fixed at the same time, or the user gets a message that a schedule at this time is not possible. </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">If the shipment date on the sales line is before the specified date, then it is set to the specified date during the “Create Order From Sales” process.</p>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Scheduling on Due Date in_1.png" style="visibility: visible;mso-wrap-style: square;width: 432px;height: 132px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Confirmation message</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the Sequence Planning for this work center and production order, the end date is set to 3/7/2019, although the end date on the production order is 3/12/2019. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Scheduling on Due Date in_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Production order in sequence planning and highlighting the Ending Date on the production order</p>
+        </div>
+        <p class="ccTextvorlage">The difference in ending dates is because the desired delivery date is calculated backward from the machine and the other routing operations.</p>
+        <p class="ccTextvorlage"> </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Scheduling on Due Date in_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Production order routing operations</p>
+        <p class="ccTextvorlage">In this example, there are six production order routing lines for one production order line. The third line is the sequence work center.</p>
+        <p class="ccTextvorlage">When the sequence planning is calculated:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">The starting date of the third production order routing line is updated with the <span class="Bold">End Date Sequence Planning</span> field of the previous production order line in sequence. </li>
+            <li class="ccTextvorlageNumberedList">The ending date of the production order routing line is calculated (run and setup time).</li>
+            <li class="ccTextvorlageNumberedList">The second and the first routing lines are calculated backward based on the starting date of the third routing line.</li>
+            <li class="ccTextvorlageNumberedList">The fourth, fifth and sixth routing lines are calculated forward based on the ending date of the third routing line.</li>
+        </ol>
+        <p class="ccTextvorlage">Now the values of the routing lines are transferred to the production order/sequence planning lines:</p>
+        <ul>
+            <li class="ccAufzählungblau">Starting Date: Starting date of the first routing line</li>
+            <li class="ccAufzählungblau">Start Date Sequence Planning: Starting date of the third routing line</li>
+            <li class="ccAufzählungblau">End Date Sequence Planning: Ending date of the third routing line</li>
+            <li class="ccAufzählungblau">Ending Date: Ending date of the last routing line</li>
+        </ul>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">This also applies to the time fields (Starting Time, Starting Date-Time, Ending Date-Time and Ending Time).</p>
+        <p class="ccTextvorlage">To use this functionality, the <span class="Bold">Allow Fix. from Sales Order</span> check box must be selected on the <span class="Bold">Scheduling</span> FastTab of the work center.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Scheduling on Due Date in_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Allow Fix. from Sales Order selection on the work center</p>
+    </body>
+</html>

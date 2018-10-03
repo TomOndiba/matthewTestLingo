@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="797" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434256570"></a>Ingredient Lot Overview</h2>
+        <p class="ccTextvorlage">The <span class="Bold">Ingredient Lot Overview</span> page provides two functions:</p>
+        <ul>
+            <li class="ccAufzählungblau">Displays the current ingredient structure of a production order in a single view</li>
+            <li class="ccAufzählungblau">Assignment of lots for a production order component based on the Lot No. Ingredients</li>
+        </ul>
+        <p class="ccTextvorlage">This page can be opened from the production order header or lines (Ingredient Lot Assignment) or directly from the Ingredients Management menu (Ingredient Lot Overview).</p>
+        <p class="ccTextvorlage">A range of filter criteria is available for restricting the display to certain production orders. Once filter criteria is entered or changed, click <span class="Bold">Get Records</span> on the ribbon to populate the lines. Expand and collapse all lines to increase or reduce detail; individual lines can be collapsed or expanded by clicking the arrows in the <span class="Bold">Entry Type</span> column.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Ingredient Lot Overview.png" style="visibility: visible;mso-wrap-style: square;width: 577px;height: 276px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Ingredient Lot Overview accessed from production order line</p>
+        <p class="ccTextvorlage">The benefit of accessing the page from the production order header or line is that all necessary filters are preset and line detail information is populated. The difference between opening the page from header and lines is all production order lines are included in the view or only the selected line is included.</p>
+        <p class="ccTextvorlage">When accessing the page from the Ingredients Management menu, populate the <span class="Bold">Prod. Order Status Filter</span>, <span class="Bold">Prod. Order Filter</span> and, if necessary, the <span class="Bold">Prod. Order Line Filter</span> fields and then click <span class="Bold">Get Records</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Ingredient Lot Overview_1.png" style="visibility: visible;mso-wrap-style: square;width: 577px;height: 259px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Ingredient Lot Overview accessed from Ingredients Management menu with filters manually set</p>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">General</span> section are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 132px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prod. Order Status Filter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the status of the production order to be included in the view.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prod. Order Filter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the production order number(s) to be included in the view. </p>
+                        <p class="ccTabellenText">Standard Microsoft Dynamics NAV filters can be used, such as a filter string like PO1..PO2 where PO1 is the number of the first production order and PO2 is the number of the second production order created from Sales Order lines.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prod. Order Line Filter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the production order line number(s) to be included in the view. </p>
+                        <p class="ccTabellenText">Standard Microsoft Dynamics NAV filters can be used.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Due Date Filter / Item Filter / Variant Filter / Location Filter</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Additional filters to be included in the overview.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Show Component Ingredients</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, ingredients assigned to the components are displayed in the lines.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">The “Get Records” function must be run to update the lines.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Include Item Ledger Entries</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">If selected, posted item ledger entry information is displayed in the lines.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">The “Get Records” function must be run to update the lines.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">The <span class="Bold">Ingredient Lot Overview</span> page shows several elements of a Production Order qualified by their Entry Type. The valid Entry Types are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Entry Type</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Source Information</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Production Order</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Output</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Production Order Line</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Component</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Production Order Component</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Ingredient</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Ingredient information based on:</p>
+                        <ul>
+                            <li class="ccAufzählung">Prod. Order Line Ingredient (related to Prod. Order Line)</li>
+                            <li class="ccAufzählung">Prod. Order Component Ingredient (related to Prod. Order Component)</li>
+                            <li class="ccAufzählung">Lot No. Ingredient (related to Item Tracking)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Item Tracking</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Item Tracking (Reservation Entry)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Not all fields in the lines are populated for all Entry Types.</p>
+    </body>
+</html>

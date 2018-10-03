@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="835" MadCap:lastWidth="604" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256514"></a>Exercise – Modify Production Structure to Include Recipes</h3>
+        <p class="ccTextvorlage">Change the components on the Production Structure for item P-10002 to calculate the following share percentages:</p>
+        <ul>
+            <li class="ccAufzählungblau">P-30008 = 65%</li>
+            <li class="ccAufzählungblau">P-30009 = 35%</li>
+        </ul>
+        <p class="ccTextvorlage">Select the <span class="Bold">New Production BOM</span> and <span class="Bold">New Routing</span> check boxes and then certify the Production Structure. Update the Net Weight on the Item Card for P-10002 to 25 kg.</p>
+        <p class="ccTextvorlage">Manually create a firm planned production order for item P-10002 and check the components. Change the Net Weight on the Item Card to 20, refresh the production order and verify the changes on the components.</p>
+        <p class="ccDemoStepHeading">Modify the Production Structure</p>
+        <p class="ccTextvorlage">Follow these steps to modify the Production Structure for item P-10002 to include recipes rather than items:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Departments &gt; Manufacturing &gt; Product Design &gt; Production Structures</span>. </li>
+            <li class="ccTextvorlageNumberedList">Locate and open the production structure for item P-10002.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Under Development</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, change the <span class="Bold">Type</span> field to <span class="Italics">Share of Recipe</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter P-30008. </li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Share %</span> field, type 65.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, change the <span class="Bold">Type</span> field to <span class="Italics">Share of Recipe</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter P-30009.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Share %</span> field, type 35.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">General</span> FastTab, select the <span class="Bold">New Production BOM</span> and <span class="Bold">New Routing</span> check boxes.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Certified</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the Production Structure Details FactBox, click <span class="Bold">Item No.</span> P-10002 to open the Item Card.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Replenishment</span> FastTab, type 25 in the <span class="Bold">Net Weight</span> field.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the Item Card and then click <span class="Bold">OK</span> to close the <span class="Bold">Production Structure</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create the Production Order and Verify the Setup</p>
+            <p class="ccTextvorlage">Follow these steps to create the production order and verify the results:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">In the navigation pane, under Manufacturing, click <span class="Bold">Execution &gt; Firm Planned Prod. Orders</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+                <li class="ccTextvorlageNumberedList">Press ENTER to insert a new production order number.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Source No.</span> field, enter P-10002.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 1.</li>
+                <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Posting</span> FastTab and enter MAINWH in the <span class="Bold">Location Code</span> field.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Refresh Production Order</span>.</li>
+                <li class="ccTextvorlageNumberedList">In the Refresh Production Order batch job, click <span class="Bold">OK</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Components</span>.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Modify Production.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Prod. Order Components page with planned recipe weights</p>
+        <p class="ccTextvorlageNumberedListnonumber">The total <span class="Bold">Quantity per</span> of the two items equals 25 and each is calculated at the correct percentage as entered on the Production Structure. </p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Prod. Order Components</span> page.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Source No.</span> field, click the arrow and then click <span class="Bold">Advanced</span> to open the Item List.</li>
+            <li class="ccTextvorlageNumberedList">With item P-10002 selected, click <span class="Bold">Edit</span> on the ribbon.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Replenishment</span> FastTab, change the <span class="Bold">Net Weight</span> and <span class="Bold">Recipe Weight</span> fields to 20.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Card</span> and then click <span class="Bold">OK</span> to close the <span class="Bold">Item List</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Refresh Production Order</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the Refresh Production Order batch job, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Components</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Modify Production_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Prod. Order Components page with re-planned recipe weights</p>
+        <p class="ccTextvorlageNumberedListnonumber">The total <span class="Bold">Quantity per</span> of the two items equals 20 and each is calculated at the correct percentage as entered on the Production Structure. </p>
+        <ol start="18">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Prod. Order Components</span> and <span class="Bold">Firm Planned Prod. Order</span> pages.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    ">Invoice by Sales Order</h3>
+            <p>When invoicing by sales order, invoices can be created using the Performance per Period or Cumulative Invoicing models.  This section addresses the Performance per Period model.</p>
+            <p>With this model, measurements are taken over to the sales orders first by updating the Qty. to Ship with the differing quantities and then invoices are posted. At the end of the project, a final invoice is created with all measurement quantities replacing sales order quantities.</p>
+        </div>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">In this section, Construction Charges are not added to the invoices but can be added in the Sales Orders before posting using the same process as described in section .</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Prerequisites</h4>
+        <p>Before creating the invoice, the following settings must be done:</p>
+        <ul>
+            <li class="ccAufzählungblau">Job Card, Invoice Model = Performance per Period</li>
+            <li class="ccAufzählungblau">BoQ Budget Calculation = Sales Code must have Posting by = Sales Order</li>
+            <li class="ccAufzählungblau">Sales Order, Invoice Base = Measurement</li>
+            <li class="ccAufzählungblau">Registered Measurement has been created and confirmed</li>
+            <li class="ccAufzählungblau">Report Selections Sales = Invoice set to report 5292686</li>
+        </ul>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Post Sales Orders with Measurements</h4>
+        <p>When it is time to post an order with measurements, open the Job Card and click the value in the <span class="Bold">Orders</span> field of the Project Information FactBox.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Opening the Sales Order from the Job Card</p>
+        <p class="ccTextvorlage">In the Sales Orders list page, click <span class="Bold">Edit</span>. The Sales Order opens with Job positions, registered measurement values (as confirmed in section <MadCap:xref href="Registered Measurement Documents.htm">“Registered Measurement Documents” on page 1</MadCap:xref>) and proper invoice settings in the <span class="Bold">Construction Invoicing</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Sales Order with positions and registered measurements</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the <span class="Bold">Construction Invoicing</span> FastTab, fill in the <span class="Bold">Period of performance from</span> and <span class="Bold">Period of performance to</span> fields with the range of the measurement invoicing.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Invoicing range entered in Construction Invoicing FastTab</p>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">Take Over Measurements</h4>
+        <p class="ccTextvorlage">The “Take over Measurements” function compares the measurement quantities with the order quantities. There are two options for taking over the measurements:</p>
+        <ul>
+            <li class="ccAufzählungblau">Keep order quantities – Measurement quantities are transferred to the <span class="Bold">Qty. to Ship</span> field and the order quantity remains unchanged, unless the measurement quantity exceeds the order quantity. In that case, the order quantity is updated to match the measurement quantity. This option is used during the iteration posting so that the measurement quantities are posted. </li>
+            <li class="ccAufzählungblau">Update order quantities – Order quantities are updated to the measurement quantities. This option is used for the final invoice posting.</li>
+        </ul>
+        <p class="ccTextvorlage">In the Sales Order, click <span class="Bold">Actions &gt; Take over Measurements</span>. A message appears asking to update the order quantity from the measurement quantity.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Running the Take over Measurements function</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Yes</span> to continue the process or <span class="Bold">No</span> to cancel the process. A message appears asking to keep or update the order quantity.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Keep or update order quantity message</p>
+        <p class="ccTextvorlage">With the <span class="Italics">Keep order quantity</span> option selected, click <span class="Bold">OK</span>. The <span class="Bold">Qty. to Ship</span> field is cleared on all lines except those with measurement values, and contains the Measurement Quantity, not the order quantity.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_5.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Qty. to Ship updated with measurement quantities; order quantities unchanged</p>
+        <p class="ccTextvorlage">Also note that the <span class="Bold">Measurement Summary Code</span> field is now populated in the <span class="Bold">Construction Invoicing</span> FastTab. Click <span class="Bold">Navigate &gt; Measurement Summary</span> to view the summary document that will be used for printing.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_6.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Measurement Summary assigned to Sales Order</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the <span class="Bold">Measurement Summary</span> page.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.4    ">Post Sales Order and Print Document</h4>
+        <p class="ccTextvorlage">Click <span class="Bold">Home &gt; Post</span> to ship and invoice the sales order. Notice that the <span class="Bold">Qty. to Ship</span> field is updated with all remaining quantities and the <span class="Bold">Qty. Shipped</span> shows the shipped values. Also notice that the <span class="Bold">Measurement Summary Code</span> field is cleared in the <span class="Bold">Construction Invoicing</span> FastTab since the measurement has been processed.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Sales Order after posting</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Navigate &gt; Invoices &gt; View</span> to open the Posted Sales Invoice. The <span class="Bold">Construction Invoicing</span> FastTab displays related construction information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_8.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Posted Sales Invoice</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Actions &gt; Print</span> to open the Sales - Invoice dialog (for report 5292686). The <span class="Bold">BoQ Print Options</span> FastTab includes special printing options. Select the <span class="Bold">Print Measurement Lines</span> check box.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_9.png" MadCap:mediastyle="@media print { max-width: 4.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Sales - Invoice dialog, preparing to preview the Sales Invoice with measurement lines</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Print</span> to generate a document or <span class="Bold">Preview</span> to view the document. The Sales Invoice document contains measurement information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_10.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Sales Invoice with Measurements </p>
+        <p class="ccTextvorlage">Escape back to the Sales Order.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.5    ">Add New Measurements</h4>
+        <p>As previously stated, invoices are created through the construction process for all measurements until all positions have been invoiced. This section shows how to add measurements. </p>
+        <p>In the Sales Order, click <span class="Bold">Home &gt; Measurement Document</span>. A message appears asking to insert the complete BoQ in the measurement document.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_11.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Creating a new Measurement Document for the sales order</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Yes</span> to insert the complete BoQ. A new Measurement Recording Card opens.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_12.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: New Measurement Recording Card for job</p>
+        <p class="ccTextvorlage">The process of updating the Measurement Recording Card is the same as described in topic .</p>
+        <p class="ccTextvorlage">Populate the <span class="Bold">Measurement Date</span>, <span class="Bold">Measurement Page No.</span> and <span class="Bold">Measurement Location</span> fields, being sure to update the lines as well.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_13.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Measurement fields updated in header and lines</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the <span class="Bold">Lines</span> FastTab, enter the measured quantities in the <span class="Bold">Quantity</span> field. If any new measurements were taken on registered quantities, the <span class="Bold">Cum. Quantity</span> field will show the cumulative total. For example, three lines have registered quantities (4, 4, and 7, respectively). New totals are entered for all three lines (5, 4, and 6, respectively) and the <span class="Bold">Cum. Quantity</span> field shows the cumulative total of the new <span class="Bold">Quantity</span> and <span class="Bold">Cum. Registered Quantity</span> (9, 8, and 13, respectively).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_14.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 15">: New measurements added for registered positions and new positions</p>
+        </div>
+        <p class="ccTextvorlage">Click <span class="Bold">Register</span> and then click <span class="Bold">Yes</span> to register the document. The Measurement Recording Card closes. </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.6    ">Create Second Invoice</h4>
+            <p>Now that new measurements have been added to the sales order, the next invoice can be created using the same process described previously. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_15.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Sales order with new and previously invoiced lines</p>
+        </div>
+        <p class="ccTextvorlage">Notice that the registered measurement quantities appear in the lines, taking special notice that the measurement quantity (9) for position 3. 1. 50. exceeds the order quantity (8) by 1.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.7    ">Take Over Measurements</h4>
+            <p class="ccTextvorlage">In the Sales Order, click <span class="Bold">Reopen</span> and then click <span class="Bold">Actions &gt; Take over Measurements</span>. A message appears asking to update the order quantity from the measurement quantity.</p>
+            <p class="ccTextvorlage">Click <span class="Bold">Yes</span> to continue the process. A message appears asking to keep or update the order quantity.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_16.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Keep or update order quantity message (also highlighting that the Sales Order has been reopened)</p>
+            <p class="ccTextvorlage">With the <span class="Italics">Keep order quantity</span> option selected, click <span class="Bold">OK</span>.  The  <span class="Bold">Qty. to Ship</span>  field is cleared on all lines except those with measurement values, and contains the Measurement Quantity. Position 3. 1. 50. now contains the measurement quantity as the order quantity because the measurement quantity exceeded the order quantity.</p>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_17.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 18">: Qty. to Ship updated with measurement quantities (less shipped); order quantity changed on position 3. 1. 50.</p>
+        <p class="ccTextvorlage">Also note that the <span class="Bold">Measurement Summary Code</span> field is now populated in the <span class="Bold">Construction Invoicing</span> FastTab. Click <span class="Bold">Navigate &gt; Measurement Summary</span> to view the summary document that will be used for printing.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_18.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 19">: Measurement Summary assigned to Sales Order</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the <span class="Bold">Measurement Summary</span> page.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.8    ">Update Sales Order</h4>
+        <p class="ccTextvorlage">Prior to posting the sales order, in the <span class="Bold">General</span> FastTab, update the <span class="Bold">Posting Date</span> field.</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Construction Invoicing</span> FastTab, update the <span class="Bold">Period of performance from</span> and <span class="Bold">Period of performance to</span> fields.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_19.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 20">: Posting Date and Period of performance updated in sales order</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.9    ">Post Sales Order and Print Document</h4>
+            <p class="ccTextvorlage">Click <span class="Bold">Home &gt; Post</span> to ship and invoice the sales order. The <span class="Bold">Qty. to Ship</span> field is updated with all remaining quantities, the <span class="Bold">Qty. Shipped</span> shows the shipped values, and  the <span class="Bold">Measurement Summary Code</span> field is cleared in the <span class="Bold">Construction Invoicing</span> FastTab since the measurement has been processed.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_20.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 21">: Sales Order after posting</p>
+        </div>
+        <p class="ccTextvorlage">Click <span class="Bold">Navigate &gt; Invoices &gt; View</span> to open the Posted Sales Invoice. The <span class="Bold">Construction Invoicing</span> FastTab displays related construction information.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Click <span class="Bold">Actions &gt; Print</span> to open the Sales - Invoice dialog (for report 5292686). A new <span class="Bold">Saved Settings</span> FastTab appears indicating that the last used options and filters have been set.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_21.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 22">: Sales - Invoice print dialog with new Saved Settings FastTab</p>
+        </div>
+        <p class="ccTextvorlage">Click <span class="Bold">Print</span> to generate a document or <span class="Bold">Preview</span> to view the document. The Sales Invoice document contains measurement information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_22.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 23">: Sales Invoice with Measurements for only the second invoice (not cumulative)</p>
+        <p class="ccTextvorlage">Escape back to the Sales Order.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.10    ">Add New Measurements</h4>
+        <p>In the Sales Order, click <span class="Bold">Home &gt; Measurement Document</span>. A message appears asking to insert the complete BoQ in the measurement document.</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Yes</span> to insert the complete BoQ. A new Measurement Recording Card opens.</p>
+        <p class="ccTextvorlage">The process of updating the Measurement Recording Card is the same as described in topic .</p>
+        <p class="ccTextvorlage">Populate the <span class="Bold">Measurement Date</span>, <span class="Bold">Measurement Page No.</span> and <span class="Bold">Measurement Location</span> fields, being sure to update the lines as well.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_23.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 24">: Measurement fields updated in header and lines</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">In the <span class="Bold">Lines</span> FastTab, enter the measured quantities in the <span class="Bold">Quantity</span> field. Since this is the last invoice, all open positions should have registered measurements or new measurements. For example, the first four positions have new quantities, the next three positions have registered quantities, and the last four have new and registered quantities. Notice that a new measurement was not entered for position 3. 1. 70., which means the final measurement quantity is less than the order quantity. This will be handled in the “Take over Measurement” process in the Sales Order.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_24.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 25">: New measurements added for registered positions and new positions</p>
+        </div>
+        <p class="ccTextvorlage">Click <span class="Bold">Register</span> and then click <span class="Bold">Yes</span> to register the document. The Measurement Recording Card closes. </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.11    ">Create Final Invoice</h4>
+            <p>Now that all measurements have been added to the sales order, the final invoice can be created using the same process described previously. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_25.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 26">: Final sales order with new and previously invoiced lines</p>
+        </div>
+        <p class="ccTextvorlage">Notice that the registered measurement quantities appear in the lines, taking special notice that the measurement quantity (13) for position 3. 1. 70. is less than the order quantity (14) by 1.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.12    ">Take Over Measurements</h4>
+            <p class="ccTextvorlage">In the Sales Order, click <span class="Bold">Reopen</span> and then click <span class="Bold">Actions &gt; Take over Measurements</span>. A message appears asking to update the order quantity from the measurement quantity.</p>
+            <p class="ccTextvorlage">Click <span class="Bold">Yes</span> to continue the process. A message appears asking to keep or update the order quantity.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_26.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 27">: Keep or update order quantity message (also highlighting that the Sales Order has been reopened)</p>
+        </div>
+        <p class="ccTextvorlage">Select the <span class="Bold">Update order quantity</span> option and then click <span class="Bold">OK</span>. The <span class="Bold">Qty. to Ship</span> field is cleared on all lines except those with measurement values and contains the Measurement Quantity except for position 3. 1. 70., which is empty because the order quantity was changed to match the completely shipped measurement quantity.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_27.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 28">: Qty. to Ship updated with measurement quantities (less shipped)</p>
+        <p class="ccTextvorlage">The <span class="Bold">Measurement Summary Code</span> field is now populated in the <span class="Bold">Construction Invoicing</span> FastTab. Click <span class="Bold">Navigate &gt; Measurement Summary</span> to view the summary document that will be used for printing.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_28.png" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 29">: Measurement Summary assigned to Sales Order</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to close the <span class="Bold">Measurement Summary</span> page.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.13    ">Update Sales Order</h4>
+            <p class="ccTextvorlage">Prior to posting the sales order, in the <span class="Bold">General</span> FastTab, update the <span class="Bold">Posting Date</span> field.</p>
+            <p class="ccTextvorlage">In the <span class="Bold">Construction Invoicing</span> FastTab, update the <span class="Bold">Period of performance from</span> and <span class="Bold">Period of performance to</span> fields.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_29.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 30">: Posting Date and Period of performance updated in sales order</p>
+        </div>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.14    ">Post Sales Order and Print Document</h4>
+            <p class="ccTextvorlage">Click <span class="Bold">Home &gt; Post</span> to ship and invoice the sales order. After posting, click <span class="Bold">Yes</span> to open the Posted Sales Invoice. The <span class="Bold">Construction Invoicing</span> FastTab displays related construction information.</p>
+            <p class="ccTextvorlage">Click <span class="Bold">Actions &gt; Print</span> to open the Sales - Invoice dialog (for report 5292686). The <span class="Bold">Saved Settings</span> FastTab appears indicating that the last used options and filters have been set.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_30.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 31">: Sales - Invoice print dialog with Saved Settings FastTab</p>
+        </div>
+        <p class="ccTextvorlage">Click <span class="Bold">Print</span> to generate a document or <span class="Bold">Preview</span> to view the document. The Sales Invoice document contains measurement information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Invoice by Sales Order_31.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 32">: Sales Invoice with Measurements for only the second invoice (not cumulative)</p>
+        <p class="ccTextvorlage">The Sales Order was deleted since it has been completely processed. </p>
+    </body>
+</html>

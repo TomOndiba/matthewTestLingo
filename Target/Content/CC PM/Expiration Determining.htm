@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="788" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434256687"></a>Expiration Determining</h2>
+        <p class="ccTextvorlage">The <span class="Bold">Expiration Determining</span> check box identifies all components of a production order that are relevant for calculating the expiration date. It is possible to set or change this setting in the Production Structure, BOM, Recipes or Prod. Order Components. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Expiration Determining.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Production order component with expiration determining setting</p>
+        <p class="ccTextvorlage">The calculation of the expiration date of the produced item happens as follows: </p>
+        <ul>
+            <li class="ccAufzählungblau">If the <span class="Bold">Expiration Determining</span> check box is selected in none of the component lines, the calculation takes place according to the “standard” logic. That means that the Expiration Calculation specified on the Item Card is always used for the calculation. </li>
+            <li class="ccAufzählungblau">It the <span class="Bold">Expiration Determining</span> check box is selected in all component lines, the calculation takes place according to the “shortest component” logic. That means that the component with the shortest expiration date determines the expiration date. If the components do not have an expiration date or if the produced item expires earlier than the shortest component (according to its expiration calculation), the expiration date of the produced item is used. </li>
+            <li class="ccAufzählungblau">If the <span class="Bold">Expiration Determining</span> check box is marked in some component lines, the calculation takes place according to the “shortest component” logic, except that only the selected components are observed.</li>
+        </ul>
+    </body>
+</html>

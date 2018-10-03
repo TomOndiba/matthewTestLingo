@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:fileTags="StatusFileTags.6 Needs to be Sent for Review" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref235267986"></a><a name="_Ref235267993"></a><a name="_Toc434929891"></a>
+            <MadCap:annotation MadCap:createDate="2018-08-24T10:28:33.2097762-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="Unconfirmed, partial 2017 SP1" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:28:46.5796942-05:00">Customers</MadCap:annotation>
+        </h2>
+        <p class="ccTextvorlage">Renting is always processed with a customer. To ship a rental item to a customer, a customer location must be assigned in the <span class="Bold">Customer Location Code</span> field on the sales line. This Location Code describes the place where the item is located during rental (with the customer).</p>
+        <p class="ccTextvorlage">In the Customer record, a location can be specified for the default rental location and for the customer location. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Customers.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Customer Card, Rental FastTab</p>
+        <p class="ccTextvorlage">For each customer location, an entry in the Inventory Posting Setup is required. In addition, the Transfer Routes from Rental Locations to Customer Locations and back must be inserted. These processes can be done manually or automatically using the “Create Customer Location” function.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434929892"></a>Create Customer Location Function</h3>
+        <p class="ccTextvorlage">The “Create Customer Location” function creates a customer location using the information from the customer and assigns it to the customer record. In addition, this function automatically creates the Inventory Posting Setup and the Transfer Routes that are needed from the new location code to all existing Rental Location Codes that exist at that time.</p>
+        <p class="ccTextvorlage">The “Create Customer Location” function is accessed from the customer card by clicking <span class="Bold">Actions &gt; Create Customer Location</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Customers_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Accessing the “Create Customer Location” function from the Customer Card</p>
+        <p class="ccTextvorlage">A confirmation message appears, stating that the customer location was created, and does the user want to open it. Click <span class="Bold">Yes</span> to open the Location Card or click <span class="Bold">No</span> to close the confirmation message.</p>
+        <p class="ccTextvorlage">On the Location Card, the code is the same as the customer number, the <span class="Bold">Use As - Rented</span> check box is selected, and the address and communication information is transferred from the customer card.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Customers_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Location Card for the customer location</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">On the Customer Card, the customer location is assigned in the <span class="Bold">Customer Location Code</span> field.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC REN/Customers_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Customer Location assigned to the customer </p>
+        </div>
+        <p class="ccTextvorlage">The Inventory Posting Setup is completed for the customer location using the Inventory Posting Setup information specified in the <span class="Bold">Def. Invt. Post Setup Location</span> field on the <span class="Bold">Rental Mgt. Setup</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Customers_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Inventory Posting Setup for the customer location</p>
+        <p class="ccTextvorlage">The Transfer Routes are set up for the rental and customer locations, using the In-Transit Location specified in the <span class="Bold">Def. In-Transit Location Code</span> field on the <span class="Bold">Rental Mgt. Setup</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Customers_5.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 305px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Transfer Routes for rental and customer locations</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    ">
+            <MadCap:annotation MadCap:createDate="2017-10-05T15:15:09.2502457-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="New - 2017 SP1" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:32:04.7522506-05:00">Self-Insured Customers</MadCap:annotation>
+        </h3>
+        <p>Customers who have their own insurance can be specified as Self-Insured on the <span class="Bold">Rental</span> FastTab of the Customer Card. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Customers_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Customer set up as Self-Insured</p>
+        <p class="ccTextvorlage">When this check box is selected, Rent Rate Components with <span class="Bold">Usage</span> = <span class="Italics">Insurance</span> will not be included in the rental documents for the customer. Refer to topic <MadCap:xref href="Self-Insured Customers.htm">“Self-Insured Customers” on page 1</MadCap:xref> for more information.</p>
+    </body>
+</html>

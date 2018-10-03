@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="783" MadCap:lastWidth="604" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref388785562"></a><a name="_Ref388785563"></a><a name="_Toc434568069"></a>Work Packages</h2>
+        <p class="ccTextvorlage">The purpose of Work Packages is to complete manufacturing processes for several production orders in one step. For example, if several items belonging to different production orders are produced out of raw sheet metal, the Work Package allows the user to filter on all production order routing lines that contain this operation and then create an output journal for all entries. </p>
+        <p class="ccTextvorlage">After inserting a new Work Package, filters must be set on the <span class="Bold">Filter</span> FastTab. The filter can be set on a Machine Center or a Work Center for an Item No. or a Base Material. Only production order lines that match the filters can be transferred to a work package. This condition is verified by the system. The <span class="Bold">Base Material</span> field from the item master will be transferred to all documents.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Work Packages.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Filters set for a new Work Package</p>
+        <p class="ccTextvorlage">Based on the settings on the <span class="Bold">Filter</span> FastTab, the matching production order lines are displayed by clicking <span class="Bold">Get Routing Lines</span> on the ribbon. Select the relevant lines to transfer to the Work Package and then click <span class="Bold">OK</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Work Packages_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Work Package with transferred production order lines</p>
+        <p class="ccTextvorlage">After the routing lines are transferred, the processing information is captured on the <span class="Bold">Posting</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Work Packages_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Posting FastTab on the Work Package</p>
+        <p class="ccTextvorlage">The fields on the right side of the <span class="Bold">Posting</span> FastTab contain the cumulated target value of all routing lines of the summarized production orders. </p>
+        <p class="ccTextvorlage">The fields on the left side of the <span class="Bold">Posting</span> FastTab contain the processing information to post: </p>
+        <ul>
+            <li class="ccAufzählungblau">Setup Time</li>
+            <li class="ccAufzählungblau">Run Time</li>
+            <li class="ccAufzählungblau">Output Quantity</li>
+            <li class="ccAufzählungblau">Scrap Quantity</li>
+        </ul>
+        <p class="ccTextvorlage">The <span class="Bold">Distribution</span> field is important when posting a sub-quantity of output. The options are: </p>
+        <ul>
+            <li class="ccAufzählungblau">Top-Down – The posting quantity is distributed in sequence on the summarized production orders. For example, if three production orders with the remaining quantity of 3, 2 and 5 pieces are combined into a work package and the <span class="Bold">Output Quantity</span> on the <span class="Bold">Posting</span> FastTab is 5, then the first two orders will be fully posted. The last order remains open and will be considered during the next posting. This is the default option.</li>
+            <li class="ccAufzählungblau">Uniform Distribution – The actual quantity is divided by the number of production orders and each order receives the same output quantity. The same principle applies also to Setup Times and Run Times.</li>
+            <li class="ccAufzählungblau">Weighted Distribution – The quantities, setup time and run time are weighted by the quantity and then distributed on the production orders.</li>
+        </ul>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The last two options are relevant only with quantity units of measure &lt;&gt; “Pieces”. Otherwise, an odd number of items may be posted when posting partial output. </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">With the “Create Lines” function, the system determines the quantities and times for each production order that can be posted and transfers them to an Output Journal, which opens automatically. If necessary, the suggested quantities can be changed. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Work Packages_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Output Journal generated from the Work Package</p>
+        </div>
+        <p class="ccTextvorlage">The posting of the consumption of the components will be done with the standard function of the routing link code and the flushing method.</p>
+    </body>
+</html>

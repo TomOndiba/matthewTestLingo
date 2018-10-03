@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434834906"></a>Calculation Card </h2>
+        <p>In this section, the fields on the <span class="Bold">Calculation Card</span> page are described (except for the fields on the <span class="Bold">Lines</span> FastTab, which were defined in topic <MadCap:xref href="Calculation Schedule.htm">“Calculation Schedule” on page 1</MadCap:xref>) as well as the menu items on the ribbon. </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434834907"></a>General FastTab</h3>
+        <p>The fields on the <span class="Bold">General</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 129px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Item No. / Variant Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the item/variant to which this calculation relates. Other fields on this FastTab are populated based on this entry.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Replenishment System</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Item Card; shows for which Replenishment System the calculation was scheduled. The options are Purchase (default), Prod. Order and Assembly.</p>
+                        <p class="ccTabellenText">If a multilevel calculation is necessary, the Replenishment System of the item that is calculated determines the usage of Production BOMs and Routings or Assembly BOMs for all Components.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Item Card.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit of Measure Code / Qty. per Unit of Measure</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Base unit of measure from the item and the Qty. per unit of measure relating to the base unit of measure.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lot Size</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines the number of the selected unit to calculate quantities. The standard is calculated as follows:  </p>
+                        <p class="ItalicsCentered">((setup / lot) + processing time) * cost = amount of calculation</p>
+                        <p class="BoldItalicsTable"><span class="Bold">Example: </span>
+                        </p>
+                        <p class="ccTabellenText_lessspacing">Setup time = 110 minutes </p>
+                        <p class="ccTabellenText_lessspacing">Time = 12 minutes per piece </p>
+                        <p class="ccTabellenText_lessspacing">Lot size = 10 pieces </p>
+                        <p class="ccTabellenText_lessspacing">Cost = 1.2 EUR for the work group</p>
+                        <p class="BoldItalicsTable"><span class="Bold">Calculation: </span>
+                        </p>
+                        <p class="ccTabellenText_lessspacing">((110/10) + 12) * 1.2 = 27.60 EUR</p>
+                        <p class="ccTebellenTextNoteHeadingIndent">Note</p>
+                        <p class="ccTabellenTextNoteBodyIndent">The higher the lot size, the setup costs decrease.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Net Weight </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the Item Card.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">New – automatic setting for new calculation cards; information can be edited.</li>
+                            <li class="ccAufzählung">Certified – calculation values can be transferred; fields cannot be edited.</li>
+                            <li class="ccAufzählung">Under Development – edits can be performed.</li>
+                            <li class="ccAufzählung">Closed – calculation is no longer in use.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Calculation Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Date of the calculation. Some calculations may change based on this date.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Starting Date / Sales Type / Sales Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used with the “Value Transfer” function. To transfer sales prices/sales line discounts, the <span class="Bold">Sales Type</span> and <span class="Bold">Sales Code</span> fields must be filled in; the Starting Date is only needed when there is a validity date rule.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Production BOM No. / Production BOM Version Code / Routing No. / Routing Version Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Default from the Item Card; only editable when <span class="Bold">Replenishment System</span> = <span class="Italics">Prod. Order</span>.</p>
+                        <p class="ccTabellenText">If entered manually, users can calculate only BOMs or routings, or both. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Multi-Level Calculation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if a multi-costing calculation is performed. It will also lower the BOM calculated. </p>
+                        <p class="ccTabellenText">If an item that is within the calculation lines has a BOM, this BOM is used as well.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Time Base Unit of Measure</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Calculation lines may sum Capacity Ledger Entries with different time units (Capacity Unit of Measure), which can be viewed based on the setting in the <span class="Bold">Time Base Unit of Measure</span> field:</p>
+                        <ul>
+                            <li class="ccAufzählung">If populated when the calculation is refreshed, the Capacity Ledger Entries are summed by this capacity unit of measure and calculated in the <span class="Bold">Total Time</span> field in any lines that contain Capacity Calculation Groups (including totaling lines).</li>
+                            <li class="ccAufzählung">If not populated when the calculation is refreshed, the Capacity Ledger Entries are summed by the smallest Capacity Unit of Measure and calculated in the <span class="Bold">Total Time</span> field in the lines. The <span class="Bold">Time Base Unit of Measure</span> field is updated with this capacity unit of measure.</li>
+                        </ul>
+                        <p class="ccTabellenText">In both cases, the value in the <span class="Bold">Time Base Unit of Measure</span> field can be changed to show the time in a different unit, such as hours instead of minutes.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace" />
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434834908"></a>Schedule FastTab</h3>
+        <p>The <span class="Bold">Schedule</span> FastTab on the Calculation Card contains information about the Calculation Schedule, if created from an existing schedule.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Card_1.png" MadCap:mediastyle="@media print { max-width: 4.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Schedule, Foreign Trade, Document, History FastTabs and Calculation Chart FactBox on the Calculation Card</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc434834909"></a>Foreign Trade FastTab</h3>
+        <p>On this FastTab, the <span class="Bold">Currency Code</span> can be changed and the <span class="Bold">Currency Factor</span> of how other currencies are shown is defined.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc434834910"></a>Document FastTab</h3>
+        <p>This FastTab contains information about the concurrent calculation. </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.5    "><a name="_Toc434834911"></a>History FastTab</h3>
+        <p>This FastTab contains creation date and last modified date, and the user ID of who created the calculation and who modified it.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.6    "><a name="_Toc434834912"></a>Calculation Chart FactBox</h3>
+        <p>This FactBox displays a chart based on the calculation of Item Groups, Capacity Groups or both. Refer to topic <MadCap:xref href="Calculation Chart.htm">“Calculation Chart” on page 1</MadCap:xref> for more information.</p>
+    </body>
+</html>

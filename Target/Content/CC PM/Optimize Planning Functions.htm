@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="900" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref353447005"></a><a name="_Ref353447019"></a><a name="_Ref353447128"></a><a name="_Toc434256620"></a>Optimize Planning Functions in Sequence Planning</h3>
+            <p class="ccTextvorlage">Two functions are available in the <span class="Bold">Sequence Planning</span> page to assist with planning optimization:</p>
+            <ul>
+                <li class="ccAufzählungblau">Priority Planning</li>
+                <li class="ccAufzählungblau">Setup Optimization</li>
+            </ul>
+            <p class="ccTextvorlage">Each function is accessed from the <span class="Bold">Home</span> or <span class="Bold">Actions</span> tab on the ribbon.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Optimize Planning Functions.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref286332212"></a>: Optimize planning functions on the Sequence Planning page</p>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    "><a name="_Ref263173981"></a><a name="_Ref263174102"></a>Priority Planning</h4>
+        <p class="ccTextvorlage">The “Priority Planning” function opens the <span class="Bold">Priority Sequence Planning</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Optimize Planning Functions_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Priority Sequence Planning page</p>
+        <p class="ccTextvorlage">This page displays all the default and setup values from the Planning Dimensions. In the header, enter the start date/time and due date for the sequence planning.</p>
+        <p class="ccTextvorlage">Select the <span class="Bold">Schedule Deferred Prod. Order Lines</span> check box to calculate all the production order lines.</p>
+        <p class="ccTextvorlage">After clicking <span class="Bold">OK</span> (and thus triggering the sequence planning process), the Sequence Planning lines are sorted based on the planning dimension priority and scheduled. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Optimize Planning Functions_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="_Ref286332203"></a>: Sequence Planning lines re-sorted by due date (due date, color, width and item)</p>
+        <p class="ccTextvorlage">As <MadCap:xref href="#_Ref286332203" class="Figure">Fig. 3</MadCap:xref> illustrates, the lines were sorted by planning priority (due date highest priority). Refer to <MadCap:xref href="#_Ref286332212" class="Figure">Fig. 1</MadCap:xref> for the original sorting (by item).</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Setup Optimization</h4>
+        <p class="ccTextvorlage">The “Setup Optimization” function deletes the setup time from the routing if a production order exists in the sequence with the same:</p>
+        <ul>
+            <li class="ccAufzählungblau">Machine</li>
+            <li class="ccAufzählungblau">Item</li>
+            <li class="ccAufzählungblau">Tool</li>
+            <li class="ccAufzählungblau">Insert</li>
+        </ul>
+        <p class="ccTextvorlage">For example, if there are three production order lines on the same sequence work center with the same item, tool and insert, only the first production order keeps the setup times. The setup times in the second and third lines are deleted.</p>
+    </body>
+</html>

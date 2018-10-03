@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="861" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256538"></a>Exercise – Production Variants</h3>
+        <p class="ccTextvorlage">Create a new Production Variant for item P-10002 by creating a new Production Structure and copying the original one and updating the <span class="Bold">Production Variant</span> FastTab with the following information: </p>
+        <ul>
+            <li class="ccAufzählungblau">Quantity lesser than 50 PCS should be produced on machine M005. </li>
+            <li class="ccAufzählungblau">Setup time for machine M005 is 30 minutes but to produce a panel on it uses twice the amount of time (10 minutes) as machine M002.</li>
+        </ul>
+        <p class="ccTextvorlage">Next, create a sales order to customer 10000 with the following lines:</p>
+        <ul>
+            <li class="ccAufzählungblau">15 panels, planned delivery date February 2, 2019</li>
+            <li class="ccAufzählungblau">135 panels, planned delivery date March 2, 2019</li>
+        </ul>
+        <p class="ccTextvorlage">The final step is to create a Production Order for the sales header and verify that the correct Production Structure is used on the lines.</p>
+        <p class="ccDemoStepHeading">Create the Production Variant</p>
+        <p class="ccTextvorlage">Follow these steps to set up the production variant for item P-10002:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the Product Design menu, click <span class="Bold">Production Structures</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">Press ENTER or TAB to insert a new number.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Item No.</span> field, enter P-10002.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Actions &gt; Copy &gt; Production Structure</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the production structure previously created for item P-10002 and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Production Variant</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Production Variant</span> check box.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Maximum Lot Size</span> field, type 49.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, change the Work Center to M005.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Setup Time</span> field, type 30.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Run Time</span> field, type 10.</li>
+            <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Certified</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the Production Structure.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create the Sales Order</p>
+            <p class="ccTextvorlage">Follow these steps to create the sales order:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">In the navigation pane, under Manufacturing, click <span class="Bold">Planning &gt; Sales Orders</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+                <li class="ccTextvorlageNumberedList">Press ENTER or TAB to insert a new number.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Sell-to Customer No.</span> field, enter 10000.</li>
+                <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, in the <span class="Bold">Type</span> field, enter Item.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter P-10002.</li>
+                <li class="ccTextvorlageNumberedList">Clear the <span class="Bold">Location Code</span> field.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 15.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Planned Delivery Date</span> field, enter 02/02/19.</li>
+                <li class="ccTextvorlageNumberedList">On the next line, in the <span class="Bold">No.</span> field, enter P-10002.</li>
+                <li class="ccTextvorlageNumberedList">Clear the <span class="Bold">Location Code</span> field.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 135.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Planned Delivery Date</span> field, enter 03/02/19.</li>
+                <li class="ccTextvorlageNumberedList">Release the order.</li>
+            </ol>
+        </div>
+        <p class="ccDemoStepHeading">Create the Production Order and Verify Results</p>
+        <p class="ccTextvorlage">Follow these steps to set up the Production Order and verify the results:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Actions &gt; Planning</span>. </li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Sales Order Planning</span> page, click <span class="Bold">Create Prod. Order</span>. </li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Create Order From Sales</span> page, select <span class="Italics">Project Order</span> as the Order Type and then click <span class="Bold">Yes</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the confirmation message.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Sales Order Planning</span> page, click <span class="Bold">Order Tracking</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Show</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the first line selected, click <span class="Bold">Line &gt; Routing</span> on the <span class="Bold">Lines</span> FastTab. Confirm that machine M005 is used since less than 50 pieces are being produced.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the production order.</li>
+            <li class="ccTextvorlageNumberedList">Repeat step 7 for the second line, confirming that machine M002 was used since more than 50 pieces are being produced.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the production order.</li>
+            <li class="ccTextvorlageNumberedList">To further confirm this, add the <span class="Bold">Production Structure No.</span> field to the <span class="Bold">Lines</span> FastTab using the “Choose Columns” function and verify that the different production structures are used.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Exercise Production Variants.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Different production structures on production order lines based on sales line quantities</p>
+    </body>
+</html>

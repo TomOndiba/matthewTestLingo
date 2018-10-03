@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">cc|calculation</h2>
+        <p>Although similar to the Calculation Structure in <span class="CCBausteinInhaltZchn">cc|project</span>, calculations that are performed using the <span class="CCBausteinInhaltZchn">cc|calculation</span> module have different requirements for set up and usage as well as offer different functionality. </p>
+        <p>The calculation from <span class="CCBausteinInhaltZchn">cc|calculation</span> is completely independent from the budget calculation/rollup method (as is the <span class="CCBausteinInhaltZchn">cc|project</span> Calculation Schedule) and is used mainly for controlling purposes, not for calculating a sales price.</p>
+        <p>Additionally, the Concurrent Calculation functionality in<span class="CCBausteinInhaltZchn">cc|calculation</span> provides the ability to show several calculations with different time bases next to one another and/or to put two calculations based on two different jobs into one (e.g., alternative Jobs, similar Jobs, etc.). Calculations can also be performed on Job Groups, which provides a single calculation for multiple jobs based on specified criteria.</p>
+        <p>This section describes the functionality that is specific to using <span class="CCBausteinInhaltZchn">cc|calculation</span> in <span class="CCBausteinInhaltZchn">cc|project</span> and does not include standard <span class="CCBausteinInhaltZchn">cc|calculation</span> field descriptions, etc. For detailed setup, configuration and usage information, refer to the current “cc|calculation” documentation.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="Calculat"></a>Calculation Schedule Setup</h3>
+        <p>The Calculation Schedule Card is accessed from the Sales &amp; Marketing, Administration menu (<span class="Bold">Departments &gt; Sales &amp; Marketing &gt; Administration &gt; Calculation Schedule</span>). This card is similar to the Job Calc. Schedule Template in <span class="CCBausteinInhaltZchn">cc|project</span> however there are many different fields or fields with similar functionality but different names.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc calculation.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Calculation Schedule Card in cc|calculation</p>
+        <p class="ccTextvorlage">To use the Calculation Schedule with a job,  the <span class="Bold">Totaling Type</span> / <span class="Bold">Totaling</span> fields must always be mapped to a Job Calculation Group, unless it is a summary row. </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Since the Job Calculation Groups from <span class="CCBausteinInhaltZchn">cc|project</span> are also used in the calculations from <span class="CCBausteinInhaltZchn">cc|calculation</span>, it is important to consider how Calculation Groups will be used in each product. If a calculation is using data from the Job Budget Calculation, the calculation groups need to be mapped correctly to the lines in both the Calculation Template (in <span class="CCBausteinInhaltZchn">cc|project</span>) and the Calculation Schedule Card (in <span class="CCBausteinInhaltZchn">cc|calculation</span>) to ensure proper calculation. </p>
+        <p class="ccTextvorlage">Rows can be indented below a main row to create a hierarchical structure using the actions in the <span class="Bold">Lines FastTab &gt; Functions</span> menu. </p>
+        <p class="ccTextvorlage">It is possible to review the rows that are part of the summaries by clicking the summary row and then <span class="Bold">Lines FastTab &gt; Functions &gt; Update Sum Calculation</span> (or pressing F5).</p>
+        <p class="ccTextvorlage">The Calculation Schedule does not need to be certified in order to use it on a job although a message will appear if it is not, and it will be automatically certified when certain processes are performed in the Calculation Card.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="Calculat2"></a>Job Calculation</h3>
+            <p>Once the Calculation Schedule has been created and Calculation Groups have been assigned to the Job Budget Calculation lines, a calculation can be performed on a job by clicking <span class="Bold">Calculation</span> on the Job Card.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/cc calculation_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Calculation action on the Job Card</p>
+        </div>
+        <p class="ccTextvorlage">Clicking <span class="Bold">Calculation</span> on the Job Card opens the <span class="Bold">Calculation List</span> page, which displays any existing calculations and from where new calculations can be added. Click <span class="Bold">New</span> to create a new calculation or <span class="Bold">Edit</span> to open an existing calculation. </p>
+        <p class="ccTextvorlage">In the <span class="Bold">Calculation Card</span> page, press Enter to insert the next calculation number</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc calculation_2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: New Calculation Card with job calculation type dialog</p>
+        <p class="ccTextvorlage">The <span class="Bold">Select Job Calculation Type</span> dialog opens, which determines the data that is the basis for the new calculation. The options are described in the following table.</p>
+        <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 188px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Option</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Uses data from...</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Quote Calculation (Version)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Job version that is assigned to a Sales Quote</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Order Calculation (Version)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Job version that is assigned to a Sales Order</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Expected</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Lines in the Job Budget Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Actual Cost</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Job Ledger Entries assigned to Job Budget Calculation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Liability</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Purchase Lines assigned to Job Budget Calculation</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">Click <span class="Bold">OK</span> to open the <span class="Bold">Calculation Schedule List </span>page, which displays the list of available Calculation Schedules. Select a Calculation Schedule and then click <span class="Bold">OK</span> to use a calculation schedule. </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If a schedule is not selected, one can be added after the calculation is created by assigning it manually in the <span class="Bold">Schedule</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc calculation_3.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: New Calculation Card with job-defined calculation schedule based on Expected data from Job Budget Calculation</p>
+        <p class="ccTextvorlage">To see calculated values, click <span class="Bold">Update Calculation</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc calculation_4.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Calculated values from Expected data in the Job Budget Calculation </p>
+        <p class="ccTextvorlage">Calculation data can be displayed visually with different charts in the Calculation Chart FactBox (use the “Refresh” function in the FactBox if not automatically displayed).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc calculation_5.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Calculation values visibly displayed in Calculation Chart FactBox</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="Concurre"></a>Concurrent Calculations</h3>
+        <p>Concurrent Calculation functionality allows users to calculate from job versions (sales quotes/orders), expected/actual costs, to posted job ledger entries and purchasing, and provides a matrix view to compare the different calculations.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc calculation_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Concurrent Calculation Code field populated by running Concurrent Calculation function on Calculation Card</p>
+        <p class="ccTextvorlage">There are numerous ways to create/assign a concurrent calculation: </p>
+        <ul>
+            <li class="ccAufzählungblau">create automatically from a universal setting on the Calculation Schedule Card</li>
+            <li class="ccAufzählungblau">create by clicking <span class="Bold">Concurrent Calculation</span> on the Calculation Card</li>
+            <li class="ccAufzählungblau">assign an existing Concurrent Calculation manually in the <span class="Bold">Concurrent Calculation Code</span> field on the <span class="Bold">Document</span> FastTab of the Calculation Card</li>
+            <li class="ccAufzählungblau">assign an existing calculation to an existing Concurrent Calculation line</li>
+        </ul>
+        <div class="ccDIV">
+            <p>When a Concurrent Calculation is created by running the “Concurrent Calculation” function on the Calculation Card, the <span class="Bold">Concurrent Calculation</span> page automatically opens.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/cc calculation_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Concurrent Calculation created from Calculation Card with Expected job values</p>
+        </div>
+        <p class="ccTextvorlage">When a new calculation is created for a different job calculation type, it can be manually added to the existing Concurrent Calculation for comparison, either by filling in the field on the Calculation Card or in the Concurrent Calculation line. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/cc calculation_8.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Concurrent Calculation created from Calculation Card with Expected and Actual job values</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">To display the concurrent calculation in a matrix view, click <span class="Bold">Concurrent Calculation Matrix</span> on the ribbon.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/cc calculation_9.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Concurrent Calculation Matrix view with Expected and Actual job values</p>
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">Any calculation from any job can be assigned to a concurrent calculation for comparison purposes.</p>
+            <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="Job"></a>Job Group Calculation</h3>
+            <p> With the calculation feature for Job Groups, a single calculation can be created for all entries in a job group, which can be beneficial for having an overview of a job with multiple sub-jobs. </p>
+            <p>Click <span class="Bold">Calculation</span> on the ribbon to create a calculation for job group. The rest of the process is the same as for a Job; refer to topic <MadCap:xref href="#Calculat2">“Job Calculation” on page 1</MadCap:xref></p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/cc calculation_10.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Accessing the Calculation function for the Job Group</p>
+            <p class="ccTextvorlage">Once the new calculation is created for the selected Job Calculation Type, it can be updated to show the calculations for the entire job group.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/cc calculation_11.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Job Group Calculation with job-defined calculation schedule based on Expected data from Job Budget Calculation</p>
+            <p class="ccTextvorlage">On the <span class="Bold">Document</span> FastTab, notice that the <span class="Bold">Reference Type</span> is <span class="Italics">Job Group</span>.</p>
+            <p class="ccTextvorlage">A concurrent calculation can be created for the Job Group as well (refer to topic <MadCap:xref href="#Concurre">“Concurrent Calculations” on page 1</MadCap:xref>).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/cc calculation_12.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Concurrent calculation created for Job Group with expected values</p>
+            <p class="ccTextvorlage">Calculations for other Job Calculation Types can be added to the concurrent calculation.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/cc calculation_13.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Concurrent calculation for Job Group with expected and actual values</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="703" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 class="Heading1" MadCap:autonum="1   "><a name="_Ref354652420"></a><a name="_Toc434929929"></a>Rate Components</h1>
+        <p class="ccTextvorlage">Rate components can be added to Rent Quotes and Rent Orders (refer to topic <MadCap:xref href="Rental Setup.htm#_Ref415222226">“Rent Rate Components” on page 1</MadCap:xref>). Depending on the settings in the <span class="Bold">Rental Mgt. Setup</span> page, the lines are added always or only when the components and rent prices exist for the item (refer to topic <MadCap:xref href="Rental Setup.htm#_Ref280778286">“Rental Mgt. Setup” on page 1</MadCap:xref>). </p>
+        <p class="ccTextvorlage">Once a rental item number is added to a rent order line, the related components are added to the line (refer to topic <MadCap:xref href="Items.htm#_Ref415222217">“Item Rent Rate Components” on page 1</MadCap:xref>). Rental parameter changes made to the rental item line are also made to the component lines. Rate Components are always linked to rental item lines; they cannot be used as “stand alone” positions. Rate Components are not automatically credited when a failure is processed (refer to topic <MadCap:xref href="Failures.htm#_Ref280771265">“Failures” on page 1</MadCap:xref>).</p>
+        <p class="ccTextvorlage">Rate Components can be set up with a unit price or as a percentage of the item’s rental price (refer to topic <MadCap:xref href="Items.htm#_Toc434929897">“Rent Component Prices” on page 1</MadCap:xref>).</p>
+        <p class="ccTextvorlage">The processing of Rate Components differs depending on the type:</p>
+        <ul>
+            <li class="ccAufzählungblau">Rate Parts<ul><li>Always invoiced with the rental item line and for the same period</li><li>Automatically link to a rental item line if added to a rent order</li><li>Must have a Rate Unit Price prior to shipping</li></ul></li>
+            <li class="ccAufzählungblau">One-Time Invoicing<ul><li>Handled the same as Sales positions.</li><li>When set up to invoice at <span class="Italics">Start of Rental</span>, the lines are shipped with the item and are due on the first day of the Rental (therefore the lines are included on the first invoice).</li><li>When set up to invoice at <span class="Italics">End of Rental</span>, the <span class="Bold">Qty. to Ship</span> field is initially set to 0 (blank). </li></ul><p class="ccAufzahlungblaunobulletlevel2">When the return is processed, the value in the <span class="Bold">Return Qty. to Receive</span> field from the rental item line is added to the <span class="Bold">Quantity Shipped</span> field on the One-Time Invoicing line. This quantity is used when the line is invoiced.</p></li>
+        </ul>
+    </body>
+</html>

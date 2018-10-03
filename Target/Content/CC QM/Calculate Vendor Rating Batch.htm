@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="2" MadCap:lastHeight="913" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref241917815"></a><a name="_Toc442095784"></a>Calculate Vendor Rating Batch Job</h2>
+        <p class="ccTextvorlage">The “Calculate Vendor Rating” batch job – accessed from the <span class="CCBausteinInhaltZchn">cc|vendor rating</span> menu by clicking <span class="Bold">Reports and Analysis &gt; Calculate Vendor Rating </span>– calculates a score for the hard criteria of each receipt line. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Calculate Vendor Rating Batch.png" style="visibility: visible;mso-wrap-style: square;width: 557px;height: 362px;" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Calculate Vendor Rating batch job</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">This batch job does not automatically process a re-classification of the vendor. Therefore, the Vendor Rating report must be executed, which is located on the <span class="CCBausteinInhaltZchn">cc|vendor rating</span> menu by clicking <span class="Bold">Reports and Analysis &gt; Vendor Rating</span>.</p>
+        <p class="ccTextvorlage">The rating of the due date, quantity and quality criteria that have been automatically created by the batch job per purchase line are transferred to the <span class="Bold">Vendor Rating Entries</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Calculate Vendor Rating Batch_1a.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Calculated vendor rating entry</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Vendor Rating Entries</span> page, a total score is calculated per purchase line. This score is calculated by the multiplication of the individually ascertained scores for appointed time, quantity and quality.</p>
+        <p class="BoldItalics12pt">Example</p>
+        <p class="ccTextvorlage" style="margin-left: 36pt;">Quality score = 60</p>
+        <p class="ccTextvorlage" style="margin-left: 36pt;">Appointed time score = 100</p>
+        <p class="ccTextvorlage" style="margin-left: 36pt;">Quantity score = 100 </p>
+        <p class="ccTextvorlage" style="margin-left: 36pt;">That leads to a calculation of <span class="Italics">0.6 x 1.0 x 1.0 = 0.60, therefore the Total Score = 60</span>.</p>
+        <p class="ccTextvorlage">The vendor rating only considers the shipment lines that have the <span class="Bold">Duty of Rating</span> check box selected. Shipment lines with the <span class="Bold">Cancelled</span> check box selected are not included in the vendor rating.</p>
+        <p class="ccTextvorlage">Therefore, if a receipt line is cancelled using the “Undo Receipt” function, the system creates a negative shipment line. The <span class="Bold">Cancelled</span> check box is selected on the original line and the negative shipment line, and has no effect on the vendor rating.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">In the batch job, the <span class="Bold">100 Points for missing QC Rating</span> check box can be selected. Consequently, the full score will be assigned if there is no other information about the quality rating. This is useful if a quality rating is only to be processed for deficient shipments.</p>
+    </body>
+</html>

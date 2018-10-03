@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:fileTags="StatusFileTags.6 Needs to be Sent for Review" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc434929879"></a>Rental Setup</h2>
+        <p class="ccTextvorlage">The setup for <span class="CCBausteinInhaltZchn">cc|rental</span> is performed in pages found in the <span class="CCBausteinInhaltZchn">cc|rental</span>, Administration menu.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref280778286"></a><a name="_Toc434929880"></a>Rental Mgt. Setup</h3>
+        <p class="ccTextvorlage">The <span class="Bold">Rental Mgt. Setup</span> page is opened from the navigation pane by clicking <span class="Bold">Departments &gt; </span><span class="CCBausteinInhaltZchn">cc|rental </span><span class="Bold">&gt; Administration &gt; Rental Mgt. Setup.</span> The following sections explain the fields on this page.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">General FastTab</h4>
+        <p class="ccTextvorlage">The <span class="Bold">General</span> FastTab provides the basic settings for <span class="CCBausteinInhaltZchn">cc|rental</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Rental Setup.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Rental Mgt. Setup page, General FastTab</p>
+        <p class="ccTextvorlage">The fields on this FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 113px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Serv. Contract Acc. Gr. Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used for invoicing purposes. The G/L accounts from the selected group are not used but the code is required.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Def. Invt. Post. Setup Location</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used as the default posting group information when creating the inventory posting setup during the automatic creation of customer locations. Refer to topics <MadCap:xref href="Inventory Posting Setup.htm#_Ref235267981">“Inventory Posting Setup” on page 1</MadCap:xref> and <MadCap:xref href="Customers.htm#_Ref235267986">“Customers” on page 1</MadCap:xref>. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Def. In-Transit Location Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used as the default in-transit location when creating transfer routes during the automatic creation of customer locations (refer to topic <MadCap:xref href="Customers.htm#_Ref235267993">“Customers” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rental Service Contract Tmpl.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used as the default template during the automatic creation of rental service contracts and drives the Update Rental Contract Prices periodic activity.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">External Rental Loc. Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used as location code for 3rd Party Rental. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Insert Rate Components</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The content of this field determines when Rate Components are inserted for an item. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Always – Rate Components are inserted if a Rate Component exists. </li>
+                            <li class="ccAufzählung">When Price exists – Rate Components are inserted only when the Component and its rent price exist for an item.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Req. Wksh. Template Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used when creating a Requisition from a Rent Order (alternative supply).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Requisition Wksh. Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used when creating a Requisition from a Rent Order (alternative supply).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Ext. Doc. No. Mandatory</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, requires the existence of an external document number on a Rent Order. </p>
+                        <p class="ccTabellenTextNoteheading">NOTE</p>
+                        <p class="ccTabellenTextNotebody">This requirement only applies to Shipment and Return processing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">
+                            <MadCap:annotation MadCap:createDate="2017-10-26T11:55:16.0919781-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="new 2017 SP2" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:55:06.8642747-05:00">Deposit Handling</MadCap:annotation>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">XXXX</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">
+                            <MadCap:annotation MadCap:createDate="2017-10-26T11:55:22.3202640-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="new 2017 SP2" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:55:11.0768676-05:00">Deposit Journal Template Name</MadCap:annotation>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">XXXX</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">
+                            <MadCap:annotation MadCap:createDate="2017-10-26T11:55:30.6473160-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="new 2017 SP2" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:55:12.3669648-05:00">Deposit Journal Batch Name</MadCap:annotation>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">XXXX</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Numbering FastTab</h4>
+            <p class="ccTextvorlage">On this FastTab, number series for the <span class="CCBausteinInhaltZchn">cc|rental</span> master data and documents are defined.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC REN/Rental Setup_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Rental Mgt. Setup page, Numbering FastTab</p>
+        </div>
+        <p class="ccTextvorlage">The fields on this FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 113px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rent Contract Nos.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number Series to be used for the enumeration of Rent Orders (Rental Contract).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rent Quote Nos.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number Series to be used for the enumeration of Rent Quotes.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rent Reservation Nos.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number Series to be used for the enumeration of Rent Reservation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Service Contract Nos.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number Series to be used to create the Service Contracts with the Document Type of Rental Contract, which are automatically created for the invoicing of rent positions.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Contract Invoice Nos.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number Series to be used to create un-posted invoices from a Rent Order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Contract Credit Memo Nos.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number Series to be used to create un-posted credit memos from a Rent Order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Posted Invoice Nos.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number Series to be used to create Posted Invoices from a Rent Order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Posted Credit Memo Nos.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number Series to be used to create Posted Credit Memos from a Rent Order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Posted Shipment Nos.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number Series to be used to create Posted Shipments from a Rent Order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Posted Rental Return Nos.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number Series to be used to create Posted Returns from a Rent Order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Posted Rent Return Nos.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number Series to be used to create Posted Returns from a 3rd Party Purchase Order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prepaid Posting Document Nos.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number Series to be used in the General Ledger Entries when the Post Prepaid Rent Entries report is run.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Leasing Agreement Nos.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number Series to be used for the enumeration of Lease Agreements.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">
+                            <MadCap:annotation MadCap:createDate="2017-10-26T11:54:32.0296271-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="new 2017 SP2" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:56:22.2869202-05:00">Rent Item Sales Order Nos.</MadCap:annotation>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number Series to be used for the enumeration of XXX</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">
+                            <MadCap:annotation MadCap:createDate="2017-10-26T11:54:39.8246369-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="new 2017 SP2" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:56:23.9968522-05:00">Rent Deposit Nos.</MadCap:annotation>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Number Series to be used for the enumeration of Rent Deposits.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">
+            <MadCap:annotation MadCap:createDate="2017-10-06T16:05:52.6185068-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="New 2017 SP1/SP2 (screen shot)" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:58:13.2798541-05:00">Hour Based Rental FastTab</MadCap:annotation>
+        </h4>
+        <p class="ccTextvorlage">On this FastTab, defaults for hour--based invoicing are defined.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Rental Setup_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Rental Mgt. Setup page, Hour Based Rental FastTab</p>
+        <p class="ccTextvorlage">The fields on this FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 113px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Start Time of Working Day</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the default start time of each working day.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">End Time of Working Day</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the default end time of each working day.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Hour Rounding Precision</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the hourly rounding precision; uses an hour calculation. Therefore, if 65 minutes is entered in the field, it changes to 1 hour and 5 minutes. If only 65 is entered in the field, it changes to 2 days 17 hours. </p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">Decimal entries, such as .25 to represent 15 minutes, are prohibited. To round to the nearest 15 minutes, enter 15 min (or minutes) in the field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Hour Rounding Direction</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the direction of the hourly rounding, based on the<span class="Bold"> Hour Rounding Precision</span> field. The options are: </p>
+                        <ul>
+                            <li class="ccAufzählung">5|4 – rounds the hourly value up or down to the nearest value  as follows:<ul><li>the rounding digit is rounded up one digit if the digit to the right is greater than or equal to 5.</li><li>the rounding digit is rounded down one digit if the digit to the right is less than 5.</li></ul></li>
+                            <li class="ccAufzählung">Up – hourly values are rounded up to the nearest value.</li>
+                            <li class="ccAufzählung">Down – hourly values are rounded down to the nearest value.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.4    ">
+            <MadCap:annotation MadCap:createDate="2017-10-06T16:05:52.6185068-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="New 2017 SP2" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:59:20.4865008-05:00">Values FastTab</MadCap:annotation>
+        </h4>
+        <p class="ccTextvorlage">The <span class="Bold">Values</span> FastTab contains the <span class="Bold">Enable Zero Amount Invoicing</span> field, which determines whether zero amount invoicing is permitted in the Rent Order. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Rental Setup_8.png" MadCap:mediastyle="@media print { max-width: 6in; }">
+            </img>
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Rental Mgt. Setup page, Values FastTab</p>
+        <p class="ccTextvorlage">Refer to topic XX for more information.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.5    ">Product Version Information</h4>
+        <p class="ccTextvorlage">On the ribbon, click <span class="Bold">About</span> to display the current product version information.</p>
+        <p> </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Rental Setup_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Product version information accessed by clicking About on the ribbon</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434929881"></a>Rate Codes</h3>
+            <p class="ccTextvorlage"><span class="CCBausteinInhaltZchn">cc|rental</span> uses a period of time for which a price is to be entered. For this period of time, a Rate Code has to be set up to which a period (day, month, week, and so on) must be assigned.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC REN/Rental Setup_3.png" style="visibility: visible;mso-wrap-style: square;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Rental Rate Codes page</p>
+        </div>
+        <p class="ccTextvorlage">The fields in this page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier for the rental rate.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Period of time that must consist of days; hours or minutes cannot be used for rental rates.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Short description of the rental rate code.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Rental Rate Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">If selected, this code can be used as a rental rate. This check box is automatically selected.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Ref415222150"></a><a name="_Ref415222226"></a><a name="_Toc434929882"></a>Rent Rate Components</h3>
+            <p class="ccTextvorlage">To enable the invoicing of amounts that are related to the rental of items but have to be reported as separate positions, <span class="CCBausteinInhaltZchn">cc|rental</span> offers the use of Rate Components. This can be a G/L Account as well as a Resource and has a specific Price for each Rate.</p>
+            <p class="ccTextvorlage">Rate Components are divided into two groups: </p>
+            <ul>
+                <li class="ccAufzählungblau">Rate Part – Invoiced periodically.</li>
+                <li class="ccAufzählungblau">One-Time Invoicing – Invoiced once at the beginning, end or a selected time of a renting period.</li>
+            </ul>
+        </div>
+        <p class="ccTextvorlage">Rate Components are inserted to the Rent Order automatically after entering the item number.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Rental Setup_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">:<MadCap:annotation MadCap:createDate="2017-10-05T11:34:45.5203205-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="2017 SP1 question:\r\nShould we include the Usage field here? Is the setup required for all RR Components now? Are the selections in the SP1 screen shot valid?" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T11:01:29.4964287-05:00"> Rent Rate Components page</MadCap:annotation></p>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Rent Rate Components</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 137px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the type of rate component. The options are Rate Part and One-Time Invoicing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier for the rate component.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Short description of the rate component.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Gen. Prod. Posting Group</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">General Product Posting Group that will be used when inserting the rate component to the Rent Order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">VAT Prod. Posting Group</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">VAT Product Posting Group that will be used when inserting the rate component to the Rent Order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Search Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Search Description for the rate component.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Invoicing at</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines whether a One-Time Invoicing rate component is invoiced on shipment, on return of the related item, or a selected time during the rental period. The options are Start of Rental, End of Rental, and Selected.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">
+                            <MadCap:annotation MadCap:createDate="2017-10-05T11:46:04.9007550-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="New 2017 SP1\r\n\r\nAre the other options used for anything else? Is this a filtering feature too?" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T11:02:11.7263234-05:00">Usage</MadCap:annotation>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Identifies how the rate component is used. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">&lt;blank&gt;</li>
+                            <li class="ccAufzählung">Insurance – used with the Self-Insured Customer function, which prevents the addition of the rent component to the rental contract line if the customer is set up as Self-Insured (refer to topic <MadCap:xref href="Self-Insured Customers.htm">“Self-Insured Customers” on page 1</MadCap:xref>).</li>
+                            <li class="ccAufzählung">VAT</li>
+                            <li class="ccAufzählung">Fees</li>
+                            <li class="ccAufzählung">Surcharges</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Ref280780564"></a><a name="_Toc434929883"></a>Failure Types</h3>
+        <p class="ccTextvorlage">When an event – such as planned maintenance – prevents a customer from using a rental item, a failure can be processed on the rent order line. When the “Enter Failure” function is run, Failure Types direct how the failure is to be processed.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Rental Setup_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Failure Types page</p>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Failure Types</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 126px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Failure Type Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier for the failure type.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Short description of the failure type.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Credit Memo</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, a credit memo will be created for the period specified on the Rental Failure Card.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Discount %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Percentage of the amount to be credited.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">
+                            <MadCap:annotation MadCap:createDate="2017-10-05T11:51:04.1805937-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="New 2017 SP1 - need info" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T11:03:26.6164216-05:00">Reduce Free Counter</MadCap:annotation>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Determines if the calculated free counter is reduced when a specific type of failure is entered. The options are: </p>
+                        <ul>
+                            <li class="ccAufzählung">&lt;blank&gt; – the counter is not reduced for the failure type.</li>
+                            <li class="ccAufzählung">&lt;Full&gt; – the counter is reduced completely  for the failure type.</li>
+                            <li class="ccAufzählung">&lt;Percent&gt; – the counter is reduced the same as the discounted percentage for the failure type.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.5    "><a name="Rental"></a>
+                <MadCap:annotation MadCap:createDate="2017-10-05T14:29:55.1804023-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="New 2017 SP1 \r\n\r\nAlso, please check if the data in the screen shot is valid." MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T11:04:01.2690859-05:00">Rental Preconditions</MadCap:annotation>
+            </h3>
+            <p>Prior to completing a rental shipment, some items may have preconditions that must be met to drive or operate a rented machine. In the <span class="Bold">Rental Preconditions</span> page, the types of preconditions are defined.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC REN/Rental Setup_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Rental Preconditions</p>
+        </div>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Rental Preconditions</span> page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 126px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier for the rental precondition.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Short description of the rental precondition.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Action Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if the precondition requires a type of confirmation (Confirmation) or is only a message to the customer (Message).</p>
+                        <p>If a precondition has been defined for a confirmation, a Name or Name and Date of Birth must be entered before the shipment can be posted. Precondition messages appear prior to posting but require no action.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Confirmation Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if the person responsible for completing the precondition must provide a name or name and date of birth. This field is only used with <span class="Bold">Action Type</span> = <span class="Italics">Confirmation</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">Minimum Age</td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Calculates the minimum age of the person responsible for completing the precondition. This field uses a date formula and is calculated by the Rental Start Date, <MadCap:annotation MadCap:createDate="2017-10-06T13:01:59.4920693-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="need to explain this better. is it Rental Start Date - Minimum Age? Because if i enter 2/1/2001 for the date of birth, it shows as red. if i go with 1/31/2001, it's ok." MadCap:editor="NDOKS" MadCap:editDate="2017-10-06T13:03:06.4216333-05:00">e.g., if 16 years is the minimum age, then the date of birth entered must be 16 years before the Rental Start Date.</MadCap:annotation></p>
+                        <p class="ccTabellenText">This field is only used with <span class="Bold">Confirmation Type</span> = <span class="Italics">Date of Birth</span>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">Refer to topic <MadCap:xref href="Item Shipment Preconditions.htm">“Item Shipment Preconditions” on page 1</MadCap:xref> for more information.</p>
+        <p> </p>
+        <p> </p>
+        <p> </p>
+    </body>
+</html>

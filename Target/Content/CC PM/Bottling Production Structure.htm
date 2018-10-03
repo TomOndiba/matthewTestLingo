@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="2" MadCap:lastHeight="820" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref282423816"></a><a name="_Toc434256678"></a>Bottling Production Structure</h3>
+        <p class="ccTextvorlage">The Bottling Structure type on the Production Structure provides the ability to bottle items in different units of measure. Thus, a rapid handling of the filling or decanting is possible. </p>
+        <p class="ccTextvorlage">In this type of production structure, only the packaging materials or filling periods that are necessary for bottling are defined. The <span class="Bold">Item Bottling</span> page handles the transformation from one unit of measure to another, such as 10 liter units of paint to 4 liter units of paint; but it does not handle the 4 liter package and the processing time. To handle this, a Bottling Structure is created with the 4 liter package and the time for packaging.</p>
+        <p class="ccTextvorlage">When certifying the Bottling Structure, the Production BOM and Routing are not copied to the item.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Bottling Production Structure.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref286332400"></a>: Bottling Structure selected on a production structure</p>
+        <p class="ccTextvorlage">In <MadCap:xref href="#_Ref286332400" class="Figure">Fig. 1</MadCap:xref>, a Bottling Production Structure has been set up for the OSNALUX gloss paint item. This production structure is also a production variant. To bottle 10 liters of this paint, materials (10 liter pail) and processing (bottling plant) are required. </p>
+        <p class="ccTextvorlage">Only certified Bottling Structures can be used in the <span class="Bold">Item Bottling</span> page. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Bottling Production Structure_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Item Bottling for item P-10503</p>
+        <p class="ccTextvorlage">When a value is entered in the <span class="Bold">New Unit of Measure Code</span> field, the system looks for certified production structures that match the unit of measure.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Bottling Production Structure_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Item Bottling for item P-10503 set to 10 L unit of measure</p>
+        <p class="ccTextvorlage">The <span class="Bold">Avail. Production Structures</span> field displays all the production structures that match the unit of measure. If only one exists, the Production Structure and related Production BOM and Routing are assigned in the <span class="Bold">Production Structure</span> FastTab. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Bottling Production Structure_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Production Structure information for 10 L of item P-10503</p>
+        <p class="ccTextvorlage">If multiple production structures match the unit of measure, one must be selected manually in this FastTab. The Production BOM and Routing can also be selected manually. When the production order is created, the information in this FastTab is used.</p>
+        <p class="ccTextvorlage">If there is a lot of movement, such as to KG, there is no initial difference in the outcome. For example, 300 KG from lot OS-KG-FX300 must be filled into 10 L buckets, so 300 is entered into the <span class="Bold">Qty. to Handle</span> field on the relevant KG line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Bottling Production Structure_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: 300 kg of lot OS-KG-FX300 selected and prepared for posting</p>
+        <p class="ccTextvorlage">When this item bottling selection is posted, 30 10 L buckets are produced from the same lot and the <span class="Bold">Remaining Quantity</span> on the originating line is reduced by the 300 units.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Bottling Production Structure_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Thirty 10 L buckets of item P-10503 posted</p>
+        <p class="ccTextvorlage">To review the postings for the 30 10 L buckets, select the line and then click <span class="Bold">Navigate</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Bottling Production Structure_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Posted entries for the thirty 10 L bucket of item P503</p>
+        <p class="ccTextvorlage">Select the <span class="Bold">Item Ledger Entry</span> table and then click <span class="Bold">Show Related Entries</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Bottling Production Structure_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Item Ledger Entries for the Item Bottling</p>
+        <p class="ccTextvorlage">300 units of item P-10503 (OSNALUX gloss paint) have been produced and 30 units of item P-30260 (Pail, 10 L), has been consumed.</p>
+        <p class="ccTextvorlage">Close the <span class="Bold">Item Ledger Entries</span> page and then open the <span class="Bold">Capacity Ledger Entry</span> from the <span class="Bold">Navigate</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Bottling Production Structure_8.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Capacity Ledger Entries for the Item Bottling</p>
+        <p class="ccTextvorlage">The capacity of the work center in the Bottling Structure has been posted. Using the Bottling Structure does not change the speed of production but provides a substantial advantage by using a correct unit of measure calculation.</p>
+    </body>
+</html>

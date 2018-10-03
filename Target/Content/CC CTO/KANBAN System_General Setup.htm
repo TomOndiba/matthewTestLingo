@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="905" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Ref351531910"></a><a name="_Toc434568077"></a>General Setup</h2>
+        <p class="ccTextvorlage">General setup of the Kanban system is done on the <span class="Bold">General</span> FastTab of the <span class="Bold">Configure to Order Setup</span> page. The behavior of the system is defined in the KANBAN area. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/KANBAN System_General Setup.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref284835558"></a>: KANBAN system setup</p>
+        <p class="ccTextvorlage">The setup fields for the Kanban System are defined in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 119px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Purchase</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if items controlled by Kanban that are set up with a Replenishment System of Purchase should be created from the Requisition Line or Purchase Orders. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Make Req. Wksh</li>
+                            <li class="ccAufzählung">Make Purch. Orders</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Purch. Wksh. Temp. Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If the <span class="Bold">Purchase</span> field is set to <span class="Italics">Make Req. Wksh</span>, then this field must contain a Worksheet Template Name. It can be a template name from a requisition or planning worksheet.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Purch. Jnl. Batch Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If the <span class="Bold">Purchase</span> field is set to <span class="Italics">Make Req. Wksh</span>, then this field must contain a Journal Batch Name.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prod. Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if items controlled by Kanban that are set up with a Replenishment System of Prod. Order should be created from Planning Lines or Prod. Orders. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Copy to Planning Wksh – A planning line will be created.</li>
+                            <li class="ccAufzählung">Planned – A Production Order with the status of <span class="Italics">Planned</span> will be created directly.</li>
+                            <li class="ccAufzählung">Firm Planned – A Production Order with the status of <span class="Italics">Firm Planned</span> will be created directly.</li>
+                            <li class="ccAufzählung">Released – A Production Order with the status of <span class="Italics">Released</span> will be created directly.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prod. Wksh. Temp. Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If the <span class="Bold">Prod. Order</span> field is set to <span class="Italics">Copy to Planning Wksh</span> then this field must contain a Worksheet Template Name. It must be a Planning Worksheet Template Name.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Prod. Jnl. Batch Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">If the <span class="Bold">Prod. Order</span> field is set to <span class="Italics">Copy to Planning Wksh</span> then this field must contain a Journal Batch Name.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>

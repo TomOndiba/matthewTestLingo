@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="684" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc445394395"></a>Calculation</h2>
+        <p>This topic describes various setup pages relating to Calculations in the <span class="CCBausteinInhaltZchn">cc|project</span>, Administration menu. </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc445394396"></a>Calculation Groups</h3>
+        <p class="ccTextvorlage">Calculation groups are used to: </p>
+        <ul>
+            <li class="ccAufzählungblau">Differentiate the extra cost from the <span class="Bold">Indirect Cost %</span> and <span class="Bold">Extra Charge %</span> fields in the calculation line.</li>
+            <li class="ccAufzählungblau">Group extra cost with calculation schemes.</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Calculation.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Job Calculation Groups page</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Ref437878999"></a><a name="_Ref437879023"></a><a name="_Toc445394397"></a>Job Charges</h3>
+            <p class="ccTextvorlage">Job Charges are used to enter default charges for other charges. </p>
+            <ul>
+                <li class="ccAufzählungblau">Indirect Cost % – used to calculate the Unit Cost.</li>
+                <li class="ccAufzählungblau">Extra Charge % – used if no Unit Price is found. If a Unit Price is found, this field is calculated.</li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Calculation_1.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Job Charges page</p>
+        </div>
+        <p class="ccTextvorlage">The Job Charges are prioritized as follows:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Job</li>
+            <li class="ccTextvorlageNumberedList">Customer</li>
+            <li class="ccTextvorlageNumberedList">Responsibility Center</li>
+            <li class="ccTextvorlageNumberedList">Global (all three fields blank)</li>
+        </ol>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Ref437879139"></a><a name="_Toc445394398"></a>Work Types</h3>
+            <p class="ccTextvorlage">Work Types are standard in Microsoft Dynamics NAV. A Work Type indicates the various kinds of work that a resource can perform and establishes various prices and costs in resources and resource groups (refer to topic <MadCap:xref href="Personal Unit Prices.htm#_Ref383424707">“Personal Unit Prices” on page 1</MadCap:xref>). </p>
+            <p class="ccTextvorlage">In <span class="CCBausteinInhaltZchn">cc|project</span>, the <span class="Bold">Resource Type</span> field differentiates between the various resources used on jobs. The options relevant to <span class="CCBausteinInhaltZchn">cc|project</span> are:</p>
+            <ul>
+                <li class="ccAufzählungblau">Person</li>
+                <li class="ccAufzählungblau">Service</li>
+                <li class="ccAufzählungblau">Traveling</li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Calculation_2.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Work Types page, highlighting the Resource Type field</p>
+        </div>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc445394399"></a>Job Sales Work Types</h3>
+            <p class="ccTextvorlage">Job Sales Work Types match the Person Work Type Code and Service Work Type Code and are used to specify which of the following has to be used for pricing:</p>
+            <ul>
+                <li class="ccAufzählungblau">Service No. used component in calculation line</li>
+                <li class="ccAufzählungblau">Person Work Type Code used in time entry</li>
+                <li class="ccAufzählungblau">Service Work Type Code used in calculation line</li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Calculation_3.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Job Sales Work Types page</p>
+        </div>
+        <h3 class="Heading3" MadCap:autonum="1.1.5    "><a name="_Toc445394400"></a>Calculation Schedule Extra Charges</h3>
+        <p class="ccTextvorlage">In the <span class="Bold">Job Calc. Extra Charges</span> page, define the extra charges  to be included in a calculation schedule.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Calculation_4.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Job Calc. Extra Charges page</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.6    "><a name="_Ref437873970"></a><a name="_Toc445394401"></a>Calculation Schedule Templates</h3>
+            <p class="ccTextvorlage">A default Job Calculation Schedule Template can be generated by running the Setup Wizard (refer to topic <MadCap:xref href="Setup with Job Setup Checklist.htm#_Ref437523186">“Setup with Job Setup Checklist” on page 1</MadCap:xref>).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Calculation_5.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Job Calc. Schedule Template page</p>
+        </div>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Lines</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 96px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Row No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique code field that is used to identify a corresponding calculation line in the <span class="Bold">Link Row No.</span> field.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">With the SQL Server, it is useful to create row numbers with leading letters (R010, R020, and so on) or zeros (0100, 0200, and so on) to prevent sequencing from changing when numbers greater than 999 are used.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Description of the calculation, which can be indented by clicking <span class="Bold">Functions &gt; To the left</span> or <span class="Bold">To the right</span> on the ribbon.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Special Format</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Allows for formatting of the text in the <span class="Bold">Description</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Link Row No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Refers to the row number that applies to the extra charge calculation. Used only on lines with a <span class="Bold">Totaling Type</span> of <span class="Italics">Extra Charge</span> and <span class="Italics">Rounding</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Totaling Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies what the calculation line is based on. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Calculation Group – used on calculation lines that gather totals from job calculation groups.</li>
+                            <li class="ccAufzählung">Extra Charge – used on lines that calculate an increase or decrease of another calculation line.</li>
+                            <li class="ccAufzählung">Formula – used on lines that total other calculation lines. Standard Microsoft Dynamics NAV filters can be used, such as range (R100..R199), either/or (1000|2000), or any of the following: * ? &gt; &lt; = @.</li>
+                            <li class="ccAufzählung">Value – used to enter a value manually.</li>
+                            <li class="ccAufzählung">Rounding – used to round an amount.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Totaling</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Values relating to the selection in the <span class="Bold">Totaling Type</span> field.</p>
+                        <p class="ccTabellenText">Calculation Group (e.g. MAT), an Extra Charge (e.g. MAT%), a Formula (e.g. R100..R199), a Value (e.g. leave empty to enter later), a Rounding (e.g. 100,&lt;).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Amount Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the source amount for the calculation. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Total Direct Cost</li>
+                            <li class="ccAufzählung">Total Cost</li>
+                            <li class="ccAufzählung">Total Price</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Include Remaining</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">If selected, remaining amounts (hidden buffers) are included in the calculation.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ccDIV">
+            <p class="ccTextvorlageaftertable">More calculation schedule templates can be created manually by clicking <span class="Bold">New</span> in the <span class="Bold">Job Calc. Schedule Template</span> page.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Calculation_6.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Job Calc. Schedule Template page</p>
+        </div>
+    </body>
+</html>

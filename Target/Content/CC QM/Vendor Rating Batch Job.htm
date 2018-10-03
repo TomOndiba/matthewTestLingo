@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="898" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc442095789"></a>Vendor Rating Batch Job</h2>
+        <p class="ccTextvorlage">On the <span class="CCBausteinInhaltZchn">cc|vendor rating</span> menu, click <span class="Bold">Reports and Analysis &gt; Vendor Rating</span> to access the “Vendor Rating” batch job.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Vendor Rating Batch Job.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Vendor Rating batch job</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">To run this report, the “Calculate Vendor Rating” batch job must have already been processed (refer to topic <MadCap:xref href="Calculate Vendor Rating Batch.htm" class="RelLinkPageNumber">"Calculate Vendor Rating Batch Job" on page 1</MadCap:xref>).</p>
+        <p class="ccTextvorlage">The report calculates a respective result with an according score for the hard and the soft rating criteria. These two results are combined to an overall result based on the vendor-specific weighting (<span class="Bold">Vendor Rating</span> FastTab on the Vendor Card). If no weighting has been specified for the vendor, the default weighting will be applied (refer to topic <MadCap:xref href="Weighting.htm" class="RelLinkPageNumber">"Weighting" on page 1</MadCap:xref>). Thus, a vendor-specific rating / weighting can be established without maintaining all vendors.</p>
+        <p class="ccTextvorlage">The hard rating criteria are consolidated and displayed per item. In regards to the soft rating criteria, the system determines valid data records for each type of soft criteria (audit, visit report, self-assessment) and always uses the highest version. Consequently, there are just as many data records available as there are types of soft rating criteria defined in the system.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">This batch job will automatically process a re-classification of the vendor. The current classification is displayed in the <span class="Bold">New Categorization</span> field on the <span class="Bold">Vendor Rating</span> FastTab of the Vendor Card.</p>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Vendor Rating Batch Job_1a.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Rating History page</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If the Vendor Rating report is run multiple times on the same day, only one entry will appear for that date with the most recent rating information.</p>
+    </body>
+</html>

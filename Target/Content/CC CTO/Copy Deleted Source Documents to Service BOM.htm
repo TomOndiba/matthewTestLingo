@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="835" MadCap:lastWidth="605" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434568084"></a>Copy Deleted Source Documents to Service BOM</h3>
+            <p class="ccTextvorlage">When using <span class="Bold">Document Type</span> = <span class="Italics">Construction Order</span> or <span class="Italics">Document BOM</span>, but the selected documents only exist as archived versions (i.e., the documents have been archived but deleted), the system automatically copies the last archived version of the Construction Order/Document BOM to the Service BOM. </p>
+            <p class="ccTextvorlage">The deleted documents will not appear in the list when opened from the <span class="Bold">Document No.</span> field in the <span class="Bold">Copy BOM</span> request page, but the used Construction Order or Document BOM number will be automatically entered in the <span class="Bold">Document No.</span> field. Refer to the documents used in the <span class="Bold">Detail</span> FastTab on the Service BOM.</p>
+            <p class="ccDemoStepHeading">Example – Deleted Documents Copied from Archived Sales Order</p>
+            <p class="ccTextvorlage">In this example, a Sales Order was created with a Document BOM and a Construction Order. After the related production order was processed, the Construction Order was archived and then deleted. </p>
+            <p class="ccTextvorlage">Next, the Sales Order was archived and shipped (thus creating the service item), and then the Document BOM was deleted from the Sales Order. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Copy Deleted Source Documents.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" /> </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Document BOM deleted from sales order but exists in Archived sales order</p>
+        </div>
+        <p class="ccTextvorlage">In the Service Item Card, all BOMs are listed in the <span class="Bold">Detail</span> FastTab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Copy Deleted Source Documents_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="_Ref429493116"></a>: Service Item Card, Detail FastTab with all used BOMs</p>
+        <p class="ccTextvorlage">In the “Copy BOM” function on the Service BOM, select the <span class="Italics">Document BOM</span> option in the <span class="Bold">Document Type</span> field. The <span class="Bold">Document No.</span> field is populated with the Document BOM displayed in the <span class="Bold">Document BOM No.</span> field on the Service Item Card. However, the lookup in the <span class="Bold">Document No.</span> field has no available lines for this Document BOM. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Copy Deleted Source Documents_2.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Preparing to copy the archived (deleted) Document BOM to Service BOM </p>
+        <p class="ccTextvorlage">Close the lookup and then click <span class="Bold">OK</span>. The last archived version of this Document BOM is copied to the Service BOM.  </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Copy Deleted Source Documents_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Archived (deleted) Document BOM copied to Service BOM </p>
+        <p class="ccTextvorlage">Delete the Service BOM lines and run the same process for the Construction Order. The <span class="Bold">Document No.</span> field is populated with the Construction Order displayed in the <span class="Bold">Construction Order No.</span> field on the Service Item Card. However, the lookup in the <span class="Bold">Document No.</span> field has no available lines for this Construction Order.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Copy Deleted Source Documents_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Preparing to copy the archived (deleted) Construction Order to Service BOM </p>
+        <p class="ccTextvorlage">Close the lookup and then click <span class="Bold">OK</span>. The last archived version of this Construction Order is copied to the Service BOM.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Copy Deleted Source Documents_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.4in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Archived (deleted) Construction Order copied to Service BOM </p>
+    </body>
+</html>

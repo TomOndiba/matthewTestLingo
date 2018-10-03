@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="905" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Ref287357770"></a><a name="_Toc434329943"></a>Commission Setup</h2>
+        <p class="ccTextvorlage">The <span class="Bold">Commission Setup</span> page is opened from the navigation pane by clicking <span class="Bold">Departments &gt; Sales &amp; Marketing &gt; </span><span class="CCBausteinInhaltZchn">cc|commission</span><span class="Bold"> &gt; Commission Setup</span>. This page provides the basic settings for the <span class="CCBausteinInhaltZchn">cc|commission</span> module. The following sections explain the fields on this page.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref414545169"></a><a name="_Toc434329944"></a>General FastTab</h3>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">General</span> FastTab are described in the table.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CMI/Commission Setup.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Commission Setup page, General FastTab</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 118px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Scale Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Controls the general way of the commission scale. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Quantity Scale – Determines if the sum of the quantity of the scale should be considered. A minimum quantity can be entered in the commission rates.</li>
+                            <li class="ccAufzählung">Amount Scale – Determines if the sum of the amount of the scale should be considered. A minimum amount can be entered in the commission rates.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Def. Commission Basis</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines which postings should be considered during the process of creating the commission statement. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Shipping – If this option is selected, the commission is calculated based on shipping, net of returns. The commission statement is based on the posted values. </li>
+                        </ul>
+                        <p class="ccTebellenTextNoteHeadingIndent">Note</p>
+                        <p class="ccTabellenTextNoteBodyIndent">Currently, items charges are only posted with invoicing so they are not considered with this commission basis.</p>
+                        <ul>
+                            <li class="ccAufzählung">Invoicing – If this option is selected, the commission is calculated based on invoicing, net of credit memos. The commission statement is based on the posted values.</li>
+                            <li class="ccAufzählung">Payment Receipt – If this option is selected, the commission is calculated based on payment receipt. The commission statement is based on the posted values. If partial payments are posted, the commissionable amount is based on that value. The actual payment receipts are taken into account less the payment discounts.</li>
+                        </ul>
+                        <p class="ccTebellenTextNoteHeadingIndent">Note</p>
+                        <p class="ccTabellenTextNoteBodyIndent">Payments must be posted with the <span class="Bold">Document Type</span> = Payment in order for the commission to calculate.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Def. Calculation Base</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines the value which serves as a foundation of the commission statement. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Amount – If this option is selected, the amount (excl. VAT) is taken into consideration for the calculation. It has to be taken into account that the values at the moment of the posting are the basis for the commission statement.</li>
+                            <li class="ccAufzählung">Profit – If this option is selected, the profit is taken into consideration for the calculation. It has to be taken into account that the values at the moment of the posting are the basis for the commission statement.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Include Line Disc.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if line discounts are considered in the commission statement. If selected, the commissionable amount is reduced by any line discounts.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Include Invoice Disc.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if invoice discounts are considered in the commission statement. If selected, the commissionable amount is reduced by any invoice discounts.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Include Credit Memos</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if credit memos are considered in the commission statement. If selected, the commissionable amount is reduced by any credit memos.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Include Return Orders</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if return orders are considered in the commission statement. If selected, the commissionable amount is reduced by any return orders.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Include Item Charges</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if item charges are considered in the commission statement. If selected, the commissionable amount is reduced by any item charge.</p>
+                        <p class="ccTabellenText">This setting is not relevant if the <span class="Italics">Shipping</span> option is selected in the <span class="Bold">Def. Calculation Base</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Commission Search Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Controls the priority for determining the right commission rate if competing rates are calculated. Depending on the requirements of the customer, the commission is driven by Customers, Items, or Commission Recipients. This setting determines which commission rate is valid.</p>
+                        <p class="ccTabellenText">In the event that multiple valid commission rates are being found in certain situations, this conflict can be cleared by defining a commission search order.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    "><a name="_Ref414545111"></a>Example – Commission Search Order</h4>
+        <p class="ccTextvorlage">Item A1 is assigned to commission group APG1 and Customer D1 is assigned to customer commission group DPG1.</p>
+        <p class="ccTextvorlage">For a specific commission recipient, the following commission rates have been defined:</p>
+        <table style="margin-left: auto;margin-right: auto;">
+            <col style="width: 336px;" />
+            <col style="width: 170px;" />
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="ccTextvorlage">Customer of commission group DPG1 and all items </p>
+                    </td>
+                    <td>6 %</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="ccTextvorlage">Items commission group APG1 and all customers </p>
+                    </td>
+                    <td>5 %</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlage">It item A1 is sold to customer D1, the system will find two valid competing commission rates. The commission search order solves this problem and finds the one and only commission rate in this case.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage"><span class="Bold">Option 1: </span><span class="Bold" style="font-style: italic;">Commission Search Order</span> = <span class="Italics">Commission Recipient - Customer - Item</span></p>
+            <p class="ccTextvorlageIndent">This means that the commission recipient gets commission of 5% for all items of commission group APG1, unless items are being sold to customers of the customer commission group DPG1. In this case, the commission recipient gets 6% commission.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CMI/Commission Search Order_Option 1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Commission Search Order, option 1</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlage"><span class="Bold">Option 2: </span><span class="Bold" style="font-style: italic;">Commission Search Order</span> = <span class="Italics">Commission Recipient - Item - Customer</span></p>
+            <p class="ccTextvorlageIndent">This means that the commission recipient gets commission of 6% for all items of customer commission group DPG1, unless items are assigned to item commission group APG1. In this case, the commission recipient gets only a 5% commission.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CMI/Commission Search Order_Option 2.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Commission Search Order, option 2</p>
+        </div>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434329945"></a>Numbering FastTab</h3>
+            <p class="ccTextvorlage">On this FastTab, number series for commission recipient, commission statement and issued commission statements are defined.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CMI/Commission Setup_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Commission Setup page, Numbering FastTab</p>
+        </div>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc434329946"></a>Product Version Information</h3>
+            <p class="ccTextvorlage">On the ribbon, click <span class="Bold">About</span> to display the current product version information.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CMI/Commission Setup_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Product version information accessed by clicking About on the ribbon</p>
+        </div>
+    </body>
+</html>

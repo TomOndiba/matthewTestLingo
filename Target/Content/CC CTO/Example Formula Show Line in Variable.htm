@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434567983"></a>Example – Formula Show Line in Variable Option</h3>
+        <p class="ccTextvorlage">Similar to the Formula Show Line functionality in the checklist template, a <span class="Bold">Formula Show Line</span> field exists in the <span class="Bold">Variable Options</span> page to prevent some options from appearing for selection based on specific answers to questions in a checklist line.</p>
+        <p class="ccTextvorlage">In this example, a new Variable named OPTIONVAR was created with the following three options:</p>
+        <ul>
+            <li class="ccAufzählungblau">The first option should be shown always so the <span class="Bold">Formula Show Line</span> field is empty</li>
+            <li class="ccAufzählungblau">The second option should be shown when variable VAR1 is greater than 10</li>
+            <li class="ccAufzählungblau">The third option should be shown when variables VAR1 <span class="Underline">and</span> VAR2 are greater than 10</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Formula Show Line in Variable.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Variable Options with Formula Show Line</p>
+        <p class="ccTextvorlage">A Checklist Template has been created with two question and two answer lines. The answer lines are defined with the variables VAR1 and VAR2, respectively, and the second question line has been defined with the OPTIONVAR variable, which provides the lookup to the variable options.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Formula Show Line in Variable_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Checklist Template with Formula Show Line in Variable Option setup</p>
+        <p class="ccTextvorlage">The formulas can be tested in the Checklist Template. If a user enters values in the <span class="Bold">Input</span> field for the answer lines, e.g., 11 and 9, respectively, and then clicks the arrow in the <span class="Bold">Input</span> field on the fourth line, the <span class="Bold">Variable Options</span> page opens with all available options.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Formula Show Line in Variable_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Formula Show Line test in checklist template line</p>
+        <p class="ccTextvorlage">If the user clicks <span class="Bold">Test “Formula Show Line”</span> on the ribbon, the values from the checklist template are uploaded to the formulainterpreter, the formulas in the <span class="Bold">Formula Show Line</span> fields are calculated and if the result of a formula is false, the line(s) are hidden. In this example, <span class="Bold">Input</span> = <span class="Italics">30</span> was hidden because the value entered on the checklist template line was greater than 10 for Value 1 but not for Value 2. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Formula Show Line in Variable_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Result of Formula Show Line test in checklist template line</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Test “Formula Show Line”</span> again to clear the filter and show all options and then close the page by clicking <span class="Bold">Cancel</span>. Additionally, clear any input values before certifying the checklist template for use.</p>
+        <p class="ccTextvorlageNoteheading">NOTE</p>
+        <p class="ccTextvorlageNotebody">The “Test “Formula Show Line”” function can only be run from the <span class="Bold">Variable Options</span> page when opened from a checklist line. </p>
+        <p class="ccTextvorlage">When this checklist is opened on a document, and the user enters 10 in the <span class="Bold">Input</span> field for Value 1 and 9 for Value 2, and then opens the <span class="Bold">Variable Options</span> page for the last line, only input line 10 appears because none of the correct variable values were met.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Formula Show Line in Variable_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Result 1 of Formula Show Line test in document checklist line</p>
+        <p class="ccTextvorlage">If an invalid option is manually entered in the <span class="Bold">Input</span> field, an error message appears.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Formula Show Line in Variable_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Result of entering an invalid option in the document checklist line</p>
+        <p class="ccTextvorlage">If values are changed to meet the correct criteria, then the options will appear accordingly.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Example Formula Show Line in Variable_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Result 2 of Formula Show Line test in document checklist line</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">Any of the valid options can be entered in the <span class="Bold">Input</span> field.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CTO/Example Formula Show Line in Variable_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Valid option entered in the document checklist line</p>
+        </div>
+    </body>
+</html>

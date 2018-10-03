@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="919" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref352929068"></a><a name="_Toc434256594"></a>Manual Rescheduling of Sequence Planning</h3>
+        <p class="ccTextvorlage">On each action in sequence planning (move of production orders, change of routings and insert of maintenance orders) the data is updated. That means that the sequence work center and all production orders attached to the sequence work center are re-scheduled.</p>
+        <p class="ccTextvorlage">This is not problematic – and can be necessary – for larger amounts of data because otherwise there is incorrect, outdated data in the system that can cause false results if further processes (such as, creating a requisition worksheet for the purchase) use this data.</p>
+        <p class="ccTextvorlage">However, if there are several changes to make for a machine (Work Center) or for its production orders, the processing time can be reduced if, after all changes, the new scheduling is done once.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The <span class="Bold">Rescheduling</span> field is located on the <span class="Bold">Scheduling</span> FastTab of the work center and contains two options for how existing production orders for a sequence work center are handled when changes are made to a production order that is attached to the sequence work center:</p>
+            <ul>
+                <li class="ccAufzählungblau">Automatic – All production orders for that work center are immediately rescheduled.</li>
+                <li class="ccAufzählungblau">Manual – None of the production orders are rescheduled and the <span class="Bold">Scheduling Required</span> check box is selected for the work center in Sequence Planning.</li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PM/Manual Rescheduling of Sequence.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Work Center rescheduling setup </p>
+        </div>
+        <p class="ccTextvorlage">When the “Scheduling” function is run, the <span class="Bold">Scheduling Required</span> check box will be cleared on the work center line.</p>
+    </body>
+</html>

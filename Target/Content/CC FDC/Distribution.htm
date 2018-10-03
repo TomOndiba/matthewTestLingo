@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="503" MadCap:lastWidth="603" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 MadCap:autonum="1.1    " class="Heading2"><a name="_Ref428426432"></a><a name="_Ref428426435"></a><a name="_Ref428426445"></a><a name="_Ref428426463"></a><a name="_Toc435107516"></a>Distribution</h2>
+        <p class="ccTextvorlage">Distribution is a function specific to Order Bundles. Therefore a Bundle Line (also called “0-Line”) is distributed to all underlying Order Bundle Lines, according to the settings of the <span class="Bold">Order Bundle Time Distribution</span> and <span class="Bold">Order Bundle Qty. Distribution</span> fields on the <span class="Bold">Order Bundle</span> FastTab in the FDC Work Order. Times and quantities can be distributed as determined by the following options:</p>
+        <ul>
+            <li class="ccAufzählungblau">Uniform – distribution posts the same part of times/quantities to all lines. </li>
+            <li class="ccAufzählungblau">Expected Time/Expected Qty. – distributes according to the Expected Time/Qty. of each line. </li>
+            <li class="ccAufzählungblau">Actual Qty./Actual Time – distributes the quantity first and then the time, and vice versa for “Actual Time” (the time gets distributed first and then the quantity). According to this, a setting of “Actual Time” and “Actual Qty.” is invalid. </li>
+        </ul>
+        <p class="ccTextvorlage">In FDC Setup, the <span class="Bold">Automatic Order Bundle Distribution When Posting</span> field can be set to instantly apply a new distribution after each posting on an FDC Work Order. Alternatively, a new distribution can be applied by clicking <span class="Bold">Distribute</span> on the ribbon of the <span class="Bold">FDC Work Order</span> page. With this function, a later change of the distribution key and a new distribution can be made.</p>
+        <p class="ccTextvorlage">When distributing, a new FDC (Distribution) Entry per Order Bundle Line is created for each FDC Entry of a Bundle Line. This Distribution Entry contains the calculated part of the “0-Line” by using the key as an FDC Detailed Entry. On further distributions, the Detailed Entries get cancelled and new entries will be created. The Distribution Entry remains.</p>
+    </body>
+</html>

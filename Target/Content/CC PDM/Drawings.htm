@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../Resources/Stylesheets/COSMO CONSULT_FINAL_PDF.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc525041204"></a>Drawings</h2>
+        <p class="ccTextvorlage">In the Search box, enter <span class="Bold">Drawings</span>, then choose the related link to open the <span class="Bold">Drawings</span> page.</p>
+        <p class="ccTextvorlage">Drawings are the construction plans linked with the item. In Microsoft Dynamics NAV, these consist of four components:</p>
+        <ul>
+            <li class="ccAufzählungblau">List of Drawings</li>
+            <li class="ccAufzählungblau">Drawing Card</li>
+            <li class="ccAufzählungblau">Link Drawings with Documents (in header and in lines)</li>
+            <li class="ccAufzählungblau">History</li>
+        </ul>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc525041205"></a>List of Drawings</h3>
+        <p class="ccTextvorlage">The drawing list is the overview of all drawings. If an item uses different drawings, all drawings are displayed in connection with the <span class="Bold">No.</span> field to the <span class="Bold">Type Code</span> field.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Drawings.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Drawings </p>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Drawings</span> page are described in the following table.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');" class="TableStyle-CC_TableStyleSheet" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of drawing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Type Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique description of a drawing type. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Revision Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the current revision of the drawing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Brief description of the drawing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Status Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the current status of the drawing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Created from No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the number of the drawing from which the current status has emerged. This field is used to make revision statuses traceable.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Created from Revision Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Displays the revision status of the drawing from which the current status has emerged. This field is used to make revision statuses traceable. </p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">It is possible to create a new revision status D from revision status A. B and C will then be outdated.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">The drawing picture can be imported and exported normally. However, this is not handled the same as in standard Microsoft Dynamics NAV. The differences are:</p>
+        <ul>
+            <li class="ccAufzählungblau">Saving a picture in standard Microsoft Dynamics NAV – The respective picture is saved directly in the table of the item between the other fields.</li>
+            <li class="ccAufzählungblau">Saving a picture in <span class="CCBausteinInhaltZchn">cc|product data management</span> – The respective picture is regarded as a reference and retrieved from its storage structure.</li>
+        </ul>
+        <p class="ccTextvorlage">This means that the underlying storage structure in the drawings must not be changed. If this should happen, no more drawings are shown in picture form here.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc525041206"></a>Drawing Card</h3>
+        <p class="ccTextvorlage">The fields in the <span class="Bold">Drawing Card</span> are used to specify each individual drawing.</p>
+        <p>Open the <span class="Bold">Drawing Card</span> by selecting a data set in the drawing list and then choose <span class="Bold">Edit</span> or <span class="Bold">View</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Drawings_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Drawing Card</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.1    ">General FastTab</h4>
+        <p class="ccTextvorlage">In this area the general drawing data is recorded, some of which can also be seen in the list. The fields on this FastTab are described in the following table.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');" class="TableStyle-CC_TableStyleSheet" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Number of drawing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Type Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique description of a drawing type.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Revision Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the current revision of the drawing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Brief description of the drawing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Status Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the current status of the drawing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Comment</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">An internal comment can be written for the drawing. This has no relevant effect on the further procedure.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.2    ">History FastTab</h4>
+        <p class="ccTextvorlage">All data regarding the last change is displayed on this tab. This makes it possible to trace exactly when a drawing was changed by whom at each revision status.</p>
+        <p class="ccTextvorlage">The fields on this FastTab are described in the following table.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');" class="TableStyle-CC_TableStyleSheet" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Created from No. </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the number of the drawing from which the current revision status has emerged.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Created from Revision Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the revision status of the drawing from which the current status has emerged. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Creation Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Date on which the data record was created.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Created by User ID</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">User ID from the user list that created the record.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Last Date Modified</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Date on which a change was made to the current record.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Modified by User ID</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">User ID that last changed the record.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.3    ">Link Drawings with Documents</h4>
+        <p class="ccTextvorlage">Drawings are used in manufacturing to guide the assembly of parts to ensure that the correct drawing is used for a manufacturing part. Therefore, <span class="CCBausteinInhaltZchn">cc|product data management</span> offers the ability to trace the currently used drawing status with links in the documents.</p>
+        <p class="ccBildabstand"> <img src="../Resources/Images/CC PDM/Drawings_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3"><a name="ProductionBOM"></a>: Production BOM</p>
+        <p class="ccTextvorlage">As shown in <MadCap:xref href="ProductionBOM" class="Figure">Fig. 3</MadCap:xref>, the <span class="Bold">Drawing Set</span> and <span class="Bold">Line Drawing Set</span> FactBoxes show the drawing status of the header item and the status of the item in the line, respectively. These <span class="CCBausteinInhaltZchn">cc|product data management</span> FactBoxes are available in many pages to provide immediate access to the drawing information. The <span class="Bold">Drawing Set</span> FactBox shows the drawing status of the header item, and the <span class="Bold">Line Drawing Set</span> FactBox shows the status of the item in the row.</p>
+        <p class="ccTextvorlage">In addition to this information, you always have the option of checking the components of an item on its drawing.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Drawings_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Component of a Production Order</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If a component for an assembly of a production order contains a component whose status code is not valid, an error message is issued when you post or process the production BOM or any other document.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Drawings_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Example of an Error Message when Using an Invalid Drawing</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc525041207"></a>Example: Assigning a Drawing Set to an Item</h3>
+        <p class="ccTextvorlage">In this example, a new drawing is to be assigned to item 1001 “Touring Bicycle”. First a drawing is created. The corresponding item number is selected from the item master.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Drawings_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Create Drawing</p>
+        <p class="ccTextvorlage">The type of drawing is then selected in the <span class="Bold">Type Code</span> field and a revision is assigned. The revision number is checked against the PDM Setup (see topic <MadCap:xref href="Product Data Management Setup.htm#_Ref525036143">“Product Data Management Setup” on page 1</MadCap:xref>). If a revision code is required, it is possible to assign it manually or automatically.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Drawings_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Assign Revision and Status Code </p>
+        <p class="ccTextvorlage">In addition, a drawing file can be assigned in the <span class="Bold">Links</span> FactBox. Finally, a status is assigned to the drawing.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Drawings_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Created Drawing</p>
+        <p class="ccTextvorlage">The created drawings are automatically assigned to the item if the <span class="Bold">Use in Item</span> check box is selected for the status in the <span class="Bold">Drawing Status Setup</span> page (see topic <MadCap:xref href="Drawing Status.htm#_Ref525036169">“Drawing Status” on page 1</MadCap:xref>).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Drawings_8.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Drawing Set for Item Card</p>
+        <p class="ccTextvorlage">Using the <span class="Bold">Drawings</span> action on the <span class="Bold">Navigate</span> tab, all drawings for the item can be displayed, regardless of whether they are valid or not.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Drawings_9.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Drawing List for an Item</p>
+        <p>To edit the current drawing set, choose <span class="Bold">Drawing Set</span> on the <span class="Bold">Navigate</span> tab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PDM/Drawings_10.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" /> </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Drawing Set for an Item</p>
+    </body>
+</html>

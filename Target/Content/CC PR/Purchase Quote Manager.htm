@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="919" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref437953981"></a><a name="_Toc445394419"></a>Purchase Quote Manager</h2>
+        <p class="ccTextvorlage">The Purchase Quote Manager (PQM) is an add-on to <span class="CCBausteinInhaltZchn">cc|project</span>. This functionality is used to manage multiple quote requests with varying prices, from multiple vendors, for one or more job lines. </p>
+        <p class="ccTextvorlage">Once the vendor is chosen, the Purchase Quotes Manager provides the ability to move relevant quote information (vendor number, direct unit cost, quote date, etc.) to the job line(s).</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The Purchase Quote Manager can also be used for Requisitions Worksheet lines.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc445394420"></a>PQM Setup</h3>
+        <p class="ccTextvorlage">The general setup for the Purchase Quote Manager is entered in the <span class="Bold">PQM Setup</span> page, accessed from the Departments menu by clicking <span class="CCBausteinInhaltZchn">cc|project</span><span class="Bold"> &gt; Administration &gt; PQM Setup</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Purchase Quote Manager.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: PQM Setup</p>
+        <p class="ccTextvorlage">These are the default options for the Purchase Quote Manager Cards that can be changed for individual purposes later. The fields on this page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 153px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">PQM Nos.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the number series to be used for PQM.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Assign Vendors autom.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, all linked vendors of an item will be assigned to the PQM automatically.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Assign Vendors per Line</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Vendors can be allocated to the PQM Header or to the PQM Lines. If selected, the vendors of the PQM Lines are used for creating quotes.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Show Exp. Receipt Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the value in the <span class="Bold">Expected Receipt Date</span> field of the quote line will be displayed in the Purchase Quote Matrix.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Show Vendor Lead Time Calc.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the value in the <span class="Bold">Vendor Lead Time</span> field of the quote line will be displayed in the Purchase Quote Matrix.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc445394421"></a>Items</h3>
+        <p class="ccTextvorlage">Essential data for the Purchase Quote Manager process can be defined in the <span class="Bold">Replenishment</span> FastTab of the Item Card.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PR/Purchase Quote Manager_1.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Item Card, Replenishment FastTab</p>
+        <p class="ccTextvorlage">The <span class="Bold">Vendor No.</span> field is used to assign a main Vendor to the Purchase Quote Manager card.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The vendors in the <span class="Bold">Item Vendor Catalog</span> are also used to assign Vendors to Purchase Quote Manager cards.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PR/Purchase Quote Manager_2.png" style="mso-wrap-distance-bottom: 0;mso-wrap-distance-left: 0;mso-wrap-distance-right: 0;mso-wrap-distance-top: 0;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Item Vendor Catalog</p>
+        </div>
+    </body>
+</html>

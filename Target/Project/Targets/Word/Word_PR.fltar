@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment="PR 2018 Base for review"
+  Type="MsWord"
+  Destinations=""
+  GlossaryTermConversion="marked"
+  MasterToc="/Project/TOCs/CC PR.fltoc"
+  MasterPageLayout="/Content/Resources/PageLayouts/Chapters/CC_Chapters_PR.flpgl"
+  MasterStylesheet="/Content/Resources/Stylesheets/COSMO CONSULT_FINAL_PDF.css"
+  ConditionTagExpression=""
+  MasterPage="/Content/Resources/MasterPages/CC PR.flmsp"
+  EmbedImages="true"
+  PatchHeadingLevels="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    EnableTrackedChanges="true"
+    PreserveTrackedChanges="true"
+    DisableMasterPageUsage="true" />
+</CatapultTarget>

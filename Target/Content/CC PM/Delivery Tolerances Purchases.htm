@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="835" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc434256743"></a>Delivery Tolerances – Purchases</h2>
+        <p class="ccTextvorlage">When an item is entered on a purchase order, the purchase delivery tolerance code from the item card is transferred in the order line and may be modified there. During the entry of the <span class="Bold">Qty. to Receive</span> field, the delivery tolerance is checked. The following actions are possible:</p>
+        <ul>
+            <li class="ccAufzählungblau">Quantity is increased and is over the tolerance = Error message</li>
+            <li class="ccAufzählungblau">Quantity is increased and is within the tolerance = Quantity is increased (if message accepted)</li>
+            <li class="ccAufzählungblau">Quantity is reduced and is within the tolerance = Quantity is reduced (if message accepted)</li>
+            <li class="ccAufzählungblau">Quantity is reduced and is over the tolerance = No changes</li>
+        </ul>
+        <p class="ccTextvorlage">When changing the quantity within the tolerance, a delivery tolerance entry is created.</p>
+        <p class="ccTextvorlage">If the <span class="Bold">Qty. to Receive</span> field is increased or changed back to the original value, the value in the <span class="Bold">Quantity</span> field is also changed and the delivery tolerance entries are deleted. The posting of a delivery tolerance is stored in the <span class="Bold">Delivery Tolerance Entries</span> page. After posting, the delivery tolerance entry cannot be modified.</p>
+        <p class="ccTextvorlage">If a warehouse receipt is created for an order, the check of over and under delivery is done by the <span class="Bold">Qty. to Receive</span> field on the warehouse receipt line. If a delivery is canceled, the delivery tolerance entries are reopened.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Delivery Tolerances Purchases.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Message received when attempting to receive 198 units of item P-30300 on a warehouse receipt</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Delivery Tolerances Purchases_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Result of clicking Yes to reducing the quantity on the warehouse receipt</p>
+    </body>
+</html>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:fileTags="StatusFileTags.6 Needs to be Sent for Review" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434929893"></a>
+            <MadCap:annotation MadCap:createDate="2018-08-24T10:39:20.7912496-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="Unconfirmed, partial 2017 SP1/SP2 updates" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:39:37.5484520-05:00">Items</MadCap:annotation>
+        </h2>
+        <p class="ccTextvorlage">Typically, items are the main transaction on a rent order. Because items play multiple roles within Microsoft Dynamics NAV (consumption for Service or Manufacturing, Sales item, and so on) users can decide which items can be used for rental purposes. To do so, select <span class="Italics">Yes</span> in the <span class="Bold">Rent Item</span> field on the <span class="Bold">Rental</span> FastTab. With this setting, the item can also be used for renting.</p>
+        <p class="ccTextvorlage">If the item is serial number tracked and a service item is required before a serial number can be assigned on a rent order, then select the <span class="Bold">Service Item for SN needed</span> check box (refer to topic <MadCap:xref href="Exercise Extend a Rental Period.htm#_Ref238977816">“Exercise – Extend a Rental Period” on page 1</MadCap:xref> for an example of this requirement).</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The <span class="Bold">Costing Method</span> must be set to Specific for items using the <span class="Bold">Service Item for SN needed</span> functionality.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Items.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Item set as rental item with service item requirements</p>
+        <p class="ccTextvorlage">Pricing and preconditions related to rental items is defined in the Rental action accessed on the <span class="Bold">Navigate</span> tab. Each is described in the following sections.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434929894"></a>Rental Rate Prices</h3>
+        <p class="ccTextvorlage">Rental prices are assigned to items. Rental rates can be set up for a single customer, all customers or customer price groups. Rates can be based on unit of measure, minimum quantity, starting/ending dates and currency. </p>
+        <p class="ccTextvorlage">Generally, Rental Rate Prices are the same as Sales Prices in standard Microsoft Dynamics NAV in that multiple rental prices can be entered for each item, based on the different criteria. However, there are several fields that are used for different rental processes. These Rental-specific fields are described in the following table; refer to online for more information about the standard Sales Prices setup.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Items_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Rental Prices page </p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 106px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rental Rate Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the time period to which the rental price applies.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Minimum Qty. Rate Units</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the minimum number of rate units for which the Unit Price is valid; used to determine if cascading or non-cascading scale pricing is used in the rental contract line:</p>
+                        <ul>
+                            <li class="ccAufzählung">Non-cascading scale pricing: One line is entered with a value in this field, or multiple lines with prices per Minimum Qty. Rate Units, and <span class="Underline">without</span> the <span class="Bold">Cascading</span> check box selected. The <span class="Bold">Total No. of Rate Units </span>from the Sales Line determines the valid price level (as calculated by the Rental Starting Date and Rental Ending Date), which is used throughout the complete rental unless the price is changed manually or by the price update report.</li>
+                            <li class="ccAufzählung">Cascading scale pricing: Multiple lines are entered with a value in this field and <span class="Underline">with</span> the <span class="Bold">Cascading</span> check box selected. The first line must have <span class="Bold">Minimum Qty. Rate Units</span> = 0 and <span class="Bold">Unit Price</span> = [starting price] to create the price structure. The remaining lines are then set up with minimum rate units/unit price for each level in the pricing structure.</li>
+                        </ul>
+                        <p class="ccAufzählung">During invoicing,  the Rental Price table is checked for graduated rent after a line is created on the Service Invoice. If a total of Rate Units is reached during invoicing, the Rent Order line is updated with the new price from the Rental Price table before invoicing the next Invoicing period.</p>
+                        <p>Refer to topic <MadCap:xref href="Graduated Rental Pricing.htm">“Graduated Rental Pricing” on page 1</MadCap:xref> for more information about both types of pricing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Cascading</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, cascading scale pricing is used to determine pricing in the Rental Contract. </p>
+                        <p class="ccTabellenText">When this field is set or cleared, a message will appear and automatically set or clear this field on <span class="Underline">all rental price lines with the same Sales Type/Sales Code/Rental Rate Code combination</span> to ensure that all or none are set for cascading pricing.</p>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Exercise Cascaded Scale Price.htm">“Exercise – Process a Rent Order with Cascaded Scale Price” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Free Operation Hours</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p>Indicates the amount of Operation Hours that are included in the Rate Price.</p>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Counter-Based Invoicing.htm">“Counter-Based Invoicing” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Free Operation Miles</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the amount of Operation Miles that are included in the Rate Price.</p>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Counter-Based Invoicing.htm">“Counter-Based Invoicing” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p>Include Counters</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the counter-related invoicing is activated for this line.</p>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Counter-Based Invoicing.htm">“Counter-Based Invoicing” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Min. Invoice Free Operation Capacity</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the calculated price to invoice cannot be less than the Rental Rate Price / calculated Part of the Rate Price. Therefore, no negative lines are added to the invoice when the used hours/miles are less than the hours/miles included in the rental price.</p>
+                        <p>Refer to topic <MadCap:xref href="Counter-Based Invoicing.htm">“Counter-Based Invoicing” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">
+                            <MadCap:annotation MadCap:createDate="2017-10-26T14:27:41.5465007-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="New 2017 SP2" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:41:11.5982714-05:00">Minimum Duration Rate Units</MadCap:annotation>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">XXXXXX</p>
+                        <p>Refer to topic XXXXX for more information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434929895"></a>Rental Line Discounts</h3>
+            <p class="ccTextvorlage">Line discounts can also be defined on rental items, using similar criteria. This functionality is the same as standard Microsoft Dynamics NAV except the <span class="Bold">Rental Rate Code</span> field determines if the line discount is specific to rentals.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC REN/Items_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Sales Line Discounts page </p>
+        </div>
+        <p class="ccTextvorlage">Multiple rental line discounts can be entered for each item, based on the different criteria. Refer to online help for more information about sales line discount setup.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Ref415222217"></a><a name="_Toc434929896"></a>Item Rent Rate Components</h3>
+        <p class="ccTextvorlage">Rate Components can be defined on rental items. The Item Rate Components are selected from the Rent Rate Components list (refer to topic <MadCap:xref href="Rental Setup.htm#_Ref415222150">“Rent Rate Components” on page 1</MadCap:xref>). They are inserted automatically into the Rent Order line when the Item No. is entered if the <span class="Bold">Insert Rate Components</span> field is set to <span class="Italics">Always</span> in the <span class="Bold">Rental Mgt. Setup</span> page. Otherwise the components are inserted if a valid rent price is entered for the Rate Component and the selected Rate Code.</p>
+        <p class="ccTextvorlage">Rate Components can also be selected manually in the Rent Order line by setting the <span class="Bold">Rental Position</span> field to <span class="Italics">Rate Part</span> for a line that is to be invoiced periodically or <span class="Italics">One-Time Invoicing</span> for a position to be invoiced once.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Items_3.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 288px;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Item Rent Rate Components page </p>
+        <p class="ccTextvorlage">The fields on this page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 114px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the type of item rent rate component. The options are Rate Part and One-Time Invoicing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Rate Component No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the Rate Component for the selected type.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Source Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines whether a G/L Account or a Resource must be used for the Rate Component.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Source No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the G/L Account No. if the <span class="Bold">Source Type</span> = <span class="Italics">G/L Account</span> or a Resource No. if the <span class="Bold">Source Type</span> = <span class="Italics">Resource</span>.</p>
+                        <div class="ccDIV">
+                            <p class="ccTabellenTextNoteheading">Note</p>
+                            <p class="ccTabellenTextNotebody">If the <span class="Bold">Source Type</span> = G/L Account, the <span class="Bold">Source No.</span> field can be left blank. The system then uses the G/L Account from the General Posting Setup.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">
+                            <MadCap:annotation MadCap:createDate="2017-10-05T16:04:29.7172162-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="New SP1\r\n\r\nThis defaults from the Rent Rate Component, but does one override the other?" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:42:04.9982306-05:00">Usage</MadCap:annotation>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Identifies how the rate component is used. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">&lt;blank&gt;</li>
+                            <li class="ccAufzählung">Insurance – used with the Self-Insured Customer function, which prevents the addition of the rent component to the rental contract line if the customer is set up as Self-Insured (refer to topic <MadCap:xref href="Self-Insured Customers.htm">“Self-Insured Customers” on page 1</MadCap:xref>).</li>
+                            <li class="ccAufzählung">VAT</li>
+                            <li class="ccAufzählung">Fees</li>
+                            <li class="ccAufzählung">Surcharges</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">Refer to topic <MadCap:xref href="Rate Components.htm#_Ref354652420">“Rate Components” on page 1</MadCap:xref> for more information about using rate components.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc434929897"></a>Rent Component Prices</h3>
+        <p class="ccTextvorlage">Rent Component Prices are used to set up prices for the Rate Components of an item and for a specific Rate Code.</p>
+        <p class="ccTextvorlage">This may be a Tax or Insurance as well as a one-time invoicing, such as cleaning on return. This functionality is the same as Rental Rate Prices except the <span class="Bold">Rate Component Type</span> and <span class="Bold">Rate Component No</span>. fields determine the pricing for the rental components. Additionally, the <span class="Bold">Percentage of Item Rate</span> field allows for components to be set up as a percentage of the item’s rental price instead of defining a unit price (refer to topic <MadCap:xref href="Exercise Process a Rent Component Percentage.htm">“Exercise – Use Rate Component Percentages in Rent Order” on page 1</MadCap:xref>.)</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Items_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Rent Component Prices page </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.5    ">
+                <MadCap:annotation MadCap:createDate="2017-10-06T10:51:40.6272129-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="New 2017 SP1\r\n\r\nAlso, please check the demo data for accuracy" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T10:42:18.6209827-05:00">Item</MadCap:annotation> Rental Preconditions</h3>
+            <p class="ccTextvorlage">Preconditions can be assigned to specific items or item categories. These preconditions are used to ensure that the proper conditions are met prior to shipping a rental item to a customer. The base preconditions are set up in the <span class="Bold">Rental Preconditions</span> page (refer to topic <MadCap:xref href="Rental Setup.htm#Rental">“Rental Preconditions” on page 1</MadCap:xref>).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC REN/Items_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Rental preconditions assigned to an item</p>
+        </div>
+        <p class="ccTextvorlageaftertable">Refer to topic <MadCap:xref href="Item Shipment Preconditions.htm">“Item Shipment Preconditions” on page 1</MadCap:xref> for more information.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.5.1    ">Preconditions on Item Categories</h4>
+        <p>In the<span class="Bold"> Item Categories</span> page, click <span class="Bold">Actions &gt; Rental Preconditions</span> to assign a precondition to a specific item category. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Items_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Item Rental Precondition added to Audio Item Category</p>
+        <p class="ccTextvorlage">Any shipments posted with a precondition for the item category will be visible in the Item Shipment Precondition Log.</p>
+    </body>
+</html>

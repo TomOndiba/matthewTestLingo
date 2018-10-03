@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="724" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref427921852"></a><a name="_Ref427921864"></a><a name="_Ref427921871"></a><a name="_Toc435107497"></a>Order Bundles</h2>
+        <p class="ccTextvorlage">Order bundles are special FDC Work Orders which offer the ability to combine different routing lines of orders to a bundled Work Order line. By running the function <span class="Bold">Work Order Bundle &gt; Assemble Routing Lines</span> and selecting the desired lines, an FDC Work Order Bundle is created. Quantities and times that were posted on the Bundle Line (also referred to as the “0-Line”) will be distributed to all underlying Order Bundle lines. This is useful when the same routing lines of different orders are worked on together. The distribution occurs by the values of the fields from the work order (refer to topic <MadCap:xref href="Distribution.htm#_Ref428426463" class="RelLinkPageNumber">"Distribution" on page 1</MadCap:xref>).</p>
+        <p class="ccTextvorlage">In addition to posting to the Bundle Line, it is possible to post to the underlying Order Bundle lines.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/Order Bundles.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 361px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Order Bundle</p>
+        <p class="ccTextvorlage">Order Bundle lines are a copy of the original lines. Therefore, times and quantities that are captured at Order Bundle Lines are only visible on those. The origin lines do not contain any entries. With redirection, times can be transferred (refer to topic <MadCap:xref href="Redirection.htm#_Ref427921916" class="RelLinkPageNumber">"Redirection" on page 1</MadCap:xref>).</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc435107498"></a>Automatic Order Bundles via Concurrent Beginning</h3>
+            <p class="ccTextvorlage">The permission of concurrent beginning depends on the setting of the FDC Resource. For an automatic creation of Order Bundles, the <span class="Italics">Auto Order Bundle Creation</span> option must be selected in the <span class="Bold">Concurrent Beginning</span> field. Assuming all settings are set correctly, the software handles the creation of Order Bundles.</p>
+            <div class="ccDIV">
+                <p class="ccTextvorlageNoteheading">Note</p>
+                <p class="ccTextvorlageNotebody">An automatic bundle creation occurs on concurrence beginning.</p>
+            </div>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/Order Bundles_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 344px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: FDC Resource Card, Concurrent Beginning options</p>
+        <p class="ccTextvorlage">Selecting the <span class="Italics">Auto Order Bundle Creation</span> option automatically combines all concurrent routing lines of an order bundle for a resource (“on-the-fly”). The distribution is influenced by the time when an operation is added to the order bundle. When the FDC Resource reports the first routing line (A) at 8:00 and the next (B) at 16:00, routing line (B) receives proportionately less time of the total time of an order bundle. Internally, this is referred to as assembly time. The distribution by assembly time has an impact in addition to the normal rules of apportionment of time and quantity. The normally applicable distribution key to be used for automatic order bundle formation depends on the standard values in accordance with FDC Setup.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC FDC/Order Bundles_2.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 501px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: FDC Setup, Distribution</p>
+        <p class="ccTextvorlage">When the FDC Resource checks out one or more (concurrently checked in) routing lines (A, B, C..), the whole Order Bundle is checked out automatically. </p>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNoteheading">Important</p>
+            <p class="ccTextvorlageNotebody">It is possible to check in multiple routing lines, but it is only possible to check out one routing line, because internally the entire Order Bundle is checked out. If an employee tries to check out B or C too, after checking out A, he or she will receive an error message because internally only one check in stays active. This check in refers to the automatically created Order Bundle (not to the routing lines). The check out of one of the routing lines (A, B or C) means an internal check out of the Order Bundle. A label or a document referencing the automatically created Order Bundle can be printed on demand to be used as a creation indicator and for capturing the check out of the automatically created Order Bundle.</p>
+        </div>
+    </body>
+</html>

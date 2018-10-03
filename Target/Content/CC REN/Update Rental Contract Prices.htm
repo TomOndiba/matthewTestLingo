@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="865" MadCap:lastWidth="602" MadCap:fileTags="StatusFileTags.6 Needs to be Sent for Review" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref238975648"></a><a name="_Toc434929965"></a>Update Rental Contract Prices</h2>
+        <p class="ccTextvorlage">The “Update Rental Contract Prices” batch job is used to update prices on rental contracts that need price updates. This batch job can also be used to print a test report.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Update Rental Contract Prices.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Update Rental Contract Prices batch job</p>
+        <p class="ccTextvorlage">When the batch job is run to update contract prices, the program updates the contract value of rental items as specified and recalculates relevant amounts on the rental contract and on the rental items included. </p>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Options</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 95px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Update To Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Date up to which the prices are to be updated. The batch job will include contracts with next price update dates on or before this date.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Price Update %</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Price update for the rental item contract values in percentages.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Action</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Determines the action that occurs when the batch job is run:</p>
+                        <ul>
+                            <li class="ccAufzählung">Update Contract Prices – Performs the price update. </li>
+                            <li class="ccAufzählung">Print Only – Prints a test report based on the selected criteria. This report shows the contract numbers, customer numbers, contract amounts, price update percentages and any errors that occur.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">The price updates depend on the formula in the <span class="Bold">Price Update Period</span> field of the Service Contract Template, which is assigned in the <span class="Bold">Rental Mgt. Setup</span> page. This information is automatically transferred to the <span class="Bold">Next Price Update Date</span> and <span class="Bold">Price Update Period</span> fields on the rent order line.</p>
+        <p class="ccTextvorlage">The date in the <span class="Bold">Next Price Update Date</span> field on the rent order line must be reached before a change can be made to a price using this batch job. This date can be adjusted manually by entering a new date or changing the date formula in the <span class="Bold">Price Update Period</span> field. Both of these fields, and the <span class="Bold">Last Price Update Date</span> and <span class="Bold">Last Price Update %</span> fields, must be displayed using the “Choose Columns” function.</p>
+        <p class="ccTextvorlage">After running the function, the <span class="Bold">Last Price Update Date</span> and <span class="Bold">Last Price Update %</span> fields on the lines display the updated values.</p>
+        <p class="ccTextvorlage">The <span class="Bold">Rental Line Price History</span> page displays all price changes that have been made, by running the batch job or by manually changing the price on the line after shipping, but prior to invoicing. Manual changes to line discount percentages are also stored in this page.</p>
+        <p class="ccTextvorlage">The values in this page are also used to recalculate the total price on the rent order. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Update Rental Contract Prices_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Rental Line Price History with manual line discount and price change prior to invoicing</p>
+        <p class="ccTextvorlage">Based on the above criteria, calculations are made as follows:</p>
+        <ul>
+            <li class="ccAufzählungblau">If no invoicing has occurred, then the total rental time is recalculated.</li>
+            <li class="ccAufzählungblau">If a portion of a rent order has been invoiced, the system uses the price validity periods to calculate the total price. </li>
+        </ul>
+        <p class="ccAufzahlungblaunobullet">For example, in a year-long contract, if two months were invoiced each at 100.00 and three months each at 120.00, and the new price is 130.00, then the system calculates the remaining seven months each at 130.00; there is no pricing adjustment to the previously invoiced periods, even if the invoices are un-posted.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434929966"></a>Exercise – Run the Update Rental Contract Prices Batch Job</h3>
+        <p class="ccTextvorlage">On December 31, 2018, you receive a prepaid rent order from customer R-30000 for the 2019 time frame, to be paid in half year periods. As you create the order, you inform the customer that as of January 1, 2019, a 5% rate increase becomes effective, and that on July 1, 2019, a 2.5% rate increase will also occur. The customer accepts these terms and you process the orders after the accounting manager runs the “Update Rental Contract Prices” batch job as of January 1st and July 1st.</p>
+        <p class="ccDemoStepHeading">Create and Ship the Prepaid Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to create and ship the rent order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Set the Work Date to 12/31/18.</li>
+            <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-30000.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, use the “Choose Columns” function to show the <span class="Bold">Next Price Update Date</span>, <span class="Bold">Price Update Period</span>, <span class="Bold">Last Price Update Date</span>, and <span class="Bold">Last Price Update %</span> fields.</li>
+            <li class="ccTextvorlageNumberedList">In the lines, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Item</li><li class="ccTextvorlageNumberedList">No. = R-30000-01</li><li class="ccTextvorlageNumberedList">Quantity = 1</li><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Invoice Period = Half Year</li><li class="ccTextvorlageNumberedList">Prepaid = Yes</li><li class="ccTextvorlageNumberedList">Rental Start Date = 01/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 12/31/19</li><li class="ccTextvorlageNumberedList">Price Update Period = 6M</li><li class="ccTextvorlageNumberedList">Next Price Update Date = 01/01/19</li></ol></li>
+            <li class="ccTextvorlageNumberedList">Notice that the:<ul start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Rate Unit Price</span> field is 350.00</li><li class="ccTextvorlageNumberedList"><span class="Bold">Unit Price Total Rental Time</span> and <span class="Bold">Amount Total Rental Time</span> fields are 4200.00 (350 rate * 12 months)</li></ul></li>
+        </ol>
+        <p class="ccTextvorlage"> </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Update Rental Contract Prices_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Rent order with pricing update fields</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Close the Rent Order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Run the Update Rental Contract Prices Batch Job</p>
+        <p class="ccTextvorlage">Follow these steps to run the batch job:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under <span class="CCBausteinInhaltZchn">cc|rental</span>, click <span class="Bold">Periodic Activities &gt; Update Rental Contract Prices</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Update To Date</span> field, enter 01/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Price Update %</span> field, enter 5.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to run the batch job.</li>
+            <li class="ccTextvorlageNumberedList">Open the previously created rent order and notice that the:<ul start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Rate Unit Price</span> field is 367.50 (350 old rate * 5% = 17.5)</li><li class="ccTextvorlageNumberedList"><span class="Bold">Unit Price Total Rental Time</span> and <span class="Bold">Amount Total Rental Time</span> fields are 4410.00 (367.50 new rate * 12 months)</li><li class="ccTextvorlageNumberedList"><span class="Bold">Next Price Update Date</span> field is 7/1/2019, based on the date calculation in the <span class="Bold">Price Update Period</span> field</li><li class="ccTextvorlageNumberedList"><span class="Bold">Last Price Update Date</span> and <span class="Bold">Last Price Update %</span> fields show the updated information</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Update Rental Contract Prices_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Updated rental prices</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Show Price History</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Update Rental Contract Prices_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Pricing update in the Rental Line Price History page</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Invoice the Order</p>
+        <p class="ccTextvorlage">Follow these steps to invoice the order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field enter 01/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 06/30/19. </li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and notice that the line, totaling 2205.00 (4410.00 invoice total / 2 for the half year), is to be posted to the Rental Prepayment Account (5792).</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Update Rental Contract Prices_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Invoice for rent order with updated pricing</p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Close the open pages.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Run the Update Rental Contract Prices Batch Job</p>
+        <p class="ccTextvorlage">Follow these steps to run the batch job:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Change the Work Date to 06/30/19.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under <span class="CCBausteinInhaltZchn">cc|rental</span>, click <span class="Bold">Periodic Activities &gt; Update Rental Contract Prices</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Update To Date</span> field, enter 07/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Price Update %</span> field, enter 2.5.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+        </ol>
+        <div class="ccDIV">
+            <ol start="6">
+                <li class="ccTextvorlageNumberedList">Open the previously created rent order and notice that the: <ul start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Rate Unit Price</span> field is 376.69 (367.50 old rate + 2.5%)</li><li class="ccTextvorlageNumberedList"><span class="Bold">Unit Price Total Rental Time</span> and <span class="Bold">Amount Total Rental Time</span> fields are <MadCap:annotation MadCap:createDate="2017-10-03T14:59:59.7224372-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="Possible issue:\r\nValues were not updated - remained 4410.00\r\n\r\nI had to change these manually in the screen shot." MadCap:editor="NDOKS" MadCap:editDate="2017-11-02T14:29:39.7862921-05:00">4465.14</MadCap:annotation> (Six months at old rate of 367.50 (2205.00) + Six months at new rate of 376.69 (2260.14))</li><li class="ccTextvorlageNumberedList"><span class="Bold">Next Price Update Date</span> field is 1/1/2020, based on the date calculation in the <span class="Bold">Price Update Period</span> field</li><li class="ccTextvorlageNumberedList"><span class="Bold">Last Price Update Date</span> and <span class="Bold">Last Price Update %</span> fields show the latest update information</li></ul></li>
+            </ol>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC REN/Update Rental Contract Prices_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Invoice for rent order with updated pricing</p>
+        </div>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Show Price History</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Update Rental Contract Prices_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Updated price history</p>
+    </body>
+</html>

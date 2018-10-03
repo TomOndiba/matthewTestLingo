@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="913" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434332537"></a>Use Document Texts for Labels</h2>
+        <p class="ccTextvorlage">Labels (Label = Caption) for fields can be entered as Text in a Document Layout Field or as Document Text. The advantage of using a Document Text is that it can be translated to several languages that can then be used in several different Document Layouts.</p>
+        <p class="ccTextvorlage">This example reviews Document Text used for labels in the Order Confirmation document layout.</p>
+        <p class="ccDemoStepHeading">Review and Change Document Text for Shipment Date</p>
+        <p class="ccTextvorlage">Follow these steps to review document text:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the Configuration menu, click <span class="Bold">Document Texts</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate and open the SHIPMENTDATE document text.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Use Document Texts for Labels.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.30in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Document Text for Shipment Date</p>
+        <p class="ccTextvorlageNumberedListnonumber">Document Texts are created using a Code and a Text. The Text should be either English or the Local language; the lines of the Document Text consists of the translation in the different languages. The system is programmed to use the Text of the line matching the language of the report and if no match, the Text from the header will be used.</p>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lines</span> FastTab, in the <span class="Bold">Text</span> field for the line of the local language, add the language code to the end of the text (in this case, “Shipment Date ENG”) to see the change in the printout.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Text</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Review Document Text in Document Layout</p>
+        <p class="ccTextvorlage">To use a Document Text in a report, select <span class="Italics">Document Text</span> in the <span class="Bold">Type</span> field of the Document Layout Fields and then enter the code in the <span class="Bold">Document Text Code</span> field.</p>
+        <p class="ccTextvorlage">Follow these steps to review document text in the document layout:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the Configuration menu, click <span class="Bold">Document Layouts</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate and open the OC-01, Order Confirmation, Document Layout.</li>
+            <li class="ccTextvorlageNumberedList">With the first line selected in the <span class="Bold">Sections</span> FastTab, click <span class="Bold">Line &gt; Fields</span>. </li>
+            <li class="ccTextvorlageNumberedList">Locate the line for “Shipment Date Label”.</li>
+            <li class="ccTextvorlageNumberedList">Note the following:<ol start="1"><li class="ccTextvorlageNumberedList"><span class="Bold">Type</span> = Document Text</li><li class="ccTextvorlageNumberedList"><span class="Bold">Document Text Code</span> = SHIPMENTDATE</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Use Document Texts for Labels_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Document Text for Shipment Date Label in Document Layout</p>
+        <ol start="6">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Run Report</span> to view the report changes.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Show Request Page</span> check box and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the request page, click <span class="Bold">Preview</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DC/Use Document Texts for Labels_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Modified Document Text for Shipment Date updated in Order Confirmation report</p>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Print Preview</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout Fields</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Document Layout</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Go back to the Document Text for SHIPMENTDATE and remove the text (e.g., ENG) added to the end of the local language text.</li>
+        </ol>
+    </body>
+</html>

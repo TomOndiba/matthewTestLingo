@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">Job Card</h2>
+        <p>A significant number of fields and actions have been added to the Job Card for Construction Works Processing. Additionally, the information dynamically changes depending on the Structure Type of the Job (Bill of Quantities, Process and Controlling, or BoQ and PaC). </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Job Structure Type = Bill of Quantities (BoQ)</h3>
+        <p>The fields and actions on the Job Card that are specific to jobs with <span class="Bold">Structure Type</span> = <span class="Italics">Bill of Quantities</span> are described in this section.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Project and Job Structure_4.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Job Card for Structure Type = Bill of Quantities</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">General FastTab</h4>
+        <p>The fields on the <span class="Bold">General</span> FastTab that are specific to Construction Works Processing are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0" style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 151px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Structure Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if the job is for calculating (Bill of Quantities) or processing (Processing and Controlling), or both (BoQ and PaC).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Subsection</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if this job is a category of another job structure; for informational purposes only.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Person Responsible 3 / Person Responsible 4</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Two additional people can be assigned in the Construction Works Processing job. These individuals are automatically assigned to the Job Team.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Project No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the number of the related Project.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">BoQ Blocked by</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Indicates a user ID who blocked the BoQ by using the calculation statistics vernier adjustment.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Posting FastTab</h4>
+        <p>The field on the <span class="Bold">Posting</span> FastTab that is specific to Construction Works Processing is described in the following table.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Project and Job Structure_5.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Job Card, Posting FastTab</p>
+        <table class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0" style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 104px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Invoice Model</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Indicates how invoicing will be handled for this job. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Performance per Period – used to invoice the service that was delivered since the last invoice was created.</li>
+                            <li class="ccAufzählung">Cumulative Invoicing – used to invoice all delivered services including services from previous invoices. For example:<ul><li>1st invoice 10 pcs at 100 = 1000, amount to pay 1000</li><li>2nd invoice 30 pcs at 100 = 3000, amount to pay 2000</li><li>3rd invoice 100 pcs at 100 = 10000, amount to pay 7000</li></ul></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">Planning FastTab</h4>
+        <p>The fields on the <span class="Bold">Planning</span> FastTab that are specific to Construction Works Processing are described in the following table.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Project and Job Structure_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Job Card, Planning FastTab</p>
+        <table class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0" style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 125px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Unit Price Rounding Precision</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the <span class="Bold">Measurement &amp; Construction Works</span> FastTab of the <span class="Bold">Jobs Setup</span> page, but can be changed as needed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">OZ Mask</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p>Defaults from the <span class="Bold">BoQ Manager</span> FastTab of the <span class="Bold">Jobs Setup</span> page, but can be changed as needed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">OZ Pos. Increase with</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the <span class="Bold">BoQ Manager</span> FastTab of the <span class="Bold">Jobs Setup</span> page, but can be changed as needed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">OZ Space instead of Null</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the <span class="Bold">BoQ Manager</span> FastTab of the <span class="Bold">Jobs Setup</span> page, but can be changed as needed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Free OZ Allowed</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the <span class="Bold">BoQ Manager</span> FastTab of the <span class="Bold">Jobs Setup</span> page, but can be changed as needed.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.4    ">Calculation FastTab</h4>
+            <p>The <span class="Bold">Calculation</span> FastTab is used specifically for Construction Works Processing and contains one field that relates to the integration with Alloy Management: the <span class="Bold">Alloy Surcharge Date</span> field, which defines the date for calculating alloy surcharges.</p>
+            <p>
+                <img src="../Resources/Images/CC PRCS-BQ/Project and Job Structure_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Job Card, Calculation FastTab</p>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.5    ">Date FastTab</h4>
+        <p>The <span class="Bold">Date</span> FastTab is used specifically for Construction Works Processing.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Project and Job Structure_8.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Job Card, Date FastTab</p>
+        <p>The fields on this FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0" style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 151px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Submission Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date of submission.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Submission Time</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the time of submission.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Quote Valid Until</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date until the quote is valid.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Quote delivered Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date until the quote must be delivered.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Quote Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date of the submitted quote.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Negotiation Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date of negotiation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Order Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date of the order receipt.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Price Fixing Completion</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates whether the prices are fixed until the end of the construction period.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Price Fixing Wage to</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date until the wage prices are fixed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Price Fixing Material to</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date until the material prices are fixed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Final Invoice Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the date of the submitted final invoice.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.6    ">Measurement FastTab</h4>
+        <p>The <span class="Bold">Measurement</span> FastTab is used specifically for Construction Works Processing; </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Project and Job Structure_9.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Job Card, Measurement FastTab</p>
+        <p>The fields on this FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0" style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 132px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Measurement Amount (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the Total Amount based on all related Measurement Lines. This is a calculated field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Measurement Level Required</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the <span class="Bold">Measurement &amp; Construction Works</span> FastTab of the <span class="Bold">Jobs Setup</span> page, but can be changed as needed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Measurement Location Required</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Defaults from the <span class="Bold">Measurement &amp; Construction Works</span> FastTab of the <span class="Bold">Jobs Setup</span> page, but can be changed as needed.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.7    ">Navigate Tab</h4>
+        <p>The actions on the <span class="Bold">Navigate</span> tab that are specific to Construction Works Processing are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0" style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 127px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Action</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">Statistic</td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p>Opens the <span class="Bold">Calculation Statistics</span> page, which provides detailed calculation information.</p>
+                        <p>Refer to section <MadCap:xref href="Detailed Calculation.htm#View">“View Calculation Statistics and Edit Vernier Adjustments” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">Alloy Statistic</td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Opens the <span class="Bold">Alloy Statistics</span> page, which is used with the <span class="CCBausteinInhaltZchn">cc|alloy management</span> integration with Construction Works Processing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText">
+                            <MadCap:annotation MadCap:createDate="2018-06-03T16:25:08.1432906-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="Decide how to handle this now in different manual." MadCap:editor="NTadajewski0100" MadCap:editDate="2018-06-03T16:25:18.6888282-05:00">Quote Managers</MadCap:annotation>
+                        </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p>Opens the <span class="Bold">Quote Manager List</span> page.</p>
+                        <p>Refer to topic <MadCap:xref href="../CC PR/cc pqm.htm">“cc|purchase quotes manager” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Alloy Quotations</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p>Opens the <span class="Bold">Job Alloy Quotations</span> page, which is used with the <span class="CCBausteinInhaltZchn">cc|alloy management</span> integration with Construction Works Processing.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">EFB Calculation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Opens the <span class="Bold">EFB Calculation</span> page, which is used with the EFB 221 Report.</p>
+                        <p class="ccTabellenText" MadCap:conditions="">Refer to section <MadCap:xref href="EFB Calculation.htm">“EFB Calculation” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Submission Ranking</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p>Opens the <span class="Bold">Submission Ranking</span> page, which is used to enter the submission results.</p>
+                        <p>Refer to section <MadCap:xref href="Submission Ranking.htm">“Submission Ranking” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Execution Units</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p>Opens the <span class="Bold">Execution Units</span> page, which is used to define placing units.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Measurement Locations</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p>Opens the <span class="Bold">Measurement Locations</span> page, which is used to manage location codes for measurement recordings.</p>
+                        <p>Refer to section<MadCap:xref href="Measurement Management.htm">“Measurement Management” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Measurement Levels</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p>Opens the <span class="Bold">Measurement Levels</span> page, which is used to manage level codes for measurement recordings.</p>
+                        <p>Refer to section<MadCap:xref href="Measurement Management.htm">“Measurement Management” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Job Discounts</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p>Opens the <span class="Bold">Job Discounts</span> page, which is used for lump sum discounts in sales invoices. In the Sales Order/Invoice, use the “Get Job Discounts” function to add these job discounts to the sales line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Measurement Summaries</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p>Opens the <span class="Bold">Measurement Summaries</span> page, which shows all sales invoice-related summaries.</p>
+                        <p>Refer to section<MadCap:xref href="Measurement Management.htm">“Measurement Management” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Get Template</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Opens the <span class="Bold">CS Invoicing Templates</span> page, which is used for Invoice Calculation.</p>
+                        <p class="ccTabellenText" MadCap:conditions="">Refer to section  <MadCap:xref href="Invoicing Template.htm">“Invoicing Template” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">CS Invoice Calculation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Opens the <span class="Bold">CS Invoicings</span> page, which is used to define cost shares, deductions and invoice discounts.</p>
+                        <p class="ccTabellenText" MadCap:conditions="">Refer to section <MadCap:xref href="Construction Invoicing.htm">“Construction Invoicing” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">BoQ Position List</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Opens the <span class="Bold">BoQ Position List</span> page, which includes the complete BoQ.</p>
+                        <p class="ccTabellenText" MadCap:conditions="">Refer to section <MadCap:xref href="BoQ Position List.htm">“BoQ Position List” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Fast Calculation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Opens the <span class="Bold">Fast Calculation</span> page, which provides additional fields for various cost types which automatically create lines in the Budget Calculation.</p>
+                        <p class="ccTabellenText" MadCap:conditions="">Refer to section <MadCap:xref href="Fast Calculation.htm">“Fast Calculation” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Measurement List</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p>Opens the <span class="Bold">Measurement List</span> page, which provides a summary about measurements.</p>
+                        <p>Refer to section <MadCap:xref href="Measurement List.htm">“Measurement List” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">GAEB List</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Opens the <span class="Bold">GAEB List</span> page, which displays all GAEB files that have been imported into the job.</p>
+                        <p class="ccTabellenText" MadCap:conditions="">Refer to section <MadCap:xref href="BoQ Manager.htm">“BoQ Manager” on page 1</MadCap:xref> for more information.</p>
+                        <p class="ccTabellenText" MadCap:conditions=""> </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Job Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Opens the <span class="Bold"><MadCap:annotation MadCap:createDate="2018-06-28T12:51:17.7042584-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="Per Rico:\r\n\r\n&quot;LV Job Texts&quot; should be &quot;BoQ Job Texts&quot;" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-06-28T12:51:22.3720896-05:00">LV Job Texts</MadCap:annotation> - Project Description</span> page, which is used to describe the specification.</p>
+                        <p class="ccTabellenText" MadCap:conditions="">Refer to section <MadCap:xref href="GAEB Card.htm#Navigate">“Navigate Tab” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Contract Rules Top</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Opens the <span class="Bold"><MadCap:annotation MadCap:createDate="2018-06-28T12:51:28.0960240-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="Per Rico:\r\n\r\n&quot;LV Job Texts&quot; should be &quot;BoQ Job Texts&quot;" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-06-28T12:51:32.4795983-05:00">LV Job Texts</MadCap:annotation> - Contractual Regulation Start</span> page, which is used to define header contract rules.</p>
+                        <p class="ccTabellenText" MadCap:conditions="">Refer to section <MadCap:xref href="GAEB Card.htm#Navigate">“Navigate Tab” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Contract Rules Bottom</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Opens the <span class="Bold"><MadCap:annotation MadCap:createDate="2018-06-28T12:55:00.8856272-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="Per Rico:\r\n\r\n&quot;LV Job Texts&quot; should be &quot;BoQ Job Texts&quot;" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-06-28T12:55:01.6430151-05:00">LV Job Texts</MadCap:annotation> - Contractual Regulation End</span> page, which is used to define footer contract rules.</p>
+                        <p class="ccTabellenText" MadCap:conditions="">Refer to section <MadCap:xref href="GAEB Card.htm#Navigate">“Navigate Tab” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.8    ">Actions Tab</h4>
+        <p>The actions on the <span class="Bold">Actions</span> tab that are specific to Construction Works Processing are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0" style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 126px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Action</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">Create PaC Job</td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p>Creates a PaC Job for the Project/BoQ Job.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">Calculate Rate Unit Cost</td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Calculates the rate unit cost based on the Budget Calculation and the EFB Surcharges.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText">Import GAEB </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Opens the <span class="Bold">GAEB File Import</span> page, from where a GAEB file can be selected for import into the job structure (refer to section <MadCap:xref href="Import GAEB File.htm">“Import GAEB File” on page 1</MadCap:xref> for more information).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Export GAEB </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Opens the <span class="Bold">Data Exchange Phase</span> dialog where the correct phase is selected and then creates a GAEB Export file for the selected phase.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Get GAEB Import </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Opens the GAEB List, from which an existing GAEB record can be imported into the job structure. Used when a GAEB file was imported first into the GAEB list instead of a job; prevents the unnecessary creation of another GAEB record.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Create GAEB Export</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Opens the <span class="Bold">Data Exchange Phase</span> dialog where the correct phase is selected and then creates a GAEB Export Manager for the selected phase.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Create Measurement Document</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1" MadCap:conditions="">
+                        <p class="ccTabellenText" MadCap:conditions="">Creates a new measurement document and provides the ability to copy the complete BoQ into the document.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.9    ">Report Tab</h4>
+        <p>The <span class="Bold">Report</span> tab contains the EFB-Price 221 (1a - 311.a) report, which is used with the EFB Calculation (refer to section <MadCap:xref href="EFB Calculation.htm">“EFB Calculation” on page 1</MadCap:xref>).</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="Job"></a>Job Structure Type = Process and Controlling (PaC)</h3>
+        <p>All fields on the Job Card with <span class="Bold">Structure Type</span> = <span class="Italics">Process and Controlling</span> are either the same as the standard <span class="CCBausteinInhaltZchn">cc|project</span> Job Card or from the BoQ Job – there are no fields specific to this structure type. The same is true for the actions, except for three additional ones described below.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Project and Job Structure_10.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Job Card for Structure Type = Process and Controlling</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.2.1    ">Navigate Tab</h4>
+            <p>The actions on the <span class="Bold">Navigate</span> tab that are specific to Construction Works Processing are described in the following table.</p>
+            <table class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0" style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');">
+                <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 107px;" />
+                <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" style="width: 492px;" />
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                            <p class="ccTebellenuberschrift">Action</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                            <p class="ccTebellenuberschrift">Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                        <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1" MadCap:conditions="">Allocated Jobs</td>
+                        <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1" MadCap:conditions="">
+                            <p>Opens the <span class="Bold">Allocated Jobs</span> page, which includes all related BoQ Jobs.</p>
+                            <p>Refer to section <MadCap:xref href="PaC Jobs.htm">“PaC Jobs” on page 1</MadCap:xref> for more information.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                        <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1" MadCap:conditions="">
+                            <p class="ccTabellenText" MadCap:conditions="">Structural Plan</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1" MadCap:conditions="">
+                            <p>Opens the <span class="Bold">PaC Structural Plan</span> page, which is used for creating and planning the job structural plan.</p>
+                            <p>Refer to section <MadCap:xref href="PaC Jobs.htm">“PaC Jobs” on page 1</MadCap:xref> for more information.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="ccTextvorlagenospace"> </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.2    ">Actions Tab</h4>
+        <p>The action on the <span class="Bold">Actions</span> tab that is specific to the PaC Job in Construction Works Processing is described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0" style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 106px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Action</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1" MadCap:conditions="">Assign BoQ</td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1" MadCap:conditions="">
+                        <p>This action assigns an existing BoQ Job to the PaC Job.</p>
+                        <p>Refer to section <MadCap:xref href="PaC Jobs.htm">“PaC Jobs” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="996" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    ">Setup</h3>
+            <p>This section describes the setup necessary to use <span class="CCBausteinInhaltZchn">cc|process manufacturing</span> functionality in <span class="CCBausteinInhaltZchn">cc|configure to order</span>.</p>
+            <div class="ccDIV">
+                <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Configure to Order Setup</h4>
+                <p>On the <span class="Bold">Manufacturing</span> FastTab of the <span class="Bold">Configure to Order Setup</span> page, the <span class="Bold">Certify New Prod. Structure</span> check box determines what happens when a new Production Structure is created from a document or BOM: </p>
+                <ul>
+                    <li class="ccAufzählungblau">If selected, the Production Structure will be certified and the new item will get a newly generated Routing and Production BOM. The Production Structure, Routing and Production BOM will be linked to the new item.</li>
+                    <li class="ccAufzählungblau">If not selected, a question appears asking if the new Production Structure should be opened. This allows for modifications to the recipes prior to the manual certification of the Production Structure, plus the ability to omit the creation of new Routing/Production BOM.</li>
+                </ul>
+                <p class="ccBildabstand">
+                    <img src="../Resources/Images/CC CTO/cc pm_Setup.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+                </p>
+                <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Configure to Order Setup, Certify New Prod. Structure field</p>
+            </div>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">BOM Lines</h4>
+        <p>In the BOM lines of <span class="CCBausteinInhaltZchn">cc|configure to order</span> (Master BOM, Document BOM and Construction BOM), the following fields are used with the Production Structure in <span class="CCBausteinInhaltZchn">cc|process manufacturing</span>:</p>
+        <ul>
+            <li class="ccAufzählungblau">Type Production Structure – Specifies what should happen with each line if it gets transferred to a Production Structure. The options are: Share of Recipe, Tool, Main Recipe, and Insert. These options are the same as the options in the <span class="Bold">Type</span> field in the Production Structure lines, thus providing the links to the <span class="CCBausteinInhaltZchn">cc|process manufacturing</span> functionality.</li>
+        </ul>
+        <div class="ccDIV">
+            <p class="ccTextvorlageNumberedListNoteHeadingIndent">Note</p>
+            <p class="ccTextvorlageNumberedListNoteBodyIndent">When using Share of Recipe or Main Recipe, the <span class="Bold">Quantity per</span> field must be used instead of the <span class="Bold">Quantity</span> field to properly define the Share percentage and therefore, create the Item/Production Structure.</p>
+        </div>
+        <ul>
+            <li class="ccAufzählungblau">Type – The <span class="Italics">Production BOM</span> option allows for the inclusion of a Production BOM  in the BOM lines.</li>
+        </ul>
+    </body>
+</html>

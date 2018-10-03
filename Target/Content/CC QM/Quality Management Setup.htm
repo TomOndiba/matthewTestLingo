@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref314490131"></a><a name="_Toc442095698"></a>Quality Management Setup</h3>
+        <p class="ccTextvorlage">In the <span class="Bold">Quality Management Setup</span> page, basic <span class="CCBausteinInhaltZchn">cc|quality management</span> settings are defined as well as number series for the individual areas of the test order process.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Quality Management Setup.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Quality Management Setup page</p>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">General</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" cellspacing="0" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 146px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Order Unblocks Test Device </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, test devices are automatically released immediately after finishing a test order. By finishing the test order, the status of the test device is set to <span class="Italics">Certified</span>. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Use Without Expected Value</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the <span class="Bold">Valid Determined Value</span> field on the <span class="Bold">Value Recording</span> page is calculated based on the <span class="Bold">Upper Limit</span> and/or <span class="Bold">Lower Limit</span> fields and therefore, the value in the <span class="Bold">Expected Value</span> field is not considered. </p>
+                        <p class="ccTabellenText">Refer to topic <MadCap:xref href="Test Plans.htm#Interpre">“Interpret Determined Value” on page 1</MadCap:xref>for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prod. Test Order Creation</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines whether and when Test Orders for production are created automatically. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Manually – Test Orders are not created automatically.</li>
+                            <li class="ccAufzählung">Prod. Order Release – Test Orders are automatically created when a production order is released. </li>
+                        </ul>
+                        <p class="ccAufzählung">This function does not work when a Released Production Order is created manually. Additionally, item tracking must exist on the main production order line and any component lines (if required) in order to release the order.</p>
+                        <ul>
+                            <li class="ccAufzählung">First Output – Test Orders are automatically created when the first output is posted for a released production order.</li>
+                        </ul>
+                        <div class="ccDIV">
+                            <p class="ccTabellenTextNoteheading">NOTE</p>
+                            <p class="ccTabellenTextNotebody">This function requires the Test Plan Setup for production-related test orders (refer to topic <MadCap:xref href="Test Plan Setup on Items.htm">“Test Plan Setup on Items” on page 1</MadCap:xref>). </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Storage Path - Ext. Documents</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Specifies a default path where Test Devices (Certificates), Test Orders (External Document) and Test Plans (External Documents) are to be stored. The lookup opens a folder selection page to identify where all external documents should be stored.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Document Storage Point</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines if the document is stored as either a BLOB (internal) in the records or in a path on the network (external).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Default Blocked Item Location Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Blocked location where a lot will be automatically transferred if the Inspection Result on its test order is <span class="Italics">Items are not OK</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lot-/Serial No.-Status on Test Order Release</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Status that a lot- or serial number must inherit when a test order is <span class="Italics">Released</span>; used with the <span class="Bold">Adjust Lot Status on Test</span> field in Test Plan Setup (refer to topic <MadCap:xref href="Test Plan Setup on Items.htm">“Test Plan Setup on Items” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lot-/Serial No.-Status on Test Order Finish</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Status that a lot- or serial number must inherit when a test order is <span class="Italics">Finished</span>; used with the <span class="Bold">Adjust Lot Status on Test</span> field in Test Plan Setup (refer to topic <MadCap:xref href="Test Plan Setup on Items.htm">“Test Plan Setup on Items” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Inventory Overview Display</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines whether the <span class="Bold">Quantity</span> field on the <span class="Bold">Inventory Overview</span> page is displayed in the current Unit of Measure or the Base Unit of Measure from the Item Card.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Default 8D Template No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Indicates the default template to be used when creating 8D Reports (refer to topic <MadCap:xref href="8D Template.htm">“8D Template” on page 1</MadCap:xref>).</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Use Unspecified Status on Test Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, unspecified statuses can be used on Test Orders (refer to topic <MadCap:xref href="Unspecified Inspection Result on Test Order.htm">“Unspecified Inspection Result on Test Order” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Retain Sample Status Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the status that will be used for the retained sample, which is created with a new lot number from the posted lot output/shipment (refer to topic <MadCap:xref href="Retain Sample Management.htm">“Retain Sample Management” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Sched. Dummy Item No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the dummy item number that will be used for the Test Order Scheduling process (refer to topic <MadCap:xref href="Test Order Scheduling.htm">“Test Order Scheduling” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Default Sched. Work Center No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the default work center number that will be used for the Test Order Scheduling process (refer to topic <MadCap:xref href="Test Order Scheduling.htm">“Test Order Scheduling” on page 1</MadCap:xref>). This Work Center will be selected for rescheduling Test Orders based on system date plus Wait Time , when no testing activity is assigned.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1" MadCap:conditions="">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Update From Certified Plans</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p>Determines whether the latest valid Certified Test Plan is used for copying or all other Statuses are considered as well when running the Update Test Plans function in Test Properties or Test Property Sets. Refer to topic<MadCap:xref href="Mass Updates of Test Plans.htm">“Mass Updates of Test Plans” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlageaftertable">On the <span class="Bold">Numbering</span> FastTab, number series are defined for test properties, test property sets, test devices, test plans, test orders, stability tests, 8D reports, sample occurrences, test incidents and simulated orders. </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Product Version Information</h4>
+            <p class="ccTextvorlage">On the ribbon, click <span class="Bold">About</span> to display the current product version information.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Quality Management Setup_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Product version information accessed by clicking About on the ribbon</p>
+        </div>
+    </body>
+</html>

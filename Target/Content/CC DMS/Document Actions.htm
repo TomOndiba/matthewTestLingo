@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref425177186"></a><a name="_Ref425177975"></a><a name="_Ref425441763"></a><a name="_Toc434330883"></a>Document Actions</h2>
+        <p class="ccTextvorlage">The upload and modification (including delete) of documents can be done directly by the user or with the help of a queue. The upload type is configured on the content type, or in the DMS Setup. The entry types “Edit MetaData” and “Delete Documents” depend on this configuration for the upload type, as well (refer to topic <MadCap:xref href="Document Entries.htm#_Ref425437295">“Document Entries” on page 1</MadCap:xref>). Both actions are processed directly by the user or with the help of a queue. The user rights for the document library (New, Modify, Delete) are checked when performing the action.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC DMS/Document Actions.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 198px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Client and Queue</p>
+        <p class="ccTextvorlage">The <span class="Bold">direct upload</span> of the DocumentBox is asynchronous, in order to let the user modify and work with the record. Thereby the page should not be closed while uploading the document into SharePoint to avoid unexpected errors with the RoleTailored Client. The direct upload processes the document in consideration of the user’s context, therefore changes by a user signed into  Microsoft Dynamics NAV can be overwritten by User Credential settings in <span class="CCBausteinInhaltZchn">cc|dms</span>. The user should have appropriate rights to upload, modify or delete the documents in SharePoint.</p>
+        <p class="ccTextvorlage">When uploading a document with the <span class="Bold">queue</span>, the document will be copied into a Microsoft Dynamics NAV table (Document Entry) and Navision Application Server (NAS) must be configured in the Microsoft Dynamics NAV Server Management Administration to run the “DMS - NAS Start Up” codeunit. The service user (NAS) context will be used for processing, and is not translated by any user DMS credential configuration. Any actions of the NAS will be tracked by DMS Protocol Entries (refer to topic <MadCap:xref href="DMS Setup.htm#_Ref425339961">“DMS Setup” on page 1</MadCap:xref>).</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">When uploading a new document or modifying the MetaData, depending on the configuration (refer to the “Define MetaData” field in topic <MadCap:xref href="Content Type.htm">“Content Type” on page 1</MadCap:xref>), a dialog opens to set the MetaData before performing the action. When defining and editing the MetaData, colors are used for field descriptions and field values to highlight the possibilities. With the “Show Extended Fields” function, all fields that have configurations with <span class="Bold">Visibility</span> = <span class="Italics">Extended</span> are shown.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC DMS/Document Actions_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Define, Show and Edit MetaData Dialog</p>
+        </div>
+        <p class="ccTextvorlage">The color codes are defined as follows:</p>
+        <ul>
+            <li class="ccAufzählungblau">Red – A value is necessary, the field must not be blank</li>
+            <li class="ccAufzählungblau">Blue – An option is configured to select any value (lookup)</li>
+            <li class="ccAufzählungblau">Grey – The value is not editable</li>
+        </ul>
+        <p class="ccTextvorlage">Errors while uploading, modifying or deleting are tracked in the document entries.</p>
+        <p class="ccTextvorlage">If a value is not editable, must contain a value and the default value is empty, the field becomes editable automatically to let the user enter any value before uploading or updating.</p>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:fileTags="StatusFileTags.6 Needs to be Sent for Review" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434929946"></a>Exercise – Sell a Rented Truck to a Customer</h2>
+        <p class="ccTextvorlage">On February 3, 2019 customer Tanner Transport (R-20000) rents a truck for approximately two months because the company is short of transportation vehicles at that time.</p>
+        <p class="ccTextvorlage">When the customer receives the March 3rd invoice, they realize that they will be in need of the truck for a much longer period of time and the one that is rented meets all their needs. The customer asks to buy the truck at the end of the rental period as a used one instead of renting it any longer.</p>
+        <p class="ccDemoStepHeading">Create a Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to create a rent order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-20000.</li>
+            <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Rental</span> FastTab and enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Rental Start Date = 02/03/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 03/31/19</li><li class="ccTextvorlageNumberedList">Prepaid = Yes</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the first line of the <span class="Bold">Lines</span> FastTab, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Item</li><li class="ccTextvorlageNumberedList">No. = R-20000-01</li><li class="ccTextvorlageNumberedList">Quantity = 1</li><li class="ccTextvorlageNumberedList">Rate Unit Price = add if values are missing on Item or Rate Component lines</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Shipment</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Select Entries</span>.</li>
+            <li class="ccTextvorlageNumberedList">Note which serial number is selected and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/03/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 03/02/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> and accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">Open and post the Service Invoice Rental.</li>
+            <li class="ccTextvorlageNumberedList">Set the Work Date to 03/03/19.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon of the Rent Order, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 03/03/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 04/02/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> and accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">Open and post the Service Invoice Rental.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Sell the Rented Truck</p>
+        <p class="ccTextvorlage">Follow these steps to sell the rented truck from the Rent Order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 04/02/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rental Return Date</span> field on the rental item line, enter 04/02/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Return Qty. to Receive</span> field, enter 1.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Reopen</span>.</li>
+            <li class="ccTextvorlageNumberedList">Delete any unposted One-Time Invoicing positions for services to be performed on returned items, for example, a charge to clean the rented item is no longer applicable because the item will not be physically returned to the rental company.</li>
+            <li class="ccTextvorlageNumberedList">Use the “Choose Columns” function to add the <span class="Bold">Sell Item from Rent</span> field to the <span class="Bold">Lines</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Sell Item from Rent</span> check box on the rental item line.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Functions &gt; Sales Allocation</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Sell a Rented Truck.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: <MadCap:annotation MadCap:createDate="2017-09-30T20:57:21.1640355-05:00" MadCap:creator="NDOKS" MadCap:initials="ND" MadCap:comment="In 2017, the Sales Price field is automatically populated with the price from the rental line. Is that correct? In 2016, it was 0.00.\r\n\r\nIs it ok that now it's populated; was that done intentionally?" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-08-24T11:13:26.6520169-05:00">Sales from Rental page</MadCap:annotation></p>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Use Charge</span> check box.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Sales Price</span> field, enter the sales price of the truck.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Chargeable Rental Profit</span> amount.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Sell a Rented Truck_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Rental Entry Select page</p>
+        <ol start="12">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Actions &gt; Charge All</span> to select the <span class="Bold">Charge to Sales Price</span> check box on each line. </li>
+        </ol>
+        <p class="ccTextvorlageNumberedListNoteHeadingIndent">Note</p>
+        <p class="ccTextvorlageNumberedListNoteBodyIndent">The <span class="Bold">Charge to Sales Price</span> check box can be selected/cleared manually on each line as well.</p>
+        <ol start="13">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>. Notice that the <span class="Bold">Sales Amount (per Unit)</span> and <span class="Bold">Sales Amount (Qty.)</span> fields now contain the <span class="Bold">Sales Price</span> minus the amounts selected for charge.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Sales Out of Rental.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Sale from Rental page with chargeable amounts applied</p>
+        <ol start="14">
+            <li class="ccTextvorlageNumberedList">Repeat steps 9–13 for Chargeable Rate Part Profit and Chargeable One Time Profit as needed.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Sale from Rental</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Confirm that the serial number is correct and then click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>. Notice the following:<ul start="14"><li class="ccTextvorlageNumberedList">The receipt is processed on the original item line (and any relevant rate components).</li><li class="ccTextvorlageNumberedList">A new Sales line is added that contains the calculated Sales Price as the Unit Price.</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Sell a Rented Truck_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Rent Order after rental item sales processing</p>
+        <ol start="21">
+            <li class="ccTextvorlageNumberedList">Select the Sales line and then on the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Select Entries</span>.</li>
+            <li class="ccTextvorlageNumberedList">Confirm that the serial number originally rented is selected and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>. The following message appears:</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Sell a Rented Truck_3.png" style="visibility: visible;mso-wrap-style: square;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Customer No. change confirmation request</p>
+        <ol start="27">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to change the Customer No. on the service item from the Internal Customer to the customer that is purchasing the item.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 04/02/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 04/02/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and notice that item R-20000-01 appears on the line with the calculated Sales Allocation amount as the unit price.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Sell a Rented Truck_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Sales invoice for the sold item</p>
+        <ol start="35">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+        </ol>
+        <p class="ccTextvorlage">This exercise showed how to process the sale of rented item that occurred when the rental period ended. Depending on when/how the return is processed, there are different sales invoicing situations:</p>
+        <ul>
+            <li class="ccAufzählungblau">If rent revenues were invoiced past the Rental Return Date, the system will create a Credit Memo on invoicing.</li>
+            <li class="ccAufzählungblau">If invoicing has not yet reached the Rental Return Date, the system will add a sales position on the next Invoice (which then can be included with the Sales Invoicing).</li>
+            <li class="ccAufzählungblau">If the return was already posted, manually create a Sales Order from the Rent Order by clicking <span class="Bold">Actions &gt; Create Sales Order</span> on the ribbon.</li>
+        </ul>
+    </body>
+</html>

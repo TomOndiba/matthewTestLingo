@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="888" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434929908"></a>Rent Quote Positions</h2>
+        <p class="ccTextvorlage">In the Rent Quote, users can enter positions to be offered for rent (items) and also positions to be sold (items, resources, and G/L accounts) along with the rental. </p>
+        <p class="ccTextvorlage">Only items that have the <span class="Bold">Rent Item</span> field set to <span class="Italics">Yes</span> on the Item Card can be rented; items without this attribute can be sold only. </p>
+        <p class="ccTextvorlage">Sales positions are entered the same as a regular sales line while the rental positions have more requirements. </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434929909"></a>Exercise – Record a Sales Position on a Rent Quote</h3>
+        <p class="ccTextvorlage">Follow these steps to fill in a sales position on the rent quote:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|rental</span><span class="Bold"> &gt; Contract Management &gt; Rent Quotes</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Sell-to Customer No.</span> field, enter the customer number.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, leave the <span class="Bold">Rental Position</span> set to <span class="Italics">Sales</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Type</span> field, enter <span class="Italics">Item</span>, <span class="Italics">Resource</span> or <span class="Italics">G/L Account</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter the relevant sales item, resource or G/L account. </li>
+        </ol>
+        <p class="ccTextvorlageNumberedListNoteHeading">Note</p>
+        <p class="ccTextvorlageNumberedListNoteBody">If a rental item is selected that is to be added as a sales line, the Rental Position will need to be reset to Sales. Any additional Rate Component lines that appeared will be removed when the Rental Position is changed. </p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Location Code</span> field, enter a location if the inventory is posted using locations.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, enter the number of units to be sold.</li>
+            <li class="ccTextvorlageNumberedList">Fill in other standard Microsoft Dynamics NAV fields as needed.</li>
+        </ol>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434929910"></a>Exercise – Record a Rental Position on a Rent Quote</h3>
+        <p class="ccTextvorlage">On January 31, 2019, customer R-30000 requests one unit of item R-30000-01 for the period of February 1, 2019 through February 28, 2019. The rental price is 350.00 for all customers. The customer accepts the quote and is converted to an order.</p>
+        <p class="ccDemoStepHeading">Record the Rental Position</p>
+        <p class="ccTextvorlage">Follow these steps to record the rental position:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Set the Work Date to 01/31/19.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|rental</span><span class="Bold"> &gt; Contract Management &gt; Rent Quotes</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Sell-to Customer No.</span> field, enter R-30000.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lines</span> FastTab, in the <span class="Bold">Type</span> field, select <span class="Italics">Item</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter R-30000-01. Notice the following:<ul start="1"><li class="ccTextvorlageNumberedList">The <span class="Bold">Rental Position</span> field changed from <span class="Italics">Sales</span> to <span class="Italics">Rental</span>.</li><li class="ccTextvorlageNumberedList">The RENTAL location defaults to the <span class="Bold">Location Code</span> field (if assigned to the customer).</li><li class="ccTextvorlageNumberedList">The customer location (R-30000) defaults to the <span class="Bold">Customer Location Code</span> field.</li><li class="ccTextvorlageNumberedList">The <span class="Bold">Unit Price Excl. VAT</span> field is blank because no standard unit price has been assigned on the item card. </li><li class="ccTextvorlageNumberedList">The Rent Line Details FactBox displays 35 available units and a sales price for the item.</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Rent Quote Positions.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Rent Quote with portion of line entered</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 1. </li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rental Rate Code</span> field, enter MONTH. Notice that the <span class="Bold">Rate Unit Price</span> field is 350.00, which is from the rent prices setup.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rental Start Date</span> field, enter 02/01/19. </li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rental End Date</span> field, enter 02/28/19.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Rent Quote Positions_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Rent Quote with remainder of line entered</p>
+        <p class="ccDemoStepHeading">Convert the Rent Quote to a Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to convert the rent quote to a rent order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Make Order</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to convert the quote to an order.</li>
+        </ol>
+    </body>
+</html>

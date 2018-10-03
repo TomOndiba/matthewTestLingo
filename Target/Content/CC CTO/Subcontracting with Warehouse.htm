@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="901" MadCap:lastWidth="603" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref310428119"></a><a name="_Toc434568060"></a>Subcontracting with Warehouse Management</h3>
+        <p class="ccTextvorlage">When Warehouse Management functionality is used with a location from where enclosed subcontracting components must be transferred to the vendor location, it is possible to automatically create and/or release Warehouse Shipments when the subcontracting Transfer Order is released.</p>
+        <p class="ccTextvorlage">The setting is defined in the <span class="Bold">Create Enclosure Whse. Shpt.</span> field on the <span class="Bold">Manufacturing</span> FastTab of the <span class="Bold">Configure to Order Setup</span> page. The options are:</p>
+        <ul>
+            <li class="ccAufzählungblau">Create Whse. Shpt. Open – Creates the Warehouse Shipment with Status = <span class="Italics">Open</span></li>
+            <li class="ccAufzählungblau">Create Whse. Shpt. Released – Creates the Warehouse Shipment with Status = <span class="Italics">Released</span></li>
+        </ul>
+        <p class="ccTextvorlage">When the Warehouse Shipment is created, the “Autofill Qty. to Ship” function is automatically run so the shipment lines are ready for posting.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Example – Create a Warehouse Shipment with Subcontract Order</h4>
+        <p class="ccTextvorlage">In this example, the <span class="Bold">Create Enclosure Whse. Shpt.</span> field is set to <span class="Italics">Create Whse. Shpt. Released</span> and the <span class="Bold">Require Shipment</span> check box is selected in the RED location.</p>
+        <p class="ccTextvorlage">A sales order and construction order are created for 1 unit of item D-9005 from the RED location, where warehouse management is required. After the construction order is released, a production order is created and the <span class="Bold">Subcontracting Prod. Order</span> page is opened. The “Create Subcontracting Worksheet” function is run and then the “Create Purchase Order” function is run.</p>
+        <p class="ccTextvorlage">When the Transfer Order is opened and released, the released Warehouse Shipment is created.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Subcontracting with Warehouse.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Released Warehouse Shipment automatically created when the Transfer Order is released</p>
+        <p class="ccTextvorlage">The <span class="Bold">Status</span> is set to <span class="Italics">Released</span> and the <span class="Bold">Qty. to Ship</span> field is automatically set to the order quantity. The Warehouse Shipment can now be posted and the remainder of the subcontracting process can continue.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If the Transfer Order is not shipped prior to release, the message “There is nothing to post.” may appear when the Warehouse Shipment opens because the Warehouse Shipment must be posted before the Transfer Order.</p>
+    </body>
+</html>

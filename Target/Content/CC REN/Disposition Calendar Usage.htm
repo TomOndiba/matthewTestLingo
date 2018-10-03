@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="3" MadCap:lastHeight="898" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc434929982"></a>Disposition Calendar Usage</h2>
+        <p class="ccTextvorlage">The Disposition Calendar can be used to obtain a graphical view of items that are handled with serial numbers and are created from the Machine Type Card, as well as items that do not use serial numbers. </p>
+        <p class="ccTextvorlage">For items that use serial numbers, the <span class="Bold">Rent Item</span> field must be set to<span class="Italics"> Yes</span> on the <span class="Bold">Rental</span> FastTab of the Machine Type Card. For items that do not use serial numbers, the <span class="Bold">Rent Item</span> field must be set to <span class="Italics">Yes</span> on the <span class="Bold">Rental</span> FastTab of the Item Card.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Machine Type Card and Item Card with Rent Item field set to Yes</p>
+        <p class="ccTextvorlage">The Disposition Calendar is separated into these main areas:</p>
+        <ul>
+            <li class="ccAufzählungblau">Calendar (top left pane), Timeline and Search (top right pane)</li>
+            <li class="ccAufzählungblau">Rent Item or Location Views (bottom left pane)</li>
+            <li class="ccAufzählungblau">Details View (bottom right pane)</li>
+            <li class="ccAufzählungblau">Calendar, Timeline and Search</li>
+        </ul>
+        <p class="ccTextvorlage">The Calendar shows the same date range that is visible in the Timeline. The displayed date area can be changed by clicking and dragging the mouse on the calendar control.</p>
+        <p class="ccTextvorlage">The Timeline controls the date area for the rendered entries. Scroll horizontally by clicking and holding the mouse on the Timeline, and then dragging it to the proper date range. The <span class="Bold">Previous</span> and <span class="Bold">Next</span> buttons can also be used to scroll to the next or the previous period.</p>
+        <p class="ccTextvorlage">To scale the Timeline, hold down the right mouse button and drag the mouse cursor horizontally or click the <span class="Bold">Day</span>, <span class="Bold">Week</span> or <span class="Bold">Month</span> buttons.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Calendar and Timeline highlighted on the Disposition Calendar</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Search</span> field, enter a search description (using the standard Microsoft Dynamics NAV filtering syntax for the search text) and then click the <span class="Bold">Find</span> icon. When the matching criteria are met, the view automatically scrolls to the record. Click the <span class="Bold">Find</span> icon again to move to the next record that meets the search criteria.</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434929983"></a>Rent Item and Locations Views</h3>
+            <p class="ccTextvorlage">The Disposition Calendar View is grouped by Rent Item (order by Item No.). For each item, the list of related serial numbers can be shown by expanding the folder.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC REN/Disposition Calendar Usage_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Disposition Calendar with Rent Item R-10000-02 folder expanded</p>
+        </div>
+        <p class="ccTextvorlage">The Locations view shows all the serial numbers that are used and may be available on the selected location.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Disposition Calendar with Rental Locations displayed</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc434929984"></a>Details View</h3>
+        <p class="ccTextvorlage">The Details View pane contains a column of buttons to the left and the related information in the calendar matrix to the right:</p>
+        <ul>
+            <li class="ccAufzählungblau">The first line in the column of buttons contains the item number. The calendar matrix shows the availability in graphical form as a bar chart. The red line at the top of the row is the point of full use of the capacity.</li>
+            <li class="ccAufzählungblau">The second line – “without Serialno.” – contains documents (Rent Reservations or Rent Orders) that have the item number attached but do not yet contain serial numbers. </li>
+            <li class="ccAufzählungblau">The following lines contain a single serial number. The calendar matrix contains Rent Reservations and Rent Orders that exist for that specific item and serial number.</li>
+        </ul>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc434929985"></a>Creating Rental Documents from Disposition Calendar</h3>
+            <p class="ccTextvorlage">To create a document from the Disposition Calendar (Rent Reservation or Rent Order), select the item that is intended to be rented to the customer. On the first day of the period – and in the row for the specific serial number – press the right mouse button and then select <span class="Bold">Create Reservation</span> or <span class="Bold">Create Rent Order</span>.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC REN/Disposition Calendar Usage_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Creating a rental document from the Disposition Calendar </p>
+        </div>
+        <p class="ccTextvorlage">The <span class="Bold">Customer List</span> page appears; select the customer requesting the rental and then click <span class="Bold">OK</span>. </p>
+        <p class="ccTextvorlage">The system now creates a Rent Reservation or a Rent Order (as selected) using the customer, item number and serial number for the selected date. It returns to the Disposition Calendar View that now has a new box on the selected date for your new document. You can now extend the rental period by dragging the right margin of the box. </p>
+        <p class="ccTextvorlage">After dragging the box to the right date, the document can be released by right-clicking the mouse on the box and then selecting <span class="Bold">Release</span>. A released document can also be reopened or a rent order can be created for a Rent Reservation by right-clicking the box.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Releasing a rental document from the Disposition Calendar </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">Periods of released documents cannot be changed by dragging.</p>
+        <p class="ccTextvorlage">If no serial number is available, the document can be created on the “without Serial No.” line. </p>
+        <p class="ccTextvorlage">Lines that are not released can be pulled to a different period and to another serial number within the same item. </p>
+        <p class="ccTextvorlage">Right-clicking on an area in the Details View offers the possibility to open the related card; that is, the Item Card (first line), the Service Item Card (for each serial number), and the Rent Reservation or the Rent Order Card (document entries). Right-click a document box and then select <span class="Bold">Open Rent Reservation</span> or <span class="Bold">Open Rent Order</span> to open the related document. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Released Rent Reservation opened from the Disposition Calendar </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc434929986"></a>Updating Documents with Disposition Calendar </h3>
+        <p class="ccTextvorlage">If the rental document is created from the Rent Reservation or the Rent Order Card, the Disposition Calendar can be used to select the specific serial number and add the rental period for the item.</p>
+        <p class="ccTextvorlage">To do so, first open the appropriate card from the <span class="Bold">Rental &gt; Contract Management</span> menu and create the document with the following line information:</p>
+        <ul>
+            <li class="ccAufzählungblau">Rental Position = Rental</li>
+            <li class="ccAufzählungblau">Type = Item</li>
+            <li class="ccAufzählungblau">No. = Item number</li>
+            <li class="ccAufzählungblau">Quantity = 1</li>
+        </ul>
+        <p class="ccTextvorlage">Afterwards, open the Disposition Calendar by clicking the AssistEdit button in the <span class="Bold">No.</span> field.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Opening the Disposition Calendar from a rental document</p>
+        <p class="ccTextvorlage">The Disposition Calendar View opens to create an entry for the document line. Right-click a free serial number and then select <span class="Bold">Create here</span>. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_8.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Adding a document line to the Disposition Calendar opened from a rental document</p>
+        <p class="ccTextvorlage">A new box appears for the document line; drag the ends of the box to adjust the rental period. Click <span class="Bold">OK</span> to close the Disposition Calendar View to return to the source document.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_9.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: New document added to the Disposition Calendar </p>
+        <p class="ccTextvorlage">The selected Rental Start Date, Rental End Date and Serial No. are added to the document.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_10.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Serial number and rental date information added to new document from the Disposition Calendar </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.5    "><a name="Using"></a>Using Disposition Calendar for Items without Serial Numbers</h3>
+        <p>The same functions used to create and update Rental documents with the Disposition Calendar is available for items that do not use serial numbers. The differences are that a serial number is not selected in the Disposition Calendar line or the Rental document line, and all documents for the item appear in a single row in the Disposition Calendar line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_11.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Disposition Calendar lines for items with no serial numbers</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.5.1    ">Create Rental Document from Disposition Calendar</h4>
+        <p class="ccTextvorlage">To create a document from the Disposition Calendar (Rent Reservation or Rent Order), select the item that is intended to be rented to the customer. On the first day of the period, right-click and select <span class="Bold">Create Reservation</span> or <span class="Bold">Create Rent Order</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_12.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }">
+            </img>
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Creating a rental document from the Disposition Calendar </p>
+        <p class="ccTextvorlage">The <span class="Bold">Customer List</span> page appears; select the customer requesting the rental and then click <span class="Bold">OK</span>. </p>
+        <p class="ccTextvorlage">The system creates a Rent Reservation or a Rent Order (as selected) using the customer and item number for the selected date. In the Disposition Calendar View, a  new box is added on the selected date for the new document. The rental period can be extended by dragging the right margin of the box, and can be released. The released document can also be reopened or a rent order can be created for a Rent Reservation by right-clicking the box.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_13.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Options for the rental document created from the Disposition Calendar </p>
+        <p class="ccTextvorlage">Lines that are not released can be pulled to a different period within the same item. </p>
+        <p class="ccTextvorlage">Right-clicking on an area in the Details View offers the possibility to open the related card; that is, the Item Card (first/second line), and the Rent Reservation or the Rent Order Card (document entries). Right-click a document box and then select <span class="Bold">Open Rent Reservation</span> or <span class="Bold">Open Rent Order</span> to open the related document. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_14.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Rent Reservation opened from the Disposition Calendar </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.5.2    ">Updating Documents with Disposition Calendar </h4>
+        <p class="ccTextvorlage">If the rental document is created from the Rent Reservation or the Rent Order Card, the Disposition Calendar can be used to update the rental period for the item.</p>
+        <p class="ccTextvorlage">To do so, first open the appropriate card from the <span class="Bold">Rental &gt; Contract Management</span> menu and create the document with the following line information:</p>
+        <ul>
+            <li class="ccAufzählungblau">Rental Position = Rental</li>
+            <li class="ccAufzählungblau">Type = Item</li>
+            <li class="ccAufzählungblau">No. = Item number</li>
+            <li class="ccAufzählungblau">Quantity = 1</li>
+            <li class="ccAufzählungblau">Rental Start Date = starting date of the rental</li>
+            <li class="ccAufzählungblau">Rental End Date = ending date of the rental; if not known, choose the same as Rental Start Date for easier movement in the Disposition Calendar</li>
+        </ul>
+        <p class="ccTextvorlage">Afterwards, open the Disposition Calendar by clicking the AssistEdit button in the <span class="Bold">No.</span> field.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_15.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.9in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Opening the Disposition Calendar from a rental document</p>
+        <p class="ccTextvorlage">The Disposition Calendar View opens to update the entry for the document line. A new box appears for the document line. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_16.png" MadCap:mediastyle="@media print { max-width: 5.9in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: New document added to the Disposition Calendar </p>
+        <p class="ccTextvorlage">Drag the ends of the box to adjust the rental period. Click <span class="Bold">OK</span> to close the Disposition Calendar View to return to the source document.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_17.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccTextvorlage">The updated dates are updated in the document.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Disposition Calendar Usage_18.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 18">: Rental date information updated in new document from the Disposition Calendar </p>
+    </body>
+</html>

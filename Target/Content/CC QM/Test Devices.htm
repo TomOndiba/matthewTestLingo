@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref314489986"></a><a name="_Toc442095721"></a>Test Devices</h3>
+            <p class="ccTextvorlage">Test devices are defined as all kinds of tools that a quality control employee requires in order to carry out a test (such as scales, photometer, hardness- or thickness tachymeter and so on).</p>
+            <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Test Device Card</h4>
+            <p class="ccTextvorlage">On the Test Device Card, the master data of the test device that will be used to determine the actual values of the test properties is maintained.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Test Devices.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 350px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Test Device Card, General FastTab</p>
+        </div>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.1    ">General FastTab</h5>
+        <p class="ccTextvorlage">The fields on this FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 111px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unique identifier from the number series or manually entered if manual numbering is allowed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Description by which the test device is to be managed (scales, measure, etc.) within the system.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Responsible</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">For every test device, a certain employee can be defined who is responsible for the proper use and maintenance of the device. Click the arrow to access the <span class="Bold">Users</span> page.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Status</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <div class="ccDIV">
+                            <p class="ccTabellenText">Indicates if a test device is released for processing tests or if it is blocked. Newly created test devices always have the status <span class="Italics">Certified</span> whereas the status can be changed manually. The <span class="Bold">Status</span> and <span class="Bold">Blocking Reason</span> fields are automatically updated when the “Block Test Devices” batch job is run.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Blocking Reason</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Reason that the test device has been blocked.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Department</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Assigns the test device to a certain department, such as workshop, laboratory and so on.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Substitute Test Device</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Select to indicate that the test device should be substituted with a new test device soon, or can be used as a substitute for another test device. This field is used for informational purposes only.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Date of First Release</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">The first release date of a test device, used for determining the age of the device.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace">
+        </p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.2    "><a name="_Ref314489822"></a>Testing FastTab</h5>
+        <p class="ccTextvorlage">The fields on this FastTab display testing information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Test Devices_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 331px;" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Test Device Card, Testing FastTab</p>
+        <p class="ccTextvorlage">The fields on this FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Cycle </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Frequency in which the test device should be tested. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Last Test Date / Next Date Test Required</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">The formula from the <span class="Bold">Test Cycle</span> field is used to calculate the date in the <span class="Bold">Next Date Test Required</span> field, which is based on the date in the <span class="Bold">Last Test Date</span> field. </p>
+                        <p class="ccTabellenText">If the date of the next test required has expired, the test device can be blocked using the “Block Test Devices” batch job and thus become subject of a test.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Default Test Plan No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Standard test plan according to which the test device should be tested. </p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">This field must be populated to use the “Create Test Order” function on the “Block Test Devices” batch job (refer to topic <MadCap:xref href="#_Ref415833000">“Block Test Devices” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Order Exist</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if a test order exists for the test device. This field will be set to <span class="Italics">Yes</span> if a test order has been created by running the “Block Test Devices” batch job.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Last Tester</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Users</span> page; is automatically populated with the ID of the user who finishes or cancels a test order.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace">
+        </p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.3    ">Item FastTab</h5>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Item</span> FastTab are used for informational purposes only.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Test Devices_2.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 311px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Test Device Card, Item FastTab</p>
+        <p class="ccTextvorlage">The fields on this FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Vendor No. </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Vendor from where the test device was purchased. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Vendor Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Populated from the <span class="Bold">Name</span> field of the vendor selected in the <span class="Bold">Vendor No.</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Lot No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Lot number of the test device. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Serial No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Serial number of the test device. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Purchase Price</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Purchase price of the test device. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Connection to-Item No. </p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Connection of the test device to an inventory item. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Connection to-Item Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Populated from the <span class="Bold">Description</span> field from the item selected in the <span class="Bold">Connection to-Item No.</span> field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Warranty Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Warranty date of the test device. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Inventory No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Inventory number of the test device. </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace">
+        </p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.4    ">Others FastTab</h5>
+        <p class="ccTextvorlage">The <span class="Bold">Others</span> FastTab contains additional test device information.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Test Devices_3.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 329px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Test Device Card, Others FastTab</p>
+        <p class="ccTextvorlage">The fields on this FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 181px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Read off Precision</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Value until which a reading can be specified. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Read off Unit</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Unit of measure of the <span class="Bold">Read off Precision</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Working Range</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Maximum available working range.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Manufacturer</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Manufacturer of a test device.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Selfmade</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the device has been produced internally.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">State</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the state of the test device.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Certificate</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Document path to an internal or external certificate. This document can be accessed by clicking <span class="Bold">Display Certificate</span> on the ribbon.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Device Group</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Test Device Group</span> list, used to classify test devices.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Creation Date / Created by / Last Date Modified / Last Modified by</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Test device modification information. These values are automatically determined based on the current date and the active User ID and are non-editable.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace">
+        </p>
+        <h5 class="Heading5" MadCap:autonum="1.1.1.1.5    ">Home Tab</h5>
+        <p class="ccTextvorlage">The <span class="Bold">Home</span> tab contains six processes and one report; each is described in the following table. </p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 179px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Process / Report</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Test Orders</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the <span class="Bold">Test Order List</span> page, which displays all test orders that have been created for this test device.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Display Certificate</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the document that has been entered in the <span class="Bold">Certificate</span> field on the <span class="Bold">Others</span> FastTab.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Create Test Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Creates an instant test order for the test device (refer to topic <MadCap:xref href="#_Ref421543538">“Instant Testing” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Block Test Device</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Opens the “Block Test Devices” batch job (refer to topic <MadCap:xref href="#_Ref415833000">“Block Test Devices” on page 1</MadCap:xref>). </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Internal Comments / External Comments</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Comments can be used to add notes and remarks about a test device. </p>
+                        <ul>
+                            <li class="ccAufzählung">Internal comments are printed on documents that will not leave the company such as test plans. </li>
+                            <li class="ccAufzählung">External comments will appear on documents that can be sent to the customer or vendor.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Test Device List</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Generates the Test Device List report for preview or printing.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace">
+        </p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    "><a name="_Ref421543538"></a>Instant Testing</h4>
+        <p class="ccTextvorlage">A test order can be created for the instant testing of a test device by clicking <span class="Bold">Create Test Order</span> on the ribbon of the Test Device Card or Test Device list. The following events occur when the “Create Test Order” function is run:</p>
+        <ul>
+            <li class="ccAufzählungblau">The <span class="Bold">Test Device Card</span> page is updated with the <span class="Bold">Status</span> to <span class="Italics">Blocked</span> and the <span class="Bold">Blocking Reason</span> to <span class="Italics">Instant Testing</span>.</li>
+        </ul>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Test Devices_4.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 260px;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Test Device fields after creation of Instant Test</p>
+        <div class="ccDIV">
+            <ul>
+                <li class="ccAufzählungblau">The <span class="Bold">Test Order/Value Recording Card</span> page opens with the <span class="Bold">Status</span> set to <span class="Italics">Value Recording</span> for instant testing.</li>
+            </ul>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Test Devices_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Instant Test Order created from Test Device</p>
+        </div>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">A Default Test Plan must be specified on the Test Device Card to create an instant test order.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The <span class="Bold">Status</span> on the Test Device is reset to <span class="Italics">Certified</span> when the test is finished with an Inspection Result of <span class="Italics">Items are OK</span> and the <span class="Bold">Blocking Reason</span> field is cleared. Additionally, the <span class="Bold">Last Tester</span> field is populated with the ID of the user who finished the test order and the <span class="Bold">Last Test Date</span> field is updated accordingly.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Test Devices_6.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 385px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Test Device after Instant Test Order is finished with Items are OK</p>
+        </div>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.3    "><a name="_Ref415833000"></a>Block Test Devices</h4>
+            <p class="ccTextvorlage">Test devices are subject to the test cycles specified on the Test Device Card (refer to topic <MadCap:xref href="#_Ref314489822" class="RelLinkPageNumber">"Testing FastTab" on page 1</MadCap:xref>). The “Block Test Devices” batch job – accessed from the <span class="CCBausteinInhaltZchn">cc|quality management</span> menu by clicking <span class="Bold">Tasks &gt; Block Test Devices</span> or on the ribbon of the <span class="Bold">Test Device Card</span> page – blocks test devices that are out of use or create test orders for test devices that need to be calibrated.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Test Devices_7.png" style="visibility: visible;mso-wrap-style: square;width: 557px;height: 413px;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Block Test Devices batch job</p>
+        </div>
+        <p class="ccTextvorlage">On the <span class="Bold">Options</span> FastTab, it is possible to enter a reason for blocking the test device, which is then transferred to the <span class="Bold">Blocking Reason</span> field on the corresponding Test Device Card. Select the <span class="Bold">Create Test Order</span> check box to automatically create a test order for all newly blocked test devices. </p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">A Default Test Plan must be specified on the Test Device Card to create a test order.</p>
+        <p class="ccTextvorlage">In the <span class="Bold">Test Device</span> FastTab, a date interval can be specified. If the date in the <span class="Bold">Next Date Test Required</span> field on the Test Device Card is within this date interval, a test order will be created for the test device if the <span class="Bold">Create Test Order</span> check box is selected on the <span class="Bold">Options</span> FastTab.</p>
+        <p class="ccTextvorlageNoteheading">Caution</p>
+        <p class="ccTextvorlageNotebody">If a date is not entered in the <span class="Bold">Next Date Test Required</span> field, all test devices are blocked after running this batch job. </p>
+        <p class="ccTextvorlage">The “Block Test Devices” function is filtered on the selected Test Device when run from the Test Device Card; therefore, only the selected test device(s) will be blocked.</p>
+    </body>
+</html>

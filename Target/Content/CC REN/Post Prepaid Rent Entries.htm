@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="883" MadCap:lastWidth="604" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref415222184"></a><a name="_Toc434929963"></a>Post Prepaid Rent Entries</h2>
+        <p class="ccTextvorlage">The “Post Prepaid Contract Entries” batch job is used to transfer prepaid rental ledger entry amounts from prepaid accounts to income accounts. It can also be used to print a test report of the potential transfers.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Post Prepaid Rent Entries.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Post Prepaid Rent Entries batch job</p>
+        <p class="ccTextvorlage">When the batch job is run to post prepaid rental entries, the program posts the ledger entries with the rental prepaid accounts to the rental income accounts. It also updates the Rental Ledger Entries by selecting the <span class="Bold">Moved from Prepaid Acc. Check</span> box for the lines that have been processed.</p>
+        <p class="ccTextvorlage">The fields on the <span class="Bold">Options</span> FastTab are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 92px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Post until Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Date up to which the prepaid entries are to be posted. The batch job will include rental ledger entries with posting dates on or before this date.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Posting Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Date to be used as the posting date on the rental ledger entries and the G/L entries.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Action</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Determines the action that occurs when the batch job is run:</p>
+                        <ul>
+                            <li class="ccAufzählung">Post Prepaid Transactions – Posts the prepaid entries. </li>
+                            <li class="ccAufzählung">Print Only – Prints a test report based on the selected criteria. This report shows the service contract numbers, dates, items, service contract account group codes, and amounts posted.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace">
+        </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434929964"></a>Exercise – Run the Post Prepaid Rent Entries Batch Job</h3>
+        <p class="ccTextvorlage">On January 1, 2019, you post a prepaid rent order for the January – February 2019 time frame. When performing monthly closing procedures, the accounting manager runs the “Post Prepaid Rent Entries” batch job as of January 31, 2019 to move the amounts from the prepayment rental account (5792) to the rental account (6111).</p>
+        <p class="ccDemoStepHeading">Create and Post a Prepaid Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to create and post the rent order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Ensure that the Work Date is set to 01/01/19.</li>
+            <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-30000.</li>
+            <li class="ccTextvorlageNumberedList">In the lines, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Item</li><li class="ccTextvorlageNumberedList">No. = R-30000-01</li><li class="ccTextvorlageNumberedList">Quantity = 1</li><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Prepaid = Yes</li><li class="ccTextvorlageNumberedList">Rental Start Date = 01/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 02/28/19</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field enter 01/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 02/28/19. </li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Entries &gt; Rental Ledger Entries</span>. Notice the following:<ul start="1"><li class="ccTextvorlageNumberedList">The <span class="Bold">Prepaid</span> check box is selected.</li><li class="ccTextvorlageNumberedList">The <span class="Bold">Moved from Prepaid Acc.</span> check box is not selected.</li></ul></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Post Prepaid Rent Entries_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Rental Ledger Entries for prepaid order, prior to running the Post Prepaid Rent Entries batch job</p>
+        <ol start="12">
+            <li class="ccTextvorlageNumberedList">Escape back to the rent order.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and notice that the lines, each totaling 350.00, are to be posted to the Rental Prepayment Account (5792).</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Post Prepaid Rent Entries_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Invoice for prepaid order</p>
+        <ol start="15">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span> and then click <span class="Bold">Yes</span> to post the invoice.</li>
+            <li class="ccTextvorlageNumberedList">Close the open pages.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Run the Post Prepaid Rent Entries Batch Job</p>
+        <p class="ccTextvorlage">Follow these steps to run the batch job:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under Rental, click <span class="Bold">Periodic Activities &gt; Post Prepaid Rent Entries</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Post until Date</span> field, enter 01/31/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 01/31/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rent Order No.</span> filter, enter the number of the rent order created in this exercise.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Post Prepaid Rent Entries_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Post Prepaid Rent Entries batch job</p>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under <span class="CCBausteinInhaltZchn">cc|rental</span>, click <span class="Bold">Contract Management &gt; Rent Orders</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the rent order created in this exercise. </li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Entries &gt; Rental Ledger Entries</span>. </li>
+            <li class="ccTextvorlageNumberedList">Notice that the <span class="Bold">Moved from Prepaid Acc.</span> check box is selected on only the first line, which has an Invoice End Date of 01/31/2019.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Post Prepaid Rent Entries_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Rental Ledger Entries for prepaid order, after running the Post Prepaid Rent Entries batch job</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate</span>. </li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Document</span> FastTab of the <span class="Bold">Navigate</span> page, select the <span class="Bold">G/L Entry</span> line and then click <span class="Bold">Show Related Entries</span> on the ribbon.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, for the Prepaid Rental Contracts account (5792), click the <span class="Bold">G/L Account No.</span> field, and then click <span class="Bold">Advanced</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">G/L Account List</span> page, click <span class="Bold">Navigate &gt; Ledger Entries</span>. Notice that on 01/31/2019, an invoice total of 350.00 is debited.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Post Prepaid Rent Entries_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Debited prepayment rental account</p>
+        <ol start="14">
+            <li class="ccTextvorlageNumberedList">Select the debit line, click <span class="Bold">Navigate</span> and then open the G/L Entry. </li>
+            <li class="ccTextvorlageNumberedList">Notice that the rental account is credited the prepaid amount.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Post Prepaid Rent Entries_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Rental account credited for the prepayment amount</p>
+        <ol start="16">
+            <li class="ccTextvorlageNumberedList">Close the open pages.</li>
+        </ol>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The amount posted to the prepaid account is the total amount of the invoice. In cases when it is not full calendar month, such as 4/15/2019 to 5/14/2019, the amount is divided into monthly rental entries (refer to the screen shot in topic <MadCap:xref href="Invoicing.htm#_Ref236733550">“Prepaid Positions” on page 1</MadCap:xref>). These ledger entries have different posting dates so the system can separate which month they are posted for. </p>
+        <p class="ccTextvorlageNotebody">The system posts a cumulated sum from the prepaid account to the rental account based on the filtered Rental Ledger Entries not regarding the G/L entries on the prepaid account. Therefore, if the <span class="Bold">Post until Date</span> field on the batch job is set to 5/31/2019, then the total of those three lines from the rental ledger entries are moved to the rental account. </p>
+    </body>
+</html>

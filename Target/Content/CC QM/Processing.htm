@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc442095799"></a>Processing</h3>
+            <p class="ccTextvorlage">This section explains how and where verifications are processed.</p>
+            <h4 class="Heading4" MadCap:autonum="1.1.1.1    "><a name="_Ref353289982"></a>Verify Lines</h4>
+            <p class="ccTextvorlage">Besides the protection of critical master data, the <span class="CCBausteinInhaltZchn">cc|regulatory affairs</span> module enables the protection of all critical business processes by selectively assigning password and documentation duties.</p>
+            <p class="ccTextvorlage">The verification of transaction data occurs exclusively in the <span class="Bold">Verify Lines</span> page, which is accessed from the <span class="CCBausteinInhaltZchn">cc|regulatory affairs</span> menu by clicking <span class="Bold">Verification &gt; Verify Lines</span> (or <span class="Bold">Tasks &gt; Verify Lines</span>).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Processing.png" style="visibility: visible;mso-wrap-style: square;width: 577px;height: 265px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Verify Lines page</p>
+        </div>
+        <p class="ccTextvorlage">In the <span class="Bold">General</span> section, users can filter the table according to different areas or the Created by user. Depending on the setup, an entry in the following fields may be required:</p>
+        <table>
+            <col style="width: 287px;" />
+            <col style="width: 361px;" />
+            <tr>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Verify Value</p>
+                </td>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Verify Value 2</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Verific. Description</p>
+                </td>
+                <td>
+                    <p class="ccAufzahlungblaunospacing">Verific. Description 2</p>
+                </td>
+            </tr>
+        </table>
+        <p class="ccTextvorlage">After entering the verification value – and verification description, if required – in the line, click <span class="Bold">Verify</span> on the ribbon to open the <span class="Bold">Login</span> page, where the user ID and password is entered to complete the verification process. Completely verified lines are removed from the <span class="Bold">Verify Lines</span> page. </p>
+        <p class="ccTextvorlage">If second user verification is required, the line in the <span class="Bold">Verify Lines</span> page for the first user will become non-editable and grayed out but the <span class="Bold">Verify Value 2</span> and <span class="Bold">Verific. Description 2</span> fields remain editable for all other authorized users. Refer to topic <MadCap:xref href="#_Ref421543573" class="RelLinkPageNumber">"Four-Eyes Principle" on page 1</MadCap:xref> for more information about second user verification.</p>
+        <p class="ccTextvorlage">If any verified data is changed (on the originating document, journal, etc.), the verification must be executed again.</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Verification of Master Data</h4>
+            <p class="ccTextvorlage">This type of verification can be processed for the following master data records:</p>
+            <ul>
+                <li class="ccAufzählungblau">Production BOM </li>
+                <li class="ccAufzählungblau">Routing</li>
+            </ul>
+            <p class="ccTextvorlage">If the verification has been activated for the above master data, a modification of the status of a record (New, Certified, Under Development, or Closed) must be verified by the user. </p>
+            <p class="ccTextvorlage">Based on the settings in the <span class="Bold">Verification Setup</span> page, the user must enter his or her password, a description (= reason for modification) or the User ID and password of a different user (= approval by different user).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Processing_1.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 371px;" /> </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Password and description verification required to certify the Production BOM</p>
+        </div>
+        <p class="ccTextvorlage">After verification, the status of the according document is changed automatically.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">An additional Verification Comment can be added to the Verification Entry authorization by clicking <span class="Bold">Navigate &gt; Comment</span>.</p>
+        <div class="ccDIV">
+            <h5 class="Heading5" MadCap:autonum="1.1.1.2.1    ">Verification Entries</h5>
+            <p class="ccTextvorlage">Processed master data verification entries can be viewed in the <span class="Bold">Verification Entries</span> page, accessible on the <span class="CCBausteinInhaltZchn">cc|regulatory affairs</span> menu by clicking <span class="Bold">Verification &gt; Verification Entries</span> (or <span class="Bold">Lists &gt; Verification Entries</span>).</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC QM/Processing_2.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 196px;" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Processed verification entries </p>
+        </div>
+        <p class="ccTextvorlage">Verification Entries for specific master data lines (including production order components and routings) can be accessed by clicking <span class="Bold">Verific. Entries</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_3.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 346px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Processed verification entries for changes to the COSM-001 Production BOM</p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.3    "><a name="_Ref421543573"></a>Four-Eyes Principle</h4>
+            <p class="ccTextvorlage"><span class="CCBausteinInhaltZchn">cc|regulatory affairs</span> requires two authorized users to execute verification processes if the different user verification (option +Diff. User) has been selected in the Verification Setup. Therefore, the system saves the information of the first user who verifies the process or action and then demands that a different user also verify the process or action. </p>
+            <p class="ccTextvorlage">The verification process is handled differently in each verification page:</p>
+            <ul>
+                <li class="ccAufzählungblau_beforesublist">Verify Lines – Two verification value and description fields exist and the <span class="Bold">Diff. User Required</span> check box is selected on lines that require double user verification.<ul><li>The first user enters the value and description in the <span class="Bold">Verify Value</span> and <span class="Bold">Verific. Description</span> fields. </li><li>The second user can edit the <span class="Bold">Verify Value 2</span> and <span class="Bold">Verific. Description 2</span> fields. <br />The line is not grayed out for the second user if logged into his/her account. Once verification is complete, the line is removed from the <span class="Bold">Verify Lines</span> page.</li></ul></li>
+                <li class="ccAufzählungblau_beforesublist">Verification Entry – Opens twice for user verification.<ul><li>The first user enters his/her password and description.</li><li>A message appears that a second user is required to complete verification.</li><li>The page re-opens for the second user to enter his/her password and description.</li></ul></li>
+            </ul>
+            <p class="ccTextvorlage">Once the double user verification is completed, the user can continue with the process or action.</p>
+        </div>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.4    ">Exercise – Process a Manufactured Item with Verifications</h4>
+        <p class="ccTextvorlage">Item Q-40006, Shower Gel Bulk, is ready to be sold to customers directly. The net weight for this item’s test plan needs to be changed from an upper limit of 205 ML to 204 ML, which requires a different user and documentation verification.</p>
+        <p class="ccTextvorlage">Some raw materials need to be purchased from vendor V00020, which requires password verification and then 500 units of item Q-40006 need to be produced, which requires password and documentation verification on output.</p>
+        <p class="ccTextvorlage">After a Test Order is created, the lot needs to be released, which requires password and documentation verification.</p>
+        <p class="ccTextvorlage">The final step is to ship 50 units of this lot to customer 49858585, which requires password verification.  </p>
+        <p class="ccTextvorlageNoteheading">Important</p>
+        <p class="ccTextvorlageNotebody">Prior to starting this exercise, delete any Retain Sample Instructions for Item Category Code = SEMI or Item No. Q-40006 (refer to topic <MadCap:xref href="Retain Sample Instructions.htm" class="RelLinkPageNumber">"Retain Sample Instructions" on page 1</MadCap:xref>).</p>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Modify the Test Plan and Assign to Item</p>
+            <p class="ccTextvorlage">Follow these steps to modify a test plan and assign to item Q-40006:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|quality management</span><span class="Bold"> &gt; </span><span class="CCBausteinInhaltZchn">cc|quality management</span><span class="Bold"> &gt; Test Plans</span>.</li>
+                <li class="ccTextvorlageNumberedList">Locate test plan TP00005 and open the Test Plan Card.</li>
+                <li class="ccTextvorlageNumberedList">Change the <span class="Bold">Status</span> to <span class="Italics">Under Development</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, select the first line for Final Inspection and then click <span class="Bold">Property Set &gt; Card</span>.</li>
+                <li class="ccTextvorlageNumberedList">For Test Property Code TP00001, change the value in the <span class="Bold">Upper Limit</span> field to 204.</li>
+                <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Test Plan Prop. Set Card</span> page.</li>
+                <li class="ccTextvorlageNumberedList">Certify the Test Plan. <br />The <span class="Bold">Verification Entry</span> page opens.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_4.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 526px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Verification Entry </p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">User ID</span> field, click the arrow and select NT.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Password</span> field, type 12S4%.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> (or press CTRL+ENTER) to close the page without entering a description.<br />A message appears stating that the <span class="Bold">Description</span> must have a value.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_5.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 526px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Message received when a required description is not entered with the verification</p>
+        <ol start="11">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the verification description message.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type “Change net weight upper limit”.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>. <br />A message appears stating that a second user is required to complete the verification.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_6.png" style="visibility: visible;mso-wrap-style: square;width: 384px;height: 131px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Different user verification requirement to certify the test plan </p>
+        <ol start="14">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the second user verification message. <br />The <span class="Bold">Verification Entry</span> page reopens for the second user verification.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">User ID</span> field, click the arrow and select the OSCAR (blocked) user.</li>
+            <li class="ccTextvorlageNumberedList">Press ENTER or TAB. <br />A message appears stating that the user must not be Blocked.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_7.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 314px;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Message received for entering a blocked user ID </p>
+        <ol start="17">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">User ID</span> field, click the arrow and select the EMIL user.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Password</span> field, type @bCD3.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type “Change net weight upper limit”.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_8.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 283px;" MadCap:mediastyle="@media print { max-width: 5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Verification User ID, Password and Description provided to certify the Test Plan</p>
+        <ol start="20">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>. <br />The Test Plan is certified.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Test Plan Card</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Create the Purchase Order and Post Receipt</p>
+        <p class="ccTextvorlage">Follow these steps to create the purchase order and post the receipt:</p>
+        <div class="ccDIV">
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Purchasing &gt; Order Processing &gt; Purchase Orders</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span> and then press ENTER to automatically populate the <span class="Bold">No.</span> field.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Buy-from Vendor No.</span> field, enter V00010.</li>
+                <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, enter the following items with lot tracking to the MAINWH location.</li>
+            </ol>
+            <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');margin-left: auto;margin-right: auto;" cellspacing="0">
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 128px;" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 183px;" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 195px;" />
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">No.</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Quantity per</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Lot No.</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Q-40007</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText">500</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">n/a</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Q-40008</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText">100</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">LOT201</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Q-40009</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText">100</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">LOT202</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Q-40010</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText">100</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">LOT203</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Q-40011</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column2-Body1">
+                            <p class="ccTabellenText">100</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">LOT204</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                            <p class="ccTabellenText">Q-40012</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column2-Body1">
+                            <p class="ccTabellenText">100</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                            <p class="ccTabellenText">LOT205</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="ccTextvorlagenospace"> </p>
+        </div>
+        <ol start="5">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>. <br />A verification requirement message appears.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_9.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Verification requirement message to post the receipt</p>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the verification message and then minimize the <span class="Bold">Purchase Order</span> page.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|regulatory affairs</span><span class="Bold"> &gt; Verification &gt; Verify Lines</span>. <br />The <span class="Bold">Verify Lines</span> page opens with purchase order entries and the <span class="Bold">Description Required</span> check box not selected on any lines because documentation verification is not required.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_10.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 209px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Purchase Order entries for verification </p>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">On the first line, type 500 in the <span class="Bold">Verify Value</span> field and then press TAB to remain on the line.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Verify</span> on the ribbon. <br />The <span class="Bold">Login</span> page appears.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_11.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 209px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Login verification requirement</p>
+        <ol start="11">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">User ID</span> field, enter NT.</li>
+            <li class="ccTextvorlageNumberedList">Press TAB.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Password</span> field, type 12S4%.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>. <br />The verification is accepted, the <span class="Bold">Login</span> page closes and the line is removed from the <span class="Bold">Verify Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, type 100 in the <span class="Bold">Verify Value</span> field and then click <span class="Bold">Verify</span>. <br />The <span class="Bold">Login</span> page appears.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">User ID</span> field, enter NT.</li>
+            <li class="ccTextvorlageNumberedList">Press TAB.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Password</span> field, type 12S4%.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Repeat steps 15–19 for the remaining lines.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Verify Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Maximize the <span class="Bold">Purchase Order</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Receive</span> option and then click <span class="Bold">OK</span>. <br />The purchase order receipt is posted.</li>
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Purchase Order</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Create the Production Order</p>
+            <p class="ccTextvorlage">Follow these steps to create the production order:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Manufacturing &gt; Execution &gt; Released Prod. Orders</span>.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span> and then press ENTER to automatically populate the <span class="Bold">No.</span> field.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Source No.</span> field, enter Q-40006.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 500.</li>
+                <li class="ccTextvorlageNumberedList">Expand the <span class="Bold">Posting</span> FastTab.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Location Code</span> field, enter MAINWH.</li>
+                <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Refresh Production Order</span> and then click <span class="Bold">OK</span>.</li>
+            </ol>
+        </div>
+        <p class="ccDemoStepHeading">Post Consumption and Output Journals </p>
+        <p class="ccTextvorlage">Follow these steps to post the Consumption and Output Journals for the production order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Login as EMIL.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Departments &gt; Manufacturing &gt; Execution &gt; Consumption Journals</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Calc. Consumption</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Production Order</span> FastTab, enter the number of the released production order from the “Create the Production Order” procedure in the <span class="Bold">No.</span> filter.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_12.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Consumption Journal lines for Q-40006 component items</p>
+        <div class="ccDIV">
+            <ol start="6">
+                <li class="ccTextvorlageNumberedList">Enter item tracking for the following items.</li>
+            </ol>
+            <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');margin-left: auto;margin-right: auto;" cellspacing="0">
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 252px;" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" style="width: 252px;" />
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Item No.</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Lot No.</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Q-40008</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">LOT201</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Q-40009</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">LOT202</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Q-40010</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">LOT203</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Q-40011</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">LOT204</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                            <p class="ccTabellenText">Q-40012</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                            <p class="ccTabellenText">LOT205</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="ccTextvorlagenospace"> </p>
+        </div>
+        <ol start="7">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to post the journal lines.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the posting confirmation message</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Consumption Journal</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the Execution menu, click <span class="Bold">Output Journals</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Order No.</span> field, enter the number of the released production order from the “Create the Production Order” procedure.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Explode Routing</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the last line:<ol start="1"><li class="ccTextvorlageNumberedList">Select the <span class="Bold">Finished</span> check box.</li><li class="ccTextvorlageNumberedList">Open Item Tracking and assign LOT5000 with <span class="Bold">Entry Date</span> = work date.</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to post the journal lines. <br />A message appears stating that lines are not verified.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_13.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14">: Verification requirement message to post Output Journal</p>
+        <ol start="17">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the verification message and then close the <span class="Bold">Output Journal</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Login as NT.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|regulatory affairs</span><span class="Bold"> &gt; Verification &gt; Verify Lines</span>. <br />Note that there are no manufacturing entries. This is because the user does not have the <span class="Bold">Verify Output Journal</span> check box selected on the <span class="Bold">User Authorization Card</span> page.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_14.png" style="visibility: visible;mso-wrap-style: square;width: 508px;height: 192px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 15">: Entries for verification by user NT</p>
+        <ol start="20">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Verify Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Login as EMIL.</li>
+            <li class="ccTextvorlageNumberedList">Open the <span class="Bold">Verify Lines</span> page.<br />Note that the manufacturing lines exist with the <span class="Bold">Description Required</span> check box selected because documentation verification is required.</li>
+            <li class="ccTextvorlageNumberedList">On the first output line, type 500 in the <span class="Bold">Verify Value</span> field.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Verify</span> on the ribbon without entering a description. <br />A message appears stating that the <span class="Bold">Verific. Description</span> must have a value.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_15.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 237px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Message received when a required description is not entered with the verification</p>
+        <ol start="25">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the message.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Verific. Description</span> field, type “Output approved”.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Verify</span> on the ribbon.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_16.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 237px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: Login (password check and documentation) requirement on the Verify Lines page</p>
+        <ol start="28">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">User ID</span> field, enter EMIL.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Password</span> field, type @bCD3.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.<br />The verification is accepted, the <span class="Bold">Login</span> page closes and the line is removed from the <span class="Bold">Verify Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the next line, enter 500 in the <span class="Bold">Verify Value</span> field and “Output approved” in the <span class="Bold">Verific. Description</span> field.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Verify</span> on the ribbon.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">User ID</span> field, type EMIL.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Password</span> field, type @bCD3.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Repeat steps 31-35 for the remaining output lines.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Verify Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Open the <span class="Bold">Output Journal</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Ensure that the <span class="Bold">Finished</span> check box is still selected on the last line and then click <span class="Bold">Post</span> on the ribbon.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to post the journal lines.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the posting confirmation message.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Output Journal</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Create and Process the Test Order</p>
+        <p class="ccTextvorlage">Follow these steps to create and process the test order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Login as NT.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Manufacturing &gt; Execution &gt; Released Prod. Orders</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the production order created in the “Create the Production Order” procedure.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Create Test Order</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to create the test order for item Q-40006, LOT5000.</li>
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Released Production Order</span> page.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|quality management</span><span class="Bold"> &gt; </span><span class="CCBausteinInhaltZchn">cc|quality management </span><span class="Bold">&gt; Test Orders/Value Recording.</span></li>
+            <li class="ccTextvorlageNumberedList">Open the Test Order for Q-40006, LOT5000.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Release</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the first line, type 201 in the <span class="Bold">Determined Value</span> field.</li>
+            <li class="ccTextvorlageNumberedList">On the second line, enter <span class="Bold">OK</span> in the <span class="Bold">Determined Value</span> field.</li>
+            <li class="ccTextvorlageNumberedList">On the third line, enter <span class="Bold">OK</span> in the <span class="Bold">Determined Value</span> field and then press ENTER.<br />A message appears stating that testing is finished.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the message.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Finish</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to close the test order.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Test Order/Value Recording Card</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Change the Lot Status</p>
+        <p class="ccTextvorlage">Follow these steps to change the lot status:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under <span class="CCBausteinInhaltZchn">cc|quality management</span>, click <span class="CCBausteinInhaltZchn">cc|quality management</span><span class="Bold"> &gt; Lot-/Serial No. Administration</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Lot Filter</span> field, type LOT5000.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Get Records</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 500.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">New Status</span> field, enter RELEASED.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to post the changes.<br />A message appears stating that the line is not verified.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_17.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 254px;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 18">: Verification requirement message to post the lot status change</p>
+        <ol start="8">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close message.</li>
+        </ol>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Navigate &gt; Verify</span> to open the <span class="Bold">Verify Lines</span> page.<br />Note that the lot administration line exists with the <span class="Bold">Verify Value</span> field populated with the changed value (New Status) and the <span class="Bold">Description Required</span> check box selected because documentation verification is required.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_18.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 199px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 19">: Verify Lines for posting lot status change</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Verify</span> on the ribbon without entering a description.<br />A message appears that the <span class="Bold">Verific. Description</span> must have a value.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_19.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 199px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 20">: Message received when a required description is not entered with the verification</p>
+        <ol start="11">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the message.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Verific. Description</span> field, type “Items tested OK”.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Verify</span> on the ribbon.<br />The <span class="Bold">Login</span> page opens.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_20.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 205px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 21">: Login (password check and documentation) requirement on the Verify Lines page</p>
+        <ol start="14">
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">User ID</span> field, enter NT.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Password</span> field, type 12S4%.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Verify Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to post the change; click <span class="Bold">No</span> to add a comment; and then click <span class="Bold">OK</span> to close the posting confirmation message.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_21.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 254px;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 22">: Lot released</p>
+        <ol start="20">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Lot-/Serial No. Administration</span> page; click <span class="Bold">Yes</span> to continue closing the page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Create the Sales Order and Post the Shipment</p>
+        <p class="ccTextvorlage">Follow these steps to create the sales order and post the shipment:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Sales &amp; Marketing &gt; Order Processing &gt; Sales Orders</span>.</li>
+        </ol>
+        <ol start="2">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span> and then press ENTER to automatically populate the <span class="Bold">No.</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Sell-to Customer No.</span> field, enter 49858585.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, enter <span class="Italics">Item</span> in the <span class="Bold">Type</span> field.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">No.</span> field, enter Q-40006.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Location Code</span> field, enter MAINWH.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Quantity</span> field, type 50.</li>
+            <li class="ccTextvorlageNumberedList">Open Item Tracking and assign LOT5000.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Ship</span> option and then click <span class="Bold">OK</span>.<br />A message appears stating that the line is not verified</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_22.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 23">: Verification requirement message to post the Sales Order</p>
+        <ol start="11">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the message.</li>
+        </ol>
+        <ol start="12">
+            <li class="ccTextvorlageNumberedList">Minimize the <span class="Bold">Sales Order</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|regulatory affairs </span><span class="Bold">&gt; Verification &gt; Verify Lines</span>.<br />The <span class="Bold">Verify Lines</span> page opens without the <span class="Bold">Description Required</span> check box selected because documentation verification is not required.</li>
+            <li class="ccTextvorlageNumberedList">On the order line, type 50 in the <span class="Bold">Verify Value</span> field.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Verify</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">User ID</span> field, enter NT.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Password</span> field, type 12S4%X (an invalid password).</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC QM/Processing_23.png" style="visibility: visible;mso-wrap-style: square;width: 509px;height: 218px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 24">: Message received when the wrong password is entered</p>
+        <ol start="19">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the password message.</li>
+        </ol>
+        <p class="ccTextvorlageNumberedListNoteHeading">NOTE </p>
+        <p class="ccTextvorlageNumberedListNoteBody">If the wrong password is entered two more times (three consecutive incorrect passwords), the user will be blocked. This is based on the <span class="Bold">Max. Qty. Failed Logins</span> setting of 3 in the "Set Up Verifications and Password Policies" exercise.</p>
+        <ol start="20">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Verify</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">User ID</span> field, enter NT.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Password</span> field, type 12S4%.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span>.<br />The verification is accepted and the line is removed from the <span class="Bold">Verify Lines</span> page.</li>
+        </ol>
+        <p class="ccTextvorlageNumberedListNoteHeading">NOTE</p>
+        <p class="ccTextvorlageNumberedListNoteBody">If double user verification had been required, the <span class="Bold">Diff. User Required</span> check box would have been selected on the line and another user would have needed to verify the line before posting the sales order. Refer to topics <MadCap:xref href="#_Ref353289982" class="RelLinkPageNumber">"Verify Lines" on page 1</MadCap:xref> and <MadCap:xref href="#_Ref421543573" class="RelLinkPageNumber">"Four-Eyes Principle" on page 1</MadCap:xref> for more information.</p>
+        <ol start="24">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Verify Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Maximize the <span class="Bold">Sales Order</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+        </ol>
+        <ol start="27">
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Ship</span> option and then click <span class="Bold">OK</span>.<br />The sales order ships with no further verification requirements.</li>
+        </ol>
+    </body>
+</html>

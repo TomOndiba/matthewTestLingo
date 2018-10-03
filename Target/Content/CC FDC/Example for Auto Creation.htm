@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc435107527"></a>Example for Auto Creation of Order Bundle</h2>
+        <p class="ccTextvorlage">Starting point:</p>
+        <ul>
+            <li class="ccAufzählungblau">FDC Resource is not logged in.</li>
+            <li class="ccAufzählungblau">For the FDC Resource, the <span class="Italics">Auto Order Bundle Creation</span> option is selected in the <span class="Bold">Concurrent Beginning</span> field.</li>
+        </ul>
+        <p class="ccTextvorlage">Sequence:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList"><span class="Bold" style="color: #00B050;">Start</span> Operation <span class="Bold">A</span> <span style="font-family: Wingdings;">ð</span> no Concurrent Beginning detected <span style="font-family: Wingdings;">ð</span> no Auto Order Bundle creation</li>
+        </ol>
+        <p class="ccTextvorlageNumberedListnonumber">In Addition: Input Entry (Begin) created with reference to Operation A</p>
+        <ol start="2">
+            <li class="ccTextvorlageNumberedList"><span class="Bold" style="color: #00B050;">Start</span> Operation <span class="Bold">B</span> <span style="font-family: Wingdings;">ð</span> Concurrent Beginning detected <span style="font-family: Wingdings;">ð</span> <span class="Bold">Order Bundle created, including Operation A and B</span></li>
+        </ol>
+        <p class="ccTextvorlageNumberedListnonumber">In Addition:</p>
+        <ol style="list-style-type: lower-alpha;margin-left: 72pt;" start="1">
+            <li class="ccTextvorlageNumberedList">Start Operation A and Input Entry 1 cancelled</li>
+            <li class="ccTextvorlageNumberedList">Start changed to Order Bundle with Start Time of Operation A.</li>
+            <li class="ccTextvorlageNumberedList">Input Entry (Begin) generated <span class="Underline">with reference to Order Bundle</span> and Start Time of Input Entry 1</li>
+        </ol>
+        <ol start="3">
+            <li class="ccTextvorlageNumberedList"><span class="Bold" style="color: #00B050;">Start</span> Operation <span class="Bold">C</span> <span style="font-family: Wingdings;">ð</span> Concurrent Beginning detected <span style="font-family: Wingdings;">ð</span><span class="Bold"> Operation C added to Order Bundle</span></li>
+        </ol>
+        <p class="ccTextvorlageNumberedListnonumber">In Addition:</p>
+        <ol style="list-style-type: lower-alpha;margin-left: 72pt;" start="1">
+            <li class="ccTextvorlageNumberedList">Start Operation B and Input Entry 2 cancelled</li>
+            <li class="ccTextvorlageNumberedList">Start changed to Order Bundle with Start Time of Operation B.</li>
+            <li class="ccTextvorlageNumberedList">Input Entry (Begin) generated <span class="Underline">with reference to Order Bundle</span> and Start Time of Input Entry 2 = Start Time of Input Entry 2</li>
+        </ol>
+        <ol start="4">
+            <li class="ccTextvorlageNumberedList"><span class="Bold" style="color: #FF0000;">Stop</span> Operation <span class="Bold">A, B or C</span> <span style="font-family: Wingdings;">ð</span> Detection of Auto Order Bundle <span style="font-family: Wingdings;">ð</span> Stop of Order Bundle</li>
+        </ol>
+        <p class="ccTextvorlageNumberedListnonumber">In Addition:</p>
+        <ol style="list-style-type: lower-alpha;margin-left: 72pt;" start="1">
+            <li class="ccTextvorlageNumberedList">Input Entry (End) generated with <span class="Underline">reference to Order Bundle</span></li>
+            <li class="ccTextvorlageNumberedList">FDC Entry generated with <span class="Underline">reference to Order Bundle</span></li>
+            <li class="ccTextvorlageNumberedList">Automatic Distribution occurs</li>
+            <li class="ccTextvorlageNumberedList"><span class="Bold" style="font-family: Wingdings;">ü</span><span class="Bold"> Times get distributed to Operations A, B and C</span>
+            </li>
+        </ol>
+    </body>
+</html>

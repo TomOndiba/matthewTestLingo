@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    ">Pricing for Subcontracting</h3>
+        <p class="ccTextvorlage">Production companies negotiate prices with subcontractors for producing an item. The price a company has to pay depends on the quantity of the item or on the time the subcontractor needs (e.g. hours or days). It is also possible to grant discounts depending on a special quantity.</p>
+        <p class="ccTextvorlage">To accommodate the special pricing needs for subcontracting, purchase prices and line discounts from standard Microsoft Dynamics NAV can be added to work centers for calculation in the Subcontracting Worksheet. The prices can be set for units or times (based on the Unit Cost Calculation from the Work Center Card).</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    "><a name="Pricing"></a>Pricing by Time</h4>
+        <p class="ccTextvorlage">Pricing by time means that capacity is bought by a subcontracting vendor. The amount of time it will take the subcontractor to complete the work is defined in the Routing plan. The Unit of Measure Code is normally defined on the Work Center Card.</p>
+        <p class="ccTextvorlage">In the Work Center Card, the <span class="Bold">Unit Cost Calculation</span> is set to <span class="Italics">Time</span>. With this setting, an entry for the Unit of Measure of the Run Time has to be available.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Pricing for Subcontracting.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Work Center Card, Unit Cost Calculation set for pricing by time</p>
+        <p class="ccTextvorlage">When calculated in the Subcontractor Worksheet, the time calculation is based on the Unit of Measure of the Run Time.</p>
+        <p class="ccTextvorlage">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Prices</span> to open the <span class="Bold">Purchase Prices</span> page. The page is filtered by the <span class="Bold">Subcontractor No.</span> entered in the <span class="Bold">Posting</span> FastTab of the Work Center Card.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Pricing for Subcontracting_1.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2"><a name="PurchPrice"></a>: Purchase Prices for time set up for Work Center 901</p>
+        <p class="ccTextvorlage">Pricing for times are entered in the <span class="Bold">Purchase Prices</span> page like in standard Microsoft Dynamics NAV. For a vendor, various items can be set up with different prices for different quantities. As illustrated in <MadCap:xref href="#PurchPrice" class="Figure">Fig. 2</MadCap:xref>, vendor 65000 has been set up with  two different hourly prices for item D-9005: if it takes between 1-9 hours to produce item D-9005, vendor 65000 charges 70.00 per hour; if beyond 9 hours, they charge 60.00 per hour.</p>
+        <p class="ccTextvorlage">It is also possible to assign line discounts by clicking <span class="Bold">Line Discounts</span> on the <span class="Bold">Navigate</span> tab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Pricing for Subcontracting_2.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Line Discounts set up for Work Center 901</p>
+        <p class="ccTextvorlage">The line discounts are also entered the same as in standard Microsoft Dynamics NAV. Various items for a vendor are set up with different discounts based on different quantities.</p>
+        <p class="ccTextvorlage">For this example, a routing has been assigned to item D-9005 with Work Center 901, which has a run time of 10 hours.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Pricing for Subcontracting_3.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Routing for item D-9005 with Work Center 901</p>
+        <p class="ccTextvorlage">When a released production order is created for 1 unit of item D-9005, the routing uses the base pricing from the work center, which was 45.00 direct unit cost.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Pricing for Subcontracting_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Production Order Routing with base pricing from work center</p>
+        <p class="ccTextvorlage">When the Subcontractor Worksheet is created, the special purchase pricing is used for vendor 65000, since it was used as the routing link in the routing.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Pricing for Subcontracting_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6"><a name="SubWkstPrice1"></a>: Special pricing and line discounts for vendor 65000</p>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#SubWkstPrice1" class="Figure">Fig. 6</MadCap:xref>, the Direct Unit Cost of 600.00 with a 1.25% Line Discount is used because the run time of Work Center 901 is 10, and the price beyond 9 hours was 60.00 with a discount of 1.25 for vendor 65000.</p>
+        <p class="ccTextvorlage">When the “Create Purchase Order” function is run, the cost from the Subcontracting Worksheet, not the routing, is transferred to the purchase line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Pricing for Subcontracting_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Purchase Order with time-based pricing for subcontractors</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    "><a name="Pricing2"></a>Pricing by Unit</h4>
+        <p class="ccTextvorlage">Pricing by unit means that special pricing per item per vendor is set up based on the number of units that the subcontractor will produce.</p>
+        <p class="ccTextvorlage">In the Work Center Card, the <span class="Bold">Unit Cost Calculation</span> is set to <span class="Italics">Units</span>. With this setting, an entry for the Unit of Measure Code of the item must be available.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Pricing for Subcontracting_7.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Work Center Card, Unit Cost Calculation set for pricing by units</p>
+        <p class="ccTextvorlage">When calculated in the Subcontractor Worksheet, the time calculation is based on the Unit of Measure of the item.</p>
+        <p class="ccTextvorlage">On the <span class="Bold">Navigate</span> tab, click <span class="Bold">Prices</span> to open the <span class="Bold">Purchase Prices</span> page. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Pricing for Subcontracting_8.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9"><a name="PurchPrice"></a><a name="PurchPriceUnit"></a>: Purchase Prices for units set up for Work Center 901</p>
+        <p class="ccTextvorlage">Pricing for units are entered in the <span class="Bold">Purchase Prices</span> page like in standard Microsoft Dynamics NAV. However, the Unit of Measure Code must exist for the item and is entered manually.</p>
+        <p class="ccTextvorlage">For a vendor, various items can be set up with different prices for different quantities. As illustrated in <MadCap:xref href="#PurchPriceUnit" class="Figure">Fig. 9</MadCap:xref>, vendor 65000 has been set up to charge 1500.00 per one unit of item D-9005.</p>
+        <p class="ccTextvorlage">It is also possible to assign line discounts by clicking <span class="Bold">Line Discounts</span> on the <span class="Bold">Navigate</span> tab.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Pricing for Subcontracting_9.png" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Line Discounts set up for Work Center 901</p>
+        <p class="ccTextvorlage">The line discounts are also entered the same as in standard Microsoft Dynamics NAV. Various items for a vendor are set up with different discounts based on different quantities.</p>
+        <p class="ccTextvorlage">As shown in the example for pricing by time, a routing has been assigned to item D-9005. When a released production order is created for 1 unit of item D-9005, the routing still uses the base pricing from the work center, which was 45.00 direct unit cost.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Pricing for Subcontracting_4.png" MadCap:mediastyle="@media print { max-width: 5.7in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Production Order Routing with base pricing from work center</p>
+        <p class="ccTextvorlage">When the Subcontractor Worksheet is created, the special purchase pricing is used for vendor 65000, since it was used as the routing link in the routing.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Pricing for Subcontracting_10.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12"><a name="SubWkstPrice1"></a><a name="SubWkstPrice2"></a>: Special pricing and line discounts for vendor 65000</p>
+        <p class="ccTextvorlage">As illustrated in <MadCap:xref href="#SubWkstPrice2" class="Figure">Fig. 12</MadCap:xref>, the Direct Unit Cost of 1500.00 with a 1.00% Line Discount is used because one unit of item D-9005 was entered in the released production order for vendor 65000.</p>
+        <p class="ccTextvorlage">When the “Create Purchase Order” function is run, the cost from the Subcontracting Worksheet, not the routing, is transferred to the purchase line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Pricing for Subcontracting_11.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Purchase Order with unit-based pricing for subcontractors</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    "><a name="Pricing3"></a>Pricing with Foreign Currency</h4>
+        <p class="ccTextvorlage">Pricing for foreign currency is handled with standard Microsoft Dynamics NAV functionality in the <span class="Bold">Purchase Prices</span> and <span class="Bold">Purchase Line Discounts</span> pages through the use of the <span class="Bold">Currency Code</span> field.</p>
+    </body>
+</html>

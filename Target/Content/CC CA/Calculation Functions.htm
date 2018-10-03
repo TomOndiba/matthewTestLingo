@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Toc434834913"></a>Calculation Functions</h2>
+        <p>This section describes the various functions on the ribbon of the Calculation Card.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434834914"></a>Update Calculation</h3>
+        <p>The “Update Calculation” function creates the initial calculation and recalculates the cost estimate and the values of the calculation. This function cannot be run if the <span class="Bold">Status</span> is set to <span class="Italics">Certified</span>.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Ref278134180"></a><a name="_Toc434834915"></a>Transfer Value</h3>
+        <p>The “Transfer Value” function transfers the following based on the line setup:</p>
+        <ul>
+            <li class="ccAufzählungblau">calculated cost, sales price, or discount values to the item</li>
+            <li class="ccAufzählungblau">calculated unit cost, unit price and line discount to the sales document line</li>
+        </ul>
+        <p>This function can only be run if the <span class="Bold">Status</span> is set to <span class="Italics">Certified</span>; if it is not certified when the function is run, a message appears stating that it will certify the calculation and then open the <span class="Bold">Transfer Calculation Value</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Functions.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Calculated values set to be transferred to the item and sales line</p>
+        <p>Lines with the <span class="Bold">Transfer</span> check box selected will be transferred to the item and/or sales document line.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.1    ">Transfer Values to Sales Document Lines</h4>
+        <p class="ccTextvorlage">Calculations with references to sales documents can be used to transfer the calculation values to the document line. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Functions_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Calculated values set to be transferred to the sales order line</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The option (<span class="Bold">Type</span> = Document Unit Price) to transfer the Unit Price value to the document is not available if the currency codes are different between calculation and document.</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span> to complete the transfer process and update the unit price and line discount % on the sales order line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Functions_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Calculated values transferred to the sales order line</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.2    ">Transfer Sales Price and Sales Line Discount to Item</h4>
+        <p class="ccTextvorlage">In addition to the values transferred to the sales document line, the calculated sales price and sales line discount percent can be transferred to the item’s Sales Price and Sales Line Discount tables, respectively, based on the lot size of the calculation.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Functions_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.4in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Calculated value set to be transferred to the Sales Price and Sales Line Discount tables</p>
+        <p>Click <span class="Bold">OK</span> to complete the transfer process and update the sales price and line discount % on the item.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Functions_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Calculated values transferred to the sales prices and sales line discounts for the item</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.3    ">Transfer Unit Cost to Sales Document Line</h4>
+        <p class="ccTextvorlage">For items with costing method FIFO, the <span class="Italics">Document Unit Cost</span> line type appears in the <span class="Bold">Transfer Calculation Value</span> page.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Functions_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Document Unit Cost set to be transferred to sales line</p>
+        <p class="ccTextvorlage">If the <span class="Bold">Transfer</span> check box is selected, the calculated value will be transferred to the <span class="Bold">Unit Cost</span> field in the Sales Line.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Functions_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Unit Cost updated in the sales line from Value Transfer function</p>
+        <p class="ccTextvorlage">Note that the Unit Cost is only transferred to the sales line, not the item.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Functions_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Unit Cost not updated on Item Card</p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc434834916"></a>Lot Size Calculation</h3>
+            <p>The “Lot Size Calculation” function is used for price comparison of multiple lot sizes. </p>
+            <p>In the <span class="Bold">Lot Size Calculation Lines</span> page, enter the various lot sizes to compare in the <span class="Bold">Lot Size</span> field.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CA/Calculation Functions_8.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Four lot sizes added for comparison</p>
+        </div>
+        <p>To run the price comparison, click <span class="Bold">Show</span> on the ribbon and then click <span class="Bold">Yes</span> in the message to copy the information from the calculation. The <span class="Bold">Lot Size Calculation Matrix</span> page opens, displaying the calculation lines based on the different lot sizes.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Functions_9.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Sales calculation lines for the four lot sizes</p>
+        <div class="ccDIV">
+            <p>On the <span class="Bold">General</span> FastTab, select how to display the column names. The options are:</p>
+            <ul>
+                <li class="ccAufzählungblau">Lot Size – Lot Size specified in the <span class="Bold">Lot Size Calculation Lines</span> page</li>
+                <li class="ccAufzählungblau">Description – Description from the <span class="Bold">Lot Size Calculation Lines</span> page </li>
+                <li class="ccAufzählungblau">Calculation No. – Calculation No. automatically assigned to each lot size </li>
+            </ul>
+        </div>
+        <div class="ccDIV">
+            <p>Close the <span class="Bold">Lot Size Calculation Matrix</span> page and note that the following values were transferred to the <span class="Bold">Lot Size Calculation Lines</span> page:</p>
+            <ul>
+                <li class="ccAufzählungblau">net cost calculation line for each lot transfers to the <span class="Bold">Standard Cost</span> field </li>
+                <li class="ccAufzählungblau">net price calculation line for each lot transfers to the <span class="Bold">Unit Price</span> field</li>
+            </ul>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Functions_10.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Calculated cost and price values from the matrix</p>
+        <p>Calculated lines can be deleted as needed; the related calculation is also deleted.</p>
+        <p class="ccTextvorlage">The lot size calculation can be transferred to the item by selecting the line and then clicking <span class="Bold">Transfer Value</span> on the ribbon. The <span class="Bold">Transfer Calculation Value</span> page appears, displaying the value to transfer; click <span class="Bold">OK</span> to complete the transfer process.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Functions_11.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Transfer Calculation Values from selected lot size calculation </p>
+        <p>For example, if the lot size of 500 is selected and the “Transfer Value” function is run, the lot size pricing will be transferred to the Sales Price line for item 1000. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Functions_12.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: Lot size pricing transferred from calculation to the item</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.4    "><a name="_Toc434834917"></a>Concurrent Calculations / Concurrent Calculation Matrix</h3>
+        <p>Refer to topic <MadCap:xref href="Concurrent Calculations.htm">“Concurrent Calculations” on page 1</MadCap:xref> for more information about this functionality.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.5    "><a name="Reverse"></a>Reverse Calculation (Target Costing)</h3>
+        <p><span class="CCBausteinInhaltZchn">cc|calculation</span> provides market-oriented target cost management that is essential in the early phases of product development. Using the “Reverse Calculation” function in an existing Calculation, the value of a calculated line can be manually adjusted and then  the difference can be reallocated to another line to offset the cost/price change.</p>
+        <p>
+            <MadCap:xref href="#:" class="Figure">Fig. 14</MadCap:xref> illustrates a sample target cost flow in <span class="CCBausteinInhaltZchn">cc|calculation</span>. Starting from a competitive net price, the system calculates backwards and reduces each of the subtotals by the specified overhead, down to a target value.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Functions_16.png" MadCap:mediastyle="@media print { max-width: 4.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 14"><a name=":"></a>: Target costing flow sample in cc|calculation</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">After creating a calculation with costs/prices that need to be adjusted, click <span class="Bold">Reverse Calculation</span>.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CA/Calculation Functions_17.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 15"><a name=":2"></a>: Running the Reverse Calculation function in Calculation Card</p>
+        </div>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">The fields in the <span class="Bold">Reverse Calculation</span> page are the same as the lines of the Calculation Card, with two additions. </p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CA/Calculation Functions_18.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 16">: Reverse Calculation page</p>
+        </div>
+        <p class="ccTextvorlage">The additional fields are described in the following table.</p>
+        <table style="width: 100%; mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet_NEW TABLE.css');" class="TableStyle-CC_TableStyleSheet_NEW_TABLE" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column1" style="width: 117px;" />
+            <col class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadE-Column1-Header1">
+                        <p class="ccTebellenuberschrift">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet_NEW_TABLE-HeadD-Column2-Header1">
+                        <p class="ccTebellenuberschrift">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Target Value</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Detemines the charge line to which the adjusted cost is to be allocated. </p>
+                        <p class="ccTabellenText">Only rows of <span class="Bold">Totaling Type</span> = <span class="Italics">Charge</span> can be selected as Target Value.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet_NEW_TABLE-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">New Value (LCY)</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet_NEW_TABLE-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the adjusted cost/price for the calculation line. </p>
+                        <p class="ccTabellenText">These values are calculated backwards, starting from total (highest row number where adjusted prize is added) to row marked as Target Value.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="ccDIV">
+            <p class="BoldItalics12pt">Example</p>
+            <p class="ccTextvorlage">The calculated price for a bicycle is 723.13, which is not an ideal price. The sales manager knows there is a better chance to sell these bicycles for 699.99 instead. Therefore, 699.99 is entered in the <span class="Bold">New Value (LCY)</span> field in row 1200 , Net list price. </p>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Functions_19.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 17">: New Value entered for list price</p>
+        <p class="ccTextvorlage">After the new value is entered, all charge lines that are available for cost/price reallocation are changed to a blue font. In this example, the offset (23.14) for the list price will be applied to the Profit charge, row 0970. The sales manager selects the <span class="Bold">Target Value</span> check box in row 0970.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CA/Calculation Functions_20.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 18">: Profit and related charges adjusted due to reallocation of cost/price</p>
+        <p class="ccTextvorlage">By selecting the Profit as the target for the reallocation, any charges that have a reference to this charge are also reduced proportionally. Therefore, the Profit was reduced by 19.67 and the related Reduction line (row 1100, which is related to row 1000, from which the calculation includes row 0970), is reduced by 3.47. Thus, the reduction of 23.14 is reallocated.</p>
+        <p class="ccTextvorlage">If the reallocations are not acceptable, the <span class="Bold">Reverse Calculation</span> page can be closed and the “Reverse Calculation” function can be run to start the process again.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">If the reallocations are acceptable, click <span class="Bold">Make Calculation</span> to create a new calculation and then click <span class="Bold">OK</span> to close the <span class="Bold">Reverse Calculation</span> page. Close the original Calculation Card and then open the new calculation.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CA/Calculation Functions_21.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 19">: New calculation created with new values</p>
+        </div>
+        <p class="ccTextvorlage">The new calculation includes the new values, and shows the percentage changes that occurred due to the target costing adjustments. In this example, the original percentage for the profit charge was 25 (refer to <MadCap:xref href="#:2" class="Figure">Fig. 15</MadCap:xref>), and now it is 20.77355. </p>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.6    "><a name="_Toc434834918"></a>Print Calculation Report</h3>
+            <p>The <span class="Bold">Print</span> action generates the Calculation report for the selected calculation.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CA/Calculation Functions_13.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 20">: Calculation report</p>
+        </div>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.7    "><a name="_Toc434834919"></a>Calculation Detail Lines</h3>
+            <p>The <span class="Bold">Calculation Detail Lines</span> page displays an overview of all cost estimates for the calculation or the detail of the cost calculated on a specific line.</p>
+            <p>On the Calculation Card, click <span class="Bold">Navigate &gt; Calculation Detail Lines</span> to open the overview page. </p>
+            <p class="ccTextvorlageNoteheading">Note</p>
+            <p class="ccTextvorlageNotebody">To see calculations in this page, assign an item and run the “Update Calculation” function.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CA/Calculation Functions_14.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 21">: Calculation Detail Lines for an entire calculation</p>
+        </div>
+        <p>Each level can be expanded or collapsed by clicking the arrows in the <span class="Bold">Type</span> field.</p>
+        <div class="ccDIV">
+            <p>On a calculation line in the Calculation Card, click the <span class="Bold">AssistEdit</span> button in the <span class="Bold">Value (LCY)</span> field to open the detailed calculations.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC CA/Calculation Functions_15.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 22">: Calculation Detail Lines for a calculation line</p>
+        </div>
+    </body>
+</html>

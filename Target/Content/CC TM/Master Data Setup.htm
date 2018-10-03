@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2_nopagebreak" MadCap:autonum="1.1    "><a name="_Toc435103015"></a>Master Data Setup</h2>
+        <p class="ccTextvorlage">Depending on the master data, different text can be assigned. For example, on customers and vendors, header and footer data can be assigned; on items, single text can be assigned, which means the text is printed below the item description – similar to extended text in standard Microsoft Dynamics NAV. </p>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc435103016"></a>Text Module Card</h3>
+        <p class="ccTextvorlage">The setup of text is managed in the <span class="Bold">Text Module Card</span> page. Initially, the text is entered in this page and then viewed/modified from the individual documents. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC TM/Master Data Setup.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Text Module Card accessed from the Customer Card</p>
+        <p>In this section, the <span class="Bold">Text Module Card</span> page is described.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">General FastTab</h4>
+        <p class="ccTextvorlage">The <span class="Bold">General</span> FastTab identifies the type of text, languages, and length of usage. Each field is described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 99px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Text No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Contains a consecutive number of the text modules linked to a certain data record (such as an item) and is allocated internally by the system.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Language Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates in which language the text is displayed. If the field is &lt;blank&gt;, the language code from the <span class="Bold">Local Language Code</span> field on the <span class="Bold">Text Module Setup</span> page is assumed.</p>
+                        <p class="ccTabellenTextNoteheading">Note</p>
+                        <p class="ccTabellenTextNotebody">If Language Codes are defined on the customer card, then the <span class="Bold">Language Code</span> field must be filled in and/or the <span class="Bold">All Languages</span> check box must be selected in the Text Module Card. Changes cannot be made to the <span class="Bold">Language Code</span> field after other fields are populated.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">All Languages</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the text is to be used independently from the language code of the vendor or customer if no other text was detected using the current language code.</p>
+                        <p class="ccTabellenText">For example, header text is created in English (ENG) and German (DEU). This text will only appear on documents for customers/vendors that have either language code. To make the text available for all customers/vendors in one of the languages, e.g., ENG, then the Text Module Card should be set up with <span class="Bold">Language Code</span> = <span class="Italics">ENG</span> and <span class="Bold">All Languages</span> = <span class="Italics">Yes</span>. Therefore, the ENG text will be available for a customer/vendor with <span class="Bold">Language Code</span> = <span class="Italics">ESP</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Short description of the text. </p>
+                        <p class="ccTabellenText">If left blank, this field is automatically populated from the first line of the actual text (in the <span class="Bold">Text</span> field on the <span class="Bold">Lines</span> FastTab).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sorting No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines the order of the text lines on the document if multiple texts are used.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Header/Footer</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Distinguishes between header and footer texts.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Starting Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Date from which the text should be active.</p>
+                        <p class="ccTabellenText">The system compares the date fields with the document date of the document. If no document date exists, the working date is used as basis of the comparison.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Ending Date</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Date from which the text should be invalid.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+        <div class="ccDIV">
+            <h4 class="Heading4" MadCap:autonum="1.1.1.2    "><a name="_Ref409967100"></a>Lines FastTab</h4>
+            <p class="ccTextvorlage">The fields in the <span class="Bold">Lines</span> FastTab are described in the following table.</p>
+            <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css'); width: 100%;" cellspacing="0">
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 99px;" />
+                <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+                <thead>
+                    <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                        <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                        </th>
+                        <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                            <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Text </p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Contains the actual text. Multiple lines can be entered as needed, although each line can only contain 85 characters.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                            <p class="ccTabellenText">Italic / Bold / Underline / Color</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                            <p class="ccTabellenText">Formatting options that determine how the text appears on reports and documents.</p>
+                            <p class="ccTabellenTextNoteheading">NOTE</p>
+                            <p class="ccTabellenTextNotebody">When multiple text lines are entered, the formatting from the above line is copied to the next line.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                        <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                            <p class="ccTabellenText">Print Mgt. Code</p>
+                        </td>
+                        <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                            <p class="ccTabellenText">Determines whether the text will appear on reports or in pop-up pages on documents. Leave this field empty to exclude the text from reports and pop-up pages.</p>
+                            <p class="ccTabellenText">Multiple lines can be added to the Text Module Card with different print management codes. Therefore, multiple lines of text can be entered, for example, on an Item Card with some text assigned to codes for sales documents and others assigned to codes for purchase documents. The relevant text will appear in the relevant documents: sales text only appears on header/footer text for sales documents, and so on.</p>
+                            <p class="ccTabellenTextNoteheading">NOTE</p>
+                            <p class="ccTabellenTextNotebody">When multiple text lines are entered, the code from the above line is copied to the next line.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">The fields in the <span class="Bold">Lines</span> FastTab are the same fields used in the <span class="Bold">Edit Text</span> page.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">Navigate Tab</h4>
+        <p class="ccTextvorlage">The <span class="Bold">Navigate</span> tab contains the “Get Standard Text” function. This function is used to bring standard text into the Text Module Card. Refer to topic <MadCap:xref href="Standard Text.htm">“Standard Text” on page 1</MadCap:xref> for more information about using the Standard Text functionality.</p>
+        <h3 class="Heading3" MadCap:autonum="1.1.2    "><a name="_Toc435103017"></a>Master Data (Customer) Header and Footer Text Setup</h3>
+        <p class="ccTextvorlage">When text is assigned to master data, such as a customer or vendor, it can appear on a printed document as a header or footer. Header text appears before the body of the document and Footer text appears at the end – similar to stationary/letter text.</p>
+        <p class="ccTextvorlage">This section uses an exercise to show how header and footer text is added to a customer.</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.2.1    ">Exercise – Assign Text to a Customer</h4>
+        <p class="ccTextvorlage">Mr. Andy Teal – the main contact at customer 10000, The Cannon Group – receives all orders. Your company has decided to add header and footer text to sales orders to greet and thank him for the order.</p>
+        <p class="ccDemoStepHeading">Assign Header Text</p>
+        <p class="ccTextvorlage">Follow these steps to complete the header text setup:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="Bold">Sales &amp; Marketing &gt; Order Processing &gt; Customers</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate customer 10000 and open the customer card.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Navigate &gt; Text Module</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Language Code</span> field, enter ENG.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type “Greeting”.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Text</span> field, type “Mr. Teal, please review your order below.”</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Bold</span> and <span class="Bold">Underline</span> check boxes.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Print Mgt. Code</span> field, enter S-ORDERS.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC TM/Master Data Setup_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Completed Text Module Card for header text</p>
+        <ol start="10">
+            <li class="ccTextvorlageNumberedList">Do not close the <span class="Bold">Text Module Card</span> page.</li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Assign Footer Text</p>
+            <p class="ccTextvorlage">Follow these steps to complete the footer text setup:</p>
+            <ol start="1">
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Text Module Card</span> page, click the arrow on the <span class="Bold">OK</span> button and then click <span class="Bold">OK &amp; New</span>.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Language Code</span> field, enter ENG.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Description</span> field, type “Closing”.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Header/Footer</span> field, select <span class="Italics">Footer</span>.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Text</span> field, type “We appreciate your order!”</li>
+                <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Italic</span> check box.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Color</span> field, click the arrow and select <span class="Italics">Blue</span>.</li>
+                <li class="ccTextvorlageNumberedList">In the <span class="Bold">Print Mgt. Code</span> field, enter S-ORDERS.</li>
+            </ol>
+        </div>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC TM/Master Data Setup_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Completed Text Module Card for footer text</p>
+        <ol start="9">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Text Module Card</span> page.</li>
+            <li class="ccTextvorlageNumberedList">Close the open pages.</li>
+        </ol>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.3    "><a name="_Toc435103018"></a>Master Data (Item) Text Setup</h3>
+            <p class="ccTextvorlage">When text is assigned to master data, such as an item, it can appear on a printed document. As opposed to customer or vendor text, item text does not distinguish between header and footer text.</p>
+            <p class="ccTextvorlage">This section uses an exercise to show how text is added to an item.</p>
+            <h4 class="Heading4" MadCap:autonum="1.1.3.1    ">Exercise – Assign Text to an Item</h4>
+            <p class="ccTextvorlage">Item 1936-S – the yellow BERLIN Guest Chair – has a new price starting January 21, 2019. Your company has decided to add text to sales orders to explain the item price change.</p>
+        </div>
+        <p class="ccDemoStepHeading">Assign Item Text</p>
+        <p class="ccTextvorlage">Follow these steps to complete the item text setup:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">In the navigation pane, under Sales &amp; Marketing, click <span class="Bold">Inventory &amp; Pricing &gt; Items</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate item 1936-S and then click <span class="Bold">Navigate &gt; Text Module</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">New</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Language Code</span> field, enter ENG.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Starting Date</span> field, enter 01/21/19.</li>
+            <li class="ccTextvorlageNumberedList">In the first line of the <span class="Bold">Text</span> field, type “Price Increase” and then press TAB.<br />Note that the text from the first line populated the <span class="Bold">Description</span> field in the <span class="Bold">General</span> FastTab.</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Bold</span> check box.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Color</span> field, click the arrow and select <span class="Italics">Red</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Print Mgt. Code</span> field, enter S-ORDERS.</li>
+            <li class="ccTextvorlageNumberedList">In the next line, type “Due to manufacturing changes, the price of this item has increased by 15%.”</li>
+            <li class="ccTextvorlageNumberedList">Select the <span class="Bold">Italic</span> and <span class="Bold">Underline</span> check boxes.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Color</span> field, click the arrow and select <span class="Italics">Black</span>.</li>
+            <li class="ccTextvorlageNumberedList">Ensure that the <span class="Bold">Print Mgt. Code</span> field is set to S-ORDERS.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC TM/Master Data Setup_3.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Completed Text Module Card for item text</p>
+        <ol start="14">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the open pages.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="902" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref402527373"></a><a name="_Toc434567960"></a>Config. to Order FastTab</h3>
+        <p class="ccTextvorlage">The fields on this FastTab are described in the following table.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC CTO/Config to Order FastTab.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Item Card, Config. to Order FastTab</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 100px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description 2 –Description 5</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Additional description fields, each hold up to 50 characters.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Main Location Code</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Main location code of the item. If a location code is filled in, the system will copy it when the item is inserted into the following documents:</p>
+                        <ul>
+                            <li class="ccAufzählung">Master BOM Line</li>
+                            <li class="ccAufzählung">Document BOM Line</li>
+                            <li class="ccAufzählung">Construction Order Line</li>
+                            <li class="ccAufzählung">Sales Line (Quotes, Orders, etc.)</li>
+                            <li class="ccAufzählung">Purchase Line (Quotes, Orders, etc.)</li>
+                            <li class="ccAufzählung">Production Order Components</li>
+                            <li class="ccAufzählung">Service Item Worksheet</li>
+                            <li class="ccAufzählung">Requisition and Planning Worksheet</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Part Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">It is necessary to mark the part type when the parts have to be manufactured specifically for this order (Production) and to be included in supply planning (Standard or Purchase). The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Standard – The BOM of this assembly group are for informational purposes only. In the Document BOM, the <span class="Bold">Information Line</span> check box is selected. The components of this assembly group are not included in supply planning.</li>
+                            <li class="ccAufzählung">Production – This option is only possible for assembly groups. If an item is set up with this option, the <span class="Bold">Replenishment Method</span> changes automatically to <span class="Italics">Prod. Order</span>. With this option, the components of this assembly group are used in supply planning. In the Document BOM/Construction Order line, the <span class="Bold">Information Line</span> check box is selected. </li>
+                        </ul>
+                        <p class="ccTebellenTextNoteHeadingIndent">Note</p>
+                        <p class="ccTabellenTextNoteBodyIndent">For the Production part type, the item must have a Master BOM. When using the standard Microsoft Dynamics NAV production BOM, this option is irrelevant.</p>
+                        <ul>
+                            <li class="ccAufzählung">Purchase – Same as <span class="Bold">Part Type</span> = <span class="Italics">Standard</span> except that if the Status of a Document BOM and/or Construction Line is changed to <span class="Italics">Released</span>, a new Variant Code  gets inserted to the <span class="Bold">Variant Code</span> field in the BOM line.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Separate Prod. Order</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If selected, the system will create a separate production order for this item.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Spare Part</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines whether the item is a spare part. This information is retained in the master and Document BOMs. In the service item, parts list components with this identification can be copied into the service item components.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Wear Part</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Determines whether the item is a wear part. This information is retained in the master and Document BOMs. In the service item, parts list components with this identification can be copied into the service items components.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Base Material</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the assignment of a Base Material to the item. The Base Material will be used for the work package (refer to topic <MadCap:xref href="Work Packages.htm#_Ref388785563">“Work Packages” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Separate Delivery</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates whether this item is set up for separate shipment. This setting is copied from the Item Card to the BOM and the production order where it can be changed as needed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Full Text</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the complete text of all description fields (1–5) by joining these values together. This field is not editable.   </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">No. of Change Orders</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the number of Changes Orders that exist for the item (refer to topic <MadCap:xref href="Change Order.htm#_Ref405971295">“Change Order ” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Drawings</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if the item has been assigned a design (refer to topic <MadCap:xref href="Item Card_Navigate Tab.htm#_Ref346281464">“Item Drawing” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Discontinued Item</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if this is a discontinued item (refer to topic <MadCap:xref href="Discontinued Items.htm#_Ref277405077">“Discontinued Items” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Replacement possible from</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">If a date is entered in this field, the replacement of the discontinued item will occur by this date, at the earliest (refer to topic <MadCap:xref href="Discontinued Items.htm#_Ref277405077">“Discontinued Items” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Substitutes Exist</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if a substitute item has been assigned to this item using standard Microsoft Dynamics NAV substitution functionality. A replacement must be assigned to use the discontinued item functionality (refer to topic <MadCap:xref href="Discontinued Items.htm#_Ref277405077">“Discontinued Items” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prototype</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if this is a prototype item (refer to topic <MadCap:xref href="Example Creation of a Prototype.htm#_Ref406765964">“Example – Creation of a Prototype” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prototype Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the type of prototype that the program will use when it creates a new prototype item. The options are: </p>
+                        <ul>
+                            <li class="ccAufzählung">Item – Select this option if the item will be copied into a new prototype item. </li>
+                            <li class="ccAufzählung">Variant – Select this option if a new item variant should be created only. </li>
+                        </ul>
+                        <p>Refer to topic <MadCap:xref href="Example Creation of a Prototype.htm#_Ref406765965">“Example – Creation of a Prototype” on page 1</MadCap:xref> for more information.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prototype No. Series</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the number series used for items and/or variants created from this prototype item (refer to topic <MadCap:xref href="Example Creation of a Prototype.htm#_Ref406765965">“Example – Creation of a Prototype” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Created from Prototype</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the originating prototype item number that this item was created from (refer to topic <MadCap:xref href="Example Creation of a Prototype.htm#_Ref406765966">“Example – Creation of a Prototype” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prototype BOM Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if the prototype was created from a Document BOM or Construction Order (refer to topic <MadCap:xref href="Example Creation of a Prototype.htm#_Ref406765967">“Example – Creation of a Prototype” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Prototype BOM No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Identifies the Document BOM or Construction Order number from which the prototype item was created (refer to topic <MadCap:xref href="Example Creation of a Prototype.htm#_Ref406765968">“Example – Creation of a Prototype” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">KANBAN</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Indicates if this item has been set up for Kanban processing (refer to topic <MadCap:xref href="KANBAN System_Item Setup.htm#_Ref284838725">“Item Setup” on page 1</MadCap:xref>).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="891" MadCap:lastWidth="602" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">Exercise – Process a Rent Order with Cascaded Scale Price</h2>
+        <p>Customer R-40000 signed an agreement to rent item R-40000-01 for at least six months starting February 1, 2019. This item rents for 500 per month. For this agreement, the standard rate will be invoiced for the first four months and then 485 for the last two months. If the customer chooses to extend the lease past six months, the rate will be 450 per month for the remainder of the year. </p>
+        <p>You set up a new pricing structure for this customer and then create the Rent Order, to be prepaid every three months. Prior to shipment, the customer informs you that they will extend the rental through October so you add the extra pricing in the rent order.</p>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">When the <span class="Bold">Minimum Qty. Rate Units</span> field is used in combination with <span class="Bold">Cascading</span> = Yes, a record with <span class="Bold">Minimum Qty. Rate Units</span> = 0 is needed in the Rental Price table as a starting price.</p>
+        <p class="ccDemoStepHeading">Set Up the Price Structure</p>
+        <p class="ccTextvorlage">Follow these steps to set up the price structure:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Ensure that the work date is 01/26/19.</li>
+            <li class="ccTextvorlageNumberedList">In the navigation pane, click <span class="CCBausteinInhaltZchn">cc|rental</span><span class="Bold"> &gt; Contract Management &gt; Items</span>.</li>
+            <li class="ccTextvorlageNumberedList">Locate item R-40000-01 and then click <span class="Bold">Navigate &gt; Prices</span> (in the Rental group).</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Rental Prices</span> page, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Sales Type = Customer</li><li class="ccTextvorlageNumberedList">Sales Code = R-40000</li><li class="ccTextvorlageNumberedList">Unit of Measure Code = PCS</li><li class="ccTextvorlageNumberedList">Rental Rate Code = MONTH</li><li class="ccTextvorlageNumberedList">Unit Price = 500</li></ol></li>
+            <li class="ccTextvorlageNumberedList">Go to the next line and enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Sales Types = Customer</li><li class="ccTextvorlageNumberedList">Sales Code = R-40000</li><li class="ccTextvorlageNumberedList">Unit of Measure Code = PCS</li><li class="ccTextvorlageNumberedList">Rental Rate Code = MONTH</li><li class="ccTextvorlageNumberedList">Minimum Qty. Rate Units = 5</li><li class="ccTextvorlageNumberedList">Unit Price = 485</li></ol></li>
+            <li class="ccTextvorlageNumberedList">On either line, select the <span class="Bold">Cascading</span> check box.</li>
+            <li class="ccTextvorlageNumberedList">A message appears asking to update existing records. This occurs because all records that are using the same conditional fields (such as Currency Code, Rental Rate Code, Unit of Measure Code , etc.) with different Minimum Qty. Rate Units must correlate in the same pricing structure. </li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">Yes</span> to update existing records.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Cascaded Scale Price.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Rental prices for non-cascaded scale price</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Rental Prices</span> page.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Create the Rent Order</p>
+        <p class="ccTextvorlage">Follow these steps to create the rent order:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">Insert a new rent order for customer R-40000.</li>
+            <li class="ccTextvorlageNumberedList">On the first line of the <span class="Bold">Lines</span> FastTab, enter the following:<ol start="1"><li class="ccTextvorlageNumberedList">Type = Item</li><li class="ccTextvorlageNumberedList">No. = R-40000-01</li><li class="ccTextvorlageNumberedList">Quantity = 1</li><li class="ccTextvorlageNumberedList">Rental Rate Code = Month</li><li class="ccTextvorlageNumberedList">Prepaid = Yes</li><li class="ccTextvorlageNumberedList">Rental Start Date = 02/01/19</li><li class="ccTextvorlageNumberedList">Rental End Date = 05/31/19</li></ol></li>
+            <li class="ccTextvorlageNumberedList">Notice that the standard pricing is used because only four months were included in the invoicing period and that this is a cascaded pricing structure:<ol start="1"><li class="ccTextvorlageNumberedList">Rate Unit Price = 500</li><li class="ccTextvorlageNumberedList">Total No. of Rate Units = 4</li><li class="ccTextvorlageNumberedList">Cascaded Price = Yes</li></ol></li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Cascaded Scale Price_1.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Standard pricing used when number of rate units not met</p>
+        <p class="ccDemoStepHeading">View Pricing Structure and Add Extra Pricing</p>
+        <p class="ccTextvorlage">Follow these steps to view the cascaded pricing structure and add the extra month pricing:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Cascaded Prices</span> (alternatively, click the value in the <span class="Bold">Cascaded Price</span> field).</li>
+            <li class="ccTextvorlageNumberedList">Notice that two lines appear, one for the standard pricing of 500 for four months and then the special pricing of 485 starting on the fifth month with a placeholder ending date.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Cascaded Scale Price_2.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Rental Cascaded Price with pricing from Rental Prices page</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">On the second line, change the <span class="Bold">Next Invoice Period End</span> field to 07/31/19.</li>
+            <li class="ccTextvorlageNumberedList">Go to the next line (or click <span class="Bold">New</span>).</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">New Rent Price</span> field, enter 450.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Next Invoice Period End</span> field, enter to 12/31/19.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Cascaded Scale Price_3.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Rental Cascaded Price with changed and extra pricing</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Rental Cascaded Price</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Show Price History</span> to view all pricing changes.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Cascaded Scale Price_4.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Rental Line Price History with all cascaded pricing changes </p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Close the <span class="Bold">Rental Line Price History</span> page. </li>
+        </ol>
+        <div class="ccDIV">
+            <p class="ccDemoStepHeading">Process the Invoices</p>
+            <p>Follow these steps to process the invoices:</p>
+        </div>
+        <ol>
+            <li class="ccTextvorlageNumberedList">On the <span class="Bold">Lines</span> FastTab, click <span class="Bold">Line &gt; Item Tracking Lines</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Shipment</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Select Entries</span> and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to close the <span class="Bold">Item Tracking Lines</span> page.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">With the <span class="Bold">Ship</span> option selected, click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 02/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 04/30/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and notice that the standard pricing (500.00) is used on all lines.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Cascaded Scale Price_5.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: First invoice with agreement pricing</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Post the invoice and then escape back to the Rent Order.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 05/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 07/31/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and notice that the standard pricing (500.00) is used for the first line (fourth month) and the agreement pricing (485.00) is used on the remaining lines.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Cascaded Scale Price_6.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Second invoice with agreement pricing</p>
+        <ol MadCap:continue="true">
+            <li class="ccTextvorlageNumberedList">Post the invoice and then escape back to the Rent Order.</li>
+        </ol>
+        <p class="ccDemoStepHeading">Invoice Remaining Months</p>
+        <p>Follow these steps to invoice the remaining three months:</p>
+        <ol start="1">
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Home &gt; Post</span>.</li>
+            <li class="ccTextvorlageNumberedList">Click the <span class="Bold">Invoice</span> option and then click <span class="Bold">OK</span>.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Posting Date</span> field, enter 08/01/19.</li>
+            <li class="ccTextvorlageNumberedList">In the <span class="Bold">Invoice to Date</span> field, enter 10/31/19.</li>
+            <li class="ccTextvorlageNumberedList">Click <span class="Bold">OK</span> to create the invoice and then accept all confirmation messages.</li>
+            <li class="ccTextvorlageNumberedList">On the ribbon, click <span class="Bold">Navigate &gt; Invoices</span>.</li>
+            <li class="ccTextvorlageNumberedList">Open the invoice and notice that the new agreement pricing (450.00) is used on all lines.</li>
+        </ol>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC REN/Exercise Cascaded Scale Price_7.png" MadCap:mediastyle="@media print { max-width: 5.3in; }" />
+        </p>
+        <p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Third invoice with agreement pricing</p>
+        </p>
+    </body>
+</html>

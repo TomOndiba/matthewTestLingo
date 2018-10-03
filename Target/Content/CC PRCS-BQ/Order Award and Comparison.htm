@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:space="preserve">
+    <head>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    ">Order Award and Comparison</h2>
+        <p>When the customer awards the order to the vendor, they send a GAEB file for phase 86, Order Award, which is imported into the BoQ Job. However, it is common in the Construction Industry that most of the returned 86 files do not include the same positions and quantities as the sent 84 files. Therefore, Construction Works Processing provides a tool to compare the positions, quantities and prices in the 86 file to the calculated 84 file.</p>
+        <p>In the BoQ Job, import the 86 file received from the customer.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Order Award and Comparison.png" MadCap:mediastyle="@media print { max-width: 6in; }">
+            </img>
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Importing Order Award (Phase 86) GAEB File into BoQ Job</p>
+        <p class="ccTextvorlage">A message appears stating that the import was successful.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Order Award and Comparison_1.png" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Import confirmation</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span>. Another message appears stating that there are existing entries in the Job Line Budget table. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Order Award and Comparison_2.png" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Message regarding existing Job Line Budget entries</p>
+        <p class="ccTextvorlage">Click <span class="Bold">OK</span>. Another message appears asking to open the imported GAEB file.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Order Award and Comparison_3.png" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: Message to open imported GAEB file</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Yes</span> to open the GAEB Card.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Order Award and Comparison_4.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: Imported 86 GAEB file</p>
+        <p class="ccTextvorlage">Click <span class="Bold">Calculate 84/86 Comparison</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Order Award and Comparison_5.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: GAEB Card in Comparison view</p>
+        <p class="ccTextvorlage">The information in the GAEB Card now changes, with all positions with differences noted by the selected <span class="Bold">Difference</span> check box, the <span class="Bold">Action Message</span> field indicates that the difference can be transferred, and now the information in the Job Line Budget Details FactBox shows the values from the Job Line Budget, which was not available before starting the comparison tool.</p>
+        <div class="ccDIV">
+            <p class="ccTextvorlage">For example, in the first row where values were entered in the Fast Calculation, the 86 file shows the value as 172, but the Job Line Budget Details FactBox shows 166: the value entered in the 84 file.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC PRCS-BQ/Order Award and Comparison_6.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 7">: Reviewing differences between 84/86 files</p>
+        </div>
+        <p class="ccTextvorlage">It is likely that further negotiations will occur between vendor and customer, which means GAEB files could be sent/received multiple times. Ultimately, the Unit Prices from the 86 file should be transferred to the Unit Price field of the BoQ Budget Calculation, as well as the Quantities and BoQ Position Types. </p>
+        <p class="ccTextvorlage">Once negotiations have completed, the differences can be transferred from the 86 file to the BoQ Budget Calculation using the “Carry Out Action Message” function. Select the <span class="Bold">Accept Action Message</span> check box on the position and then click <span class="Bold">Carry Out Action Message</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Order Award and Comparison_7.png" MadCap:mediastyle="@media print { max-width: 5.5in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Carry Out Action Message function on ribbon</p>
+        <p class="ccTextvorlage">In cases where unit price splitting is used, a message appears stating that existing component lines will be replaced with new lines. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Order Award and Comparison_8.png" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Component replacement message while accepting action messages</p>
+        <p>Clicking <span class="Bold">Yes</span> <span class="Underline">deletes the calculated components</span>, which is usually not the desired result, so the <span class="Underline">message is not confirmed by clicking <span class="Bold">No</span></span>.</p>
+        <p>When this message is declined, an error message occurs, similar to the following:</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Order Award and Comparison_9.png" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: Error message from declined component line replacement</p>
+        <p>Since the action message was not accepted for this position, the differences between the 86 file and BoQ Budget Calculation must be updated manually.</p>
+        <p>When an action message has been accepted, the <span class="Bold">Difference</span> check box and <span class="Bold">Action Message</span> field are cleared, and the change is visible in the Job Line Budget FactBox.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Order Award and Comparison_10.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: Accepted action message on position, updated pricing in Job Line Budget FactBox</p>
+        <p>When the comparison is complete, click <span class="Bold">OK</span> to close the GAEB file.</p>
+        <p>In the BoQ Budget Calculation, transferred pricing from the accepted actions are visible.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Order Award and Comparison_11.png" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 12">: Transferred pricing from GAEB 84/86 comparison tool to BoQ Budget Calculation</p>
+        <p class="ccTextvorlage">In the Job Card, click <span class="Bold">Navigate &gt; GAEB List</span> to view the related files for this job. Notice that there are now three files: one for phase 83 (Quote Calling), 84 (Quote Bidding) and 86 (Order Award).</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PRCS-BQ/Order Award and Comparison_12.png" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 13">: GAEB List with related files for the job</p>
+    </body>
+</html>

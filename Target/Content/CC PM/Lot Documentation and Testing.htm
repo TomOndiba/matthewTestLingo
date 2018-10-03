@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="911" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Toc434256737"></a>Lot Documentation and Testing</h3>
+        <p class="ccTextvorlage">In the standard Microsoft Dynamics NAV manufacturing solution, lot numbers are displayed in all records and documents. In <span class="CCBausteinInhaltZchn">cc|process manufacturing</span>, additional lot documentation has been created and a lot test system has been developed.</p>
+        <p class="ccTextvorlage">On the <span class="Bold">Item Tracking</span> FastTab of the Item Card, the <span class="Bold">Lot QC Template No.</span> field specifies the documentation or test. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Lot Documentation and Testing.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1"><a name="_Ref286332480"></a>: Lot QC Template on the Item Card</p>
+        <p class="ccTextvorlage">The Lot QC Template can also be specified on the <span class="Bold">Misc.</span> FastTab of the <span class="Bold">Item Tracking Code Card</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Lot Documentation and Testing_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.2in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Lot QC Template on the Item Tracking Code Card</p>
+        <p class="ccTextvorlage">From either card, a <span class="Bold">QC Standard Status</span> can be set up as the default.</p>
+        <p class="ccTextvorlage">When a production order is processed (consumption and output posted), the lot number appears in the Item Ledger Entries. Click the <span class="Bold">Lot No.</span> field to open the <span class="Bold">Lot No. Information Card Adv.</span> page. Depending on the QC template selected on the item or item tracking code, the relevant template opens. In <MadCap:xref href="#_Ref286332480" class="Figure">Fig. 1</MadCap:xref>, a lot test was assigned to item P-10500.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Lot Documentation and Testing_2.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.25in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 3">: Lot No. Information Card Adv. opened from the item ledger entries; QC Status set to BLOCKED, which was the default setting on the item and item tracking code</p>
+        <p class="ccTextvorlage">The <span class="Bold">Lines</span> FastTab contains the lot test. Information can be entered here or a new test can be opened by clicking <span class="Bold">QC Test</span> on the ribbon.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Lot Documentation and Testing_3.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 430px;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 4">: New QC Test opened from the Lot No. Information Card Adv. page</p>
+        <p class="ccTextvorlage">In this page, the information can be printed by clicking <span class="Bold">Print</span> on the ribbon. In addition, comments can be added to the individual lines by clicking <span class="Bold">Line &gt; Comments</span> on the <span class="Bold">Lines</span> FastTab.</p>
+        <p class="ccTextvorlage">All records related to the QC Test can also be displayed from the <span class="Bold">QC Test</span> page by clicking <span class="Bold">Navigate &gt; QC Test Allocations</span>.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Lot Documentation and Testing_4.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 5">: QC tests allocated to test QC-P-083</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.1    ">Lot Information Card List</h4>
+        <p class="ccTextvorlage">A listing of all the Lot Information Cards can be accessed directly from the <span class="Bold">Quality Control</span> menu by clicking <span class="Bold">Lot No. Information Card Adv.</span> This list is useful when searching for lot- or trading unit numbers.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Lot Documentation and Testing_5.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 6">: Lot No. Information List Adv. page in view mode</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.2    ">Test Certification for Multiple Lots</h4>
+        <p class="ccTextvorlage">The QC Test assigned to one lot number information record can be allocated to multiple lot number information records using one of the following functions available on the ribbon on the <span class="Bold">Lot No. Information Card Adv.</span> page:</p>
+        <ul>
+            <li class="ccAufzählungblau">Transfer QC Test to Lot – allocates the actual lot number of the existing QC test to other lot number information records.</li>
+            <li class="ccAufzählungblau">Get QC Test from Lot – uses the QC test of another lot number information record for the actual lot number information record.</li>
+        </ul>
+        <p class="ccTextvorlage"> </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Lot Documentation and Testing_6.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 7"><a name="_Ref286332492"></a>: Lot No. Information Card Adv. page highlighting the functions </p>
+        <p class="ccTextvorlage">When using the functions, the <span class="Bold">Lot No. Information List Adv.</span> page opens for record selection.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Lot Documentation and Testing_7.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 8">: Lot No. Information List Adv. page opened from the Transfer QC Test to Lot function</p>
+        <p class="ccTextvorlage">The selection process is different based on the function:</p>
+        <ul>
+            <li class="ccAufzählungblau">If the “Transfer QC Test to Lot” function is used, multiple records can be selected.  </li>
+            <li class="ccAufzählungblau">If the “Get QC Test from Lot” function is used, one record can be selected. </li>
+        </ul>
+        <p class="ccTextvorlageNoteheading">Note</p>
+        <p class="ccTextvorlageNotebody">If a QC Test exists for a lot number information, one of the following messages will appear.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Lot Documentation and Testing_8.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 9">: Allocation cancellation messages for the Transfer QC Test to Lot and Get QC Test from Lot functions</p>
+        <p class="ccTextvorlage">The <span class="Bold">QC Test</span> FastTab of the <span class="Bold">Lot No. Information Card Adv.</span> page displays the allocated QC test number and the number of Lot No. Information records to which this QC Test has been allocated (refer to <MadCap:xref href="#_Ref286332492" class="Figure">Fig. 7</MadCap:xref>).</p>
+        <h4 class="Heading4" MadCap:autonum="1.1.1.3    ">Change QC Status from Test Certification</h4>
+        <p class="ccTextvorlage">The “QC Status Change” function allows users to change the <span class="Bold">QC Status</span> field in the item ledger entries.</p>
+        <p class="ccTextvorlage">This function is available from the ribbon of the <span class="Bold">Lot No. Information Card. Adv.</span> page and opens the <span class="Bold">QC Status Change</span> page, which is filtered by the Lot No. Information record.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Lot Documentation and Testing_9.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 10">: QC Status Change page</p>
+        <p class="ccTextvorlage">Set additional filters and then use the “Find” function to narrow the search. To change the status, enter the new status in the <span class="Bold">New QC Status</span> field and then click <span class="Bold">Change</span> on the ribbon. Accept the message to change the status. The QC Status is changed on the Lot No. Information record and the item ledger entries.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Lot Documentation and Testing_10.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 11">: QC Status changed to CHECK on the lot number information and the item ledger entries</p>
+        <p class="ccTextvorlage">The “Batch QC Status Change” function can also be run from the <span class="Bold">QC Status Change</span> page, which allows users to change the status for multiple items based on certain criteria (refer to topic <MadCap:xref href="QC Status Maintenance.htm#_Ref314489744">“QC Status Maintenance” on page 1</MadCap:xref>).</p>
+    </body>
+</html>

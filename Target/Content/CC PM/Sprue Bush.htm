@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="676" MadCap:lastWidth="602" xml:space="preserve">
+    <head><title></title>
+    </head>
+    <body>
+        <h2 class="Heading2" MadCap:autonum="1.1    "><a name="_Ref234734472"></a><a name="_Toc434256552"></a>
+            <MadCap:annotation MadCap:createDate="2018-05-14T14:52:11.8509805-05:00" MadCap:creator="NTadajewski0100" MadCap:initials="NT" MadCap:comment="Per Torsten email on 5/14/2018\r\nI learned today that we should add a note to chapter 6.4. Sprue Bush. One of our colleagues complaints that the sprue bush weight is not calculated for BOMs and only for recipes. To prevent such misleading approaches, we should a corresponding note to our PM manual.  \r\n\r\n\r\nEN: Note: Sprue Bush is calculated for components used in recipes. The calculation is not supported for components of Production BOM.\r\n\r\nGerman: Anmerkung: Die Berechnung des Angusses erfolgt nur für Komponenten einer Rezeptur. Die Berechnung erfolgt nicht für Komponenten einer Fertigungsstückliste.\r\n" MadCap:editor="NTadajewski0100" MadCap:editDate="2018-05-14T14:53:20.8499237-05:00">Sprue Bush</MadCap:annotation>
+        </h2>
+        <p class="ccTextvorlage">The following points are relevant when explaining sprue bush weight:</p>
+        <ul>
+            <li class="ccAufzählungblau">Raw material consumption is dependent on the tool</li>
+            <li class="ccAufzählungblau">Raw materials requirements must be considered</li>
+            <li class="ccAufzählungblau">Raw material costs must be considered</li>
+            <li class="ccAufzählungblau">If changing a tool, a recalculation of the sprue bush is needed</li>
+            <li class="ccAufzählungblau">Possible dependence between machine and tool</li>
+        </ul>
+        <p class="ccTextvorlage">The <span class="Bold">Sprue Bush Weight</span> for each tool can be specified on the <span class="Bold">Tool</span> FastTab of the Tool Work Center Card.</p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Sprue Bush.png" style="visibility: visible;mso-wrap-style: square;width: 576px;height: 277px;" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Sprue Bush Weight specified on the W004 tool</p>
+        <p class="ccTextvorlage">As with the other fields on this FastTab, the sprue bush weight is transferred to the <span class="Bold">Work Center Prod. Rate Card</span> page where it can be customized for each work center. </p>
+        <p class="ccBildabstand">
+            <img src="../Resources/Images/CC PM/Sprue Bush_1.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 6in; }" />
+        </p>
+        <p class="ccBildFigure" MadCap:autonum="Fig. 2">: Sprue Bush Weight transferred from Tool W004 to Work Center Prod. Rate Card for work center M003</p>
+        <p class="ccTextvorlage">The value entered in the <span class="Bold">Weight Unit of Measure</span> field on the <span class="Bold">Process Manufacturing Setup</span> page ensures that the sprue bush weight and the item are calculated using the same unit of measure. </p>
+        <p class="ccTextvorlage">In addition to ensuring the correct calculation, the <span class="Bold">Weight Unit of Measure</span> field must be filled in because the sprue bush weight from the tool must be converted into a percentage for the raw materials in the component lines of the production order. This is due to the increasing amount of raw materials because of the scrap %.</p>
+    </body>
+</html>

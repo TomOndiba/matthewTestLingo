@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" xml:space="preserve">
+    <head>
+        <link href="../Resources/TableStyles/CC_TableStyleSheet.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+    </head>
+    <body>
+        <div class="ccDIV">
+            <h3 class="Heading3" MadCap:autonum="1.1.1    "><a name="_Ref424575715"></a><a name="_Toc434332517"></a>Document Layout Criteria</h3>
+            <p class="ccTextvorlage">Document Layout Criteria are used to specify whether something should be processed or not. Criteria are basically defined by selecting a table and setting up filters for that table. The Criteria is then valid or not valid based on if the system finds records or not, etc. If multiple Criteria are set up for the same thing, then all of them must be valid for it to be processed.</p>
+            <p class="ccBildabstand">
+                <img src="../Resources/Images/CC DC/Document Layout Criteria.png" style="visibility: visible;mso-wrap-style: square;" MadCap:mediastyle="@media print { max-width: 5.8in; }" />
+            </p>
+            <p class="ccBildFigure" MadCap:autonum="Fig. 1">: Document Layout Criteria</p>
+        </div>
+        <p class="ccTextvorlage">Criteria can be applied to the following:</p>
+        <ul>
+            <li class="ccAufzählungblau">Document Layout Lines (Sections) – Specifies whether the system should loop through the table or not.</li>
+            <li class="ccAufzählungblau">Codeunits – Specifies whether the Codeunit should be run or not. </li>
+            <li class="ccAufzählungblau">Variables – Specifies whether a value should be assigned to the Variable or not. </li>
+            <li class="ccAufzählungblau">Fields – Specifies whether the Field should be printed or not. </li>
+        </ul>
+        <p class="ccTextvorlage">The fields on this page are described in the following table.</p>
+        <table class="TableStyle-CC_TableStyleSheet" style="mc-table-style: url('../Resources/TableStyles/CC_TableStyleSheet.css');margin-left: auto;margin-right: auto;width: 100%;" cellspacing="0">
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column1" style="width: 119px;" />
+            <col class="TableStyle-CC_TableStyleSheet-Column-Column2" />
+            <thead>
+                <tr class="TableStyle-CC_TableStyleSheet-Head-Header1">
+                    <th class="TableStyle-CC_TableStyleSheet-HeadE-Column1-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Field</p>
+                    </th>
+                    <th class="TableStyle-CC_TableStyleSheet-HeadD-Column2-Header1">
+                        <p class="ccTebellenüberschrift" style="font-weight: bold;">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Description</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Short description of the criteria. This field is optional but makes it easier to identify the purpose of each line.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Table No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the table that should be used to evaluate the criteria.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Table Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the name of the table. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Validation Type</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Defines how the system should evaluate if the criteria are valid or not. The options are:</p>
+                        <ul>
+                            <li class="ccAufzählung">Exist – The system applies the filters and if a record exists then the criteria is valid. </li>
+                            <li class="ccAufzählung">Not Exist – The system applies the filters and if a record exists then the criteria is not valid.</li>
+                            <li class="ccAufzählung">Count – The system applies the filters and then counts the records. The criteria are valid if the count is between the Min Value and the Max Value.</li>
+                            <li class="ccAufzählung">Sum – The system applies the filters and then summarizes the amounts in the <span class="Bold">Sum Field No.</span> field. The criteria are valid if the amount is between the Min Value and the Max Value.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sum Field No.</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Used for summarizing values; only used if <span class="Bold">Validation Type</span> = <span class="Italics">Sum</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Sum Field Name</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Displays the name of the sum field. </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyE-Column1-Body1">
+                        <p class="ccTabellenText">Min Value</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyD-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the minimum value if the <span class="Bold">Validation Type</span> = <span class="Italics">Count</span> or <span class="Italics">Sum</span>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-CC_TableStyleSheet-Body-Body1">
+                    <td class="TableStyle-CC_TableStyleSheet-BodyB-Column1-Body1">
+                        <p class="ccTabellenText">Max Value</p>
+                    </td>
+                    <td class="TableStyle-CC_TableStyleSheet-BodyA-Column2-Body1">
+                        <p class="ccTabellenText">Indicates the maximum value if the <span class="Bold">Validation Type</span> = <span class="Italics">Count</span> or <span class="Italics">Sum</span>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="ccTextvorlagenospace"> </p>
+    </body>
+</html>
